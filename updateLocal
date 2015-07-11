@@ -1,0 +1,5 @@
+echo "Working"
+rsync -avz ~/GitHub/ev3lessons.com/* ~/public_html/
+cd ~/public_html
+./fixperf
+echo "Done"

@@ -1,0 +1,3 @@
+find ./ \( -name \*.recover -o -name \*.recover.Z -o -name \*.lck -o -name \*.bak -o -name \*.backup -o -name \*.bak.Z -o -name \*.backup.Z -o -name \*~.Z -o -name .\*~.Z -o -name \#\*\#.Z -o -name \*~ -o -name .\*~ -o -name \#\*\# -o -name ,\* -o -name .\#\* -o -name \#\* -o  -name \*.DS_Store -o -name Thumbs.db -o -name \*.AppleDouble -o -name \#\* \) -print -exec rm -f {} ";"
+
+
