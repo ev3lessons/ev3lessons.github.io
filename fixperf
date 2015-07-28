@@ -1,4 +1,0 @@
-cd ~/public_html
-find . -type f -print -exec chmod 644 {} ";"
-find . -type d -print -exec chmod 755 {} ";"
-chmod 755 cleanfiles updateEV3 fixperf updateLocal

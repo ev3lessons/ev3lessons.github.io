@@ -1,5 +1,0 @@
-#!/bin/tcsh
-echo "Working"
-rsync -avz ~/GitHub/ev3lessons.com/* sseshan@www.ev3lessons.org:~/public_html/
-ssh sseshan@ev3lessons.com \~/public_html/fixperf
-echo "Done"
