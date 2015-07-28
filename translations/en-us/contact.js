@@ -22,59 +22,7 @@ document.write('\
 			        <!-- START CONTENT -->\
 			        <div id="content" class="group">\
 			            <div class="page type-page status-publish hentry group">\
-			                <form id="contact-form-example" class="contact-form" method="post" action="send_form_email.php" enctype="multipart/form-data">\
-			                    <div class="usermessagea"></div>\
-			                    <fieldset>\
-			                        <ul>\
-			                            <li class="text-field">\
-			                                <label for="name-example">\
-			                                <span class="label">Name, Team Name, and Location</span>\
-			                                </label>\
-			                                <div class="input-prepend">\
-							  <input type="text" name="name" id="name-example" class="required" value="" /></div>\
-			                                <div class="msg-error"></div>\
-			                            </li>\
-			                            <li class="text-field">\
-			                                <label for="email-example">\
-			                                <span class="label">Email</span>\
-			                                </label>\
-			                                <div class="input-prepend">\
-							  <input type="text" name="email" id="email-example" class="required email-validate" value="" /></div>\
-			                                <div class="msg-error"></div>\
-			                            </li>\
-						    \
-						    <li class="textarea-field">\
-						        <input type="checkbox" value="yes" name="updates" />\
-						        <span class="label">Do you want to be notified\
-						        when there is a new lesson or\
-						        update?</span>\
-						    </li>\
-						    \
-			                            <li class="textarea-field">\
-			                                <label for="message-example">\
-			                                <span class="label">Message</span>\
-			                                </label>\
-			                                <div class="input-prepend">\
-							  <textarea name="comments" id="message-example" rows="8" cols="30" class="required"></textarea></div>\
-			                                <div class="msg-error"></div>\
-			                            </li>\
-\
-				               <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LeK__sSAAAAAG70bYrk_wfNgA4wY7P52ud3_OY3"></script>\
-                <noscript>\
-                  <iframe width="500" height="300" frameborder="0" src="http://www.google.com/recaptcha/api/noscript?k=6LeK__sSAAAAAG70bYrk_wfNgA4wY7P52ud3_OY3"></iframe><br>\
-                          <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>\
-                          <input type="hidden" name="recaptcha_response_field" value="manual_challenge">\
-                </noscript>\
-\
-<br>						    \
-			                            <li class="submit-button left">\
-			                                <input type="submit" name="sendemail" value="send message" class="sendmail alignleft" style="background-color:#9C080C;color:#FFFFFF"/>			\
-\
- \
-			                            </li>\
-			                        </ul>\
-			                    </fieldset>\
-			                </form>\
+			              <iframe src="https://docs.google.com/forms/d/1oBqGeZC6p-DeVbKtQ9iya2IPb-GW1YN_KiH8XeHcEYs/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>\
 			                <script type="text/javascript">\
 			                    var messages_form_example = {\
 			                    	name: "Insert your name",\
