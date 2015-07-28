@@ -1,0 +1,2 @@
+#!/bin/tcsh
+source ~/Github/ev3lessons.com/updateEV3.bash
