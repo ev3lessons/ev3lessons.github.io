@@ -97,7 +97,7 @@ document.write('\
                             </li>\
                             \
                             <li>\
-                                <a id="m40" href="http://www.ev3lessons.com/forum">Forum</a>\
+                                <a id="m40" href="http://www.ev3lessons.org/forum">Forum</a>\
                             </li>\
                             \
                             <li>\
