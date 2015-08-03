@@ -11,7 +11,6 @@
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html dir="ltr" lang="en-US">
     <!--<![endif]-->
-
     <head>
         <meta name="Droids Robotics" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These EV3 tutorials are designed for teams competing in the FIRST Lego League contest.">
      <meta charset="UTF-8" />
@@ -28,7 +27,7 @@
         
         <!-- CSS Main -->
         <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
         <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
@@ -101,123 +100,32 @@
             <!-- END HEADER -->
 
 <!-- HEADER CUT HERE ------------------------------------------------->
-<script>
-var images = new Array();
-images[0] = "images/slider-flash/ev3lessons.jpg";
-images[1] = "images/slider-flash/1.png";
-images[2] = "images/slider-flash/3.png";
-images[1] = "images/slider-flash/4.png";
-images[3] = "images/slider-flash/5.png";
-images[4] = "images/slider-flash/ev3lessons.jpg";
-images[5] = "images/slider-flash/1.png";
-images[6] = "images/slider-flash/3.png";
-images[7] = "images/slider-flash/4.png";
-images[8] = "images/slider-flash/5.png";
-x = 1;
-function changeImage() {
-//alert(x)
-	   if (x > 7) {
-    x = 0;
-  }
-  document.getElementById('ad').src = images[x];
-  if (x<8) {
-	   x+=1;
-	 
-  }
-
-  else if (x===9) {
-    x=0;
-
-    }
-
-	   }
-
-window.onload = function() {
-  var x = 0;
-  setInterval(function() {
-    changeImage()
- //     alert(x)
-  },3000);
-	   }  </script><div align="right">
-<script>
-<!--
- 
- var viewportwidth;
- var viewportheight;
-  
- // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-  
- if (typeof window.innerWidth != 'undefined')
- {
-      viewportwidth = window.innerWidth,
-      viewportheight = window.innerHeight
- }
-  
-// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
- 
- else if (typeof document.documentElement != 'undefined'
-     && typeof document.documentElement.clientWidth !=
-     'undefined' && document.documentElement.clientWidth != 0)
- {
-       viewportwidth = document.documentElement.clientWidth,
-       viewportheight = document.documentElement.clientHeight
- }
-  
- // older versions of IE
-  
- else
- {
-       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
-       viewportheight = document.getElementsByTagName('body')[0].clientHeight
- }
-//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
-//-->
-</script>
-  <script>
-if (viewportwidth > 600) {
-document.write('\
-<table>\
-');
-}
-</script>
-	   <!-- <table>-->
-	     <tr><td><img  width="740" height="256" id='ad' src="images/slider-flash/ev3lessons.jpg">
-</td><td >  <img src="images/ads/reserved.jpg" width="256" height="256">
-	     </td></tr><tr  >
-	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<img src="images/ads/generic.jpg" width="256" height="256">
-</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="256" height="256">
-</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="256" height="256">
-</td></center></tr>
-	     </table>
-</div>
-
-<!--
-<center><button onclick="x=0; changeImage();">1</button><button onclick="x=1; changeImage();">2</button><button onclick="x=2; changeImage();">3</button><button onclick="x=3; changeImage();">4</button>
-	</center>    -->  <!-- SLIDER 
+        
+            <!-- SLIDER -->
          	<div id="slider" class="ei-slider elastic">
 			    
 		<div class="ei-slider-loading">Loading</div>
 			      
 		<ul class="ei-slider-large">			    
-		  <li  class="first slide-1  slide align- image-content-type">
-		    <img src="images/slider-flash/ev3lessons.jpg" width="744 " height="256">
+		  <li class="first slide-1 slide align- image-content-type">
+		    <img src="images/slider-flash/ev3lessons.jpg" width="1000" height="350">
 		  </li>
 		  
 		  <li class="slide-2 slide align- image-content-type">
-		    <img src="images/slider-flash/1.png"  width="744" height="256">
+		    <img src="images/slider-flash/1.png" width="1000" height="350">
 		    <!-- <div class="ei-title">
 		      <h2 style="color:#FFFFFF">Used in workshops</h2>
-		    </div> 
+		    </div> -->
 		  </li>
 
 		  <li class="slide-3 slide align- image-content-type">
 	<script>	   document.write(' <a href="challenges.html#'+language+'">');</script>
-		      <img src="images/slider-flash/2.png"  width="744" height="256">
+		      <img src="images/slider-flash/2.png" width="1000" height="350">
 		    </a>
 		  </li>
 				    
 		  <li class="slide-4 slide align- image-content-type">
-		    <img src="images/slider-flash/3.png"  width="744" height="256">
+		    <img src="images/slider-flash/3.png" width="1000" height="350">
 		  </li>
 				    
 		  <li class="slide-5 slide align- image-content-type">
@@ -225,19 +133,19 @@ document.write('\
 		    <!--  <div class="ei-title" style="background: rgba(0, 0, 0, 0.5);">
 		      <h3 style="color:#FF0000; font-size: 150%;">Used by Boy Scouts</h2>
                       <h3 style="color:#FF0000">Merit Badge Clinic</h3> 
-		    </div>
+		    </div> -->
 		  </li>
 				    
 		  <li class="last slide-6 slide align- image-content-type">
 		 <a href="http://www.droidsrobotics.org/about.html">
-		      <img src="images/slider-flash/5.png"  width="744" height="256" alt="" />
+		      <img src="images/slider-flash/5.png" width="1000" height="338" alt="" />
 		    </a>
 		  </li>
 
 		</ul>
 			    
-			    <!-- ei-slider-large 
-	    <ul class="ei-slider-thumbs">
+			    <!-- ei-slider-large -->
+			    <ul class="ei-slider-thumbs">
 			        <li class="ei-slider-element">Current</li>
 			        <li><a href="#">Love the site -
 			    something for everyone</a><img src="images/slider-flash/ev3lessons.jpg"></li>
@@ -246,12 +154,12 @@ document.write('\
 			        <li><a href="#">Teaching...our passion</a><img src="images/slider-flash/3.png"></li>
 			        <li><a href="#">Boy Scouts</a><img  src="images/slider-flash/4.png"></li>
 			        <li><a href="#">It's a small world...</a><img src="images/slider-flash/5.png"></li>
-		    </ul>
-			    <!-- ei-slider-thumbs        
+			    </ul>
+			    <!-- ei-slider-thumbs -->    
 			    <div class="shadow"></div>
 			</div>
-			<!-- ei-slider 
-			<!-- END #slider
+			<!-- ei-slider -->    
+			<!-- END #slider -->
 			<script type="text/javascript">      
 		        var     yiw_slider_type = 'elastic',
 		                yiw_slider_elastic_speed = 1200,
@@ -261,12 +169,12 @@ document.write('\
 		    </script>
          
             <!-- /SLIDER -->
-<!--
+
 <script>
    //  alert('<script src="translations/'+language+'index.js"></scr'+'ipt>');
   document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');
 </script>
--->
+
 <!-- FOOTER CUT HERE ------------------------------------------------->
 			
 

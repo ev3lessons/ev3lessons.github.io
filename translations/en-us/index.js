@@ -1,11 +1,11 @@
 document.write('\
-			<div class="inner home-testimonials home-section group">\
+			<div  class="inner home-testimonials home-section group">\
 			    <div class="title">\
-			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> Users love <span>EV3Lessons.com</span></h2>\
+			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> Users love <br><span>EV3Lessons.com</span></h2>\
 			        <p>feedback</p>\
-			    </div>\
+			    </div>  \
 			    <ul class="list-testimonials" style="float: left;">\
-			        <li>\
+			    <li>\
 			            <p>"You made the world seem a lot smaller by connecting so many FLL teams all over the world with EV3Lessons."</p>\
 			        </li>\
 				<li>\
@@ -44,16 +44,16 @@ document.write('\
 			    </ul>\
 			    <script type="text/javascript">\
 			        jQuery(function($){\
-			            $(".home-testimonials ul").width( 920 - $(".home-testimonials .title").outerWidth() - 20 );\
+			            $(".home-testimonials ul").width( 600 - $(".home-testimonials .title").outerWidth() - 20 );\
 			            $(".home-testimonials ul").cycle({\
 			                fx: "scrollHorz",\
 			                speed: 600,\
 			                timeout: 4000            });\
 			        });\
 			    </script>	      \
-			</div>\
+			</div> \
 			<div class="clear"></div>\
-		</div>     \
+		</div>  \
 		<!-- END WRAPPER -->\
 \
 \
