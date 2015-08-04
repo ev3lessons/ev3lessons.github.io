@@ -173,12 +173,17 @@ window.onload = function() {
 //document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
 //-->
 </script>
-  <script>
-if (screen.width > 600) {
+<script>
+
+if (viewportwidth > 600) {
 document.write('\
 <table>\
 ');
-}
+  } else if (screen.width > 600) {
+  document.write('\
+<table>\
+  ');
+  }
 </script>
 	   <!-- <table>-->
 	     <tr><td><img  width="740" height="256" id='ad' src="images/slider-flash/ev3lessons.jpg">
