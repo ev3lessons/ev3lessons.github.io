@@ -100,32 +100,30 @@
             </div>
             <!-- END HEADER -->
 
-<!-- HEADER CUT HERE ------------------------------------------------->
+<!-- HEADER CUT HERE -----------------------------------------------
+<img usemap='#planetmap' width='740' height='250' src='images/slider-flash/5.png'> <map name='planetmap'><area shape='rect' coords='0,0,82,126' href='sun.htm' alt='Sun'></map>
+<img usemap='#planetmap' width='740' height='250' src='images/slider-flash/5.png'> <map name='planetmap'><area shape='rect' coords='550,50,492,196' href='sun.htm' alt='Sun'></map>
+-->
 <script>
 var images = new Array();
-images[0] = "images/slider-flash/ev3lessons.jpg";
-images[1] = "images/slider-flash/1.png";
-images[2] = "images/slider-flash/3.png";
-images[1] = "images/slider-flash/4.png";
-images[3] = "images/slider-flash/5.png";
-images[4] = "images/slider-flash/ev3lessons.jpg";
-images[5] = "images/slider-flash/1.png";
-images[6] = "images/slider-flash/3.png";
-images[7] = "images/slider-flash/4.png";
-images[8] = "images/slider-flash/5.png";
+images[0] = "<img  width='740' height='250' src='images/slider-flash/ev3lessons.jpg'>";
+images[1] = "<img  width='740' height='250' src='images/slider-flash/1.png'>";
+images[2] = "<img  width='740' height='250' src='images/slider-flash/3.png'>";
+images[3] = "<img  width='740' height='250' src='images/slider-flash/4.png'>";
+images[4] = "<img  width='740' height='250' src='images/slider-flash/5.png'>";
 x = 1;
 function changeImage() {
 //alert(x)
-	   if (x > 7) {
+	   if (x > 4) {
     x = 0;
   }
-  document.getElementById('ad').src = images[x];
+  document.getElementById('ad').innerHTML = images[x];
   if (x<8) {
 	   x+=1;
 	 
   }
 
-  else if (x===9) {
+  else if (x===5) {
     x=0;
 
     }
@@ -184,12 +182,12 @@ window.onload = function() {
   
 </script>
 	   <!-- <table>-->
-	     <tr><td><img  width="740" height="256" id='ad' src="images/slider-flash/ev3lessons.jpg">
-</td><td >  <img src="images/ads/reserved.jpg" width="256" height="256">
+	     <tr><td><i id='ad'><img  width="740" height="250"  src="images/slider-flash/ev3lessons.jpg"></i>
+</td><td >  <img src="images/ads/reserved.jpg" width="250" height="250">
 	     </td></tr><tr  >
-	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<img src="images/ads/generic.jpg" width="256" height="256">
-</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="256" height="256">
-</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="256" height="256">
+	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<img src="images/ads/generic.jpg" width="250" height="250">
+</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="250" height="250">
+</td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="250" height="250">
 </td></center></tr>
 	     </table>
 </div>
@@ -203,11 +201,11 @@ window.onload = function() {
 			      
 		<ul class="ei-slider-large">			    
 		  <li  class="first slide-1  slide align- image-content-type">
-		    <img src="images/slider-flash/ev3lessons.jpg" width="744 " height="256">
+		    <img src="images/slider-flash/ev3lessons.jpg" width="744 " height="250">
 		  </li>
 		  
 		  <li class="slide-2 slide align- image-content-type">
-		    <img src="images/slider-flash/1.png"  width="744" height="256">
+		    <img src="images/slider-flash/1.png"  width="744" height="250">
 		    <!-- <div class="ei-title">
 		      <h2 style="color:#FFFFFF">Used in workshops</h2>
 		    </div> 
@@ -215,12 +213,12 @@ window.onload = function() {
 
 		  <li class="slide-3 slide align- image-content-type">
 	<script>	   document.write(' <a href="challenges.html#'+language+'">');</script>
-		      <img src="images/slider-flash/2.png"  width="744" height="256">
+		      <img src="images/slider-flash/2.png"  width="744" height="250">
 		    </a>
 		  </li>
 				    
 		  <li class="slide-4 slide align- image-content-type">
-		    <img src="images/slider-flash/3.png"  width="744" height="256">
+		    <img src="images/slider-flash/3.png"  width="744" height="250">
 		  </li>
 				    
 		  <li class="slide-5 slide align- image-content-type">
@@ -233,7 +231,7 @@ window.onload = function() {
 				    
 		  <li class="last slide-6 slide align- image-content-type">
 		 <a href="http://www.droidsrobotics.org/about.html">
-		      <img src="images/slider-flash/5.png"  width="744" height="256" alt="" />
+		      <img src="images/slider-flash/5.png"  width="744" height="250" alt="" />
 		    </a>
 		  </li>
 
