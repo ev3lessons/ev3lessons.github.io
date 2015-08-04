@@ -175,14 +175,10 @@ window.onload = function() {
 </script>
 <script>
 
-if (viewportwidth > 600) {
-document.write('\
-<table>\
-');
-  } else if (screen.width > 600) {
-  document.write('\
-<table>\
-  ');
+  if ((viewportwidth > 600) && (screen.width > 600)) {
+      document.write('<table>');
+//	document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//      document.write('<p>Your screen width is '+screen.width+'</p>');
   } else {
   }
   
