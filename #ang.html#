@@ -36,6 +36,9 @@ document.write('$scope.'+inWords(i)+' = 'hi';');
   }
 	     document.write('});</scr'+'ipt>');');
 	     */
+
+
+	     
 	     var i = 1;
   while (i < 3) {
 document.write('<scr'+'ipt>var app = angular.module('myApp', []);app.controller('myCtrl', function($scope) {$scope.'+inWords(i)+' = 'hi';});</scr'+'ipt>;');

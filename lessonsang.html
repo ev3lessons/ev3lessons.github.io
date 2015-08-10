@@ -1,5 +1,3 @@
-<p style="display: none;"  id="demo">a</p>
-
 <!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" dir="ltr" lang="en-US">
@@ -14,6 +12,7 @@
 <html dir="ltr" lang="en-US">
     <!--<![endif]-->
 <head>
+
 
 
 
@@ -57,8 +56,9 @@
         <!-- CSS Social -->
         <link rel='stylesheet' id='ahortcodes-css'  href='http://ev3lessons.com/css/social.css' type='text/css' media='all' />
 
-        <!-- JavaScripts -->
-        <script type="text/javascript">
+        <!-- JavaScripts 
+  <script src= "js/angular.min.js"></script>
+       --> <script type="text/javascript">
             var yiw_prettyphoto_style = 'pp_default';
         </script>
         <script type="text/javascript" src="js/jquery.js"></script>
@@ -77,7 +77,7 @@
         <script type='text/javascript' src='js/buttons.min.js'></script>
         <script type='text/javascript' src='js/layerslider.kreaturamedia.jquery-min.js'></script>
         <script type='text/javascript' src='js/jquery.quicksand.js'></script>
-
+<script src="js/angular.min.js"></script>
     </head>
     <body class="no_js responsive boxed-layout chrome ">
 
@@ -110,25 +110,23 @@
             <!-- END HEADER -->
 
 <!-- HEADER CUT HERE ------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
 
+<div ng-app="">
+ 
+<p>Input something in the input box:</p>
+<p>Name : <input type="text" ng-model="'2'" placeholder="Enter name here"></p>
+<h1>Hello  {{'2'}}</h1>
+
+</div>
+
+</body>
+</html>
 <script>
 
-
-  function LanguageLoad(url, id) {
-//var file = document.getElementById(id).innerHTML;
-var file = ids[id];
-//alert(file);
-	    if (urldes[id] != "none") {
-  window.location.href = "translations/"+language+"/"+url;
-  document.getElementById('demo').innerHTML = '<iframe height="200" width="200" src="http://log.ev3lessons.com/log.php?file='+file+'&lang='+language +'&ip=none"></iframe>';
-	    } else {
-  window.location.href = "translations/en-us/"+url;
-  document.getElementById('demo').innerHTML = '<iframe height="200" width="200" src="http://log.ev3lessons.com/log.php?file='+file+'&lang=en-us_site_'+language+'&ip=none"></iframe>';
-}
-
-  
-}
-	    
 var introText = ["none","none","none","none","none"];
 var pgintro = 'none';
 if (language == 'en-us') {
@@ -141,7 +139,7 @@ var urldes = [
 "none","none","none","none","none","none","none","none","none","none",
 //30 
 "none","none","none","none","none","none","none","none","none","none",
- //40 
+//40 
 "none","none","none","none","none","none","none","none","none","none",
 //Intermediate
 //50 
@@ -375,8 +373,14 @@ var urldes = [
 "none",
 "none",
 "none",
-//10 
-"none","none","none","none","none","none","none","none","none","none",
+//10
+"أمر التكرار (Loops)",
+"أمر الشرط (Switches)",
+"none",
+" (اتباع خط (برمجة اساسية",
+"موضوع الدرس: البرنامج الأساسي","موضوع الدرس: التحدي النهائي للمرحلة الأساسية",
+"كيفية التقاط وتحريك جسم ما",
+"none","none","none",
 //20 
 "none","none","none","none","none","none","none","none","none","none",
 //30 
@@ -386,7 +390,7 @@ var urldes = [
 //Intermediate
 //50 
 "none",
-"Moving with My Blocks",
+"none",
 //"Turning with My Blocks",
 "none",
 "none","none","none","none","none","none","none",
@@ -1193,27 +1197,77 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 
 </script>		
 <script>
-
-    var i = 1;
-    var ids = [0,0,0];
-      ids[1] = document.getElementById('one').innerHTML;
+  //save en_US lesson names before re-write
+var i = 1;
+var ids = [0,0,0];
+ids[1] = document.getElementById('one').innerHTML;
 while (i < 15) {
-	      i = i+1;
-     ids[i] = document.getElementById(String(i)).innerHTML;
-	   }
-	   i = 49;
+	   i = i+1;
+	   ids[i] = document.getElementById(String(i)).innerHTML;
+}
+i = 49;
 while (i < 61) {
-	      i = i+1;
-     ids[i] = document.getElementById(String(i)).innerHTML;
+	   i = i+1;
+	   ids[i] = document.getElementById(String(i)).innerHTML;
+}
+i = 99;
+while (i < 110) {
+	   i = i+1;
+	   ids[i] = document.getElementById(String(i)).innerHTML;
 	   }
-	   i = 99;
-	   while (i < 110) {
-	      i = i+1;
-     ids[i] = document.getElementById(String(i)).innerHTML;
-	   }
+
+
+
+//end saving en_US names
+//Replace lesson titles
+
+  var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+	 
+	   
+	   
+i = 1;
 if (urldes[1] != 'none'){	document.getElementById('one').innerHTML = urldes[1];}
 else if (language != "en-us") {document.getElementById('one').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[2] != 'none'){       document.getElementById('2').innerHTML = urldes[2];}
+while (i < 16) {
+	   i = i+1;
+	   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i]; $scope.LessonUseLang= language;}
+else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>'; $scope.LessonUseLang= 'en-us';}
+}
+i = 49;
+while (i < 61) {
+	   i = i+1;
+		   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i];}
+else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>';}
+}
+i = 99;
+while (i < 110) {
+	   i = i+1;
+	 	   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i];}
+else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>';}
+	   }
+	   
+if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
+if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
+if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
+if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
+if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
+if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
+if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
+if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
+if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
+if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
+if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
+	   });
+
+//end
+	   
+	   /*
+	   //end relpace lesson titles
+ 
+if (urldes[1] != 'none'){	document.getElementById('one').innerHTML = urldes[1]; $scope.LessonUseLang= language;}
+else if (language != "en-us") {document.getElementById('one').innerHTML += '<font color="red"> (English)<font>';}
+if (urldes[2] != 'none'){       document.getElementById('2').innerHTML = urldes[2]; $scope.LessonUseLang= 'en-us';}
 else if (language != "en-us") {document.getElementById('2').innerHTML += '<font color="red"> (English)<font>';}
 if (urldes[3] != 'none'){	document.getElementById('3').innerHTML = urldes[3];}
 else if (language != "en-us") {document.getElementById('3').innerHTML += '<font color="red"> (English)<font>';}
@@ -1240,9 +1294,9 @@ else if (language != "en-us") {document.getElementById('13').innerHTML += '<font
 if (urldes[14] != 'none'){	document.getElementById('14').innerHTML = urldes[14];}
 else if (language != "en-us") {document.getElementById('14').innerHTML += '<font color="red"> (English)<font>';}
 if (urldes[15] != 'none'){	document.getElementById('15').innerHTML = urldes[15];}
-							  else if (language != "en-us") {document.getElementById('16').innerHTML += '<font color="red"> (English)<font>';}
-							      if (urldes[16] != 'none'){	document.getElementById('16').innerHTML = urldes[16];}
-							      else if (language != "en-us") {document.getElementById('16').innerHTML += '<font color="red"> (English)<font>';}
+else if (language != "en-us") {document.getElementById('15').innerHTML += '<font color="red"> (English)<font>';}
+if (urldes[16] != 'none'){	document.getElementById('16').innerHTML = urldes[16];}
+else if (language != "en-us") {document.getElementById('16').innerHTML += '<font color="red"> (English)<font>';}
 								  
 if (urldes[50] != 'none'){	document.getElementById('50').innerHTML = urldes[50];}
 else if (language != "en-us") {document.getElementById('50').innerHTML += '<font color="red"> (English)<font>';}
@@ -1301,9 +1355,19 @@ if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
 if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
 if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
 if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
-if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
-if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
-																			  
+	   if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
+	   if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
+	   
+*/	   </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 <!-- FOOTER CUT HERE ------------------------------------------------->
     </body>
