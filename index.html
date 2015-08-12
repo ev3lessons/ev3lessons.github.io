@@ -172,6 +172,20 @@ window.onload = function() {
 //-->
 </script>
 <script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script>
+<script>
 
   if ((viewportwidth > 600) && (screen.width > 600)) {
       document.write('<table>');
@@ -185,7 +199,20 @@ window.onload = function() {
 	     <tr><td><i id='ad'><img  width="740" height="250"  src="images/slider-flash/ev3lessons.jpg"></i>
 </td><td >  <img src="images/ads/reserved.jpg" width="250" height="250">
 	     </td></tr><tr  >
-	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<img src="images/ads/reserved.jpg" width="250" height="250">
+	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"><a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
+																																																										<img  src="images/ads/damien.jpg" width="235" height="235" style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"></a></div>
 </td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="250" height="250">
 </td></tr><tr><td>	 <img src="images/ads/generic.jpg" width="250" height="250">
 </td></center></tr>
