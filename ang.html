@@ -11,9 +11,25 @@ Third lesson language: <input type="text" ng-model="three"><br><br>
 Full langs: {{one + ' ' + two + ' ' + three}}
 
 </div>
+<script>
+	     language = window.location.hash.substring(1);
+  function textFileToArray( filename )
+{
+    var reader = (window.XMLHttpRequest != null ) 
+               ? new XMLHttpRequest() 
+               : new ActiveXObject("Microsoft.XMLHTTP");
+    reader.open("GET", filename, false );
+    reader.send( );
+    return reader.responseText.split(/(\r\n|\n)/g); 
+  }
+  
+ document.write('<scr'+'ipt>var urldes =  textFileToArray("translations/'+language+'/lessons.txt");</scr'+'ipt>');
+</script>
 
 
 <script>
+
+  
 var a = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
 var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
 
@@ -31,8 +47,8 @@ function inWords (num) {
 
 
 
-var urldes = ['n/a','none','text1','text2'];
-	     language = window.location.hash.substring(1);
+//var urldes = ['n/a','none','text1','text2'];
+
 var i = 1;
 document.write('<scr'+'ipt>\
 var app = angular.module("myApp", []);\
