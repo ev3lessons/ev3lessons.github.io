@@ -1,0 +1,150 @@
+n/a
+Como usar Lições EV3
+Construindo uma Base do Robô e Anexos
+Introdução ao Brick e Software
+Movendo em Linha Reta
+Começando com Pseudocódigo
+Virada
+Blocos de vizualização
+Sensor de Toque
+Sensor de cor
+Repetindo Ações
+Switches
+Ultrassônico
+Seguidor de Linha Básico
+Sequenciador Básico
+Desafios Finais
+Levantar e Mover um Objeto
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+My Block com Entradas e Saídas
+My Block Move Distância
+My Block Girar Graus
+My Blocks Seguidor de Linha Colorida com Entradas - Mover Distância / Mover até encontrar o Preto
+Sensor Infravermelho
+Técnicas de Debugging (correção de erros na programação)
+Blocos de Movimento
+Segurança
+Sistema de Menu Intermediário
+Calibração do Sensor de Cores
+Variáveis
+Como usar Feixes Paralelos (Parallel Beams)
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+Sincronização de Vigas Paralelas
+Controle Proporcional
+Seguidor de Linha Proporcional
+Rampa de Aceleração da Velocidade
+Usandoo Sensor Gyro e Lidandocom a Instabilidade
+Curvas usando “Gyro”
+Enquadrando nas Linhas
+Detecção de Obstáculos
+Sistema de Menu
+Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
+ Matrizes
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none

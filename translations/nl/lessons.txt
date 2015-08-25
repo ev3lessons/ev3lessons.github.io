@@ -1,0 +1,150 @@
+n/a
+Hoe je EV3 lessen moet gebruiken
+Robot ontwerp
+Introductie Intelligente steen en software
+Rechtdoor rijden
+Pseudocode
+Draaien
+Tekst en grafieken weergeven
+Tastsensor
+Kleurensensor
+Herhalingen
+Schakelingen(keuzes)
+Ultrasone sensor
+Basis lijnvolger
+Basis opeenvolging
+Eindopdracht
+Een object verplaatsen
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+Mijn blokken met inputs/outputs
+Bewegen met mijn blokken
+Draaien met mijn blokken
+Kleuren lijnvolger / Mijn blokken
+Infrarood Sensor
+Debuggen
+Beweegblokken
+Betrouwbaarheid
+Menusysteem
+Kleurensensor kalibreren
+Variabelen
+Parallelle blokken
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+Parallelle Balken Synchronisatie
+Proportionele Besturing
+Lijnvolgers: van basis tot proportioneel
+none
+none
+none
+none
+none
+none
+none
+Programmeren met Reeksen
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none

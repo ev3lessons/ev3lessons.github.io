@@ -59,6 +59,18 @@ var nav = [
     "none", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
+
+if (language == 'fr') {
+var nav = [
+    "none", "Accueil", "none","none","none","none","none","none","none","none",//10
+    "Leçons", "none","none","none","none","none","none","none","none","none",//20
+    "Ressources", "Calcul de déplacement","Planificateur de parcours","Challenges","Toutes les ressources","Archives des ressources","none","none","none","none",//30
+    "Qui sommes-nous?", "Notre philosophie","Les contributeurs","Comment aider?","none","none","none","none","none","none",//40
+    "Forum", "none","none","none","none","none","none","none","none","none",//50
+    "Nous contacter", "none","none","none","none","none","none","none","none","none",//60
+]
+}
+
 document.write('\
                     <!-- START NAV -->\
                     <div id="nav" class="group">\

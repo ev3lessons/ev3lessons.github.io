@@ -77,7 +77,7 @@
         <script type='text/javascript' src='js/buttons.min.js'></script>
         <script type='text/javascript' src='js/layerslider.kreaturamedia.jquery-min.js'></script>
         <script type='text/javascript' src='js/jquery.quicksand.js'></script>
-
+<script src="js/angular.min.js"></script>
     </head>
     <body class="no_js responsive boxed-layout chrome ">
 
@@ -113,91 +113,14 @@
 
 <script>
 
-function LanguageLoad(url, id) {
-   var file = ids[id];
-   if (urldes[id] != "none") {
-      document.getElementById('demo').innerHTML = '<iframe height="200" width="200" src="http://log.ev3lessons.com/log.php?file='+file+'&lang='+language +'"></iframe>';
-      window.location.href = "translations/"+language+"/"+url;
-   } else {
-      document.getElementById('demo').innerHTML = '<iframe height="200" width="200" src="http://log.ev3lessons.com/log.php?file='+file+'&lang=en-us_site_'+language+'"></iframe>';
-      window.location.href = "translations/en-us/"+url;
-   }
-}
-	    
 var introText = ["none","none","none","none","none"];
 var pgintro = 'none';
 if (language == 'en-us') {
-var urldes = [
-//Beginner 
-"none","none","none","none","none","none","none","none","none","none",
-//10 
-"none","none","none","none","none","none","none","none","none","none",
-//20 
-"none","none","none","none","none","none","none","none","none","none",
-//30 
-"none","none","none","none","none","none","none","none","none","none",
-//40 
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-//50 
-"none","none","none","none","none","none","none","none","none","none",
-//60 
-"none","none","none","none","none","none","none","none","none","none",
-//70 
-"none","none","none","none","none","none","none","none","none","none",
-//80 
-"none","none","none","none","none","none","none","none","none","none",
-//90 
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-//100 
-"none","none","none","none","none","none","none","none","none","none",
-//110 
-"none","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none"];
 var lev = ["Beginner","Intermediate","Advanced","none","none"];
 }
 
 if (language == 'el') {
 pgintro = "Μαθήματα προγραμματισμού";
-var urldes = [
-//Beginner 
-"none","none","none","none","none","none","none","none","none","none",
-//10 
-"none","none","none","none","none","none","none","none","none","none",
-//20 
-"none","none","none","none","none","none","none","none","none","none",
-//30 
-"none","none","none","none","none","none","none","none","none","none",
-//40 
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-//50 
-"My Blocks με εισόδους/εξόδους","Προχώρα απόσταση","none","Ακολουθία γραμμής με τη χρήση MyBlocks","none","none","none","none","none","none",
-//60 
-"none","none","none","none","none","none","none","none","none","none",
-//70 
-"none","none","none","none","none","none","none","none","none","none",
-//80 
-"none","none","none","none","none","none","none","none","none","none",
-//90 
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-//100 
-"none","none","none","none","none","none","none","none","none","none",
-//110 
-"none","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none"];
 var lev = ["Αρχάριο επίπεδο","Μεσαίο επίπεδο","Ανώτερο επίπεδο","Άλλα","Camp"];
 introText[0]="Αυτά τα μαθήματα είναι για μαθητές νέους στα EV3. Αυτά τα μαθήματα έχουν σχεδιαστεί να ολοκληρωθούν με την σειρά.";
 introText[1]="Αυτά τα μαθήματα είναι για μαθητές οι οποίοι κατανοούν την βασική χρήση των κινήσεων και των αισθητήρων"; 
@@ -207,149 +130,12 @@ introText[4]="Αυτά τα μαθήματα είναι συνδυασμός μ�
 
 
 }
-
 if (language == "es") {
-var urldes = [
-//Beginner 
-"none",
-"Como usar las Lecciones para el EV3",
-"none",
-"Conceptos Básicos de EV3 Introducción al Bloque EV3 y su Software",
-"none",
-"none",
-"none",
-"Bloque Pantalla",
-"none",
-"Sensor de Colores",
-//10
-"none",
-"Interruptores",
-"none",
-"Seguidor Básicode Líneas",
-"Secuenciador Básico",
-"Desafios Finales",
-"none","none","none","none",
-//20
-"none","none","none","none","none","none","none","none","none","none",
-//30
-"none","none","none","none","none","none","none","none","none","none",
-//40
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-//50
-//"Mis bloques con entradas/salidas",
-"none",
-"Moviéndose con mis bloques",
-"Girando con mis bloques",
-"Seguidor de Líneas con My Blocks",
-"none",
-"Depuración",
-"Bloques de Movimiento",
-//"Confiabilidad",
-//"Sistema Intermedio de Menú",
-"none",
-"none",
-"Calibración de Sensor de Colores",
-//60
-"none",
-"Como Usar Vigas Paralelas",
-"none","none","none","none","none","none","none",
-//70
-"none","none","none","none","none","none","none","none","none","none",
-//80
-"none","none","none","none","none","none","none","none","none","none",
-//90
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-//100
-"none",
-"Sincronización de vigas en paralelo",
-"Control Proporcional",
-"none","none","none","none","none","none","none","none",
-//110
-"none","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none"];
-
 var lev = ["Principiante","Intermedio","Avanzado","none","none"];
 }
 
 if (language == "nl") {
-pgintro = "Programmeer lessen ";
-var urldes = [
-//Beginner
-"none",
-"Hoe je EV3 lessen moet gebruiken",
-"Robot ontwerp",
-"Introductie Intelligente steen en software",
-"Rechtdoor rijden",
-"Pseudocode",
-"Draaien",
-"Tekst en grafieken weergeven",
-"Tastsensor",
-"Kleurensensor",
-//10
-"Herhalingen",
-"Schakelingen(keuzes)",
-"Ultrasone sensor",
-"Basis lijnvolger",
-"Basis opeenvolging",
-"Eindopdracht",
-"Een object verplaatsen","none","none","none",
-//20
-"none","none","none","none","none","none","none","none","none","none",
-//30
-"none","none","none","none","none","none","none","none","none","none",
-//40
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-//50
-"Mijn blokken met inputs/outputs",
-"Bewegen met mijn blokken",
-"Draaien met mijn blokken",
-"Kleuren lijnvolger / Mijn blokken",
-"Infrarood Sensor",
-"Debuggen",
-"Beweegblokken",
-"Betrouwbaarheid",
-"Menusysteem",
-"Kleurensensor kalibreren",
-//60 
-"Variabelen",
-"Parallelle blokken",
-"none","none","none","none","none","none","none","none",
-//70
-"none","none","none","none","none","none","none","none","none","none",
-//80
-"none","none","none","none","none","none","none","none","none","none",
-//90
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-//100
-"Parallelle Balken Synchronisatie","Proportionele Besturing","none","none","none","none","none","none","none","none",
-//"Synchronisatie Parallelle Balken",
-//"Synchronisatie Parallelle Balken",
-//"Proportionele Controle",
-//"Proportionele Lijnvolger",
-//"none",
-//"Gyrosensor",
-//"Gyrosensor bochten",
-//"none",
-//"Blokkeer Detectie",
-//"none",
-//"none",
-//110
-"Programmeren met Reeksen","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none"];
+pgintro = "Programmeer lessen";
 introText[0]="Deze lessen zijn voor leerlingen die nog niet bekend zijn met de EV3. De lessen zijn ontworpen om in volgorde te leren.";
 introText[1]="Deze lessen zijn voor leerlingen die de de basis bewegingen en het gebruik van sensoren begrijpen. "; 
 introText[2]="Deze lessen zijn voor leerlingen die bekend zijn met mijn blokken en lijnen volgen";
@@ -358,130 +144,21 @@ var lev = ["Beginner","Gevorderden","Geavanceerde","none","none"];
 }
 
 if (language == "ar") {
-var urldes = [
-//Beginner
-"none",
-"none",
-"none",
-"مقدمة الى اللبنة الذكية ومحيط البرمجة",
-"السير بشكل مستقيم",
-"none",
-"الدوران",
-"none",
-"none",
-"none",
-//10
-"أمر التكرار (Loops)",
-"أمر الشرط (Switches)",
-"none",
-" (اتباع خط (برمجة اساسية",
-"موضوع الدرس: البرنامج الأساسي","موضوع الدرس: التحدي النهائي للمرحلة الأساسية",
-"كيفية التقاط وتحريك جسم ما",
-"none","none","none",
-//20 
-"none","none","none","none","none","none","none","none","none","none",
-//30 
-"none","none","none","none","none","none","none","none","none","none",
-//40 
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-//50 
-"none",
-"none",
-//"Turning with My Blocks",
-"none",
-"none","none","none","none","none","none","none",
-//60 
-"none","none","none","none","none","none","none","none","none","none",
-//70 
-"none","none","none","none","none","none","none","none","none","none",
-//80 
-"none","none","none","none","none","none","none","none","none","none",
-//90 
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-//100 
-"none","none","none","none","none","none","none","none","none","none",
-//110 
-"none","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none",];
 }
 
 if (language == "br") {
-// document.write('<base href="translations/br/" >');
-var urldes = [
-//Beginner 
-"none",
-"Como usar Lições EV3",
-"Construindo uma Base do Robô e Anexos",
-"Introdução ao Brick e Software",
-"Movendo em Linha Reta",
-"Começando com Pseudocódigo",
-"Virada",
-"Blocos de vizualização",
-"Sensor de Toque",
-"Sensor de cor",
-//10 
-"Repetindo Ações",
-"Switches",
-"Ultrassônico",
-"Seguidor de Linha Básico",
-"Sequenciador Básico",
-"Desafios Finais",
-"Levantar e Mover um Objeto",
-"none","none","none",
-//20 
-"none","none","none","none","none","none","none","none","none","none",
-//30 
-"none","none","none","none","none","none","none","none","none","none",
-//40 
-"none","none","none","none","none","none","none","none","none","none",
-//Intermediate
-"My Block com Entradas e Saídas",
-"My Block Move Distância",
-"My Block Girar Graus",
-"My Blocks Seguidor de Linha Colorida com Entradas - Mover Distância / Mover até encontrar o Preto",
-"Sensor Infravermelho",
-"Técnicas de Debugging (correção de erros na programação)",
-"Blocos de Movimento",
-"Segurança",
-"Sistema de Menu Intermediário",
-"Calibração do Sensor de Cores",
-//60
-"Variáveis",
-"Como usar Feixes Paralelos (Parallel Beams)",
-"none","none","none","none","none","none","none","none",
-//70 
-"none","none","none","none","none","none","none","none","none","none",
-//80
-"none","none","none","none","none","none","none","none","none","none",
-//90
-"none","none","none","none","none","none","none","none","none","none",
-//Advanced
-"Sincronização de Vigas Paralelas",
-"Controle Proporcional",
-"Seguidor de Linha Proporcional",
-"Rampa de Aceleração da Velocidade",
-"Usandoo Sensor Gyro e Lidandocom a Instabilidade",
-"Curvas usando “Gyro”",
-"Enquadrando nas Linhas",
-"Detecção de Obstáculos",
-"Sistema de Menu",
-"Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)",
-//110
-" Matrizes","none","none","none","none","none","none","none","none","none",
-//120 
-"none","none","none","none","none","none","none","none","none","none",
-//130 
-"none","none","none","none","none","none","none","none","none","none",
-//140 
-"none","none","none","none","none","none","none","none","none","none"];
 var lev = ["Básicas","Intermediário","Avançada","none","none"];
+}
+
+
+if (language == 'fr') {
+pgintro = "none";
+var lev = ["Débutant","Intermédiaire","Avancé","none","none"];
+introText[0]="Ces leçons sont destinées aux nouveaux venus dans l'univers EV3. Elles offrent une progression logique, suivez les dans l'ordre!";
+introText[1]="Ces leçons sont destinées à ceux d'entre vous qui ont déjà une connaissance des déplacements de base, et de l'utilisation des capteurs."; 
+introText[2]="Ces leçons sont destinées aux plus avancés d'entre vous, maîtrisant les blocs personnalisés et le suivi de ligne.";
+introText[3]="Ces leçons sont conçues par des équipes FLL et des passionnés d'EV3. Si vous voulez contribuer, consultez la rubrique Comment aider?";
+introText[4]="Ces documents combinent plusieurs leçons dans un cursus idéal pour un camp, un week-end thématique...";
 }
 </script>
 
@@ -499,6 +176,7 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 	    <div class="inner group">
 	    <div class="group">
 
+<div ng-app="myApp" ng-controller="myCtrl">
 	    <div class="tabs-container">
 	      <ul class="tabs">
 		<li><h4><a id="beg" href="#tab1" title="Beginner">Beginner</a></h4></li>
@@ -507,7 +185,7 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<li><h4><a id="other" href="#tab4" title="Contributed Lessons">Other</a></h4></li>
 		<li><h4><a id="camp" href="#tab5" title="Camp Curriculum">Camp</a></h4></li>
 	      </ul>
-	    <div class="border-box group">
+	      <div class="border-box group">
 
 	      <div id="tab1" class="panel group">
 
@@ -516,12 +194,12 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		order. </p><br><br>
 
 	      <div class="toggle">
-		  <p class="tab-index tab-closed"><a id="one" href="#" title="Close">How to use these lessons</a></p>
+		  <p class="tab-index tab-closed"><a id="1" href="#" title="Close">How to use these lessons</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/LessonUse.pptx", 1)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/LessonUse.pdf", 1)'>PDF</a></li>
+		    <a href='translations/{{one}}/beginner/LessonUse.pptx'>PPTX</a>,
+		    <a href='translations/{{one}}/beginner/LessonUse.pdf'>PDF</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -533,8 +211,8 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		  <ul>
 		    <li><a href="robots.html">Robot Builds</a></li>
 		    <li>Slides:
-		      <a onclick='LanguageLoad("robots/DroidbotSlides.pptx", 2)'>PPTX</a>,
-		      <a onclick='LanguageLoad("robots/DroidbotSlides.pdf", 2)'>PDF</a></li>
+		      <a href='translations/{{two}}/robots/DroidbotSlides.pptx'>PPTX</a>,
+		      <a href='translations/{{two}}/robots/DroidbotSlides.pdf'>PDF</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -545,8 +223,8 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		      <a onclick='LanguageLoad("beginner/Introduction.pptx", 3)'>PPTX</a>,
-		      <a onclick='LanguageLoad("beginner/Introduction.pdf", 3)'>PDF</a></li>
+		      <a href='translations/{{three}}/beginner/Introduction.pptx'>PPTX</a>,
+		      <a href='translations/{{three}}/beginner/Introduction.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Introduction.pptx">PPTX</a> (English)</li>
 		  </ul>
 		</div>
@@ -558,11 +236,11 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		       <a onclick='LanguageLoad("beginner/MovingStraight.pptx",4)'>PPTX</a>,
-		       <a onclick='LanguageLoad("beginner/MovingStraight.pdf",4)'>PDF</a></li>
+		       <a href='translations/{{four}}/beginner/MovingStraight.pptx'>PPTX</a>,
+		       <a href='translations/{{four}}/beginner/MovingStraight.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/MovingStraight.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/MovingStraight.ev3",4)'>EV3 Code</a></li>
-		    <li><a onclick='LanguageLoad("beginner/MovingStraight.docx",4)'>Worksheet</a></li>
+		    <li><a href='translations/{{four}}/beginner/MovingStraight.ev3'>EV3 Code</a></li>
+		    <li><a href='translations/{{four}}/beginner/MovingStraight.docx'>Worksheet</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -573,9 +251,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		      <a onclick='LanguageLoad("beginner/Pseudocode.pptx",5)'>PPTX</a>,
-		      <a onclick='LanguageLoad("beginner/Pseudocode.pdf",5)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("beginner/PBJworksheet.pdf",5)'>Worksheet</a></li>
+		      <a href='translations/{{five}}/Pseudocode.pptx'>PPTX</a>,
+		      <a href='translations/{{five}}/Pseudocode.pdf'>PDF</a></li>
+		    <li><a href='translation/{{five}}/Pseudocode.docx'>Worksheet</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -586,11 +264,11 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		       <a onclick='LanguageLoad("beginner/Turning.pptx",6)'>PPTX</a>,
-		       <a onclick='LanguageLoad("beginner/Turning.pdf",6)'>PDF</a></li>
+		       <a href='translations/{{six}}/beginner/Turning.pptx'>PPTX</a>,
+		       <a href='translations/{{six}}/beginner/Turning.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Turning.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Turning.ev3",6)'>EV3 Code</a></li>
-		    <li><a onclick='LanguageLoad("beginner/Turning.docx",6)'>Worksheet</a></li>
+		    <li><a href='translations/{{six}}/beginner/Turning.ev3'>EV3 Code</a></li>
+		    <li><a href='translations/{{six}}/beginner/Turning.docx'>Worksheet</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -601,25 +279,24 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/Display.pptx",7)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/Display.pdf",7)'>PDF</a></li>
+		    <a href='translations/{{seven}}/beginner/Display.pptx'>PPTX</a>,
+		    <a href='translations/{{seven}}/beginner/Display.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Display.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Display.ev3",7)'>EV3 Code</a></li>
+		    <li><a href='translations/{{seven}}/beginner/Display.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
 		
 		<br>
 		<div class="toggle">
-		  <p class="tab-index
-		  tab-closed"><a id="8" href="#" title="Close">Touch Sensor</a></p>
+		  <p class="tab-index tab-closed"><a id="8" href="#" title="Close">Touch Sensor</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		      <a onclick='LanguageLoad("beginner/Touch.pptx",8)'>PPTX</a>,
-		      <a onclick='LanguageLoad("beginner/Touch.pdf",8)'>PDF</a></li>
+		      <a href='translations/{{eight}}/beginner/Touch.pptx'>PPTX</a>,
+		      <a href='translations/{{eight}}/beginner/Touch.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Touch.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Touch.ev3",8)'>EV3 Code</a></li>
+		    <li><a href='translations/{{eight}}/beginner/Touch.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -630,10 +307,10 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/Color.pptx",9)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/Color.pdf",9)'>PDF</a></li>
+		    <a href='translations/{{nine}}/beginner/Color.pptx'>PPTX</a>,
+		    <a href='translations/{{nine}}/beginner/Color.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Color.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Color.ev3",9)'>EV3 Code</a></li>
+		    <li><a href='translations/{{nine}}/beginner/Color.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -644,10 +321,10 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/Loops.pptx",10)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/Loops.pdf",10)'>PDF</a></li>
+		    <a href='translations/{{onezero}}/beginner/Loops.pptx'>PPTX</a>,
+		    <a href='translations/{{onezero}}/beginner/Loops.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Loops.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Loops.ev3",10)'>EV3 Code</a></li>
+		    <li><a href='translations/{{onezero}}/beginner/Loops.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -658,10 +335,10 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/Switches.pptx",11)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/Switches.pdf",11)'>PDF</a></li>
+		    <a href='translations/{{oneone}}/beginner/Switches.pptx'>PPTX</a>,
+		    <a href='translations/{{oneone}}/beginner/Switches.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Switches.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Switches.ev3",11)'>EV3 Code</a></li>
+		    <li><a href='translations/{{oneone}}/beginner/Switches.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -672,10 +349,10 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/Ultrasonic.pptx",12)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/Ultrasonic.pdf",12)'>PDF</a></li>
+		    <a href='translations/{{onetwo}}/beginner/Ultrasonic.pptx'>PPTX</a>,
+		    <a href='translations/{{onetwo}}/beginner/Ultrasonic.pdf'>PDF</a></li>
 		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Ultrasonic.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/Ultrasonic.ev3",12)'>EV3 Code</a></li>
+		    <li><a href='translations/{{onetwo}}/beginner/Ultrasonic.ev3'>EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -686,11 +363,11 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/BasicLineFollower.pptx",13)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/BasicLineFollower.pdf",13)'>PDF</a></li>
+		    <a href="translations/{{onethree}}/beginner/BasicLineFollower.pptx">PPTX</a>,
+		    <a href="translations/{{onethree}}/beginner/BasicLineFollower.pdf">PDF</a></li>
 		    <li>EV3 Tablet App Slides:<a href="translations/en-us/tablet-beginner/BasicLineFollower.pptx">PPTX</a> (English)</li>
-		    <li><a onclick='LanguageLoad("beginner/BasicLineFollower.ev3",13)'>EV3 Code</a></li>
-		    <li> <a onclick='LanguageLoad("beginner/BasicLineFollower.docx",13)'>Worksheet</a></li>
+		    <li><a href="translations/{{onethree}}/beginner/BasicLineFollower.ev3">EV3 Code</a></li>
+		    <li> <a href="translations/{{onethree}}/beginner/BasicLineFollower.docx">Worksheet</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -700,9 +377,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/MoveObject.pptx",16)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/MoveObject.pdf",16)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("beginner/MoveObject.ev3",16)'>EV3 Code</a></li>
+		    <a href="translations/{{onesix}}/beginner/MoveObject.pptx">PPTX</a>,
+		    <a href="translations/{{onesix}}/beginner/MoveObject.pdf">PDF</a></li>
+		    <li><a href="translations/{{onesix}}/beginner/MoveObject.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -712,9 +389,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/BasicSequencer.pptx",14)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/BasicSequencer.pdf",14)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("beginner/BasicSequencer.ev3",14)'>EV3 Code</a></li>
+		    <a href="translations/{{onefour}}/beginner/BasicSequencer.pptx">PPTX</a>,
+		    <a href="translations/{{onefour}}/beginner/BasicSequencer.pdf">PDF</a></li>
+		    <li><a href="translations/{{onefour}}/beginner/BasicSequencer.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -725,9 +402,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("beginner/FinalChallenge.pptx",15)'>PPTX</a>,
-		    <a onclick='LanguageLoad("beginner/FinalChallenge.pdf",15)'>PDF</a></li>
-		    <li> <a href="translations/en-us/beginner/FinalAssessment.docx",15)'>Assessment</a></li>
+		    <a href="translations/{{onefive}}/beginner/FinalChallenge.pptx">PPTX</a>,
+		    <a href="translations/{{onefive}}/beginner/FinalChallenge.pdf">PDF</a></li>
+		    <li> <a href="translations/{{onefive}}/beginner/FinalAssessment.docx">Assessment</a></li>
 		    <li> <a href="challenges.html">More Challenges</a></li>
 
 
@@ -748,8 +425,8 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/MyBlocks.pptx",50)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/MyBlocks.pdf",50)'>PDF</a></li>
+		    <a href="translations/{{fivezero}}/intermediate/MyBlocks.pptx">PPTX</a>,
+		    <a href="translations/{{fivezero}}/intermediate/MyBlocks.pdf">PDF</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -760,12 +437,12 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/MoveInches.pptx",51)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/MoveInches.pdf",51)'>PDF</a></li>
+		    <a href="translations/{{fiveone}}/intermediate/MoveInches.pptx">PPTX</a>,
+		    <a href="translations/{{fiveone}}/intermediate/MoveInches.pdf">PDF</a></li>
 		    <li>Moving in Inches/CM Resources:
-		    <a onclick='LanguageLoad("intermediate/DPIorDPCWorksheet.pdf",51)'>Worksheet</a> and
+		    <a href="translations/{{fiveone}}/intermediate/DPIorDPCWorksheet.pdf">Worksheet</a> and
 		    <a href="resources/wheelconverter">Online Converter</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/MoveInches.ev3")'>EV3 Code</a></li>
+		    <li><a href="translations/{{fiveone}}/intermediate/MoveInches.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -776,9 +453,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/TurnDegrees.pptx",52)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/TurnDegrees.pdf",52)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/TurnDegrees.ev3",52)'>EV3 Code</a></li>
+		    <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pptx">PPTX</a>,
+		    <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivetwo}}/intermediate/TurnDegrees.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -790,16 +467,16 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		  <h4>Color Follower for Distance:</h4>
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/ColorFollowerDistance.pptx",53)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/ColorFollowerDistance.pdf",53)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/ColorFollowerDistance.ev3",53)'>EV3 Code</a></li>
+		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pptx">PPTX</a>,
+		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.ev3">EV3 Code</a></li>
 		  </ul>
 		  <h4>Color Follower Stops Based on Color Detection:</h4>
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/ColorFollowerSensor.pptx",53)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/ColorFollowerSensor.pdf",53)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/ColorFollowerSensor.ev3",53)'>EV3 Code</a></li>
+		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pptx">PPTX</a>,
+		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -810,9 +487,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		  
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/Infrared.pptx",54)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/Infrared.pdf",54)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/Infrared.ev3",54)'>EV3 Code</a></li>
+		    <a href="translations/{{fivefour}}/intermediate/Infrared.pptx">PPTX</a>,
+		    <a href="translations/{{fivefour}}/intermediate/Infrared.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivefour}}/intermediate/Infrared.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -822,8 +499,8 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/Debug.pptx",55)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/Debug.pdf",55)'>PDF</a></li>
+		    <a href="translations/{{fivefive}}/intermediate/Debug.pptx">PPTX</a>,
+		    <a href="translations/{{fivefive}}/intermediate/Debug.pdf">PDF</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -834,9 +511,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/MovingBlocks.pptx",56)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/MovingBlocks.pdf",56)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/MovingBlocks.ev3",56)'>EV3 Code</a></li>
+		    <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pptx">PPTX</a>,
+		    <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivesix}}/intermediate/MovingBlocks.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -847,9 +524,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/Reliability.pptx",57)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/Reliability.pdf",57)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/Reliability.ev3",57)'>EV3 Code</a></li>
+		    <a href="translations/{{fiveseven}}/intermediate/Reliability.pptx">PPTX</a>,
+		    <a href="translations/{{fiveseven}}/intermediate/Reliability.pdf">PDF</a></li>
+		    <li><a href="translations/{{fiveseven}}/intermediate/Reliability.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -860,9 +537,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/IntermediateMenu.pptx",58)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/IntermediateMenu.pdf",58)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/IntermediateMenu.ev3",58)'>EV3 Code</a></li>
+		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pptx">PPTX</a>,
+		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pdf">PDF</a></li>
+		    <li><a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -873,9 +550,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/Calibrate.pptx",59)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/Calibrate.pdf",59)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/Calibrate.ev3",59)'>EV3 Code</a></li>
+		    <a href="translations/{{fivenine}}/intermediate/Calibrate.pptx">PPTX</a>,
+		    <a href="translations/{{fivenine}}/intermediate/Calibrate.pdf">PDF</a></li>
+		    <li><a href="translations/{{fivenine}}/intermediate/Calibrate.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>					
@@ -886,9 +563,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/Variables.pptx",60)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/Variables.pdf",60)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/Variables.ev3",60)'>EV3 Code</a></li>
+		    <a href="translations/{{sixzero}}/intermediate/Variables.pptx">PPTX</a>,
+		    <a href="translations/{{sixzero}}/intermediate/Variables.pdf">PDF</a></li>
+		    <li><a href="translations/{{sixzero}}/intermediate/Variables.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -899,9 +576,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("intermediate/ParallelBeams.pptx",61)'>PPTX</a>,
-		    <a onclick='LanguageLoad("intermediate/ParallelBeams.pdf",61)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("intermediate/ParallelBeams.ev3",61)'>EV3 Code</a></li>
+		    <a href="translations/{{sixone}}/intermediate/ParallelBeams.pptx">PPTX</a>,
+		    <a href="translations/{{sixone}}/intermediate/ParallelBeams.pdf">PDF</a></li>
+		    <li><a href="translations/{{sixone}}/intermediate/ParallelBeams.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -919,9 +596,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/SyncBeams.pptx",100)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/SyncBeams.pdf",100)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/SyncBeams.ev3",100)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerozero}}/advanced/SyncBeams.pptx">PPTX</a>,
+		    <a href="translations/{{onezerozero}}/advanced/SyncBeams.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerozero}}/advanced/SyncBeams.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -932,9 +609,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/Arrays.pptx",110)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/Arrays.pdf",110)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/Arrays.ev3",110)'>EV3 Code</a></li>
+		    <a href="translations/{{oneonezero}}/advanced/Arrays.pptx">PPTX</a>,
+		    <a href="translations/{{oneonezero}}/advanced/Arrays.pdf">PDF</a></li>
+		    <li><a href="translations/{{oneonezero}}/advanced/Arrays.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>		
 		</div>
@@ -945,9 +622,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/ProportionalControl.pptx",101)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/ProportionalControl.pdf",101)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/ProportionalControl.ev3",101)'>EV3 Code</a></li>
+		    <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pptx">PPTX</a>,
+		    <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezeroone}}/advanced/ProportionalControl.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -959,9 +636,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/LineFollower.pptx",102)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/LineFollower.pdf",102)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/LineFollower.ev3",102)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerotwo}}/advanced/LineFollower.pptx">PPTX</a>,
+		    <a href="translations/{{onezerotwo}}/advanced/LineFollower.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerotwo}}/advanced/LineFollower.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div><br>
@@ -971,9 +648,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/RampUp.pptx",103)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/RampUp.pdf",103)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/RampUp.ev3",103)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerothree}}/advanced/RampUp.pptx">PPTX</a>,
+		    <a href="translations/{{onezerothree}}/advanced/RampUp.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerothree}}/advanced/RampUp.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div><br>
@@ -984,9 +661,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/Gyro.pptx",104)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/Gyro.pdf",104)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/Gyro.ev3",104)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerofour}}/advanced/Gyro.pptx">PPTX</a>,
+		    <a href="translations/{{onezerofour}}/advanced/Gyro.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerofour}}/advanced/Gyro.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -998,9 +675,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/GyroTurn.pptx",105)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/GyroTurn.pdf",105)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/GyroTurn.ev3",105)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerofive}}/advanced/GyroTurn.pptx">PPTX</a>,
+		    <a href="translations/{{onezerofive}}/advanced/GyroTurn.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerofive}}/advanced/GyroTurn.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -1013,9 +690,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/GyroWallFollow.pptx",109)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/GyroWallFollow.pdf",109)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/GyroWallFollow.ev3",109)'>EV3 Code</a></li>
+		    <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pptx">PPTX</a>,
+		    <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezeronine}}/advanced/GyroWallFollow.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -1026,9 +703,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/Align.pptx",106)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/Align.pdf",106)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/Align.ev3",106)'>EV3 Code</a></li>
+		    <a href="translations/{{onezerosix}}/advanced/Align.pptx">PPTX</a>,
+		    <a href="translations/{{onezerosix}}/advanced/Align.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezerosix}}/advanced/Align.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div>
@@ -1039,9 +716,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/StallDetection.pptx",107)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/StallDetection.pdf",107)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/StallDetection.ev3",107)'>EV3 Code</a></li>
+		    <a href="translations/{{onezeroseven}}/advanced/StallDetection.pptx">PPTX</a>,
+		    <a href="translations/{{onezeroseven}}/advanced/StallDetection.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezeroseven}}/advanced/StallDetection.ev3">EV3 Code</a></li>
 		    <li>By Hoosier Girlz and Droids Robotics</li>
 		  </ul>
 		</div>
@@ -1053,9 +730,9 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
-		    <a onclick='LanguageLoad("advanced/MenuSystem.pptx",108)'>PPTX</a>,
-		    <a onclick='LanguageLoad("advanced/MenuSystem.pdf",108)'>PDF</a></li>
-		    <li><a onclick='LanguageLoad("advanced/MenuSystem.ev3",108)'>EV3 Code</a></li>
+		    <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pptx">PPTX</a>,
+		    <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pdf">PDF</a></li>
+		    <li><a href="translations/{{onezeroeight}}/advanced/MenuSystem.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
 		</div><br>
@@ -1101,7 +778,7 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 					
 		<br>
 		<div class="toggle">
-		  <p class="tab-index tab-closed"><a href="#" title="Close")'>NXT Light Sensors in EV3</a></p>
+		  <p class="tab-index tab-closed"><a href="#" title="Close">NXT Light Sensors in EV3</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li>Slides:
@@ -1141,7 +818,7 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 		</div>
 
 	      </div>
-
+</div>
 	      
 		
 	      </div>
@@ -1193,7 +870,124 @@ var lev = ["Básicas","Intermediário","Avançada","none","none"];
 	})();
 
 </script>		
+
+
+
 <script>
+language = window.location.hash.substring(1);
+function textFileToArray(filename)
+{
+    var reader = (window.XMLHttpRequest != null ) 
+               ? new XMLHttpRequest() 
+               : new ActiveXObject("Microsoft.XMLHTTP");
+    reader.open("GET", filename, false );
+    reader.send();
+    return reader.responseText.split('\n'); //.split(/(\r\n|\n)/g); 
+}
+  
+document.write('<scr'+'ipt>var urldes = textFileToArray("translations/'+language+'/lessons.txt");</scr'+'ipt>');
+</script>
+
+
+<script>
+  
+//var a = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+//var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+var a = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+
+
+function inWords (num) {
+    if ((num = num.toString()).length > 9) return 'overflow';
+//    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+    n = ('000000' + num).substr(-6).match(/^(\d{3})(\d{1})(\d{2})$/);
+    if (!n) return; var str = '';
+//    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+//    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+//    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+//    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+//    str += (n[5] != 0) ? ((str != '') ? 'and' : '') + (a[Number(n[5])] || b[n[5][0]] + '' + a[n[5][1]]) + '' : '';
+    str += (n[1] != 0) ? (a[Number(n[1])] || a[n[1][0]] + '' + a[n[1][1]] + '' + a[n[1][2]]) + '' : '';
+    str += (n[2] != 0) ? (a[Number(n[2])]) + '' : '';
+    str += ((n[3] > 9) || (str != '')) ? (a[n[3][0]] + '' + a[n[3][1]]) : (a[Number(n[3])])
+    return str;
+}
+
+
+
+
+var i = 1;
+//document.write(inWords(10));
+document.write('<scr'+'ipt>\
+var app = angular.module("myApp", []);\
+    app.controller("myCtrl", function($scope) {');   
+    while (i < 17) {
+	       if (urldes[i] != "none") {
+	         document.getElementById(String(i)).innerHTML = urldes[i];
+	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
+	       } else {
+	       document.write('$scope.'+inWords(i)+' = "en-us";');
+	       if (language != 'en-us'){
+			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+			      }
+	       }
+	       i = i + 1;
+	       }
+	       i = 50;
+	           while (i < 62) {
+	       if (urldes[i] != "none") {
+	         document.getElementById(String(i)).innerHTML = urldes[i];
+	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
+	       } else {
+	       document.write('$scope.'+inWords(i)+' = "en-us";');
+			      if (language != 'en-us'){
+			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+			      }
+	       }
+	       i = i + 1;
+			      }
+
+
+			        i = 100;
+	           while (i < 111) {
+	       if (urldes[i] != "none") {
+	         document.getElementById(String(i)).innerHTML = urldes[i];
+	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
+	       } else {
+	       document.write('$scope.'+inWords(i)+' = "en-us";');
+	       if (language != 'en-us'){
+			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+			      }
+	       }
+	       i = i + 1;
+			      }
+
+			      
+    document.write('});\
+      </scr'+'ipt>');
+
+
+
+if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
+if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
+if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
+if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
+if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
+if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
+if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
+if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
+if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
+if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
+if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
+</script>
+
+
+
+
+
+<script>
+/*
+  
   //save en_US lesson names before re-write
 var i = 1;
 var ids = [0,0,0];
@@ -1241,19 +1035,9 @@ else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '
 	   }
 	   
 
-if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
-if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
-if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
-if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
-if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
-if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
-if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
-if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
-if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
-if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
-if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
-	   //end relpace lesson titles
 
+	   //end relpace lesson titles
+*/
 	   
 /*if (urldes[1] != 'none'){	document.getElementById('one').innerHTML = urldes[1];}
 else if (language != "en-us") {document.getElementById('one').innerHTML += '<font color="red"> (English)<font>';}
