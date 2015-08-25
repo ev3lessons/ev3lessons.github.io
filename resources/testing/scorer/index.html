@@ -146,7 +146,7 @@ input[type=submit] { width: 100px; }
   background-image: linear-gradient(to bottom, #e0dd94, #c4bb61);
       }
 </style>
-<script language="javascript" type="text/javascript">
+<!--<script language="javascript" type="text/javascript">
  
             function fnDateChange() 
             {
@@ -168,7 +168,7 @@ input[type=submit] { width: 100px; }
  
  
     </script>
-<script>
+--><script>
     var points = 0;
     var mission1 = 0;
     var mission2 = 0;
@@ -181,12 +181,19 @@ input[type=submit] { width: 100px; }
     var mission9 = 0;
     var mission10 = 0;
     var mission11 = 0;
-
-function select(id) {
-var sel = document.forms['form'].elements['mySelect'];
-alert(sel);
+    var mission12 = 0
+    function dropdowncheck(ppi, id, id2) {
+                     var selectedDate = document.getElementById(id2);
+               //  alert(selectedDate.toString());
+               //  alert("Index = " + selectedDate.selectedIndex);
+                 var oStartDT = selectedDate.options[selectedDate.selectedIndex].value;
+            var index = selectedDate.selectedIndex;
+	    //alert(index);
+calc(ppi*index, id);
     }
-function calc(points, id) {
+    
+    
+function calc(points, id) {  
 if (id == 1) {
 mission1 = points;
 } else if (id == 2) {
@@ -209,6 +216,8 @@ mission9 = points;
 mission10 = points;
 } else if (id == 11) {
 mission11 = points;
+} else if (id == 12) {
+mission12 = points;
 }
     document.getElementById('1').innerHTML = mission1;
     document.getElementById('2').innerHTML = mission2;
@@ -221,6 +230,7 @@ mission11 = points;
     document.getElementById('9').innerHTML = mission9;
     document.getElementById('10').innerHTML = mission10;
     document.getElementById('11').innerHTML = mission11;
+    document.getElementById('12').innerHTML = mission12;
     
 var points = mission1 + mission2 + mission3 + mission4 + mission5 + mission6 + mission7 + mission8 + mission9 + mission10 + mission11;
     document.getElementById('points').innerHTML = points;
@@ -305,23 +315,23 @@ document.write('<table style="border: none" border="0">');
 </td>
 
 <td width="200" style="background-color: yellow;">
-  Community Learning: <i style="font-style: normal;" id="1">0</i>  
+  Using Recycled Material: <i style="font-style: normal;" id="1">0</i>  
 </td></tr><tr><td>
-  <p class="switch">
-    <input type="radio" onclick="calc(25, 1)" class="switch-input" name="view1" value="week1" id="week1" >
-    <label for="week1" class="switch-label switch-label-off">Yes</label>
-    <input type="radio" onclick="calc(0, 1)" class="switch-input" name="view1" value="month1" id="month1" checked>
-    <label for="month1" class="switch-label switch-label-on">No</label>
-    <span class="switch-selection"></span>
-  </p>
+<center>
+  <p class="select-style">
+  <select id="RecMat" onchange="dropdowncheck(60,1,'RecMat')">
+    <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="">2</option>
+                    </select></p></center>
 
 </td>
 </tr>
 <tr>
 <td rowspan="2"><img width="100" height="111" src='/'></td>
-<td width="200" style="background-color: yellow;">Mission 5: <i style="font-style: normal;" id="11">0</i></td></tr><tr><td><center>
+<td width="200" style="background-color: yellow;">Methane: <i style="font-style: normal;" id="2">0</i></td></tr><tr><td><center>
   <p class="select-style">
-  <select id="dateSelect" onchange="fnDateChange();">
+  <select id="Methane" onchange="dropdowncheck(40,2,'Methane');">
     <option value="1-Dec-2000">0</option>
                         <option value="1-Dec-2000">1</option>
                         <option value="1-Dec-2010">2</option>
@@ -330,16 +340,22 @@ document.write('<table style="border: none" border="0">');
 </tr>
 <tr>
 <td rowspan="2"><img width="100" height="111" src='/'></td>
-<td width="200" style="background-color: yellow;">Door: <i style="font-style: normal;" id="2">0</i></td></tr><tr><td>
+<td width="200" style="background-color: yellow;">Transport: <i style="font-style: normal;" id="3">0</i></td></tr><tr><td>
 
   <p class="switch">
-    <input type="radio" onclick="calc(25, 2)" class="switch-input" name="view2" value="week2" id="week2" >
+    <input type="radio" onclick="calc(50, 3)" class="switch-input" name="view2" value="week2" id="week2" >
     <label for="week2" class="switch-label switch-label-off">Yes</label>
-    <input type="radio" onclick="calc(0, 2)" class="switch-input" name="view2" value="month2" id="month2" checked>
+    <input type="radio" onclick="calc(0, 3)" class="switch-input" name="view2" value="month2" id="month2" checked>
     <label for="month2" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
   </p>
-
+  <p class="switch">
+    <input  type="radio" onclick="calc(60, 3)" class="switch-input" name="view2" value="week2" id="week2" >
+    <label for="week2" class="switch-label switch-label-off">Yes</label>
+    <input  type="radio"  onclick="calc(50, 3)" class="switch-input" name="view2" value="month2" id="month2x" checked>
+    <label for="month2" class="switch-label switch-label-on">No</label>
+    <span class="switch-selection"></span>
+  </p>
 
 </td>
 <tr>
@@ -349,7 +365,7 @@ document.write('<table style="border: none" border="0">');
   <p class="switch">
     <input type="radio" onclick="calc(25, 3)" class="switch-input" name="view3" value="week3" id="week3" >
     <label for="week3" class="switch-label switch-label-off">Yes</label>
-    <input type="radio" onclick="calc(0, 3)" class="switch-input" name="view3" value="month3" id="month3"checked>
+    <input type="radio" onclick="calc(0, 3)" class="switch-input" name="view3" value="month3" id="month3" checked>
     <label for="month3" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
   </p>
