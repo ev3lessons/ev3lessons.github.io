@@ -182,12 +182,12 @@ transition: left 0.15s ease-out;
     var mission10 = 0;
     var mission11 = 0;
     var mission12 = 0
-     var mission13 = 0;
+    var mission13 = 0;
     var mission14 = 0;
     var mission15 = 0
     var mission16 = 0
     var mission17 = 0
-        var mission18 = 0;
+    var mission18 = 0;
     var mission19 = 0
     var mission20 = 0
     var mission21 = 0
@@ -246,19 +246,21 @@ mission19 = points;
 mission20 = points;
 }else if (id == 21) {
 mission21 = points;
-    } else if (id == 22) {
+}else if (id == 22) {
 mission22 = points;
-    }
-    if (mission12 == 0) {
+}
+if (mission12 == 1) {
     //alert(mission12);
-    if(mission10 != 0) {
- alert('object cannnot touch safety');
-} else if ( mission11 != 0) {
-    alert('object cannnot touch safety');
+    if ((mission10 != 0) || (mission11 != 0)) {
+    alert('Car should never touch safety');
+}
+}
+if ((mission10 != 0) && (mission11 != 0)) {
+    alert('Car cannot be folded and have an engine');
     }
-    }
-    if ((mission4 + mission5)/7 > 15) {
-    alert('You cannot have more than 15 RoyalBlue/sky bars');
+    
+if ((mission4 + mission5)/7 > 15) {
+    alert('You cannot have more than 15 Yellow/Blue bars');
     }
     document.getElementById('1').innerHTML = mission1;
     document.getElementById('2').innerHTML = mission2;
@@ -561,21 +563,54 @@ How many Black Bars are elsewhere on the board?
 <table style="border: 1px solid black; border-collapse: collapse;" border="1">
 
 <tr>
-<td rowspan="8"><img width="80" src='missions/M06.png'></td>
-</td></tr><td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M06: Scrap Cars: <i style="font-style: normal;" id="10">0</i></td></tr><tr><td width="200" style="font-size: 100%; background-color: sky;">
-Is the Engine/Windshield installed in the Car?
-</td></tr><tr><td>
+  <td rowspan="7"><img width="80" src='missions/M06.png'></td>
+  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M06: Scrap Cars: <i style="font-style: normal;" id="10">0</i></td>
+</tr>
 
-  <p class="switch">
+<tr>
+  <td width="200" style="font-size: 100%; background-color: sky;">
+    Was the Car EVER partly in the Safety Area?
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p class="switch">
+    <input type="radio" onclick="calc(1, 12)" class="switch-input" name="view7" value="week7" id="week7" >
+    <label for="week7" class="switch-label switch-label-off">Yes</label>
+    <input type="radio" onclick="calc(0, 12)" class="switch-input" name="view7" value="month7" id="month7" checked>
+    <label for="month7" class="switch-label switch-label-on">No</label>
+    <span class="switch-selection"></span>
+  </p>
+  </td>
+</tr>
+
+<tr>
+  <td width="200" style="font-size: 100%; background-color: sky;">
+    Is the Engine/Windshield installed in the Car?
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p class="switch">
     <input type="radio" onclick="calc(65, 10)" class="switch-input" name="view5" value="week5" id="week5" >
     <label for="week5" class="switch-label switch-label-off">Yes</label>
     <input type="radio" onclick="calc(0, 10)" class="switch-input" name="view5" value="month5" id="month5"checked>
     <label for="month5" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
-  </p>
-  </td></tr><tr><td width="200" style="font-size: 100%; background-color: sky;">
-Is the Car completely folded and in the East Transfer Area?
-</td></tr><tr><td>
+    </p>
+  </td>
+</tr>
+
+<tr>
+  <td width="200" style="font-size: 100%; background-color: sky;">
+    Is the Car completely folded and in the East Transfer Area?
+  </td>
+</tr>
+
+<tr>
+  <td>
  <p class="switch">
     <input type="radio" onclick="calc(50, 11)" class="switch-input" name="view6" value="week6" id="week6" >
     <label for="week6" class="switch-label switch-label-off">Yes</label>
@@ -583,20 +618,10 @@ Is the Car completely folded and in the East Transfer Area?
     <label for="month6" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
  </p>
- </td></tr><tr><td width="200" style="font-size: 100%; background-color: sky;">
-Was the Car NEVER partly in the Safety Area?
-</td></tr><tr><td>
-  <p class="switch">
-    <input type="radio" onclick="calc(25, 12)" class="switch-input" name="view7" value="week7" id="week7" >
-    <label for="week7" class="switch-label switch-label-off">Yes</label>
-    <input type="radio" onclick="calc(0, 12)" class="switch-input" name="view7" value="month7" id="month7" checked>
-    <label for="month7" class="switch-label switch-label-on">No</label>
-    <span class="switch-selection"></span>
-  </p>
-</td>
-</tr>
+</td></tr>
 
-  <tr>
+
+<tr>
 <td rowspan="7"> <img src='missions/M07.png' width="80"></td>
 <td  width="1000%" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M07: Cleanup: <i style="font-style: normal;" id="13">0</i></td></tr><td width="300" style="font-size: 100%; background-color: sky;">
 Are there Plastic Bags in the Safety Area?
