@@ -273,8 +273,8 @@ if ((mission4 + mission5)/7 > 15) {
     document.getElementById('18').innerHTML = mission18;
     document.getElementById('19').innerHTML = mission19;
     document.getElementById('20').innerHTML = mission20;
-      document.getElementById('21').innerHTML = mission21;
-var points = mission1 + mission2 + mission3 + mission4 + mission5 + mission6 + mission7 + mission8 + mission9 + mission10 + mission11  + mission13 + mission14 + mission15 + mission16 + mission17 + mission18 + mission19 + mission20 + mission21;
+    document.getElementById('21').innerHTML = mission21;
+var points = mission1 + mission2 + mission3 + mission4 + mission5 + mission6 + mission7 + mission8 + mission9 + mission10 + mission11  + mission13 + mission14 + mission15 + mission16 + mission17 + mission18 + mission19 + mission20 + mission21 + mission22;
     document.getElementById('points').value = points + ' Points ';
 }
 </script>
@@ -410,26 +410,37 @@ document.write('<table style="border: none" border="0">');
 <td rowspan="5"><img width="80" src='missions/M03.png'></td>
 <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M03: Transport: <i style="font-style: normal;" id="3">0</i></td></tr><td width="200" style="font-size: 100%; background-color: sky;">
 Does the Truck support all of the Yellow Bin's weight?
-</td></tr><tr><td>
-<p class="switch">
+</td></tr>
+
+<tr>
+  <td>
+    <p class="switch">
     <input type="radio" onclick="calc(50, 3)" class="switch-input" name="view2" value="week2" id="week2" >
     <label for="week2" class="switch-label switch-label-off">Yes</label>
     <input type="radio" onclick="calc(0, 3)" class="switch-input" name="view2" value="month2" id="month2" checked>
     <label for="month2" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
-</p>
-</td></tr><tr><td width="200" style="font-size: 100%; background-color: sky;">
-Is the Yellow Bin completely East of Truck's Guide?
-</td></tr><tr><td>
- <p class="switch">
+    </p>
+</td></tr>
+
+<tr>
+  <td width="200" style="font-size: 100%; background-color: sky;">
+    Is the Yellow Bin completely East of Truck's Guide?
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <p class="switch">
     <input  type="radio" onclick="calc(60, 22)" class="switch-input" name="view3" value="week3" id="week3" >
     <label for="week3" class="switch-label switch-label-off">Yes</label>
-    <input  type="radio"  onclick="calc(50, 22); " class="switch-input" name="view3" value="month3" id="month3" checked>
-     <label for="month3" class="switch-label switch-label-on">No</label>
+    <input type="radio"  onclick="calc(0, 22); " class="switch-input" name="view3" value="month3" id="month3" checked>
+    <label for="month3" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
-  </p>
-
-</td>
+    </p>
+  </td>
+</tr>
+  
 <tr>
 <td rowspan="11"><img width="80" src='missions/M04.png'></td>
 <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M04: Sorting: <i style="font-style: normal;" id="4">0</i></td></tr><td width="200" style="font-size: 100%; background-color: sky;">
