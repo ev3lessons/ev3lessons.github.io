@@ -270,6 +270,7 @@ if ((mission4 + mission5)/7 > 15) {
     document.getElementById('10').innerHTML = mission10 + mission11;
     document.getElementById('13').innerHTML = mission13 + mission14 + mission15;
     document.getElementById('16').innerHTML = mission16 + mission17;
+    document.getElementById('18').innerHTML = mission18;
     document.getElementById('19').innerHTML = mission19;
     document.getElementById('20').innerHTML = mission20;
       document.getElementById('21').innerHTML = mission21;
@@ -624,7 +625,7 @@ How many Black Bars are elsewhere on the board?
 <tr>
 <td rowspan="7"> <img src='missions/M07.png' width="80"></td>
 <td  width="1000%" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M07: Cleanup: <i style="font-style: normal;" id="13">0</i></td></tr><td width="300" style="font-size: 100%; background-color: sky;">
-Are there Plastic Bags in the Safety Area?
+How many Plastic Bags are in the Safety Area?
 </td></tr><tr><td>
 <center>
   <p class="select-style">
@@ -635,7 +636,7 @@ Are there Plastic Bags in the Safety Area?
 
 </select></p></center>
 </td></tr><tr><td width="200" style="font-size: 100%; background-color: sky;">
-Are the Animals completely in any Circle without Plastic Bags?
+How many Animals are completely in any Circle without Plastic Bags?
 </td></tr><tr><td>
 <center>
   <p class="select-style">
@@ -705,13 +706,13 @@ Are the Valuables completely in the Safety Area?
 <tr>
 <td rowspan="3"><img width="80" src='missions/M10.png'></td>
 <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M10: Demolition: <i style="font-style: normal;" id="19">0</i></td></tr><td width="200" style="font-size: 100%; background-color: sky;">
-There are NO building's beams left in the setup position?
+There are ANY building beams left in the setup position?
 </td></tr><tr><td>
 
   <p class="switch">
-    <input type="radio" onclick="calc(85, 19)" class="switch-input" name="view12" value="week12" id="week12" >
+    <input type="radio" onclick="calc(0, 19)" class="switch-input" name="view12" value="week12" id="week12" checked>
     <label for="week12" class="switch-label switch-label-off">Yes</label>
-    <input type="radio" onclick="calc(0, 19)" class="switch-input" name="view12" value="month12" id="month12" checked>
+    <input type="radio" onclick="calc(85, 19)" class="switch-input" name="view12" value="month12" id="month12">
     <label for="month12" class="switch-label switch-label-on">No</label>
     <span class="switch-selection"></span>
   </p>
@@ -721,7 +722,7 @@ There are NO building's beams left in the setup position?
 <tr>
 <td rowspan="3"><img width="80" src='missions/M11.png'></td>
 <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M11: Purchasing Decisions: <i style="font-style: normal;" id="20">0</i></td></tr><td width="200" style="font-size: 100%; background-color: sky;">
-Are the Toy Planes completely in the Safety Area?
+How many Toy Planes are completely in the Safety Area?
 </td></tr><tr><td>
 <center>
   <p class="select-style">
