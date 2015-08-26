@@ -55,7 +55,6 @@
         <script type="text/javascript">
             var yiw_prettyphoto_style = 'pp_default';
         </script>
-<script src="//cdn.optimizely.com/js/3339020250.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -107,18 +106,18 @@
 -->
 <script>
 var images = new Array();
-images[0] = "<img  width='740' height='250' src='images/slider-flash/ev3lessons.jpg'>";
-images[1] = "<img  width='740' height='250' src='images/slider-flash/1.png'>";
-images[2] = "<img  width='740' height='250' src='images/slider-flash/3.png'>";
-images[3] = "<img  width='740' height='250' src='images/slider-flash/4.png'>";
-images[4] = "<img  width='740' height='250' src='images/slider-flash/5.png'>";
+images[0] = 'images/slider-flash/ev3lessons.jpg';
+images[1] = 'images/slider-flash/1.png';
+images[2] = 'images/slider-flash/3.png';
+images[3] = 'images/slider-flash/4.png';
+images[4] = 'images/slider-flash/5.png';
 x = 1;
 function changeImage() {
 //alert(x)
 	   if (x > 4) {
     x = 0;
   }
-  document.getElementById('ad').innerHTML = images[x];
+  document.getElementById('ad').src = images[x];
   if (x<8) {
 	   x+=1;
 	 
@@ -197,8 +196,26 @@ var trackOutboundLink = function(url) {
   
 </script>
 	   <!-- <table>-->
-	     <tr><td><i id='ad'><img  width="740" height="250"  src="images/slider-flash/ev3lessons.jpg"></i>
-</td><td >  <a href='#' id='startingPointsAd'> <img src="images/ads/reserved.jpg" width="250" height="250"></a>
+<tr><td><script>
+      if (screen.width > 800) {
+      document.write('<img  width="740" id="ad" height="260"  src="images/slider-flash/ev3lessons.jpg">');
+      } else {
+      document.write('<img  width="'+screen.width+'" id="ad" height="150"  src="images/slider-flash/ev3lessons.jpg">');
+      }
+    </script>
+</td><td ><div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;">  <a href='https://www.startingpoints.com?cc=EV3' id='startingPointsAd'> <img style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a></div>
 	     </td></tr><tr  >
 	       <td  style="vertical-align:top" rowspan="3"> <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<div style="border-style: solid;
 border-color: #ffffff      ;
@@ -207,7 +224,7 @@ border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
 border: 6px solid transparent;
 border-top-right-radius: 10px 5px;"><a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
-																																																										<img  src="images/ads/damien.jpg" width="235" height="235" style="border-style: solid;
+																																																										<img  src="images/ads/damien.jpg" width="250" height="250" style="border-style: solid;
     border-width: 6px;
 border-color: #98bf21;
 border-top-left-radius: 10px 5px;
