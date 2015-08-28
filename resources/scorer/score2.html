@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<style css="./style.css"></style>
+<style>
+a img { border:0 !important; } 
+a:hover	{
+Text-decoration: underline;
+}
+input[type=submit] { width: 100px; }
+.Wrap { white-space:  normal; } 
+.Nowrap { white-space: nowrap; }
+
+.select-style {
+border: 1px solid #ccc;
+width: 120px;
+border-radius: 3px;
+overflow: hidden;
+background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+padding: 5px 8px;
+width: 130%;
+border: none;
+box-shadow: none;
+background: transparent;
+background-image: none;
+-webkit-appearance: none;
+}
+
+.select-style select:focus {
+outline: none;
+}
+
+
+body {
+font: 14px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+//  color: #404040;
+//  background: #363a41;
+}
+
+.container {
+margin: 50px auto;
+width: 120px;
+}
+
+.switch {
+position: relative;
+margin: 20px auto;
+height: 26px;
+width: 120px;
+background: rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.switch-label {
+position: relative;
+z-index: 2;
+float: left;
+width: 58px;
+line-height: 26px;
+font-size: 14px;
+color: rgba(255, 255, 255, 0.35);
+text-align: center;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+cursor: pointer;
+}
+
+.switch-label:active {
+font-weight: bold;
+
+}
+
+.switch-label-off {
+padding-left: 2px;
+
+}
+
+.switch-label-on {
+padding-right: 2px;
+
+}
+
+.switch-input {
+display: none;
+
+}
+
+.switch-input:checked + .switch-label {
+font-weight: bold;
+color: white;
+text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+-webkit-transition: 0.15s ease-out;
+-moz-transition: 0.15s ease-out;
+-o-transition: 0.15s ease-out;
+transition: 0.15s ease-out;
+}
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+/* Note: left: 50% doesn't transition in WebKit */
+left: 60px;
+
+}
+
+.switch-selection {
+display: block;
+position: absolute;
+z-index: 1;
+top: 2px;
+left: 2px;
+width: 58px;
+height: 22px;
+background: #006400;
+border-radius: 3px;
+background-image: -webkit-linear-gradient(top,green,purple);
+background-image: -moz-linear-gradient(top,green, purple);
+background-image: -o-linear-gradient(top,green, purple);
+background-image: linear-gradient(to bottom,green, purple);
+-webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+-webkit-transition: left 0.15s ease-out;
+-moz-transition: left 0.15s ease-out;
+-o-transition: left 0.15s ease-out;
+transition: left 0.15s ease-out;
+;
+}
+
+.switch-sky .switch-selection {
+background: #3aa2d0;
+background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
+background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
+background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
+background-image: linear-gradient(to bottom, #4fc9ee, #3aa2d0);
+}
+
+.switch-red .switch-selection {
+background-color: #FF0000;
+background: #c4bb61;
+background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
+background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
+background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
+background-image: linear-gradient(to bottom, #e0dd94, #c4bb61);
+}
+
+input[type=range],
+	::-moz-range-track,
+	 ::-ms-track {
+	 -webkit-appearance: none;
+	 background-color: 3f91e5;
+	 width: 250px;
+	 height:20px;
+}
+
+::-webkit-slider-thumb,
+	::-moz-range-thumb,
+	 ::-ms-thumb {
+	-webkit-appearance: none;
+	background-color: #666;
+	width: 10px;
+	height: 20px;
+}
+
+</style>
+
+<script>
+
+var points = 0;
+var M01 = 0;
+var M02 = 0;
+var M03 = 0;
+var M03a = 0;
+var M03b = 0;
+var M04blu = 0;
+var M04yel = 0;
+var M04bla = 96;
+var M04 = 96;
+var M05 = 0;
+var M06 = 0;
+var M07a = 0;
+var M07b = 0;
+var M07c = 0;
+var M07 = 0;
+var M08a = 0;
+var M08b = 0;
+var M08 = 0;
+var M09 = 0;
+var M10 = 0; 
+var M11 = 0; 
+var M12 = 0;
+
+function resetform() {
+    document.getElementById("form").reset()
+    document.getElementById("BlackBarOrig").selectedIndex = 12;
+    points = 0;
+    M01 = 0;
+    M02 = 0;
+    M03 = 0;
+    M03a = 0;
+    M03b = 0;
+    M04blu = 0;
+    M04yel = 0;
+    M04bla = 96;
+    M04 = 96;
+    M05 = 0;
+    M06 = 0;
+    M07a = 0;
+    M07b = 0;
+    M07c = 0;
+    M07 = 0;
+    M08a = 0;
+    M08b = 0;
+    M08 = 0;
+    M09 = 0;
+    M10 = 0; 
+    M11 = 0; 
+    M12 = 0;
+    calc(0,43);
+}
+
+    
+function dropdowncheck(ppi, id, id2) {
+    var index = document.getElementById(id2).selectedIndex;
+    calc(ppi*index, id);
+}
+
+function dropdowncheck(ppi, id, id2) {
+    var dropdown = document.getElementById(id2);
+    //  alert(selectedDate.toString());
+    //  alert("Index = " + selectedDate.selectedIndex);
+    // var oStartDT = dropdown.options[selectedDate.selectedIndex].value;
+    var index = dropdown.selectedIndex;
+//    alert(ppi*index);
+    calc(ppi*index, id);
+}
+
+
+function calc(points, id) {  
+    if (id == 11) {
+	M01 = points;
+	if (points == 240) {
+	    document.getElementById("YellowBin").selectedIndex = 1;
+	    document.getElementById("BlueBin").selectedIndex = 1;
+	    document.getElementById("YellowBin").disabled = true;
+	    document.getElementById("BlueBin").disabled = true;
+	    document.getElementById("YellowBar").selectedIndex = 0;
+	    document.getElementById("BlueBar").selectedIndex = 0;
+	    document.getElementById("YellowBar").disabled = true;
+	    document.getElementById("BlueBar").disabled = true;
+	} else {
+	    document.getElementById("YellowBar").disabled = false;
+	    document.getElementById("BlueBar").disabled = false;
+	    document.getElementById("YellowBin").disabled = false;
+	    document.getElementById("BlueBin").disabled = false;
+	}
+	if (points == 180) {
+	    if ((document.getElementById("YellowBin").selectedIndex != 1) &&
+		(document.getElementById("BlueBin").selectedIndex != 1))
+		alert("At least one of your bins must be in other team's Safety!");
+	}
+	    
+    } else if (id == 21) {
+	M02 = points;
+    } else if (id == 31) {
+	M03a = points;
+        M03 = M03a + M03b;
+    } else if (id == 32) {
+	M03b = points;
+        M03 = M03a + M03b;
+    } else if (id == 41) {
+	var loc = document.getElementById("YellowBin");
+	var perbin = loc.options[loc.selectedIndex].value;
+	M04yel = document.getElementById("ybrange").value * perbin;
+	M04 = M04yel + M04blu + M04bla;
+	var numBin = 0;
+	if (loc.selectedIndex == 1)
+	    numBin++;
+	var othloc = document.getElementById("BlueBin");
+	if (othloc.selectedIndex == 1)
+	    numBin++;
+	if (numBin > document.getElementById("RecMat").selectedIndex) {
+	    document.getElementById("RecMat").selectedIndex = numBin;
+	    M01 = 60 * numBin;
+	}
+    } else if (id == 42) {
+	var loc = document.getElementById("BlueBin");
+	var perbin = loc.options[loc.selectedIndex].value;
+	M04blu = document.getElementById("BlueBar").selectedIndex * perbin;
+	M04 = M04yel + M04blu + M04bla;
+	var numBin = 0;
+	if (loc.selectedIndex == 1)
+	    numBin++;
+	var othloc = document.getElementById("YellowBin");
+	if (othloc.selectedIndex == 1)
+	    numBin++;
+	if (numBin > document.getElementById("RecMat").selectedIndex) {
+	    document.getElementById("RecMat").selectedIndex = numBin;
+	    M01 = 60 * numBin;
+	}
+    } else if (id == 43) {
+	var bbo = document.getElementById("BlackBarOrig").selectedIndex;
+	var bbb = document.getElementById("BlackBarBin").selectedIndex;
+	var bbp = 12 - bbo - bbb;
+	if (bbp < 0) {
+	    bbb += bbp;
+	    bbp = 0;
+	    document.getElementById("BlackBarBin").selectedIndex = bbb;
+	}
+	document.getElementById('BlackBarPen').innerHTML = bbp;
+	M04bla = 8 * bbo + 3 * bbb - (8 * bbp);
+	M04 = M04yel + M04blu + M04bla;
+    } else if (id == 44) {
+	var bbo = document.getElementById("BlackBarOrig").selectedIndex;
+	var bbb = document.getElementById("BlackBarBin").selectedIndex;
+	var bbp = 12 - bbo - bbb;
+	if (bbp < 0) {
+	    bbo += bbp;
+	    bbp = 0;
+	    document.getElementById("BlackBarOrig").selectedIndex = bbo;
+	}
+	document.getElementById('BlackBarPen').innerHTML = bbp;
+	M04bla = 8 * bbo + 3 * bbb - (8 * bbp);
+	M04 = M04yel + M04blu + M04bla;
+    } else if (id == 51) {
+	M05 = points;
+    } else if (id == 61) {
+	if (points == 1) {
+	    document.getElementById("noM06b").checked = true;
+	    document.getElementById("noM06c").checked = true;
+	    document.getElementById("yesM06b").disabled = true;
+	    document.getElementById("yesM06c").disabled = true;
+	    document.getElementById("noM06b").disabled = true;
+	    document.getElementById("noM06b").disabled = true;
+	    M06 = 0;
+	} else {
+	    document.getElementById("yesM06b").disabled = false;
+	    document.getElementById("noM06b").disabled = false;
+	    document.getElementById("yesM06c").disabled = false;
+	    document.getElementById("noM06c").disabled = false;
+	}
+    } else if (id == 62) {
+	M06 = points;
+	document.getElementById("noM06c").checked = true;
+    } else if (id == 63) {
+	M06 = points;
+	document.getElementById("noM06b").checked = true;
+    } else if (id == 71) {
+	M07a = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 72) {
+	M07b = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 73) {
+	M07c = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 81) {
+	M08a = points;
+	M08 = M08a + M08b;
+    } else if (id == 82) {
+	document.getElementById("yesM08a").checked = true;
+	M08a = 60;
+	M08b = points;
+	M08 = M08a + M08b;
+    } else if (id == 91) {
+	M09 = points;
+    } else if (id == 101) {
+	M10 = points;
+	var x = document.getElementById("BlackBarOrig");
+	if (points == 0) {
+	    var option9 = document.createElement("option");
+	    var option10 = document.createElement("option");
+	    var option11 = document.createElement("option");
+	    var option12 = document.createElement("option");
+	    option9.text = "9";
+	    x.add(option9, x[9]);
+	    option10.text = "10";
+	    x.add(option10, x[10]);
+	    option11.text = "11";
+	    x.add(option11, x[11]);
+	    option12.text = "12";
+	    x.add(option12, x[12]);
+	} else {
+	    if (x.selectedIndex > 8)
+		x.selectedIndex=8;
+	    x.remove(12);
+	    x.remove(11);
+	    x.remove(10);
+	    x.remove(9);
+	    calc(0,43);
+	}
+    } else if (id == 111) {
+	M11 = points;
+    } else if (id == 121) {
+	M12 = points;
+	document.getElementById("yesM08a").checked = true;
+	M08a = 60;
+	M08 = M08a + M08b;
+    }
+
+    document.getElementById('M01pts').innerHTML = M01;
+    document.getElementById('M02pts').innerHTML = M02;
+    document.getElementById('M03pts').innerHTML = M03;
+    document.getElementById('M04pts').innerHTML = M04;
+    document.getElementById('M05pts').innerHTML = M05;
+    document.getElementById('M06pts').innerHTML = M06;
+    document.getElementById('M07pts').innerHTML = M07;
+    document.getElementById('M08pts').innerHTML = M08;
+    document.getElementById('M09pts').innerHTML = M09;
+    document.getElementById('M10pts').innerHTML = M10;
+    document.getElementById('M11pts').innerHTML = M11;
+    document.getElementById('M12pts').innerHTML = M12;
+    var points = M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+    document.getElementById('points').value = points + ' Points ';
+}
+
+    <!--
+
+var viewportwidth;
+var viewportheight;
+
+// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+if (typeof window.innerWidth != 'undefined')
+{
+    viewportwidth = window.innerWidth,
+    viewportheight = window.innerHeight
+}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+else if (typeof document.documentElement != 'undefined'
+	 && typeof document.documentElement.clientWidth !=
+	 'undefined' && document.documentElement.clientWidth != 0)
+{
+    viewportwidth = document.documentElement.clientWidth,
+    viewportheight = document.documentElement.clientHeight
+}
+
+// older versions of IE
+
+else
+{
+    viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+}
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+
+</head>
+<h1>Trash Trek Scorer by EV3Lessons/Droids Robotics</h1>
+
+<table>
+  <tr>
+    <td>
+      <iframe src="countdown.html" style="border:none" scrolling="no" width="200" height="120">
+      </iframe>
+    </td>
+    <td>
+      <iframe src="countup.html" style="border:none" width="250" scrolling="no" height="120">
+      </iframe>
+    </td>
+    <td>
+      <center>
+      <fieldset>
+      <legend size="10">Score</legend>
+      <input type='text' size='10'  value='96 Points ' readonly style="text-align: right; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
+      </fieldset>
+         <input type="button" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 200%">
+      </center>
+    </td>
+  </tr>
+</table>
+
+<form id="form">
+<div class="missions">
+<script>
+    if (viewportwidth > 500) {
+	document.write('<table style="border: none" border="0">');
+    }
+</script>
+
+  <tr style="vertical-align: top;">
+    <td>
+      <table style="border: 1px solid black; border-collapse: collapse; " border="1">
+	<tr>
+	  <td rowspan="3"> <img src='missions/M01.png' width="80"></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M01: Using Recycled Material:
+	    <i style="font-style: normal;" id="M01pts">0</i>  
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Number of Green Bins with matching bars in other team's Safety
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center> <p class="select-style">
+	    <select id="RecMat" onchange="dropdowncheck(60,11,'RecMat')">
+	      <option value="0">0</option>
+	      <option value="1">1</option>
+	      <option value="2">2</option>
+	      <option value="2">3</option>
+	      <option value="2">4</option>
+	    </select></p></center>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M02.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M02: Methane:
+	    <i style="font-style: normal;" id="M02pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    The Methane is installed in....
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center><p class="select-style">
+	    <select id="Methane" onchange="dropdowncheck(40,21,'Methane');">
+	      <option value="0">none</option>
+	      <option value="1">one location</option>
+	      <option value="2">two locations</option>
+	    </select>
+	    </p></center>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M03.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M03: Transport:
+	    <i style="font-style: normal;" id="M03pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Does the Truck support all of the Yellow Bin's weight?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p class="switch">
+	    <input type="radio" onclick="calc(50, 31)" class="switch-input" name="M03a" id="yesM03a">
+	    <label for="yesM03a" class="switch-label switch-label-off">Yes</label>
+	    <input type="radio" onclick="calc(0, 31)" class="switch-input" name="M03a" id="noM03a" checked>
+	    <label for="noM03a" class="switch-label switch-label-on">No</label>
+	    <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Yellow Bin completely East of Truck's Guide?
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	    <p class="switch">
+	    <input  type="radio" onclick="calc(60, 32)" class="switch-input" name="M03b" id="yesM03b" >
+	    <label for="yesM03b" class="switch-label switch-label-off">Yes</label>
+	    <input type="radio"  onclick="calc(0, 32); " class="switch-input" name="M03b" id="noM03b" checked>
+	    <label for="noM03b" class="switch-label switch-label-on">No</label>
+	    <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="15"><img width="80" src='missions/M04.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M04: Sorting:
+	    <i style="font-style: normal;" id="M04pts">96</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Yellow Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p><center>
+		    <input type="number" name="ybinput" min="0" max="9" value="0" oninput="this.form.ybrange.value=this.value" style="width: 50px; text-align: center" onchange="calc(0,41)">
+		<input type="range" style="width: 200px;" name="ybrange" id="ybrange" value="0" min="0" max="9" step="1"  list="yblist" oninput="this.form.ybinput.value=this.value" onchange="calc(0,41)">
+		<datalist id="yblist">
+		  <option>1</option>
+		  <option>2</option>
+		  <option>3</option>
+		  <option>4</option>
+		  <option>5</option>
+		  <option>6</option>
+		  <option>7</option>
+		  <option>8</option>
+		  <option>9</option>
+		</datalist>
+	    </p></center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Yellow Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center> <p class="select-style">
+		<select id="YellowBin" onchange="calc(0,41)">
+		  <option value="7">West Transfer Area</option>
+		  <option value="0">Other team's Safety</option>
+		  <option value="6">Elsewhere</option>
+		</select>
+	    </p></center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Blue Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center> <p class="select-style">
+		<select id="BlueBar" onchange="calc(0,42)">
+		  <option value="0">0</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		</select>
+	    </p></center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Blue Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center> <p class="select-style">
+		<select id="BlueBin" onchange="calc(0,42)">
+		  <option value="7">West Transfer Area</option>
+		  <option value="0">Other team's Safety</option>
+		  <option value="6">Elsewhere</option>
+		</select>
+	    </p></center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Black Bars are in their original position/scoring or in Flower Box ?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	      <center>  <p class="select-style">
+		  <select id="BlackBarOrig" onchange="calc(0,43)">
+		    <option value="0">0</option>
+		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		    <option value="6">6</option>
+		    <option value="7">7</option>
+		    <option value="8">8</option>
+		    <option value="9">9</option>
+		    <option value="10">10</option>
+		    <option value="11">11</option>
+		    <option value="12" selected="selected">12</option>
+		  </select>
+	      </p></center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are in the matching Green Bin or Landfill Bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center>   <p class="select-style">
+		<select id="BlackBarBin" onchange="calc(0,44)">
+		  <option value="0">0</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		  <option value="11">11</option>
+		  <option value="12">12</option>
+		</select>
+	      </p>
+	    </center>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are elsewhere on the board?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center>    <p id="BlackBarPen">0
+	    </p></center>
+	</tr>
+
+	<tr>
+	      <td rowspan="3"><img width="80" src='missions/M05.png'></td>
+	      <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M05: Careers:
+		<i style="font-style: normal;" id="M05pts">0</i>
+	      </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+		Is at least one Person in the Sorting Mission Area?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(60, 51)" class="switch-input" name="M05" id="yesM05" >
+	      <label for="yesM05" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 51)" class="switch-input" name="M05" id="noM05" checked>
+	      <label for="noM05" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+      </table>
+
+    </td>
+
+    <td style="vertical-align: top;">
+
+      <table style="border: 1px solid black; border-collapse: collapse;" border="1">
+	
+	<tr>
+	  <td rowspan="7"><img width="80" src='missions/M06.png'></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M06: Scrap Cars:
+	    <i style="font-style: normal;" id="M06pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Was the Car EVER partly in the Safety Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(1, 61)" class="switch-input" name="M06a" id="yesM06a" >
+	      <label for="yesM06a" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 61)" class="switch-input" name="M06a" id="noM06a" checked>
+	      <label for="noM06a" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Engine/Windshield installed in the Car?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(65, 62)" class="switch-input" name="M06b" id="yesM06b" >
+	      <label for="yesM06b" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 62)" class="switch-input" name="M06b" id="noM06b" checked>
+	      <label for="noM06b" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Car completely folded and in the East Transfer Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(50, 63)" class="switch-input" name="M06c" id="yesM06c" >
+	      <label for="yesM06c" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 63)" class="switch-input" name="M06c" id="noM06c" checked>
+	      <label for="noM06c" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="7"> <img src='missions/M07.png' width="80"></td>
+	  <td  width="1000%" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M07: Cleanup:
+	    <i style="font-style: normal;" id="M07pts">0</i>
+	</td></tr>
+	<tr>
+	  <td width="300" style="font-size: 100%; background-color: sky;">
+	    How many Plastic Bags are in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <center>
+	      <p class="select-style">
+		<select id="bags" onchange="dropdowncheck(30,71,'bags')">
+		  <option value="0">0</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		</select>
+	    </p></center>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Animals are completely in any Circle without Plastic Bags?
+	</td></tr>
+	<tr><td>
+	    <center>  <p class="select-style">
+		<select id="animals" onchange="dropdowncheck(20,72,'animals')">
+		    <option value="0">0</option>
+		    <option value="1">1</option>
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		</select>
+	    </p></center>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Chicken completely in the Small Circle?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(35, 73)" class="switch-input" name="M07c" id="yesM07c" >
+	      <label for="yesM07c" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 73)" class="switch-input" name="M07c" id="noM07c" checked>
+	      <label for="noM07c" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M08.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M08: Composting:
+	    <i style="font-style: normal;" id="M08pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Has the Compost been ejected?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(60, 81)" class="switch-input" name="M08a" id="yesM08a" >
+	      <label for="yesM08a" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 81)" class="switch-input" name="M08a" id="noM08a" checked>
+	      <label for="noM08a" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(20, 82)" class="switch-input" name="M08b" id="yesM08b" >
+	      <label for="yesM08b" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 82)" class="switch-input" name="M08b" id="noM08b" checked>
+	      <label for="noM08b" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img  width="80" src='missions/M09.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M09: Salvage:
+	    <i style="font-style: normal;" id="M09pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Are the Valuables completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(60, 91)" class="switch-input" name="M09" id="yesM09" >
+	      <label for="yesM09" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 91)" class="switch-input" name="M09" id="noM09" checked>
+	      <label for="noM09" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M10.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M10: Demolition:
+	    <i style="font-style: normal;" id="M10pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is building demolished (i.e. are all ALL building beams knocked down)?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(85, 101)" class="switch-input" name="M10" id="yesM10">
+	      <label for="yesM10" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 101)" class="switch-input" name="M10" id="noM10" checked>
+	      <label for="noM10" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M11.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M11: Purchasing Decisions:
+	    <i style="font-style: normal;" id="M11pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Toy Planes are completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <center>  <p class="select-style">
+		<select id="purchase" onchange="dropdowncheck(40,111,'purchase')">
+		  <option value="0">0</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+	    </select></p></center>
+	  </td>
+	</tr>
+
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M12.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M12: Repurposing:
+	    <i style="font-style: normal;" id="M12pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost in either Toy Package (Flower Box)?
+	</td></tr>
+	<tr><td>
+	    <p class="switch">
+	      <input type="radio" onclick="calc(40, 121)" class="switch-input" name="M12" id="yesM12" >
+	      <label for="yesM12" class="switch-label switch-label-off">Yes</label>
+	      <input type="radio" onclick="calc(0, 121)" class="switch-input" name="M12" id="noM12"checked>
+	      <label for="noM12" class="switch-label switch-label-on">No</label>
+	      <span class="switch-selection"></span>
+	    </p>
+	  </td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+</form>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+    
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+
+</script>

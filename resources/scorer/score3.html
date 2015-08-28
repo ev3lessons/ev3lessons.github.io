@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
-<script src="jquery-1.11.3.min.js"></script>
-<script src="jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script
+src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <script>
 
@@ -294,24 +295,19 @@ else
     <td>
       <iframe src="countdown.html" style="border:none" scrolling="no" width="200" height="120">
       </iframe>
-      <script>if (viewportwidth > 600){
-      document.write('</td><td>');
-	} 
-      </script>
+    </td>
+    <td>
       <iframe src="countup.html" style="border:none" width="250" scrolling="no" height="120">
       </iframe>
-       <script>if (viewportwidth > 600){
-      document.write(' </td><td>');}
-	</script>
-	<center>
-	<fieldset>
-	<legend size="10">Score</legend>
-	<input type='text' size='10'  value='96 Points ' readonly style="text-align: center; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
-	</fieldset>
-	</center>
-	<div class="ui-mini">
-	  <input type="button" class="ui-mini" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 150%">
-	  </div>
+    </td>
+    <td>
+      <center>
+      <fieldset>
+      <legend size="10">Score</legend>
+      <input type='text' size='10'  value='96 Points ' readonly style="text-align: right; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
+      </fieldset>
+         <input type="button" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 200%">
+      </center>
     </td>
   </tr>
 </table>
