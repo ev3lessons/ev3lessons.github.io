@@ -106,8 +106,8 @@ function calc(points, id) {
             M04 = M04yel + M04blu + M04bla;
 	}
 	if (points == 180) {
-	    if ((document.getElementById("YellowBin").selectedIndex != 1) &&
-		(document.getElementById("BlueBin").selectedIndex != 1))
+	    if (($("input[name=YellowBin]:checked").val() != 0) &&
+		($("input[name=BlueBin]:checked").val() != 0))
 		alert("At least one of your bins must be in other team's Safety!");
 	}
 	    
