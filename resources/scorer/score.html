@@ -207,8 +207,10 @@ function calc(points, id) {
 	M08a = points;
 	M08 = M08a + M08b;
     } else if (id == 82) {
-	document.getElementById("yesM08a").checked = true;
-	M08a = 60;
+	if (points != 0) {
+	    document.getElementById("yesM08a").checked = true;
+	    M08a = 60;
+	}
 	M08b = points;
 	M08 = M08a + M08b;
     } else if (id == 91) {
