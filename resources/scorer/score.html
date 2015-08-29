@@ -30,10 +30,12 @@ var M09 = 0;
 var M10 = 0; 
 var M11 = 0; 
 var M12 = 0;
+var bboMax = 12;
 
 function resetform() {
     document.getElementById("form").reset() 
-    document.getElementById("BlackBarsOrig").max = 12 
+    document.getElementById("BlackBarsOrig").max = 12
+    bboMax = 12;
     document.getElementById("BlackBarsOrig").value = 12;
     document.getElementById("RecMat").min = 0;
     points = 0;
@@ -219,13 +221,14 @@ function calc(points, id) {
 	M10 = points;
 	var x = document.getElementById("BlackBarsOrig");
 	if (points == 0) {
-	    x.max = 12;
+//	    x.max = 12;
+	    bboMax = 12;
 	} else {
-	    if (x.selectedIndex > 8) {
+	    if (x.value > 8) {
 		x.value=8;
-                x.selected=8;
             }
-            x.max = 8;
+//            x.max = 8;
+	    bboMax = 8;
 	    calc(0,43);
 	}
     } else if (id == 111) {
@@ -475,7 +478,7 @@ else
 	</tr>
 	<tr>
 	  <td>
-	    <input type="range" data-show-value="true" name="BlackBarsOrig" id="BlackBarsOrig" value="12" min="0" max="12" step="1" onchange="calc(0,43)">
+	    <input type="range" data-show-value="true" name="BlackBarsOrig" id="BlackBarsOrig" value="12" min="0" max="12" step="1" oninput="" onchange="if (this.value>bboMax) this.value=bboMax;calc(0,43)">
 	  </td>
 	</tr>
 	<tr>
