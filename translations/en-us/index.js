@@ -74,8 +74,8 @@ document.write('\
 			    </div>\
 			    <div class="hentry-post group">\
 			      <h3>Support Us</h3>\
-			      <p> All our materials are free. Help support the site.</p>\
-			      <p><a href="http://shop.teeminus24.com/Droid-Ev3-Lessons_c71.htm;jsessionid=0A1F77C2311DE7A39D1EF47DDF685CB6.m1plqscsfapp01">Buy</a> a EV3Lessons t-shirt<br>\
+			      <p> All our materials are free. Help support the site: Purchase an Ad,</p>\
+<a href="http://shop.teeminus24.com/Droid-Ev3-Lessons_c71.htm;jsessionid=0A1F77C2311DE7A39D1EF47DDF685CB6.m1plqscsfapp01"> Buy a shirt</a><br>\
 			      OR<br>			      \
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">\
 <input type="hidden" name="cmd" value="_s-xclick">\
@@ -89,15 +89,12 @@ document.write('\
 			    </div>\
 			    <div class="hentry-post group">\
 			      <h3>Help Requested</h3>\
-			      <p>Looking for translators, collaborators, equipment, donations. .\
+			      <p>Looking for translators, collaborators, & equipment.\
 			     </p>\
 			    </div>\
-			    <div class="hentry-post group last">\
+			   <div class="hentry-post group last">\
 			        <h3>Have a Question?</h3>\
-			        <p>Did you know that you can email us\
-			    and ask a question? We have helped 100s of\
-			    teams via email and video\
-			    conferencing.</p>\
+			        <p><a href="http://ev3lessons.org/forum">Try our Forum</a></p>\
 			    </div>\
 			    \
 			  </ul>\
