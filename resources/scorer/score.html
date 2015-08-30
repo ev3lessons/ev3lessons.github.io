@@ -118,7 +118,8 @@ function calc(points, id) {
 	if (points == 180) {
 	    if (($("input[name=YellowBin]:checked").val() != 0) &&
 		($("input[name=BlueBin]:checked").val() != 0))
-		alert("At least one of your bins must be in other team's Safety!");
+//		alert("At least one of your bins must be in other team's Safety!");
+	    document.getElementById("RecMatTxt").innerHTML = "Note: At least one of your bins must be in other team's Safety!";
 	}
 	    
     } else if (id == 21) {
@@ -364,6 +365,7 @@ else
 	<tr>
 	  <td width="200" style="font-size: 100%; background-color: sky;">
 	    Number of Green Bins with matching bars in other team's Safety
+            <p id="RecMatTxt" style="color: red"></p>
 	  </td>
 	</tr>
 	<tr>

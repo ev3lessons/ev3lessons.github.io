@@ -10,7 +10,7 @@ Stopwatch:
   <tr>
     <td rowspan='3' style="vertical-align:middle; font-size: 200%">
      
-	<time>00:00</time></td>
+	<p id="time"><time>00:00</time></p></td>
 
     <td><button id="start">Start</button>
   </tr>
@@ -27,7 +27,7 @@ Stopwatch:
 </table>
   
 <script>
-var h1 = document.getElementsByTagName('h1')[0],
+var h1 = document.getElementById('time'),
     start = document.getElementById('start'),
     stop = document.getElementById('stop'),
     clear = document.getElementById('clear'),
