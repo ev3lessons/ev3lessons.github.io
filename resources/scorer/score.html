@@ -104,6 +104,7 @@ function calc(points, id) {
             M04yel = 0;
             M04blu = 0;
             M04 = M04yel + M04blu + M04bla;
+	    document.getElementById("RecMatTxt").innerHTML = "";
 	} else {
 	    document.getElementById("westM04y").disabled = false;
 	    document.getElementById("safeM04y").disabled = false;
@@ -119,8 +120,12 @@ function calc(points, id) {
 	    if (($("input[name=YellowBin]:checked").val() != 0) &&
 		($("input[name=BlueBin]:checked").val() != 0))
 //		alert("At least one of your bins must be in other team's Safety!");
-	    document.getElementById("RecMatTxt").innerHTML = "Note: At least one of your bins must be in other team's Safety!";
+		document.getElementById("RecMatTxt").innerHTML = "Note: At least one of your bins must be in other team's Safety!";
+	    else
+		document.getElementById("RecMatTxt").innerHTML = "";
 	}
+	if (points < 180)
+		document.getElementById("RecMatTxt").innerHTML = "";
 	    
     } else if (id == 21) {
 	M02 = points;
