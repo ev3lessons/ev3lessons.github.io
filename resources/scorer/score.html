@@ -38,6 +38,7 @@ function resetform() {
     document.getElementById("BlackBarsOrig").max = 12
     bboMax = 12;
     recmatMin = 0;
+    document.getElementById("RecMatTxt").innerHTML = "";
     document.getElementById("BlackBarsOrig").value = 12;
     points = 0;
     M01 = 0;
@@ -88,45 +89,57 @@ function dropdowncheck(ppi, id, id2) {
     calc(ppi*index, id);
 }
 
-
-function calc(points, id) {  
-    if (id == 11) {
-	M01 = points;
-	if (points == 240) {
-	    document.getElementById("safeM04y").checked = true;
-	    document.getElementById("safeM04b").checked = 1;
-	    document.getElementById("westM04y").disabled = true;
-	    document.getElementById("safeM04y").disabled = true;
-	    document.getElementById("elseM04y").disabled = true;
-	    document.getElementById("westM04b").disabled = true;
-	    document.getElementById("safeM04b").disabled = true;
-            document.getElementById("elseM04b").disabled = true;
-            M04yel = 0;
-            M04blu = 0;
-            M04 = M04yel + M04blu + M04bla;
-	    document.getElementById("RecMatTxt").innerHTML = "";
-	} else {
-	    document.getElementById("westM04y").disabled = false;
-	    document.getElementById("safeM04y").disabled = false;
-	    document.getElementById("elseM04y").disabled = false;
-	    document.getElementById("westM04b").disabled = false;
-	    document.getElementById("safeM04b").disabled = false;
-	    document.getElementById("elseM04b").disabled = false;
- 	    M04yel = document.getElementById("YellowBars").value * $("input[name=YellowBin]:checked").val();
-	    M04blu = document.getElementById("BlueBars").value * $("input[name=BlueBin]:checked").val();
-            M04 = M04yel + M04blu + M04bla;
-	}
-	if (points == 180) {
-	    if (($("input[name=YellowBin]:checked").val() != 0) &&
-		($("input[name=BlueBin]:checked").val() != 0))
-//		alert("At least one of your bins must be in other team's Safety!");
+function checkM01andM04() {
+    var numSafeBin = 0;
+    var yelperbin = $("input[name=YellowBin]:checked").val();
+    var bluperbin = $("input[name=BlueBin]:checked").val();
+    if (M01 == 240) {
+	document.getElementById("safeM04y").checked = true;
+	document.getElementById("safeM04b").checked = true;
+	document.getElementById("westM04y").disabled = true;
+	document.getElementById("safeM04y").disabled = true;
+	document.getElementById("elseM04y").disabled = true;
+	document.getElementById("westM04b").disabled = true;
+	document.getElementById("safeM04b").disabled = true;
+        document.getElementById("elseM04b").disabled = true;
+	document.getElementById("RecMatTxt").innerHTML = "";
+	yelperbin = $("input[name=YellowBin]:checked").val();
+	bluperbin = $("input[name=BlueBin]:checked").val();
+    } else {
+	document.getElementById("westM04y").disabled = false;
+	document.getElementById("safeM04y").disabled = false;
+	document.getElementById("elseM04y").disabled = false;
+	document.getElementById("westM04b").disabled = false;
+	document.getElementById("safeM04b").disabled = false;
+	document.getElementById("elseM04b").disabled = false;
+	if (M01 == 180) {
+	    if ((yelperbin != 0) && (bluperbin != 0))
 		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
 	    else
 		document.getElementById("RecMatTxt").innerHTML = "";
 	}
-	if (points < 180)
-		document.getElementById("RecMatTxt").innerHTML = "";
-	    
+	if (M01 < 180)
+	    document.getElementById("RecMatTxt").innerHTML = "";
+    }
+    if (yelperbin == 0)
+	numSafeBin++;
+    if (bluperbin == 0)
+	numSafeBin++;
+    recmatMin = numSafeBin;
+    if (recmatMin > document.getElementById("RecMat").value) {
+           document.getElementById("RecMat").value = recmatMin;
+    }
+    M04yel = document.getElementById("YellowBars").value * $("input[name=YellowBin]:checked").val();
+    M04blu = document.getElementById("BlueBars").value * $("input[name=BlueBin]:checked").val();
+    M04 = M04yel + M04blu + M04bla;
+    M01 = 60 * document.getElementById("RecMat").value;
+}
+
+
+function calc(points, id) {  
+    if (id == 11) {
+	M01 = points;
+        checkM01andM04();
     } else if (id == 21) {
 	M02 = points;
     } else if (id == 31) {
@@ -136,51 +149,15 @@ function calc(points, id) {
 	M03b = points;
         M03 = M03a + M03b;
     } else if (id == 41) {
-        var perbin = $("input[name=YellowBin]:checked").val()
+        var perbin = $("input[name=YellowBin]:checked").val() 
 	M04yel = document.getElementById("YellowBars").value * perbin;
 	M04 = M04yel + M04blu + M04bla;
-	var numBin = 0;
-	if (perbin == 0)
-	    numBin++;
-	var othperbin = $("input[name=BlueBin]:checked").val() 
-	if (othperbin == 0)
-	    numBin++;
-        recmatMin = numBin;
-        if (numBin > document.getElementById("RecMat").value) {
-           document.getElementById("RecMat").value = recmatMin;
-	    M01 = 60 * numBin;
-	}
-	if (M01 == 180) {
-	    if (($("input[name=YellowBin]:checked").val() != 0) &&
-		($("input[name=BlueBin]:checked").val() != 0))
-//		alert("At least one of your bins must be in other team's Safety!");
-		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
-	    else
-		document.getElementById("RecMatTxt").innerHTML = "";
-	}
+        checkM01andM04();
     } else if (id == 42) {
         var perbin = $("input[name=BlueBin]:checked").val()
 	M04blu = document.getElementById("BlueBars").value * perbin;
 	M04 = M04yel + M04blu + M04bla;
-	var numBin = 0;
-	if (perbin == 0)
-	    numBin++;
-	var othperbin = $("input[name=YellowBin]:checked").val() 
-	if (othperbin == 0)
-	    numBin++;
-        recmatMin = numBin;
-        if (numBin > document.getElementById("RecMat").value) {
-           document.getElementById("RecMat").value = recmatMin;
-	    M01 = 60 * numBin;
-	}
-	if (M01 == 180) {
-	    if (($("input[name=YellowBin]:checked").val() != 0) &&
-		($("input[name=BlueBin]:checked").val() != 0))
-//		alert("At least one of your bins must be in other team's Safety!");
-		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
-	    else
-		document.getElementById("RecMatTxt").innerHTML = "";
-	}
+        checkM01andM04();
     } else if (id == 43) {
 	var bbo = document.getElementById("BlackBarsOrig").value;
 	var bbb = document.getElementById("BlackBarsBin").value;
@@ -251,15 +228,12 @@ function calc(points, id) {
 	M09 = points;
     } else if (id == 101) {
 	M10 = points;
-	var x = document.getElementById("BlackBarsOrig");
 	if (points == 0) {
-//	    x.max = 12;
 	    bboMax = 12;
 	} else {
 	    if (x.value > 8) {
 		x.value=8;
             }
-//            x.max = 8;
 	    bboMax = 8;
 	    calc(0,43);
 	}
@@ -286,7 +260,6 @@ function calc(points, id) {
     document.getElementById('M12pts').innerHTML = M12;
     var points = M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
     document.getElementById('points').value = points + ' Points ';
-
 
     var ranges = $("input[data-type='range']");
     var radios = $("input[type='radio']");
@@ -344,7 +317,7 @@ else
 <script>
 
     if (viewportwidth > 768)
-	document.write('<table width="768"><tr><td width="35%">');
+	document.write('<table width="768""><tr><td width="35%">');
     else if (viewportwidth > 600)
 	document.write('<table width="100%"><tr><td width="35%">');
     else
@@ -356,7 +329,7 @@ else
         document.write('</td><td width="30%">');
     } 
     </script>
-    <iframe src="countup.html" style="border:none" scrolling="no" width="100%">    </iframe>
+    <iframe src="countup.html" style="border:none" scrolling="no" width="100%" height="170">    </iframe>
     <script>
     if (viewportwidth > 600){
 	document.write(' </td><td width="30%">');}
@@ -373,7 +346,6 @@ else
     </td>
   </tr>
 </table>
-
 <form id="form">
 <div class="missions">
 <script>
