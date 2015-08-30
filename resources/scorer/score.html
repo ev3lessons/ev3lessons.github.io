@@ -31,13 +31,14 @@ var M10 = 0;
 var M11 = 0; 
 var M12 = 0;
 var bboMax = 12;
+var recmatMin = 0;
 
 function resetform() {
     document.getElementById("form").reset() 
     document.getElementById("BlackBarsOrig").max = 12
     bboMax = 12;
+    recmatMin = 0;
     document.getElementById("BlackBarsOrig").value = 12;
-    document.getElementById("RecMat").min = 0;
     points = 0;
     M01 = 0;
     M02 = 0;
@@ -61,6 +62,13 @@ function resetform() {
     M10 = 0; 
     M11 = 0; 
     M12 = 0;
+    document.getElementById("westM04y").disabled = false;
+    document.getElementById("safeM04y").disabled = false;
+    document.getElementById("elseM04y").disabled = false;
+    document.getElementById("westM04b").disabled = false;
+    document.getElementById("safeM04b").disabled = false;
+    document.getElementById("elseM04b").disabled = false;
+    
     calc(0,43);
 }
 
@@ -131,8 +139,9 @@ function calc(points, id) {
 	var othperbin = $("input[name=BlueBin]:checked").val() 
 	if (othperbin == 0)
 	    numBin++;
-	if (numBin > document.getElementById("RecMat").value) {
-	    document.getElementById("RecMat").min = numBin;
+        recmatMin = numBin;
+        if (numBin > document.getElementById("RecMat").value) {
+           document.getElementById("RecMat").value = recmatMin;
 	    M01 = 60 * numBin;
 	}
     } else if (id == 42) {
@@ -145,8 +154,9 @@ function calc(points, id) {
 	var othperbin = $("input[name=YellowBin]:checked").val() 
 	if (othperbin == 0)
 	    numBin++;
-	if (numBin > document.getElementById("RecMat").value) {
-	    document.getElementById("RecMat").min = numBin;
+        recmatMin = numBin;
+        if (numBin > document.getElementById("RecMat").value) {
+           document.getElementById("RecMat").value = recmatMin;
 	    M01 = 60 * numBin;
 	}
     } else if (id == 43) {
@@ -303,13 +313,13 @@ else
 <table>
   <tr>
     <td>
-      <iframe src="countdown.html" style="border:none" scrolling="no" width="200" height="120">
+      <iframe src="countdown.html" style="border:none" scrolling="no" >
       </iframe>
       <script>if (viewportwidth > 600){
       document.write('</td><td>');
 	} 
       </script>
-      <iframe src="countup.html" style="border:none" width="250" scrolling="no" height="120">
+      <iframe src="countup.html" style="border:none" scrolling="no" >
       </iframe>
        <script>if (viewportwidth > 600){
       document.write(' </td><td>');}
@@ -352,7 +362,7 @@ else
 	</tr>
 	<tr>
 	  <td>
-	    <input type="range" data-show-value="true" name="RecMat" id="RecMat" value="0" min="0" max="4" step="1" onchange="calc(this.value*60,11)">
+	    <input type="range" data-show-value="true" name="RecMat" id="RecMat" value="0" min="0" max="4" step="1" onchange="if (this.value<recmatMin) this.value=recmatMin;calc(this.value*60,11)">
 	  </td>
 	</tr>
 
