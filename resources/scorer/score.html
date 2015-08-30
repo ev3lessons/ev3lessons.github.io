@@ -120,7 +120,7 @@ function calc(points, id) {
 	    if (($("input[name=YellowBin]:checked").val() != 0) &&
 		($("input[name=BlueBin]:checked").val() != 0))
 //		alert("At least one of your bins must be in other team's Safety!");
-		document.getElementById("RecMatTxt").innerHTML = "Note: At least one of your bins must be in other team's Safety!";
+		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
 	    else
 		document.getElementById("RecMatTxt").innerHTML = "";
 	}
@@ -150,6 +150,14 @@ function calc(points, id) {
            document.getElementById("RecMat").value = recmatMin;
 	    M01 = 60 * numBin;
 	}
+	if (M01 == 180) {
+	    if (($("input[name=YellowBin]:checked").val() != 0) &&
+		($("input[name=BlueBin]:checked").val() != 0))
+//		alert("At least one of your bins must be in other team's Safety!");
+		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
+	    else
+		document.getElementById("RecMatTxt").innerHTML = "";
+	}
     } else if (id == 42) {
         var perbin = $("input[name=BlueBin]:checked").val()
 	M04blu = document.getElementById("BlueBars").value * perbin;
@@ -164,6 +172,14 @@ function calc(points, id) {
         if (numBin > document.getElementById("RecMat").value) {
            document.getElementById("RecMat").value = recmatMin;
 	    M01 = 60 * numBin;
+	}
+	if (M01 == 180) {
+	    if (($("input[name=YellowBin]:checked").val() != 0) &&
+		($("input[name=BlueBin]:checked").val() != 0))
+//		alert("At least one of your bins must be in other team's Safety!");
+		document.getElementById("RecMatTxt").innerHTML = "Warning: At least one of your bins must be in other team's Safety!";
+	    else
+		document.getElementById("RecMatTxt").innerHTML = "";
 	}
     } else if (id == 43) {
 	var bbo = document.getElementById("BlackBarsOrig").value;
@@ -379,12 +395,12 @@ else
 	<tr>
 	  <td width="200" style="font-size: 100%; background-color: sky;">
 	    Number of Green Bins with matching bars in other team's Safety
-            <p id="RecMatTxt" style="color: red"></p>
 	  </td>
 	</tr>
 	<tr>
-	  <td>
+	  <td width="200">
 	    <input type="range" data-show-value="true" name="RecMat" id="RecMat" value="0" min="0" max="4" step="1" onchange="if (this.value<recmatMin) this.value=recmatMin;calc(this.value*60,11)">
+            <p id="RecMatTxt" style="color: red"></p>
 	  </td>
 	</tr>
 
