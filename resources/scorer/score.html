@@ -310,20 +310,26 @@ else
 </head>
 <h1>Trash Trek Scorer by EV3Lessons/Droids Robotics</h1>
 
-<table>
-  <tr>
-    <td>
-      <iframe src="countdown.html" style="border:none" scrolling="no" >
-      </iframe>
-      <script>if (viewportwidth > 600){
-      document.write('</td><td>');
-	} 
-      </script>
-      <iframe src="countup.html" style="border:none" scrolling="no" >
-      </iframe>
-       <script>if (viewportwidth > 600){
-      document.write(' </td><td>');}
-	</script>
+<script>
+
+    if (viewportwidth > 768)
+	document.write('<table width="768"><tr><td width="35%">');
+    else if (viewportwidth > 600)
+	document.write('<table width="100%"><tr><td width="35%">');
+    else
+	document.write('<table><tr width="100%"><td width="100%">');
+    </script>
+    <iframe src="countup.html" style="border:none" scrolling="no" width="100%">    </iframe>
+    <script>
+    if (viewportwidth > 600){
+        document.write('</td><td width="30%">');
+    } 
+    </script>
+    <iframe src="countdown.html" style="border:none" scrolling="no" width="100%"> </iframe>
+    <script>
+    if (viewportwidth > 600){
+	document.write(' </td><td width="30%">');}
+     </script>
 	<center>
 	<fieldset>
 	<legend size="10">Score</legend>
