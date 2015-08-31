@@ -231,8 +231,8 @@ function calc(points, id) {
 	if (points == 0) {
 	    bboMax = 12;
 	} else {
-	    if (x.value > 8) {
-		x.value=8;
+	    if (document.getElementById("BlackBarsOrig").value > 8) {
+		document.getElementById("BlackBarsOrig").value=8;
             }
 	    bboMax = 8;
 	    calc(0,43);
