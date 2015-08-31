@@ -268,6 +268,48 @@ function calc(points, id) {
     radios.checkboxradio("refresh");
 }
 
+var audio = new Audio('audio_file.mp3');
+var CDseconds = 30, CDminutes = 2;
+var CDinterval;
+
+function sub() {
+
+    if (CDseconds == 0) {
+        CDseconds = 59;
+        CDminutes--;
+    } else {
+	CDseconds--;
+    }
+    
+    if ((CDseconds == 0) && (CDminutes == 0)) {
+	audio.play();
+	clearTimeout(CDinterval);
+    }
+	
+    document.getElementById('countdownTime').textContent = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseconds);
+}
+
+function CDtimer() {
+    CDinterval = setInterval(sub, 1000);
+}
+
+var SWseconds = 0, SWminutes = 0, SWinterval;
+
+function add() {
+    SWseconds++;
+    if (SWseconds >= 60) {
+        SWseconds = 0;
+        SWminutes++;
+    }
+    
+    document.getElementById('stopwatchTime').textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds);
+}
+
+function SWtimer() {
+    SWinterval = setInterval(add, 1000);
+}
+
+
     <!--
 
 var viewportwidth;
@@ -322,15 +364,59 @@ else
 	document.write('<table width="100%"><tr><td width="35%">');
     else
 	document.write('<table><tr width="100%"><td width="100%">');
-    </script>
-    <iframe src="countdown.html" style="border:none" scrolling="no" width="100%"> </iframe>
-    <script>
+	  </script>
+
+<div class="ui-mini" id="Timer">
+  Timer:
+  <table style="border: 10px solid black; border-collapse: collapse;">
+    <tr style="border: 10px solid black; border-collapse: collapse;">
+      <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+	<p id="countdownTime">2:30<p>
+      </td>
+      <td style="border: 10px solid black; border-collapse: collapse;">
+	<button style="margin:0" onclick="CDtimer()">Start</button>
+      </td>
+    </tr>
+    <tr style="border: 10px solid black; border-collapse: collapse;">
+      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2;">Reset</button>
+      </td>
+    </tr>
+    <tr>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval);">Pause</button>
+    </td>
+    </tr>
+  </table>
+</div>
+  <script>
     if (viewportwidth > 600){
         document.write('</td><td width="30%">');
     } 
     </script>
-    <iframe src="countup.html" style="border:none" scrolling="no" width="100%" height="170">    </iframe>
-    <script>
+<div class="ui-mini" id="Stopwatch">
+Stopwatch:
+<table style="border: 10px solid black; border-collapse: collapse;">
+  <tr style="border: 10px solid black; border-collapse: collapse;">
+    <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+	<p id="stopwatchTime">00:00</p></td>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+    <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+  </tr>
+  <tr>
+  <td style="border: 10px solid black; border-collapse: collapse;">
+    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00'; SWseconds = 0; SWminutes = 0;">Reset</button>
+  </td>
+  </tr>
+  <tr>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval);">Stop</button>
+    </td>
+  </tr>
+</table>
+
+
+
+  <script>
     if (viewportwidth > 600){
 	document.write(' </td><td width="30%">');}
      </script>
