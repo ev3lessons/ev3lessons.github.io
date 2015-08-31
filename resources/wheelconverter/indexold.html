@@ -13,7 +13,7 @@
 <html dir="ltr" lang="en-US">
     <!--<![endif]-->
     <head>
-<base href="../../">	
+<base href="/">	
         <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest. This site is operated by FLL Team Droids Robotics.">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -100,7 +100,161 @@
 
 	    <!-- HEADER CUT HERE ------------------------------------------------->
 <div class=" home-section group">
-<div class="title"><script>document.write('<iframe width="100%" height="1000" src="resources/wheelconverter/calc.html#'+language+'"></iframe>');</script>
+<div class="title">
+
+<p style="display: none;">
+<script>
+var file = "wheelconverter";
+document.write('<iframe height="200" width="200" src="http://log.ev3lessons.com/log.php?file='+file+'&lang='+language+'"></iframe>');
+</script>
+</p>
+
+<html>
+<link rel="shortcut icon" href="http://www.ev3lessons.com/images/favicon.ico" />
+<link rel="icon" href="http://www.ev3lessons.com/images/favicon.ico" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<head>
+<title>Wheel Dimensions to Degrees Converter</title>
+</head>
+
+<body>
+
+
+<h1>Wheel Converter: Automatic Distance to Degrees Calculator</h1>
+<b>This tool can be used to easily convert your wheel/tire size information into useful data to be used by your First Lego League team. </b>
+
+<form name="calculator" >
+
+<br>
+<b>STEP 1:
+Enter Wheel Dimensions </b>
+<br>
+<br>
+Input your wheel diameter in millimeters *-OR-* You can click one of the tires commonly used by FLL teams below.
+
+<br>
+<input type="textfield" name="wheelSize" value="">
+<br>
+
+<table >
+  <tr>
+        <td>
+       <button onClick="document.calculator.wheelSize.value='94.2'" type="button">    <img width="120" height="120" src="/resources/wheelconverter/photo1.png" alt="Basic EV3 wheel"> </button>
+     </td>
+    <td>
+       <button onClick="document.calculator.wheelSize.value='56'" type="button">    <img width="120" height="120" src="/resources/wheelconverter/photo2.JPG" alt="Basic EV3 wheel"> </button>
+     </td>
+    <td>
+       <button onClick="document.calculator.wheelSize.value='81.6'" type="button">     <img width="120" height="120" src="/resources/wheelconverter/photo3.JPG" alt="Largest NXT wheel"> </button>
+    </td>
+    <td>
+       <button onClick="document.calculator.wheelSize.value='56'" type="button">     <img src="/resources/wheelconverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>
+    </td>
+    <td>
+      <button onClick="document.calculator.wheelSize.value='43.2'" type="button">      <img src="/resources/wheelconverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>
+    </td>
+    </tr>
+  <tr align="center">
+            <td>
+    
+                Large Motorcycle Wheel - 94.2&times;20
+            <br>
+        </td>
+        <td>
+    
+                EV3 basic tire - 56&times;28
+            <br>
+        </td>
+        <td>
+     
+                Motorcycle tire - 81.6&times;15
+            <br>
+        </td>
+        <td>
+          
+                Balloon tire - 56&times;26
+            <br>
+        </td>
+        <td>
+       
+                Small tire - 43.2&times;22
+            <br>
+        </td>
+</tr>
+</table>
+
+
+<br><b>STEP 2: Enter Distance Robot Needs to Move</b>
+<br>
+<br>
+Input the distance you would like the robot to move in either inches or centimeters:
+<br>
+inches: <input type="textfield" name="inches" value=""  onblur="document.calculator.cm.value=2.54*document.calculator.inches.value">
+    <br>
+centimeters: <input type="textfield" name="cm" value=""  onblur="document.calculator.inches.value=document.calculator.cm.value/2.54">
+
+
+    
+<br>
+<br>
+<b>STEP 3: Hit the Button to Calculate!</b>
+<br>
+<br>
+<input type="button" value="CALCULATE" onClick="document.calculator.circum.value=Math.PI*document.calculator.wheelSize.value/10;
+    document.calculator.dist.value=document.calculator.cm.value;
+    document.calculator.rotations.value=document.calculator.dist.value/document.calculator.circum.value;
+    document.calculator.degrees.value=document.calculator.rotations.value*360;
+myFunction();">
+
+<br>
+<br> Total distance to travel (in cm):
+    <input type="textfield" name="dist" readonly="" value="0">
+<br> Circumference of your wheel (in cm) is (&pi; * diameter):
+    <input type="textfield" name="circum" readonly="" value="0">
+<br> The number of rotations your robot needs to move is (distance to travel &divide; circumference):
+    <input type="textfield" name="rotations" readonly="" value="0">
+<br> The number of degrees your robot needs to move is: (rotations &times; 360):
+    <input type="textfield" id="degrees" name="degrees" readonly="" value="0">
+<br>
+<br>
+<b>STEP 4: Use the Values </b>
+<br>
+<br>
+Use the rotations or degrees values from STEP 3 in your code.  Now you can measure in centimeters/inches and still program in degrees or rotations!
+<br>
+
+<br>
+<br>
+<script>
+  function myFunction() {
+  if (document.getElementById('degrees').value  == Infinity) {
+  alert('Please select a wheel and re-calculate');
+  } else if (document.getElementById('degrees').value  == 'NaN') {
+  alert('Please select a wheel and enter in a value');
+  }
+  }
+</script>
+
+
+Thank you for using this calculator!
+<br> This calulator was made by EV3Lessons.com. If you have a favorite wheel, we can add it.  Email: <a href="mailto:team@droidsrobotics.org">team@ev3lessons.com</a>
+    <br>
+    <br>
+    &copy; Copyright EV3Lessons.com and Droids Robotics 2014
+    
+<br>
+<br>
+Version 2.5. Updated July 6, 2015
+</form>
+</body>
+</html>
+
+
+
+
+
 
 </div>
 </div>

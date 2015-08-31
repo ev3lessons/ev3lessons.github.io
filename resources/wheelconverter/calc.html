@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+    <!--<![endif]-->
+    <head>
+
+<script src= "../../js/angular.min.js">
+    <link rel="stylesheet" type="text/css" media="all" href="../../style.css" />
+<p style="display: none;">
+<script>
+var file = "wheelconverter";
+
+</script>
+</p>
+
+<link rel="shortcut icon" href="http://www.ev3lessons.com/images/favicon.ico" />
+<link rel="icon" href="http://www.ev3lessons.com/images/favicon.ico" />
+<meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+<head>
+<title>Wheel Dimensions to Degrees Converter</title>
+</head>
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+<h1>{{one}}</h1>
+<b>{{two}} </b>
+
+<form name="calculator" >
+
+<br>
+<b>{{three}} </b>
+<br>
+<br>
+{{four}}
+
+<br>
+<input type="textfield" name="wheelSize" value="">
+<br>
+  <script>
+  var language = window.location.hash.substring(1);
+//  alert(language);
+<!--
+
+ var viewportwidth;
+ var viewportheight;
+
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth,
+       viewportheight = document.documentElement.clientHeight
+ }
+
+ // older versions of IE
+
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight
+ }
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+<script>
+    if (viewportwidth > 600) {
+    document.write('\
+    <table >\
+  <tr>\
+        <td>\
+       <button onClick="document.calculator.wheelSize.value=\'94.2\'" type="button">    <img width="120" height="120" src="photo1.png" alt="Basic EV3 wheel"> </button>\
+        </td>\
+    <td>\
+       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">    <img width="120" height="120" src="photo2.JPG" alt="Basic EV3 wheel"> </button>\
+     </td>\
+    <td>\
+       <button onClick="document.calculator.wheelSize.value=\'81.6\'" type="button">     <img width="120" height="120" src="photo3.JPG" alt="Largest NXT wheel"> </button>\
+    </td>\
+    <td>\
+       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">     <img src="photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>\
+    </td>\
+    <td>\
+      <button onClick="document.calculator.wheelSize.value=\'43.2\'" type="button">      <img src="photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>\
+    </td>\
+    </tr>\
+  <tr align="center">\
+            <td>\
+    \
+                {{five}}\
+            <br>\
+        </td>\
+        <td>\
+    \
+               {{six}}\
+            <br>\
+        </td>\
+        <td>\
+\
+               {{seven}}\
+            <br>\
+        </td>\
+        <td>\
+          \
+                {{eight}}\
+            <br>\
+        </td>\
+        <td>\
+       \
+               {{nine}}\
+            <br>\
+        </td>\
+</tr>\
+</table>');
+} else {
+    document.write('<br>\
+       <button onClick="document.calculator.wheelSize.value=\'94.2\'" type="button">    <img width="120" height="120" src="photo1.png" alt="Basic EV3 wheel"> </button>\
+                <br>{{five}}<br>\
+                     <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">    <img width="120" height="120" src="photo2.JPG" alt="Basic EV3 wheel"> </button>\
+       <br> {{six}}<br>\
+         <button onClick="document.calculator.wheelSize.value=\'81.6\'" type="button">     <img width="120" height="120" src="photo3.JPG" alt="Largest NXT wheel"> </button>\
+      <br>{{seven}}<br>\
+       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">     <img src="photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>\
+       <br>{{eight}}<br>\
+        <button onClick="document.calculator.wheelSize.value=\'43.2\'" type="button">      <img src="photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>\
+   <br>{{nine}}<br>\
+');
+}
+</script>
+
+<br><b>{{onezero}}</b>
+<br>
+<br>
+{{oneone}}
+<br>
+{{onetwo}} <input type="textfield" name="inches" value=""  onblur="document.calculator.cm.value=2.54*document.calculator.inches.value">
+    <br>
+{{onethree}} <input type="textfield" name="cm" value=""  onblur="document.calculator.inches.value=document.calculator.cm.value/2.54">
+
+
+    
+<br>
+<br>
+<b>{{onefour}}</b>
+<br>
+<br>
+<input type="button" value="{{onefive}}" onClick="document.calculator.circum.value=Math.PI*document.calculator.wheelSize.value/10;
+    document.calculator.dist.value=document.calculator.cm.value;
+    document.calculator.rotations.value=document.calculator.dist.value/document.calculator.circum.value;
+    document.calculator.degrees.value=document.calculator.rotations.value*360;
+myFunction();">
+
+<br>
+<br> {{onesix}}
+    <input type="textfield" name="dist" readonly="" value="0">
+<br> {{oneseven}}
+    <input type="textfield" name="circum" readonly="" value="0">
+<br>{{oneeight}}
+    <input type="textfield" name="rotations" readonly="" value="0">
+<br> {{onenine}}
+    <input type="textfield" id="degrees" name="degrees" readonly="" value="0">
+<br>
+<br>
+<b>{{twozero}} </b>
+<br>
+<br>
+{{twoone}}
+<br>
+
+<br>
+<br>
+<script>
+  function myFunction() {
+  if (document.getElementById('degrees').value  == Infinity) {
+  alert('Please select a wheel and re-calculate');
+  } else if (document.getElementById('degrees').value  == 'NaN') {
+  alert('Please select a wheel and enter in a value');
+  }
+  }
+</script>
+
+
+{{twotwo}}
+<br>{{twothree}}
+    <br>
+    <br>
+    {{twofour}}
+   </div> 
+<br>
+<br>
+Version 2.5. Updated July 6, 2015
+</form>
+</body>
+</html>
+
+
+
+<script>
+
+
+ 
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+
+$scope.one = "Wheel Converter: Automatic Distance to Degrees Calculator";
+   $scope.two = "This tool can be used to easily convert your wheel/tire size information into useful data to be used by your First Lego League team.";
+   $scope.three = "STEP 1: Enter Wheel Dimensions ";
+ $scope.four = "Input your wheel diameter in millimeters *-OR-* You can click one of the tires commonly used by FLL teams below. ";
+ $scope.five = "Large Motorcycle Wheel - 94.2×20";
+ $scope.six = "EV3 basic tire - 56×28";
+ $scope.seven = "Motorcycle tire - 81.6×15";
+ $scope.eight = "Balloon tire - 56×26";
+ $scope.nine = "Small tire - 43.2×22 ";
+ $scope.onezero = "STEP 2: Enter Distance Robot Needs to Move ";
+ $scope.oneone = "Input the distance you would like the robot to move in either inches or centimeters: ";
+ $scope.onetwo = "inches";
+ $scope.onethree = "centimeters";
+ $scope.onefour = "STEP 3: Hit the Button to Calculate! ";
+ $scope.onefive = "CALCULATE";
+ $scope.onesix = "Total distance to travel (in cm)";
+ $scope.oneseven = "Circumference of your wheel (in cm) is (π * diameter):";
+ $scope.oneeight = "The number of rotations your robot needs to move is (distance to travel ÷ circumference): ";
+ $scope.onenine = "The number of degrees your robot needs to move is: (rotations × 360): ";
+ $scope.twozero = "STEP 4: Use the Values ";
+ $scope.twoone = "Use the rotations or degrees values from STEP 3 in your code. Now you can measure in centimeters/inches and still program in degrees or rotations!";
+ $scope.twotwo = "Thank you for using this calculator! ";
+   $scope.twothree = "This calulator was made by EV3Lessons.com. If you have a favorite wheel, we can add it. Email: team@ev3lessons.com ";
+   $scope.twofour = "© Copyright EV3Lessons.com and Droids Robotics 2014";
+
+
+
+   if (language == "fr") {
+   $scope.one = "Calcul de déplacement: convertisseur de distance en degrés";
+   $scope.two = "Cet outil sert à convertir facilement les caractéristiques de vos roues, en données utiles pour gérer pour vos moteurs de déplacement.";
+   $scope.three = "Etape 1: Caractéristiques des roues ";
+ $scope.four = "Entrez la dimension de vos roues en millimétres, ou, cliquez sur l'une des roues généralement utilisées par les équipes FLL";
+ $scope.five = "Grosse roue de moto - 94.2×20 ";
+ $scope.six = "Roue EV3 du kit - 56×28 ";
+ $scope.seven = "Fine roue de vélo - 81.6×15 ";
+ $scope.eight = "Roue de quad - 56×26 ";
+ $scope.nine = "Petite roue - 43.2×22";
+ $scope.onezero = "Etape 2: Entrez la distance que vous voulez parcourir avec votre robot. ";
+ $scope.oneone = "Entrez la distance désirée, en inches (mesure anglaise) ou centimètres:";
+ $scope.onetwo = "Inches:";
+ $scope.onethree = "Centimétres:";
+ $scope.onefour = "Etape 3: Cliquez le bouton pour ";
+ $scope.onefive = "[Calculer!]";
+ $scope.onesix = "Distance totale à parcourir (en cm):";
+ $scope.oneseven = "Circumference de la roue en (cm) est (pi*diametre):";
+ $scope.oneeight = "Nombre de rotations que votre robot doit effectuer (distance/circonférence):";
+ $scope.onenine = "Nombre de degrés que votre robot doit effectuer (rotations*360):";
+ $scope.twozero = "Etape 4: Utilisez les valeurs calculées ";
+ $scope.twoone = "Utilisez le nombres de rotations ou de degrés dans votre code, de l'étape 3. Maintenant, vous pouvez mesurer l'écart entre votre consigne et le déplacement réel, et corriger.";
+ $scope.twotwo = "Thank you for using this calculator! ";
+//   $scope.twothree = "This calulator was made by EV3Lessons.com. If you have a favorite wheel, we can add it. Email: team@ev3lessons.com ";
+//   $scope.twofour = "© Copyright EV3Lessons.com and Droids Robotics 2014";
+}
+});
+</script>

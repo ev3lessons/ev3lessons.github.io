@@ -5,7 +5,40 @@
 
   <!-- headstart -->
 
+<div style="right: 5px; position:fixed; top: 5px; z-index: 100">
+  <a href="https://play.google.com/store/apps/details?id=com.ev3lessons.ev3lessons.trashtrekscorer">
+  <img  alt="Android app on Google Play"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+</a>
+  </div>
+<!--<a id="canvasImg" download="myEV3LessonsSketch.png" href="#" onclick="
+/*var canvas = document.getElementById('wPaint-canvas');
+      var context = canvas.getContext('2d');
 
+      draw cloud
+      context.beginPath();
+      context.moveTo(170, 80);
+      context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+      context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+      context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+      context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+      context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+      context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = '#8ED6FF';
+      context.fill();
+      context.strokeStyle = '#0000ff';
+      context.stroke();
+
+      // save canvas image as data url (png format by default)
+      var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+      document.getElementById('canvasImg').href = dataURL;
+//download:dataURL;*/">Show
+      drawing as picture</a>-->
     <div class="content-box">
         <!-- JavaScripts-->
       <!-- jQuery UI -->
@@ -17,7 +50,6 @@
       <!-- wColorPicker -->
       <link rel="Stylesheet" type="text/css" href="./lib/wColorPicker.min.css" />
       <script type="text/javascript" src="./lib/wColorPicker.min.js"></script>
-
       <!-- wPaint -->
       <link rel="Stylesheet" type="text/css" href="./wPaint.min.css" />
       <script type="text/javascript" src="./wPaint.min.js"></script>
@@ -27,65 +59,55 @@
       <script type="text/javascript" src="./plugins/file/wPaint.menu.main.file.min.js"></script>
 
 
+<style>
+ input{position:absolute; top:-100px;}     
+#container {
+    position: relative;    
+}
 
-<!--
-
-<a href="#" id="downloader" onclick="download()" download="image.png">Download!</a>
--->
-<div id="wPaint" style="position:relative; width:944px; height:530px; background-color:#7a7a7a; margin:70px auto 20px auto;">
-   
- <div id="holder"> <img src="trashtrek-field.jpg" height="100%" width="100%"></div> 
-
+#holder {
+   position: absolute;
+   top: 0px;
+   left: 0px; 
+    
+   padding: 5px;
+ //  background-color: white;
+ //  border: 2px solid red;
+}
+</style>
+<script>if (screen.width > 600) {
+      document.write('<div id="wPaint" style="position:relative;\
+ width:944px; height:530px; background-color:#7a7a7a; margin:70px auto\
+ 20px auto;">');
+	} else {
+	   document.write('<div id="wPaint" style="position:relative;\
+ width:100%; height:80%; background-color:#7a7a7a; margin:70px auto\
+ 20px auto;">');
+	     }
+	     </script>
+<div id="container">
+ <img src="trashtrek-field.jpg" height="100%" width="100%">
+ <div id="holder"></div> 
+</div>
 </div>
 <title>File API (simple)</title>
 <center><article>
  
-  <p><input type=file></p>
-  <p>You can use Snipping Tool(Windows) or /Applications/Utilities/Grab.app(OS X) to take a screenshot of your mission plan.
+  <p><input id="imageLoader" name="imageLoader" type="file"></p>
+  <!--<p>You can use Snipping Tool(Windows) or /Applications/Utilities/Grab.app(OS X) to take a screenshot of your mission plan.
     <br>
     You can then upload your progress back in the program by using the input above. No images will be saved permanently.
-  </p>
-  <i id="status">File API &amp; FileReader API not supported</i>
+  </p>-->
+  <i style="display: none;" id="status">File API &amp; FileReader API not supported</i>
 </article></center>
-<script>
- 
-var upload = document.getElementsByTagName('input')[0],
-    holder = document.getElementById('holder'),
-    state = document.getElementById('status');
 
-if (typeof window.FileReader === 'undefined') {
-  state.className = 'fail';
-} else {
-  state.className = 'success';
-  state.innerHTML = 'File API & FileReader available';
-}
- 
-upload.onchange = function (e) {
-  e.preventDefault();
-
-  var file = upload.files[0],
-      reader = new FileReader();
-  reader.onload = function (event) {
-    var img = new Image();
-    img.src = event.target.result;
-    // note: no onload required since we've got the dataurl...I think! :)
-    if (img.width > 944) { // holder width
-      img.width = 944;
-    }
-    holder.innerHTML = '';
-    holder.appendChild(img);
-  };
-  reader.readAsDataURL(file);
-
-  return false;
-};
-
-
-</script>
-
-</script>
       <center id="wPaint-img"></center>
-      <script type="text/javascript">
+<script type="text/javascript">
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+var dataUrl;
   var imageData = $("#wPaint").wPaint("image");
 
 $("#canvasImage").attr('src', imageData);
@@ -96,7 +118,7 @@ $('#wPaint').wPaint('image', '<image_data>');
         ];
 
         function saveImg(image) {
-          var _this = this;
+      /*    var _this = this;
 
           $.ajax({
             type: 'POST',
@@ -121,7 +143,17 @@ $('#wPaint').wPaint('image', '<image_data>');
               // do something with the image
               $('#wPaint-img').attr('src', image);
             }
-          });
+});*/
+var canvas = document.getElementById('wPaint-canvas');
+      var context = canvas.getContext('2d');
+      // save canvas image as data url (png format by default)
+      var dataURL = canvas.toDataURL();
+
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+//document.getElementById('canvasImg').href = dataURL;
+OpenInNewTab(dataURL);
+ //$("#canvasImg").click();
         }
 
         function loadImgBg () {
@@ -135,10 +167,17 @@ $('#wPaint').wPaint('image', '<image_data>');
 
         function loadImgFg () {
 
-          // internal function for displaying foreground images modal
+        /*  // internal function for displaying foreground images modal
           // where images is an array of images (base64 or url path)
           this._showFileModal('fg', images);
-        }
+*/
+//alert('hi');
+    $("#imageLoader").click();
+};
+
+
+
+
 
         // init wPaint
         $('#wPaint').wPaint({
@@ -148,7 +187,7 @@ $('#wPaint').wPaint('image', '<image_data>');
           saveImg: saveImg,
           loadImgBg: loadImgBg,
           loadImgFg: loadImgFg,
-//	  image: "http://www.ev3lessons.com/archive/2015/resources/drawplan/mat.jpg"
+//	  image: "trashtrek-field.jpg"
         });
 $(function() { 
     $("#btnSave").click(function() { 
@@ -170,6 +209,29 @@ $(function() {
 
 
       </script>
+<script>
+var imageLoader = document.getElementById('imageLoader');
+    imageLoader.addEventListener('change', handleImage, false);
+var canvas = document.getElementById('wPaint-canvas');
+var ctx = canvas.getContext('2d');
+
+
+function handleImage(e){
+    var reader = new FileReader();
+    reader.onload = function(event){
+        var img = new Image();
+        img.onload = function(){
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img,0,0);
+        }
+        img.src = event.target.result;
+    }
+    reader.readAsDataURL(e.target.files[0]);     
+}
+
+ 
+</script>
     </div>
   </div>
 
