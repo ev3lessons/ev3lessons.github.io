@@ -270,7 +270,7 @@ function calc(points, id) {
 
 var audio = new Audio('ring.wav');
 var CDseconds = 30, CDminutes = 2;
-var CDinterval;
+var CDinterval=null;
 
 function sub() {
 
@@ -284,6 +284,7 @@ function sub() {
     if ((CDseconds == 0) && (CDminutes == 0)) {
 	audio.play();
 	clearTimeout(CDinterval);
+	CDinterval = null;
     }
 	
     // document.getElementById('countdownTime')
@@ -291,10 +292,11 @@ CDtime.textContent = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseco
 }
 
 function CDtimer() {
-    CDinterval = setInterval(sub, 1000);
+    if (CDinterval == null)
+	CDinterval = setInterval(sub, 1000);
 }
 
-var SWseconds = 0, SWminutes = 0, SWtenths = 0, SWinterval;
+var SWseconds = 0, SWminutes = 0, SWtenths = 0, SWinterval = null;
 
 function add() {
 
@@ -315,7 +317,8 @@ function add() {
 }
 
 function SWtimer() {
-    SWinterval = setInterval(add, 100);
+    if (SWinterval == null)
+	SWinterval = setInterval(add, 100);
 }
 
 
@@ -387,12 +390,12 @@ else
       </td>
     </tr>
     <tr style="border: 10px solid black; border-collapse: collapse;">
-      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval);">Reset</button>
+      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
       </td>
     </tr>
     <tr>
     <td style="border: 10px solid black; border-collapse: collapse;">
-      <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval);">Pause</button>
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Pause</button>
     </td>
     </tr>
   </table>
@@ -413,12 +416,12 @@ Stopwatch:
   </tr>
   <tr>
   <td style="border: 10px solid black; border-collapse: collapse;">
-    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval);">Reset</button>
+    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
   </td>
   </tr>
   <tr>
     <td style="border: 10px solid black; border-collapse: collapse;">
-      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval);">Pause</button>
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Pause</button>
     </td>
   </tr>
 </table>
