@@ -286,27 +286,36 @@ function sub() {
 	clearTimeout(CDinterval);
     }
 	
-    document.getElementById('countdownTime').textContent = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseconds);
+    // document.getElementById('countdownTime')
+CDtime.textContent = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseconds);
 }
 
 function CDtimer() {
     CDinterval = setInterval(sub, 1000);
 }
 
-var SWseconds = 0, SWminutes = 0, SWinterval;
+var SWseconds = 0, SWminutes = 0, SWtenths = 0, SWinterval;
 
 function add() {
-    SWseconds++;
+
+    SWtenths++;
+    if (SWtenths == 10) {
+	SWseconds++;
+	SWtenths = 0;
+    }
     if (SWseconds >= 60) {
         SWseconds = 0;
         SWminutes++;
     }
     
-    document.getElementById('stopwatchTime').textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds);
+//    document.getElementById('stopwatchTime').textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds) + "." + SWtenths;
+
+    SWtime.textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds) + "." + SWtenths;
+
 }
 
 function SWtimer() {
-    SWinterval = setInterval(add, 1000);
+    SWinterval = setInterval(add, 100);
 }
 
 
@@ -353,7 +362,7 @@ else
     </style>
 
     <h1>Trash Trek Scorer
-      <em> (v2.4 by EV3Lessons/Droids Robotics)
+      <em> (v2.5 by EV3Lessons/Droids Robotics)
 </style>
 </div>
 <script>
@@ -361,7 +370,7 @@ else
     if (viewportwidth > 768)
 	document.write('<table width="768""><tr><td width="35%">');
     else if (viewportwidth > 600)
-	document.write('<table width="100%"><tr><td width="35%">');
+	document.write('<table width="100%"><tr><td width="25%">');
     else
 	document.write('<table><tr width="100%"><td width="100%">');
 	  </script>
@@ -370,15 +379,15 @@ else
   Timer:
   <table style="border: 10px solid black; border-collapse: collapse;">
     <tr style="border: 10px solid black; border-collapse: collapse;">
-      <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
-	<p id="countdownTime">2:30<p>
+      <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+	<p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30<p>
       </td>
       <td style="border: 10px solid black; border-collapse: collapse;">
 	<button style="margin:0" onclick="CDtimer()">Start</button>
       </td>
     </tr>
     <tr style="border: 10px solid black; border-collapse: collapse;">
-      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2;">Reset</button>
+      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval);">Reset</button>
       </td>
     </tr>
     <tr>
@@ -390,7 +399,7 @@ else
 </div>
   <script>
     if (viewportwidth > 600){
-        document.write('</td><td width="30%">');
+        document.write('</td><td width="40%">');
     } 
     </script>
 <div class="ui-mini" id="Stopwatch">
@@ -398,22 +407,26 @@ Stopwatch:
 <table style="border: 10px solid black; border-collapse: collapse;">
   <tr style="border: 10px solid black; border-collapse: collapse;">
     <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
-	<p id="stopwatchTime">00:00</p></td>
+	<p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0</p></td>
     <td style="border: 10px solid black; border-collapse: collapse;">
     <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
   </tr>
   <tr>
   <td style="border: 10px solid black; border-collapse: collapse;">
-    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00'; SWseconds = 0; SWminutes = 0;">Reset</button>
+    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval);">Reset</button>
   </td>
   </tr>
   <tr>
     <td style="border: 10px solid black; border-collapse: collapse;">
-      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval);">Stop</button>
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval);">Pause</button>
     </td>
   </tr>
 </table>
 
+<script>
+  var CDtime = document.getElementById('countdownTime');
+  var SWtime = document.getElementById('stopwatchTime');
+</script>
 
 
   <script>
