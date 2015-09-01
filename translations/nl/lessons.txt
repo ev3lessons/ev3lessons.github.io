@@ -102,12 +102,12 @@ Parallelle Balken Synchronisatie
 Proportionele Besturing
 Lijnvolgers: van basis tot proportioneel
 none
+De gyroscoop en omgaan met overgevoeligheid
 none
+Uitlijnen van de robot
+Klemdetectie
 none
-none
-none
-none
-none
+Bewegen in een rechte lijn en het volgen van een muur met gyroscoop
 Programmeren met Reeksen
 none
 none
