@@ -4,7 +4,11 @@
 <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
 <script src="jquery-1.11.3.min.js"></script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
-
+<div style="right: 5px; position:fixed; top: 5px; z-index: 100">
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ev3lessons.ev3lessons.trashtrekscorer">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png">
+</a>
+  </div>
 <script>
 
 var points = 0;
@@ -322,6 +326,10 @@ function SWtimer() {
 }
 
 
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
     <!--
 
 var viewportwidth;
@@ -371,7 +379,7 @@ else
 <script>
 
     if (viewportwidth > 768)
-	document.write('<table width="768""><tr><td width="35%">');
+	document.write('<table width="768"><tr><td width="35%">');
     else if (viewportwidth > 600)
 	document.write('<table width="100%"><tr><td width="25%">');
     else
