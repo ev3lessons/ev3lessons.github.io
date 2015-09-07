@@ -895,14 +895,14 @@ var a = ['zero','one','two','three','four','five','six','seven','eight','nine'];
 
 function inWords (num) {
     if ((num = num.toString()).length > 9) return 'overflow';
-//    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+    //    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
     n = ('000000' + num).substr(-6).match(/^(\d{3})(\d{1})(\d{2})$/);
     if (!n) return; var str = '';
-//    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
-//    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
-//    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
-//    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
-//    str += (n[5] != 0) ? ((str != '') ? 'and' : '') + (a[Number(n[5])] || b[n[5][0]] + '' + a[n[5][1]]) + '' : '';
+    //    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+    //    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+    //    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+    //    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+    //    str += (n[5] != 0) ? ((str != '') ? 'and' : '') + (a[Number(n[5])] || b[n[5][0]] + '' + a[n[5][1]]) + '' : '';
     str += (n[1] != 0) ? (a[Number(n[1])] || a[n[1][0]] + '' + a[n[1][1]] + '' + a[n[1][2]]) + '' : '';
     str += (n[2] != 0) ? (a[Number(n[2])]) + '' : '';
     str += ((n[3] > 9) || (str != '')) ? (a[n[3][0]] + '' + a[n[3][1]]) : (a[Number(n[3])])
@@ -910,59 +910,53 @@ function inWords (num) {
 }
 
 
-
-
 var i = 1;
 //document.write(inWords(10));
 document.write('<scr'+'ipt>\
 var app = angular.module("myApp", []);\
-    app.controller("myCtrl", function($scope) {');   
-    while (i < 17) {
-	       if (urldes[i] != "none") {
-	         document.getElementById(String(i)).innerHTML = urldes[i];
-	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
-	       } else {
-	       document.write('$scope.'+inWords(i)+' = "en-us";');
-	       if (language != 'en-us'){
-			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
-			      }
-	       }
-	       i = i + 1;
-	       }
-	       i = 50;
-	           while (i < 62) {
-	       if (urldes[i] != "none") {
-	         document.getElementById(String(i)).innerHTML = urldes[i];
-	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
-	       } else {
-	       document.write('$scope.'+inWords(i)+' = "en-us";');
-			      if (language != 'en-us'){
-			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
-			      }
-	       }
-	       i = i + 1;
-			      }
+app.controller("myCtrl", function($scope) {');   
+while (i < 17) {
+    if (urldes[i] != "none") {
+	document.getElementById(String(i)).innerHTML = urldes[i];
+	document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+	document.write('$scope.'+inWords(i)+' = "en-us";');
+	if (language != 'en-us'){
+	    document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+	}
+    }
+    i = i + 1;
+}
+i = 50;
+while (i < 62) {
+    if (urldes[i] != "none") {
+	document.getElementById(String(i)).innerHTML = urldes[i];
+	document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+	document.write('$scope.'+inWords(i)+' = "en-us";');
+	if (language != 'en-us'){
+	    document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+	}
+    }
+    i = i + 1;
+}
 
+i = 100;
+while (i < 112) {
+    if (urldes[i] != "none") {
+	document.getElementById(String(i)).innerHTML = urldes[i];
+	document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+	document.write('$scope.'+inWords(i)+' = "en-us";');
+	if (language != 'en-us'){
+	    document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+	}
+    }
+    i = i + 1;
+}
 
-			        i = 100;
-	           while (i < 111) {
-	       if (urldes[i] != "none") {
-	         document.getElementById(String(i)).innerHTML = urldes[i];
-	         document.write('$scope.'+inWords(i)+' = "'+language+'";');
-	       } else {
-	       document.write('$scope.'+inWords(i)+' = "en-us";');
-	       if (language != 'en-us'){
-			      document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
-			      }
-	       }
-	       i = i + 1;
-			      }
-
-			      
-    document.write('});\
-      </scr'+'ipt>');
-
-
+document.write('});\
+</scr'+'ipt>');
 
 if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
 if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
@@ -977,158 +971,6 @@ if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = i
 if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
 </script>
 
-
-
-
-
-<script>
-/*
-  
-  //save en_US lesson names before re-write
-var i = 1;
-var ids = [0,0,0];
-ids[1] = document.getElementById('one').innerHTML;
-while (i < 15) {
-	   i = i+1;
-	   ids[i] = document.getElementById(String(i)).innerHTML;
-}
-i = 49;
-while (i < 61) {
-	   i = i+1;
-	   ids[i] = document.getElementById(String(i)).innerHTML;
-}
-i = 99;
-while (i < 110) {
-	   i = i+1;
-	   ids[i] = document.getElementById(String(i)).innerHTML;
-	   }
-
-
-
-//end saving en_US names
-//Replace lesson titles
-
-	   
-i = 1;
-if (urldes[1] != 'none'){	document.getElementById('one').innerHTML = urldes[1];}
-else if (language != "en-us") {document.getElementById('one').innerHTML += '<font color="red"> (English)<font>';}
-while (i < 16) {
-	   i = i+1;
-	   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i];}
-else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>';}
-}
-i = 49;
-while (i < 61) {
-	   i = i+1;
-		   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i];}
-else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>';}
-}
-i = 99;
-while (i < 110) {
-	   i = i+1;
-	 	   if (urldes[i] != 'none'){	document.getElementById(String(i)).innerHTML = urldes[i];}
-else if (language != "en-us") {document.getElementById(String(i)).innerHTML += '<font color="red"> (English)<font>';}
-	   }
-	   
-
-
-	   //end relpace lesson titles
-*/
-	   
-/*if (urldes[1] != 'none'){	document.getElementById('one').innerHTML = urldes[1];}
-else if (language != "en-us") {document.getElementById('one').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[2] != 'none'){       document.getElementById('2').innerHTML = urldes[2];}
-else if (language != "en-us") {document.getElementById('2').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[3] != 'none'){	document.getElementById('3').innerHTML = urldes[3];}
-else if (language != "en-us") {document.getElementById('3').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[4] != 'none'){	document.getElementById('4').innerHTML = urldes[4];}
-else if (language != "en-us") {document.getElementById('4').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[5] != 'none'){	document.getElementById('5').innerHTML = urldes[5];}
-else if (language != "en-us") {document.getElementById('5').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[6] != 'none'){	document.getElementById('6').innerHTML = urldes[6];}
-else if (language != "en-us") {document.getElementById('6').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[7] != 'none'){	document.getElementById('7').innerHTML = urldes[7];}
-else if (language != "en-us") {document.getElementById('7').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[8] != 'none'){	document.getElementById('8').innerHTML = urldes[8];}
-else if (language != "en-us") {document.getElementById('8').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[9] != 'none'){	document.getElementById('9').innerHTML = urldes[9];}
-else if (language != "en-us") {document.getElementById('9').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[10] != 'none'){	document.getElementById('10').innerHTML = urldes[10];}
-else if (language != "en-us") {document.getElementById('10').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[11] != 'none'){	document.getElementById('11').innerHTML = urldes[11];}
-else if (language != "en-us") {document.getElementById('11').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[12] != 'none'){	document.getElementById('12').innerHTML = urldes[12];}
-else if (language != "en-us") {document.getElementById('12').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[13] != 'none'){	document.getElementById('13').innerHTML = urldes[13];}
-else if (language != "en-us") {document.getElementById('13').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[14] != 'none'){	document.getElementById('14').innerHTML = urldes[14];}
-else if (language != "en-us") {document.getElementById('14').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[15] != 'none'){	document.getElementById('15').innerHTML = urldes[15];}
-else if (language != "en-us") {document.getElementById('15').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[16] != 'none'){	document.getElementById('16').innerHTML = urldes[16];}
-else if (language != "en-us") {document.getElementById('16').innerHTML += '<font color="red"> (English)<font>';}
-								  
-if (urldes[50] != 'none'){	document.getElementById('50').innerHTML = urldes[50];}
-else if (language != "en-us") {document.getElementById('50').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[51] != 'none'){	document.getElementById('51').innerHTML = urldes[51];}
-else if (language != "en-us") {document.getElementById('51').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[52] != 'none'){	document.getElementById('52').innerHTML = urldes[52];}
-else if (language != "en-us") {document.getElementById('52').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[53] != 'none'){	document.getElementById('53').innerHTML = urldes[53];}
-else if (language != "en-us") {document.getElementById('53').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[54] != 'none'){	document.getElementById('54').innerHTML = urldes[54];}
-else if (language != "en-us") {document.getElementById('54').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[55] != 'none'){	document.getElementById('55').innerHTML = urldes[55];}
-else if (language != "en-us") {document.getElementById('55').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[56] != 'none'){	document.getElementById('56').innerHTML = urldes[56];}
-else if (language != "en-us") {document.getElementById('56').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[57] != 'none'){	document.getElementById('57').innerHTML = urldes[57];}
-else if (language != "en-us") {document.getElementById('57').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[58] != 'none'){	document.getElementById('58').innerHTML = urldes[58];}
-else if (language != "en-us") {document.getElementById('58').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[59] != 'none'){	document.getElementById('59').innerHTML = urldes[59];}
-else if (language != "en-us") {document.getElementById('59').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[60] != 'none'){	document.getElementById('60').innerHTML = urldes[60];}
-else if (language != "en-us") {document.getElementById('60').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[61] != 'none'){      document.getElementById('61').innerHTML = urldes[61];}
-else if (language != "en-us") {document.getElementById('61').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[100] != 'none'){      document.getElementById('100').innerHTML = urldes[100];}
-else if (language != "en-us") {document.getElementById('100').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[101] != 'none'){      document.getElementById('101').innerHTML = urldes[101];}
-else if (language != "en-us") {document.getElementById('101').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[102] != 'none'){      document.getElementById('102').innerHTML = urldes[102];}
-else if (language != "en-us") {document.getElementById('102').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[103] != 'none'){      document.getElementById('103').innerHTML = urldes[103];}
-else if (language != "en-us") {document.getElementById('103').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[104] != 'none'){      document.getElementById('104').innerHTML = urldes[104];}
-else if (language != "en-us") {document.getElementById('104').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[105] != 'none'){      document.getElementById('105').innerHTML = urldes[105];}
-else if (language != "en-us") {document.getElementById('105').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[106] != 'none'){      document.getElementById('106').innerHTML = urldes[106];}
-else if (language != "en-us") {document.getElementById('106').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[107] != 'none'){      document.getElementById('107').innerHTML = urldes[107];}
-else if (language != "en-us") {document.getElementById('107').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[108] != 'none'){      document.getElementById('108').innerHTML = urldes[108];}
-else if (language != "en-us") {document.getElementById('108').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[109] != 'none'){      document.getElementById('109').innerHTML = urldes[109];}
-else if (language != "en-us") {document.getElementById('109').innerHTML += '<font color="red"> (English)<font>';}
-if (urldes[110] != 'none'){      document.getElementById('110').innerHTML = urldes[110];}
-else if (language != "en-us") {document.getElementById('110').innerHTML += '<font color="red"> (English)<font>';}
-
-
-if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
-if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
-if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
-if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
-if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
-if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
-if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
-if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
-if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
-if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
-if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
-*/																			  
-	   </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1141,42 +983,42 @@ if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = in
 </script>
 <script type="text/javascript">
 if (typeof jQuery != 'undefined') {
-	jQuery(document).ready(function($) {
-		var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
-		var baseHref = '';
-		if (jQuery('base').attr('href') != undefined)
-			baseHref = jQuery('base').attr('href');
-		jQuery('a').each(function() {
-			var href = jQuery(this).attr('href');
-			if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
-				jQuery(this).click(function() {
-					var extLink = href.replace(/^https?\:\/\//i, '');
-					_gaq.push(['_trackEvent', 'External', 'Click', extLink]);
-					if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
-						setTimeout(function() { location.href = href; }, 200);
-						return false;
-					}
-				});
-			}
-			else if (href && href.match(/^mailto\:/i)) {
-				jQuery(this).click(function() {
-					var mailLink = href.replace(/^mailto\:/i, '');
-					_gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
-				});
-			}
-			else if (href && href.match(filetypes)) {
-				jQuery(this).click(function() {
-					var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
-					var filePath = href;
-					_gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
-					if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
-						setTimeout(function() { location.href = baseHref + href; }, 200);
-						return false;
-					}
-				});
-			}
+    jQuery(document).ready(function($) {
+	var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+	var baseHref = '';
+	if (jQuery('base').attr('href') != undefined)
+	    baseHref = jQuery('base').attr('href');
+	jQuery('a').each(function() {
+	    var href = jQuery(this).attr('href');
+	    if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+		jQuery(this).click(function() {
+		    var extLink = href.replace(/^https?\:\/\//i, '');
+		    _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+		    if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+			setTimeout(function() { location.href = href; }, 200);
+			return false;
+		    }
 		});
+	    }
+	    else if (href && href.match(/^mailto\:/i)) {
+		jQuery(this).click(function() {
+		    var mailLink = href.replace(/^mailto\:/i, '');
+		    _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+		});
+	    }
+	    else if (href && href.match(filetypes)) {
+		jQuery(this).click(function() {
+		    var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+		    var filePath = href;
+		    _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+		    if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+			setTimeout(function() { location.href = baseHref + href; }, 200);
+			return false;
+		    }
+		});
+	    }
 	});
+    });
 }
 </script>
 <!-- FOOTER CUT HERE ------------------------------------------------->
