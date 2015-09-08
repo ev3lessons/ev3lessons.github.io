@@ -1,7 +1,5 @@
-<img style="display:none;" id="hihi">
-<link rel="icon" type="image/vnd.microsoft.icon"  href="./demo/img/favicon.ico" />
-
-<link rel="Stylesheet" type="text/css" href="./demo/demo.css" />
+  <link rel="icon" type="image/vnd.microsoft.icon"  href="./demo/img/favicon.ico" />
+  <link rel="Stylesheet" type="text/css" href="./demo/demo.css" />
   <script type="text/javascript" src="./lib/jquery.1.10.2.min.js"></script>
   <!-- fileend -->
 
@@ -86,10 +84,9 @@
  width:100%; height:80%; background-color:#7a7a7a; margin:70px auto\
  20px auto;">');
 	     }
-</script>
-
+	     </script>
 <div id="container">
-  <img src="trashtrek-field.jpg" height="100%" width="100%">
+ <img src="trashtrek-field.jpg" height="100%" width="100%">
  <div id="holder"></div> 
 </div>
 </div>
@@ -146,11 +143,17 @@ $('#wPaint').wPaint('image', '<image_data>');
               // do something with the image
               $('#wPaint-img').attr('src', image);
             }
-    });*/
-     var imgCanvas = document.getElementById('wPaint-canvas');
- var imgAsDataURL = imgCanvas.toDataURL("image/png");
+});*/
+var canvas = document.getElementById('wPaint-canvas');
+      var context = canvas.getContext('2d');
+      // save canvas image as data url (png format by default)
+      var dataURL = canvas.toDataURL();
 
-window.localStorage.canvasImage = imgAsDataURL;
+      // set canvasImg image src to dataURL
+      // so it can be saved as an image
+//document.getElementById('canvasImg').href = dataURL;
+OpenInNewTab(dataURL);
+ //$("#canvasImg").click();
         }
 
         function loadImgBg () {
@@ -169,13 +172,8 @@ window.localStorage.canvasImage = imgAsDataURL;
           this._showFileModal('fg', images);
 */
 //alert('hi');
-///    $("#imageLoader").click();
-    document.getElementById('hihi').src =  window.localStorage.canvasImage;
-       var c = document.getElementById("wPaint-canvas");
-    var ctx = c.getContext("2d");
-    var img = document.getElementById("hihi");
-    ctx.drawImage(img,10,10);
-    };
+    $("#imageLoader").click();
+};
 
 
 
@@ -211,38 +209,6 @@ $(function() {
 
 
       </script>
-<script>
-  //var img;
-  var imageLoader = document.getElementById('imageLoader');
-    imageLoader.addEventListener('change', handleImage, false);
-var canvas = document.getElementById('wPaint-canvas');
-var ctx = canvas.getContext('2d');
-
-
-function handleImage(e){
-/*    var reader = new FileReader();
-    reader.onload = function(event){
-        var img = new Image();
-        img.onload = function(){
-            canvas.width = img.width;
-            canvas.height = img.height;
-            ctx.drawImage(img,0,0);
-        }
-        img.src = event.target.result;
-    }
-reader.readAsDataURL(e.target.files[0]);     */
-
-
-var img = new Image(); // The canvas drawImage() method expects an image object.
-            
-            img.src = window.localStorage.canvasImage; // Retrieve the last saved artistic achievement from persistent local storage.
-//img.onload = function() { // Only render the saved drawing when the image object has fully loaded the drawing into memory.
-              ctx.drawImage(img, 0, 0); // Draw the image starting at canvas coordinate (0, 0) - the upper left-hand corner of the canvas.
-//}           
-}
-
- 
-</script>
 <script>
 var imageLoader = document.getElementById('imageLoader');
     imageLoader.addEventListener('change', handleImage, false);
