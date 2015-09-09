@@ -262,7 +262,7 @@ function calc(points, id) {
     document.getElementById('M10pts').innerHTML = M10;
     document.getElementById('M11pts').innerHTML = M11;
     document.getElementById('M12pts').innerHTML = M12;
-    var points = M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+    points = M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
     document.getElementById('points').value = points + ' Points ';
 
     var ranges = $("input[data-type='range']");
@@ -376,7 +376,7 @@ else
       <em> (v2.5 by EV3Lessons/Droids Robotics)
 
 </div>
-<form action="mailto:admin@example.com" enctype="text/plain" method="post">
+
 
     <script>
 
@@ -445,19 +445,22 @@ Stopwatch:
   <script>
     if (viewportwidth > 600){
 	document.write(' </td><td width="30%">');}
-     </script>
-	<center>
+</script>
+<div  style="//position:fixed; top:100px; z-index:1000;">
+	<center >
 	<fieldset>
 	<legend size="10">Score</legend>
-	<input type='text' size='10'  value='96 Points' readonly style="text-align: center; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
+	<input name="total" type='text' size='10'  value='96 Points' readonly style="text-align: center; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
 	</fieldset>
 	</center>
 	<div class="ui-mini">
 	  <input type="button" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 150%">
 	  </div>
-    </td>
+
+</td>
   </tr>
 </table>
+
 <form id="form">
 <div class="missions">
 <script>
@@ -847,8 +850,36 @@ Stopwatch:
 	  </td>
 </tr>
 <tr><td colspan="2">
-    <div class="ui-mini"><button style="background-color:red;color:white;font-size:120%;">Save to EMAIL</button></div>
-    </td></tr>
+ <script>
+      function saveLocalStorage() {
+      if (window.localStorage.DRTTscorer != undefined ) {
+window.localStorage.DRTTscorer = String(window.localStorage.DRTTscorer) + ',' + String( M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12);
+//window.localStorage.DRTTscorer =  M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+//alert(M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12);
+//alert(window.localStorage.DRTTscorer);
+} else {
+window.localStorage.DRTTscorer =  M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+//alert(window.localStorage.DRTTscorer + 'hi');
+    }
+      }
+    </script>
+    
+ <div class="ui-mini"><input type="button" onclick="saveLocalStorage();    n=0; a = window.localStorage.DRTTscorer.split(',').length;" value="Save Score"></div>
+   <!-- <div class="ui-mini"><input type="button" onclick="loadsaves()" value="Show Saves"></div>
+     -->
+   <center><script>
+       a = window.localStorage.DRTTscorer.split(',').length;
+   n = 0;
+function loadsaves() {
+    while(n < a) {
+	      document.getElementById('saves').innerHTML = document.getElementById('saves').innerHTML +''+ window.localStorage.DRTTscorer.split(',')[n] + '<br>'  ;
+	      n = n+1;
+//	      alert(x);
+	      }
+	      }
+	      </script><a onclick="loadsaves()" href="#popupMap" data-rel="popup" data-position-to="window" data-role="button" data-theme="a" data-inline="true" aria-haspopup="true" aria-owns="popupMap" aria-expanded="false" class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all ui-mini" role="button">Open Saves</a> <div class="ui-mini"><input type="button" onclick="localStorage.clear('DRTTscorer'); document.getElementById('saves').innerHTML='<h2>Past Scores</h2>';n=0;a=0;" value="Delete Scores"></div>
+</center>'
+</td></tr>
       </table>
     </td>
   </tr>
@@ -856,6 +887,13 @@ Stopwatch:
 </div>
 </form>
 
+<div data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-corners="false" data-tolerance="15,15">
+ 
+    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+ <div id="saves" style="width: 10em; height: 10em;">
+<h2>Past Scores</h2>
+ </div>
+</div>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -866,3 +904,6 @@ ga('create', 'UA-65893558-1', 'auto');
 ga('send', 'pageview');
 
 </script>
+<div>
+
+</div>
