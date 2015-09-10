@@ -91,8 +91,8 @@ document.write('\
                             <li>\
                                 <a id="m20" href="resources.html#'+language+'">Resources</a>\
                                 <ul class="sub-menu">\
-                                    <li><a id="m26" href="scorer.html">Trash Trek Scorer</a></li>\
-                                    <li><a id="m21" href="resources/wheelconverter/">Wheel Converter</a></li>\
+                                    <li><a id="m26" href="resources/scorer/score.html">Trash Trek Scorer</a></li>\
+                                    <li><a id="m21" href="resources/wheelconverter/#'+language+'">Wheel Converter</a></li>\
                                     <li><a id="m22" href="resources/drawplan/">Interactive Sketcher</a></li>\
                                     <li><a id="m23" href="challenges.html#'+language+'">Challenges</a></li>\
                                     <li><a id="m24" href="resources.html#'+language+'">All Resources</a></li>\
