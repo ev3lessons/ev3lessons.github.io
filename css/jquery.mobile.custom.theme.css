@@ -616,20 +616,21 @@ button[disabled],
 	outline-style: auto;
 }
 .ui-page {
-    background: url(images/backgrounds.045.jpg);
-//background: transparent url(images/backgrounds.045.jpg) 0 0 no-repeat;
-background-position:right -10px;
-background-repeat:no-repeat;
-background-size: 102px 46px;
-  bottom: -0px;
+  //  background: url(images/backgrounds.045.jpg);
+  background: transparent;
+//background: sky;
+//background-position:right -10px;
+//background-repeat:no-repeat;
+//background-size: 100% 46px;
+//  bottom: -500px;
  // font: 13px "Helvetica Neue",sans-serif;
-  position: fixed;
-  right: 10px;
-  z-index: 999999;
-  width: 102px;
+//  position: fixed;
+//  right: 10px;
+//  z-index: 999999;
+ // width: 102px;
 }
 .ui-content{
-    background: transparent;
+   background: transparent;
 }
 
 //.ui-page.ui-body-c {
@@ -639,21 +640,44 @@ background-size: 102px 46px;
  //   background-size:cover;  
  //}
 table, td, th {
-display: block;
+//display: block;
     width: auto;
-    height: auto;
+  //  height: 1px;
     margin: 0;
     padding: 0;
-    //border: ;
-    border-collapse: collapse;
-    border-spacing: 5;
+    border: 1px;
+  //  border-collapse: collapse;
+    border-spacing: 0;
     border-color: black;
-    vertical-align: inherit;
+    vertical-align: top;
     text-align: left;
     font-weight: inherit;
     -webkit-border-horizontal-spacing: 0;
     -webkit-border-vertical-spacing: 0;
 }
 th, td {
-    display: inline;
+//display: inline;
+}
+table {
+    rules: all;
+    rule-style: dotted;
+    rule-color: green;
+    rule-width: 5pt
+}
+td {
+    margin: 2pt;
+ //   background: yellow
+}
+body, input, select, textarea, button, .ui-btn {
+    font-size: 1em;
+    line-height: 1.5;
+    font-family: sans-serif /*{global-font-family}*/;
+}
+table{
+border-collapse:collapse;
+//border:1px solid #FF0000;
+}
+
+table td{
+border:1px solid black;
 }

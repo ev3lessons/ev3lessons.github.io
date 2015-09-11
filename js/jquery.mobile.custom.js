@@ -444,7 +444,7 @@
 		focusClass: "ui-focus",
 
 		// Automatically handle clicks and form submissions through Ajax, when same-domain
-		ajaxEnabled: true,
+//		ajaxEnabled: true,
 
 		// Automatically load and show pages based on location.hash
 		hashListeningEnabled: true,
@@ -8359,7 +8359,7 @@ $.widget( "mobile.listview", $.extend( {
 				if ( ol && value ) {
 					newStartCount = parseInt( value , 10 ) - 1;
 
-					item.css( "counter-reset", "listnumbering " + newStartCount );
+				item.css( "counter-reset", "listnumbering " + newStartCount );
 				}
 			}
 
@@ -10129,7 +10129,7 @@ $.widget( "mobile.checkboxradio", $.extend( {
 			return $( "<a href='#' tabindex='-1' aria-hidden='true' " +
 				"class='ui-input-clear ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all'>" +
 				"</a>" )
-					.attr( "title", this.options.clearBtnText )
+			.attr( "title", this.options.clearBtnText )
 					.text( this.options.clearBtnText );
 		},
 

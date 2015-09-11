@@ -27,9 +27,9 @@
         <!-- CSS Main -->
         <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento2.css"  />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen6002.css" />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
         
         <!-- CSS Plugin -->
@@ -71,7 +71,6 @@
 <link rel="stylesheet" href="css/jquery.mobile.custom.theme.css">
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/jquery.mobile.custom.js"></script>
-
     </head>
     <body class="no_js responsive boxed-layout chrome ">
         
@@ -111,7 +110,7 @@
 document.write('<div style=" top: 5px; z-index: 100;background-color: white;">');
 			    } else {
 			    
-		document.write('	    <div style="right: 5px; position:fixed; top: 5px; z-index: 100;background-color: white;">');
+		document.write('	    <div style="right: 30px; position:fixed; top: 40px; z-index: 100;background-color: white;">');
 			      }
 			      </script>
   <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ev3lessons.ev3lessons.trashtrekscorer">
@@ -121,8 +120,8 @@ document.write('<div style=" top: 5px; z-index: 100;background-color: white;">')
   <div class="ui-small">
 <input id="togglescore" type="button" value="Enable Score Scrolling" onclick="
 document.getElementById('scorediv').style.position = 'fixed';
-document.getElementById('scorediv').style.top = '178px';
-document.getElementById('scorediv').style.right = '5px';
+document.getElementById('scorediv').style.top = '270px';
+document.getElementById('scorediv').style.right = '30px';
 document.getElementById('scorediv').style.backgroundColor = 'white';
 document.getElementById('scorediv').style.borderStyle = 'solid';
 document.getElementById('scorediv').style.borderColor = 'red';
@@ -139,7 +138,7 @@ document.getElementById('scorediv').style.borderColor = '';
 </div>
         
 <script>
-
+$(".content a").attr('data-ajax', false);
 var points = 0;
 var M01 = 0;
 var M02 = 0;
