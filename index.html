@@ -113,32 +113,40 @@ images[2] = 'images/slider-flash/2.png';
 images[3] = 'images/slider-flash/3.png';
 //images[4] = 'images/slider-flash/4.png';
 images[4] = 'images/slider-flash/5.png';
-x = 1;
+images[5] = 'images/slider-flash/6.png';
+images[6] = 'images/slider-flash/7.png';
+images[7] = 'images/slider-flash/8.png';
+//images[8] = 'images/slider-flash/9.png';
+x = 0;
 function changeImage() {
-//alert(x)
-	   if (x > 4) {
-    x = 0;
-  }
-  document.getElementById('ad').src = images[x];
-  if (x<8) {
-	   x+=1;
-	 
-  }
-
-  else if (x===6) {
-    x=0;
-
+x = x + 1;
+if (x >= 8) {
+x = 0;
+    }
+//alert(x);
+    document.getElementById('slider').src = images[x];
+}
+var slidertimeout;
+window.onload = function() {
+  slidertimeout = setInterval(function() {
+    changeImage()
+  },3000);
     }
 
-	   }
-
-window.onload = function() {
-  var x = 0;
-  setInterval(function() {
+pause = 0;
+    function toggleimage() {
+    if (pause == 0) {
+    pause = 1;
+    clearInterval(slidertimeout)
+    } else if (pause == 1) {
+pause = 0;
+    slidertimeout = setInterval(function() {
     changeImage()
- //     alert(x)
   },3000);
-	   }  </script><div align="right">
+    }
+    }
+
+</script><div align="right">
 <script>
 <!--
  
@@ -200,9 +208,9 @@ var trackOutboundLink = function(url) {
 	   <!-- <table>-->
 <tr><td><script>
       if (screen.width > 800) {
-      document.write('<img  width="740" id="ad" height="260"  src="images/slider-flash/ev3lessons.jpg">');
+      document.write('<img onclick="toggleimage()"  width="740" id="slider" height="260"  src="images/slider-flash/ev3lessons.jpg">');
       } else {
-      document.write('<img  width="'+screen.width+'" id="ad" height="150"  src="images/slider-flash/ev3lessons.jpg">');
+      document.write('<img onclick="toggleimage()"  width="100" id="slider" height="50"  src="images/slider-flash/ev3lessons.jpg">');
       }
     </script>
 </td><td ><div style="border-style: solid;
@@ -277,8 +285,7 @@ border-top-right-radius: 10px 5px;"
 		<ul class="ei-slider-large">			    
 		  <li  class="first slide-1  slide align- image-content-type">
 		    <img src="images/slider-flash/ev3lessons.jpg" width="744 " height="250">
-		  </li>
-		  
+		  </li>		  
 		  <li class="slide-2 slide align- image-content-type">
 		    <img src="images/slider-flash/1.png"  width="744" height="250">
 		    <!-- <div class="ei-title">
