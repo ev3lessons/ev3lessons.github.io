@@ -12,14 +12,12 @@ var qs = (function(a) {
     }
     return b;
 })(window.location.search.substr(1).split('&'));
-function myFunction() {
-	window.location = qs["url"]; 
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
 }
-function myFunctiona() {
-        window.location = qs["fromurl"];
-}
-			setTimeout(function(){window.location.href=qs["file"]},10); 
-			setTimeout(function(){window.location.href="lessons.html#"+qs['file'].split('/')[1]},10);
+			setTimeout(function(){OpenInNewTab(qs["file"])},10); 
+			setTimeout(function(){OpenInNewTab("lessons.html#"+qs['file'].split('/')[1])},10);
 			</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
