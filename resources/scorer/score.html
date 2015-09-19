@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<script type="text/javascript" src="jsapi"></script>
+
+
 <a rel="external" href="/resources.html">
   <img height="33" width="33" src="51970.png">
  Back </a>
@@ -15,6 +16,9 @@ $(document).bind('mobileinit',function(){
 });
 </script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="highcharts.js"></script>
+<script src="exporting.js"></script>
+ 
 <script> if (screen.width < 900) {
 document.write('<div style=" top: 5px; z-index: 100;background-color: white;">');
 			    } else {
@@ -83,34 +87,54 @@ array[2] = parseInt(window.localStorage.DRTTscorer.split(' Points')[2].split(','
 	  //   array[2] = parseInt(window.localStorage.DRTTscorer.split(' Points')[2].split(',')[1]);
 	  //   array[3] = parseInt(window.localStorage.DRTTscorer.split(' Points')[3].split(',')[1]);
 
-	     var data = new google.visualization.DataTable();
-      data.addColumn('number', 'X');
-      data.addColumn('number', 'Points');
 
-      data.addRows([
-        [0, 0]
-      ]);
-  while (vv < array.length) {
-data.addRows([
-        [vv, array[vv]]
-	   ]);
-	  vv = vv+1;
-	   }
-	      var options = {
-        hAxis: {
-              title: 'Score Number',
-	      gridlines: {count: lt}
-	      },
-        vAxis: {
-              title: 'Points'
-	     
-              }
-      };
 
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: 'Line Graph of Scores',
+            x: -20 //center
+        },
+        subtitle: {
+          // text: 'Sou rce: WorldClimate.com',
+            x: -20
+        },
+        xAxis: {
+                 tickInterval: 1,
+            minRange: 1,
+            allowDecimals: false,
+            //startOnTick: true,
+            //endOnTick: true
+        },
+        yAxis: {
+            title: {
+                text: 'Points'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+         //   valueSuffix: '°C'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'Score',
+            data: array,
+        }]
+    });
+});
 
-      chart.draw(data, options);
-    }
+
+
+	     }
 
 function OpenInNewTab(url) {
   var win = window.open(url, '_blank');
@@ -638,7 +662,7 @@ Stopwatch:
 <tr><td colspan="2">
     <script>
       n = 0;
-       google.load('visualization', '1', {packages: ['corechart', 'line']});
+  //     google.load('visualization', '1', {packages: ['corechart', 'line']});
 function saveLocalStorage() {
  var currentTime = new Date()
 var month = currentTime.getMonth() + 1
@@ -711,8 +735,9 @@ function loadsaves() {
 
 <div style="width: 30em; height: 30em;" data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-corners="false" data-tolerance="15,15">
 <h2>Past Scores</h2>
-  <div id="chart_div" style="width: 30em;"></div>
-    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+<div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+
+<a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
     <div id="saves" >
 
     </div>
