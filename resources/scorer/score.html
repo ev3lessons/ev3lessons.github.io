@@ -7,6 +7,13 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
 <script src="jquery-1.11.3.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script>
 <script src="jquery.mobile-1.4.5.min.js"></script>
 <script> if (screen.width < 900) {
 document.write('<div style=" top: 5px; z-index: 100;background-color: white;">');
