@@ -14,6 +14,7 @@ var ar = ''+ page +'#ar';
 var pt = ''+ page +'#br';
 var el  = ''+ page +'#el';
 var fr  = ''+ page +'#fr';
+var ct  = ''+ page +'#ct';
 // var page = window.location.href.split("#")[0];
 // alert (page);
 // var href = window.location.href;
@@ -60,6 +61,11 @@ document.write('\
 		<div class="socials-default-small  default">\
 		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+fr+'">\
 		  <img src="images/icons/countries/small/France.png" alt="français" title="français‎" width="26" height="26" border="0">\
+		  </a>\
+	      </div>\
+		<div class="socials-default-small  default">\
+		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ct+'">\
+		  <img src="images/icons/countries/ct.png" alt="catalan" title="catalan‎" width="26" height="26" border="0">\
 		  </a>\
 	      </div>\
 </div></div>\

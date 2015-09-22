@@ -71,6 +71,16 @@ var nav = [
 ]
 }
 
+if (language == 'ct') {
+var nav = [
+  "none", "Home", "none", "none", "none", "none", "none", "none", "none", "none", // 10
+"Lliçons", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 20
+"Recursos", "Càlcul de desplaçament", "Planificador", "Desafiaments", "Tots els recursos", "Els arxius de recursos", "none", "none", "none", "none", // 30
+"Qui som?", "La nostra filosofia", "Col·laboradors", "Com ajudar", "none", "none", "none", "none", "none", "none", // 40
+"Fòrum", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
+"Contacti amb nosaltres","none","none","none","none","none","none","none","none","none", // 60
+]
+}
 document.write('\
                     <!-- START NAV -->\
                     <div id="nav" class="group">\
