@@ -15,7 +15,7 @@ var nav = [
     "Lecciones", "todas las lecciones","diseños de robots","none","none","none","none","none","none","none",//20
     "recursos", "Convertidor de ruedas","none","otros recurso","none","none","none","none","none","none",//30
     "acerca de nosotros", "nuestra misión","Contribuyentes","FAQ de contribuyentes","none","none","none","none","none","none",//40
-    "Foro", "none","none","none","none","none","none","none","none","none",//50
+    "none", "none","none","none","none","none","none","none","none","none",//50
     "Contáctanos", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
@@ -25,7 +25,7 @@ var nav = [
     "lições", "lições","projeto robô","none","none","none","none","none","none","none",//20
     "recursos", "conversor de roda","sketcher interativo","none","outros recursos","none","none","none","none","none",//30
     "sobre nós", "nossa missão","contribuidores","contribuidor FAQ","none","none","none","none","none","none",//40
-    "Fórum", "none","none","none","none","none","none","none","none","none",//50
+    "none", "none","none","none","none","none","none","none","none","none",//50
     "entre em contato conosco", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
@@ -66,7 +66,7 @@ var nav = [
     "Leçons", "none","none","none","none","none","none","none","none","none",//20
     "Ressources", "Calcul de déplacement","Planificateur de parcours","Challenges","Toutes les ressources","Archives des ressources","none","none","none","none",//30
     "Qui sommes-nous?", "Notre philosophie","Les contributeurs","Comment aider?","none","none","none","none","none","none",//40
-    "Forum", "none","none","none","none","none","none","none","none","none",//50
+    "none", "none","none","none","none","none","none","none","none","none",//50
     "Nous contacter", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
@@ -77,7 +77,7 @@ var nav = [
 "Lliçons", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 20
 "Recursos", "Càlcul de desplaçament", "Planificador", "Desafiaments", "Tots els recursos", "Els arxius de recursos", "none", "none", "none", "none", // 30
 "Qui som?", "La nostra filosofia", "Col·laboradors", "Com ajudar", "none", "none", "none", "none", "none", "none", // 40
-"Fòrum", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
+"none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
 "Contacti amb nosaltres","none","none","none","none","none","none","none","none","none", // 60
 ]
 }
@@ -120,7 +120,7 @@ document.write('\
                             </li>\
                             \
                             <li>\
-                                <a id="m40" href="http://www.ev3lessons.org/forum">Forum</a>\
+                                <a id="m40" href="guides.html#'+language+'">Guides</a>\
                             </li>\
                             \
                             <li>\
