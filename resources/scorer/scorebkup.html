@@ -18,7 +18,7 @@ $(document).bind('mobileinit',function(){
 <script src="jquery.mobile-1.4.5.min.js"></script>
 <script src="highcharts.js"></script>
 <script src="exporting.js"></script>
-<script src="angular.min.js"></script>
+ 
 <script> if (screen.width < 900) {
 document.write('<div style=" top: 5px; z-index: 100;background-color: white;">');
 			    } else {
@@ -117,7 +117,7 @@ $(function () {
             }]
         },
         tooltip: {
-         //   valueSuffix: '°C'
+         //   valueSuffix: '�C'
         },
         legend: {
             layout: 'vertical',
@@ -751,108 +751,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-65893558-1', 'auto');
 ga('send', 'pageview');
 
-    </script>
-    <script>
-
-languge = window.location.hash;
- 
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-if (language == "#br") {
-
-    } else {
-    var text = [
-    //61
-    "Back",
-    "Trash Trek Scorer (v3.11 by EV3Lessons/Droids Robotics, Translated by XXXXXXXX)",
-    "Timer",
-    "Start",
-    "Reset",
-    "Pause",
-    "Stopwatch",
-    "Score",
-    "Points",
-    "Reset Score",
-    "M01: Using Recycled Material:",
-    "Number of Green Bins with matching bars in other team's Safety 0",
-    "M02: Methane:",
-    "How many locations has the Methane been installed in?",
-    "M03: Transport:",
-    "Does the Truck support all of the Yellow Bin's weight?",
-    "Yes",
-    "No",
-    "Is the Yellow Bin completely East of Truck's Guide?",
-    "M04: Sorting: ",
-    "How many of the Yellow Bars are in matching bin?",
-    "Where is the Yellow Bars' bin?",
-    "West Transfer Area",
-    "Other team's Safety",
-    "Elsewhere",
-    "How many of the Blue Bars are in matching bin?",
-    "Where is the Blue Bars' bin?",
-    "How many Black Bars are in their original position/scoring in Flower Box ?",
-    "How many Black Bars are in the matching Green Bin or Landfill Bin?",
-    "How many Black Bars are elsewhere on the board?",
-    "M05: Careers:",
-    "Is at least one Person in the Sorting Mission Area?",
-    "M06: Scrap Cars: ",
-    "Was the Car EVER partly in the Safety Area?",
-    "Is the Engine/Windshield installed in the Car?",
-    "Is the Car completely folded and in the East Transfer Area?",
-    "M07: Cleanup:",
-    "How many Plastic Bags are in the Safety Area?",
-    "How many Animals are completely in any Circle without Plastic Bags?",
-    "Is the Chicken completely in the Small Circle?",
-    "M08: Composting:",
-    "Has the Compost been ejected?",
-    "Is the Compost completely in the Safety Area?",
-    "M09: Salvage:",
-    "Are the Valuables completely in the Safety Area?",
-"M10: Demolition:",
-    "Is building demolished (i.e. are all ALL building beams knocked down)?",
-    "M11: Purchasing Decisions:",
-    "How many Toy Planes are completely in the Safety Area?",
-    "M12: Repurposing:",
-    "Is the Compost in either Toy Package (Flower Box)?",
-    "Save Score",
-    "Open Saves",
-    "Delete Scores",
-"Past Scores",
-"Line Graph of Scores",
-  "Enable Score Scrolling",
-"Disable Score Scolling",
-"Copyright © 2015 EV3Lessons.com"
-]
-    }
-$scope.one = "Wheel Converter: Automatic Distance to Degrees Calculator";
-   $scope.two = "This tool can be used to easily convert your wheel/tire size information into useful data to be used by your First Lego League team.";
-   $scope.three = "STEP 1: Enter Wheel Dimensions ";
- $scope.four = "Input your wheel diameter in millimeters *-OR-* You can click one of the tires commonly used by FLL teams below. ";
- $scope.five = "Large Motorcycle Wheel - 94.2×20";
- $scope.six = "EV3 basic tire - 56×28";
- $scope.seven = "Motorcycle tire - 81.6×15";
- $scope.eight = "Balloon tire - 56×26";
- $scope.nine = "Small tire - 43.2×22 ";
- $scope.onezero = "STEP 2: Enter Distance Robot Needs to Move ";
- $scope.oneone = "Input the distance you would like the robot to move in either inches or centimeters: ";
- $scope.onetwo = "inches";
- $scope.onethree = "centimeters";
- $scope.onefour = "STEP 3: Hit the Button to Calculate! ";
- $scope.onefive = "CALCULATE";
- $scope.onesix = "Total distance to travel (in cm)";
- $scope.oneseven = "Circumference of your wheel (in cm) is (π * diameter):";
- $scope.oneeight = "The number of rotations your robot needs to move is (distance to travel ÷ circumference): ";
- $scope.onenine = "The number of degrees your robot needs to move is: (rotations × 360): ";
- $scope.twozero = "STEP 4: Use the Values ";
- $scope.twoone = "Use the rotations or degrees values from STEP 3 in your code. Now you can measure in centimeters/inches and still program in degrees or rotations!";
- $scope.twotwo = "Thank you for using this calculator! ";
-   $scope.twothree = "This calculator was made by EV3Lessons.com. If you have a favorite wheel, we can add it. Email: team@ev3lessons.com ";
-   $scope.twofour = "© Copyright EV3Lessons.com and Droids Robotics 2014";
-
-
-
-
-});
 </script>
 <div>
 
