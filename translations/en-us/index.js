@@ -94,7 +94,7 @@ document.write('\
 			    </div>\
 			   <div class="hentry-post group last">\
 			        <h3>Have a Question?</h3>\
-			        <p><a href="http://ev3lessons.org/forum">Try our Forum</a></p>\
+			        <p><a href="contact.html">Email us</a></p>\
 			    </div>\
 			    \
 			  </ul>\
