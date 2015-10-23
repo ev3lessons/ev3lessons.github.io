@@ -109,7 +109,7 @@ Detecção de Obstáculos
 Sistema de Menu
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
  Matrizes
-none
+Seguidor proporcional de linha com dois sensores de cor.
 none
 none
 none
