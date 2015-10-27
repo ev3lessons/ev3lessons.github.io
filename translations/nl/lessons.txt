@@ -106,7 +106,7 @@ De gyroscoop en omgaan met overgevoeligheid
 none
 Uitlijnen van de robot
 Klemdetectie
-none
+Menu systeem
 Bewegen in een rechte lijn en het volgen van een muur met gyroscoop
 Programmeren met Reeksen
 none
