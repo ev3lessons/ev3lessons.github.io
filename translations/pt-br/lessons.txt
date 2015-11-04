@@ -110,7 +110,7 @@ Sistema de Menu
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
  Matrizes
 Seguidor proporcional de linha com dois sensores de cor.
-none
+Registro de Dados 
 none
 none
 none

@@ -19,7 +19,7 @@ var nav = [
     "Contáctanos", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
-if (language == 'br') {
+if (language == 'pt-br') {
 var nav = [
     "none", "página inicial", "none","none","none","none","none","none","none","none",//10
     "lições", "lições","projeto robô","none","none","none","none","none","none","none",//20
@@ -81,6 +81,17 @@ var nav = [
 "Contacti amb nosaltres","none","none","none","none","none","none","none","none","none", // 60
 ]
 }
+if (language == 'he') {
+var nav = [
+   "none", "בית", "none", "none", "none", "none", "none", "none", "none", "none", // 10
+"שיעורים", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 20
+"משאבים", "חישוב העקירה", "תכנון המסלול", "אתגרים", "כל המשאבים", "ארכיונים של משאבים", "none", "none", "none", "none", // 30
+"מי אנחנו?", "הפילוסופיה שלנו", "משתתפים", "כיצד לעזור", "none", "none", "none", "none", "none", "none", // 40
+"none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
+'צור קשר', "none", "none", "none", "none", "none", "none", "none", "none", "none", // 60
+]
+}
+
 document.write('\
                     <!-- START NAV -->\
                     <div id="nav" class="group">\

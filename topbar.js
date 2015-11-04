@@ -1,20 +1,25 @@
 if (window.location.hash) {
     // Puts hash in variable, and removes the # character
-    var language = window.location.hash.substring(1); 
+    var language = window.location.hash.substring(1);
+if (window.location.hash == "#br") {
+  window.location.hash = "#pt-br";
+  setTimeout(function(){location.reload(true);},100);
+}
 } else {
     // window.location.replace("#en-us");
     var language = "en-us";
     // location.reload();
 }
 var page = window.location.href.split("#")[0];
-var us = ''+ page +'#en-us';
+var enus = ''+ page +'#en-us';
 var es = ''+ page +'#es';
 var nl = ''+ page +'#nl';
 var ar = ''+ page +'#ar';
-var pt = ''+ page +'#br';
+var ptbr = ''+ page +'#pt-br';
 var el  = ''+ page +'#el';
 var fr  = ''+ page +'#fr';
 var ct  = ''+ page +'#ct';
+var he  = ''+ page +'#he';
 // var page = window.location.href.split("#")[0];
 // alert (page);
 // var href = window.location.href;
@@ -29,7 +34,7 @@ document.write('\
                   Languages: \
 		</div>\
 		<div class="socials-default-small  default">\
-		  <a href="'+ us +'" onclick="setTimeout(function(){location.reload(true);},100)">\
+		  <a href="'+ enus +'" onclick="setTimeout(function(){location.reload(true);},100)">\
 		  <img src="images/icons/countries/us.png" alt="English" title="English" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
@@ -39,7 +44,7 @@ document.write('\
 		  </a>\
 		</div>\
                 <div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ pt +'">\
+		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ ptbr +'">\
 		  <img src="images/icons/countries/br.png" alt="Portugues" title="Portugues" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
@@ -65,9 +70,14 @@ document.write('\
 	      </div>\
 		<div class="socials-default-small  default">\
 		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ct+'">\
-		  <img src="images/icons/countries/ct.png" alt="catalan" title="catalan‎" width="26" height="26" border="0">\
+		  <img src="images/icons/countries/ct.png" alt="català" title="català" width="26" height="26" border="0">\
 		  </a>\
 	      </div>\
+      <!--  <div class="socials-default-small  default">\
+          <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+he+'">\
+          <img src="images/icons/countries/small/Israel.png" alt="עברית" title="עברית" width="26" height="26" border="0">\
+          </a>\
+            </div>-->\
 </div></div>\
 \
 	    <div class="widget-last widget widget_text right">\

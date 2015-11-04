@@ -146,7 +146,7 @@ var lev = ["Beginner","Gevorderden","Geavanceerde","none","none"];
 if (language == "ar") {
 }
 
-if (language == "br") {
+if (language == "pt-br") {
 var lev = ["Básicas","Intermediário","Avançada","none","none"];
 introText[0]="Essas lições são para novos estudantes do EV3. ";
 introText[1]="Essas lições foram feitas para serem completadas em ordem.";
@@ -165,6 +165,15 @@ introText[1]="Ces leçons sont destinées à ceux d'entre vous qui ont déjà un
 introText[2]="Ces leçons sont destinées aux plus avancés d'entre vous, maîtrisant les blocs personnalisés et le suivi de ligne.";
 introText[3]="Ces leçons sont conçues par des équipes FLL et des passionnés d'EV3. Si vous voulez contribuer, consultez la rubrique Comment aider?";
 introText[4]="Ces documents combinent plusieurs leçons dans un cursus idéal pour un camp, un week-end thématique...";
+}
+if (language == 'he') {
+pgintro = "שיעורים";
+var lev = ["מתחילים  ","בקיאים "," מתקדמים"," אחר"," סדנאות "];
+introText[0]="שיעורים אלה הינם עבור תלמידים חדשים בשימוש בבקר ה-EV3.שיעורים אלה תוכננו עבור צפיה לפי סדר. ";
+introText[1]="שיעורים אלה הינם עבור תלמידים המבינים את עקרונות התנועה הבסיסית של הרובוט ושימוש בחיישנים";
+introText[2]="שיעורים אלה הינם עבור סטודנטים המכירים כבר את יצירת בלוק MyBlocks ומעקב אחר קו";
+introText[3]="שיעורים אלה נתרמו על ידי קבוצות ומשתמשי EV3 אחרים אנא פנה לקישור זה - שאלות ותשובות נפוצות - על מנת להשלים את השיעור.";
+introText[4]="שיעורים אלה מאוגדים יחד כתכנית למידה אידאלית עבור מחנות אימון";
 }
 </script>
 
@@ -288,7 +297,17 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  </ul>
 		</div>
 		</div>
-
+    <br>
+    <div class="toggle">
+      <p class="tab-index tab-closed"><a id="17" href="#" title="Close">Port View</a></p>
+    <div class="content-tab closed indent">
+      <ul>
+        <li>Slides:
+           <a href='translations/{{oneseven}}/beginner/PortView.pptx'>PPTX</a>,
+           <a href='translations/{{oneseven}}/beginner/PortView.pdf'>PDF</a></li>
+      </ul>
+    </div>
+    </div>
 			<br>
 		<div class="toggle">
 		  <p class="tab-index tab-closed"><a id="5" href="#" title="Close">Pseudocode</a></p>
@@ -857,13 +876,13 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <h4>Data Logging for Science Experiments:</h4>
 		  <ul>
 		    <li>Slides:
-		    <a href="translations/en-us/advanced/DataLoggingTemp.pptx">PPTX</a>,
-		    <a href="translations/en-us/advanced/DataLoggingTemp.pdf">PDF</a></li>
+		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pptx">PPTX</a>,
+		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pdf">PDF</a></li>
 		  </ul>  <h4>Data Logging with Programming Blocks:</h4>
 		  <ul>
 		    <li>Slides:
-		    <a href="translations/en-us/advanced/DataLoggingTurns.pptx">PPTX</a>,
-		    <a href="translations/en-us/advanced/DataLoggingTurns.pdf">PDF</a></li>
+		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pptx">PPTX</a>,
+		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pdf">PDF</a></li>
 		  </ul>
 
 		</div>
@@ -1066,7 +1085,7 @@ var i = 1;
 document.write('<scr'+'ipt>\
 var app = angular.module("myApp", []);\
 app.controller("myCtrl", function($scope) {');
-while (i < 17) {
+while (i < 18) {
     if (urldes[i] != "none") {
 	document.getElementById(String(i)).innerHTML = urldes[i];
 	document.write('$scope.'+inWords(i)+' = "'+language+'";');
