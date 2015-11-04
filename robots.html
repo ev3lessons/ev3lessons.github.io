@@ -609,7 +609,7 @@ if (urldes[9] != 'none'){	document.getElementById('10').innerHTML = urldes[9];};
 </script>
 <script>
   setTimeout(function(){
-     eval(window.location.search.split('?')[1]);
+     eval(decodeURI(window.location.search.split('?')[1]));
 }, 20);
 
   </script>
