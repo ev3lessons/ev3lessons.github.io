@@ -148,9 +148,9 @@ var yiw_prettyphoto_style = 'pp_default';
 
 	<div class="tabs-container">
 	  <ul class="tabs">
-	    <li><h4><a href="#tab1" title="EV3">EV3</a></h4></li>
-	    <li><h4><a href="#tab2" title="NXT">NXT</a></h4></li>
-	    <li><h4><a href="#tab3" title="Contributed">Contributed</a></h4></li>
+	    <li><h4><a href="#tab1" id="EV3" title="EV3">EV3</a></h4></li>
+	    <li><h4><a href="#tab2" id="NXT" title="NXT">NXT</a></h4></li>
+	    <li><h4><a href="#tab3" id="CON" title="Contributed">Contributed</a></h4></li>
 	  </ul>
 
 	  <div class="border-box group">
@@ -605,8 +605,14 @@ if (urldes[6] != 'none'){	document.getElementById('7').innerHTML = urldes[6];};
 if (urldes[7] != 'none'){	document.getElementById('8').innerHTML = urldes[7];};
 if (urldes[8] != 'none'){	document.getElementById('9').innerHTML = urldes[8];};
 if (urldes[9] != 'none'){	document.getElementById('10').innerHTML = urldes[9];};
-</script>
 
+</script>
+<script>
+  setTimeout(function(){
+     eval(window.location.search.split('?')[1]);
+}, 20);
+
+  </script>
 <!-- FOOTER CUT HERE ------------------------------------------------->
         
     </body>
