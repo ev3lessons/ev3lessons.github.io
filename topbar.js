@@ -73,11 +73,11 @@ document.write('\
 		  <img src="images/icons/countries/ct.png" alt="català" title="català" width="26" height="26" border="0">\
 		  </a>\
 	      </div>\
-      <!--  <div class="socials-default-small  default">\
+      <div class="socials-default-small  default">\
           <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+he+'">\
           <img src="images/icons/countries/small/Israel.png" alt="עברית" title="עברית" width="26" height="26" border="0">\
           </a>\
-            </div>-->\
+            </div>\
 </div></div>\
 \
 	    <div class="widget-last widget widget_text right">\
