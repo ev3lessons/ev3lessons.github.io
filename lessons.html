@@ -112,7 +112,7 @@
 <!-- HEADER CUT HERE ------------------------------------------------->
 
 <script>
-
+var slidestext = "Slides:"
 var introText = ["none","none","none","none","none"];
 var pgintro = 'none';
 if (language == 'en-us') {
@@ -139,7 +139,7 @@ pgintro = "Programmeer lessen";
 introText[0]="Deze lessen zijn voor leerlingen die nog niet bekend zijn met de EV3. De lessen zijn ontworpen om in volgorde te leren.";
 introText[1]="Deze lessen zijn voor leerlingen die de de basis bewegingen en het gebruik van sensoren begrijpen. ";
 introText[2]="Deze lessen zijn voor leerlingen die bekend zijn met mijn blokken en lijnen volgen";
-
+slidestext = "Dias:";
 var lev = ["Beginner","Gevorderden","Geavanceerde","none","none"];
 }
 
@@ -174,6 +174,7 @@ introText[1]="שיעורים אלה הינם עבור תלמידים המבינ�
 introText[2]="שיעורים אלה הינם עבור תלמידים המכירים כבר את יצירת הבלוק המותאם אישית ומעקב אחר קו.";
 introText[3]="שיעורים אלה נתרמו על ידי קבוצות ומשתמשי EV3 אחרים אנא פנה לקישור זה - שאלות ותשובות נפוצות - על מנת להשלים את השיעור.";
 introText[4]="שיעורים אלה מאוגדים יחד כתכנית למידה אידאלית עבור מחנות אימון";
+slidestext = 'עברית:'
 }
 </script>
 
@@ -218,7 +219,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="1" href="#" title="Close">How to use these lessons</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{one}}/beginner/LessonUse.pptx'>PPTX</a>,
 		    <a href='translations/{{one}}/beginner/LessonUse.pdf'>PDF</a></li>
 		  </ul>
@@ -231,7 +232,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		<div class="content-tab closed indent">
 		  <ul>
 		    <li><a href="robots.html">Robot Builds</a></li>
-		    <li>Slides:
+		    <li>{{Slides}}
 		      <a href='translations/{{two}}/robots/DroidbotSlides.pptx'>PPTX</a>,
 		      <a
 		    href='translations/{{two}}/robots/DroidbotSlides.pdf'>PDF</a></li>
@@ -263,10 +264,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="3" href="#" title="Close">Introduction to Brick and Software</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		      <a href='translations/{{three}}/beginner/Introduction.pptx'>PPTX</a>,
 		      <a href='translations/{{three}}/beginner/Introduction.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a
+		    <li>EV3 Tablet App {{Slides}} <a
 		href="translations/en-us/tablet-beginner/Introduction.pptx">PPTX</a>
 		      (English)</li>
 		        <li>Edu vs. Home Edition Software: <a
@@ -288,10 +289,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="4" href="#" title="Close">Moving Straight</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		       <a href='translations/{{four}}/beginner/MovingStraight.pptx'>PPTX</a>,
 		       <a href='translations/{{four}}/beginner/MovingStraight.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/MovingStraight.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/MovingStraight.pptx">PPTX</a> (English)</li>
 		    <li><a href='translations/{{four}}/beginner/MovingStraight.ev3' download="MovingStraight.ev3" type="application/ev3">EV3 Code</a></li>
 		    <li><a href='translations/{{four}}/beginner/MovingStraight.docx'>Worksheet</a></li>
 		  </ul>
@@ -302,7 +303,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
       <p class="tab-index tab-closed"><a id="17" href="#" title="Close">Port View</a></p>
     <div class="content-tab closed indent">
       <ul>
-        <li>Slides:
+        <li>{{Slides}}
            <a href='translations/{{oneseven}}/beginner/PortView.pptx'>PPTX</a>,
            <a href='translations/{{oneseven}}/beginner/PortView.pdf'>PDF</a></li>
       </ul>
@@ -313,7 +314,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="5" href="#" title="Close">Pseudocode</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		      <a href='translations/{{five}}/beginner/Pseudocode.pptx'>PPTX</a>,
 		      <a href='translations/{{five}}/beginner/Pseudocode.pdf'>PDF</a></li>
 		    <li><a href='translations/{{five}}/beginner/PseudocodeWorksheet.pdf'>Worksheet</a></li>
@@ -333,10 +334,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="6" href="#" title="Close">Turning</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		       <a href='translations/{{six}}/beginner/Turning.pptx'>PPTX</a>,
 		       <a href='translations/{{six}}/beginner/Turning.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Turning.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Turning.pptx">PPTX</a> (English)</li>
 		    <li><a href='translations/{{six}}/beginner/Turning.ev3' download="Turning.ev3" type="application/ev3">EV3 Code</a></li>
 		    <li><a
 		    href='translations/{{six}}/beginner/Turning.docx'>Worksheet</a></li>
@@ -352,10 +353,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="7" href="#" title="Close">Displaying Text and Graphics</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{seven}}/beginner/Display.pptx'>PPTX</a>,
 		    <a href='translations/{{seven}}/beginner/Display.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Display.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Display.pptx">PPTX</a> (English)</li>
 		    <li><a href='translations/{{seven}}/beginner/Display.ev3' download="Display.ev3" type="application/ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
@@ -366,10 +367,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="8" href="#" title="Close">Touch Sensor</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		      <a href='translations/{{eight}}/beginner/Touch.pptx'>PPTX</a>,
 		      <a href='translations/{{eight}}/beginner/Touch.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Touch.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Touch.pptx">PPTX</a> (English)</li>
 		    <li><a
 		href='translations/{{eight}}/beginner/Touch.ev3'
 		    type="application/ev3" download="Touch.ev3">EV3 Code</a></li>
@@ -387,10 +388,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="9" href="#" title="Close">Color Sensor</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{nine}}/beginner/Color.pptx'>PPTX</a>,
 		    <a href='translations/{{nine}}/beginner/Color.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Color.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Color.pptx">PPTX</a> (English)</li>
 		    <li><a
 		href='translations/{{nine}}/beginner/Color.ev3'
 		    type="application/ev3" download="Color.ev3">EV3 Code</a></li>
@@ -406,10 +407,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="10" href="#" title="Close">Loops</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{onezero}}/beginner/Loops.pptx'>PPTX</a>,
 		    <a href='translations/{{onezero}}/beginner/Loops.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Loops.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Loops.pptx">PPTX</a> (English)</li>
 		    <li><a href='translations/{{onezero}}/beginner/Loops.ev3' type="application/ev3" download="Loops.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
@@ -420,10 +421,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="11" href="#" title="Close">Switches</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{oneone}}/beginner/Switches.pptx'>PPTX</a>,
 		    <a href='translations/{{oneone}}/beginner/Switches.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Switches.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Switches.pptx">PPTX</a> (English)</li>
 		    <li><a href='translations/{{oneone}}/beginner/Switches.ev3' type="application/ev3" download="Switches.ev3">EV3 Code</a></li>
 		  </ul>
 		</div>
@@ -434,10 +435,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="12" href="#" title="Close">Ultrasonic Sensor</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href='translations/{{onetwo}}/beginner/Ultrasonic.pptx'>PPTX</a>,
 		    <a href='translations/{{onetwo}}/beginner/Ultrasonic.pdf'>PDF</a></li>
-		    <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Ultrasonic.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}} <a href="translations/en-us/tablet-beginner/Ultrasonic.pptx">PPTX</a> (English)</li>
 		    <li><a
 		href='translations/{{onetwo}}/beginner/Ultrasonic.ev3' download="Ultrasonic.ev3"
 		    type="application/ev3">EV3 Code</a></li>
@@ -453,10 +454,10 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="13" href="#" title="Close">Basic Line Follower</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onethree}}/beginner/BasicLineFollower.pptx">PPTX</a>,
 		    <a href="translations/{{onethree}}/beginner/BasicLineFollower.pdf">PDF</a></li>
-		    <li>EV3 Tablet App Slides:<a href="translations/en-us/tablet-beginner/BasicLineFollower.pptx">PPTX</a> (English)</li>
+		    <li>EV3 Tablet App {{Slides}}<a href="translations/en-us/tablet-beginner/BasicLineFollower.pptx">PPTX</a> (English)</li>
 		    <li><a href="translations/{{onethree}}/beginner/BasicLineFollower.ev3" download="BasicLineFollower.ev3" type="application/ev3">EV3 Code</a></li>
 		    <li> <a
 		    href="translations/{{onethree}}/beginner/BasicLineFollower.docx">Worksheet</a></li>
@@ -471,7 +472,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="16" href="#" title="Close">Moving An Object</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onesix}}/beginner/MoveObject.pptx">PPTX</a>,
 		    <a href="translations/{{onesix}}/beginner/MoveObject.pdf">PDF</a></li>
 		    <li><a href="translations/{{onesix}}/beginner/MoveObject.ev3" download="MoveObject.ev3" type="application/ev3">EV3 Code</a></li>
@@ -483,7 +484,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="14" href="#" title="Close">Basic Sequencer</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onefour}}/beginner/BasicSequencer.pptx">PPTX</a>,
 		    <a href="translations/{{onefour}}/beginner/BasicSequencer.pdf">PDF</a></li>
 		    <li><a href="translations/{{onefour}}/beginner/BasicSequencer.ev3" download="BasicSequencer.ev3" type="application/ev3">EV3 Code</a></li>
@@ -496,7 +497,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="15" href="#" title="Close">Final Challenge</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onefive}}/beginner/FinalChallenge.pptx">PPTX</a>,
 		    <a href="translations/{{onefive}}/beginner/FinalChallenge.pdf">PDF</a></li>
 		    <li> <a href="translations/{{onefive}}/beginner/FinalAssessment.docx">Assessment</a></li>
@@ -519,7 +520,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  tab-closed"><a id="50" href="#" title="Close">My Blocks with Inputs/Outputs</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivezero}}/intermediate/MyBlocks.pptx">PPTX</a>,
 		    <a
 		    href="translations/{{fivezero}}/intermediate/MyBlocks.pdf">PDF</a></li>
@@ -535,7 +536,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="51" href="#" title="Close">Moving with My Blocks</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fiveone}}/intermediate/MoveDistance.pptx">PPTX</a>,
 		    <a href="translations/{{fiveone}}/intermediate/MoveDistance.pdf">PDF</a></li>
 <li>	<a	href="translations/{{fiveone}}/intermediate/MoveDistance.ev3"
@@ -559,7 +560,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="52" href="#" title="Close">Turning with My Blocks</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pptx">PPTX</a>,
 		    <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pdf">PDF</a></li>
 		    <li><a href="translations/{{fivetwo}}/intermediate/TurnDegrees.ev3" download="TurnDegrees.ev3" type="application/ev3">EV3 Code</a></li>
@@ -573,14 +574,14 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		<div class="content-tab closed indent">
 		  <h4>Color Follower for Distance:</h4>
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pptx">PPTX</a>,
 		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pdf">PDF</a></li>
 		    <li><a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.ev3" download="ColorFollowerDistance.ev3" type="application/ev3">EV3 Code</a></li>
 		  </ul>
 		  <h4>Color Follower Stops Based on Color Detection:</h4>
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pptx">PPTX</a>,
 		    <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pdf">PDF</a></li>
 		    <li><a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.ev3" download="ColorFollowerSensor.ev3" type="application/ev3">EV3 Code</a></li>
@@ -593,7 +594,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		<div class="content-tab closed indent">
 
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivefour}}/intermediate/Infrared.pptx">PPTX</a>,
 		    <a href="translations/{{fivefour}}/intermediate/Infrared.pdf">PDF</a></li>
 		    <li><a href="translations/{{fivefour}}/intermediate/Infrared.ev3" download="Infrared.ev3" type="application/ev3">EV3 Code</a></li>
@@ -605,7 +606,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="55" href="#" title="Close">Debugging</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivefive}}/intermediate/Debug.pptx">PPTX</a>,
 		    <a href="translations/{{fivefive}}/intermediate/Debug.pdf">PDF</a></li>
 		  </ul>
@@ -617,7 +618,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="56" href="#" title="Close">Move Blocks</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pptx">PPTX</a>,
 		    <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pdf">PDF</a></li>
 		    <li><a href="translations/{{fivesix}}/intermediate/MovingBlocks.ev3" download="MovingBlocks.ev3" type="application/ev3">EV3 Code</a></li>
@@ -630,7 +631,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="57" href="#" title="Close">Reliability</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fiveseven}}/intermediate/Reliability.pptx">PPTX</a>,
 		    <a href="translations/{{fiveseven}}/intermediate/Reliability.pdf">PDF</a></li>
 		    <li><a
@@ -648,7 +649,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="58" href="#" title="Close">Intermediate Menu System</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pptx">PPTX</a>,
 		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pdf">PDF</a></li>
 		    <li><a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.ev3" download="IntermediateMenu.ev3" type="application/ev3">EV3 Code</a></li>
@@ -661,7 +662,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="59" href="#" title="Close">Color Sensor Calibration</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{fivenine}}/intermediate/Calibrate.pptx">PPTX</a>,
 		    <a href="translations/{{fivenine}}/intermediate/Calibrate.pdf">PDF</a></li>
 		    <li><a
@@ -679,7 +680,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 	        <p class="tab-index tab-closed"><a id="60" href="#" title="Close">Variables</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{sixzero}}/intermediate/Variables.pptx">PPTX</a>,
 		    <a href="translations/{{sixzero}}/intermediate/Variables.pdf">PDF</a></li>
 		    <li><a href="translations/{{sixzero}}/intermediate/Variables.ev3" download="Variables.ev3" type="application/ev3">EV3 Code</a></li>
@@ -692,7 +693,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="61" href="#" title="Close">Parallel Beams</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{sixone}}/intermediate/ParallelBeams.pptx">PPTX</a>,
 		    <a href="translations/{{sixone}}/intermediate/ParallelBeams.pdf">PDF</a></li>
 		    <li><a href="translations/{{sixone}}/intermediate/ParallelBeams.ev3" download="ParallelBeams.ev3" type="application/ev3">EV3 Code</a></li>
@@ -712,7 +713,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="100" href="#" title="Close">Parallel Beam Synchronization</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerozero}}/advanced/SyncBeams.pptx">PPTX</a>,
 		    <a href="translations/{{onezerozero}}/advanced/SyncBeams.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezerozero}}/advanced/SyncBeams.ev3" download="SyncBeams.ev3" type="application/ev3">EV3 Code</a></li>
@@ -725,7 +726,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="110" href="#" title="Close">Arrays</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{oneonezero}}/advanced/Arrays.pptx">PPTX</a>,
 		    <a href="translations/{{oneonezero}}/advanced/Arrays.pdf">PDF</a></li>
 		    <li><a href="translations/{{oneonezero}}/advanced/Arrays.ev3" download="Arrays.ev3" type="application/ev3">EV3 Code</a></li>
@@ -738,7 +739,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="101" href="#" title="Close">Proportional Control</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pptx">PPTX</a>,
 		    <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezeroone}}/advanced/ProportionalControl.ev3" download="ProportionalControl.ev3" type="application/ev3">EV3 Code</a></li>
@@ -752,7 +753,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="102" href="#" title="Close">Proportional Line Follower</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerotwo}}/advanced/LineFollower.pptx">PPTX</a>,
 		    <a href="translations/{{onezerotwo}}/advanced/LineFollower.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezerotwo}}/advanced/LineFollower.ev3" download="LineFollower.ev3" type="application/ev3">EV3 Code</a></li>
@@ -763,7 +764,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="111" href="#" title="Close">Proportional Two Color Line Follower</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{oneoneone}}/advanced/ProportionalTwoColorLineFollower.pptx">PPTX</a>,
 		    <a href="translations/{{oneoneone}}/advanced/ProportionalTwoColorLineFollower.pdf">PDF</a></li>
 		    <li><a href="translations/{{oneoneone}}/advanced/ProportionalTwoColorLineFollower.ev3" download="ProportionalTwoColorLineFollower.ev3" type="application/ev3">Proportional EV3 Code</a>,<a href="translations/{{onezeronine}}/advanced/SimpleTwoColorLineFollower.ev3" type="application/ev3">Simple EV3 Code</a></li>
@@ -775,7 +776,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="103" href="#" title="Close">Ramping Up</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerothree}}/advanced/RampUp.pptx">PPTX</a>,
 		    <a href="translations/{{onezerothree}}/advanced/RampUp.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezerothree}}/advanced/RampUp.ev3" download="RampUp.ev3" type="application/ev3">EV3 Code</a></li>
@@ -788,7 +789,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="104" href="#" title="Close">Gyro Sensor</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerofour}}/advanced/Gyro.pptx">PPTX</a>,
 		    <a href="translations/{{onezerofour}}/advanced/Gyro.pdf">PDF</a></li>
 		    <li><a
@@ -807,7 +808,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  tab-closed"><a id="105" href="#" title="Close">Gyro Sensor: Turns</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerofive}}/advanced/GyroTurn.pptx">PPTX</a>,
 		    <a href="translations/{{onezerofive}}/advanced/GyroTurn.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezerofive}}/advanced/GyroTurn.ev3" download="GyroTurn.ev3" type="application/ev3">EV3 Code</a></li>
@@ -822,7 +823,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		Move Straight and Wall Follow</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pptx">PPTX</a>,
 		    <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezeronine}}/advanced/GyroWallFollow.ev3" download="GyroWallFollow" type="application/ev3">EV3 Code</a></li>
@@ -835,7 +836,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="106" href="#" title="Close">Squaring on Lines</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezerosix}}/advanced/Align.pptx">PPTX</a>,
 		    <a href="translations/{{onezerosix}}/advanced/Align.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezerosix}}/advanced/Align.ev3" download="Align.ev3" type="application/ev3">EV3 Code</a></li>
@@ -848,7 +849,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="107" href="#" title="Close">Stall Detection</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezeroseven}}/advanced/StallDetection.pptx">PPTX</a>,
 		    <a href="translations/{{onezeroseven}}/advanced/StallDetection.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezeroseven}}/advanced/StallDetection.ev3" download="StallDetection.ev3" type="application/ev3">EV3 Code</a></li>
@@ -862,7 +863,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a id="108" href="#" title="Close">Menu System</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pptx">PPTX</a>,
 		    <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pdf">PDF</a></li>
 		    <li><a href="translations/{{onezeroeight}}/advanced/MenuSystem.ev3" download="MenuSystem.ev3" type="application/ev3">EV3 Code</a></li>
@@ -875,12 +876,12 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		<div class="content-tab closed indent">
 		  <h4>Data Logging for Science Experiments:</h4>
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pptx">PPTX</a>,
 		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pdf">PDF</a></li>
 		  </ul>  <h4>Data Logging with Programming Blocks:</h4>
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pptx">PPTX</a>,
 		    <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pdf">PDF</a></li>
 		  </ul>
@@ -903,7 +904,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a href="#" title="Close">Alternative Squaring on Lines</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/en-us/advanced/AltAlign.pptx">PPTX</a>,
 		    <a href="translations/en-us/advanced/AltAlign.pdf">PDF</a></li>
 		    <li><a href="translations/en-us/advanced/AltAlign.ev3" download="AltAlign.ev3" type="application/ev3">EV3 Code</a></li>
@@ -917,7 +918,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		  <p class="tab-index tab-closed"><a href="#" title="Close">NXT Light Sensors in EV3</a></p>
 		<div class="content-tab closed indent">
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/en-us/advanced/NXTLightSensor.pptx">PPTX</a>,
 		    <a href="translations/en-us/advanced/NXTLightSensor.pdf">PDF</a></li>
 		    <li><a href="translations/en-us/advanced/NXTLightSensor.ev3" download="NXTLightSensor.ev3" type="application/ev3">EV3 Code</a></li>
@@ -946,7 +947,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		    and a final challenge that combines various
 		    programming concepts.
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/en-us/beginner/NXTBeginner.pptx">PPTX</a>,
 		    <a href="translations/en-us/beginner/NXTBeginner.pdf">PDF</a></li>
 		  </ul>
@@ -961,7 +962,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		    This set of slides works well for beginner
 		    students. These slides were used in an 3hr workshop in Ohio. This lesson reviews basic movement. It covers basic sensor usage, switch/loops basics, and basic line follower.
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/en-us/workskhop/BeginnerWorkshop.pptx">PPTX</a>,
 		    <a href="translations/en-us/workshop/BeginnerWorkshop.pdf">PDF</a></li>
 		  </ul>
@@ -977,7 +978,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		    This set of slides works well for intermediate
 		    students. These slides were used in an 3hr workshop in Ohio. This lesson reviews basic movement. It covers squaring on a line, parallel beams basics, and proportional line follower.
 		  <ul>
-		    <li>Slides:
+		    <li>{{Slides}}
 		    <a href="translations/en-us/workshop/IntermediateWorkshop.pptx">PPTX</a>,
 		    <a href="translations/en-us/workshop/IntermediateWorkshop.pdf">PDF</a></li>
 		  </ul>
@@ -1048,7 +1049,7 @@ function textFileToArray(filename)
                : new ActiveXObject("Microsoft.XMLHTTP");
     reader.open("GET", filename, false );
     reader.send();
-    return reader.responseText.split('\n'); //.split(/(\r\n|\n)/g);
+    return reader.responseText.split(/\r\n|\n|\r/); //.split(/(\r\n|\n)/g);
 }
 
 document.write('<scr'+'ipt>var urldes = textFileToArray("translations/'+language+'/lessons.txt");</scr'+'ipt>');
@@ -1085,6 +1086,7 @@ var i = 1;
 document.write('<scr'+'ipt>\
 var app = angular.module("myApp", []);\
 app.controller("myCtrl", function($scope) {');
+document.write("$scope.Slides = '"+slidestext+"' ;");
 while (i < 18) {
     if (urldes[i] != "none") {
 	document.getElementById(String(i)).innerHTML = urldes[i];
