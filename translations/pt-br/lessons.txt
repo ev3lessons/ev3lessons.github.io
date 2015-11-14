@@ -12,7 +12,7 @@ Repetindo Ações
 Switches
 Ultrassônico
 Seguidor de Linha Básico
-Sequenciador Básico
+none
 Desafios Finais
 Levantar e Mover um Objeto
 Usando Dados Do Sensor E Port View.
@@ -56,7 +56,7 @@ Sensor Infravermelho
 Técnicas de Debugging (correção de erros na programação)
 Blocos de Movimento
 Segurança
-Sistema de Menu Intermediário
+none
 Calibração do Sensor de Cores
 Variáveis
 Como usar Feixes Paralelos (Parallel Beams)

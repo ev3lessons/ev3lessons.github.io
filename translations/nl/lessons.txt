@@ -12,7 +12,7 @@ Herhalingen
 Schakelingen(keuzes)
 Ultrasone sensor
 Basis lijnvolger
-Basis opeenvolging
+none
 Eindopdracht
 Een object verplaatsen
 none
@@ -56,7 +56,7 @@ Infrarood Sensor
 Debuggen
 Beweegblokken
 Betrouwbaarheid
-Menusysteem
+none
 Kleurensensor kalibreren
 Variabelen
 Parallelle blokken

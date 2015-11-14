@@ -12,10 +12,10 @@ none
 Interruptores
 none
 Seguidor Básicode Líneas
-Secuenciador Básico
+none
 Desafios Finales
 none
-//this array line is 17
+none
 none
 none
 none
