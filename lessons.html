@@ -513,6 +513,33 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		<p id="int-intro">These lessons are for students who understand basic
 		movement and sensor use.</p><br><br>
 
+
+
+		<div class="toggle">
+		  <p class="tab-index tab-closed"><a id="58" href="#" title="Close">Brick Buttons as Sensors</a></p>
+		<div class="content-tab closed indent">
+		  <ul>
+		    <li>{{Slides}}
+		    <a href="translations/{{fiveeight}}/intermediate/BrickButtons.pptx">PPTX</a>,
+		    <a href="translations/{{fiveeight}}/intermediate/BrickButtons.pdf">PDF</a></li>
+		    <li><a href="translations/{{fiveeight}}/intermediate/BrickButtons.ev3" download="BrickButtons.ev3" type="application/ev3">EV3 Code</a></li>
+		  </ul>
+		</div>
+		</div>
+		<br>
+
+		<div class="toggle">
+		  <p class="tab-index tab-closed"><a id="63" href="#" title="Close">Data Wires</a></p>
+		<div class="content-tab closed indent">
+		  <ul>
+		    <li>{{Slides}}
+		    <a href="translations/{{sixthree}}/intermediate/DataWires.pptx">PPTX</a>,
+		    <a href="translations/{{sixthree}}/intermediate/DataWires.pdf">PDF</a></li>
+		    <li><a href="translations/{{sixthree}}/intermediate/DataWires.ev3" download="DataWires.ev3" type="application/ev3">EV3 Code</a></li>
+		  </ul>
+		</div>
+		</div>
+		<br>	
 	        <div class="toggle">
 		  <p class="tab-index
 		  tab-closed"><a id="50" href="#" title="Close">My Blocks with Inputs/Outputs</a></p>
@@ -643,18 +670,7 @@ EV3Lessons has tested and approved all lessons in Beginner,
 		</div>
 
 		<br>
-		<div class="toggle">
-		  <p class="tab-index tab-closed"><a id="58" href="#" title="Close">Intermediate Menu System</a></p>
-		<div class="content-tab closed indent">
-		  <ul>
-		    <li>{{Slides}}
-		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pptx">PPTX</a>,
-		    <a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.pdf">PDF</a></li>
-		    <li><a href="translations/{{fiveeight}}/intermediate/IntermediateMenu.ev3" download="IntermediateMenu.ev3" type="application/ev3">EV3 Code</a></li>
-		  </ul>
-		</div>
-		</div>
-		<br>
+
 
 		<div class="toggle">
 		  <p class="tab-index tab-closed"><a id="59" href="#" title="Close">Color Sensor Calibration</a></p>
@@ -1110,7 +1126,7 @@ while (i < 18) {
     i = i + 1;
 }
 i = 50;
-while (i < 63) {
+while (i < 64) {
     if (urldes[i] != "none") {
 	document.getElementById(String(i)).innerHTML = urldes[i];
 	document.write('$scope.'+inWords(i)+' = "'+language+'";');
