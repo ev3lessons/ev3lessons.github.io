@@ -1101,6 +1101,19 @@ document.write('<scr'+'ipt>\
 var app = angular.module("myApp", []);\
 app.controller("myCtrl", function($scope) {');
 document.write("$scope.Slides = '"+slidestext+"' ;");
+while (i < 14) {
+    if (urldes[i] != "none") {
+	document.getElementById(String(i)).innerHTML = urldes[i];
+	document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+	document.write('$scope.'+inWords(i)+' = "en-us";');
+	if (language != 'en-us'){
+	    document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+	}
+    }
+    i = i + 1;
+}
+i = 15; 
 while (i < 18) {
     if (urldes[i] != "none") {
 	document.getElementById(String(i)).innerHTML = urldes[i];
@@ -1113,7 +1126,7 @@ while (i < 18) {
     }
     i = i + 1;
 }
-i = 50;
+i = 50; 
 while (i < 64) {
     if (urldes[i] != "none") {
 	document.getElementById(String(i)).innerHTML = urldes[i];
