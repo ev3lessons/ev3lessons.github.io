@@ -56,12 +56,12 @@ Sensor Infravermelho
 Técnicas de Debugging (correção de erros na programação)
 Blocos de Movimento
 Segurança
-none
+Botões do Bloco Como Sensores
 Calibração do Sensor de Cores
 Variáveis
 Como usar Feixes Paralelos (Parallel Beams)
 none
-none
+Fios de Dados
 none
 none
 none
