@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+    <!--<![endif]-->
+
+    <head>
+<meta name="google-site-verification" content="W-sBj7nnyxeHZxi1M4rpGcf8InaT0rEPSnNaxMDRGBY" />
+      <meta name="Droids Robotics" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These EV3 tutorials are designed for teams competing in the FIRST Lego League contest.">
+     <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+        <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+        
+        <title>EV3Lessons.com | by Droids Robotics</title>
+        
+        <!-- [favicon] begin -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- [favicon] end --> 
+        
+        <!-- CSS Main -->
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+        
+        <!-- CSS Plugin -->
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/tipsy.css" type="text/css" media="all" />
+        <link rel='stylesheet' href='css/buttons.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/labels.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' href='css/wells.min.css' type='text/css' media='all' />
+        
+        <!-- CSS Slider -->
+        <link rel="stylesheet" href="css/slider-thumbnails.css" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+        <link rel='stylesheet' href='css/slider-elastic.css' type='text/css' media='all' />
+
+<!-- HEADER CUT HERE ------------------------------------------------->
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='ahortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+
+<!--	<link rel="stylesheet" href="resources/scorer/jquery.mobile-1.4.5.min.css">
+-->	<script src="resources/scorer/jquery-1.11.3.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script><!--
+<script src="resources/scorer/jquery.mobile-1.4.5.min.js"></script>
+	-->
+        <script type="text/javascript">
+            var yiw_prettyphoto_style = 'pp_default';
+        </script>
+<!--	<script type="text/javascript" src="js/jquery.js"></script>
+    --><script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+        <script type="text/javascript" src="js/jquery.tweetable.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
+        <script type="text/javascript" src="js/superfish2.js"></script>
+        <script type='text/javascript' src="js/jquery.eislideshow.js"></script>
+        <script type='text/javascript' src="js/swfobject.js"></script>
+        <script type='text/javascript' src='js/jquery.cookie.js'></script>
+        <script type='text/javascript' src='js/buttons.min.js'></script>
+        <script type='text/javascript' src='js/layerslider.kreaturamedia.jquery-min.js'></script>
+        <script type='text/javascript' src='js/jquery.quicksand.js'></script>
+	<script src="js/jquery.nivo.slider.pack.js"></script>
+
+	<script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+        });
+    });
+	</script>
+	<script>
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            directionNavHide: false,
+            captionOpacity: 1,
+            prevText: '<',
+            nextText: '>'
+        });
+    });
+</script>
+
+<style type="text/css">
+  ul {list-style: none;padding: 0px;margin: 0px;
+  }
+  ul li {display: block;position: relative;float: left;//border:1px solid #000
+  }
+  li ul {display: none;}
+  ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
+           white-space: nowrap;color: #fff;}
+  ul li a:hover {background: #f00;}
+  li:hover ul {display: block; position: absolute;}
+  li:hover li {float: none;}
+  li:hover a {background: #f00;}
+  li:hover li a:hover {background: #000;}
+  #drop-nav li ul li {border-top: 0px;}
+</style>
+
+    </head>
+    <body class="no_js responsive boxed-layout chrome ">
+        
+        <!-- TOPBAR -->
+        <script src="topbar.js"></script>
+        <!-- END TOPBAR -->
+        <!-- START WRAPPER -->
+        <div class="wrapper group">
+            <!-- START HEADER -->
+            <div id="header" class="group">
+                <div class="group inner">
+                    
+                    <!-- START LOGO -->
+                    <div id="logo" class="group">
+                        <h1>
+                            <a class="logo-text" href="index.html" title="EV3Lessons.com">EV3<span>Lessons.com</span></a>                        
+                        </h1>
+                        <p>by <a href="http://www.droidsrobotics.org">Droids Robotics</a></p>
+                    </div>
+                    <!-- END LOGO -->  
+                    
+		    <!-- START NAV -->
+		
+		    <!-- START NAV -->
+		    <style>
+
+
+.navigation ul ul{
+            
+            background-color:#e6056f; /* remove. this is for illustration purposes only */
+            width:340px; /* you need a width to accommodate tertiary menus */
+            
+            position:absolute;
+            z-index:100;
+            
+         //   height: 0;
+overflow: hidden;
+-webkit-transition: height 0.3s ease-in;
+            -moz-transition: height 0.3s ease-in;
+            -o-transition: height 0.3s ease-in;
+            -ms-transition: height 0.3s ease-in;
+            transition: height 0.3s ease-in;
+}
+ .navigation ul ul li{
+            background-color:#eaeaea; /* grey */
+            width:170px;
+-webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            -ms-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 500px) {
+		      #nav {display: none;}
+		       #nav-drop {display: inline;}
+}
+
+@media screen and (min-width: 500px) {
+   #nav {display: inline;}
+#nav-drop {display: none;}
+		      }
+
+
+
+		      img {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   a img:hover {
+      opacity: 0.5;
+		      }
+
+		      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:2px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:7px;
+		      padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+		      }
+		     
+a.button.myButton:hover {
+	background-color:#5cbf2a;
+}
+a.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+		      .clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+//    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+//    background:#3e3436;
+}
+ 
+.menu {
+ //   width:1000px;
+    margin:0px auto;
+background-color: #2b2b2b;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+//    font-family:'Ek Mukta';
+background-color: #2b2b2b;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+//   color:#919191;
+background-color: #2b2b2b;
+font-size: 120%;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+   // color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+    /*----- Top Level -----*/
+
+
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+background-color: #2b2b2b;
+    }
+    
+ 
+.menu > ul > li > a {
+//   padding:10px 40px;
+  //  display:inline-block;
+//    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+   // background:#2e2728;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+    background-color: #2b2b2b;
+        transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    //  background:#3e3436;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+#nav > ul > li > a, #nav > .menu > ul > li > a {
+    background-color: #2b2b2b;
+    display: block;
+    font-size: 12px;
+    min-height: 42px;
+    padding-top: 43px;
+    position: relative;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+    #nav > ul a, #nav > .menu > ul a {
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #999;
+    padding: 0 18px;
+    text-decoration: none;
+    border-left: 1px solid #3c3c3c;
+    border-right: 1px solid #111111;
+        transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+    #nav > ul a, #nav > .menu > ul a {
+    display: block;
+    position: relative;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+
+
+
+
+    
+    .nav2 li ul {
+    position:absolute;
+   // left:0;
+ //   top:36px;
+  //  z-index:1;
+}
+    .sub-menu ul li{
+    overflow:hidden;
+ //   height:0;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+}
+.nav2 ul > li:hover ul li {
+    //height:36px;
+}
+		    </style>
+
+<script>
+
+</script>
+
+
+<div id="nav" class="navigation">
+   <nav class="menu nav2">
+      <ul class="nav" class="clearfix">
+
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="lessons.html">Lessons <span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu dropdown">
+                    <li><a href="lessons.html">All Lessons</a></li>
+                    <li><a href="robots.html">Robot Design</a></li>
+                </ul>
+            </li>
+	    <li>
+                <a href="resources.html">Resources <span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="resources/scorer/score.html">Trash Trek Scorer</a></li>
+                    <li><a href="resources/drawplan/">Sketch Planner</a></li>
+                    <li><a href="resources/wheelconverter">Wheel Converter</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="archive/2015/resources/">Resources Archive</a></li>
+                </ul>
+            </li>
+	    <li>
+                <a href="#">Movies <span class="arrow">&#9660;</span></a>
+ 
+                <ul class="sub-menu">
+                    <li><a href="#">In Cinemas Now</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">On DVD/Blu-ray</a></li>
+                    <li><a href="#">Showtimes &amp; Tickets</a></li>
+                </ul>
+            </li>
+            <li><a href="#">T.V. Shows</a></li>
+            <li class="current-item"><a href="#">Photos</a></li>
+           
+        </ul>
+    </nav>
+  </div>
+
+ <!-- <div style="font-size:130%;" id="drop"></div>-->
+
+<center><select id="nav-drop"><option>Home</option><option>Lessons</option><option>Robot Designs</option></select></center>
+                    <!-- END NAV -->
+                </div>
+            </div>
+	      <script>
+lx = 1;
+		function lessons() {
+if (lx == 1) {
+document.getElementById('drop').innerHTML = '<br> <a class="button" href="file">Robot Designs</a>, <a class="button" href="file">Lessons</a>  ';
+lx = lx*-1;
+} else {
+document.getElementById('drop').innerHTML = ' ';
+lx = lx*-1;
+}
+
+}
+rx = 1;
+function resources() {
+if (rx == 1) {
+document.getElementById('drop').innerHTML = '<br> <a class="button" href="file">All Resources</a>, <a class="button" href="file">Trash Trek Scorer</a>, <a class="button" href="file">Wheel Converter</a>, <a class="button" href="file">Interactive Sketcher</a>, <a class="button" href="file">Challenges</a>, <a class="button" href="file">Resources Archive</a>';
+rx = rx*-1;
+} else {
+document.getElementById('drop').innerHTML = ' ';
+rx = rx*-1;
+}
+
+}
+		
+		      </script>
+
+
+
+
+	      <!-- END HEADER -->
+
+<!-- HEADER CUT HERE -----------------------------------------------
+<img usemap='#planetmap' width='740' height='250' src='images/slider-flash/5.png'> <map name='planetmap'><area shape='rect' coords='0,0,82,126' href='sun.htm' alt='Sun'></map>
+<img usemap='#planetmap' width='740' height='250' src='images/slider-flash/5.png'> <map name='planetmap'><area shape='rect' coords='550,50,492,196' href='sun.htm' alt='Sun'></map>
+-->
+<script>
+var images = new Array();
+images[0] = 'images/slider-flash/ev3lessons.jpg';
+images[1] = 'images/slider-flash/1.png';
+images[2] = 'images/slider-flash/2.png';
+images[3] = 'images/slider-flash/3.png';
+//images[4] = 'images/slider-flash/4.png';
+images[4] = 'images/slider-flash/5.png';
+images[5] = 'images/slider-flash/6.png';
+images[6] = 'images/slider-flash/7.png';
+images[7] = 'images/slider-flash/8.png';
+//images[8] = 'images/slider-flash/9.png';
+x = 0;
+function changeImage() {
+x = x + 1;
+if (x >= 8) {
+x = 0;
+    }
+//alert(x);
+    document.getElementById('slider').src = images[x];
+}
+var slidertimeout;
+window.onload = function() {
+  slidertimeout = setInterval(function() {
+    changeImage()
+  },3000);
+    }
+
+pause = 0;
+    function toggleimage() {
+    if (pause == 0) {
+    pause = 1;
+    clearInterval(slidertimeout)
+    } else if (pause == 1) {
+pause = 0;
+    slidertimeout = setInterval(function() {
+    changeImage()
+  },3000);
+    }
+    }
+
+</script><div align="right">
+<script>
+<!--
+ 
+ var viewportwidth;
+ var viewportheight;
+  
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+  
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+  
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+ 
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth,
+       viewportheight = document.documentElement.clientHeight
+ }
+  
+ // older versions of IE
+  
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight
+ }
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script>
+<script>
+
+  if ((viewportwidth > 800) && (screen.width > 800)) {
+      document.write('<table>');
+//	document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//      document.write('<p>Your screen width is '+screen.width+'</p>');
+  } else {
+  }
+  var Slider = function() { this.initialize.apply(this, arguments) }
+  Slider.prototype = {
+ 
+    initialize: function(slider) {
+      this.ul = slider.children[0]
+      this.li = this.ul.children
+ 
+      // make <ul> as large as all <li>’s
+      this.ul.style.width = (this.li[0].clientWidth * this.li.length) + 'px'
+ 
+      this.currentIndex = 0
+    },
+ 
+    goTo: function(index) {
+      // filter invalid indices
+      if (index < 0 || index > this.li.length - 1)
+        return
+ 
+      // move <ul> left
+      this.ul.style.left = '-' + (100 * index) + '%'
+ 
+      this.currentIndex = index
+    },
+ 
+    goToPrev: function() {
+      this.goTo(this.currentIndex - 1)
+    },
+ 
+    goToNext: function() {
+      this.goTo(this.currentIndex + 1)
+    }
+  }
+</script>
+
+
+<!-- <table>-->
+<tr><td><script>
+      if (screen.width > 800) {
+      document.write('<img onclick="toggleimage()"  width="740" id="slider" height="260"  src="images/slider-flash/ev3lessons.jpg">');
+      } else {
+      document.write('<img onclick="toggleimage()"  width="100" id="slider" height="50"  src="images/slider-flash/ev3lessons.jpg">');
+      }
+    </script>
+
+ 
+ 
+
+</td><td ><div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 0px 0px;
+//border-top-radius: 110px 110px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 0px 0px;">  <a href='https://www.startingpoints.com?cc=EV3' id='startingPointsAd'> <img style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a></div>
+	     </td></tr><tr  >
+	       <td  style="vertical-align:top" rowspan="3">
+ <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"><a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
+																																																										<img  src="images/ads/damien.jpg" width="250" height="250" style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"></a></div>
+</td></tr><tr><td><div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+    border-width: 6px;
+border-color: red;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"
+  src="images/ads/generic.jpg" width="250" height="250"></a></div>
+</td></tr><!--<tr><td>	 <div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+    border-width: 6px;
+border-color: red;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"
+  src="images/ads/generic.jpg" width="250" height="250"></a></div>
+</td></center></tr>-->
+	     </table>
+</div>
+
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+			
+
+        <!-- START FOOTER -->
+        <div id="copyright" class="group ">
+            <div class="inner group">
+                <div class="left">
+                    <p>
+                    	Copyright EV3Lessons.com 2015 - 
+                    	Powered by <strong>Droids Robotics</strong>
+                    </p>
+            </div>
+        </div>
+        
+      <!--  <script type="text/javascript" src="js/jquery.custom.js"></script>
+	--> <script type="text/javascript" src="js/contact.js"></script>
+        
+		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+</body>
+</html>
