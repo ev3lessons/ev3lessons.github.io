@@ -94,19 +94,7 @@ $(document).bind('mobileinit',function(){
 
 
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('#fade').list_ticker({
-			speed:2000,
-			effect:'fade'
-		});
-		$('#slide').list_ticker({
-			speed:2000,
-			effect:'slide'
-		});		
-	})
-	</script>
-	<style>
+<style>
 .navx ul {
     *zoom:1;
     list-style:none;
@@ -244,10 +232,6 @@ overflow: hidden;
 		       #nav-drop {display: inline;}
 .lang {display: none;}
 #lang-drop {display: inline;}
-#ads  {display: none;}
-#ads-bot  {display: inline;}
-.socials-default-small {display: none;}
-//body {background: #fff;}
 }
 
 
@@ -256,9 +240,7 @@ overflow: hidden;
 #nav-drop {display: none;}
 .lang {display: inline;}
 #lang-drop {display: none;}
-#ads-bot  {display: none;}
-#ads  {display: inline;}
-.socials-default-small {display: inline;}
+
 		      }
 
 
@@ -466,6 +448,9 @@ background-color: #2b2b2b;
 
 
 
+
+
+
     .nav2 li ul {
     position:absolute;
    // left:0;
@@ -657,7 +642,7 @@ var trackOutboundLink = function(url) {
 <script>
 
   if ((viewportwidth > 800) && (screen.width > 800)) {
-   //   document.write('<table>');
+      document.write('<table>');
 //	document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
 //      document.write('<p>Your screen width is '+screen.width+'</p>');
   } else {
@@ -698,7 +683,7 @@ var trackOutboundLink = function(url) {
 
 
 <!-- <table>-->
-<!--<script>
+<tr><td><!--<script>
       if (screen.width > 800) {
       document.write('<img onclick="toggleimage()"  width="740" id="slider" height="260"  src="images/slider-flash/ev3lessons.jpg">');
       } else {
@@ -743,7 +728,7 @@ var trackOutboundLink = function(url) {
               },
               $ThumbnailNavigatorOptions: {
                 $Class: $JssorThumbnailNavigator$,
-               $Cols: 1,
+                $Cols: 1,
                 $Align: 0
               }
             };
@@ -755,7 +740,7 @@ var trackOutboundLink = function(url) {
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 1000);
+                    refSize = Math.min(refSize, 750);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -825,7 +810,7 @@ var trackOutboundLink = function(url) {
         .jssora05l.jssora05ldn { background-position: -250px -40px; }
         .jssora05r.jssora05rdn { background-position: -310px -40px; }
 
-        /* jssor slider thumbnail navigator skin 09 css 
+        /* jssor slider thumbnail navigator skin 09 css */
         
         .jssort09-600-45 .p {
             position: absolute;
@@ -836,7 +821,7 @@ var trackOutboundLink = function(url) {
         }
         
         .jssort09-600-45 .t {
-           font-family: verdana;
+            font-family: verdana;
             font-weight: normal;
             position: absolute;
             width: 100%;
@@ -848,48 +833,44 @@ var trackOutboundLink = function(url) {
             font-size: 20px;
             padding-left: 10px;
         }
-*/
+ 
     </style>
 
-<div id="wrapper">
-    <div id="jssor_1"  style="position: relative; margin: 0 auto; top: 0px; left: -0px; width: 1000px; height: 300px; overflow: hidden; visibility: hidden;">
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: -4px; left: 0px; width: 750px; height: 270px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
             <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
         </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1000px; height: 300px; overflow: hidden;">
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 750px; height: 270px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/ev3lessons.jpg" />
-              
-            </div>
-	    <div data-p="112.50" style="display: none;">
                 <img data-u="image" src="images/slider-flash/1.png" />
-              <!--  <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
-            --></div>
+                <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
+            </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/2.png" />
-               <!-- <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
-            --></div>
+                <img data-u="image" src="img/02.jpg" />
+                <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
+            </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/3.png" />
-               <!-- <div data-u="thumb">Do you notice navigator responses when drag?</div>
-            --></div>
+                <img data-u="image" src="img/03.jpg" />
+                <div data-u="thumb">Do you notice navigator responses when drag?</div>
+            </div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/4.png" />
-               <!-- <div data-u="thumb">Do you notice arrow responses when click?</div>
-          -->  </div>
+                <img data-u="image" src="img/04.jpg" />
+                <div data-u="thumb">Do you notice arrow responses when click?</div>
+            </div>
         </div>
-        <!-- Thumbnail Navigator     position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; -->
+        <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:750px;height:45px;">
-            <div style=" filter:alpha(opacity=40.0); opacity:0.4;"></div>
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
             <!-- Thumbnail Item Skin Begin -->
-         <div data-u="slides" style="cursor: default;">
+            <div data-u="slides" style="cursor: default;">
                 <div data-u="prototype" class="p">
                     <div data-u="thumbnailtemplate" class="t"></div>
-           </div>
+                </div>
             </div>
-           <!-- Thumbnail Item Skin End -->
+            <!-- Thumbnail Item Skin End -->
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
@@ -899,81 +880,58 @@ var trackOutboundLink = function(url) {
         <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
         <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
         <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
-	
     </div>
 
-    <div id="ads">
- <a href='https://www.startingpoints.com?cc=EV3' id='startingPointsAd'> <img style="border-style: solid;
+
+					
+					
+			
+
+</td><td ><div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 0px 0px;
+//border-top-radius: 110px 110px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 0px 0px;">  <a href='https://www.startingpoints.com?cc=EV3' id='startingPointsAd'> <img style="border-style: solid;
     border-width: 6px;
 border-color: #98bf21;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a>
-	 
-	<a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
+border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a></div>
+	     </td></tr><tr  >
+	       <td  style="vertical-align:top" rowspan="3">
+ <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>		</td><center><td>	<div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"><a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
 																																																										<img  src="images/ads/damien.jpg" width="250" height="250" style="border-style: solid;
     border-width: 6px;
 border-color: #98bf21;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"></a> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+border-top-right-radius: 10px 5px;"></a></div>
+</td></tr><tr><td><div style="border-style: solid;
+border-color: #ffffff      ;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border: 6px solid transparent;
+border-top-right-radius: 10px 5px;"> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
     border-width: 6px;
 border-color: red;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
 border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
- <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
-    border-width: 6px;
-border-color: red;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
-</div>
-	   
-    <script>document.write('<script src="translations/'+language+'/index2.js"></scr'+'ipt>');</script>
-
-
-
-
-
-
-
-
-
-<head>
-	
-	<link type="text/css" href="images_files/style000.css" rel="stylesheet"/>
-	<script type="text/javascript" src="images_files/jquery00.js"></script>	<script type="text/javascript" src="images_files/ticker00.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('#fade').list_ticker({
-			speed:2000,
-			effect:'fade'
-		});
-		$('#slide').list_ticker({
-			speed:2000,
-			effect:'slide'
-		});		
-	})
-	</script>
-	<!-- Date: 2010-07-09 -->
-</head>
-
-
-
-
-
-
-
-
-
-<!--<tr><td>	 <div style="border-style: solid;
+  src="images/ads/generic.jpg" width="250" height="250"></a></div>
+</td></tr><!--<tr><td>	 <div style="border-style: solid;
 border-color: #ffffff      ;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
@@ -992,48 +950,6 @@ border-top-right-radius: 10px 5px;"
 </div>
 
 
-
-
-
-
-
- <div id="ads-bot">
- <a href='https://www.startingpoints.com?cc=EV3' id='startingPointsAd'> <img style="border-style: solid;
-    border-width: 6px;
-border-color: #98bf21;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a>
-	 
-	<a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
-																																																										<img  src="images/ads/damien.jpg" width="250" height="250" style="border-style: solid;
-    border-width: 6px;
-border-color: #98bf21;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"></a> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
-    border-width: 6px;
-border-color: red;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
- <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
-    border-width: 6px;
-border-color: red;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
-</div>
-
-
-
- 
 <!-- FOOTER CUT HERE ------------------------------------------------->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.8/slick.min.js"></script>
 
