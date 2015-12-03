@@ -128,7 +128,7 @@ document.write('\
                                     <li><a id="m31" href="mission.html#'+language+'">Our Mission</a></li>\
                                     <li><a id="m32" href="contributors.html#'+language+'">Contributors</a></li>\
                                     <li><a id="m33" href="contributorfaq.html#'+language+'">Contributor FAQ</a></li>\
-                                    <li><a id="m34" href="press.html#'+language+'">Press</a></li>\
+                                    <li><a id="m34" href="Press.html#'+language+'">Press</a></li>\
                                 </ul>\
                             </li>\
                             \
