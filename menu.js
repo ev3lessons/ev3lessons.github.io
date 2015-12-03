@@ -129,6 +129,7 @@ document.write('\
                                     <li><a id="m32" href="contributors.html#'+language+'">Contributors</a></li>\
                                     <li><a id="m33" href="contributorfaq.html#'+language+'">Contributor FAQ</a></li>\
                                     <li><a id="m34" href="press.html#'+language+'">Press</a></li>\
+<li><a id="m34" href="support.html#'+language+'">Support Us</a></li>\
                                 </ul>\
                             </li>\
                             \
