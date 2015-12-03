@@ -104,8 +104,9 @@ document.write('\
                             <li>\
                                 <a id="m10" href="lessons.html#'+language+'"></i>Lessons</a>\
                                 <ul class="sub-menu">\
-                                    <li><a id="m11" href="lessons.html#'+language+'">All Lessons</a></li>\
-                                    <li><a id="m12" href="robots.html#'+language+'">Robot Design</a></li>\
+                                    <li><a id="m11" href="lessons.html#'+language+'">Programming Lessons</a></li>\
+                                    <li><a id="m12" href="robots.html#'+language+'">Robot Designs</a></li>\
+                                    <li><a id="m13" href="HourOfEV3.html#'+language+'">Hour of EV3</a></li>\
                                 </ul>\
                             </li>\
                             \
@@ -127,6 +128,7 @@ document.write('\
                                     <li><a id="m31" href="mission.html#'+language+'">Our Mission</a></li>\
                                     <li><a id="m32" href="contributors.html#'+language+'">Contributors</a></li>\
                                     <li><a id="m33" href="contributorfaq.html#'+language+'">Contributor FAQ</a></li>\
+                                    <li><a id="m34" href="press.html#'+language+'">Press</a></li>\
                                 </ul>\
                             </li>\
                             \
