@@ -60,9 +60,9 @@ Botões do Bloco Como Sensores
 Calibração do Sensor de Cores
 Variáveis
 Como usar Feixes Paralelos (Parallel Beams)
-none
+Operaçôes Lógicas e Tomada de Deicisões
 Fios de Dados
-none
+Seguidor de Paredes Ultrasônico Simples & Otimizado
 none
 none
 none
@@ -110,8 +110,8 @@ Sistema de Menu
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
  Matrizes
 Seguidor proporcional de linha com dois sensores de cor.
-Registro de Dados 
-none
+Registro de Dados
+Seguidor de Parades Ultrasônico Proporcional
 none
 none
 none
