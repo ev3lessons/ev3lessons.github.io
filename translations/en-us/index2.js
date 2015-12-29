@@ -59,7 +59,7 @@ document.write('\
 \
 \
 	    \
-           <!-- <div style="text-align: left;" class="inner home-portfolio home-services home-section group">\
+            <div style="text-align: left;" class="inner home-portfolio home-services home-section group">\
 	      <h2><span>EV3Lessons.com</span> announcements</h2>\
 	    <div class="hentry-post group first">\
 	      <h3>In the news</h3>\
@@ -99,7 +99,7 @@ document.write('\
 			    \
 			  </ul>\
 			  \
-		</div>-->  \
+		</div>  \
 \
 \
 <div id="primary" align="middle" class=" inner home-portfolio home-section group layout-sidebar-right home-section">\

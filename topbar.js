@@ -29,7 +29,7 @@ document.write('\
         <div id="topbar">\
 	  <div class="inner group">\
 	    <div class="widget-last widget widget_text left">\
-	      <div class="lang" style="padding-top: 4px" class="textwidget">\
+	      <div style="padding-top: 4px" class="textwidget">\
 	        <div style="padding-top: 8px; color: #FFF; width: inherit" class="socials-default-small default">\
                   Languages: \
 		</div>\
