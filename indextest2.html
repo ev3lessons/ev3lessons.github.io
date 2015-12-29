@@ -62,7 +62,7 @@
         <!-- JavaScripts -->
 
 <!--	<link rel="stylesheet" href="resources/scorer/jquery.mobile-1.4.5.min.css">--><script src="resources/scorer/jquery-1.11.3.min.js"></script>
-<script>
+<!--<script>
 $(document).bind('mobileinit',function(){
     $.mobile.changePage.defaults.changeHash = false;
     $.mobile.hashListeningEnabled = false;
@@ -74,9 +74,9 @@ $(document).bind('mobileinit',function(){
         <script type="text/javascript">
             var yiw_prettyphoto_style = 'pp_default';
         </script>
-	<script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!--	<script type="text/javascript" src="js/jquery.js"></script>
+    --><script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3-2.js"></script>
         <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
         <script type="text/javascript" src="js/jquery.tipsy.js"></script>
         <script type="text/javascript" src="js/jquery.tweetable.js"></script>
@@ -94,101 +94,12 @@ $(document).bind('mobileinit',function(){
 
 
 
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('#fade').list_ticker({
-			speed:2000,
-			effect:'fade'
-		});
-		$('#slide').list_ticker({
-			speed:2000,
-			effect:'slide'
-		});		
-	})
-	</script>
-	<style>
-.navx ul {
-    *zoom:1;
-    list-style:none;
-    margin:0;
-    padding:0;
-    background:#333;
-}
-.navx ul:before,.navx ul:after {
-    content:"";
-    display:table;
-}
-.navx ul:after {
-    clear:both;
-}
-.navx ul > li {
-    float:left;
-    position:relative;
-}
-.navx a {
-    display:block;
-    padding:10px 20px;
-    line-height:1.2em;
-    color:#fff;
-    border-left:1px solid #595959;
-}
-.navx a:hover {
-    text-decoration:none;
-    background:#595959;
-}
-.navx li ul {
-    background:#273754;
-}
-.navx li ul li {
-    width:200px;
-}
-.navx li ul a {
-    border:none;
-}
-.navx li ul a:hover {
-    background:rgba(0,0,0,0.2);
-}
-.navx li ul {
-    position:absolute;
-    left:0;
-    top:36px;
-    z-index:1;
-}
-.navx li ul li {
-    overflow:hidden;
-    height:0;
-    -webkit-transition:height 200ms ease-in;
-    -moz-transition:height 200ms ease-in;
-    -o-transition:height 200ms ease-in;
-    transition:height 200ms ease-in;
-}
-.navx ul > li:hover ul li {
-    height:36px;
-}
-</style>
-<!--
-
-<style type="text/css">
-  ul {list-style: none;padding: 0px;margin: 0px;
-  }
-  ul li {display: block;position: relative;float: left;//border:1px solid #000
-  }
-  li ul {display: none;}
-  ul li a {display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
-           white-space: nowrap;color: #fff;}
-  ul li a:hover {background: #f00;}
-  li:hover ul {display: block; position: absolute;}
-  li:hover li {float: none;}
-  li:hover a {background: #f00;}
-  li:hover li a:hover {background: #000;}
-  #drop-nav li ul li {border-top: 0px;}
-</style>-->
 
     </head>
     <body class="no_js responsive boxed-layout chrome ">
 
         <!-- TOPBAR -->
-        <script src="topbar2.js"></script>
+        <script src="topbar.js"></script>
      
         <!-- END TOPBAR -->
         <!-- START WRAPPER -->
@@ -211,349 +122,16 @@ $(document).bind('mobileinit',function(){
 		    <!-- START NAV -->
 		    <style>
 
-
-.navigation ul ul{
-
-            background-color:#e6056f; /* remove. this is for illustration purposes only */
-            width:340px; /* you need a width to accommodate tertiary menus */
-
-            position:absolute;
-            z-index:100;
-
-         //   height: 0;
-overflow: hidden;
--webkit-transition: height 0.3s ease-in;
-            -moz-transition: height 0.3s ease-in;
-            -o-transition: height 0.3s ease-in;
-            -ms-transition: height 0.3s ease-in;
-            transition: height 0.3s ease-in;
-}
- .navigation ul ul li{
-            background-color:#eaeaea; /* grey */
-            width:170px;
--webkit-transition: background-color 0.3s ease;
-            -moz-transition: background-color 0.3s ease;
-            -o-transition: background-color 0.3s ease;
-            -ms-transition: background-color 0.3s ease;
-            transition: background-color 0.3s ease;
-}
-
-
-@media screen and (max-width: 500px) {
-		      #nav {display: none;}
-		       #nav-drop {display: inline;}
-.lang {display: none;}
-#lang-drop {display: inline;}
-#ads  {display: none;}
-#ads-bot  {display: inline;}
-.socials-default-small {display: none;}
-//body {background: #fff;}
-}
-
-
-@media screen and (min-width: 500px) {
-   #nav {display: inline;}
-#nav-drop {display: none;}
-.lang {display: inline;}
-#lang-drop {display: none;}
-#ads-bot  {display: none;}
-#ads  {display: inline;}
-.socials-default-small {display: inline;}
-		      }
-
-
-
-		      img {
-   opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   }
-
-   a img:hover {
-      opacity: 0.5;
-		      }
-
-		      a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: initial;
-
-	background-color:#44c767;
-	-moz-border-radius:28px;
-	-webkit-border-radius:28px;
-	border-radius:2px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:7px;
-		      padding:10px 10px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-		      }
-
-a.button.myButton:hover {
-	background-color:#5cbf2a;
-}
-a.button:active {
-	position:relative;
-	top:1px;
-}
-
-
-
-
-		      .clearfix:after {
-    display:block;
-    clear:both;
-}
-
-/*----- Menu Outline -----*/
-.menu-wrap {
-    width:100%;
-//    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-//    background:#3e3436;
-}
-
-.menu {
- //   width:1000px;
-    margin:0px auto;
-background-color: #2b2b2b;
-}
-
-.menu li {
-    margin:0px;
-    list-style:none;
-//    font-family:'Ek Mukta';
-background-color: #2b2b2b;
-}
-
-.menu a {
-    transition:all linear 0.15s;
-//   color:#919191;
-background-color: #2b2b2b;
-font-size: 120%;
-}
-
-.menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
-   // color:#be5b70;
-}
-
-.menu .arrow {
-    font-size:11px;
-    line-height:0%;
-}
-
-    /*----- Top Level -----*/
-
-
-.menu > ul > li {
-    float:left;
-    display:inline-block;
-    position:relative;
-    font-size:19px;
-background-color: #2b2b2b;
-    }
-
-
-.menu > ul > li > a {
-//   padding:10px 40px;
-  //  display:inline-block;
-//    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
-}
-
-
-
-/*----- Bottom Level -----*/
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
-background-color: #2b2b2b;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-
-.sub-menu {
-    width:160%;
-//    padding:5px 0px;
-    position:absolute;
-    top:100%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-   // background:#2e2728;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-
-.sub-menu li {
-    display:block;
-    font-size:16px;
-    background-color: #2b2b2b;
-        transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-}
-
-.sub-menu li a {
-    padding:10px 30px;
-    display:block;
-    background-color: #2b2b2b;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-
-.sub-menu li a:hover, .sub-menu .current-item a {
-    //  background:#3e3436;
-    background-color: #2b2b2b;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-
-#nav > ul > li > a, #nav > .menu > ul > li > a {
-    background-color: #2b2b2b;
-    display: block;
-    font-size: 12px;
-    min-height: 42px;
-    padding-top: 43px;
-    position: relative;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-    #nav > ul a, #nav > .menu > ul a {
-    font-size: 12px;
-    height: 50px;
-    line-height: 50px;
-    font-weight: bold;
-    color: #999;
-    padding: 0 18px;
-    text-decoration: none;
-//    border-left: 1px solid #3c3c3c;
- //   border-right: 1px solid #111111;
-        transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-    #nav > ul a, #nav > .menu > ul a {
-    display: block;
-    position: relative;
-    background-color: #2b2b2b;
-    transition: background 0.4s ease;
-    -webkit-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
-    -moz-transition: background 0.4s ease;
-    }
-
-
-
-    .nav2 li ul {
-    position:absolute;
-   // left:0;
- //   top:36px;
-  //  z-index:1;
-}
-    .sub-menu ul li{
-    overflow:hidden;
- //   height:0;
-    -webkit-transition:height 200ms ease-in;
-    -moz-transition:height 200ms ease-in;
-    -o-transition:height 200ms ease-in;
-    transition:height 200ms ease-in;
-}
-.nav2 ul > li:hover ul li {
-    //height:36px;
-    }
-    .wtf-menu li:hover > ul{
-    display:block;
-    -moz-animation: fadeInUp .3s ease-in  ;
-    -webkit-animation: fadeInUp .3s ease-in ;
-    animation:fadeInUp .3s ease-in ;
-}
-
-
-ul, menu, dir {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}
 		    </style>
 
-<script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="menu.js"></script>
 
-</script>
-<div >
-<nav id="nav" class="navx">
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="lessons.html">Lessons <span class="arrow">&#9660;</span></a>
-            <ul>
-                <li><a href="lessons.html">All Lessons</a></li>
-                <li><a href="robots.html">Robot Design</a></li>
-            </ul>
-        </li>
-	 <li>
-            <a href="resources.html">Resources <span class="arrow">&#9660;</span></a>
-            <ul>
-                <li><a href="resources/scorer/score.html">Trash Trek Scorer</a></li>
-                <li><a href="resources/drawplan">Sketch Planner</a></li>
-                <li><a href="resources/wheelconverter">Wheel Converter</a></li>
-		 <li><a href="challenges.html">Challenges</a></li>
-                <li><a href="resources.html">All Resources</a></li>
-                <li><a href="archive/2015/resources/">Resources Archive</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="mission.html">About Us <span class="arrow">&#9660;</span></a>
-            <ul>
-                <li><a href="mission.html">Our Mission</a></li>
-                <li><a href="contributors.html">Contributors</a></li>
-                <li><a href="contributorfaq.html">Contributor FAQ</a></li>
-            </ul>
-        </li>
-	 <li>
-            <a href="guides.html">Guides</a>
 
-        <li>
-            <a href="contact.html">Contact Us</a>
-
-        </li>
-    </ul>
-</nav>
-</div>
-
- <!-- <div style="font-size:130%;" id="drop"></div>-->
-
-<center><select id="nav-drop"><option>Home</option><option>Lessons</option><option>Robot Designs</option></select></center>
                     <!-- END NAV -->
                 </div>
             </div>
+	  
 	      <script>
 lx = 1;
 		function lessons() {
@@ -699,7 +277,7 @@ var trackOutboundLink = function(url) {
 
 <!-- <table>-->
 <!--<script>
-      if (screen.width > 800) {
+    if (screen.width > 800) {
       document.write('<img onclick="toggleimage()"  width="740" id="slider" height="260"  src="images/slider-flash/ev3lessons.jpg">');
       } else {
       document.write('<img onclick="toggleimage()"  width="100" id="slider" height="50"  src="images/slider-flash/ev3lessons.jpg">');
@@ -860,23 +438,32 @@ var trackOutboundLink = function(url) {
         </div>
         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1000px; height: 300px; overflow: hidden;">
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/ev3lessons.jpg" />
+                <img data-u="image" src="images/slider-images/1.jpg" />
               
             </div>
 	    <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/1.png" />
+                <img data-u="image" src="images/slider-images/2.jpg" />
               <!--  <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
             --></div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/2.png" />
+                <img data-u="image" src="images/slider-images/3.jpg" />
                <!-- <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
             --></div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/3.png" />
+                <img data-u="image" src="images/slider-images/4.jpg" />
                <!-- <div data-u="thumb">Do you notice navigator responses when drag?</div>
             --></div>
             <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/slider-flash/4.png" />
+                <img data-u="image" src="images/slider-images/5.jpg" />
+               <!-- <div data-u="thumb">Do you notice arrow responses when click?</div>
+		 -->  </div>
+
+	         <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="images/slider-images/6.jpg" />
+               <!-- <div data-u="thumb">Do you notice navigator responses when drag?</div>
+            --></div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="images/slider-images/7.jpg" />
                <!-- <div data-u="thumb">Do you notice arrow responses when click?</div>
           -->  </div>
         </div>
@@ -910,7 +497,39 @@ border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
 border-top-right-radius: 10px 5px;" src="https://s3.amazonaws.com/startingpoints/images/marketing/StartingPoints_EV3_250x250_1.png" width="250" height="250"></a>
-	 
+
+
+
+
+
+
+<a href="support.html">	 <img style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"
+  src="images/ads/generic1.jpg" width="220" height="250"></a>
+ <a href="support.html">	 <img style="border-style: solid;
+    border-width: 6px;
+border-color: #98bf21;
+border-top-left-radius: 10px 5px;
+border-bottom-right-radius: 10px 5px;
+border-bottom-left-radius: 10px 5px;
+border-top-right-radius: 10px 5px;"
+  src="images/ads/generic2.jpg" width="220" height="250"></a>
+
+
+
+
+
+
+
+
+
+
+ 
 	<a onclick="trackOutboundLink('http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'); return false;" href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
 																																																										<img  src="images/ads/damien.jpg" width="250" height="250" style="border-style: solid;
     border-width: 6px;
@@ -918,25 +537,10 @@ border-color: #98bf21;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"></a> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
-    border-width: 6px;
-border-color: red;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
- <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
-    border-width: 6px;
-border-color: red;
-border-top-left-radius: 10px 5px;
-border-bottom-right-radius: 10px 5px;
-border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"
-  src="images/ads/generic.jpg" width="220" height="250"></a>
+border-top-right-radius: 10px 5px;"></a> 
 </div>
 	   
-    <script>document.write('<script src="translations/'+language+'/index2.js"></scr'+'ipt>');</script>
+    <script>document.write('<script src="translations/'+language+'/index.js"></scr'+'ipt>');</script>
 
 
 
@@ -979,7 +583,7 @@ border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
 border: 6px solid transparent;
-border-top-right-radius: 10px 5px;"> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+border-top-right-radius: 10px 5px;"> <a href="support.html">	 <img style="border-style: solid;
     border-width: 6px;
 border-color: red;
 border-top-left-radius: 10px 5px;
@@ -1013,7 +617,7 @@ border-color: #98bf21;
 border-top-left-radius: 10px 5px;
 border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
-border-top-right-radius: 10px 5px;"></a> <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+border-top-right-radius: 10px 5px;"></a> <a href="support.html">	 <img style="border-style: solid;
     border-width: 6px;
 border-color: red;
 border-top-left-radius: 10px 5px;
@@ -1021,7 +625,7 @@ border-bottom-right-radius: 10px 5px;
 border-bottom-left-radius: 10px 5px;
 border-top-right-radius: 10px 5px;"
   src="images/ads/generic.jpg" width="220" height="250"></a>
- <a href="mailto:team@ev3lessons.com">	 <img style="border-style: solid;
+ <a href="support.html">	 <img style="border-style: solid;
     border-width: 6px;
 border-color: red;
 border-top-left-radius: 10px 5px;

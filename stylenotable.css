@@ -996,3 +996,385 @@ div.ppt { display:none !important }
 .right{float:right;}
 .nomargin{margin:0}
 .nopadding{padding:0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navx ul {
+    *zoom:1;
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#333;
+}
+.navx ul:before,.navx ul:after {
+    content:"";
+    display:table;
+}
+.navx ul:after {
+    clear:both;
+}
+.navx ul > li {
+    float:left;
+    position:relative;
+}
+.navx a {
+    display:block;
+    padding:10px 20px;
+    line-height:1.2em;
+    color:#fff;
+    border-left:1px solid #595959;
+}
+.navx a:hover {
+    text-decoration:none;
+    background:#595959;
+}
+.navx li ul {
+    background:#273754;
+}
+.navx li ul li {
+    width:200px;
+}
+.navx li ul a {
+    border:none;
+}
+.navx li ul a:hover {
+    background:rgba(0,0,0,0.2);
+}
+.navx li ul {
+    position:absolute;
+    left:0;
+    top:36px;
+    z-index:1;
+}
+.navx li ul li {
+    overflow:hidden;
+    height:0;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+}
+.navx ul > li:hover ul li {
+    height:36px;
+}
+
+
+
+
+
+
+
+.navigation ul ul{
+
+            background-color:#e6056f; /* remove. this is for illustration purposes only */
+            width:340px; /* you need a width to accommodate tertiary menus */
+
+            position:absolute;
+            z-index:100;
+
+         //   height: 0;
+overflow: hidden;
+-webkit-transition: height 0.3s ease-in;
+            -moz-transition: height 0.3s ease-in;
+            -o-transition: height 0.3s ease-in;
+            -ms-transition: height 0.3s ease-in;
+            transition: height 0.3s ease-in;
+}
+ .navigation ul ul li{
+            background-color:#eaeaea; /* grey */
+            width:170px;
+-webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            -ms-transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease;
+}
+
+
+@media screen and (max-width: 500px) {
+		      #nav {display: none;}
+		       #nav-drop {display: inline;}
+.lang {display: none;}
+#lang-drop {display: inline;}
+#ads  {display: none;}
+#ads-bot  {display: inline;}
+.socials-default-small {display: none;}
+//body {background: #fff;}
+}
+
+
+@media screen and (min-width: 500px) {
+   #nav {display: inline;}
+#nav-drop {display: none;}
+.lang {display: inline;}
+//#lang-drop {display: none;}
+#ads-bot  {display: none;}
+#ads  {display: inline;}
+.socials-default-small {display: inline;}
+		      }
+
+
+
+		      img {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   a img:hover {
+      opacity: 0.5;
+		      }
+
+		      a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:2px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:7px;
+		      padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+		      }
+
+a.button.myButton:hover {
+	background-color:#5cbf2a;
+}
+a.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+		      .clearfix:after {
+    display:block;
+    clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+//    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+//    background:#3e3436;
+}
+
+.menu {
+ //   width:1000px;
+    margin:0px auto;
+background-color: #2b2b2b;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+//    font-family:'Ek Mukta';
+background-color: #2b2b2b;
+}
+
+.menu a {
+    transition:all linear 0.15s;
+//   color:#919191;
+background-color: #2b2b2b;
+font-size: 120%;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+   // color:#be5b70;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+    /*----- Top Level -----*/
+
+
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+background-color: #2b2b2b;
+    }
+
+
+.menu > ul > li > a {
+//   padding:10px 40px;
+  //  display:inline-block;
+//    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+
+
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+.sub-menu {
+    width:160%;
+//    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+   // background:#2e2728;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+    background-color: #2b2b2b;
+        transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    //  background:#3e3436;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+#nav > ul > li > a, #nav > .menu > ul > li > a {
+    background-color: #2b2b2b;
+    display: block;
+    font-size: 12px;
+    min-height: 42px;
+    padding-top: 43px;
+    position: relative;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+    #nav > ul a, #nav > .menu > ul a {
+    font-size: 12px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    color: #999;
+    padding: 0 18px;
+    text-decoration: none;
+//    border-left: 1px solid #3c3c3c;
+ //   border-right: 1px solid #111111;
+        transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+    #nav > ul a, #nav > .menu > ul a {
+    display: block;
+    position: relative;
+    background-color: #2b2b2b;
+    transition: background 0.4s ease;
+    -webkit-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    }
+
+
+
+    .nav2 li ul {
+    position:absolute;
+   // left:0;
+ //   top:36px;
+  //  z-index:1;
+}
+    .sub-menu ul li{
+    overflow:hidden;
+ //   height:0;
+    -webkit-transition:height 200ms ease-in;
+    -moz-transition:height 200ms ease-in;
+    -o-transition:height 200ms ease-in;
+    transition:height 200ms ease-in;
+}
+.nav2 ul > li:hover ul li {
+    //height:36px;
+    }
+    .wtf-menu li:hover > ul{
+    display:block;
+    -moz-animation: fadeInUp .3s ease-in  ;
+    -webkit-animation: fadeInUp .3s ease-in ;
+    animation:fadeInUp .3s ease-in ;
+}
+
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}

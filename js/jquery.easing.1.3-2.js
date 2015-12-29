@@ -1,4 +1,4 @@
-
+$(document).ready(function() {
     /*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
@@ -204,4 +204,4 @@ jQuery.extend( jQuery.easing,
  * OF THE POSSIBILITY OF SUCH DAMAGE. 
  *
  */
-    
+    });
