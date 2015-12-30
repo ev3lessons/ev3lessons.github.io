@@ -12,47 +12,64 @@
 <html dir="ltr" lang="en-US">
     <!--<![endif]-->
     <head>
-	
+
         <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest. This site is operated by FLL Team Droids Robotics.">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
-        
+
         <title>EV3Lessons.com | by Droids Robotics</title>
-        
+
         <!-- [favicon] begin -->
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-        <!-- [favicon] end --> 
-        
+        <!-- [favicon] end -->
+
         <!-- CSS Main -->
         <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
         <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
         <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
-        
-        <!-- CSS Plugin -->
-        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="css/tipsy.css" type="text/css" media="all" />
-        <link rel='stylesheet' href='css/buttons.min.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='css/labels.min.css' type='text/css' media='all' />
-	<link rel='stylesheet' href='css/wells.min.css' type='text/css' media='all' />
-        
-        <!-- CSS Slider -->
-        <link rel="stylesheet" href="css/slider-thumbnails.css" type="text/css" media="all" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
         <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+
+        <!-- CSS Plugin -->
+        <!-- <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" /> -->
+        <!-- <link rel="stylesheet" href="css/tipsy.css" type="text/css" media="all" /> -->
+        <!-- <link rel='stylesheet' href='css/buttons.min.css' type='text/css' media='all' /> -->
+	<!-- <link rel='stylesheet' href='css/labels.min.css' type='text/css' media='all' /> -->
+	<!-- <link rel='stylesheet' href='css/wells.min.css' type='text/css' media='all' />         -->
+        <!-- CSS Slider -->
+        <!-- <link rel="stylesheet" href="css/slider-thumbnails.css" type="text/css" media="all" /> -->
+
 
 <!-- HEADER CUT HERE ------------------------------------------------->
 
         <!-- CSS Social -->
-        <link rel='stylesheet' id='ahortcodes-css'  href='css/social.css' type='text/css' media='all' />
+        <!-- <link rel='stylesheet' id='ahortcodes-css'  href='css/social.css' type='text/css' media='all' /> -->
 
         <!-- JavaScripts -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             var yiw_prettyphoto_style = 'pp_default';
+        </script> -->
+        <!--
+        <script type="text/javascript" src="js/jquery.js"></script>-->
+        <!-- <script src="resources/scorer/jquery-1.11.3.min.js">
         </script>
-        <script type="text/javascript" src="js/jquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+        </script>
+
         <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
@@ -67,11 +84,11 @@
         <script type='text/javascript' src='js/jquery.cookie.js'></script>
         <script type='text/javascript' src='js/buttons.min.js'></script>
         <script type='text/javascript' src='js/layerslider.kreaturamedia.jquery-min.js'></script>
-        <script type='text/javascript' src='js/jquery.quicksand.js'></script>
-        
+        <script type='text/javascript' src='js/jquery.quicksand.js'></script> -->
+
     </head>
     <body class="no_js responsive boxed-layout chrome ">
-        
+
         <!-- TOPBAR -->
         <script src="topbar.js"></script>
         <!-- END TOPBAR -->
@@ -80,16 +97,16 @@
             <!-- START HEADER -->
             <div id="header" class="group">
                 <div class="group inner">
-                    
+
                     <!-- START LOGO -->
                     <div id="logo" class="group">
                         <h1>
-                            <a class="logo-text" href="index.html" title="EV3Lessons.com">EV3<span>Lessons.com</span></a>                        
+                            <a class="logo-text" href="index.html" title="EV3Lessons.com">EV3<span>Lessons.com</span></a>
                         </h1>
                         <p>by <a href="http://www.droidsrobotics.org">Droids Robotics</a></p>
                     </div>
-                    <!-- END LOGO -->  
-                    
+                    <!-- END LOGO -->
+
                     <!-- START NAV -->
 		    <script src="menu.js"></script>
                     <!-- END NAV -->
@@ -103,7 +120,7 @@
 
 
 
-	    
+
 <style>
 #viewport {
     background: #bbb;
@@ -118,7 +135,7 @@
 }
 #viewport span {
     margin-left: 68px;  /* = image width + 8 */
-    display: block;    
+    display: block;
 }
   table, td, th {vertical-align:top;}
   table td, table th { padding:10px 10px; text-align:center; color:#757475; }
@@ -130,20 +147,20 @@
 <div align="center">
   <script>
 <!--
- 
+
  var viewportwidth;
  var viewportheight;
-  
+
  // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-  
+
  if (typeof window.innerWidth != 'undefined')
  {
       viewportwidth = window.innerWidth,
       viewportheight = window.innerHeight
  }
-  
+
 // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
- 
+
  else if (typeof document.documentElement != 'undefined'
      && typeof document.documentElement.clientWidth !=
      'undefined' && document.documentElement.clientWidth != 0)
@@ -151,9 +168,9 @@
        viewportwidth = document.documentElement.clientWidth,
        viewportheight = document.documentElement.clientHeight
  }
-  
+
  // older versions of IE
-  
+
  else
  {
        viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
@@ -184,9 +201,9 @@ var trackOutboundLink = function(url) {
 //      document.write('<p>Your screen width is '+screen.width+'</p>');
   } else {
   }
-  
+
 </script>
- 
+
     <tr>
       <td>
 	  <table style="border: 1px solid black; border-collapse: collapse;" width="20%">
@@ -205,7 +222,7 @@ var trackOutboundLink = function(url) {
   } else {
  document.write( '<a href="resources/wheelconverter#en-us"> Wheel Converter</h2></a>');
 	      }
-  
+
 </script>
 	      Use this tool to convert cm/in to
 	      degrees/rotations.
@@ -252,7 +269,7 @@ var trackOutboundLink = function(url) {
 	          this Interactive Sketch Planner to draw out each
 	          run. This tool is available as an <a href="https://play.google.com/store/apps/details?id=com.ev3lessons.drawplanner">Android</a> and
 	          <a href="<a href="https://itunes.apple.com/us/app/trash-trek-sketch-planner/id1041854913?ls=1&mt=8">iOS App</a>.
-	      
+
 	    </td>
 	  </tr>
 	</table>
@@ -274,7 +291,7 @@ var trackOutboundLink = function(url) {
 	      <h2>Hi-res top view of the Trash Trek mat.</h2>
 
 	      <a href="images/resources/TrashTrekMat.jpg">Click here for JPG file.</a>
-	      
+
 	    </td>
 	  </tr>
 	</table>
@@ -287,7 +304,7 @@ var trackOutboundLink = function(url) {
 	    </td>
 	  </tr>
 	  <tr>
-	    <td> 
+	    <td>
 	      <h2>Quick Guides</h2>
 	    <a href="guides.html">All our quick guides have been
 	  moved. Click here to view our quick guides.</a><br>
@@ -324,11 +341,11 @@ var trackOutboundLink = function(url) {
 	      <a href="resources/OneMinuteLineFollower.pdf">One Minute
 	  Line Follower</a><br>
 	      <a href="resources/MissionPlanning.pdf">Mission Planning
-	  Worksheet</a><br>   
+	  Worksheet</a><br>
 	    <a href="resources/RunNotecards.pdf">Learning FLL Runs</a><br>
 	        <a href="resources/PivotTurns.pdf">Truth About Turns:
 	  Pivot Turns</a><br>
-	        Updating Software & Firmware: <a href="resources/UpdatingHome.pdf">Home</a>, 
+	        Updating Software & Firmware: <a href="resources/UpdatingHome.pdf">Home</a>,
 	      <a href="resources/UpdatingEdu.pdf">Edu</a><br>
 	     <a href="resources/RolesResponsibilities.docx">Roles and
 	  Responsibilities</a><br>
@@ -348,7 +365,7 @@ var trackOutboundLink = function(url) {
 	    </td>
 	  </tr>
 	  <tr>
-	    <td> 
+	    <td>
 	      <h2>Core Value Activities</h2>
 	      <a href="resources/Consensus.pdf">Consensus Loop</a>,
 	     <a href="resources/Ball.pdf">Have a Ball</a>,
@@ -370,9 +387,9 @@ var trackOutboundLink = function(url) {
 	      <a href="resources/HipSquare.pdf">Hip to be Square</a>,
 	      <a href="resources/SteppingStones.pdf">Stepping
       Stones</a>,
-	      <a href="resources/HeliumStick.pdf">Helium Stick</a>, 
+	      <a href="resources/HeliumStick.pdf">Helium Stick</a>,
 	      <a href="resources/KnowCV.pdf">Know The Core
-      Values</a>, 
+      Values</a>,
 	      <a href="resources/PumpkinPuzzle.pdf">Pumpkin Puzzle</a>,
 	       <a href="resources/LegoBuilding.pdf">LEGO Building</a>,
 	      <a href="resources/ShrinkingPlat.pdf">Shrinking
@@ -410,7 +427,7 @@ var trackOutboundLink = function(url) {
 	      href="images/resources/puzzles/2013.jpg">puzzle (?)</a><br>
 	      2012 - <a href="images/resources/puzzles/2012mat.jpg">mat</a>, <a href="images/resources/puzzles/2012.jpg">puzzle</a><br>
 	      2011 - <a href="images/resources/puzzles/2011mat.jpg">mat</a>, <a href="images/resources/puzzles/2011.jpg">puzzle</a><br>
-	      
+
 	    </td>
 	  </tr>
 	</table>
@@ -431,12 +448,12 @@ var trackOutboundLink = function(url) {
 	      <h2><a href="resources/AboutFLL.pptx">FLL Overview
 	      Presentation</h2></a> This is a brief overview of FLL
 	      that might be useful to explain FLL to someone who is
-	      not familiar with it.  
+	      not familiar with it.
 	    </td>
 	  </tr>
 	</table>
       </td>
-      
+
       <td>
         <table style="border: 1px solid black; border-collapse: collapse;" width="20%">
 	  <tr>
@@ -445,7 +462,7 @@ var trackOutboundLink = function(url) {
 	    </td>
 	  </tr>
 	  <tr>
-	    <td> 
+	    <td>
 	      <h2>Portable FLL Table Designs</h2>
 	      <a href="resources/LandroidsTable.pdf">Landroids
 	      Table</a>. This table requires a lot of woodworking
@@ -456,7 +473,7 @@ var trackOutboundLink = function(url) {
 	      Table </a>.<br>
 
 	      <a href="resources/ZombotsTable.pdf">Zombots Table </a>
-	
+
 	    </td>
 	  </tr>
 	</table>
@@ -469,10 +486,10 @@ var trackOutboundLink = function(url) {
 	    </td>
 	  </tr>
 	  <tr>
-	    <td> 
+	    <td>
 	      <h2>LEGO Ruler</h2>
 	      <a href="resources/Ruler.pdf">Lego Ruler by Tom Alphin </a>. Print this page at 100% (no scaling).  Laminate it to make it sturdy and reusable.
-	
+
 	    </td>
 	  </tr>
 	</table>
@@ -480,7 +497,7 @@ var trackOutboundLink = function(url) {
       </td>
     </tr>
   </table>
-  
+
 </div>
 </div>
 </div>
@@ -491,22 +508,20 @@ var trackOutboundLink = function(url) {
 </div>
 </div>
 <!-- FOOTER CUT HERE ------------------------------------------------->
-			
+
 
         <!-- START FOOTER -->
         <div id="copyright" class="group">
             <div class="inner group">
                 <div class="left">
                     <p>
-                    	Copyright EV3Lessons.com 2015 - 
+                    	Copyright EV3Lessons.com 2015 -
                     	Powered by <strong>Droids Robotics</strong>
                     </p>
             </div>
         </div>
-        
-        <script type="text/javascript" src="js/jquery.custom.js"></script>
-        <script type="text/javascript" src="js/contact.js"></script>
-        
+
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -519,7 +534,7 @@ var trackOutboundLink = function(url) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>		
+</script>
 
 <!-- FOOTER CUT HERE ------------------------------------------------->
 

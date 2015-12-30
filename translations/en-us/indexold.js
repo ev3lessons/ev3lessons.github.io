@@ -1,11 +1,11 @@
 document.write('\
-			<div   class="inner home-testimonials home-section group">\
-			   <div class="title">\
+			<div  class="inner home-testimonials home-section group">\
+			    <div class="title">\
 			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> Users love <br><span>EV3Lessons.com</span></h2>\
 			        <p>feedback</p>\
 			    </div>  \
-			   <ul  style="  float: left;">\
-<li >\
+			    <ul class="list-testimonials" style="float: left;">\
+			    <li>\
 			            <p>"You made the world seem a lot smaller by connecting so many FLL teams all over the world with EV3Lessons."</p>\
 			        </li>\
 				<li>\
@@ -51,7 +51,7 @@ document.write('\
 			                timeout: 4000            });\
 			        });\
 			    </script>	      \
-</div> \
+			</div> \
 			<div class="clear"></div>\
 		</div>  \
 		<!-- END WRAPPER -->\
@@ -59,7 +59,7 @@ document.write('\
 \
 \
 	    \
-           <!-- <div style="text-align: left;" class="inner home-portfolio home-services home-section group">\
+            <div class="inner home-portfolio home-services home-section group">\
 	      <h2><span>EV3Lessons.com</span> announcements</h2>\
 	    <div class="hentry-post group first">\
 	      <h3>In the news</h3>\
@@ -99,13 +99,13 @@ document.write('\
 			    \
 			  </ul>\
 			  \
-		</div>-->  \
+		</div>  \
 \
 \
 <div id="primary" align="middle" class=" inner home-portfolio home-section group layout-sidebar-right home-section">\
 	    <div class="inner group">\
 	    <div class="group">\
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.\
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />LEGO® & MINDSTORMS® are trademarks of The LEGO Group of companies which does not sponsor, authorize or endorse this site.\
 	    </div>\
 	    </div>\
 	    </div>\

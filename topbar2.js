@@ -79,7 +79,14 @@ document.write('\
           </a>\
             </div>\
 <div  id="lang-drop" class="lang socials-default-small  default">\
- <select onchange="window.location.hash = this.value"><option value="#en-us">English (US)</option><option value="#nl">Nederlands</option><option>Robot Designs</option></select></div>\
+ <select onchange="window.location.hash = this.value; setTimeout(function(){location.reload(true);},100);">
+<option value="#en-us">English (US)</option>
+<option value="#nl">Nederlands</option>
+<option value="#en-us">English (US)</option>
+<option value="#nl">Nederlands</option><option value="#en-us">English (US)</option>
+<option value="#nl">Nederlands</option><option value="#en-us">English (US)</option>
+
+</select></div>\
 </div></div>\
 \
 	    <div class="widget-last widget widget_text right">\
