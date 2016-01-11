@@ -194,7 +194,7 @@ var urldes = [
 "Color Sensor Calibration",
 "Variables",
 "Parallel Beams",
-"none","none","none","none","none","none","none",
+"Brick Buttons as Sensors","Data Wires","Logic Operations and Decision Making","Ultrasonic Wall Follower","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
@@ -211,7 +211,7 @@ var urldes = [
 "Gyro Sensor:Move Straight and Wall Follow",
 //110
 "Arrays",
-"Proportional Two Color Line Follower","Data Logging for Science Experiments","Data Logging with Programming Blocks","none","none","none","none","none","none",
+"Proportional Two Color Line Follower","Data Logging for Science Experiments","Data Logging with Programming Blocks","Proportional Ultrasonic Wall Follower","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
@@ -254,7 +254,8 @@ var pptx = [
 "http://www.ev3lessons.com/translations/en-us/intermediate/Calibrate.pptx",
 "http://www.ev3lessons.com/translations/en-us/intermediate/Variables.pptx",
 "http://www.ev3lessons.com/translations/en-us/intermediate/ParallelBeams.pptx",
-"none","none","none","none","none","none","none",
+"http://ev3lessons.com/translations/en-us/intermediate/BrickButtons.pptx","http://ev3lessons.com/translations/en-us/intermediate/DataWires.pptx",
+"http://ev3lessons.com/translations/en-us/intermediate/Logic.pptx","http://ev3lessons.com/translations/en-us/intermediate/UltrasonicWallFollow.pptx","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
@@ -271,8 +272,9 @@ var pptx = [
 "http://www.ev3lessons.com/translations/en-us/advanced/GyroWallFollow.pptx",
 //110
 "http://www.ev3lessons.com/translations/en-us/advanced/Arrays.pptx",
-"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pptx","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pptx","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pptx","none","none","none","none","none","none",
-"none","none","none","none","none","none","none","none","none","none",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pptx","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pptx",
+"http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pptx",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalUSWallFollow.pptx","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none"];
@@ -313,7 +315,8 @@ var pdf = [
 "http://www.ev3lessons.com/translations/en-us/intermediate/Calibrate.pdf",
 "http://www.ev3lessons.com/translations/en-us/intermediate/Variables.pdf",
 "http://www.ev3lessons.com/translations/en-us/intermediate/ParallelBeams.pdf",
-"none","none","none","none","none","none","none",
+"http://ev3lessons.com/translations/en-us/intermediate/BrickButtons.pdf","http://ev3lessons.com/translations/en-us/intermediate/DataWires.pdf",
+"http://ev3lessons.com/translations/en-us/intermediate/Logic.pdf","http://ev3lessons.com/translations/en-us/intermediate/UltrasonicWallFollow.pdf","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
@@ -330,8 +333,9 @@ var pdf = [
 "http://www.ev3lessons.com/translations/en-us/advanced/GyroWallFollow.pdf",
 //110
 "http://www.ev3lessons.com/translations/en-us/advanced/Arrays.pdf",
-"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pdf","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pdf","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pdf","none","none","none","none","none","none",
-"none","none","none","none","none","none","none","none","none","none",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pdf","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pdf",
+"http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pdf",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalUSWallFollow.pdf","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none","none","none","none","none","none","none","none","none",
 "none","none"];
@@ -473,9 +477,9 @@ if (pdf[qs["id"]] != "none") {
 if (pptx[qs["id"]] != "none") {
 			document.write('<button onclick="myFunctiona()">PPTX</button><br>');
 			}
-if (ev3[qs["id"]] != "none") {
+/*if (ev3[qs["id"]] != "none") {
 document.write('<button onclick="myFunctionb()">EV3 Code</button></br>');
-}
+}*/
 if (docx[qs["id"]] != "none") {
 document.write('<button onclick="myFunctionc()">Worksheet</button>');
 			}
