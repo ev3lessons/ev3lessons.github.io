@@ -21,7 +21,7 @@ document.write('\
 		                    </div>\
 		                    <div class="post_content group  no-skills ">\
 \
-				      <p> This site was founded by Sanjay and Arvind Seshan from First Lego League (FLL) Team Not the Droids You Are Looking For in Pittsburgh, Pennsylvania, USA in 2014. You can read more about them on the Contributors Page. The tutorials and resources on this site are intended for students in classrooms learning robotics, robotics clubs, scouts, and robotics teams. The site was originally created as part of the "World Class" FLL season to help improve the way we learn to program the EV3, but it is actively maintained and continuously growing since then.</p>\
+				      <p> This site was founded by Sanjay and Arvind Seshan from First Lego League (FLL) Team Not the Droids You Are Looking For in Pittsburgh, Pennsylvania, USA in 2014. You can read more about them on the Contributors Page. The tutorials and resources on this site are intended for students in classrooms learning robotics, robotics clubs, scouts, and robotics teams.</p>\
 \
 				      <p>Our primary mission is to provide all robotics students with a good starting point for coding well. If you start right, you can learn more and do more. We think learning-by-doing is important and so we have included challenges at the end of each lesson. We also provide a complete set of lessons, from Beginner through Advanced, in a format that is concise and easy-to-use.</p>\
 \
