@@ -5,14 +5,26 @@ document.write('\
 			        <p>feedback</p>\
 			    </div>  \
 			   <ul  style="  float: left;">\
+<li>\
+			         <p>"Hands down the best EV3 programming site around."</p>\
+			        </li>\
 <li >\
 			            <p>"You made the world seem a lot smaller by connecting so many FLL teams all over the world with EV3Lessons."</p>\
 			        </li>\
 				<li>\
 			         <p>"The care that you have given about what to do and answering our questions is impressive."</p>\
 			        </li>\
-				<li>\
-			         <p>"What a great website! I will spread the word..." <br>- <strong>Operational Partner</strong></p>\
+<li>\
+			         <p>"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>\
+			        </li>\
+\
+<li>\
+			         <p>"If my team had access to your site 5 years ago, it would have greatly improved our learning curve."</p>\
+			        </li>\
+			            <p>"You very intelligently walk folks through the steps, so that they can learn through the examples."</p>\
+			        </li>\
+<li>\
+			         <p>"Thank you guys for making these incredibly useful resources online. My only regret is not discovering you guys until now.  </p>\
 			        </li>\
 				<li>\
 			         <p>"The tutorials teach concepts and techniques needed to use sensors successfully, and in return, teams learn the skillls to develop more complex code."</p>\
