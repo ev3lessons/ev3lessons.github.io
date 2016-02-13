@@ -215,23 +215,26 @@
 function show(data) {
        var valuein = data.toLowerCase().split(' ').join('_');
 
-//  keywords = ["infrared","toggle","beginner","intermediate","advanced","beyond","workshop","sensors","colour","color","ultrasonic","touch","gyro","proportional","introev3","linefollower","brick","software","data","wires","tablet"]
+//  keywords = ["infrared","toggle","beginner","intermediate","advanced","beyond","workshop","sensors","colour colour_sensor","color","ultrasonic","touch","gyro","proportional","introev3","linefollower","brick","software","data","wires","tablet"]
 
 
   aa = 0
   usemax = 0
   while (aa != keywords.length) {
-      array[aa] = keywords[aa].indexOf(valuein)
+//      array[aa] = keywords[aa].indexOf(valuein)
       array[aa] = similar(keywords[aa],valuein)
 
   aa++
 }
+//alert(array)
 largest = 0
 bb = 0
 //alert(array)
 
   max = array.indexOf(Math.max.apply(window,array))
   value = keywords[max]
+
+//alert(max)
 
 
 //alert(max)
@@ -549,7 +552,7 @@ bb = 0
 
 
                    <div class="toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on">
-                    <br>  <p class="tab-index tab-closed"><a id="8" href="#" title="Close">Touch Sensor</a>
+                    <br>  <p class="tab-index tab-closed"><a id="8" href="#" title="Close">Introduction to Touch Sensor</a>
                       </p>
                       <div class="content-tab closed indent">
                         <ul>
@@ -566,7 +569,7 @@ bb = 0
                     </div>
 
 
-                   <div class="toggle beginner color colour sensors programming_app colour_sensor color_sensor ipad tablet app reflected_light light_sensor color_mode colour_mode android">
+                   <div class="toggle beginner color colour colour_sensor sensors programming_app colour_sensor color_sensor ipad tablet app reflected_light light_sensor color_mode colour_mode android">
                     <br>  <p class="tab-index tab-closed"><a id="9"
                     href="#" title="Close">Introduction to Color Sensor</a>
                       </p>
@@ -636,7 +639,7 @@ bb = 0
                     </div>
 
 
-                   <div class="toggle beginner beginner color colour follower basic line_tracker sensors ipad tablet programming_app app android line_follower line colour_sensor basic_line_follower">
+                   <div class="toggle beginner beginner color colour colour_sensor follower basic line_tracker sensors ipad tablet programming_app app android line_follower line colour_sensor basic_line_follower">
                     <br>  <p class="tab-index tab-closed"><a id="13" href="#" title="Close">Basic Line Follower</a>
                       </p>
                       <div class="content-tab closed indent">
@@ -794,7 +797,7 @@ bb = 0
                   </div>
 
 
-                 <div class="line_follower line  toggle line intermediate color colour sensors follower linefollower tracker line_traker my_blocks sensor_block">
+                 <div class="line_follower line  toggle line intermediate color colour colour_sensor sensors follower linefollower tracker line_traker my_blocks sensor_block">
                   <br>  <p class="tab-index tab-closed"><a id="53" href="#" title="Close">Color Line Follower with My Blocks</a>
                     </p>
                     <div class="content-tab closed indent">
@@ -877,7 +880,7 @@ bb = 0
 
 
 
-                 <div class="toggle intermediate color colour sensors calibration calibrate colour_calibration">
+                 <div class="toggle intermediate color colour colour_sensor sensors calibration calibrate colour_calibration">
                   <br>  <p class="tab-index tab-closed"><a id="59" href="#" title="Close">Color Sensor Calibration</a>
                     </p>
                     <div class="content-tab closed indent">
@@ -986,7 +989,7 @@ bb = 0
 
 
 
-                 <div class="toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour linefollower line_follower line ">
+                 <div class="toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line ">
                   <br>  <p class="tab-index tab-closed"><a id"102" href="#" title="Close">Proportional Line Follower</a>
                     </p>
                     <div class="content-tab closed indent">
@@ -999,7 +1002,7 @@ bb = 0
                     </div>
                   </div>
 
-                 <div class="toggle advanced proportional moving color colour two_colour_line_follower line_straddle colour_sensor">
+                 <div class="toggle advanced proportional moving color colour colour_sensor two_colour_line_follower line_straddle colour_sensor">
                   <br>  <p class="tab-index tab-closed"><a id="111" href="#" title="Close">Proportional Two Color Line Follower</a>
                     </p>
                     <div class="content-tab closed indent">
@@ -1073,8 +1076,7 @@ bb = 0
 
                <div class="toggle gyro moving advanced gyro_move_straight gyro_sensor gyro_wall_follow proportional_control proportional heading angle">
             <br>      <p class="tab-index
-                  tab-closed"><a id="109" href="#" title="Close">Gyro Sensor:
-                    Move Straight and Wall Follow</a>
+                  tab-closed"><a id="109" href="#" title="Close">Gyro Sensor: Move Straight and Wall Follow</a>
                   </p>
                   <div class="content-tab closed indent">
                     <ul>
@@ -1087,7 +1089,7 @@ bb = 0
                 </div>
 
 
-               <div class="toggle sync_beams parallel_beams synchronization color colour advanced align squaring_on_lines my_blocks square_up straighten_out">
+               <div class="toggle sync_beams parallel_beams synchronization color colour colour_sensor advanced align squaring_on_lines my_blocks square_up straighten_out">
                 <br>  <p class="tab-index tab-closed"><a id="106" href="#" title="Close">Squaring on Lines</a>
                   </p>
                   <div class="content-tab closed indent">
@@ -1281,7 +1283,7 @@ bb = 0
 
 
 
-               <div class="toggle beyond nxt color colour light">
+               <div class="toggle beyond nxt color colour colour_sensor light">
                 <br>  <p class="tab-index tab-closed"><a href="#" id="153" title="Close">NXT Light Sensors in EV3</a>
                   </p>
                   <div class="content-tab closed indent">
@@ -1379,7 +1381,7 @@ bb = 0
         <a href=''>
           <img style="border-style: solid;
           border-width: 6px;
-          border-color colour: #98bf21;
+          border-color colour colour_sensor: #98bf21;
           border-top-left-radius: 10px 5px;
           border-bottom-right-radius: 10px 5px;
           border-bottom-left-radius: 10px 5px;
