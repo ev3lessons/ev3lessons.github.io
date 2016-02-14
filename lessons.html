@@ -81,6 +81,7 @@
     <!-- HEADER CUT HERE ------------------------------------------------->
 
     <script>
+    var alltext = "none"
     var slidestext = "Slides:"
     var introText = ["none","none","none","none","none"];
     var pgintro = 'none';
@@ -115,13 +116,13 @@
     }
 
     if (language == "pt-br") {
-      var lev = ["Básicas","Intermediário","Avançada","none","none"];
-      introText[0]="Essas lições são para novos estudantes do EV3. ";
-      introText[1]="Essas lições foram feitas para serem completadas em ordem.";
-      introText[2]="Essas lições são para estudantes que entendem movimentos básicos e uso de sensores.";
-      introText[3]="Essas lições são para estudantes já familiarizados com MyBlocks e seguidores de linha.";
-      introText[4]="Essas lições tem sido contribuídas por times e usuários do EV3. Por favor veja Contributor FAQ para enviar uma lição. ";
-      introText[5] = "Essas são lições combinadas ideais para utilizar em campo.";
+      var lev = ["Básicas","Intermediário","Avançada","Além","Oficinas"];
+      alltext = "Todos"
+      introText[0]="Essas lições são para novos estudantes do EV3. Essas lições foram feitas para serem completadas em ordem.";
+      introText[1]="Essas lições são para estudantes que entendem movimentos básicos e uso de sensores.";
+      introText[2]="Essas lições são para estudantes já familiarizados com MyBlocks e seguidores de linha.";
+      introText[3]="Essas lições foram feitas para usuários do EV3 que já completaram todas as lições anteriores e estão interessados  em desenvolver e aprender novas técnicas.  ";
+      introText[4] = "Essas são lições combinadas ideais para utilizar em campo.";
     }
 
 
@@ -1495,21 +1496,6 @@ bb = 0
 
   <script>
 
-count = 0
-counta = 0
-keywords=[]
-while (count != 250){
-tabs = $( "#"+count+"" ).parent().parent().prop('className')
-if (tabs != undefined) {
-  keywords = keywords.concat(tabs.split(' '))
-  tabname = $("#"+count+"").text().toLowerCase().split(' ').join('_')
-  keywords = keywords.concat(tabname);
-  $("#"+count+"").parent().parent().addClass(tabname);
-  counta++
-}
-count++
-}
-
 
 
 
@@ -1544,7 +1530,7 @@ count++
   var lessonApp = angular.module("lessonApp", []);\
   lessonApp.controller("lessonCtrl", function($scope) {');
   document.write("$scope.Slides = '"+slidestext+"' ;");
-  while (i < 14) {
+/*  while (i < 14) {
     if (urldes[i] != "none") {
       document.getElementById(String(i)).innerHTML = urldes[i];
       document.write('$scope.'+inWords(i)+' = "'+language+'";');
@@ -1597,6 +1583,34 @@ count++
     i = i + 1;
   }
 
+
+
+*/
+
+  i = 0
+  while (i != 250){
+  tabs = $( "#"+i+"" ).parent().parent().prop('className')
+  if (tabs != undefined) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+  }
+  i++
+  }
+
+
+
+
+
+
+
+
   document.write('});\
   angular.bootstrap(lessonDiv, ["lessonApp"]);\
   </scr'+'ipt>');
@@ -1606,6 +1620,7 @@ count++
   if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
   if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
   if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
+    if (alltext != 'none') document.getElementById('all').innerHTML = alltext;
   if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
   if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
   if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
@@ -1668,6 +1683,27 @@ count++
 if (decodeURI(window.location.search.substring(1)) != "") {
 show(decodeURI(window.location.search.substring(1)))
 }
+
+
+
+
+count = 0
+counta = 0
+keywords=[]
+while (count != 250){
+tabs = $( "#"+count+"" ).parent().parent().prop('className')
+if (tabs != undefined) {
+  keywords = keywords.concat(tabs.split(' '))
+  tabname = $("#"+count+"").text().toLowerCase().split(' ').join('_')
+  keywords = keywords.concat(tabname);
+  $("#"+count+"").parent().parent().addClass(tabname);
+  counta++
+}
+count++
+}
+
+
+
 
   </script>
   <!-- FOOTER CUT HERE ------------------------------------------------->

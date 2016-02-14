@@ -196,7 +196,7 @@ document.write('\
 <nav id="nav" class="navx">\
     <ul>\
         <li>\
-            <a  href="index.html">{{Mone}}</a>\
+            <a  href="index.html#'+language+'">{{Mone}}</a>\
         </li>\
         <li>\
             <a  href="lessons.html#'+language+'">{{Monezero}} <span class="arrow">&#9660;</span></a>\
@@ -237,7 +237,10 @@ document.write('\
     </ul>\
 </nav>\
 \
-<center><select id="nav-drop" onchange="window.location.href=this.value">        <option\
+<center><select id="nav-drop" onchange="window.location.href=this.value">      <option\
+              value=""></a>\
+        </option>\
+           <option\
               value="index.html">{{Mone}}</a>\
         </option>\
         <option\
