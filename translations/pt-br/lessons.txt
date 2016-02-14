@@ -15,7 +15,7 @@ Seguidor de Linha Básico
 none
 Desafios Finais
 Levantar e Mover um Objeto
-Usando Dados Do Sensor E Port View.
+Usando Dados Do Sensor E Port View
 Sons E Imagens Customizadas
 none
 none
