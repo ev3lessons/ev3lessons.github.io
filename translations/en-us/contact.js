@@ -41,13 +41,9 @@ document.write('\
 			        <!-- START SIDEBAR -->\
 			        <div id="sidebar" class="group one-fourth">\
 			            <div class="widget-first widget text-image">\
-			                <h3>Customer support</h3>\
+			                <h3>Leave a Comment</h3>\
 			                <div class="text-image" style="text-align:left">\
-			                <p>We are available via email\
-			        or videoconferencing if you need\
-			        help. Send us a message if you want to\
-			        be added to our mailing list to\
-			        receive updates.</p>\
+			                <p>Let us know how you used our materials, suggestions and corrections.</p>\
 			            </div>\
 			            \
 			              \
