@@ -9,10 +9,10 @@ document.write('\
 			         <p>"Hands down the best EV3 programming site around."</p>\
 			        </li>\
 <li >\
-			            <p>"You made the world seem a lot smaller by connecting so many FLL teams all over the world with EV3Lessons."</p>\
+			            <p>"As a coach and teacher I find this, site invaluable. You explain concepts more clearly than a lot of adults."</p>\
 			        </li>\
 				<li>\
-			         <p>"The care that you have given about what to do and answering our questions is impressive."</p>\
+			         <p>"I've purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>\
 			        </li>\
 <li>\
 			         <p>"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>\
