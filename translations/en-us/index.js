@@ -12,7 +12,7 @@ document.write('\
 			            <p>"As a coach and teacher I find this, site invaluable. You explain concepts more clearly than a lot of adults."</p>\
 			        </li>\
 				<li>\
-			         <p>"I've purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>\
+			         <p>"I have purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>\
 			        </li>\
 <li>\
 			         <p>"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>\
