@@ -1115,8 +1115,8 @@ overflow: hidden;
 		       #nav-drop {display: inline;}
 .lang {display: none;}
 #lang-drop {display: inline;}
-#ads  {display: none;}
-#ads-bot  {display: inline;}
+#dsa  {display: none;}
+#dsa-bot  {display: inline;}
 .socials-default-small {display: none;}
 //body {background: #fff;}
 }
@@ -1127,8 +1127,8 @@ overflow: hidden;
 #nav-drop {display: none;}
 .lang {display: inline;}
 //#lang-drop {display: none;}
-#ads-bot  {display: none;}
-#ads  {display: inline;}
+#dsa-bot  {display: none;}
+#dsa  {display: inline;}
 .socials-default-small {display: inline;}
 		      }
 
