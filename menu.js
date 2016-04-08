@@ -203,6 +203,7 @@ document.write('\
             <ul>\
                 <li><a  href="lessons.html#'+language+'">{{Moneone}}</a></li>\
                 <li><a  href="robots.html#'+language+'">{{Monetwo}}</a></li>\
+                <li><a  href="challenges.html#'+language+'">{{Monefour}}</a></li>\
 		<li><a  href="HourOfEV3.html#'+language+'">{{Monethree}}</a></li>\
             </ul>\
         </li>\
@@ -212,7 +213,7 @@ document.write('\
                 <li><a href="resources/scorer/score.html#'+language+'">{{Mtwoone}}</a></li>\
                 <li><a href="resources/wheelconverter#'+language+'">{{Mtwotwo}}</a></li>\
                 <li><a href="resources/drawplan#'+language+'">{{Mtwothree}}</a></li>\
-		 <li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>\
+		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
                 <li><a href="resources.html#'+language+'">{{Mtwofive}}</a></li>\
                 <li><a href="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></li>\
             </ul>\
@@ -248,6 +249,7 @@ document.write('\
             </option>\
                 <option  value="lessons.html#'+language+'">{{Moneone}}</a></option>\
                 <option  value="robots.html#'+language+'">{{Monetwo}}</a></option>\
+                <option  value="challenges.html#'+language+'">{{Monefour}}</a></option>\
 		<option  value="HourOfEV3.html#'+language+'">{{Monethree}}</a></option>\
             \
 	 <option\
@@ -256,7 +258,7 @@ document.write('\
                 <option value="resources/scorer/score.html#'+language+'">{{Mtwoone}}</a></option>\
                 <option value="resources/drawplan#'+language+'">{{Mtwotwo}}</a></option>\
                 <option value="resources/wheelconverter#'+language+'">{{Mtwothree}}</a></option>\
-		 <option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>\
+		 <!--<option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>-->\
                 <option value="resources.html#'+language+'">{{Mtwofive}}</a></option>\
                 <option value="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></option>\
             \
@@ -289,6 +291,7 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Moneone = 'Programming Lessons';
     $scope.Monetwo = 'Robot Designs';
     $scope.Monethree = 'Hour of EV3';
+        $scope.Monefour = 'Skills Challenge';
     $scope.Mtwozero = 'Resources';
     $scope.Mtwoone = 'Trash Trek Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
