@@ -291,7 +291,7 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Moneone = 'Programming Lessons';
     $scope.Monetwo = 'Robot Designs';
     $scope.Monethree = 'Hour of EV3';
-        $scope.Monefour = 'Skills Challenge';
+        $scope.Monefour = 'Skill Challenges';
     $scope.Mtwozero = 'Resources';
     $scope.Mtwoone = 'Trash Trek Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
