@@ -47,7 +47,16 @@
 
 
 </head>
-<body class="no_js responsive boxed-layout chrome ">
+<script>
+function url() {
+if (decodeURI(window.location.search.substring(1)) != "") {
+show(decodeURI(window.location.search.substring(1)))
+document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+}
+}
+</script>
+
+<body class="no_js responsive boxed-layout chrome " onload="url()">
 
   <!-- TOPBAR -->
   <div id="po1">
@@ -1682,9 +1691,6 @@ bb = 0
 
 
 
-if (decodeURI(window.location.search.substring(1)) != "") {
-show(decodeURI(window.location.search.substring(1)))
-}
 
 
 
