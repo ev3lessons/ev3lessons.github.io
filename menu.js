@@ -216,6 +216,7 @@ document.write('\
 		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
                 <li><a href="resources.html#'+language+'">{{Mtwofive}}</a></li>\
                 <li><a href="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></li>\
+                <li><a href="corevalues.html#'+language+'">Core Value Activities</a></li>\
             </ul>\
         </li>\
         <li>\
@@ -261,6 +262,7 @@ document.write('\
 		 <!--<option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>-->\
                 <option value="resources.html#'+language+'">{{Mtwofive}}</a></option>\
                 <option value="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></option>\
+                <option value="corevalues.html#'+language+'">Core Value Activities</a></option>\
             \
         <option\
              value="mission.html#'+language+'">{{Mthreezero}}<span class="arrow">&#9660;</span></a>\
