@@ -215,7 +215,7 @@ document.write('\
                 <li><a href="resources/drawplan#'+language+'">{{Mtwothree}}</a></li>\
 		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
                 <li><a href="resources.html#'+language+'">{{Mtwofive}}</a></li>\
-                <li><a href="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></li>\
+                <li><a href="archive/#'+language+'">{{Mtwosix}}</a></li>\
                 <li><a href="corevalues.html#'+language+'">Team Building</a></li>\
             </ul>\
         </li>\
@@ -261,7 +261,7 @@ document.write('\
                 <option value="resources/wheelconverter#'+language+'">{{Mtwothree}}</a></option>\
 		 <!--<option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>-->\
                 <option value="resources.html#'+language+'">{{Mtwofive}}</a></option>\
-                <option value="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></option>\
+                <option value="archive/#'+language+'">{{Mtwosix}}</a></option>\
                 <option value="corevalues.html#'+language+'">Core Value Activities</a></option>\
             \
         <option\
