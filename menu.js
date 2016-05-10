@@ -216,7 +216,7 @@ document.write('\
 		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
                 <li><a href="resources.html#'+language+'">{{Mtwofive}}</a></li>\
                 <li><a href="archive/2015/resources/#'+language+'">{{Mtwosix}}</a></li>\
-                <li><a href="corevalues.html#'+language+'">Core Value Activities</a></li>\
+                <li><a href="corevalues.html#'+language+'">Team Building</a></li>\
             </ul>\
         </li>\
         <li>\
