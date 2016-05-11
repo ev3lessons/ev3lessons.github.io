@@ -26,7 +26,7 @@
 
   <!-- CSS Main -->
   <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="stylenotable2.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
@@ -70,7 +70,40 @@
       <div class="title">
 
 
+  <script>
+<!--
 
+ var viewportwidth;
+ var viewportheight;
+
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth,
+       viewportheight = document.documentElement.clientHeight
+ }
+
+ // older versions of IE
+
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight
+ }
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
 
       <style>
       #viewport {
@@ -124,19 +157,21 @@
 
               </td>
             </tr>
-          </table>
+         </table>
         </div>
 	-->
 
 
  <div>
 
-         <table align="left">
+         <table align="left" >
             <tr>
               <td style="width: 300px">
                 <script>document.write('<a href="contact.html#'+ language +'"> <img height="150" width="250" src="images/challenges/challenges.jpg" alt="" /></a>');
                 </script>
               </td>
+	      <script>  if (viewportwidth < 600 ) {document.write('</tr><tr>')}</script>
+
               <td>
 
                 <h2>Fix my Code Series</h2>
@@ -162,6 +197,7 @@ These challenges test a student's ability to read and understand code written by
                 <script>document.write('<a href="contact.html#'+ language +'"> <img height="150" width="250" src="images/challenges/challenges2.jpg" alt="" /></a>');
                 </script>
               </td>
+<script>  if (viewportwidth < 600 ) {document.write('</tr><tr>')}</script>
               <td>
 
                 <h2>Line Following</h2>
@@ -188,7 +224,8 @@ These challenges test a student's ability to read and understand code written by
               <td style="width: 300px">
                 <img height="150" width="250" src="images/challenges/challenges3.jpg" alt="" />
               </td>
-              <td >
+ <script>  if (viewportwidth < 600 ) {document.write('</tr><tr>')}</script>
+             <td >
 
                 <h2>Other Skill Challenges</h2> </a>
 These are other challenges that we have not categorized yet.
