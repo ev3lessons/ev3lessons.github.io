@@ -190,6 +190,14 @@ var nav = [
 
 
 document.write('\
+        <!-- START LOGO -->\
+        <div id="logo" class="group">\
+          <h1>\
+            <a class="logo-text" href="index.html" title="EV3Lessons.com">EV3<span>Lessons.com</span></a>\
+          </h1>\
+          <p>by <a href="http://brothers.seshan.org">Seshan Brothers</a></p>\
+        </div>\
+        <!-- END LOGO -->\
 <div ng-app="MenuApp" ng-controller="MenuCtrl">\
 \
 \
