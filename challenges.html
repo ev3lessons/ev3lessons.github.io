@@ -70,7 +70,7 @@
       <div class="title">
 
 
-  <script>
+	<script>
 <!--
 
  var viewportwidth;
@@ -80,7 +80,7 @@
 
  if (typeof window.innerWidth != 'undefined')
  {
-      viewportwidth = window.innerWidth,
+      viewportwidth  = window.innerWidth,
       viewportheight = window.innerHeight
  }
 
@@ -90,7 +90,7 @@
      && typeof document.documentElement.clientWidth !=
      'undefined' && document.documentElement.clientWidth != 0)
  {
-       viewportwidth = document.documentElement.clientWidth,
+       viewportwidth  = document.documentElement.clientWidth,
        viewportheight = document.documentElement.clientHeight
  }
 
@@ -98,10 +98,10 @@
 
  else
  {
-       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportwidth  = document.getElementsByTagName('body')[0].clientWidth,
        viewportheight = document.getElementsByTagName('body')[0].clientHeight
  }
-//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//document.write('<p>Your viewport width is '+viewportwidth +'x'+viewportheight+'</p>');
 //-->
 </script>
 
@@ -170,7 +170,7 @@
                 <script>document.write('<a href="contact.html#'+ language +'"> <img height="150" width="250" src="images/challenges/challenges.jpg" alt="" /></a>');
                 </script>
               </td>
-	      <script>  if (viewportwidth < 550 ) {document.write('</tr><tr>')}</script>
+	      <script>  if (viewportwidth  < 550 | screen.width < 600 ) {document.write('</tr><tr>')}</script>
 
               <td>
 
@@ -191,13 +191,13 @@ These challenges test a student's ability to read and understand code written by
  
  <div>
 
-         <table align="left">
+         <table align="middle">
             <tr>
               <td style="width: 300px">
                 <script>document.write('<a href="contact.html#'+ language +'"> <img height="150" width="250" src="images/challenges/challenges2.jpg" alt="" /></a>');
                 </script>
               </td>
-<script>  if (viewportwidth < 550 ) {document.write('</tr><tr>')}</script>
+<script>  if (viewportwidth  < 550 | screen.width < 600 ) {document.write('</tr><tr>')}</script>
               <td>
 
                 <h2>Line Following</h2>
@@ -224,7 +224,7 @@ These challenges test a student's ability to read and understand code written by
               <td style="width: 300px">
                 <img height="150" width="250" src="images/challenges/challenges3.jpg" alt="" />
               </td>
- <script>  if (viewportwidth < 550 ) {document.write('</tr><tr>')}</script>
+ <script>  if (viewportwidth < 550 | screen.width < 600 ) {document.write('</tr><tr>')}</script>
              <td >
 
                 <h2>Other Skill Challenges</h2> </a>

@@ -5,7 +5,7 @@ document.write('\
         <div class="left">\
           <p>\
             Copyright EV3Lessons.com 2015 -\
-            Powered by <strong>Seshan Brothers</strong>\
+            Powered by <strong>Seshan Brothers</strong><br>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site. <!--LEGO® and MINDSTORMS® are trademarks of the LEGO Group of companies which does not sponsor, authorize or endorse this site.--> \
           </p>\
         </div>\
       </div>\
