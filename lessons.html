@@ -1155,7 +1155,7 @@ bb = 0
                 </div>
 
                 <div class="toggle advanced bluetooth messaging">
-                 <br>  <p class="tab-index tab-closed"><a id="103" href="#" title="Close">Bluetooth</a>
+                 <br>  <p class="tab-index tab-closed"><a id="113" href="#" title="Close">Bluetooth</a>
                    </p>
                    <div class="content-tab closed indent">
                      <ul>
@@ -1172,7 +1172,8 @@ bb = 0
                 <p class="beyond" id='other-intro'>These lessons are intended for EV3 users who have completed all our lessons and interested in trying and learning new techniques and sensors.
                 </p>
 
-<br> <div class="toggle beyond additional_blocks third_party_blocks importing adding_blocks">
+		 <br>
+		 <div class="toggle beyond additional_blocks third_party_blocks importing adding_blocks">
                 <br>  <p class="tab-index tab-closed"><a id="150" href="#" title="Close">Importing Additional Blocks</a>
                   </p>
                   <div class="content-tab closed indent">
@@ -1183,12 +1184,12 @@ bb = 0
                       </li>
                     </ul>
                   </div>
+</div>
 
 
 
-
-<br> <div class="toggle beyond pixy_cam">
-                <p class="tab-index tab-closed"><a id="150" href="#" title="Close">PixyCam for MINDSTORMS</a>
+<div class="toggle beyond pixy_cam">
+<br>                <p class="tab-index tab-closed"><a id="154" href="#" title="Close">PixyCam for MINDSTORMS</a>
                   </p>
                   <div class="content-tab closed indent">
                     <h4>Introduction:</h4>
@@ -1216,8 +1217,8 @@ bb = 0
                   </div>
                 </div>
 
-                <br> <div class="toggle beyond mindsensors remote remote_control PSP-Nx_Remote PSP_controller controller">
-                                <p class="tab-index tab-closed"><a id="150" href="#" title="Close">Mindsensors PSP-Nx Controller</a>
+               <div class="toggle beyond mindsensors remote remote_control psp-nx_remote psp_controller psp-nx_controller simon simon_game ev3_imon">
+                 <br>                <p class="tab-index tab-closed"><a id="155" href="#" title="Close">Mindsensors PSP-Nx Controller</a>
                                   </p>
                                   <div class="content-tab closed indent">
                                     <h4>Introduction:</h4>
@@ -1225,6 +1226,15 @@ bb = 0
                                       <li>{{Slides}}
                                         <a href="translations/{{onefivezero}}/beyond/PSP-NxController.pptx">PPTX</a>,
                                         <a href="translations/{{onefivezero}}/beyond/PSP-NxController.pdf">PDF</a>
+                                        </li>
+                                    </ul>
+
+                                    <h4>Simon Game:</h4>
+                                    <ul>
+                                      <li>{{Slides}}
+                                        <a href="translations/{{onefivezero}}/beyond/PSP-NxSimon.pptx">PPTX</a>,
+                                        <a href="translations/{{onefivezero}}/beyond/PSP-NxSimon.pdf">PDF</a>,
+                                        <a href="translations/{{onefivezero}}/beyond/PSP-NxSimon.ev3">EV3 Code</a>
                                         </li>
                                     </ul>
 
@@ -1404,7 +1414,7 @@ bb = 0
                     </ul>
                   </div>
                 </div>
-</div></div></div>
+</div></div>
 </div>
               </div> <!-- panel 5 end -->
 
@@ -1588,7 +1598,7 @@ bb = 0
   }
 
   i = 100;
-  while (i < 114) {
+  while (i < 116) {
     if (urldes[i] != "none") {
       document.getElementById(String(i)).innerHTML = urldes[i];
       document.write('$scope.'+inWords(i)+' = "'+language+'";');
@@ -1606,7 +1616,7 @@ bb = 0
 */
 
   i = 0
-  while (i != 250){
+  while (i != 300){
   tabs = $( "#"+i+"" ).parent().parent().prop('className')
   if (tabs != undefined) {
     if (urldes[i] != "none") {
@@ -1705,7 +1715,7 @@ bb = 0
 count = 0
 counta = 0
 keywords=[]
-while (count != 250){
+while (count != 300){
 tabs = $( "#"+count+"" ).parent().parent().prop('className')
 if (tabs != undefined) {
   keywords = keywords.concat(tabs.split(' '))
