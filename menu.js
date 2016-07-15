@@ -211,6 +211,7 @@ document.write('\
             <ul>\
                 <li><a  href="lessons.html#'+language+'">{{Moneone}}</a></li>\
                 <li><a  href="robots.html#'+language+'">{{Monetwo}}</a></li>\
+                <li><a  href="tablet.html#'+language+'">{{Monefive}}</a></li>\
                 <li><a  href="challenges.html#'+language+'">{{Monefour}}</a></li>\
 		<li><a  href="HourOfEV3.html#'+language+'">{{Monethree}}</a></li>\
             </ul>\
@@ -299,6 +300,8 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Mone = 'Home';
     $scope.Monezero = 'Lessons';
     $scope.Moneone = 'Programming Lessons';
+        $scope.Monefive = 'Tablet Lessons';
+
     $scope.Monetwo = 'Robot Designs';
     $scope.Monethree = 'Hour of EV3';
         $scope.Monefour = 'Skill Challenges';
@@ -323,6 +326,8 @@ menuApp.controller("MenuCtrl", function($scope) {
     if (nav[11] != 'none'){$scope.Moneone = nav[11];}
     if (nav[12] != 'none'){$scope.Monetwo = nav[12];}
     if (nav[13] != 'none'){$scope.Monethree = nav[13];}
+    if (nav[12] != 'none'){$scope.Monefour = nav[14];}
+    if (nav[13] != 'none'){$scope.Monefive = nav[15];}
     if (nav[20] != 'none'){$scope.Mtwozero = nav[20];}
     if (nav[21] != 'none'){$scope.Mtwoone = nav[21];}
     if (nav[22] != 'none'){$scope.Mtwotwo = nav[22];}
