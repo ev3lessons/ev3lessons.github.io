@@ -214,6 +214,7 @@ document.write('\
                 <li><a  href="tablet.html#'+language+'">{{Monefive}}</a></li>\
                 <li><a  href="challenges.html#'+language+'">{{Monefour}}</a></li>\
 		<li><a  href="HourOfEV3.html#'+language+'">{{Monethree}}</a></li>\
+		<li><a  href="guides.html#'+language+'">{{Monesix}}</a></li>\
             </ul>\
         </li>\
 	 <li>\
@@ -225,7 +226,8 @@ document.write('\
 		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
                 <li><a href="resources.html#'+language+'">{{Mtwofive}}</a></li>\
                 <li><a href="archive/#'+language+'">{{Mtwosix}}</a></li>\
-                <li><a href="corevalues.html#'+language+'">Team Building</a></li>\
+                <li><a href="corevalues.html#'+language+'">{{Mtwoseven}}</a></li>\
+                <li><a href="coachcorner.html#'+language+'">{{Mtwoeight}}</a></li>\
             </ul>\
         </li>\
         <li>\
@@ -238,13 +240,9 @@ document.write('\
 		<li><a href="support.html#'+language+'">{{Mthreefive}}</a></li>\
             </ul>\
         </li>\
-	 <li>\
-            <a href="guides.html#'+language+'">{{Mfourzero}}</a>\
-\
-        <li>\
+	<li>\
             <a href="contact.html#'+language+'">{{Mfivezero}}</a>\
 \
-        </li>\
     </ul>\
 </nav>\
 \
@@ -259,8 +257,10 @@ document.write('\
             </option>\
                 <option  value="lessons.html#'+language+'">{{Moneone}}</a></option>\
                 <option  value="robots.html#'+language+'">{{Monetwo}}</a></option>\
+                <option  value="tablet.html#'+language+'">{{Monefive}}</a></option>\
                 <option  value="challenges.html#'+language+'">{{Monefour}}</a></option>\
 		<option  value="HourOfEV3.html#'+language+'">{{Monethree}}</a></option>\
+		<option  value="guides.html#'+language+'">{{Monesix}}</a></option>\
             \
 	 <option\
              value="resources.html#'+language+'">{{Mtwozero}} <span class="arrow">&#9660;</span></a>\
@@ -268,10 +268,11 @@ document.write('\
                 <option value="resources/scorer/score.html#'+language+'">{{Mtwoone}}</a></option>\
                 <option value="resources/drawplan#'+language+'">{{Mtwotwo}}</a></option>\
                 <option value="resources/wheelconverter#'+language+'">{{Mtwothree}}</a></option>\
-		 <!--<option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>-->\
+		<!--<option value="challenges.html#'+language+'">{{Mtwofour}}</a></option>-->\
                 <option value="resources.html#'+language+'">{{Mtwofive}}</a></option>\
                 <option value="archive/#'+language+'">{{Mtwosix}}</a></option>\
-                <option value="corevalues.html#'+language+'">Core Value Activities</a></option>\
+                <option value="corevalues.html#'+language+'">{{Mtwoseven}}</a></option>\
+                <option value="coachcorner.html#'+language+'">{{Mtwoeight}}</a></option>\
             \
         <option\
              value="mission.html#'+language+'">{{Mthreezero}}<span class="arrow">&#9660;</span></a>\
@@ -282,9 +283,6 @@ document.write('\
 		<option value="press.html#'+language+'">{{Mthreefour}}</a></option>\
 		<option value="support.html#'+language+'">{{Mthreefive}}</a></option>\
             \
-	 <option\
-             value="guides.html#'+language+'">{{Mfourzero}}</a>\
-\
         <option\
              value="contact.html#'+language+'">{{Mfivezero}}</a>\
 \
@@ -300,11 +298,11 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Mone = 'Home';
     $scope.Monezero = 'Lessons';
     $scope.Moneone = 'Programming Lessons';
-        $scope.Monefive = 'Tablet Lessons';
-
+    $scope.Monefive = 'Tablet Lessons';
     $scope.Monetwo = 'Robot Designs';
     $scope.Monethree = 'Hour of EV3';
-        $scope.Monefour = 'Skill Challenges';
+    $scope.Monefour = 'Skill Challenges';
+    $scope.Monesix = 'One-Page Guides';
     $scope.Mtwozero = 'Resources';
     $scope.Mtwoone = 'Trash Trek Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
@@ -312,13 +310,14 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Mtwofour = 'Challenges';
     $scope.Mtwofive = 'All Resources';
     $scope.Mtwosix = 'Resources Archive';
+    $scope.Mtwoseven = 'Team Building';
+    $scope.Mtwoeight = 'Coach\'s Corner';
     $scope.Mthreezero ='About Us';
     $scope.Mthreeone = 'Our Mission';
     $scope.Mthreetwo = 'Contributors';
     $scope.Mthreethree = 'Contributor FAQ';
     $scope.Mthreefour = 'Press';
     $scope.Mthreefive = 'Support Us';
-    $scope.Mfourzero = 'Guides';
     $scope.Mfivezero = 'Contact Us';
 
     if (nav[1] != 'none'){$scope.Mone = nav[1];}
@@ -326,8 +325,9 @@ menuApp.controller("MenuCtrl", function($scope) {
     if (nav[11] != 'none'){$scope.Moneone = nav[11];}
     if (nav[12] != 'none'){$scope.Monetwo = nav[12];}
     if (nav[13] != 'none'){$scope.Monethree = nav[13];}
-    if (nav[12] != 'none'){$scope.Monefour = nav[14];}
-    if (nav[13] != 'none'){$scope.Monefive = nav[15];}
+    if (nav[14] != 'none'){$scope.Monefour = nav[14];}
+    if (nav[15] != 'none'){$scope.Monefive = nav[15];}
+    if (nav[16] != 'none'){$scope.Monesix = nav[16];}
     if (nav[20] != 'none'){$scope.Mtwozero = nav[20];}
     if (nav[21] != 'none'){$scope.Mtwoone = nav[21];}
     if (nav[22] != 'none'){$scope.Mtwotwo = nav[22];}
@@ -335,6 +335,8 @@ menuApp.controller("MenuCtrl", function($scope) {
     if (nav[24] != 'none'){$scope.Mtwofour = nav[24];}
     if (nav[25] != 'none'){$scope.Mtwofive = nav[25];}
     if (nav[26] != 'none'){$scope.Mtwosix = nav[26];}
+    if (nav[27] != 'none'){$scope.Mtwoseven = nav[27];}
+    if (nav[28] != 'none'){$scope.Mtwoeight = nav[28];}
     if (nav[30] != 'none'){$scope.Mthreezero = nav[30];}
     if (nav[31] != 'none'){$scope.Mthreeone = nav[31];}
     if (nav[32] != 'none'){$scope.Mthreetwo = nav[32];}
