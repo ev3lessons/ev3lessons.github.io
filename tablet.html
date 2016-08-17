@@ -186,7 +186,7 @@ function show(data) {
 largest = 0
 bb = 0
 //alert(array)
-
+//alert(keywords)
   max = array.indexOf(Math.max.apply(window,array))
   value = keywords[max]
 
@@ -195,30 +195,19 @@ bb = 0
 //alert(max)
 
 
-  x = 0 while (x !=
-    document.getElementsByClassName("beginner").length) {
-    document.getElementsByClassName("beginner")[x].style.display =
-    "none" x ++ } /* x = 0 while (x !=
-    document.getElementsByClassName("intermediate").length) {
-    document.getElementsByClassName("intermediate")[x].style.display =
-    "none" //
-    alert(document.getElementsByClassName("intermediate")[x]) x ++ } x
-    = 0 while (x !=
-    document.getElementsByClassName("advanced").length) {
-    document.getElementsByClassName("advanced")[x].style.display =
-    "none" x ++ } x = 0 while (x !=
-    document.getElementsByClassName("beyond").length) {
-    document.getElementsByClassName("beyond")[x].style.display =
-    "none" x ++ } x = 0 while (x !=
-    document.getElementsByClassName("workshop").length) {
-    document.getElementsByClassName("workshop")[x].style.display =
-    "none" x ++ } */
-
-
-  x = 0
+		       x = 0
+		       while (x != document.getElementsByClassName("toggle").length) {
+		       document.getElementsByClassName("toggle")[x].style.display = "none"
+		       x ++
+		       }
+		       
+//value=keywords[max]
+///alert(value)
+		 x = 0
   while (x != document.getElementsByClassName(value).length) {
-   document.getElementsByClassName(value)[x].style.display = "block"
-  x ++
+		       document.getElementsByClassName(value)[x].style.display = "block"
+		       //alert(document.getElementsByClassName(value)[x])
+		       x ++
 	}
 
 }
@@ -309,10 +298,10 @@ bb = 0
         </div>
 
                 <br>
-        <div class="connecting robot
+        <div class="beginner connecting robot
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Connecting a Robot to the App</a>
+        <a id="2" href="#" title="Close">Connecting a Robot to the App</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -326,10 +315,10 @@ bb = 0
 
 
                                                 <br>
-        <div class="introduction EV3
+        <div class="beginner introduction EV3
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Introduction to the EV3</a>
+        <a id="3" href="#" title="Close">Introduction to the EV3</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -342,10 +331,10 @@ bb = 0
         </div>
 
                                                                 <br>
-        <div class="port view
+        <div class="beginner port_view
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Port View</a>
+        <a id="4" href="#" title="Close">Port View</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -358,10 +347,10 @@ bb = 0
         </div>
 
                                                                                 <br>
-        <div class="moving straight
+        <div class="moving straight beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Moving Straight</a>
+        <a id="5" href="#" title="Close">Moving Straight</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -374,10 +363,10 @@ bb = 0
         </div>
 
                                                                                                 <br>
-        <div class="turning
+        <div class="turning beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Basic Turning</a>
+        <a id="5" href="#" title="Close">Basic Turning</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -391,10 +380,10 @@ bb = 0
 
 
                                                                 <br>
-        <div class="Displaying text graphics
+        <div class="Displaying text graphics beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Displaying Text and Graphics</a>
+        <a id="6" href="#" title="Close">Displaying Text and Graphics</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -408,10 +397,10 @@ bb = 0
 
 
                                                                                 <br>
-        <div class="touch sensor
+        <div class="touch sensor beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Introduction to Touch Sensor</a>
+        <a id="7" href="#" title="Close">Introduction to Touch Sensor</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -424,10 +413,10 @@ bb = 0
         </div>
 
                                                                                                 <br>
-        <div class="color colour sensor
+        <div class="color colour sensor beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Introduction to Color Sensor</a>
+        <a id="8" href="#" title="Close">Introduction to Color Sensor</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -441,10 +430,10 @@ bb = 0
 
 
                                                                                                                 <br>
-        <div class="loop loops
+        <div class="loop loops beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Loops</a>
+        <a id="9" href="#" title="Close">Loops</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -457,10 +446,10 @@ bb = 0
 	</div>
 
 	                                                                   <br>
-        <div class="switch switches
+        <div class="switch switches beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Switches</a>
+        <a id="10" href="#" title="Close">Switches</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -473,10 +462,10 @@ bb = 0
         </div>
 
                                                                                                                                                 <br>
-        <div class="ultrasonic sensor
+        <div class="ultrasonic sensor beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Introduction to Ultrasonic Sensor</a>
+        <a id="11" href="#" title="Close">Introduction to Ultrasonic Sensor</a>
         </p>
 	<div class="content-tab closed indent">
         <ul>
@@ -492,10 +481,10 @@ bb = 0
 
 
 
-	<div class="line_follower
+	<div class="line_follower beginner
         ev3_app programmer_app toggle">
         <p class="tab-index tab-closed">
-        <a id="1" href="#" title="Close">Basic Line Follower</a>
+        <a id="12" href="#" title="Close">Basic Line Follower</a>
         </p>
         <div class="content-tab closed indent">
         <ul>
@@ -508,10 +497,10 @@ bb = 0
         </div>
 
     <br>
-        <div class="final challenge
+        <div class="final challenge beginner
               ev3_app programmer_app toggle">
               <p class="tab-index tab-closed">
-              <a id="1" href="#" title="Close">Final Challenge</a>
+              <a id="13" href="#" title="Close">Final Challenge</a>
               </p>
               <div class="content-tab closed indent">
               <ul>
