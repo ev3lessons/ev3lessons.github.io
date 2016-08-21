@@ -72,30 +72,31 @@ document.write('<tr>\
 <table>
 <script>
 
-		starttable('MO1: Seal and Camera:','seal.png' , 2, ['seal','seal-original'])
+		starttable('MO1: Seal and Camera:','seal.png' , 2, ['camera','seal'])
 		  createbutton("camera", 100 ,'Is the Camera completely in the Saftey Area?')
 		  createbutton("seal", 100 ,'Was the Seal ever moved from its starting position?')
                  endtable()
 
 
 
-		starttable('MO2: Tank and Shark:','sharktank.png' , 1, ['shark'])
-		  createrange("shark", 100 , 0, 10, 'Place shark')
+		starttable('MO2: Tank and Shark:','sharktank.png' , 2, ['shark','shark2'])
+		  createbutton("shark", 100, 'Is the Tank and the Shark in the Left Box?')
+      createbutton("shark2", 100, 'Is the Tank and the Shark in the Right Box?')
                 endtable()
 
-		starttable('MO3: Our little friend:','pigwheel.png' , 1, ['shark2'])
-		  createrange("pig", 100 , 0, 10, 'Place shark')
+		starttable('MO3: Our Little friend:','pigwheel.png' , 1, ['pig'])
+		  createbutton("pig", 100, 'Are the Wheels attathed to the Pig?')
                 endtable()
 
-	        starttable('MO4: Zoologist:','zoologist.png' , 1, ['shark3'])
-	         createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area')
+	        starttable('MO4: Zoologist:','zoologist.png' , 1, ['zoologist'])
+	         createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area?')
                 endtable()
 
-		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , 1, ['shark4'])
+		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , 1, ['dogandtrainer'])
 	         createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
                 endtable()
 
-		
+
 
 
 
