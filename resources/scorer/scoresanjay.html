@@ -35,10 +35,9 @@ document.write('<tr>\
 		  }
 
 
-		  function starttable(mission,image,rows,children){
-		  element = 1 + 2*rows
- document.write('<tr style="vertical-align: top;">\
-            <td>\
+		  function starttable(mission,image,children){
+		  element = 1 + 2*children.length
+ document.write('\
               <table style="border: 1px solid black; border-collapse: collapse; " border="1">\
                 <tr>\
                   <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
@@ -50,7 +49,7 @@ document.write('<tr>\
 		')
 		}
 		function endtable() {
-document.write('</table></tr></td>')
+document.write('</tr></td></table>')
 		}
 
 function createrange(mission, increment, min, max, description) {
@@ -67,34 +66,91 @@ document.write('<tr>\
 
 }
 
+
+function startrow() {
+  document.write('<td valign="top">')
+}
+function endrow() {
+  document.write('</td>')
+}
 </script>
 
 <table>
+  <tr>
 <script>
+startrow()
 
-		starttable('MO1: Seal and Camera:','seal.png' , 2, ['camera','seal'])
+
+		starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
 		  createbutton("camera", 100 ,'Is the Camera completely in the Saftey Area?')
 		  createbutton("seal", 100 ,'Was the Seal ever moved from its starting position?')
-                 endtable()
+    endtable()
+
+		starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
+		  createbutton("shark", 100, 'Is the Tank and the Shark completely in the Left Box?')
+      createbutton("shark2", 100, 'Is the Tank and the Shark completely in the Right Box?')
+    endtable()
+
+		starttable('MO3: Our Little friend:','pigwheel.png' , ['mylittlefriend', 'farm'])
+		  createbutton("mylittlefriend", 100, 'Are the Wheels attathed to the Pig?')
+      createbutton("farm", 100, 'Is the Pig completely in the Farm Area?')
+    endtable()
+
+	  starttable('MO4: Zoologist:','zoologist.png' , ['zoologist'])
+	    createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area?')
+    endtable()
+
+		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , ['dogandtrainer'])
+	   createbutton("dogandtrainer", 100 , 'Is the Dog and Trainer completely on the road?')
+    endtable()
+
+    starttable('MO6: Beehive and Honey:','beehiveandhoney.png' , ['beehive', 'honey'])
+	   createbutton("beehive", 100 , 'Has the honey been ejected?')
+     createbutton("honey", 100 , 'Is the Honey completely in the Saftey Area?')
+    endtable()
+
+    starttable('MO7: Bee:','bee.png' , ['bee'])
+     createbutton("bee", 100 , 'Is the Bee completely in the Saftey Area?')
+    endtable()
+
+endrow()
+startrow()
+
+
+    starttable('MO8: The Panda Observation and Return:','pandaobservation.png' , ['pandaobservation'])
+     createbutton("pandaobservation", 100 , 'Is the model completely unfolded?')
+    endtable()
+
+    starttable('MO9: Biomimicry Wall:','biomimicrywall.png' , ['biomimicrywall'])
+     createbutton("biomimicrywall ", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
+    endtable()
+
+    starttable('M10: Service Dog and Man:','servicedogsmall.png' , ['servicedog'])
+     createbutton("servicedog", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
+    endtable()
+
+    starttable('M11: Animal Conservation:','animalconservation.png', ['food'])
+     createrange("food", 100 , 0, 5, 'How many Animals have been transfered with the other team?')
+    endtable()
+
+    starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples'])
+     createrange("manuresamples", 100 , 0, 12, 'How many Manure Samples are in the box?')
+    endtable()
+
+    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator'])
+     createrange("foodandrefrigerator", 100 , 0, 8, 'How many Food has been delivered to the Animals?')
+    endtable()
+
+    starttable('M14: Milking Automation:','milkingautomation.png', ['milkingautomation'])
+     createbutton("milkingautomation", 100 , 'Is only the milk ejected?')
+    endtable()
+
+    starttable('M15: Ramp:','ramp.png', ['ramp'])
+     createbutton("ramp", 100 , 'Is the Ramp tilted towards the east end?')
+    endtable()
 
 
 
-		starttable('MO2: Tank and Shark:','sharktank.png' , 2, ['shark','shark2'])
-		  createbutton("shark", 100, 'Is the Tank and the Shark in the Left Box?')
-      createbutton("shark2", 100, 'Is the Tank and the Shark in the Right Box?')
-                endtable()
-
-		starttable('MO3: Our Little friend:','pigwheel.png' , 1, ['pig'])
-		  createbutton("pig", 100, 'Are the Wheels attathed to the Pig?')
-                endtable()
-
-	        starttable('MO4: Zoologist:','zoologist.png' , 1, ['zoologist'])
-	         createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area?')
-                endtable()
-
-		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , 1, ['dogandtrainer'])
-	         createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
-                endtable()
 
 
 
@@ -103,6 +159,13 @@ document.write('<tr>\
 
 
 
+//createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
 
+
+
+
+
+endrow()
 </script>
+</tr>
 </table>
