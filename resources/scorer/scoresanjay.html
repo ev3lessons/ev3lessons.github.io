@@ -1,0 +1,107 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+  $.mobile.changePage.defaults.changeHash = false;
+  $.mobile.hashListeningEnabled = false;
+  $.mobile.pushStateEnabled = false;
+});
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="highcharts.js"></script>
+<script src="exporting.js"></script>
+<script src="angular.min.js"></script>
+<script>
+language = "en-us"
+
+
+function createbutton(mission,points,description){
+document.write('<tr>\
+  <td width="200" style="font-size: 100%; background-color: sky;">\
+                      '+description+'\
+                    </td>\
+                  </tr>\
+                  <tr>\
+                    <td>\
+                      <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">\
+                        <label for="yes'+mission+'">Yes</label>\
+                        <input  type="radio" onclick="recalc('+points+',\''+mission+'\')" name="'+mission+'" value="true" id="yes'+mission+'">\
+                        <label for="no'+mission+'">No</label>\
+                        <input  type="radio" onclick="recalc(0,\''+mission+'\')" name="'+mission+'"  value="false" id="no'+mission+'" checked>\
+                      </fieldset>\
+                    </td>\
+                  </tr>')
+		  }
+
+
+		  function starttable(mission,image,rows,children){
+		  element = 1 + 2*rows
+ document.write('<tr style="vertical-align: top;">\
+            <td>\
+              <table style="border: 1px solid black; border-collapse: collapse; " border="1">\
+                <tr>\
+                  <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
+                  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">\
+                    '+mission+'\
+                    <i style="font-style: normal;" id="M01pts">0</i>\
+                  </td>\
+                </tr>\
+		')
+		}
+		function endtable() {
+document.write('</table></tr></td>')
+		}
+
+function createrange(mission, increment, min, max, description) {
+document.write('<tr>\
+                  <td width="200" style="font-size: 100%; background-color: sky;">\
+                    '+description+'	  </td>\
+                  </tr>\
+                  <tr>\
+                    <td width="200">\
+                      <input type="range" data-show-value="true" name="'+mission+'" id="'+mission+'" value="0" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+','+mission+')\'>\
+                      <p id="'+mission+'Txt" style="color: red"></p>\
+                    </td>\
+                  </tr>')
+
+}
+
+</script>
+
+<table>
+<script>
+
+		starttable('MO1: Seal and Camera:','seal.png' , 2, ['seal','seal-original'])
+		  createbutton("camera", 100 ,'Is the Camera completely in the Saftey Area?')
+		  createbutton("seal", 100 ,'Was the Seal ever moved from its starting position?')
+                 endtable()
+
+
+
+		starttable('MO2: Tank and Shark:','sharktank.png' , 1, ['shark'])
+		  createrange("shark", 100 , 0, 10, 'Place shark')
+                endtable()
+
+		starttable('MO3: Our little friend:','pigwheel.png' , 1, ['shark2'])
+		  createrange("pig", 100 , 0, 10, 'Place shark')
+                endtable()
+
+	        starttable('MO4: Zoologist:','zoologist.png' , 1, ['shark3'])
+	         createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area')
+                endtable()
+
+		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , 1, ['shark4'])
+	         createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+                endtable()
+
+		
+
+
+
+
+
+
+
+</script>
+</table>
