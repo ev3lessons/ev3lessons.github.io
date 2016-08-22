@@ -12,84 +12,31 @@ $(document).bind('mobileinit',function(){
 <script src="highcharts.js"></script>
 <script src="exporting.js"></script>
 <script src="angular.min.js"></script>
-<script>
-language = "en-us"
 
+<script src="scorer.js"></script>
 
-function createbutton(mission,points,description){
-document.write('<tr>\
-  <td width="200" style="font-size: 100%; background-color: sky;">\
-                      '+description+'\
-                    </td>\
-                  </tr>\
-                  <tr>\
-                    <td>\
-                      <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">\
-                        <label for="yes'+mission+'">Yes</label>\
-                        <input  type="radio" onclick="recalc('+points+',\''+mission+'\')" name="'+mission+'" value="true" id="yes'+mission+'">\
-                        <label for="no'+mission+'">No</label>\
-                        <input  type="radio" onclick="recalc(0,\''+mission+'\')" name="'+mission+'"  value="false" id="no'+mission+'" checked>\
-                      </fieldset>\
-                    </td>\
-                  </tr>')
-		  }
-
-
-		  function starttable(mission,image,children){
-		  element = 1 + 2*children.length
- document.write('\
-              <table style="border: 1px solid black; border-collapse: collapse; " border="1">\
-                <tr>\
-                  <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
-                  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">\
-                    '+mission+'\
-                    <i style="font-style: normal;" id="M01pts">0</i>\
-                  </td>\
-                </tr>\
-		')
-		}
-		function endtable() {
-document.write('</tr></td></table>')
-		}
-
-function createrange(mission, increment, min, max, description) {
-document.write('<tr>\
-                  <td width="200" style="font-size: 100%; background-color: sky;">\
-                    '+description+'	  </td>\
-                  </tr>\
-                  <tr>\
-                    <td width="200">\
-                      <input type="range" data-show-value="true" name="'+mission+'" id="'+mission+'" value="0" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+','+mission+')\'>\
-                      <p id="'+mission+'Txt" style="color: red"></p>\
-                    </td>\
-                  </tr>')
-
-}
-
-
-function startrow() {
-  document.write('<td valign="top">')
-}
-function endrow() {
-  document.write('</td>')
-}
-</script>
+<script src="html.js"></script>
 
 <table>
   <tr>
-<script>
-startrow()
+    <script>
+
+      mobile = 500
+      all_screen = 10000
+startrow(all_screen)
 
 
 		starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
 		  createbutton("camera", 100 ,'Is the Camera completely in the Saftey Area?')
-		  createbutton("seal", 100 ,'Was the Seal ever moved from its starting position?')
+      createbutton("seal", 0 ,'Was the Seal ever moved from its starting position?')
+      createbuttonconflict('camera','seal','seal')
     endtable()
 
-		starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
-		  createbutton("shark", 100, 'Is the Tank and the Shark completely in the Left Box?')
-      createbutton("shark2", 100, 'Is the Tank and the Shark completely in the Right Box?')
-    endtable()
+		  starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
+		  createbutton("shark", 40, 'Is the Tank and the Shark completely in the Left Box?')
+                  createbutton("shark2", 60, 'Is the Tank and the Shark completely in the Right Box?')
+                  createbuttonconflict('shark','shark2','')
+                  endtable()
 
 		starttable('MO3: Our Little friend:','pigwheel.png' , ['mylittlefriend', 'farm'])
 		  createbutton("mylittlefriend", 100, 'Are the Wheels attathed to the Pig?')
@@ -107,14 +54,20 @@ startrow()
     starttable('MO6: Beehive and Honey:','beehiveandhoney.png' , ['beehive', 'honey'])
 	   createbutton("beehive", 100 , 'Has the honey been ejected?')
      createbutton("honey", 100 , 'Is the Honey completely in the Saftey Area?')
-    endtable()
+      endtable()
 
-    starttable('MO7: Bee:','bee.png' , ['bee'])
+      
+endrow(mobile)
+startrow(mobile)
+
+
+
+
+      starttable('MO7: Bee:','bee.png' , ['bee'])
      createbutton("bee", 100 , 'Is the Bee completely in the Saftey Area?')
     endtable()
 
-endrow()
-startrow()
+
 
 
     starttable('MO8: The Panda Observation and Return:','pandaobservation.png' , ['pandaobservation'])
@@ -122,23 +75,24 @@ startrow()
     endtable()
 
     starttable('MO9: Biomimicry Wall:','biomimicrywall.png' , ['biomimicrywall'])
-     createbutton("biomimicrywall ", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
+     createbutton("biomimicrywall", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
     endtable()
 
     starttable('M10: Service Dog and Man:','servicedogsmall.png' , ['servicedog'])
-     createbutton("servicedog", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
+     createbutton("servicedog", 100 , 'Has the Bar been completely pushed down?')
     endtable()
 
     starttable('M11: Animal Conservation:','animalconservation.png', ['food'])
-     createrange("food", 100 , 0, 5, 'How many Animals have been transfered with the other team?')
+     createrange("food", 100 , 0, 5, 0, 'How many Animals have been transfered with the other team?')
     endtable()
 
-    starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples'])
-     createrange("manuresamples", 100 , 0, 12, 'How many Manure Samples are in the box?')
+    starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples','manuresamples2'])
+      createrange("manuresamples", 10 , 0, 12, 0, 'How many Manure Samples are in the box?')
+      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the field but not in the box?')
     endtable()
 
     starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator'])
-     createrange("foodandrefrigerator", 100 , 0, 8, 'How many Food has been delivered to the Animals?')
+     createrange("foodandrefrigerator", 100 , 0, 8,0, 'How many Food has been delivered to the Animals?')
     endtable()
 
     starttable('M14: Milking Automation:','milkingautomation.png', ['milkingautomation'])
@@ -165,7 +119,8 @@ startrow()
 
 
 
-endrow()
+endrow(all_screen)
+
 </script>
 </tr>
 </table>
