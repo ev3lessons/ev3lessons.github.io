@@ -37,57 +37,48 @@ $( function() {
 <div id="tabs-1">
 <table>
   <tr>
-
     <script>
 
-      mobile = 500
-      all_screen = 0
-startrow(all_screen)
+    mobile = 500
+    all_screen = 0
+    startrow(all_screen)
 
-
-		starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
-		  createbutton("camera", 100 ,'Is the Camera completely in the Safety Area?')
+    starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
+      createbutton("camera", 100 ,'Is the Camera completely in the Safety Area?')
       createbutton("seal", 0 ,'Was the Seal ever moved from its starting position?')
       createbuttonconflict('camera','seal','seal')
     endtable()
 
-		  starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
-		  createbutton("shark", 40, 'Is the Tank and the Shark completely in the Left Box?')
-                  createbutton("shark2", 60, 'Is the Tank and the Shark completely in the Right Box?')
-                  createbuttonconflict('shark','shark2','')
-                  endtable()
-
-		starttable('MO3: Our Little friend:','pigwheel.png' , ['mylittlefriend', 'farm'])
-		  createbutton("mylittlefriend", 100, 'Are the Wheels attathed to the Pig?')
-      createbutton("farm", 100, 'Is the Pig completely in the Farm Area?')
+    starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
+      createbutton("shark", 40, 'Is the Tank and the Shark completely in the Left Box?')
+      createbutton("shark2", 60, 'Is the Tank and the Shark completely in the Right Box?')
+      createbuttonconflict('shark','shark2','')
     endtable()
 
-	  starttable('MO4: Zoologist:','zoologist.png' , ['zoologist'])
-	    createbutton("zoologist", 100 , 'Is the Zoologist completely in the Safety Area?')
+    starttable('MO3: Our Little Friend:','pigwheel.png' , ['ourlittlefriend', 'farm'])
+      createbutton("ourlittlefriend", 100, 'Are the Wheels attached to the Pig?')
+      createbutton("farm", 100, 'Is the Pig with Wheels completely in the Farm Area?')
     endtable()
 
-		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , ['dogandtrainer'])
-	   createbutton("dogandtrainer", 100 , 'Is the Dog and Trainer completely on the road?')
+    starttable('MO4: Zoologist:','zoologist.png' , ['zoologist'])
+      createbutton("zoologist", 100 , 'Is the Zoologist completely in the Safety Area?')
+    endtable()
+
+    starttable('MO5: Dog and Trainer:','dogandtrainer.png' , ['dogandtrainer'])
+      createbutton("dogandtrainer", 100 , 'Is the Dog and Trainer completely on the road?')
     endtable()
 
     starttable('MO6: Beehive and Honey:','beehiveandhoney.png' , ['beehive', 'honey'])
-	   createbutton("beehive", 100 , 'Has the honey been ejected?')
-     createbutton("honey", 100 , 'Is the Honey completely in the Safety Area?')
-      endtable()
-
-      
-endrow(mobile)
-startrow(mobile)
-
-
-
-
-      starttable('MO7: Bee:','bee.png' , ['bee'])
-     createbutton("bee", 100 , 'Is the Bee completely in the Safety Area?')
+      createbutton("beehive", 100 , 'Has the honey been ejected?')
+      createbutton("honey", 100 , 'Is the Honey completely in the Safety Area?')
     endtable()
 
+    endrow(mobile)
+    startrow(mobile)
 
-
+    starttable('MO7: Bee:','bee.png' , ['bee'])
+      createbutton("bee", 100 , 'Is the Bee completely in the Safety Area?')
+    endtable()
 
     starttable('MO8: The Panda Observation and Return:','pandaobservation.png' , ['pandaobservation'])
      createbutton("pandaobservation", 100 , 'Is the model completely unfolded?')
@@ -102,16 +93,17 @@ startrow(mobile)
     endtable()
 
     starttable('M11: Animal Conservation:','animalconservation.png', ['food'])
-     createrange("food", 100 , 0, 5, 0, 'How many Animals have been transfered with the other team?')
+     createrange("food", 100 , 0, 5, 0, 'How many Animals have been exchanged with the other team?')
     endtable()
 
     starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples','manuresamples2'])
-      createrange("manuresamples", 10 , 0, 12, 0, 'How many Manure Samples are in the box?')
-      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the field but not in the box?')
+      createrange("manuresamples", 10 , 0, 12, 10, 'How many Manure Samples are in the soil (boxed region near ramp) or with the referee?')
+      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the field but not in the soil region?')
     endtable()
 
-    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator'])
-     createrange("foodandrefrigerator", 100 , 0, 8,0, 'How many Food has been delivered to the Animals?')
+    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator', 'foodandrefrigerator2'])
+     createrange("foodandrefrigerator1", 100 , 0, 8, 0, 'How many Food items have been removed from the refrigerator?') 
+     createrange("foodandrefrigerator2", 100 , 0, 8, 0, 'How many Food items has been delivered to the matching Animals?') 
     endtable()
 
     starttable('M14: Milking Automation:','milkingautomation.png', ['milkingautomation'])
@@ -123,20 +115,7 @@ startrow(mobile)
     endtable()
 
 
-
-
-
-
-
-
-
-
-
 //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
-
-
-
-
 
 endrow(all_screen)
 
