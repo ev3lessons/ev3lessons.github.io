@@ -304,7 +304,7 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Monefour = 'Skill Challenges';
     $scope.Monesix = 'One-Page Guides';
     $scope.Mtwozero = 'Resources';
-    $scope.Mtwoone = 'Trash Trek Scorer';
+    $scope.Mtwoone = 'Animal Allies Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
     $scope.Mtwothree = 'Interactive Sketcher';
     $scope.Mtwofour = 'Challenges';
