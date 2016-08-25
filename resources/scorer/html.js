@@ -9,7 +9,7 @@ document.write('<tr>\
                   </tr>\
                   <tr>\
                     <td>\
-                      <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">\
+                      <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" style="text-align: center;">\
                         <label for="yes'+mission+'">Yes</label>\
                         <input  type="radio" onclick="recalc('+points+',\''+mission+'\')" name="'+mission+'" value="true" id="yes'+mission+'">\
                         <label for="no'+mission+'">No</label>\
@@ -28,7 +28,7 @@ document.write('<tr>\
               <table style="border: 1px solid black; border-collapse: collapse; " border="1">\
                 <tr>\
                   <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
-                  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">\
+                  <td width="300" style="font-size: 110%; text-align: center; background-color: green; color: white;">\
                     '+mission+'\
                     <i style="font-style: normal;" id="'+mission+'pts">0</i>\
                   </td>\
@@ -47,7 +47,7 @@ document.write('<tr>\
 </tr>\
                   <tr>\
                     <td width="200">\
-                      <input type="range" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+',"'+mission+'")\'>\
+                      <input type="range"  data-highlight="true" data-theme="b" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+',"'+mission+'")\'>\
                       <p id="'+mission+'Txt" style="color: red"></p>\
                     </td>\
                   </tr>')
@@ -60,30 +60,37 @@ document.write('<tr>\
 
 
 function startrow(width) {
-//		  if (screen.width < width) {
-//				     alert(screen.width)
-//				     alert(width)
+		  if (window.innerWidth > width) {
+				     //alert(screen.width)
+				     //alert(width)
 		  document.write('<td valign="top">')
-//}
+}
 		   }
 function endrow(width) {
-//if (screen.width < width) {
-//		   alert('activate')
+if (window.innerWidth < width) {
+		   //alert('activate')
 		   document.write('</td>')
-//}
+}
 		   }
 
-
+skip = 0
 function checkbuttonconflict(conflict,mission,priority) {
     if (priority == mission || priority == conflict) {
     if (document.getElementById('yes'+mission).checked == true && document.getElementById('yes'+conflict).checked == true) {
+//	if (skip == 0) {
+//	skip = 1
 	if (priority == conflict) {
-	setTimeout(function(){ document.getElementById('no'+mission).click()  }, 30);
+	setTimeout(function(){ $('#no'+mission).trigger('click');  }, 30);
+	//alert('click1')
 	}
 	if (priority == mission) {
-	setTimeout(function(){ document.getElementById('no'+conflict).click()  }, 30);
+	  setTimeout(function(){ $('#no'+conflict).trigger('click');  }, 30);
+	//ert('click')	
 	}
-    }
+//    } else {
+//skip = 0 
+//}
+}
     }
 }
 conflicts = []

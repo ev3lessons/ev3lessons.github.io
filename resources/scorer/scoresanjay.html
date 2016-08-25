@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
 <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
 <script src="jquery-1.11.3.min.js"></script>
 <script>
@@ -12,22 +13,40 @@ $(document).bind('mobileinit',function(){
 <script src="highcharts.js"></script>
 <script src="exporting.js"></script>
 <script src="angular.min.js"></script>
-
 <script src="scorer.js"></script>
 
-<script src="html.js"></script>
 
+<link rel="stylesheet" href="scorer.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+<h1>Animal Allies Scorer by EV3Lessons.com v0.01 pre-alpha</h1>
+<div data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+	<h1 id="allpoints">Points: 0</h1>
+</div>
+<script src="html.js"></script>
+<script>
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+</head>
+<body>
+<div id="tabs">
+
+<div id="tabs-1">
 <table>
   <tr>
+
     <script>
 
       mobile = 500
-      all_screen = 10000
+      all_screen = 0
 startrow(all_screen)
 
 
 		starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
-		  createbutton("camera", 100 ,'Is the Camera completely in the Saftey Area?')
+		  createbutton("camera", 100 ,'Is the Camera completely in the Safety Area?')
       createbutton("seal", 0 ,'Was the Seal ever moved from its starting position?')
       createbuttonconflict('camera','seal','seal')
     endtable()
@@ -44,7 +63,7 @@ startrow(all_screen)
     endtable()
 
 	  starttable('MO4: Zoologist:','zoologist.png' , ['zoologist'])
-	    createbutton("zoologist", 100 , 'Is the Zoologist completely in the Saftey Area?')
+	    createbutton("zoologist", 100 , 'Is the Zoologist completely in the Safety Area?')
     endtable()
 
 		starttable('MO5: Dog and Trainer:','dogandtrainer.png' , ['dogandtrainer'])
@@ -53,7 +72,7 @@ startrow(all_screen)
 
     starttable('MO6: Beehive and Honey:','beehiveandhoney.png' , ['beehive', 'honey'])
 	   createbutton("beehive", 100 , 'Has the honey been ejected?')
-     createbutton("honey", 100 , 'Is the Honey completely in the Saftey Area?')
+     createbutton("honey", 100 , 'Is the Honey completely in the Safety Area?')
       endtable()
 
       
@@ -64,7 +83,7 @@ startrow(mobile)
 
 
       starttable('MO7: Bee:','bee.png' , ['bee'])
-     createbutton("bee", 100 , 'Is the Bee completely in the Saftey Area?')
+     createbutton("bee", 100 , 'Is the Bee completely in the Safety Area?')
     endtable()
 
 
@@ -124,3 +143,20 @@ endrow(all_screen)
 </script>
 </tr>
 </table>
+</div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+   <div id="tabs-3">
+    <p>Lorem IpsumMorbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div data-role="header" data-position="fixed">
+ <ul>
+    <li><a href="#tabs-1">Scorer</a></li>
+    <li><a href="#tabs-2">Timers</a></li>
+    <li><a href="#tabs-3">Saves</a></li>
+  </ul>
+  </div>
+</div>
+</body>
+
