@@ -97,17 +97,17 @@ $(document).bind('mobileinit',function(){
     endtable()
 
     starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples','manuresamples2'])
-      createrange("manuresamples", 10 , 0, 12, 10, 'How many Manure Samples are in the soil (boxed region near ramp) or with the referee?')
-      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the field but not in the soil region?')
+      createrange("manuresamples", 10 , 0, 12, 10, 'How many Manure Samples are in barren field or with the corner referee storage?')
+      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the challenge mat, but not in the barren field?')
     endtable()
 
     starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator', 'foodandrefrigerator2'])
      createrange("foodandrefrigerator1", 100 , 0, 8, 0, 'How many Food items have been removed from the refrigerator?') 
-     createrange("foodandrefrigerator2", 100 , 0, 8, 0, 'How many Food items has been delivered to the matching Animals?') 
+     createrange("foodandrefrigerator2", 100 , 0, 8, 0, 'How many Food items have been delivered to the matching Animals?') 
     endtable()
 
     starttable('M14: Milking Automation:','milkingautomation.png', ['milkingautomation'])
-     createbutton("milkingautomation", 100 , 'Is only the milk ejected?')
+     createbutton("milkingautomation", 100 , 'Is only milk ejected? (No manure on challenge mat)')
     endtable()
 
     starttable('M15: Ramp:','ramp.png', ['ramp'])
