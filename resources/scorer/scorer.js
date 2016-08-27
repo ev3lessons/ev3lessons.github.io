@@ -1,6 +1,18 @@
-function recalc(points,mission){
+savepts = 0
+function recalc(points,mission,alt){
+    if (alt == 1 && points == 0) {
+	savepts = 1
+    } else if (alt == 1 && points != 0) {
+	savepts = points
+    } else if (alt > 1 && points != 0) {
+	savepts = alt
+    } else {
+	savepts = 0
+    }
     //var mission = 'hi'
     window[mission] = points
+    window[mission+'save'] = savepts
+
     //alert(window[mission])
 //    document.getElementById('MO1: Seal and Camera:pts').innerHTML = seal + camera
     counter = 0

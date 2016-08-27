@@ -13,7 +13,8 @@ $(document).bind('mobileinit',function(){
 <script src="exporting.js"></script>
 <script src="angular.min.js"></script>
 <script src="scorer.js"></script>
-
+    <script src="timers.js"></script>
+<script src="saver.js"></script>
 
 <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
@@ -23,7 +24,7 @@ $(document).bind('mobileinit',function(){
 
 
 <h1>Animal Allies Scorer (Guess the Missions version)</h1>
-<div data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+<div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
 	<h1 id="allpoints">Points: 0</h1>
 </div>
 <script src="html.js"></script>
@@ -101,7 +102,7 @@ $(document).bind('mobileinit',function(){
       createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the challenge mat, but not in the barren field?')
     endtable()
 
-    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator', 'foodandrefrigerator2'])
+    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator1', 'foodandrefrigerator2'])
      createrange("foodandrefrigerator1", 100 , 0, 8, 0, 'How many Food items have been removed from the refrigerator?') 
      createrange("foodandrefrigerator2", 100 , 0, 8, 0, 'How many Food items have been delivered to the matching Animals?') 
     endtable()
@@ -124,14 +125,62 @@ endrow(all_screen)
 </table>
 </div>
   <div id="tabs-2">
-    <p>coming soon</p>
+    <p><div class="ui-mini" id="Timer">
+	Timer:
+  <table style="border: 10px solid black; border-collapse: collapse;">
+    <tr style="border: 10px solid black; border-collapse: collapse;">
+      <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+        <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30<p>
+        </td>
+        <td style="border: 10px solid black; border-collapse: collapse;">
+          <button style="margin:0" onclick="CDtimer()">Start</button>
+        </td>
+      </tr>
+      <tr style="border: 10px solid black; border-collapse: collapse;">
+        <td style="border: 10px solid black; border-collapse: collapse;">
+          <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+        </td>
+      </tr>
+      <tr>
+        <td style="border: 10px solid black; border-collapse: collapse;">
+          <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Pause</button>
+        </td>
+      </tr>
+    </table>
+      </div>
+
+
+      <div class="ui-mini" id="Stopwatch">
+    Stopwatch:
+    <table style="border: 10px solid black; border-collapse: collapse;">
+      <tr style="border: 10px solid black; border-collapse: collapse;">
+        <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+          <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0</p></td>
+          <td style="border: 10px solid black; border-collapse: collapse;">
+            <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+          </tr>
+          <tr>
+            <td style="border: 10px solid black; border-collapse: collapse;">
+              <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+            </td>
+          </tr>
+          <tr>
+            <td style="border: 10px solid black; border-collapse: collapse;">
+              <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Pause</button>
+            </td>
+          </tr>
+        </table>
+</div>
+</p>
   </div>
    <div id="tabs-3">
-    <p>coming soon</p>
-  </div>
+    <input type="button" onclick="getvar();window.localStorage.DRAAscorer = store; alert('saved')" value="save score">
+    <br>
+       <input type="button" onclick="alert('loaded') ; data = window.localStorage.DRAAscorer; loadsave(String(data)); " value="load score">
+</div>
           <div data-role="navbar">
 
-	  <div data-role="header" data-position="fixed">
+	  <div data-tap-toggle="false" data-role="header" data-position="fixed">
 
  <ul>
     <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>

@@ -18,7 +18,8 @@ function sub() {
     }
 	
     // document.getElementById('countdownTime')
-CDtime.textContent = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseconds);
+//CDtime.textContent 
+document.getElementById('countdownTime').innerHTML = CDminutes + ":" + (CDseconds > 9 ? CDseconds : "0" + CDseconds);
 }
 
 function CDtimer() {
@@ -42,7 +43,8 @@ function add() {
     
 //    document.getElementById('stopwatchTime').textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds) + "." + SWtenths;
 
-    SWtime.textContent = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds) + "." + SWtenths;
+//    SWtime.textContent 
+document.getElementById('stopwatchTime').innerHTML = (SWminutes ? (SWminutes > 9 ? SWminutes : "0" + SWminutes) : "00") + ":" + (SWseconds > 9 ? SWseconds : "0" + SWseconds) + "." + SWtenths;
 
 }
 

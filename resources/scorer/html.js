@@ -1,7 +1,9 @@
 all_mission = []
 
 function createbutton(mission,points,description){
-window[mission] = 0
+    window[mission] = 0
+            window[mission+'save'] = 0
+
 document.write('<tr>\
   <td width="200" style="font-size: 100%; background-color: sky;">\
                       '+description+'\
@@ -11,9 +13,9 @@ document.write('<tr>\
                     <td>\
                       <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" style="text-align: center;">\
                         <label for="yes'+mission+'">Yes</label>\
-                        <input  type="radio" onclick="recalc('+points+',\''+mission+'\')" name="'+mission+'" value="true" id="yes'+mission+'">\
+                        <input  type="radio" onclick="recalc('+points+',\''+mission+'\',1)" name="'+mission+'" value="true" id="yes'+mission+'">\
                         <label for="no'+mission+'">No</label>\
-                        <input  type="radio" onclick="recalc(0,\''+mission+'\')" name="'+mission+'"  value="false" id="no'+mission+'" checked>\
+<input  type="radio" onclick="recalc(0,\''+mission+'\', 0)" name="'+mission+'"  value="false" id="no'+mission+'" checked>\
                       </fieldset>\
                     </td>\
                   </tr>')
@@ -41,13 +43,15 @@ document.write('</tr></td></table>')
 
 function createrange(mission, increment, min, max, start, description) {
     window[mission] = 0
+        window[mission+'save'] = 0
+
 document.write('<tr>\
                   <td width="200" style="font-size: 100%; background-color: sky;">\
                     '+description+'	  </td>\
 </tr>\
                   <tr>\
                     <td width="200">\
-                      <input type="range"  data-highlight="true" data-theme="b" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+',"'+mission+'")\'>\
+                      <input type="range"  data-highlight="true" data-theme="b" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange=\'recalc(this.value*'+increment+',"'+mission+'",this.value)\'>\
                       <p id="'+mission+'Txt" style="color: red"></p>\
                     </td>\
                   </tr>')
