@@ -80,17 +80,17 @@ function endrow(width) {
 
 skip = 0
 
-function checkbuttonconflict(conflict,mission,priority) {
-  if (priority == mission || priority == conflict) {
-    if (document.getElementById('yes'+mission).checked == true && document.getElementById('yes'+conflict).checked == true) {
+function checkbuttonconflict(mission1,mission2,priority) {
+  if (priority == mission1 || priority == mission2) {
+    if (document.getElementById('yes'+mission1).checked == true && document.getElementById('yes'+mission2).checked == true) {
       //	if (skip == 0) {
       //	skip = 1
-      if (priority != mission) {
-        setTimeout(function(){ $('#no'+mission).trigger('click');  }, 0);
+      if (priority != mission1) {
+        setTimeout(function(){ $('#no'+mission1).trigger('click');  }, 0);
         //	alert('click1')
       }
-      if (priority != conflict) {
-                setTimeout(function(){ $('#no'+conflict).trigger('click');  }, 0);
+      if (priority != mission2) {
+        setTimeout(function(){ $('#no'+mission2).trigger('click');  }, 0);
         //alert('click3');
       }
       //    } else {
