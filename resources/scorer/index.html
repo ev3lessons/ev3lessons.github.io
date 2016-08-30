@@ -70,7 +70,7 @@ $(document).bind('mobileinit',function(){
 
             starttable('M06: Milking Automation:','milkingautomation.png', ['milkingautomation','milkingautomation2'])
             createbutton("milkingautomation", 15 , 'Has Milk and Manure rolled out?')
-            createbutton("milkingautomation2", 20 , 'Has the all Milk rolled out but not the Manure?')
+            createbutton("milkingautomation2", 20 , 'Has all the Milk rolled out but not the Manure?')
             createbuttonconflict('milkingautomation','milkingautomation2','milkingautomation2')
             endtable()
 
@@ -111,12 +111,15 @@ $(document).bind('mobileinit',function(){
             createbutton("milk", 1 , 'Are three Milk completely in Base?')
             endtable()
 
-            starttable('M14: Milk on Ramp:','ramp.png', ['ramp','ramp2','ramp3'])
-            createbutton("ramp", 2 , 'Are all three Milk completely supported by the Ramp?')
+            starttable('M14: Milk on Ramp:','ramp.png', ['ramp1','ramp2','ramp3'])
+            createbutton("ramp1", 2 , 'Are all three Milk completely supported by the Ramp?')
             createbutton("ramp2", 3 , 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp?')
             createbutton("ramp3", 4 , 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp AND they are all standing?')
-            createbuttonconflict('ramp','ramp3','ramp3')
-            createbuttonconflict('ramp','ramp2','ramp2')
+            createbuttonconflict('milk','ramp1','ramp1')
+            createbuttonconflict('milk','ramp2','ramp2')
+            createbuttonconflict('milk','ramp3','ramp3')
+            createbuttonconflict('ramp1','ramp2','ramp2')
+            createbuttonconflict('ramp1','ramp3','ramp3')
             createbuttonconflict('ramp2','ramp3','ramp3')
             endtable()
 
