@@ -83,13 +83,13 @@ function checkbuttonconflict(conflict,mission,priority) {
     if (document.getElementById('yes'+mission).checked == true && document.getElementById('yes'+conflict).checked == true) {
 //	if (skip == 0) {
 //	skip = 1
-	if (priority == conflict) {
+	if (priority != mission) {
 	setTimeout(function(){ $('#no'+mission).trigger('click');  }, 30);
-	//alert('click1')
+//	alert('click1')
 	}
-	if (priority == mission) {
+	if (priority != conflict) {
 	  setTimeout(function(){ $('#no'+conflict).trigger('click');  }, 30);
-	//ert('click')	
+//	alert('click')	
 	}
 //    } else {
 //skip = 0 
