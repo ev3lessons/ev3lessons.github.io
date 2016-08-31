@@ -1,24 +1,24 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <head>
-<script src="jquery-1.11.3.min.js"></script>
-<script>
-$(document).bind('mobileinit',function(){
-  $.mobile.changePage.defaults.changeHash = false;
-  $.mobile.hashListeningEnabled = false;
-  $.mobile.pushStateEnabled = false;
-});
-</script>
-<script src="jquery.mobile-1.4.5.min.js"></script>
-<script src="highcharts.js"></script>
-<script src="exporting.js"></script>
-<script src="angular.min.js"></script>
-<script src="scorer.js"></script>
-<script src="timers.js"></script>
-<script src="saver.js"></script>
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+  </script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="exporting.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="scorer.js"></script>
+  <script src="timers.js"></script>
+  <script src="saver.js"></script>
 
-<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
-<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="scorer.min.css" />
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="scorer.min.css" />
 
 
 
@@ -30,7 +30,7 @@ $(document).bind('mobileinit',function(){
   <script src="html.js"></script>
 
 </head>
-<body>
+<body onload="recalc(0,'shark',1)">
   <div role="main" class="ui-content">
 
     <div data-role="tabs">
@@ -41,6 +41,8 @@ $(document).bind('mobileinit',function(){
             <script>
 
             mobile = 500
+            mobile1 = 1000
+
             all_screen = 0
             startrow(all_screen)
 
@@ -48,7 +50,9 @@ $(document).bind('mobileinit',function(){
             createbutton("shark", 7, 'Is the Tank and the Shark completely in Target 1 (Left Box?)')
             createbutton("shark2", 10, 'Is the Tank and the Shark completely in Target 2 (Right Box?)')
             createbutton("shark3", 20, 'Is the Shark only touching the tank floor?')
-            createbuttonconflict('shark','shark2','shark2')
+            createbuttonconflict('shark','shark2','')
+            createbuttonenables('shark','shark3')
+            createbuttonenables('shark2','shark3')
             endtable()
 
             starttable('M02: Service Dog Action:','servicedogsmall.png', ['servicedog'])
@@ -71,8 +75,12 @@ $(document).bind('mobileinit',function(){
             starttable('M06: Milking Automation:','milkingautomation.png', ['milkingautomation','milkingautomation2'])
             createbutton("milkingautomation", 15 , 'Has Milk and Manure rolled out?')
             createbutton("milkingautomation2", 20 , 'Has all the Milk rolled out but not the Manure?')
-            createbuttonconflict('milkingautomation','milkingautomation2','milkingautomation2')
+            createbuttonconflict('milkingautomation','milkingautomation2','')
             endtable()
+
+            //            endrow(mobile)
+            //            startrow(mobile)
+            breakrow(mobile1,100000)
 
             starttable('MO7: Panda Release:','pandaobservation.png' , ['pandaobservation'])
             createbutton("pandaobservation", 10 , 'Is the slider fully open clockwise?')
@@ -82,8 +90,7 @@ $(document).bind('mobileinit',function(){
             createbutton("camera", 15 ,'Is the Camera completely in Base?')
             endtable()
 
-            endrow(mobile)
-            startrow(mobile)
+            breakrow(mobile,mobile1)
 
             starttable('MO9: Training and Research:','zoologist.png' , ['dogandtrainer', 'zoologist','manure'])
             createbutton("dogandtrainer", 12 , 'Are the Dog and Trainer completely in the Training and Research Area?')
@@ -94,14 +101,18 @@ $(document).bind('mobileinit',function(){
             starttable('M10: Beekeeping:','beehiveandhoney.png' , ['beehive', 'honey'])
             createbutton("beehive", 12 , 'Is the Bee on the Beehive and there is no Honey in the Beehive?')
             createbutton("honey", 15 , 'Is the Bee on the Beehive and Honey is in base?')
-            createbuttonconflict('beehive','honey','honey')
+            createbuttonconflict('beehive','honey','')
             endtable()
 
             starttable('M11: Prosthesis:','pigwheel.png' , ['ourlittlefriend', 'farm'])
             createbutton("ourlittlefriend", 9, 'Is the Prosthesis fitted to the Pet AND not held by the Referee?')
             createbutton("farm", 15, 'Is the Prosthesis fitted to the Pet AND the Pet is completely in its Farm Target?')
-            createbuttonconflict('ourlittlefriend','farm','farm')
+            createbuttonconflict('ourlittlefriend','farm','')
             endtable()
+
+            //            endrow(mobile1)
+            //            startrow(mobile1)
+            breakrow(mobile1,100000)
 
             starttable('M12: Seal:','seal.png' , ['seal'])
             createbutton("seal", 1 ,'Is the Seal completely in Base and not broken?')
@@ -115,12 +126,12 @@ $(document).bind('mobileinit',function(){
             createbutton("ramp1", 2 , 'Are all three Milk completely supported by the Ramp?')
             createbutton("ramp2", 3 , 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp?')
             createbutton("ramp3", 4 , 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp AND they are all standing?')
-            createbuttonconflict('milk','ramp1','ramp1')
-            createbuttonconflict('milk','ramp2','ramp2')
-            createbuttonconflict('milk','ramp3','ramp3')
-            createbuttonconflict('ramp1','ramp2','ramp2')
-            createbuttonconflict('ramp1','ramp3','ramp3')
-            createbuttonconflict('ramp2','ramp3','ramp3')
+            createbuttonconflict('milk','ramp1','')
+            createbuttonconflict('milk','ramp2','')
+            createbuttonconflict('milk','ramp3','')
+            createbuttonconflict('ramp1','ramp2','')
+            createbuttonconflict('ramp1','ramp3','')
+            createbuttonconflict('ramp2','ramp3','')
             endtable()
 
             starttable('M15: All Samples:','manuresamples.png', ['allsamples'])
@@ -135,6 +146,8 @@ $(document).bind('mobileinit',function(){
             //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
 
             endrow(all_screen)
+
+
 
             </script>
           </tr>
