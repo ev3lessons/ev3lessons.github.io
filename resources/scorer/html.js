@@ -12,17 +12,17 @@ function createbutton(mission,points,description){
   <tr>\
   <td>\
   <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" style="text-align: center;">\
-  <label for="yes'+mission+'">Yes</label>\
-  <input  type="radio" onclick="recalc('+points+',\''+mission+'\',1)" name="'+mission+'" value="true" id="yes'+mission+'" checked=false>\
-  <label for="no'+mission+'">No</label>\
-  <input  type="radio" onclick="recalc(0,\''+mission+'\', 0)" name="'+mission+'"  value="false" id="no'+mission+'" checked="true">\
+  <label for="yes'+mission+'">{{Yes}}</label>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points+',\''+mission+'\',1)" name="'+mission+'" value="true" id="yes'+mission+'" checked=false>\
+  <label for="no'+mission+'">{{No}}</label>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc(0,\''+mission+'\', 0)" name="'+mission+'"  value="false" id="no'+mission+'" checked="true">\
   </fieldset>\
   </td>\
   </tr>')
 }
 
 
-function starttable(mission,image,children){
+function starttable(mission, title, image, children){
   x = 0
   element = 1 + 2*children.length
   all_mission = all_mission.concat([[mission,children]])
@@ -31,7 +31,7 @@ function starttable(mission,image,children){
   <tr>\
   <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
   <td width="300" style="font-size: 110%; text-align: center; background-color: green; color: white;">\
-  '+mission+'\
+  '+mission+" - "+title+": "+'\
   <i style="font-style: normal;" id="'+mission+'pts">0</i>\
   </td>\
   </tr>\
@@ -84,53 +84,4 @@ function breakrow(minwidth, maxwidth) {
     document.write('<td valign="top">')
   } else {
   }
-}
-
-
-skip = 0
-
-function checkbuttonconflict(mission1,mission2,priority) {
-  //if (priority == mission1 || priority == mission2) {
-    if (document.getElementById('yes'+mission1).checked == true && document.getElementById('yes'+mission2).checked == true) {
-      //	if (skip == 0) {
-      //	skip = 1
-      if (priority != mission1) {
-//        alert('click1'+mission1+mission2+priority)
-        document.getElementById('yes'+mission1).checked = false
-        $('#no'+mission1).trigger('click');
-//        $('#no'+mission1).button().button("refresh");
-//        $('#yes'+mission1).button().button("refresh");
-//        setTimeout(function(){ $('#no'+mission1).trigger('click');  }, 3000);
-        //	alert('click1')
-      }
-      if (priority != mission2) {
-//        alert('click3'+mission1+mission2+priority);
-        document.getElementById('yes'+mission2).checked = false
-        $('#no'+mission2).trigger('click');
-//        setTimeout(function(){ $('#no'+mission2).trigger('click');  }, 3000);
-        //alert('click3');
-      }
-      //    } else {
-      //skip = 0
-      //}
-      $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
-    }
-  //}
-}
-
-conflicts = []
-function createbuttonconflict(conflict,mission,priority){
-  conflicts = conflicts.concat([[conflict,mission,priority]])
-}
-
-enables = []
-function createbuttonenables(mission,enabled){
-  enables = enables.concat([[mission,enabled]])
-}
-
-function checkbuttonenables(mission,enabled) {
-    if (document.getElementById('yes'+mission).checked == true) {
-      $('#no'+enabled).checkboxradio('enable');
-      $('#yes'+enabled).checkboxradio('enable');
-    }
 }
