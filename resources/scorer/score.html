@@ -55,7 +55,7 @@
 
   <div ng-app="MenuApp" ng-controller="MenuCtrl">
     <h1>{{Title}}
-    <i style="font-size:12px">(<a href="http://ev3lessons.com/resources/scorer/score.html#pt-br" onclick="setTimeout(function(){window.location.reload(true);},100)">Portugues</a> | <a href="http://ev3lessons.com/resources/scorer/score.html#en-us" onclick="setTimeout(function(){window.location.reload(true);},100)>English</a>)</i>
+    <i style="font-size:12px">(<a href="#pt-br" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)">Portugues</a> | <a href="#en-us" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)">English</a>)</i>
      <i style="font-size:12px">by <a href="http://ev3lessons.com/">EV3Lessons.com</a></i></h1>
     <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
       <h1 id="allpoints">{{Points}}: 0</h1>
