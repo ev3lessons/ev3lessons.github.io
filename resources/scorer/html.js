@@ -21,19 +21,27 @@ function createbutton(mission,points,description){
   </tr>')
 }
 
+function createcomment(description){
+  document.write('<tr>\
+  <td width="200" style="font-size: 100%; color: #990000">\
+  '+description+'\
+  </td>\
+  </tr>')
+}
 
-function starttable(mission, title, image, children){
+
+function starttable(mission, title, image, children, extrarows){
   x = 0
-  element = 1 + 2*children.length
+  element = 1 + 2*children.length + extrarows
   all_mission = all_mission.concat([[mission,children]])
   document.write('\
   <table style="border: 1px solid black; border-collapse: collapse; " border="1">\
   <tr>\
-  <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
-  <td width="300" style="font-size: 110%; text-align: center; background-color: green; color: white;">\
+    <td rowspan="'+element+'"> <img src="missions/'+image+'" width="80"></td>\
+    <td width="300" style="font-size: 110%; text-align: center; background-color: green; color: white;">\
   '+mission+" - "+title+": "+'\
-  <i style="font-style: normal;" id="'+mission+'pts">0</i>\
-  </td>\
+      <i style="font-style: normal;" id="'+mission+'pts">0</i>\
+    </td>\
   </tr>\
   ')
 }
