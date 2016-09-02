@@ -1,4 +1,4 @@
-
+allmission = 0
 
 function checkbuttonconflict(mission1,mission2,priority) {
   if (document.getElementById('yes'+mission1).checked == true && document.getElementById('yes'+mission2).checked == true) {
