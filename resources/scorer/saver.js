@@ -36,3 +36,14 @@ function loadsave(save) {
 
     }
 }
+function saver() {
+    getvar();
+    window.localStorage.DRAAscorer = window.localStorage.DRAAscorer + '/' + store
+    alert('saved');
+}
+function loader(save) {
+    alert('loaded');
+    data = window.localStorage.DRAAscorer.split('/')[save];
+    //alert(data)
+    loadsave(String(data));
+}
