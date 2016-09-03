@@ -270,10 +270,19 @@
           <div class="ui-block-b" style="width: 170">
 
             <div data-role="stepper" data-direction="vertical">
+	      <style>
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
+input[type=number] {
+    -moz-appearance:textfield;
+}		</style>
               <script>
               start = 1; maximum = window.localStorage.DRAAscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
-              document.write(' <input data-role="spinbox"  type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
+              document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
 
               </script>
             </div>
