@@ -1,5 +1,15 @@
 allmission = 0
 
+conflicts = []
+function createbuttonconflict(conflict,mission,priority){
+  conflicts = conflicts.concat([[conflict,mission,priority]])
+}
+
+enables = []
+function createbuttonenables(mission,enabled){
+  enables = enables.concat([[mission,enabled]])
+}
+
 function checkbuttonconflict(mission1,mission2,priority) {
   if (document.getElementById('yes'+mission1).checked == true && document.getElementById('yes'+mission2).checked == true) {
     if (priority != mission1) {
@@ -12,16 +22,6 @@ function checkbuttonconflict(mission1,mission2,priority) {
     }
     $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
   }
-}
-
-conflicts = []
-function createbuttonconflict(conflict,mission,priority){
-  conflicts = conflicts.concat([[conflict,mission,priority]])
-}
-
-enables = []
-function createbuttonenables(mission,enabled){
-  enables = enables.concat([[mission,enabled]])
 }
 
 function checkbuttonenables(mission,enabled) {
@@ -45,8 +45,8 @@ function check_missions(mission) {
   counter = 0
   while (counter < enables.length){
     thismission = enables[counter][1]
-      $('#no'+thismission).checkboxradio('disable');
-      $('#yes'+thismission).checkboxradio('disable');
+    $('#no'+thismission).checkboxradio('disable');
+    $('#yes'+thismission).checkboxradio('disable');
     counter = counter + 1
   }
   counter = 0
@@ -61,13 +61,9 @@ function check_missions(mission) {
       document.getElementById('yes'+thismission).checked = false
       document.getElementById('no'+thismission).checked = true
       recalc(0,thismission,0)
-      // $('yes'+thismission).checkboxradio("refresh");
-      // $('no'+thismission).checkboxradio("refresh");
     }
     counter = counter + 1
   }
-  $('#noallsamples').checkboxradio('disable');
-  $('#yesallsamples').checkboxradio('disable');
 
   $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
 }
@@ -90,13 +86,11 @@ function recalc(points,mission,alt){
       points=40;
       document.getElementById('noallsamples').checked = false
       document.getElementById('yesallsamples').checked = true
-      // $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
-      $('#noallsamples').checkboxradio("refresh");
+        $('#noallsamples').checkboxradio("refresh");
       $('#yesallsamples').checkboxradio("refresh");
     } else {
       document.getElementById('yesallsamples').checked = false
       document.getElementById('noallsamples').checked = true
-      // $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
       $('#yesallsamples').checkboxradio("refresh");
       $('#noallsamples').checkboxradio("refresh");
     }
@@ -111,17 +105,12 @@ function recalc(points,mission,alt){
     thismission = 0
     while (counter1 < all_mission[counter][1].length){
       thismission = window[all_mission[counter][1][counter1]] + thismission
-      //alert(thismission)
       counter1 = counter1 + 1
-      //		alert(allmission)
     }
     allmission = allmission + thismission
     document.getElementById(all_mission[counter][0]+"pts").innerHTML = thismission
     counter = counter+1
   }
 
-  document.getElementById('allpoints').innerHTML = "Points: "+ allmission
-  $('#noallsamples').checkboxradio('disable');
-  $('#yesallsamples').checkboxradio('disable');
-
+  document.getElementById('allpoints').innerHTML = "Points: "+ allmission  
 }
