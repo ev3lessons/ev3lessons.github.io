@@ -90,12 +90,16 @@ function recalc(points,mission,alt){
       // $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
       $('#noallsamples').checkboxradio("refresh");
       $('#yesallsamples').checkboxradio("refresh");
+      $('#noallsamples').checkboxradio('disable');
+      $('#yesallsamples').checkboxradio('disable');
     } else {
       document.getElementById('yesallsamples').checked = false
       document.getElementById('noallsamples').checked = true
       // $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
       $('#yesallsamples').checkboxradio("refresh");
       $('#noallsamples').checkboxradio("refresh");
+      $('#noallsamples').checkboxradio('disable');
+      $('#yesallsamples').checkboxradio('disable');
     }
   }
   window[mission] = points
