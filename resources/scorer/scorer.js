@@ -66,6 +66,9 @@ function check_missions(mission) {
     }
     counter = counter + 1
   }
+  $('#noallsamples').checkboxradio('disable');
+  $('#yesallsamples').checkboxradio('disable');
+
   $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
 }
 
