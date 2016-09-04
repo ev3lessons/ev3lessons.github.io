@@ -357,6 +357,7 @@ loadsaves(); drawBasic();
 </body>
 <script>
 window.onload = function() {
+	check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
   var fileInput = document.getElementById('fileInput');
 
   fileInput.addEventListener('change', function(e) {
