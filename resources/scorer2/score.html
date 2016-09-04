@@ -1,0 +1,407 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta http-equiv="refresh" content="0; url=index.html" />
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+
+  if (window.location.hash) {
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
+    if (window.location.hash == "#br") {
+      window.location.hash = "#pt-br";
+      setTimeout(function(){location.reload(true);},100);
+    }
+  } else {
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
+  }
+  var page = window.location.href.split("#")[0];
+  var enus = ''+ page +'#en-us';
+  var es = ''+ page +'#es';
+  var nl = ''+ page +'#nl';
+  var ar = ''+ page +'#ar';
+  var ptbr = ''+ page +'#pt-br';
+  var el  = ''+ page +'#el';
+  var fr  = ''+ page +'#fr';
+  var ct  = ''+ page +'#ct';
+  var he  = ''+ page +'#he';
+  // var page = window.location.href.split("#")[0];
+  // alert (page);
+  // var href = window.location.href;
+  // alert(href);
+
+
+  </script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="exporting.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="scorer.js"></script>
+  <script src="timers.js"></script>
+  <script src="saver.js"></script>
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="scorer.min.css" />
+
+
+
+  <div ng-app="MenuApp" ng-controller="MenuCtrl">
+    <h1>{{Title}}
+      <i style="font-size:12px">(<a href="#pt-br" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)">Portugues</a> | <a href="#en-us" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)">English</a>)</i>
+      <i style="font-size:12px">by <a href="http://ev3lessons.com" data-ajax="false">EV3Lessons.com</a></i></h1>
+      <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+        <h1 id="allpoints">{{Points}}: 0</h1>
+      </div>
+      <script src="html.js"></script>
+
+    </head>
+    <body onload="check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');
+    $('#yesallsamples').checkboxradio('disable');">
+    <div role="main" class="ui-content">
+
+      <div data-role="tabs">
+
+        <div id="tabs-1">
+          <table>
+            <tr>
+              <script>
+
+              mobile = 500
+              mobile1 = 1000
+
+              all_screen = 0
+              startrow(all_screen)
+
+              starttable('M01', '{{M01}}','sharktank.png' , ['shark','shark2','shark3'], 1)
+              createbutton("shark", 7, '{{M01a}}')
+              createbutton("shark2", 10, '{{M01b}}')
+              createbutton("shark3", 20, '{{M01c}}')
+              createbuttonconflict('shark','shark2','')
+              createbuttonenables('shark','shark3')
+              createbuttonenables('shark2','shark3')
+              createcomment('{{M01d}}')
+              endtable()
+
+              starttable('M02', '{{M02}}','servicedogsmall.png', ['servicedog'], 1)
+              createbutton("servicedog", 15 , '{{M02a}}')
+              createcomment('{{M02b}}')
+              endtable()
+
+              starttable('M03', '{{M03}}','animalconservation.png', ['pairs'], 1)
+              createrange("pairs", 20 , 0, 5, 0, '{{M03a}}')
+              createcomment('{{M03b}}')
+              endtable()
+
+              starttable('M04', '{{M04}}','refrigerator.png', ['food'], 1)
+              createrange("food", 10 , 0, 8, 0, '{{M04a}}')
+              createcomment('{{M04b}}')
+              endtable()
+
+              starttable('M05', '{{M05}}','biomimicrywall.png' , ['biomimicrywall','biomimicrywall2'], 1)
+              createbutton("biomimicrywall", 15 , '{{M05a}}')
+              createbutton("biomimicrywall2", 32 , '{{M05b}}')
+              createcomment('{{M05c}}')
+              endtable()
+
+              breakrow(mobile1,100000)
+
+              starttable('M06', '{{M06}}','milkingautomation.png', ['milkingautomation','milkingautomation2'], 1)
+              createbutton("milkingautomation", 15 , '{{M06a}}')
+              createbutton("milkingautomation2", 20 , '{{M06b}}')
+              createbuttonconflict('milkingautomation','milkingautomation2','')
+              createcomment('{{M06c}}')
+              endtable()
+
+              //            endrow(mobile)
+              //            startrow(mobile)
+
+              starttable('M07', '{{M07}}','pandaobservation.png' , ['pandaobservation'], 0)
+              createbutton("pandaobservation", 10 , '{{M07a}}')
+              endtable()
+
+              starttable('M08', '{{M08}}','seal.png' , ['camera'], 0)
+              createbutton("camera", 15 ,'{{M08a}}')
+              endtable()
+
+              breakrow(mobile,mobile1)
+
+              starttable('M09', '{{M09}}','zoologist.png' , ['dogandtrainer', 'zoologist','manure'], 1)
+              createbutton("dogandtrainer", 12 , '{{M09a}}')
+              createbutton("zoologist", 15 , '{{M09b}}')
+              createrange("manure", 5 , 0, 7, 0, '{{M09c}}')
+              createcomment('{{M09d}}')
+              endtable()
+
+              starttable('M10', '{{M10}}','beehiveandhoney.png' , ['beehive', 'honey'], 0)
+              createbutton("beehive", 12 , '{{M10a}}')
+              createbutton("honey", 15 , '{{M10b}}')
+              createbuttonconflict('beehive','honey','')
+              endtable()
+
+              breakrow(mobile1,100000)
+
+              starttable('M11', '{{M11}}','pigwheel.png' , ['ourlittlefriend', 'farm'], 0)
+              createbutton("ourlittlefriend", 9, '{{M11a}}')
+              createbutton("farm", 15, '{{M11b}}')
+              createbuttonconflict('ourlittlefriend','farm','')
+              endtable()
+
+              //            endrow(mobile1)
+              //            startrow(mobile1)
+
+              starttable('M12', '{{M12}}','seal.png' , ['seal'], 0)
+              createbutton("seal", 1 ,'{{M12a}}')
+              endtable()
+
+              starttable('M13', '{{M13}}','milk.png', ['milk'], 0)
+              createbutton("milk", 1 , '{{M13a}}')
+              endtable()
+
+              starttable('M14', '{{M14}}','ramp.png', ['ramp1','ramp2','ramp3'], 0)
+              createbutton("ramp1", 2 , '{{M14a}}')
+              createbutton("ramp2", 3 , '{{M14b}}')
+              createbutton("ramp3", 4 , '{{M14c}}')
+              createbuttonconflict('milk','ramp1','')
+              createbuttonconflict('milk','ramp2','')
+              createbuttonconflict('milk','ramp3','')
+              createbuttonconflict('ramp1','ramp2','')
+              createbuttonconflict('ramp1','ramp3','')
+              createbuttonconflict('ramp2','ramp3','')
+              endtable()
+
+              starttable('M15', '{{M15}}','manuresamples.png', ['allsamples'], 0)
+              createbutton("allsamples", 5 , '{{M15a}}')
+              endtable()
+
+              starttable('P','{{Penalty}}','manuresamples.png', ['penalty'], 0)
+              createrange("penalty", -6 , 0, 5, 0, '{{Penaltya}}')
+              endtable()
+
+
+              //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+
+              endrow(all_screen)
+
+
+
+              </script>
+            </tr>
+          </table>
+        </div>
+        <div id="tabs-2">
+          <p>
+            <div class="ui-mini" id="Timer">
+              Timer:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                    <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="CDtimer()">Start</button>
+                  </td>
+                </tr>
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Pause</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+
+            <div class="ui-mini" id="Stopwatch">
+              Stopwatch:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                    <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Pause</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </p>
+        </div>
+        <div id="tabs-3">
+          <input type="button" onclick="saver()" value="save score">
+          <br>
+	  <script>document.write('<input type="slider" id="saveid" max="'+window.localStorage.DRAAscorer.split('/').length+'" min="0" step="1">')</script>
+          <input type="button" onclick="loader(document.getElementById('saveid'))" value="load score">
+        </div>
+        <div data-role="navbar">
+
+          <div data-tap-toggle="false" data-role="header" data-position="fixed">
+
+            <ul>
+              <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+              <li><a href="#tabs-2">{{Timers}}</a></li>
+              <li><a href="#tabs-3">{{Saves}}</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+  var menuApp = angular.module("MenuApp", []);
+  if (language == 'pt-br') {
+    menuApp.controller("MenuCtrl", function($scope) {
+
+      $scope.Yes = 'Sim';
+      $scope.No = 'Não';
+      $scope.Title = 'Pontuador do Animal Allies (v1.1)';
+      $scope.Timers = 'Cronômetros';
+      $scope.Saves = 'Salvos';
+      $scope.Points = 'Pontos';
+
+      $scope.M01 = 'TRANSPORTE DE TUBARÃO';
+      $scope.M01a = 'O Tanque e Tubarão estão completamente no Alvo 1 (retângulo à esquerda?)';
+      $scope.M01b = 'O Tanque e Tubarão estão completamente no Alvo 2 (retângulo à direita?)';
+      $scope.M01c = 'O Tubarão está tocando apenas o fundo do tanque e nenhuma parede?';
+
+      $scope.M02 = 'AÇÃO DO CÃO-GUIA';
+      $scope.M02a = 'A Cerca de Proteção está abaixada e o robô cruzou-a completamente do Oeste?';
+
+      $scope.M03 = 'CONSERVAÇÃO DOS ANIMAIS';
+      $scope.M03a = 'Quantos animais idênticos estão completamente no mesmo lado da mesa?';
+      $scope.M04 = 'ALIMENTAÇÃO';
+      $scope.M04a = 'Quantas peças de Comida combinadas estão completamente na área alvo?';
+      $scope.M05 = 'BIOMIMÉTICA';
+      $scope.M05a = 'A Parede de Biomimética suporta todo o peso do Lagarto Branco?';
+      $scope.M05b = 'A Parede de Biomimética suporta todo o peso do robô?';
+      $scope.M06 = 'AUTOMAÇÃO DE ORDENHA';
+      $scope.M06a = 'O Leite e Estrume rolaram todos para fora?';
+      $scope.M06b = 'Todo Leite rolou para fora, mas nenhum Estrume?';
+      $scope.M07 = 'LIBERTAÇÃO DO PANDA';
+      $scope.M07a = 'A alavanca está completamente aberta no sentido horário?';
+      $scope.M08 = 'RECUPERAÇÃO DA CÂMERA';
+      $scope.M08a = 'A Câmera está completamente na Base?';
+      $scope.M09 = 'TREINAMENTO E PESQUISA';
+      $scope.M09a = 'O Cão e o Treinador estão completamente na Área de Treinamento e Pesquisa?';
+      $scope.M09b = 'O Zoólogo está completamente na Área de Treinamento e Pesquisa?';
+      $scope.M09c = 'Quantas Amostras de Estrume estão completamente na Área de Treinamento e Pesquisa?';
+      $scope.M10 = 'APICULTURA';
+      $scope.M10a = 'A Abelha está na Colmeia e não há Mel na mesma?';
+      $scope.M10b = 'A Abelha está na Colmeia e o Mel está completamente na Base?';
+      $scope.M11 = 'PRÓTESE';
+      $scope.M11a = 'A Prótese está ajustada no Animal de Estimação E não está segurada pelo Juiz?';
+      $scope.M11b = 'A Prótese está ajustada no Animal de Estimação E o mesmo está completamente na sua Fazenda?';
+      $scope.M12 = 'FOCA NA BASE';
+      $scope.M12a = 'A Foca está completamente na Base e não está quebrada?';
+      $scope.M13 = 'LEITE NA BASE';
+      $scope.M13a = 'Todos os três Leites estão completamente na Base?';
+      $scope.M14 = 'LEITE NA RAMPA';
+      $scope.M14a = 'Todos os três Leites estão completamente apoiados pela Rampa?';
+      $scope.M14b = 'Todos os três Leites estão completamente apoiados pela Rampa E são as únicas coisas apoiadas pela Rampa?';
+      $scope.M14c = 'Todos os três Leites estão completamente apoiados pela Rampa E são as únicas coisas apoiadas pela Rampa E estão todos de pé?';
+      $scope.M15 = 'TODAS AS AMOSTRAS';
+      $scope.M15a = 'Todas as sete Amostras de Estrume estão completamente na Área de Treinamento e Pesquisa?';
+      $scope.Penalty = 'PENALIDADES';
+      $scope.Penaltya = 'Quantas Amostras de Estrume estão no triângulo branco?';
+    });
+
+  } else {
+
+    menuApp.controller("MenuCtrl", function($scope) {
+
+      $scope.Yes = 'Yes';
+      $scope.No = 'No';
+      $scope.Title = 'Animal Allies Scorer (v1.1)';
+      $scope.Timers = 'Timers';
+      $scope.Saves = 'Saves';
+      $scope.Points = 'Points';
+
+      $scope.M01 = 'Shark Shipment';
+      $scope.M01a = 'Is the Tank and the Shark completely in Target 1 (Left Box?)';
+      $scope.M01b = 'Is the Tank and the Shark completely in Target 2 (Right Box?)';
+      $scope.M01c = 'Is the Shark only touching the tank floor?';
+      $scope.M01d = 'Note: After Launch, nothing is allowed to touch the Shark except the Tank.';
+      $scope.M02 = 'Service Dog Action';
+      $scope.M02a = 'Is the Warning Fence down?';
+      $scope.M02b = 'Note: Fence must be down because the Robot completely crossed it from the west, after traveling between the Barriers.';
+      $scope.M03 = 'Animal Conservation';
+      $scope.M03a = 'How many identical pairs of Animals are on both tables?';
+      $scope.M03b = 'Note: Each pair must be created through rotation of the Animal Conservation Mission Model.';
+      $scope.M04 = 'Feeding';
+      $scope.M04a = 'How many pieces of Food are completely in the target areas?';
+      $scope.M04b = 'Note: If multiple pieces of Food are in one area, all must match each other.';
+      $scope.M05 = 'Biomimicry';
+      $scope.M05a = 'Does the Biomimicry Wall support all the weight of the White Gecko?';
+      $scope.M05b = 'Does the Biomimicry Wall support all the weight of the robot?';
+      $scope.M05c = 'Note: No part of a scoring object may be in contact with anything but the Biomimicry Wall and/or Green Gecko, except two scoring objects may be in contact with each other.';
+      $scope.M06 = 'Milking Automation';
+      $scope.M06a = 'Has Milk and Manure rolled out?';
+      $scope.M06b = 'Has all the Milk rolled out but not the Manure?';
+      $scope.M06c = 'Note: The Robot’s only movement of the Milk and/or Manure came by moving the red lever';
+      $scope.M07 = 'Panda Release';
+      $scope.M07a = 'Is the slider fully open clockwise?';
+      $scope.M08 = 'Camera Recovery';
+      $scope.M08a = 'Is the Camera completely in Base?';
+      $scope.M09 = 'Training and Research';
+      $scope.M09a = 'Are the Dog and Trainer completely in the Training and Research Area?';
+      $scope.M09b = 'Is the Zoologist completely in the Training and Research Area?';
+      $scope.M09c = 'How many Manure Samples are completely in the Training and Research Area?';
+      $scope.M09d = 'Note: Only one Manure Sample may be Transported at a time';
+      $scope.M10 = 'Beekeeping';
+      $scope.M10a = 'Is the Bee on the Beehive and there is no Honey in the Beehive?';
+      $scope.M10b = 'Is the Bee on the Beehive and Honey is in base?';
+      $scope.M11 = 'Prosthesis';
+      $scope.M11a = 'Is the Prosthesis fitted to the Pet AND not held by the Referee?';
+      $scope.M11b = 'Is the Prosthesis fitted to the Pet AND the Pet is completely in its Farm Target?';
+      $scope.M12 = 'Seal in Base';
+      $scope.M12a = 'Is the Seal completely in Base and not broken?';
+      $scope.M13 = 'Milk in Base';
+      $scope.M13a = 'Are three Milk completely in Base?';
+      $scope.M14 = 'Milk on Ramp';
+      $scope.M14a = 'Are all three Milk completely supported by the Ramp?';
+      $scope.M14b = 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp?';
+      $scope.M14c = 'Are all three Milk completely supported by the Ramp AND they are the only things touching the Ramp AND they are all standing?';
+      $scope.M15 = 'All Samples';
+      $scope.M15a = 'Are all seven Manure Samples completely in the Training and Research Area?';
+      $scope.Penalty = 'Penalty';
+      $scope.Penaltya = 'How many Manure Samples are in the white triangle area?';
+
+    });
+  }
+
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+</body>
