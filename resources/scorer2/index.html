@@ -263,11 +263,12 @@
         </p>
       </div>
       <div id="tabs-3">
-        <div style="width: 340">     <input type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1"   value="Save Score"></div>
+        <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1" >Save Score</button></div>
         <br>
 
         <div class="ui-grid-b ui-responsive">
-          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">    <input style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)" value="Load Save:"></div></div>
+          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
+             <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
           <div class="ui-block-b" style="width: 170">
 
             <div data-role="stepper" data-direction="vertical">
