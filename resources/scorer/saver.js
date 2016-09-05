@@ -31,6 +31,9 @@ function loadsave(save) {
     } else {
       //	    document.getElementById(save1[0]).value = parseInt(save1[1])
       $("#"+save1[0]).val(parseInt(save1[1])).slider("refresh");
+      //alert(save1)
+      //alert(window[save1[0]+'inc'])
+      recalc(window[save1[0]+'inc']*parseInt(save1[1]),save1[0],1)
     }
     count = count + 1
 

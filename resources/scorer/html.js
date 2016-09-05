@@ -3,8 +3,7 @@ all_mission = []
 function createbutton(mission,points,description){
   window[mission] = 0
   window[mission+'save'] = 0
-
-  document.write('<tr>\
+    document.write('<tr>\
   <td width="200" style="font-size: 100%; background-color: sky;">\
   '+description+'\
   </td>\
@@ -53,6 +52,7 @@ function endtable() {
 function createrange(mission, increment, min, max, start, description) {
   window[mission] = 0
   window[mission+'save'] = 0
+  window[mission+'inc'] = increment
 
   document.write('<tr>\
   <td width="200" style="font-size: 100%; background-color: sky;">\
@@ -93,3 +93,5 @@ function breakrow(minwidth, maxwidth) {
   } else {
   }
 }
+
+//document.write('hi')

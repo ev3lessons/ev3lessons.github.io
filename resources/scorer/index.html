@@ -69,7 +69,7 @@
     <br>
 
     <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-      <h1 style="padding-top:0; padding-bottom:0" id="allpoints">{{Points}}: 0 &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick="window.location.reload()"></h1>
+      <h1 style="padding-top:0; padding-bottom:0" ><i id="allpoints">{{Points}}: 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("shark|0,shark2|0,shark3|0,servicedog|0,pairs|0,food|0,biomimicrywall|0,biomimicrywall2|0,milkingautomation|0,milkingautomation2|0,pandaobservation|0,camera|0,dogandtrainer|0,zoologist|0,manure|0,beehive|0,honey|0,ourlittlefriend|0,farm|0,seal|0,milk|0,ramp1|0,ramp2|0,ramp3|0,allsamples|0,penalty|0");'></h1>
     </div>
     <script src="html.js"></script>
 
@@ -80,6 +80,7 @@
     <div data-role="tabs">
 
       <div id="tabs-1">
+	<form id="missions">
         <table>
           <tr>
             <script>
@@ -205,6 +206,7 @@
             </script>
           </tr>
         </table>
+	</form>
       </div>
       <div id="tabs-2">
         <p>
@@ -261,11 +263,12 @@
         </p>
       </div>
       <div id="tabs-3">
-        <div style="width: 340">     <input type="button" onclick="saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1"   value="Save Score"></div>
+        <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1" >Save Score</button></div>
         <br>
 
         <div class="ui-grid-b ui-responsive">
-          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">    <input style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)" value="Load Save:"></div></div>
+          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
+             <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
           <div class="ui-block-b" style="width: 170">
 
             <div data-role="stepper" data-direction="vertical">
@@ -290,7 +293,7 @@ input[type=number] {
 
         </div>
 
-        <div style="width: 340">	  <input type="button" onclick="window.localStorage.DRAAscorer = ''; window.localStorage.DRAA1scorer = '' ; alert('Please reload to delete saves!')" value="Delete all Saves"></div>
+        <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRAAscorer = ''; window.localStorage.DRAA1scorer = ''; loadsaves(); drawBasic(); alert('Deleted all saves :-( !!!!')">Delete all Saves!</button></div>
 
         <script>
 
@@ -357,7 +360,10 @@ loadsaves(); drawBasic();
 </body>
 <script>
 window.onload = function() {
-	check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
+
+//document.getElementById('noshark').click()
+
+check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
   var fileInput = document.getElementById('fileInput');
 
   fileInput.addEventListener('change', function(e) {
@@ -405,7 +411,6 @@ window.onload = function() {
   });
 
 }
-
 </script><script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
