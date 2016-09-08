@@ -86,8 +86,8 @@ function recalc(points,mission,alt){
   }
   //var mission = 'hi'
   if ((mission=="manure")) {
-    if (points==35) {
-      points=40;
+    if (points>30) {
+      points=points+5;
       document.getElementById('noallsamples').checked = false
       document.getElementById('yesallsamples').checked = true
       // $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
