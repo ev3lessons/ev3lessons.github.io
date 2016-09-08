@@ -20,6 +20,7 @@ var el  = ''+ page +'#el';
 var fr  = ''+ page +'#fr';
 var ct  = ''+ page +'#ct';
 var he  = ''+ page +'#he';
+var de  = ''+ page +'#de';
 // var page = window.location.href.split("#")[0];
 // alert (page);
 // var href = window.location.href;
@@ -76,6 +77,11 @@ document.write('\
       <div class="socials-default-small  default">\
           <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+he+'">\
           <img src="images/icons/countries/small/Israel.png" alt="עברית" title="עברית" width="26" height="26" border="0">\
+          </a>\
+            </div>\
+      <div class="socials-default-small  default">\
+          <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+de+'">\
+          <img src="images/icons/countries/small/Germany.png" alt="de" title="de" width="26" height="26" border="0">\
           </a>\
             </div>\
 </div></div>\
