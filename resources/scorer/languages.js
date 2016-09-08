@@ -62,6 +62,71 @@ if (language == 'es') {
                        $scope.Penaltya = '¿Cuántas Muestras de Excrementos están dentro del triángulo blanco?  ';
                        
                        });
+} else if (language == 'de') {
+
+    menuApp.controller("MenuCtrl", function($scope) {
+
+      $scope.Yes = 'Ja';
+      $scope.No = 'Nein';
+      $scope.Title = 'Animal Allies Punkterechner (v2.0)';
+      $scope.Timers = 'Timer';
+      $scope.Saves = 'Gespeicherte Punktzahlen';
+      $scope.Points = 'Punkte';
+
+      $scope.M01 = 'Hai-Transport';
+      $scope.M01a = 'Sind das Becken und der Hai komplett am ersten Zielort (linkes Viereck)? ';
+      $scope.M01b = 'Sind das Becken und der Hai komplett am zweiten Zielort (rechtes Viereck)? ';
+      $scope.M01c = 'Berührt der Hai nur den Beckenboden (nicht die Wände des Beckens)? ';
+      $scope.M01d = 'Hinweis: Nie darf etwas den Hai berühren, außer dem Becken!';
+
+
+      $scope.M02 = 'Assistenzhund';
+      $scope.M02a = 'Liegt der Warnzaun waagerecht?';
+      $scope.M02b = 'Hinweis: Der Warnzaun liegt waagerecht auf der Matte, weil der Roboter ihn komplett aus westlicher Richtung überquert hat, nachdem er zwischen den Leitplanken durch gefahren ist.';
+      $scope.M03 = 'Artenschutz';
+      $scope.M03a = 'Wie viele Paare derselben Tierart befinden sich komplett auf der gleichen Seite des Tisches? ';
+      $scope.M03b = 'Hinweis:  Jedes Paar muss durch die Drehung des Artenschutzmodells zusammengeführt werden.';
+      $scope.M04 = 'Fütterung';
+      $scope.M04a = 'Wie viele Futterrationen befinden sich komplett in den Zielbereichen? ';
+      $scope.M04b = 'Hinweis: Die Rechtecke in den Tierbereichen gehören nicht zum Zielbereich. Wenn sich mehrere Futterrationen in einem Zielbereich befinden, müssen diese die gleiche Farbe haben.';
+      $scope.M05 = 'Bionik';
+      $scope.M05a = 'Hängt der weiße Gecko komplett an der Wand';
+      $scope.M05b = 'Hängt der Roboter komplett an der Wand? ';
+      $scope.M05c = 'Hinweis: Um Punkte zu erzielen, dürfen sowohl der weiße Gecko als auch der Roboter nur mit der Wand und/oder dem grünen Gecko in Berührung sein. Ausnahme: Die beiden Wertungsobjekte dürfen sich gegenseitig berühren.';
+      $scope.M06 = 'Melkmaschine';
+      $scope.M06a = 'Sind Milch und Kot heraus gerollt? ';
+      $scope.M06b = 'Ist die Milch herausgerollt, aber kein Kot? ';
+      $scope.M06c = 'Hinweis: Die Milch und/oder der Kot sind nur durch die Bewegung des roten Hebels heraus gerollt.';
+      $scope.M07 = 'Panda-Auswilderung ';
+      $scope.M07a = 'Ist das Tor vollständig geöffnet (im Uhrzeigersinn)?';
+      $scope.M08 = 'Kamera abholen';
+      $scope.M08a = 'Befindet sich die Kamera komplett in der Base?';
+      $scope.M09 = 'Training und Forschung';
+      $scope.M09a = 'Befindet sich der Trainer mit Hund komplett in der Trainings- und Forschungsstation? ';
+      $scope.M09b = 'Befindet sich die Zoologin komplett in der Trainings- und Forschungsstation?';
+      $scope.M09c = 'Wie viele Kot-Stücke befinden sich komplett in der Trainings- und Forschungsstation?';
+      $scope.M09d = 'Hinweis: Es darf immer nur ein Kothaufen transportiert werden.';
+      $scope.M10 = 'Bienenzucht';
+      $scope.M10a = 'Ist die Biene auf dem Bienenstock und es befindet sich kein Honig mehr im Bienenstock? ';
+      $scope.M10b = 'Ist die Biene auf dem Bienenstock und der Honig befindet sich komplett in der Base?';
+      $scope.M11 = 'Prothesen';
+      $scope.M11a = 'Ist die Prothese am Tier UND wird nicht vom Schiedsrichter gehalten? ';
+      $scope.M11b = 'Ist die Prothese am Tier UND das Tier befindet sich komplett im Bereich “Bauernhof”?';
+      $scope.M12 = 'Seehund';
+      $scope.M12a = 'Befindet sich der Seehund komplett in der Base und ist nicht “verletzt” (zerbrochen)?';
+      $scope.M13 = 'Milch in der Base ';
+      $scope.M13a = 'Sind die 3 Milchbehälter komplett in der Base?';
+      $scope.M14 = 'Milch auf der Rampe ';
+      $scope.M14a = 'Werden alle 3 Milchbehälter komplett von der Rampe getragen? ';
+      $scope.M14b = 'Werden alle 3 Milchbehälter komplett von der Rampe getragen UND werden sie nur von der Rampe getragen und berührt nichts anderes die Rampe? ';
+      $scope.M14c = 'Werden alle 3 Milchbehälter komplett von der Rampe getragen UND werden sie nur von der Rampe getragen und berührt nichts anderes die Rampe UND stehen alle drei aufrecht?';
+      $scope.M15 = 'Kot';
+      $scope.M15a = 'Befinden sich alle 7 Kothaufen komplett in der Trainings- und Forschungsstation?';
+      $scope.Penalty = 'Strafpunkte';
+      $scope.Penaltya = 'Wie viele Strafpunkte befinden sich im weißen Dreieck in der Ecke des Spielfelds?<br>Hinweis: Jeden nicht gegebenen Strafpunkt legt der Schiedsrichter nach Matchende in die Trainings- und Forschungsstation.';
+
+    });
+
 } else if (language == 'pt-br') {
     menuApp.controller("MenuCtrl", function($scope) {
 
