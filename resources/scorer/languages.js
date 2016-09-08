@@ -1,6 +1,68 @@
 
   var menuApp = angular.module("MenuApp", []);
-  if (language == 'pt-br') {
+if (language == 'es') {
+    
+    menuApp.controller("MenuCtrl", function($scope) {
+                       
+                       $scope.Yes = 'Si';
+                       $scope.No = 'No';
+                       $scope.Title = 'Marcador Animal Allies (v2.0)';
+                       $scope.Timers = 'Cronómetros';
+                       $scope.Saves = 'Guardados';
+                       $scope.Points = ' Puntos';
+                       
+                       $scope.M01 = 'Transporte del tiburón';
+                       $scope.M01a = 'Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)';
+                       $scope.M01b = 'Tanque y Tiburón están completamente dentro de la Zona (caja derecha)';
+                       $scope.M01c = '¿El Tiburón está tocando únicamente el suelo del tanque?';
+                       $scope.M01d = 'Nota: Después del inicio para esta misión, no está permitido que nada, excepto el Tanque, toque en ningún momento el Tiburón.';
+                       $scope.M02 = 'Acción del perro lazarillo';
+                       $scope.M02a = 'La Valla de Advertencia está bajada';
+                       $scope.M02b = 'Nota: La Valla debe estar bajada porque el Robot la ha cruzado completamente desde el oeste, después de transitar entre las Barreras.';
+                       $scope.M03 = 'Conservación animal ';
+                       $scope.M03a = '¿Cuantas parejas de animales hay en ambas mesas? ';
+                       $scope.M03b = 'Nota: Cada pareja debe ser creada por la rotación del Modelo de Misión de Conservación animal. ';
+                       $scope.M04 = 'Alimentación';
+                       $scope.M04a = '¿Cuántos trozos de Comida está completamente dentro de una Zona para Comida? ';
+                       $scope.M04b = 'Nota: Si hay más de un trozo de Comida en una Zona, todas deben coincidir.';
+                       $scope.M05 = 'Biomemitismo';
+                       $scope.M05a = 'La Pared Biomimética soporta completamente todo el peso de la Salamanquesa Blanca.';
+                       $scope.M05b = 'La Pared Biomimética soporta completamente todo el peso del Robot. ';
+                       $scope.M05c = 'Nota: Ninguna parte del objeto puede estar en contacto con algo que no sea la Pared Biomimética y/o la Lagartija Verde, exceptuando que los dos objetos puntuables pueden contactar entre ellos.';
+                       $scope.M06 = 'Ordeño automático  ';
+                       $scope.M06a = '¿Ha salido toda la Leche y todo el Estiércol?  ';
+                       $scope.M06b = '¿Ha salido toda la Leche pero nada de Estiércol?  ';
+                       $scope.M06c = 'Nota: La Leche y/o el Estiércol salió únicamente por el movimiento del Robot actuando sobre la palanca roja.';
+                       $scope.M07 = 'Liberación de pandas';
+                       $scope.M07a = '¿La bisagra se observa completamente abierta en sentido horario?  ';
+                       $scope.M08 = 'Recuperación de cámaras  ';
+                       $scope.M08a = '¿Está la Cámara completamente dentro de la Base?  ';
+                       $scope.M09 = 'Adiestramiento e investigación  ';
+                       $scope.M09a = 'El Perro y el Adiestrador están completamente dentro de la Zona de Adiestramiento e Investigación';
+                       $scope.M09b = 'La Zoóloga está completamente dentro de la Zona de Adiestramiento e Investigación  ';
+                       $scope.M09c = '¿Cuántas Muestras de Excrementos están completamente dentro de la Zona de Adiestramiento e Investigación?';
+                       $scope.M09d = 'Nota: Solo se puede transportar una Muestra de Excrementos cada vez.  ';
+                       $scope.M10 = 'Apicultura ';
+                       $scope.M10a = 'La Abeja está sobre la Colmena y no hay Miel en la Colmena.  ';
+                       $scope.M10b = 'La Abeja está sobre la Colmena y la Miel está completamente dentro de la Base.  ';
+                       $scope.M11 = 'Prótesis ';
+                       $scope.M11a = 'La Prótesis está colocada en la Mascota Y no la sostiene el Árbitro.  ';
+                       $scope.M11b = 'La Prótesis está colocada en la Mascota Y la Mascota está completamente dentro de la Zona de la Granja.';
+                       $scope.M12 = 'Foca en base ';
+                       $scope.M12a = 'La Foca está completamente dentro de la Base y no está rota.';
+                       $scope.M13 = 'Leche en la base  ';
+                       $scope.M13a = 'Las tres unidades de Leche están completamente dentro de la Base.';
+                       $scope.M14 = 'Leche en la rampa  ';
+                       $scope.M14a = 'La Rampa soporta completamente las tres unidades de Leche.  ';
+                       $scope.M14b = 'La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa.';
+                       $scope.M14c = 'La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa Y todas están de pie.';
+                       $scope.M15 = 'Todas las muestras  ';
+                       $scope.M15a = 'Las siete Muestras de Excrementos están completamente dentro de la Zona de Adiestramiento e Investigación  ';
+                       $scope.Penalty = 'Penalizaciones  ';
+                       $scope.Penaltya = '¿Cuántas Muestras de Excrementos están dentro del triángulo blanco?  ';
+                       
+                       });
+} else if (language == 'pt-br') {
     menuApp.controller("MenuCtrl", function($scope) {
 
       $scope.Yes = 'Sim';
