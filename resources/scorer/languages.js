@@ -12,12 +12,12 @@ if (language == 'es') {
                        $scope.Points = ' Puntos';
                        
                        $scope.M01 = 'Transporte del tiburón';
-                       $scope.M01a = 'Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)';
-                       $scope.M01b = 'Tanque y Tiburón están completamente dentro de la Zona (caja derecha)';
+                       $scope.M01a = '¿El Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)?';
+                       $scope.M01b = '¿El Tanque y Tiburón están completamente dentro de la Zona (caja derecha)?';
                        $scope.M01c = '¿El Tiburón está tocando únicamente el suelo del tanque?';
                        $scope.M01d = 'Nota: Después del inicio para esta misión, no está permitido que nada, excepto el Tanque, toque en ningún momento el Tiburón.';
                        $scope.M02 = 'Acción del perro lazarillo';
-                       $scope.M02a = 'La Valla de Advertencia está bajada';
+                       $scope.M02a = '¿La Valla de Advertencia está bajada?';
                        $scope.M02b = 'Nota: La Valla debe estar bajada porque el Robot la ha cruzado completamente desde el oeste, después de transitar entre las Barreras.';
                        $scope.M03 = 'Conservación animal ';
                        $scope.M03a = '¿Cuantas parejas de animales hay en ambas mesas? ';
@@ -26,8 +26,8 @@ if (language == 'es') {
                        $scope.M04a = '¿Cuántos trozos de Comida está completamente dentro de una Zona para Comida? ';
                        $scope.M04b = 'Nota: Si hay más de un trozo de Comida en una Zona, todas deben coincidir.';
                        $scope.M05 = 'Biomemitismo';
-                       $scope.M05a = 'La Pared Biomimética soporta completamente todo el peso de la Salamanquesa Blanca.';
-                       $scope.M05b = 'La Pared Biomimética soporta completamente todo el peso del Robot. ';
+                       $scope.M05a = '¿La Pared Biomimética soporta completamente todo el peso de la Salamanquesa Blanca?';
+                       $scope.M05b = '¿La Pared Biomimética soporta completamente todo el peso del Robot?';
                        $scope.M05c = 'Nota: Ninguna parte del objeto puede estar en contacto con algo que no sea la Pared Biomimética y/o la Lagartija Verde, exceptuando que los dos objetos puntuables pueden contactar entre ellos.';
                        $scope.M06 = 'Ordeño automático  ';
                        $scope.M06a = '¿Ha salido toda la Leche y todo el Estiércol?  ';
@@ -38,26 +38,26 @@ if (language == 'es') {
                        $scope.M08 = 'Recuperación de cámaras  ';
                        $scope.M08a = '¿Está la Cámara completamente dentro de la Base?  ';
                        $scope.M09 = 'Adiestramiento e investigación  ';
-                       $scope.M09a = 'El Perro y el Adiestrador están completamente dentro de la Zona de Adiestramiento e Investigación';
-                       $scope.M09b = 'La Zoóloga está completamente dentro de la Zona de Adiestramiento e Investigación  ';
+                       $scope.M09a = '¿El Perro y el Adiestrador están completamente dentro de la Zona de Adiestramiento e Investigación?';
+                       $scope.M09b = '¿La Zoóloga está completamente dentro de la Zona de Adiestramiento e Investigación?';
                        $scope.M09c = '¿Cuántas Muestras de Excrementos están completamente dentro de la Zona de Adiestramiento e Investigación?';
                        $scope.M09d = 'Nota: Solo se puede transportar una Muestra de Excrementos cada vez.  ';
                        $scope.M10 = 'Apicultura ';
-                       $scope.M10a = 'La Abeja está sobre la Colmena y no hay Miel en la Colmena.  ';
-                       $scope.M10b = 'La Abeja está sobre la Colmena y la Miel está completamente dentro de la Base.  ';
+                       $scope.M10a = '¿La Abeja está sobre la Colmena y no hay Miel en la Colmena?';
+                       $scope.M10b = '¿La Abeja está sobre la Colmena y la Miel está completamente dentro de la Base?';
                        $scope.M11 = 'Prótesis ';
-                       $scope.M11a = 'La Prótesis está colocada en la Mascota Y no la sostiene el Árbitro.  ';
-                       $scope.M11b = 'La Prótesis está colocada en la Mascota Y la Mascota está completamente dentro de la Zona de la Granja.';
+                       $scope.M11a = '¿La Prótesis está colocada en la Mascota Y no la sostiene el Árbitro?';
+                       $scope.M11b = '¿La Prótesis está colocada en la Mascota Y la Mascota está completamente dentro de la Zona de la Granja?';
                        $scope.M12 = 'Foca en base ';
-                       $scope.M12a = 'La Foca está completamente dentro de la Base y no está rota.';
+                       $scope.M12a = '¿La Foca está completamente dentro de la Base y no está rota?';
                        $scope.M13 = 'Leche en la base  ';
-                       $scope.M13a = 'Las tres unidades de Leche están completamente dentro de la Base.';
+                       $scope.M13a = '¿Las tres unidades de Leche están completamente dentro de la Base?';
                        $scope.M14 = 'Leche en la rampa  ';
-                       $scope.M14a = 'La Rampa soporta completamente las tres unidades de Leche.  ';
-                       $scope.M14b = 'La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa.';
-                       $scope.M14c = 'La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa Y todas están de pie.';
+                       $scope.M14a = '¿La Rampa soporta completamente las tres unidades de Leche?';
+                       $scope.M14b = '¿La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa?';
+                       $scope.M14c = '¿La Rampa soporta completamente las tres unidades de Leche Y son los únicos objetos que tocan la Rampa Y todas están de pie?';
                        $scope.M15 = 'Todas las muestras  ';
-                       $scope.M15a = 'Las siete Muestras de Excrementos están completamente dentro de la Zona de Adiestramiento e Investigación  ';
+                       $scope.M15a = '¿Las siete Muestras de Excrementos están completamente dentro de la Zona de Adiestramiento e Investigación?';
                        $scope.Penalty = 'Penalizaciones  ';
                        $scope.Penaltya = '¿Cuántas Muestras de Excrementos están dentro del triángulo blanco?  ';
                        
@@ -138,8 +138,8 @@ if (language == 'es') {
       $scope.Points = 'Pontos';
 
       $scope.M01 = 'TRANSPORTE DE TUBARÃO';
-      $scope.M01a = 'O Tanque e Tubarão estão completamente no Alvo 1 (retângulo à esquerda?)';
-      $scope.M01b = 'O Tanque e Tubarão estão completamente no Alvo 2 (retângulo à direita?)';
+      $scope.M01a = 'O Tanque e Tubarão estão completamente no Alvo 1 (retângulo à esquerda)?';
+      $scope.M01b = 'O Tanque e Tubarão estão completamente no Alvo 2 (retângulo à direita)?';
       $scope.M01c = 'O Tubarão está tocando apenas o fundo do tanque e nenhuma parede?';
 
       $scope.M02 = 'AÇÃO DO CÃO-GUIA';
@@ -194,8 +194,8 @@ if (language == 'es') {
       $scope.Points = 'Punten';
 
       $scope.M01 = 'HAAIENVERVOER';
-      $scope.M01a = 'Zijn de tank en de haai compleet in gebied 1 (linker box?';
-      $scope.M01b = 'Zijn de tank en de haai complete in gebied 2 (rechter box?)';
+      $scope.M01a = 'Zijn de tank en de haai compleet in gebied 1 (linker box)?';
+      $scope.M01b = 'Zijn de tank en de haai complete in gebied 2 (rechter box)?';
       $scope.M01c = 'Raakt de haai alleen de de bodem van de tank aan?';
       $scope.M01d = 'Opmerking: Na de start is het niet toegestaan date er iets ander dan de haai de tank raakt';
       $scope.M02 = 'HULPHOND IN ACTIE';
@@ -257,8 +257,8 @@ if (language == 'es') {
       $scope.Points = 'Points';
 
       $scope.M01 = 'Shark Shipment';
-      $scope.M01a = 'Is the Tank and the Shark completely in Target 1 (Left Box?)';
-      $scope.M01b = 'Is the Tank and the Shark completely in Target 2 (Right Box?)';
+      $scope.M01a = 'Is the Tank and the Shark completely in Target 1 (Left Box)?';
+      $scope.M01b = 'Is the Tank and the Shark completely in Target 2 (Right Box)?';
       $scope.M01c = 'Is the Shark only touching the tank floor?';
       $scope.M01d = 'Note: After Launch, nothing is allowed to touch the Shark except the Tank.';
       $scope.M02 = 'Service Dog Action';
