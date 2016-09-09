@@ -120,7 +120,7 @@ function recalc(points,mission,alt){
     counter = counter+1
   }
 
-  document.getElementById('allpoints').innerHTML = "Points: "+ allmission
+  document.getElementById('allpoints').innerHTML = allmission
   $('#noallsamples').checkboxradio('disable');
   $('#yesallsamples').checkboxradio('disable');
 

@@ -7,9 +7,10 @@ if (language == 'es') {
                        $scope.Yes = 'Si';
                        $scope.No = 'No';
                        $scope.Title = 'Marcador Animal Allies (v2.0)';
+	               $scope.Scorer = 'Marcador';
                        $scope.Timers = 'Cronómetros';
                        $scope.Saves = 'Guardados';
-                       $scope.Points = ' Puntos';
+                       $scope.Points = 'Puntos';
                        
                        $scope.M01 = 'Transporte del tiburón';
                        $scope.M01a = '¿El Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)?';
@@ -69,6 +70,7 @@ if (language == 'es') {
       $scope.Yes = 'Ja';
       $scope.No = 'Nein';
       $scope.Title = 'Animal Allies Punkterechner (v2.0)';
+              $scope.Scorer = 'Punkterechner';
       $scope.Timers = 'Timer';
       $scope.Saves = 'Gespeicherte Punktzahlen';
       $scope.Points = 'Punkte';
@@ -133,6 +135,7 @@ if (language == 'es') {
       $scope.Yes = 'Sim';
       $scope.No = 'Não';
       $scope.Title = 'Pontuador do Animal Allies (v2.0)';
+              $scope.Scorer = 'Pontuador';
       $scope.Timers = 'Cronômetros';
       $scope.Saves = 'Salvos';
       $scope.Points = 'Pontos';
@@ -189,6 +192,7 @@ if (language == 'es') {
       $scope.Yes = 'Ja';
       $scope.No = 'Nee';
       $scope.Title = 'Animal Allies Puntenteller (v2.0)';
+              $scope.Scorer = 'Puntenteller';
       $scope.Timers = 'Timers';
       $scope.Saves = 'Saves';
       $scope.Points = 'Punten';
@@ -252,6 +256,7 @@ if (language == 'es') {
       $scope.Yes = 'Yes';
       $scope.No = 'No';
       $scope.Title = 'Animal Allies Scorer (v2.0)';
+      $scope.Scorer = 'Scorer';
       $scope.Timers = 'Timers';
       $scope.Saves = 'Saves';
       $scope.Points = 'Points';

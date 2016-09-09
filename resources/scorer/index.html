@@ -71,7 +71,7 @@
     <br>
 
     <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-      <h1 style="padding-top:0; padding-bottom:0" ><i id="allpoints">{{Points}}: 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("shark|0,shark2|0,shark3|0,servicedog|0,pairs|0,food|0,biomimicrywall|0,biomimicrywall2|0,milkingautomation|0,milkingautomation2|0,pandaobservation|0,camera|0,dogandtrainer|0,zoologist|0,manure|0,beehive|0,honey|0,ourlittlefriend|0,farm|0,seal|0,milk|0,ramp1|0,ramp2|0,ramp3|0,allsamples|0,penalty|0");'></h1>
+      <h1 style="padding-top:0; padding-bottom:0" ><i>{{Points}}: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("shark|0,shark2|0,shark3|0,servicedog|0,pairs|0,food|0,biomimicrywall|0,biomimicrywall2|0,milkingautomation|0,milkingautomation2|0,pandaobservation|0,camera|0,dogandtrainer|0,zoologist|0,manure|0,beehive|0,honey|0,ourlittlefriend|0,farm|0,seal|0,milk|0,ramp1|0,ramp2|0,ramp3|0,allsamples|0,penalty|0");'></h1>
     </div>
     <script src="html.js"></script>
 
@@ -348,7 +348,7 @@ input[type=number] {
         <div data-tap-toggle="false" data-role="header" data-position="fixed">
 
           <ul>
-            <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+            <li><a class="ui-btn-active" href="#tabs-1">{{Scorer}}</a></li>
             <li><a href="#tabs-2">{{Timers}}</a></li>
             <li><a href="#tabs-3">{{Saves}}</a></li>
           </ul>
