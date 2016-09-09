@@ -123,7 +123,7 @@ if (language == 'es') {
       $scope.M15 = 'Kot';
       $scope.M15a = 'Befinden sich alle 7 Kothaufen komplett in der Trainings- und Forschungsstation?';
       $scope.Penalty = 'Strafpunkte';
-      $scope.Penaltya = 'Wie viele Strafpunkte befinden sich im weißen Dreieck in der Ecke des Spielfelds?<br>Hinweis: Jeden nicht gegebenen Strafpunkt legt der Schiedsrichter nach Matchende in die Trainings- und Forschungsstation.';
+      $scope.Penaltya = 'Wie viele Strafpunkte befinden sich im weißen Dreieck in der Ecke des Spielfelds? Hinweis: Jeden nicht gegebenen Strafpunkt legt der Schiedsrichter nach Matchende in die Trainings- und Forschungsstation.';
 
     });
 

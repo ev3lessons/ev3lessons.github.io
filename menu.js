@@ -164,7 +164,16 @@ var nav = [
     "Nous contacter", "none","none","none","none","none","none","none","none","none",//60
 ]
 }
-
+if (language == "de") {
+var nav = [
+"none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 10
+"Lektionen", "Unterricht", "Roboter-Design", "none", "none", "none", "none", "none", "none", "none", // 20
+"Quellen", "Animal Allies Torschütze", "Interaktive Skizzen", "none", "andere Quellen", "none", "none", "none", "none", "none", // 30
+"Über uns", "Unsere Mission", "Mitarbeiter", "Mitwirkende FAQ", "none", "none", "none", "none", "none", "none", // 40
+"none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
+"Contact us", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 60
+]
+}
 if (language == 'ct') {
 var nav = [
   "none", "Home", "none", "none", "none", "none", "none", "none", "none", "none", // 10
@@ -172,7 +181,7 @@ var nav = [
 "Recursos", "Càlcul de desplaçament", "Planificador", "Desafiaments", "Tots els recursos", "Els arxius de recursos", "none", "none", "none", "none", // 30
 "Qui som?", "La nostra filosofia", "Col·laboradors", "Com ajudar", "none", "none", "none", "none", "none", "none", // 40
 "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
-"Contacti amb nosaltres","none","none","none","none","none","none","none","none","none", // 60
+"Contacti amb nosaltres","none","none","none","none","none","none","none","none","none" // 60
 ]
 }
 if (language == 'he') {
@@ -220,7 +229,7 @@ document.write('\
 	 <li>\
             <a href="resources.html#'+language+'">{{Mtwozero}} <span class="arrow">&#9660;</span></a>\
             <ul>\
-                <li><a href="resources/scorer/score.html#'+language+'">{{Mtwoone}}</a></li>\
+                <li><a href="resources/scorer/index.html#'+language+'">{{Mtwoone}}</a></li>\
                 <li><a href="resources/wheelconverter#'+language+'">{{Mtwotwo}}</a></li>\
                 <li><a href="resources/drawplan#'+language+'">{{Mtwothree}}</a></li>\
 		 <!--<li><a href="challenges.html#'+language+'">{{Mtwofour}}</a></li>-->\
