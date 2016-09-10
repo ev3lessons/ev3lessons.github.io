@@ -241,7 +241,7 @@ if (language == 'es') {
     $scope.LoadSave = 'Laadt Score';  
     $scope.DeleteSave = 'Delete All Slaat!';  
     DeletedSave = 'Schrapte Alle Slaat :-( !!!!';
-    $scope.ImportSave = 'Importeren Ppgeslagen Score';
+    $scope.ImportSave = 'Importeren Opgeslagen Score';
     $scope.ExportSave = 'Exporteert Opgeslagen Score';
 
     $scope.M01 = 'HAAIENVERVOER';
