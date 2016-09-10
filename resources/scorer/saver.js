@@ -79,7 +79,7 @@ function drawBasic() {
 $(function () {
   $('#container').highcharts({
     title: {
-      text: 'Line Graph of Scores',
+      text: GraphTitle,
       x: -20 //centre
     },
     subtitle: {
@@ -95,7 +95,7 @@ $(function () {
     },
     yAxis: {
       title: {
-        text: 'Points'
+        text: PointsLang
       },
       plotLines: [{
         value: 0,
@@ -113,7 +113,7 @@ $(function () {
       borderWidth: 0
     },
     series: [{
-      name: 'Score',
+      name: GraphLegend,
       data: array,
     }]
   });
