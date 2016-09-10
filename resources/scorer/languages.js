@@ -11,13 +11,16 @@ if (language == 'es') {
     $scope.Timers = 'Cronómetros';
     $scope.Saves = 'Guardados';
     $scope.Points = 'Puntos';
+      PointsLang = 'Puntos';
+      GraphTitle = 'Diagrama de línea de puntajes';
+      GraphLegend = 'Marcar';
     $scope.Start = 'Inicio';
     $scope.Reset = 'Reiniciar';
     $scope.Stop = 'Parar';
     $scope.SaveScore = 'Guardar marcador';  
     $scope.LoadSave = 'Cargar marcador';  
     $scope.DeleteSave = 'Borrar todos los marcadores!';  
-    $scope.DeletedSave = 'Se borra todos los marcadores :-( !!!!';
+    DeletedSave = 'Se borra todos los marcadores :-( !!!!';
     $scope.ImportSave = 'Importar Marcadores Guardados';
     $scope.ExportSave = 'Exportar Marcadores Guardados';
 
@@ -83,13 +86,16 @@ if (language == 'es') {
     $scope.Timers = 'Timer';
     $scope.Saves = 'Gespeicherte Punktzahlen';
     $scope.Points = 'Punkte';
+    PointsLang = 'Punkte';
+      GraphTitle = 'Liniendiagramm von Partituren';
+      GraphLegend = 'Punktzahl';
     $scope.Start = 'Anfang';
     $scope.Reset = 'Zurückstellen';
     $scope.Stop = 'Halt';
     $scope.SaveScore = 'Speichere Punktzahl';  
     $scope.LoadSave = 'Lade Punktzahl';  
     $scope.DeleteSave = 'Alle löschen speichert!';  
-    $scope.DeletedSave = 'Gelöschte alle spart :-( !!!!';
+    DeletedSave = 'Gelöschte alle spart :-( !!!!';
     $scope.ImportSave = 'Import Gespeicherte Spielstände';
     $scope.ExportSave = 'Export Gespeicherte Spielstände';
 
@@ -156,13 +162,16 @@ if (language == 'es') {
     $scope.Timers = 'Cronômetros';
     $scope.Saves = 'Salvos';
     $scope.Points = 'Pontos';
+      GraphTitle = 'Gráfico de linha de partituras';
+      GraphLegend = 'Marca';
+    PointsLang = 'Pontos';
     $scope.Start = 'Começar';
     $scope.Reset = 'Reiniciar';
     $scope.Stop = 'Pare';
     $scope.SaveScore = 'Salvar Pontuação';  
     $scope.LoadSave = 'Carregar Pontuação';  
     $scope.DeleteSave = 'Apagar tudo Salva!';  
-    $scope.DeletedSave = 'Eliminados Todos Salva :-( !!!!';
+    DeletedSave = 'Eliminados Todos Salva :-( !!!!';
     $scope.ImportSave = 'Importar Pontuação Salvo';
     $scope.ExportSave = 'Exportar Pontuação Salvo';
 
@@ -222,13 +231,16 @@ if (language == 'es') {
     $scope.Timers = 'Timers';
     $scope.Saves = 'Saves';
     $scope.Points = 'Punten';
+      GraphTitle = 'lijngrafiek van scores';
+      GraphLegend = 'Aantal punten';
+    PointsLang = 'Punten';
     $scope.Start = 'Begin';
     $scope.Reset = 'Resetten';
     $scope.Stop = 'Stop';
     $scope.SaveScore = 'Save Score';  
     $scope.LoadSave = 'Laadt Score';  
     $scope.DeleteSave = 'Delete All Slaat!';  
-    $scope.DeletedSave = 'Schrapte Alle Slaat :-( !!!!';
+    DeletedSave = 'Schrapte Alle Slaat :-( !!!!';
     $scope.ImportSave = 'Importeren Ppgeslagen Score';
     $scope.ExportSave = 'Exporteert Opgeslagen Score';
 
@@ -295,13 +307,16 @@ if (language == 'es') {
     $scope.Timers = 'Timers';
     $scope.Saves = 'Saves';
     $scope.Points = 'Points';
+      GraphTitle = 'Line Graph of Scores';
+      GraphLegend = 'Scores';
+    PointsLang = 'Points';
     $scope.Start = 'Start';
     $scope.Reset = 'Reset';
     $scope.Stop = 'Stop';
     $scope.SaveScore = 'Save Score';  
     $scope.LoadSave = 'Load Save';  
     $scope.DeleteSave = 'Delete All Saves!';  
-    $scope.DeletedSave = 'Deleted all saves :-( !!!!';
+    DeletedSave = 'Deleted all saves :-( !!!!';
     $scope.ImportSave = 'Import Saved Scores';
     $scope.ExportSave = 'Export Saved Scores';
 
