@@ -11,9 +11,15 @@ if (language == 'es') {
     $scope.Timers = 'Cronómetros';
     $scope.Saves = 'Guardados';
     $scope.Points = 'Puntos';
-    $scope.Start = 'Comienzo';
+    $scope.Start = 'Inicio';
     $scope.Reset = 'Reiniciar';
-    $scope.Stop = 'Detener';
+    $scope.Stop = 'Parar';
+    $scope.SaveScore = 'Guardar marcador';  
+    $scope.LoadSave = 'Cargar marcador';  
+    $scope.DeleteSave = 'Borrar todos los marcadores!';  
+    $scope.DeletedSave = 'Se borra todos los marcadores :-( !!!!';
+    $scope.ImportSave = 'Importar Marcadores Guardados';
+    $scope.ExportSave = 'Exportar Marcadores Guardados';
 
     $scope.M01 = 'Transporte del tiburón';
     $scope.M01a = '¿El Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)?';
@@ -80,13 +86,18 @@ if (language == 'es') {
     $scope.Start = 'Anfang';
     $scope.Reset = 'Zurückstellen';
     $scope.Stop = 'Halt';
+    $scope.SaveScore = 'Speichere Punktzahl';  
+    $scope.LoadSave = 'Lade Punktzahl';  
+    $scope.DeleteSave = 'Alle löschen speichert!';  
+    $scope.DeletedSave = 'Gelöschte alle spart :-( !!!!';
+    $scope.ImportSave = 'Import Gespeicherte Spielstände';
+    $scope.ExportSave = 'Export Gespeicherte Spielstände';
 
     $scope.M01 = 'Hai-Transport';
     $scope.M01a = 'Sind das Becken und der Hai komplett am ersten Zielort (linkes Viereck)? ';
     $scope.M01b = 'Sind das Becken und der Hai komplett am zweiten Zielort (rechtes Viereck)? ';
     $scope.M01c = 'Berührt der Hai nur den Beckenboden (nicht die Wände des Beckens)? ';
     $scope.M01d = 'Hinweis: Nie darf etwas den Hai berühren, außer dem Becken!';
-
 
     $scope.M02 = 'Assistenzhund';
     $scope.M02a = 'Liegt der Warnzaun waagerecht?';
@@ -148,6 +159,12 @@ if (language == 'es') {
     $scope.Start = 'Começar';
     $scope.Reset = 'Reiniciar';
     $scope.Stop = 'Pare';
+    $scope.SaveScore = 'Salvar Pontuação';  
+    $scope.LoadSave = 'Carregar Pontuação';  
+    $scope.DeleteSave = 'Apagar tudo Salva!';  
+    $scope.DeletedSave = 'Eliminados Todos Salva :-( !!!!';
+    $scope.ImportSave = 'Importar Pontuação Salvo';
+    $scope.ExportSave = 'Exportar Pontuação Salvo';
 
     $scope.M01 = 'TRANSPORTE DE TUBARÃO';
     $scope.M01a = 'O Tanque e Tubarão estão completamente no Alvo 1 (retângulo à esquerda)?';
@@ -208,6 +225,12 @@ if (language == 'es') {
     $scope.Start = 'Begin';
     $scope.Reset = 'Resetten';
     $scope.Stop = 'Stop';
+    $scope.SaveScore = 'Save Score';  
+    $scope.LoadSave = 'Laadt Score';  
+    $scope.DeleteSave = 'Delete All Slaat!';  
+    $scope.DeletedSave = 'Schrapte Alle Slaat :-( !!!!';
+    $scope.ImportSave = 'Importeren Ppgeslagen Score';
+    $scope.ExportSave = 'Exporteert Opgeslagen Score';
 
     $scope.M01 = 'HAAIENVERVOER';
     $scope.M01a = 'Zijn de tank en de haai compleet in gebied 1 (linker box)?';
@@ -275,6 +298,12 @@ if (language == 'es') {
     $scope.Start = 'Start';
     $scope.Reset = 'Reset';
     $scope.Stop = 'Stop';
+    $scope.SaveScore = 'Save Score';  
+    $scope.LoadSave = 'Load Save';  
+    $scope.DeleteSave = 'Delete All Saves!';  
+    $scope.DeletedSave = 'Deleted all saves :-( !!!!';
+    $scope.ImportSave = 'Import Saved Scores';
+    $scope.ExportSave = 'Export Saved Scores';
 
     $scope.M01 = 'Shark Shipment';
     $scope.M01a = 'Is the Tank and the Shark completely in Target 1 (Left Box)?';

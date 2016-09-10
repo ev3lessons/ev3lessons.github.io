@@ -270,12 +270,12 @@
           </p>
         </div>
         <div id="tabs-3">
-          <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1" >Save Score</button></div>
+          <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1" >{{SaveScore}}</button></div>
           <br>
 
           <div class="ui-grid-b ui-responsive">
             <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
-              <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
+              <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">{{LoadSave}}:</button></div></div>
               <div class="ui-block-b" style="width: 170">
 
                 <div data-role="stepper" data-direction="vertical">
@@ -300,27 +300,20 @@
 
             </div>
 
-            <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRAAscorer = ''; window.localStorage.DRAA1scorer = ''; loadsaves(); drawBasic(); alert('Deleted all saves :-( !!!!')">Delete all Saves!</button></div>
+            <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRAAscorer = ''; window.localStorage.DRAA1scorer = ''; loadsaves(); drawBasic(); alert('{{DeletedSaves}}')">{{DeleteSave}}</button></div>
 
-            <script>
-
-            </script>
-            <script>
-
-            </script>
             <div style="width: 340">
               <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
               <div id="saves" ></div>
 
-              <button class="ui-mini" onclick=" alert('choose .DRAA file') ; document.getElementById('fileInput').click() ; alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click()
-              ;">Import Saved Scores</button>
+              <button class="ui-mini" onclick=" alert('choose .DRAA file') ; document.getElementById('fileInput').click() ; alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">{{ImportSave}}</button>
 
               <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRAAscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
               <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRAAscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
 
               <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
               <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
-              <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Saved Scores</button>
+              <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">{{ExportSave}}</button>
               <script type="text/javascript">
               var anchor = document.getElementById('export');
               var anchor2 = document.getElementById('export2');
