@@ -11,6 +11,9 @@ if (language == 'es') {
     $scope.Timers = 'Cronómetros';
     $scope.Saves = 'Guardados';
     $scope.Points = 'Puntos';
+    $scope.Start = 'Comienzo';
+    $scope.Reset = 'Reiniciar';
+    $scope.Stop = 'Detener';
 
     $scope.M01 = 'Transporte del tiburón';
     $scope.M01a = '¿El Tanque y Tiburón están completamente dentro de la Zona (caja izquierda)?';
@@ -74,6 +77,9 @@ if (language == 'es') {
     $scope.Timers = 'Timer';
     $scope.Saves = 'Gespeicherte Punktzahlen';
     $scope.Points = 'Punkte';
+    $scope.Start = 'Anfang';
+    $scope.Reset = 'Zurückstellen';
+    $scope.Stop = 'Halt';
 
     $scope.M01 = 'Hai-Transport';
     $scope.M01a = 'Sind das Becken und der Hai komplett am ersten Zielort (linkes Viereck)? ';
@@ -139,6 +145,9 @@ if (language == 'es') {
     $scope.Timers = 'Cronômetros';
     $scope.Saves = 'Salvos';
     $scope.Points = 'Pontos';
+    $scope.Start = 'Começar';
+    $scope.Reset = 'Reiniciar';
+    $scope.Stop = 'Pare';
 
     $scope.M01 = 'TRANSPORTE DE TUBARÃO';
     $scope.M01a = 'O Tanque e Tubarão estão completamente no Alvo 1 (retângulo à esquerda)?';
@@ -196,6 +205,9 @@ if (language == 'es') {
     $scope.Timers = 'Timers';
     $scope.Saves = 'Saves';
     $scope.Points = 'Punten';
+    $scope.Start = 'Begin';
+    $scope.Reset = 'Resetten';
+    $scope.Stop = 'Stop';
 
     $scope.M01 = 'HAAIENVERVOER';
     $scope.M01a = 'Zijn de tank en de haai compleet in gebied 1 (linker box)?';
@@ -260,6 +272,9 @@ if (language == 'es') {
     $scope.Timers = 'Timers';
     $scope.Saves = 'Saves';
     $scope.Points = 'Points';
+    $scope.Start = 'Start';
+    $scope.Reset = 'Reset';
+    $scope.Stop = 'Stop';
 
     $scope.M01 = 'Shark Shipment';
     $scope.M01a = 'Is the Tank and the Shark completely in Target 1 (Left Box)?';
