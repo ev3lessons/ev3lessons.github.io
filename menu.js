@@ -167,11 +167,11 @@ var nav = [
 if (language == "de") {
 var nav = [
 "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 10
-"Lektionen", "Unterricht", "Roboter-Design", "none", "none", "none", "none", "none", "none", "none", // 20
-"Quellen", "Animal Allies Torschütze", "Interaktive Skizzen", "none", "andere Quellen", "none", "none", "none", "none", "none", // 30
-"Über uns", "Unsere Mission", "Mitarbeiter", "Mitwirkende FAQ", "none", "none", "none", "none", "none", "none", // 40
+"Themengebiete", "Programmierung", "Robot-Design", "none", "Herausforderungen", "Kurztipps", "none", "none", "none", "none", // 20
+"Hilfsmittel", "Animal Allies Punkterechner", "Interaktive Skizzen", "none", "Alle Hilfsmittel", "Archiv", "none", "none", "none", "none", // 30
+"Über Uns", "Unsere Mission", "Beitragende", "Mitwirkende FAQ", "Presse", "none", "none", "none", "none", "none", // 40
 "none", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 50
-"Contact us", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 60
+"Kontakt", "none", "none", "none", "none", "none", "none", "none", "none", "none", // 60
 ]
 }
 if (language == 'ct') {
@@ -227,7 +227,7 @@ document.write('\
             </ul>\
         </li>\
 	 <li>\
-            <a href="resources.html#'+language+'">{{Mtwozero}} <span class="arrow">&#9660;</span></a>\
+            <a href="resources.html#'+language+'">{{Mtwozero}}<span class="arrow">&#9660;</span></a>\
             <ul>\
                 <li><a href="resources/scorer/index.html#'+language+'">{{Mtwoone}}</a></li>\
                 <li><a href="resources/wheelconverter#'+language+'">{{Mtwotwo}}</a></li>\

@@ -87,17 +87,17 @@ if (language == 'es') {
     $scope.Saves = 'Gespeicherte Punktzahlen';
     $scope.Points = 'Punkte';
     PointsLang = 'Punkte';
-      GraphTitle = 'Liniendiagramm von Partituren';
+      GraphTitle = 'Liniendiagramm der Punktzahlen';
       GraphLegend = 'Punktzahl';
-    $scope.Start = 'Anfang';
-    $scope.Reset = 'Zurückstellen';
-    $scope.Stop = 'Halt';
-    $scope.SaveScore = 'Speichere Punktzahl';  
-    $scope.LoadSave = 'Lade Punktzahl';  
-    $scope.DeleteSave = 'Alle löschen speichert!';  
-    DeletedSave = 'Gelöschte alle spart :-( !!!!';
-    $scope.ImportSave = 'Import Gespeicherte Spielstände';
-    $scope.ExportSave = 'Export Gespeicherte Spielstände';
+    $scope.Start = 'Start';
+    $scope.Reset = 'Zurücksetzen';
+    $scope.Stop = 'Stop';
+    $scope.SaveScore = 'Punktzahl Speichern';  
+    $scope.LoadSave = 'Punktzahl Laden';  
+    $scope.DeleteSave = 'Alle gespeicherten punktzahlen löschen!';  
+    DeletedSave = 'Löscht alle gespeicherten punktzahlen :-( !!!!';
+    $scope.ImportSave = 'Gespeicherte Spielstände Importieren';
+    $scope.ExportSave = 'Gespeicherte Spielstände Exportieren';
 
     $scope.M01 = 'Hai-Transport';
     $scope.M01a = 'Sind das Becken und der Hai komplett am ersten Zielort (linkes Viereck)? ';
@@ -246,8 +246,8 @@ if (language == 'es') {
 
     $scope.M01 = 'HAAIENVERVOER';
     $scope.M01a = 'Zijn de tank en de haai compleet in gebied 1 (linker box)?';
-    $scope.M01b = 'Zijn de tank en de haai complete in gebied 2 (rechter box)?';
-    $scope.M01c = 'Raakt de haai alleen de de bodem van de tank aan?';
+    $scope.M01b = 'Zijn de tank en de haai compleet in gebied 2 (rechter box)?';
+    $scope.M01c = 'Raakt de haai alleen de bodem van de tank aan?';
     $scope.M01d = 'Opmerking: Na de start is het niet toegestaan date er iets ander dan de haai de tank raakt';
     $scope.M02 = 'HULPHOND IN ACTIE';
     $scope.M02a = 'Is het waarschuwinshek omlaag?';
@@ -259,9 +259,9 @@ if (language == 'es') {
     $scope.M04a = 'Hoeveel stukken voedsel zijn volledig in een dierengebied?';
     $scope.M04b = 'Opmerking: Als er meerdere stukken voedsel zijn in een gebied, moeten ze allemaal met elkaar overeenkomen.';
     $scope.M05 = 'Biomimicry';
-    $scope.M05a = 'Draagt de Biomimicry Muur al het gewicht van de Witte Gecko?';
-    $scope.M05b = 'Draagt de Biomimicry Muur al het gewicht van de robot?';
-    $scope.M05c = 'Opmerking: Niets van een scoring object mag in contact zijn met iets anders dan de Biomimicry muur en / of groene Gecko, De twee scorende voorwerpen mogen wel met elkaar in contact komen.';
+    $scope.M05a = 'Draagt de Biomimicry Muur al het hele gewicht van de Witte Gekko?';
+    $scope.M05b = 'Draagt de Biomimicry Muur al het hele gewicht van de robot?';
+    $scope.M05c = 'Opmerking: Niets van een scoring object mag in contact zijn met iets anders dan de Biomimicry muur en / of groene Gekko, De twee scorende voorwerpen mogen wel met elkaar in contact komen.';
     $scope.M06 = 'MELKMACHINE';
     $scope.M06a = 'Melk en mest zijn uitgerold?';
     $scope.M06b = 'Alle Melk is uitgerold, maar de mest niet';

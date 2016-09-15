@@ -636,7 +636,7 @@ blockquote {
 #nav > ul ul a,
 #nav > .menu > ul ul a {
   margin: 0px;
-  padding: 12px 20px;
+  padding: 12px 10px;
   height: auto;
   line-height: 1.3em !important;
   color: #999;
