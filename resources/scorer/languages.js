@@ -296,6 +296,81 @@ if (language == 'es') {
 
   });
 
+} else if (language == "hu"){
+
+  menuApp.controller("MenuCtrl", function($scope) {
+
+    $scope.Yes = 'Igen';
+    $scope.No = 'Nem';
+    $scope.Title = 'Animal Allies Pontszámító (v2.0)';
+    $scope.Scorer = 'Scorer';
+    $scope.Timers = 'Időzítők';
+    $scope.Saves = 'Mentések';
+    $scope.Points = 'Pontok';
+      GraphTitle = 'Line Graph of Scores';
+      GraphLegend = 'Scores';
+    PointsLang = 'Points';
+    $scope.Start = 'Start';
+    $scope.Reset = 'Reset';
+    $scope.Stop = 'Stop';
+    $scope.SaveScore = 'Pontok mentése';  
+    $scope.LoadSave = 'Pontok betöltése';  
+    $scope.DeleteSave = 'Delete All Saves!';  
+    DeletedSave = 'Deleted all saves :-( !!!!';
+    $scope.ImportSave = 'Import Saved Scores';
+    $scope.ExportSave = 'Export Saved Scores';
+
+    $scope.M01 = 'A cápa szállítása';
+    $scope.M01a = 'A tartály és a cápa teljesen az 1. célterületen vannak? (bal oldali doboz)';
+    $scope.M01b = 'A tartály és a cápa teljesen az 2. célterületen vannak? (jobb oldali doboz)';
+    $scope.M01c = 'A cápa csak a tartály padlójához ér hozzá?';
+    $scope.M01d = 'Megjegyzés: Az indítás után semmi sem érintheti a cápát a tartályon kívűl.';
+    $scope.M02 = 'Vakvezető kutya';
+    $scope.M02a = 'A figyelmeztető kerítés vízszintesen lehajtva helyezkedik el?';
+    $scope.M02b = 'A figyelmeztető kerítés vízszintesen fekszik a pályán, mert a robot nyugati irányból teljesen áthajtott rajta, miután áthaladt a korlátok között?';
+    $scope.M03 = 'Állatfajok megőrzése';
+    $scope.M03a = 'Hány azonos fajhoz tartozó állatpár van teljes terjedelmében ugyanazon az oldalon - a két asztalon összesen?';
+    $scope.M03b = 'Megjegyzés: Akkor számít párnak ha az állatmegőrzés modellen pörgettük át a másik asztalhoz.';
+    $scope.M04 = 'Etetés';
+    $scope.M04a = 'Hány adag eledel van a kijelölt körökben??';
+    $scope.M04b = 'Megjegyzés: Egy körben csak azonos színű eledelek lehetnek.';
+    $scope.M05 = 'Biomimikri';
+    $scope.M05a = 'A fehér gekkó teljes terjedelmében a biomimikri falon lóg?';
+    $scope.M05b = 'A robot teljes terjedelmében a biomimikri falon lóg?';
+    $scope.M05c = 'Megjegyzés: A pontszerző tárgy nem érhet semmihez a falon és a zöld gekkón kívűl. Kivétel ez alól, ha a két pontszerző tárgy egymáshoz ér.';
+    $scope.M06 = 'Fejőgép';
+    $scope.M06a = 'A tej és a trágya is kiesett?';
+    $scope.M06b = 'Csak a tej esett ki, a trágya nem?';
+    $scope.M06c = 'Megjegyzés: A tej és/vagy a trágya csak a piros kar mozgatása során gurultak ki a gépből.';
+    $scope.M07 = 'Panda szabadonengedése';
+    $scope.M07a = 'A kapu teljesen ki van nyitva?';
+    $scope.M08 = 'Kamera megszerzése';
+    $scope.M08a = 'A kamera a bázison van?';
+    $scope.M09 = 'Kiképzés és kutatás';
+    $scope.M09a = 'A kiképző a kutyával együtt teljes terjedelmében a kiképző- és kutatóállomáson van?';
+    $scope.M09b = 'A zoológus teljes terjedelmében a kiképző- és kutatóállomáson van?';
+    $scope.M09c = 'Hány trágya van teljes terjedelmében a kiképző- és kutatóállomáson??';
+    $scope.M09d = 'Megjegyzés: Egy időben csak egy trágya szállítható.';
+    $scope.M10 = 'Méhészet';
+    $scope.M10a = 'A méh a kaptáron van és a kaptárban nincsen méz?';
+    $scope.M10b = 'A méh a kaptáron van és a méz teljes terjedelmébe a bázison helyezkedik-e el?';
+    $scope.M11 = 'Művégtag';
+    $scope.M11a = 'A protézis a malacon van és nincsen a versenybírónál?';
+    $scope.M11b = 'A protézis a malacon van és teljes terjedelmében a gazdaterületen van??';
+    $scope.M12 = 'Fóka';
+    $scope.M12a = 'A fóka teljesen a bázison van és nem törött?';
+    $scope.M13 = 'Tej a bázison';
+    $scope.M13a = 'A tej a bázison van?';
+    $scope.M14 = 'Tej a rámpán';
+    $scope.M14a = 'Mind a három tej a rámpán van?';
+    $scope.M14b = 'Mind a három tej a rámpán van ÉS csak azok érintik a rámpát?';
+    $scope.M14c = 'Mind a három tej a rámpán van ÉS csak azok érintik a rámpát ÉS mindegyik áll?';
+    $scope.M15 = 'Trágyák';
+    $scope.M15a = 'Mind a hét trágya teljes terjedelmében a kiképző- és kutatóállomáson van?';
+    $scope.Penalty = 'Büntetőpontok';
+    $scope.Penaltya = 'Hány darab trágya van a fehér háromszög alakú arénában??';
+
+  });
 } else {
 
   menuApp.controller("MenuCtrl", function($scope) {
