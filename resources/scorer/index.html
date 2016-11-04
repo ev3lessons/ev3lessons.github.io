@@ -104,13 +104,13 @@
                 createcomment('{{M01d}}')
                 endtable()
 
-                starttable('M02', '{{M02}}','servicedogsmall.png', ['servicedog'], 1)
+                starttable('M02', '{{M021}}','servicedogsmall.png', ['servicedog'], 1)
                 createbutton("servicedog", 15 , '{{M02a}}')
                 createcomment('{{M02b}}')
                 endtable()
 
                 starttable('M03', '{{M03}}','animalconservation.png', ['pairs'], 1)
-                createrange("pairs", 20 , 0, 5, 0, '{{M03a}}')
+                createrange("pairs", 20 , 0, 6, 0, '{{M03a}}')
                 createcomment('{{M03b}}')
                 endtable()
 
@@ -150,11 +150,13 @@
                 starttable('M09', '{{M09}}','zoologist.png' , ['dogandtrainer', 'zoologist','manure'], 1)
                 createbutton("dogandtrainer", 12 , '{{M09a}}')
                 createbutton("zoologist", 15 , '{{M09b}}')
-                if (language == 'de') {
-                  count = 12;
-                } else {
-                  count = 7;
-                }
+/*                if (language == 'de') {
+#                  count = 12;
+#                } else {
+#                  count = 7;
+#                }
+		*/
+		count = 7
                 createrange("manure", 5 , 0, count, 0, '{{M09c}}')
                 createcomment('{{M09d}}')
                 endtable()
