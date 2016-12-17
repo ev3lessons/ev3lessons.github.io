@@ -371,6 +371,81 @@ if (language == 'es') {
     $scope.Penaltya = 'Hány darab trágya van a fehér háromszög alakú arénában??';
 
   });
+} else if (language == "fr") {
+
+  menuApp.controller("MenuCtrl", function($scope) {
+
+    $scope.Yes = 'Oui';
+    $scope.No = 'Non';
+    $scope.Title = 'Calculateur de point “Animal Allies” (v2.0)';
+    $scope.Scorer = 'Calculateur';
+    $scope.Timers = 'Minuteurs';
+    $scope.Saves = 'Sauvegardes';
+    $scope.Points = 'Points';
+      GraphTitle = 'Line Graph of Scores';
+      GraphLegend = 'Scores';
+    PointsLang = 'Points';
+    $scope.Start = 'Démarrer';
+    $scope.Reset = 'Redémarrer';
+    $scope.Stop = 'Arrêter';
+    $scope.SaveScore = 'Sauver le score';  
+    $scope.LoadSave = 'Charger le score';  
+    $scope.DeleteSave = 'Supprimer tous les scores';  
+    DeletedSave = 'Vous avez supprimer tous les scores :-( !!!!';
+    $scope.ImportSave = 'Importer les scores sauvegardés';
+    $scope.ExportSave = 'Exporter les scores sauvegardés ';
+
+    $scope.M01 = 'Transport de requin';
+    $scope.M01a = 'L’aquarium et le requin sont-ils complètement dans la première zone ? (Rectangle gauche)';
+    $scope.M01b = 'L’aquarium et le requin sont-ils complètement dans la seconde zone ? (Rectangle droit)';
+    $scope.M01c = 'Le requin ne touche-t-il que le sol de l’aquarium ?';
+    $scope.M01d = 'Note : Après le lancement, rien ne peut toucher le requin à l’exception de l’aquarium';
+    $scope.M02 = 'Chien guide';
+    $scope.M02a = 'La barrière d’avertissement est-elle vers le bas?';
+    $scope.M02b = 'Note: La barrière doit être au sol puisque le robot l’a traversée depuis l’ouest, après être passé entre les barricades.';
+    $scope.M03 = 'Preservation des animaux';
+    $scope.M03a = 'Combien de paires d’animaux identiques comptez-vous sur chaque table?';
+    $scope.M03b = 'Note: Chaque paire doit être créé avec une rotation sur base du modèle de préservation des animaux.';
+      $scope.M04 = 'Alimentation';
+    $scope.M04a = 'Combien d’éléments de nourriture sont complètement dans les zones cibles?';
+    $scope.M04b = 'Note: S’il y a plusieurs éléments de nourriture dans une zone, ils doivent se correspondre.';
+    $scope.M05 = 'Biomimétisme';
+    $scope.M05a = 'Le mur de biomimétisme supporte-t-il tout le poids du gecko blanc?';
+    $scope.M05b = 'Le mur de biomimétisme supporte-il tout le poids du robot?';
+    $scope.M05c = 'Note: Pour qu’un objet rapporte des points, aucune de ses parties ne doit être en contact avec autre chose que le mur de biomimétisme et/ou le gecko vert, à l’exception de deux objets rapportant des points qui peuvent être en contact l’un avec l’autre.';
+    $scope.M06 = 'Traite automatisée';
+    $scope.M06a = 'Le lait et le fumier sont-ils tombés?';
+    $scope.M06b = 'Tout le lait est-il tombé mais pas le fumier?';
+    $scope.M06c = 'Note: L’unique action du robot pour déplacer le lait et/ou le fumier vient du mouvement du levier rouge';
+    $scope.M07 = 'Libération des pandas';
+    $scope.M07a = 'La plateforme est-elle complétetement ouverte dans le sens des aiguilles d’une montre?';
+    $scope.M08 = 'Récupération de la camera';
+    $scope.M08a = 'La camera est-elle complétement dans la base?';
+    $scope.M09 = 'Entrainement et recherche';
+    $scope.M09a = 'Le chien et le dresseur sont-ils complétement dans la zone d’entrainement et recherche?';
+    $scope.M09b = 'Le zoologiste est-il complétement dans la zone d’entrainement et recherche?';
+    $scope.M09c = 'Combien d’éléments de fumiers sont-ils dans la zone d’entrainement et recherche?';
+    $scope.M09d = 'Note: Seul un élément de fumier peut être transporté à la fois';
+    $scope.M10 = 'Apiculture';
+    $scope.M10a = 'L’abeille est-elle sur la ruche sans qu’il n’y ait de miel dans la ruche?';
+    $scope.M10b = 'L’abeille est-elle sur la ruche et le miel dans la base?';
+    $scope.M11 = 'Prothèse';
+    $scope.M11a = 'La prothèse est-elle sur l’animal et non tenue par l’arbitre?';
+    $scope.M11b = 'La prothèse est-elle sur l’animal et l’animal dans sa zone (ferme)?';
+    $scope.M12 = 'Phoque';
+    $scope.M12a = 'Le phoque est-il complétement dans sa base, non abimé?';
+    $scope.M13 = 'Lait dans la base';
+    $scope.M13a = 'Les trois éléments de lait sont-ils complétement dans la base?';
+    $scope.M14 = 'Lait sur la rampe';
+    $scope.M14a = 'Les trois éléments de lait sont-ils complétement portés par la rampe?';
+    $scope.M14b = 'Les trois éléments de lait sont-ils portés par la rampe ET sont les seules choses à toucher la rampe?';
+    $scope.M14c = 'Les trois éléments sont-ils portés par la rampe ET sont les seules choses à toucher la rampe ET sont tous debout?';
+    $scope.M15 = 'Les modèles';
+    $scope.M15a = 'Les 7 modèles de fumier sont-ils complétement dans la zone d’entrainement et de recherche?';
+    $scope.Penalty = 'Pénalités';
+    $scope.Penaltya = 'Combien de pièces de fumier reste-t-il dans la zone triangulaire blanche?';
+
+  });
 } else {
 
   menuApp.controller("MenuCtrl", function($scope) {

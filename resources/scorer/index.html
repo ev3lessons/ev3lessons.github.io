@@ -32,6 +32,7 @@
   var fr  = ''+ page +'#fr';
   var ct  = ''+ page +'#ct';
   var he  = ''+ page +'#he';
+  var fr  = ''+ page +'#fr';
   // var page = window.location.href.split("#")[0];
   // alert (page);
   // var href = window.location.href;
@@ -64,6 +65,7 @@
         <a href="#es" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/es.png"></a>
         <a href="#de" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/small/Germany.png"></a>
         <a href="#hu" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/small/Hungary.png"></a>
+        <a href="#fr" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/small/France.png"></a>
       </div>
       <div style="margin: 0 auto; width: 400px; font-size:24px"><b>{{Title}}</b>
       </div>
@@ -72,7 +74,7 @@
     <br>
 
     <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-      <h1 style="padding-top:0; padding-bottom:0" ><i>{{Points}}: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("shark|0,shark2|0,shark3|0,servicedog|0,pairs|0,food|0,biomimicrywall|0,biomimicrywall2|0,milkingautomation|0,milkingautomation2|0,pandaobservation|0,camera|0,dogandtrainer|0,zoologist|0,manure|0,beehive|0,honey|0,ourlittlefriend|0,farm|0,seal|0,milk|0,ramp1|0,ramp2|0,ramp3|0,allsamples|0,penalty|0");'></h1>
+      <h1 style="padding-top:0; padding-bottom:0" ><i>{{Points}}: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="{{Reset}}" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("shark|0,shark2|0,shark3|0,servicedog|0,pairs|0,food|0,biomimicrywall|0,biomimicrywall2|0,milkingautomation|0,milkingautomation2|0,pandaobservation|0,camera|0,dogandtrainer|0,zoologist|0,manure|0,beehive|0,honey|0,ourlittlefriend|0,farm|0,seal|0,milk|0,ramp1|0,ramp2|0,ramp3|0,allsamples|0,penalty|0");'></h1>
     </div>
     <script src="html.js"></script>
 
@@ -104,7 +106,7 @@
                 createcomment('{{M01d}}')
                 endtable()
 
-                starttable('M02', '{{M021}}','servicedogsmall.png', ['servicedog'], 1)
+                starttable('M02', '{{M02}}','servicedogsmall.png', ['servicedog'], 1)
                 createbutton("servicedog", 15 , '{{M02a}}')
                 createcomment('{{M02b}}')
                 endtable()
