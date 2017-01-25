@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<script type="text/javascript" src="jsapi"></script>
+<a rel="external" href="/resources.html">
+  <img height="33" width="33" src="51970.png">
+ Back </a>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script> if (screen.width < 900) {
+document.write('<div style=" top: 5px; z-index: 100;background-color: white;">');
+			    } else {
+			    
+		document.write('	    <div style="right: 5px; position:fixed; top: 5px; z-index: 100;background-color: white;">');
+			      }
+			      </script>
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ev3lessons.ev3lessons.trashtrekscorer">
+  <img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_60.png">
+</a><br> <a target="_blank" href="https://itunes.apple.com/us/app/fll-trash-trek-scorer/id1036019261?ls=1&mt=8">
+  <img width="172" height="60" alt="IOS APP" src="appstore.svg">
+</a>
+  <br>
+  <div class="ui-mini">
+   <script src="score.js"></script>
+   <script src="timers.js"></script>
+   <input style="text-size: 150%" id="togglescore" type="button" value="Enable Score Scrolling" onclick="
+document.getElementById('scorediv').style.position = 'fixed';
+document.getElementById('scorediv').style.top = '178px';
+document.getElementById('scorediv').style.right = '5px';
+document.getElementById('scorediv').style.backgroundColor = 'white';
+document.getElementById('scorediv').style.borderStyle = 'solid';
+document.getElementById('scorediv').style.borderColor = 'red';
+//document.getElementById('scorediv').style.z-index = '100';
+">
+</div><div class="ui-mini"> <input style="text-size: 150%" id="togglescore" type="button" value="Disable Score Scrolling" onclick="
+document.getElementById('scorediv').style.position = '';
+document.getElementById('scorediv').style.top = '';
+document.getElementById('scorediv').style.right = '';
+document.getElementById('scorediv').style.backgroundColor = '';
+document.getElementById('scorediv').style.borderStyle = '';
+document.getElementById('scorediv').style.borderColor = '';
+">
+ </div>
+</div>
+<script>
+  a = 0;
+	     function cleanArray(actual){
+  var newArray = new Array();
+  for(var i = 0; i<actual.length; i++){
+      if (actual[i]){
+        newArray.push(actual[i]);
+    }
+  }
+  return newArray;
+}
+function drawBasic() {
+				  vv = 0;
+			
+nn = 1;
+array = [];
+array[0] = parseInt(window.localStorage.DRTTscorer.split(' Points')[0].split(',')[0]);
+vvv = 1;
+lt = window.localStorage.DRTTscorer.split(',').length - 0;
+while (vvv < lt) {
+array[nn] = parseInt(window.localStorage.DRTTscorer.split(' Points')[vvv].split(',')[1]);
+	     vvv = vvv + 1;
+nn = nn+1;	     
+	     }
+	     //format:'#,###%'
+
+/*	     if (array[2] != undefined){
+array[2] = parseInt(window.localStorage.DRTTscorer.split(' Points')[2].split(',')[1]);
+}*/
+	 //    array = cleanArray(array);
+	  //   array[2] = parseInt(window.localStorage.DRTTscorer.split(' Points')[2].split(',')[1]);
+	  //   array[3] = parseInt(window.localStorage.DRTTscorer.split(' Points')[3].split(',')[1]);
+
+	     var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Points');
+
+      data.addRows([
+        [0, 0]
+      ]);
+  while (vv < array.length) {
+data.addRows([
+        [vv, array[vv]]
+	   ]);
+	  vv = vv+1;
+	   }
+	      var options = {
+        hAxis: {
+              title: 'Score Number',
+	      gridlines: {count: lt}
+	      },
+        vAxis: {
+              title: 'Points'
+	     
+              }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+    <!--
+
+var viewportwidth;
+var viewportheight;
+
+// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+if (typeof window.innerWidth != 'undefined')
+{
+    viewportwidth = window.innerWidth,
+    viewportheight = window.innerHeight
+}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+else if (typeof document.documentElement != 'undefined'
+	 && typeof document.documentElement.clientWidth !=
+	 'undefined' && document.documentElement.clientWidth != 0)
+{
+    viewportwidth = document.documentElement.clientWidth,
+    viewportheight = document.documentElement.clientHeight
+}
+
+// older versions of IE
+
+else
+{
+    viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+}
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+
+</head>
+    <div>
+    <style scoped>
+     h1 em {
+      font-size: 50%;
+      }
+    </style>
+
+  <h1>Trash Trek Scorer
+      <em> (v3.1 by EV3Lessons/Droids Robotics)
+
+</div>
+
+
+    <script>
+
+    if (viewportwidth > 768)
+	document.write('<table width="768"><tr><td width="35%">');
+    else if (viewportwidth > 600)
+	document.write('<table width="100%"><tr><td width="25%">');
+    else
+	document.write('<table><tr width="100%"><td width="100%">');
+	  </script>
+
+<div class="ui-mini" id="Timer">
+  Timer:
+  <table style="border: 10px solid black; border-collapse: collapse;">
+    <tr style="border: 10px solid black; border-collapse: collapse;">
+      <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+	<p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30<p>
+      </td>
+      <td style="border: 10px solid black; border-collapse: collapse;">
+	<button style="margin:0" onclick="CDtimer()">Start</button>
+      </td>
+    </tr>
+    <tr style="border: 10px solid black; border-collapse: collapse;">
+      <td style="border: 10px solid black; border-collapse: collapse;"><button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+      </td>
+    </tr>
+    <tr>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Pause</button>
+    </td>
+    </tr>
+  </table>
+</div>
+  <script>
+    if (viewportwidth > 600){
+        document.write('</td><td width="40%">');
+    } 
+    </script>
+<div class="ui-mini" id="Stopwatch">
+Stopwatch:
+<table style="border: 10px solid black; border-collapse: collapse;">
+  <tr style="border: 10px solid black; border-collapse: collapse;">
+    <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+	<p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0</p></td>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+    <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+  </tr>
+  <tr>
+  <td style="border: 10px solid black; border-collapse: collapse;">
+    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
+  </td>
+  </tr>
+  <tr>
+    <td style="border: 10px solid black; border-collapse: collapse;">
+      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Pause</button>
+    </td>
+  </tr>
+</table>
+
+<script>
+  var CDtime = document.getElementById('countdownTime');
+  var SWtime = document.getElementById('stopwatchTime');
+</script>
+
+
+  <script>
+    if (viewportwidth > 600){
+	document.write(' </td><td width="30%">');}
+</script>
+<div  id="scorediv" style="//position:fixed; top:100px; z-index:1000;">
+	<center >
+	<fieldset>
+	<legend size="10">Score</legend>
+	<input name="total" type='text' size='10'  value='96 Points' readonly style="text-align: center; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
+	</fieldset>
+	</center>
+	<div class="ui-mini">
+	  <input type="button" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 150%">
+	  </div>
+
+</td>
+  </tr>
+</table>
+
+<form id="form">
+<div class="missions">
+<script>
+    if (viewportwidth > 500) {
+	document.write('<table style="border: none" border="0">');
+    }
+</script>
+
+  <tr style="vertical-align: top;">
+    <td>
+      <table style="border: 1px solid black; border-collapse: collapse; " border="1">
+	<tr>
+	  <td rowspan="3"> <img src='missions/M01.png' width="80"></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M01: Using Recycled Material:
+	    <i style="font-style: normal;" id="M01pts">0</i>  
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Number of Green Bins with matching bars in other team's Safety
+0	  </td>
+	</tr>
+	<tr>
+	  <td width="200">
+	    <input type="range" data-show-value="true" name="RecMat" id="RecMat" value="0" min="0" max="4" step="1" onchange='if (this.value<recmatMin) this.value=recmatMin;calc(this.value*60,11)'>
+            <p id="RecMatTxt" style="color: red"></p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M02.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M02: Methane:
+	    <i style="font-style: normal;" id="M02pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many locations has the Methane been installed in?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="Methane" id="Methane" value="0" min="0" max="2" step="1" onchange="calc(this.value*40,21)">
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M03.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M03: Transport:
+	    <i style="font-style: normal;" id="M03pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Does the Truck support all of the Yellow Bin's weight?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	    <label for="yesM03a">Yes</label>
+	    <input  type="radio" onclick="calc(50, 31)" name="M03a" value="true" id="yesM03a">
+	    <label for="noM03a">No</label>
+	    <input  type="radio" onclick="calc(0, 31)" name="M03a"  value="false" id="noM03a" checked>	
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Yellow Bin completely East of Truck's Guide?
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	    <input  type="radio" onclick="calc(60, 32)" name="M03b" value="true" id="yesM03b" >
+	    <label for="yesM03b">Yes</label>
+	    <input type="radio"  onclick="calc(0, 32); " name="M03b" value="false" id="noM03b" checked>
+	    <label for="noM03b">No</label>
+	    </fieldset>
+	    </p>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="15"><img width="80" src='missions/M04.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M04: Sorting:
+	    <i style="font-style: normal;" id="M04pts">96</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Yellow Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<input type="range" data-show-value="true" name="YellowBars" id="YellowBars" value="0" min="0" max="9" step="1" onchange="calc(0,41)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Yellow Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="westM04y">West Transfer Area</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="westM04y" value="7">
+	    <label for="safeM04y">Other team's Safety</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="safeM04y" value="0">	
+	    <label for="elseM04y">Elsewhere</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="elseM04y" value="6" checked>	
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Blue Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlueBars" id="BlueBars" value="0" min="0" max="6" step="1" onchange="calc(0,42)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Blue Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="westM04b">West Transfer Area</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="westM04b" value="7">
+	    <label for="safeM04b">Other team's Safety</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="safeM04b" value="0">	
+	    <label for="elseM04b">Elsewhere</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="elseM04b" value="6" checked>	
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Black Bars are in their original position/scoring in Flower Box ?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlackBarsOrig" id="BlackBarsOrig" value="12" min="0" max="12" step="1" oninput="" onchange='if (this.value>bboMax) this.value=bboMax; calc(0,43)'>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are in the matching Green Bin or Landfill Bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlackBarsBin" id="BlackBarsBin" value="0" min="0" max="12" step="1" onchange="calc(0,44)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are elsewhere on the board?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center>    <p id="BlackBarPen">0
+	    </p></center>
+	</tr>
+
+	<tr>
+	      <td rowspan="3"><img width="80" src='missions/M05.png'></td>
+	      <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M05: Careers:
+		<i style="font-style: normal;" id="M05pts">0</i>
+	      </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+		Is at least one Person in the Sorting Mission Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 51)" name="M05" value="true" id="yesM05" >
+	      <label for="yesM05">Yes</label>
+	      <input type="radio" onclick="calc(0, 51)" name="M05" value="false" id="noM05" checked>
+	      <label for="noM05">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+      </table>
+
+    </td>
+
+    <td style="vertical-align: top;">
+
+      <table style="border: 1px solid black; border-collapse: collapse;" border="1">
+	
+	<tr>
+	  <td rowspan="7"><img width="80" src='missions/M06.png'></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M06: Scrap Cars:
+	    <i style="font-style: normal;" id="M06pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Was the Car EVER partly in the Safety Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(1, 61)" name="M06a" value="true" id="yesM06a" >
+	      <label for="yesM06a">Yes</label>
+	      <input type="radio" onclick="calc(0, 61)" name="M06a" value="false" id="noM06a" checked>
+	      <label for="noM06a">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Engine/Windshield installed in the Car?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(65, 62)" name="M06b" value="true" id="yesM06b" >
+	      <label for="yesM06b">Yes</label>
+	      <input type="radio" onclick="calc(0, 62)" name="M06b" value="false" id="noM06b" checked>
+	      <label for="noM06b">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Car completely folded and in the East Transfer Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(50, 63)" name="M06c" value="true" id="yesM06c" >
+	      <label for="yesM06c">Yes</label>
+	      <input type="radio" onclick="calc(0, 63)" name="M06c" value="false" id="noM06c" checked>
+	      <label for="noM06c">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="7"> <img src='missions/M07.png' width="80"></td>
+	  <td  width="1000%" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M07: Cleanup:
+	    <i style="font-style: normal;" id="M07pts">0</i>
+	</td></tr>
+	<tr>
+	  <td width="300" style="font-size: 100%; background-color: sky;">
+	    How many Plastic Bags are in the Safety Area?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="bags" id="bags" value="0" min="0" max="2" step="1" onchange="calc(this.value*30,71)">
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Animals are completely in any Circle without Plastic Bags?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="animals" id="animals" value="0" min="0" max="3" step="1" onchange="calc(this.value*20,72)">
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Chicken completely in the Small Circle?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(35, 73)" name="M07c" value="true" id="yesM07c" >
+	      <label for="yesM07c">Yes</label>
+	      <input type="radio" onclick="calc(0, 73)" name="M07c" value="false" id="noM07c" checked>
+	      <label for="noM07c">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M08.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M08: Composting:
+	    <i style="font-style: normal;" id="M08pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Has the Compost been ejected?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 81)" name="M08a" value="true" id="yesM08a" >
+	      <label for="yesM08a">Yes</label>
+	      <input type="radio" onclick="calc(0, 81)" name="M08a" value="false" id="noM08a" checked>
+	      <label for="noM08a">No</label>
+	      </fieldset>
+	    </p>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(20, 82)" name="M08b" value="true" id="yesM08b" >
+	      <label for="yesM08b">Yes</label>
+	      <input type="radio" onclick="calc(0, 82)" name="M08b" value="false" id="noM08b" checked>
+	      <label for="noM08b">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img  width="80" src='missions/M09.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M09: Salvage:
+	    <i style="font-style: normal;" id="M09pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Are the Valuables completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 91)" name="M09" value="true" id="yesM09" >
+	      <label for="yesM09">Yes</label>
+	      <input type="radio" onclick="calc(0, 91)" name="M09" value="false" id="noM09" checked>
+	      <label for="noM09">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M10.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M10: Demolition:
+	    <i style="font-style: normal;" id="M10pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is building demolished (i.e. are all ALL building beams knocked down)?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(85, 101)" name="M10" value="true" id="yesM10">
+	      <label for="yesM10">Yes</label>
+	      <input type="radio" onclick="calc(0, 101)" name="M10" value="false" id="noM10" checked>
+	      <label for="noM10">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M11.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M11: Purchasing Decisions:
+	    <i style="font-style: normal;" id="M11pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Toy Planes are completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="purchase" id="purchase" value="0" min="0" max="2" step="1" onchange="calc(this.value*40,111)">
+	  </td>
+	</tr>
+
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M12.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M12: Repurposing:
+	    <i style="font-style: normal;" id="M12pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost in either Toy Package (Flower Box)?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(40, 121)" name="M12" value="true" id="yesM12" >
+	      <label for="yesM12">Yes</label>
+	      <input type="radio" onclick="calc(0, 121)" name="M12" value="false" id="noM12"checked>
+	      <label for="noM12">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+</tr>
+<tr><td colspan="2">
+    <script>
+      n = 0;
+       google.load('visualization', '1', {packages: ['corechart', 'line']});
+function saveLocalStorage() {
+ var currentTime = new Date()
+var month = currentTime.getMonth() + 1
+var day = currentTime.getDate()
+var year = currentTime.getFullYear()
+   var currentdate = month + "/" + day + "/" + year;
+
+
+var hours = currentTime.getHours()
+var minutes = currentTime.getMinutes()
+if (minutes < 10){
+minutes = "0" + minutes
+}
+
+if(hours > 11){
+   var ampm = "PM";
+} else {
+   var ampm = "AM";
+}
+if (hours > 12) {
+   hours = hours - 12;
+}
+var timex = hours + ":" + minutes + " ";
+
+        var currenttime = timex + '' + ampm;
+     //   var currenttime = timex;
+     var datetime = currenttime + ' ' + currentdate;
+
+   
+      if (window.localStorage.DRTTscorer != undefined ) {
+window.localStorage.DRTTscorer = String(window.localStorage.DRTTscorer) + ',' + String( M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12) + ' Points - ' + datetime;
+//window.localStorage.DRTTscorer =  M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+//alert(M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12);
+//alert(window.localStorage.DRTTscorer);
+} else {
+window.localStorage.DRTTscorer =  M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12  + ' Points - ' + datetime;
+//alert(window.localStorage.DRTTscorer + 'hi');
+	}
+
+      }
+    </script>
+    
+ <div class="ui-mini"><input type="button" onclick="saveLocalStorage();     a = window.localStorage.DRTTscorer.split(',').length;" value="Save Score"></div>
+   <!-- <div class="ui-mini"><input type="button" onclick="loadsaves()" value="Show Saves"></div>
+     -->
+   <center><script>
+       a = window.localStorage.DRTTscorer.split(',').length;
+   n = 0;
+function loadsaves() {
+
+       while(n < a) {
+	      document.getElementById('saves').innerHTML = document.getElementById('saves').innerHTML +''+ window.localStorage.DRTTscorer.split(',')[n] + '<br>'  ;
+	      n = n+1;
+//	      alert(x);
+	      }
+
+
+
+	      }
+		 </script><a onclick="loadsaves(); drawBasic();" href="#popupMap" data-rel="popup" data-position-to="window" data-role="button" data-theme="a" data-inline="true" aria-haspopup="true" aria-owns="popupMap" aria-expanded="false" class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all ui-mini" role="button">Open Saves</a>
+     <div class="ui-mini"><input type="button" onclick="localStorage.clear('DRTTscorer'); document.getElementById('saves').innerHTML='';n=0;a=0; drawBasic();" value="Delete Scores"></div>
+</center>'
+</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+</form>
+
+<div style="width: 30em; height: 30em;" data-role="popup" id="popupMap" data-overlay-theme="b" data-theme="b" data-corners="false" data-tolerance="15,15">
+<h2>Past Scores</h2>
+  <div id="chart_div" style="width: 30em;"></div>
+    <a href="#" data-rel="back" data-role="button" data-theme="b" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+    <div id="saves" >
+
+    </div>
+    </div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+    
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<div>
+
+</div>

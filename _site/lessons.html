@@ -1,0 +1,1827 @@
+ <!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+
+  <title>EV3Lessons.com | by Seshan Brothers</title>
+
+  <!-- [favicon] begin -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- [favicon] end -->
+
+  <!-- CSS Main -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+  <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+  <!-- CSS Social -->
+  <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+  <!-- HEADER CUT HERE ------------------------------------------------->
+
+
+</head>
+<script>
+function url() {
+if (decodeURI(window.location.search.substring(1)) != "") {
+show(decodeURI(window.location.search.substring(1)))
+document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+}
+}
+</script>
+
+<body class="no_js responsive boxed-layout chrome " onload="url()">
+
+  <!-- TOPBAR -->
+  <div id="po1">
+    <script src="topbar.js"></script>
+    <!-- END TOPBAR -->
+  </div>
+
+  <!-- START WRAPPER -->
+  <div class="wrapper group">
+    <!-- START HEADER -->
+    <div id="header" class="group">
+      <div class="group inner">
+
+
+        <!-- START NAV -->
+        <script src="menu.js"></script>
+        <!-- END NAV -->
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- HEADER CUT HERE ------------------------------------------------->
+
+    <script>
+    var alltext = "none"
+    var slidestext = "Slides:"
+    var introText = ["none","none","none","none","none"];
+    var pgintro = 'none';
+    if (language == 'en-us') {
+      var lev = ["Beginner","Intermediate","Advanced","none","none"];
+    }
+
+    if (language == 'el') {
+      pgintro = "Μαθήματα προγραμματισμού";
+      var lev = ["Αρχάριο επίπεδο","Μεσαίο επίπεδο","Ανώτερο επίπεδο","Άλλα","Camp"];
+      introText[0]="Αυτά τα μαθήματα είναι για μαθητές νέους στα EV3. Αυτά τα μαθήματα έχουν σχεδιαστεί να ολοκληρωθούν με την σειρά.";
+      introText[1]="Αυτά τα μαθήματα είναι για μαθητές οι οποίοι κατανοούν την βασική χρήση των κινήσεων και των αισθητήρων";
+      introText[2]="Αυτά τα μαθήματα είναι για μαθητές οι οποίοι είναι ήδη εξοικειωμένοι με τα MyBlocks και την ακολουθία γραμμής (line following).";
+      introText[3]='Αυτά τα μαθήματα έχουν καταχωρηθεί από άλλες ομάδες και χρήστες των EV3. Στο  <a href="contributorfaq.html"> Contributor FAQ</a> μπορείτε να υποβάλετε και εσείς κάποιο μάθημα';
+      introText[4]="Αυτά τα μαθήματα είναι συνδυασμός μαθημάτων κατάλληλα για ενημερώσεις.";
+
+
+    }
+    if (language == "es") {
+      var lev = ["Principiante","Intermedio","Avanzado","none","none"];
+    }
+
+    if (language == "nl") {
+      pgintro = "Programmeer lessen";
+      introText[0]="Deze lessen zijn voor leerlingen die nog niet bekend zijn met de EV3. De lessen zijn ontworpen om in volgorde te leren.";
+      introText[1]="Deze lessen zijn voor leerlingen die de de basis bewegingen en het gebruik van sensoren begrijpen. ";
+      introText[2]="Deze lessen zijn voor leerlingen die bekend zijn met mijn blokken en lijnen volgen";
+      var lev = ["Beginner","Gevorderden","Geavanceerde","none","none"];
+    }
+
+    if (language == "ar") {
+    }
+
+    if (language == "pt-br") {
+      var lev = ["Básicas","Intermediário","Avançada","Além","Oficinas"];
+      alltext = "Todos"
+      introText[0]="Essas lições são para novos estudantes do EV3. Essas lições foram feitas para serem completadas em ordem.";
+      introText[1]="Essas lições são para estudantes que entendem movimentos básicos e uso de sensores.";
+      introText[2]="Essas lições são para estudantes já familiarizados com MyBlocks e seguidores de linha.";
+      introText[3]="Essas lições foram feitas para usuários do EV3 que já completaram todas as lições anteriores e estão interessados  em desenvolver e aprender novas técnicas.  ";
+      introText[4] = "Essas são lições combinadas ideais para utilizar em campo.";
+    }
+
+
+    if (language == 'fr') {
+      pgintro = "none";
+      var lev = ["Débutant","Intermédiaire","Avancé","none","none"];
+      introText[0]="Ces leçons sont destinées aux nouveaux venus dans l'univers EV3. Elles offrent une progression logique, suivez les dans l'ordre!";
+      introText[1]="Ces leçons sont destinées à ceux d'entre vous qui ont déjà une connaissance des déplacements de base, et de l'utilisation des capteurs.";
+      introText[2]="Ces leçons sont destinées aux plus avancés d'entre vous, maîtrisant les blocs personnalisés et le suivi de ligne.";
+      introText[3]="Ces leçons sont conçues par des équipes FLL et des passionnés d'EV3. Si vous voulez contribuer, consultez la rubrique Comment aider?";
+      introText[4]="Ces documents combinent plusieurs leçons dans un cursus idéal pour un camp, un week-end thématique...";
+    }
+    if (language == 'he') {
+      pgintro = "שיעורים";
+      var lev = ["מתחילים  ","בקיאים "," מתקדמים"," אחר"," סדנאות "];
+      introText[0]="שיעורים אלו הינם עבור תלמידים החדשים בשימוש בבקר, אנא צפו בהם לפי הסדר.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[1]="שיעורים אלה הינם עבור תלמידים המבינים את עקרונות התנועה הבסיסית של הרובוט ושימוש בחיישנים<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[2]="שיעורים אלה הינם עבור תלמידים המכירים כבר את יצירת הבלוק המותאם אישית ומעקב אחר קו.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[3]="שיעורים אלה נתרמו על ידי קבוצות ומשתמשי EV3 אחרים אנא פנה לקישור זה - שאלות ותשובות נפוצות - על מנת להשלים את השיעור.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[4]="שיעורים אלה מאוגדים יחד כתכנית למידה אידאלית עבור מחנות אימון<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+    }
+    </script>
+
+
+      <div id="dsa">
+        <a href="robots.html">
+          <img  src="images/dsa/robotdesign.jpg" width="250" height="250" style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;">
+        </a>
+        <a href="http://www.mindsensors.com">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="http://www.mindsensors.com/img/el_banner2.gif" width="250" height="250">
+        </a>
+        <a href="support.html">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="images/dsa/generic1.jpg" width="220" height="250">
+        </a>
+        <a href='http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015'>
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;" src="images/dsa/damienold.jpg" width="250" height="250">
+        </a>
+
+
+      </div>
+
+
+
+
+      <script>
+  var array = []
+
+  function similar(a,b) {
+    var lengthA = a.length;
+    var lengthB = b.length;
+    var equivalency = 0;
+    var minLength = (a.length > b.length) ? b.length : a.length;
+    var maxLength = (a.length < b.length) ? b.length : a.length;
+    for(var i = 0; i < minLength; i++) {
+        if(a[i] == b[i]) {
+            equivalency++;
+        }
+    }
+
+
+    var weight = equivalency / maxLength;
+    return (weight * 100) ;
+}
+
+function show(data) {
+       var valuein = data.toLowerCase().split(' ').join('_');
+
+//  keywords = ["infrared","toggle","beginner","intermediate","advanced","beyond","workshop","sensors","colour colour_sensor","color","ultrasonic","touch","gyro","proportional","introev3","linefollower","brick","software","data","wires","tablet"]
+
+
+  aa = 0
+  usemax = 0
+  while (aa != keywords.length) {
+//      array[aa] = keywords[aa].indexOf(valuein)
+      array[aa] = similar(keywords[aa],valuein)
+
+  aa++
+}
+//alert(array)
+largest = 0
+bb = 0
+//alert(array)
+
+  max = array.indexOf(Math.max.apply(window,array))
+  value = keywords[max]
+
+//alert(max)
+
+
+//alert(max)
+
+
+  x = 0
+    while (x != document.getElementsByClassName("beginner").length) {
+   document.getElementsByClassName("beginner")[x].style.display = "none"
+  x ++
+  }
+  x = 0
+    while (x != document.getElementsByClassName("intermediate").length) {
+   document.getElementsByClassName("intermediate")[x].style.display = "none"
+  x ++
+  }
+    x = 0
+    while (x != document.getElementsByClassName("advanced").length) {
+   document.getElementsByClassName("advanced")[x].style.display = "none"
+  x ++
+	}
+ x = 0
+    while (x != document.getElementsByClassName("beyond").length) {
+   document.getElementsByClassName("beyond")[x].style.display = "none"
+  x ++
+  }
+    x = 0
+    while (x != document.getElementsByClassName("workshop").length) {
+   document.getElementsByClassName("workshop")[x].style.display = "none"
+  x ++
+	}
+
+
+
+  x = 0
+  while (x != document.getElementsByClassName(value).length) {
+   document.getElementsByClassName(value)[x].style.display = "block"
+  x ++
+	}
+
+}
+
+
+
+
+
+      </script>
+
+
+  <div id="page_meta" class="home-section">
+      <div class="inner group">
+
+        <div class="meta-left">
+          <h2 id="pg-intro" class="page-title">Programming Lessons </h2>
+        </div>
+      </div>
+    </div>
+    <!-- /PAGE META -->
+    <div id="primary" class="layout-sidebar-right home-section">
+      <div class="inner group">
+        <div class="group">
+
+          EV3Lessons has tested and approved all lessons in Beginner,
+          Intermediate, Advanced, Beyond, and Workshops.  If you use any of the
+          lessons in your own classrooms/workshops, or use any techniques/code
+          presented on this site in a contest, you must
+          credit the original author for the work/idea.
+        </p>
+
+       <div id="lessonDiv" ng-controller="lessonCtrl">
+      <div class="tabs-container">
+            <ul class="tabs">
+<li><h4><a onclick="show('toggle')" id="all" href="#tab1" title="Beginner">All</a></h4></li>
+              <li><h4><a onclick="show('beginner')" id="beg" href="#tab1" title="Beginner">Beginner</a></h4></li>
+              <li><h4><a onclick="show('intermediate')" id="int" href="#tab1" title="Intermediate">Intermediate</a></h4></li>
+              <li><h4><a onclick="show('advanced')" id="adv" href="#tab1" title="Advanced">Advanced</a></h4></li>
+              <li><h4><a onclick="show('beyond')" id="other" href="#tab1" title="Contributed Lessons">Beyond</a></h4></li>
+              <li><h4><a onclick="show('workshop')" id="camp" href="#tab1" title="Camp Curriculum">Workshops</a></h4></li>
+                  <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
+                    <!--<datalist id='listid'>
+                        <option label='sensors' value='sensors'>
+                           <option label='color' value='color'>
+                             <option label='touch' value='touch'>
+                             <option label='ultrasonic' value='ultrasonic'>
+                               <option label='gyro' value='gyro'>
+                               <option label='software' value='software'>
+                                 <option label='tablet' value='tablet'>
+                                 <option label='linefollower' value='linefollower'>
+                                   <option label='infrared' value='infrared'>
+                             </datalist>-->
+
+                    <button onclick="show(document.getElementById('search').value)">Go!</button></a></h4></li>
+            </ul>
+            <div class="border-box group">
+
+              <div id="tab1" class="panel group">
+
+<!--
+      Beginner: <input onclick="show()" id="1a" type="checkbox">
+      Intermediate: <input onclick="show()" id="2a" type="checkbox">
+      Advanced: <input onclick="show()" id="3a" type="checkbox">
+     Beyond: <input onclick="show()" id="4a" type="checkbox">
+      Workshop: <input onclick="show()" id="5a" type="checkbox">
+           Sensors: <input onclick="show()" id="6a" type="checkbox">
+      Color Sensor: <input onclick="show()" id="7a" type="checkbox">
+-->
+
+
+
+                <p class="beginner" id="beg-intro">These lessons are for students new to the
+                  EV3. These lessons are designed to be completed in
+                  order.
+
+                </p>
+<br>
+                <div class="beginner introev3 toggle">
+                  <p class="tab-index tab-closed">
+                    <a id="1" href="#" title="Close">How to use these lessons</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href='translations/{{one}}/beginner/LessonUse.pptx'>PPTX</a>,
+                        <a href='translations/{{one}}/beginner/LessonUse.pdf'>PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle beginner robot base_robot robot_design droidbot"> <br>
+                  <p class="tab-index tab-closed"><a id="2" href="#" title="Close">Build a Base Robot</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li><a href="robots.html">Robot Design Lessons page</a>
+                      </li>
+
+
+
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <div class="toggle beginner programs programmes
+                  programming programming_app programing introev3 brick software ev3 buttons centre up- down- left- right- center- ipad tablet android app introduction introduction_to_brick_and_software"> <br>
+                  <p class="tab-index tab-closed"><a id="3" href="#" title="Close">Introduction to Brick and Software</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href='translations/{{three}}/beginner/Introduction.pptx'>PPTX</a>,
+                          <a href='translations/{{three}}/beginner/Introduction.pdf'>PDF</a>
+                        </li>
+
+                        <li>Edu vs. Home Edition Software: <a
+                          href="translations/en-us/guides//EDUvsHome.pdf">Quick
+                          Guide</a> (English)
+                        </li>
+                        <li>EV3 and NXT Compatibility: <a
+                          href="translations/en-us/guides//EV3andNXT.pdf">Quick
+                          Guide</a> (English)
+                        </li>
+                        <li>Updating Software & Firmware: <a
+                          href="translations/en-us/guides//UpdatingHome.pdf">Quick
+                          Guide for Home Edition</a> (English), <a href="translations/en-us/guides//UpdatingEdu.pdf">Quick
+                            Guide for Edu Edition</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="toggle beginner portview port_view brick ev3">
+                     <br>  <p class="tab-index tab-closed"><a id="17" href="#" title="Close">Port View</a>
+                       </p>
+                       <div class="content-tab closed indent">
+                         <ul>
+                           <li>{{Slides}}
+                             <a href='translations/{{oneseven}}/beginner/PortView.pptx'>PPTX</a>,
+                             <a href='translations/{{oneseven}}/beginner/PortView.pdf'>PDF</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+
+                   <div class="toggle beginner moving ipad
+                    programming_app tablet android  app moving_straight forward backward">
+                    <br>  <p class="tab-index tab-closed"><a id="4" href="#" title="Close">Moving Straight</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{four}}/beginner/MovingStraight.pptx'>PPTX</a>,
+                            <a href='translations/{{four}}/beginner/MovingStraight.pdf'>PDF</a>
+                          </li>
+
+                          <li><a href='translations/{{four}}/beginner/MovingStraight.docx'>Worksheet</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+
+
+
+                   <div class="toggle beginner pseudocode">
+                    <br>  <p class="tab-index tab-closed"><a id="5" href="#" title="Close">Pseudocode</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{five}}/beginner/Pseudocode.pptx'>PPTX</a>,
+                            <a href='translations/{{five}}/beginner/Pseudocode.pdf'>PDF</a>
+                          </li>
+                          <li><a href='translations/{{five}}/beginner/PseudocodeWorksheet.pdf'>Worksheet</a>
+                          </li>
+                          <li>Using Comments to Improve Code: <a
+                            href="translations/en-us/guides//Comments.pdf">Quick
+                            Guide</a> (English)
+                          </li>
+                          <li>Mission Planning Worksheet <a
+                            href="translations/en-us/guides//MissionPlanning.pdf">Quick
+                            Guide</a> (English)
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner moving programming_app ipad app turning tablet pivot spin point android">
+                    <br>  <p class="tab-index tab-closed"><a id="6"
+                    href="#" title="Close">Basic Turning</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{six}}/beginner/Turning.pptx'>PPTX</a>,
+                            <a href='translations/{{six}}/beginner/Turning.pdf'>PDF</a>
+                          </li>
+
+                          <li><a
+                            href='translations/{{six}}/beginner/Turning.docx'>Worksheet</a>
+                          </li>
+                          <li>Truth About Turns - Pivot Turns <a
+                            href="translations/en-us/guides//PivotTurns.pdf">Quick
+                            Guide</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner display programming_app displaying_text_and_graphics ipad tablet text graphics android display_block display_graphics app">
+                    <br>  <p class="tab-index tab-closed"><a id="7" href="#" title="Close">Displaying Text and Graphics</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{seven}}/beginner/Display.pptx'>PPTX</a>,
+                            <a href='translations/{{seven}}/beginner/Display.pdf'>PDF</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                   <div class="toggle beginner display custom sounds sound_block display_block image_editor sound_editor images">
+                    <br>  <p class="tab-index tab-closed"><a id="18"
+                    href="#" title="Close">Custom Images and Sounds</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{oneeight}}/beginner/CustomImagesSounds.pptx'>PPTX</a>,
+                            <a href='translations/{{oneeight}}/beginner/CustomImagesSounds.pdf'>PDF</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on">
+                    <br>  <p class="tab-index tab-closed"><a id="8" href="#" title="Close">Introduction to Touch Sensor</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{eight}}/beginner/Touch.pptx'>PPTX</a>,
+                            <a href='translations/{{eight}}/beginner/Touch.pdf'>PDF</a>
+                          </li>
+
+                          <li>Using Sensors: Move Until <a href="translations/en-us/guides//MoveUntil.pdf">Quick Guide</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner color colour colour_sensor sensors programming_app colour_sensor color_sensor ipad tablet app reflected_light light_sensor color_mode colour_mode android">
+                    <br>  <p class="tab-index tab-closed"><a id="9"
+                    href="#" title="Close">Introduction to Color Sensor</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{nine}}/beginner/Color.pptx'>PPTX</a>,
+                            <a href='translations/{{nine}}/beginner/Color.pdf'>PDF</a>
+                          </li>
+                          <li>EV3 Tablet App Slides: <a href="translations/en-us/tablet-beginner/Color.pptx">PPTX</a> (English)
+                          </li>
+                          <li>Using Sensors: Move Until <a href="translations/en-us/guides//MoveUntil.pdf">Quick Guide</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner loops programming_app app ipad tablet android">
+                    <br>  <p class="tab-index tab-closed"><a id="10" href="#" title="Close">Loops</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{onezero}}/beginner/Loops.pptx'>PPTX</a>,
+                            <a href='translations/{{onezero}}/beginner/Loops.pdf'>PDF</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner  switches ipad app tablet android">
+                    <br>  <p class="tab-index tab-closed"><a id="11" href="#" title="Close">Switches</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{oneone}}/beginner/Switches.pptx'>PPTX</a>,
+                            <a href='translations/{{oneone}}/beginner/Switches.pdf'>PDF</a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="toggle beginner sound sound_block notes tones beeps noises rsf">
+                     <br>  <p class="tab-index tab-closed"><a id="21" href="#" title="Close">Importing Additional LEGO Blocks</a>
+                       </p>
+                       <div class="content-tab closed indent">
+                         <ul>
+                           <li>{{Slides}}
+                             <a href='translations/{{oneone}}/beginner/ImportingBlocks.pptx'>PPTX</a>,
+                             <a href='translations/{{oneone}}/beginner/ImportingBlocks.pdf'>PDF</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+
+
+                    <div class="toggle beginner sound sound_block notes tones beeps noises rsf">
+                     <br>  <p class="tab-index tab-closed"><a id="20" href="#" title="Close">Sound Block</a>
+                       </p>
+                       <div class="content-tab closed indent">
+                         <ul>
+                           <li>{{Slides}}
+                             <a href='translations/{{oneone}}/beginner/SoundBlock.pptx'>PPTX</a>,
+                             <a href='translations/{{oneone}}/beginner/SoundBlock.pdf'>PDF</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+
+
+                    <div class="toggle beginner sound sound_block">
+                     <br>  <p class="tab-index tab-closed"><a id="19" href="#" title="Close">Introduction to Sound Sensor</a>
+                       </p>
+                       <div class="content-tab closed indent">
+                         <ul>
+                           <li>{{Slides}}
+                             <a href='translations/{{oneone}}/beginner/SoundSensor.pptx'>PPTX</a>,
+                             <a href='translations/{{oneone}}/beginner/SoundSensor.pdf'>PDF</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </div>
+
+
+
+                   <div class="toggle beginner ultrasonic sensors ipad ultrasonic_sensor programming_app app tablet android">
+                    <br>  <p class="tab-index tab-closed"><a id="12"
+                    href="#" title="Close">Introduction to Ultrasonic Sensor</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href='translations/{{onetwo}}/beginner/Ultrasonic.pptx'>PPTX</a>,
+                            <a href='translations/{{onetwo}}/beginner/Ultrasonic.pdf'>PDF</a>
+                          </li>
+
+                          <li>Using Sensors: Move Until <a href="translations/en-us/guides//MoveUntil.pdf">Quick Guide</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner beginner color colour colour_sensor follower basic line_tracker sensors ipad tablet programming_app app android line_follower line colour_sensor basic_line_follower">
+                    <br>  <p class="tab-index tab-closed"><a id="13" href="#" title="Close">Basic Line Follower</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{onethree}}/beginner/BasicLineFollower.pptx">PPTX</a>,
+                            <a href="translations/{{onethree}}/beginner/BasicLineFollower.pdf">PDF</a>
+                          </li>
+
+                          <li> <a href="translations/{{onethree}}/beginner/BasicLineFollower.docx">Worksheet</a>
+                          </li>
+                          <li>One Minute Line Follower: <a href="translations/en-us/guides//OneMinuteLineFollower.pdf">Quick Guide</a> (English)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner large_motor_block attachments passive medium_motor_block moving object moving_object">
+                    <br>  <p class="tab-index tab-closed"><a id="16" href="#" title="Close">Moving An Object</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{onesix}}/beginner/MoveObject.pptx">PPTX</a>,
+                            <a href="translations/{{onesix}}/beginner/MoveObject.pdf">PDF</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle beginner challenge final_challenge">
+                    <br>  <p class="tab-index tab-closed"><a id="15" href="#" title="Close">Final Challenge</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{onefive}}/beginner/FinalChallenge.pptx">PPTX</a>,
+                            <a href="translations/{{onefive}}/beginner/FinalChallenge.pdf">PDF</a>
+                          </li>
+                          <li> <a href="translations/{{onefive}}/beginner/FinalAssessment.docx">Assessment</a>
+                          </li>
+                          <li> <a href="challenges.html">More Challenges</a>
+                          </li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    <p class="intermediate" id="int-intro">These lessons are for students who understand basic
+                      movement and sensor use.
+                    </p>
+
+
+
+                   <div class="toggle intermediate ultrasonic wall follower sensors wall_follower ultrasonic_wall_follower">
+                    <br>  <p class="tab-index tab-closed"><a id="64"
+                    href="#" title="Close">Basic Ultrasonic Wall Follower</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{sixfour}}/intermediate/UltrasonicWallFollow.pptx">PPTX</a>,
+                            <a href="translations/{{sixfour}}/intermediate/UltrasonicWallFollow.pdf">PDF</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle intermediate brick sensors brick_buttons">
+                    <br>  <p class="tab-index tab-closed"><a id="58" href="#" title="Close">Brick Buttons as Sensors</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{fiveeight}}/intermediate/BrickButtons.pptx">PPTX</a>,
+                            <a href="translations/{{fiveeight}}/intermediate/BrickButtons.pdf">PDF</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle intermediate software data_wires data logic numeric text">
+                    <br>  <p class="tab-index tab-closed"><a id="63" href="#" title="Close">Data Wires</a>
+                      </p>
+                      <div class="content-tab closed indent">
+                        <ul>
+                          <li>{{Slides}}
+                            <a href="translations/{{sixthree}}/intermediate/DataWires.pptx">PPTX</a>,
+                            <a href="translations/{{sixthree}}/intermediate/DataWires.pdf">PDF</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                   <div class="toggle intermediate software myblocks blocks my_blocks parameters parametres inputs outputs my_block_builder">
+                  <br>    <p class="tab-index
+                      tab-closed"><a id="50" href="#" title="Close">My Blocks with Inputs/Outputs</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivezero}}/intermediate/MyBlocks.pptx">PPTX</a>,
+                          <a
+                          href="translations/{{fivezero}}/intermediate/MyBlocks.pdf">PDF</a>
+                        </li>
+                        <li>My Blocks <a
+                          href="translations/en-us/guides//MyBlockGuide.pdf">Quick
+                          Guide</a> (English)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with">
+                  <br>  <p class="tab-index tab-closed"><a id="51" href="#" title="Close">Moving with My Blocks</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fiveone}}/intermediate/MoveDistance.pptx">PPTX</a>,
+                          <a href="translations/{{fiveone}}/intermediate/MoveDistance.pdf">PDF</a>
+                        </li>
+                        <li>Moving in Inches/Centimeters Resources:
+                          <a href="translations/{{fiveone}}/intermediate/DPIorDPCWorksheet.pdf">Worksheet</a>
+                        </li>
+                        <li>Wheel Converter Tool <a href="translations/en-us/guides//wheelconverter">Web Version</a>,
+                          <a href="https://itunes.apple.com/us/app/wheel-converter-for-ev3/id1042474404?ls=1&mt=8">iOS Version</a>,
+                          <a href="https://play.google.com/store/apps/details?id=com.ev3lessons.wheelconverter">Android Version</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate myblocks moving turning my_blocks turn_degrees turning_with rotation_sensor">
+                  <br>  <p class="tab-index tab-closed"><a id="52" href="#" title="Close">Turning with My Blocks</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pptx">PPTX</a>,
+                          <a href="translations/{{fivetwo}}/intermediate/TurnDegrees.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="line_follower line  toggle line intermediate color colour colour_sensor sensors follower linefollower tracker line_traker my_blocks sensor_block">
+                  <br>  <p class="tab-index tab-closed"><a id="53" href="#" title="Close">Color Line Follower with My Blocks</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <h4>Color Follower for Distance:</h4>
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pptx">PPTX</a>,
+                          <a href="translations/{{fivethree}}/intermediate/ColorFollowerDistance.pdf">PDF</a>
+                        </li>
+                      </ul>
+                      <h4>Color Follower Stops Based on Color Detection:</h4>
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pptx">PPTX</a>,
+                          <a href="translations/{{fivethree}}/intermediate/ColorFollowerSensor.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate infrared sensors infrared_sensor beacon remote remote_control">
+                  <br>  <p class="tab-index tab-closed"><a id="54" href="#" title="Close">Infrared Sensor</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivefour}}/intermediate/Infrared.pptx">PPTX</a>,
+                          <a href="translations/{{fivefour}}/intermediate/Infrared.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                 <div class="toggle intermediate debugging sound display brick_buttons">
+                  <br>  <p class="tab-index tab-closed"><a id="55"
+                  href="#" title="Close">Debugging Techniques</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivefive}}/intermediate/Debug.pptx">PPTX</a>,
+                          <a href="translations/{{fivefive}}/intermediate/Debug.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate moving move_blocks synchronization motor_synchronization regulated_power unregulated_motor ramp_up ramp_down">
+                  <br>  <p class="tab-index tab-closed"><a id="56" href="#" title="Close">Move Blocks</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pptx">PPTX</a>,
+                          <a href="translations/{{fivesix}}/intermediate/MovingBlocks.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate debugging alignment battery fll first_lego_league coast reliability">
+                  <br>  <p class="tab-index tab-closed"><a id="57"
+                  href="#" title="Close">Reliability Techniques</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fiveseven}}/intermediate/Reliability.pptx">PPTX</a>,
+                          <a href="translations/{{fiveseven}}/intermediate/Reliability.pdf">PDF</a>
+                        </li>
+                        <li>Improving Robot Reliability <a href="translations/en-us/guides//ReliabilityGuide.pdf">Quick Guide</a> (English)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+
+                 <div class="toggle intermediate color colour colour_sensor sensors calibration calibrate colour_calibration">
+                  <br>  <p class="tab-index tab-closed"><a id="59" href="#" title="Close">Color Sensor Calibration</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{fivenine}}/intermediate/Calibrate.pptx">PPTX</a>,
+                          <a href="translations/{{fivenine}}/intermediate/Calibrate.pdf">PDF</a>
+                        </li>
+                        <li>Shielding and Calibration: <a href="translations/en-us/guides//ShieldingCalibrate.pdf">Quick Guide</a> (English)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate variables software wires wired_display_blocks inputs">
+                  <br>  <p class="tab-index tab-closed"><a id="60" href="#" title="Close">Variables</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{sixzero}}/intermediate/Variables.pptx">PPTX</a>,
+                          <a href="translations/{{sixzero}}/intermediate/Variables.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate software logic logic_operations_and_descision_making logic_block">
+                  <br>  <p class="tab-index tab-closed"><a id="62" href="#"
+                      title="Close">Logic Operations & Decision Making</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{sixtwo}}/intermediate/Logic.pptx">PPTX</a>,
+                          <a href="translations/{{sixtwo}}/intermediate/Logic.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle intermediate software parallel_beams sync_beams multitasking task_split split_task">
+                  <br>  <p class="tab-index tab-closed"><a id="61"
+                  href="#" title="Close">Introduction to Parallel Beams</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{sixone}}/intermediate/ParallelBeams.pptx">PPTX</a>,
+                          <a href="translations/{{sixone}}/intermediate/ParallelBeams.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <p class="advanced" id="adv-intro">These lessons are for students already familiar
+                    with MyBlocks and line following.
+                  </p>
+
+
+                 <div class="toggle advanced software parallel_beams sync_beams split_task task_split synchronization parallel_beam_synchroniztion">
+                  <br>  <p class="tab-index tab-closed"><a id="100" href="#" title="Close">Parallel Beam Synchronization</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{onezerozero}}/advanced/SyncBeams.pptx">PPTX</a>,
+                          <a href="translations/{{onezerozero}}/advanced/SyncBeams.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle advanced arrays software array_operations array_block read write">
+                  <br>  <p class="tab-index tab-closed"><a id="110" href="#" title="Close">Arrays</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{oneonezero}}/advanced/Arrays.pptx">PPTX</a>,
+                          <a href="translations/{{oneonezero}}/advanced/Arrays.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle dog_follower line_follower line  advanced proportional proportional_control">
+                  <br>  <p class="tab-index tab-closed"><a id="101"
+                  href="#" title="Close">Introduction to Proportional Control</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pptx">PPTX</a>,
+                          <a href="translations/{{onezeroone}}/advanced/ProportionalControl.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+
+                 <div class="toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line ">
+                  <br>  <p class="tab-index tab-closed"><a id="102" href="#" title="Close">Proportional Line Follower</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{onezerotwo}}/advanced/LineFollower.pptx">PPTX</a>,
+                          <a href="translations/{{onezerotwo}}/advanced/LineFollower.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                 <div class="toggle advanced proportional moving color colour colour_sensor two_colour_line_follower line_straddle colour_sensor">
+                  <br>  <p class="tab-index tab-closed"><a id="111" href="#" title="Close">Proportional Two Color Line Follower</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{oneoneone}}/advanced/ProportionalTwoColorLineFollower.pptx">PPTX</a>,
+                          <a href="translations/{{oneoneone}}/advanced/ProportionalTwoColorLineFollower.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                 <div class="toggle moving advanced ultrasonic ultrasonic_sensor proportional_control proportional wall_follower moving ultrasonic_wall_follower">
+                  <br>  <p class="tab-index tab-closed"><a id="113" href="#" title="Close">Proportional Ultrasonic Wall Follower</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{oneonethree}}/advanced/ProportionalUSWallFollow.pptx">PPTX</a>,
+                          <a href="translations/{{oneonethree}}/advanced/ProportionalUSWallFollow.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="toggle moving advanced sound sound_sensor proportional_control proportional ">
+                   <br>  <p class="tab-index tab-closed"><a id="115" href="#" title="Close">Proportional Control with the Sound Sensor</a>
+                     </p>
+                     <div class="content-tab closed indent">
+                       <ul>
+                         <li>{{Slides}}
+                           <a href="translations/{{oneonethree}}/advanced/PropSound.pptx">PPTX</a>,
+                           <a href="translations/{{oneonethree}}/advanced/PropSound.pdf">PDF</a>
+                         </li>
+                       </ul>
+                     </div>
+                   </div>
+
+
+                 <div class="toggle advanced moving ramp_up timers my_blocks">
+                  <br>  <p class="tab-index tab-closed"><a id="103" href="#" title="Close">Ramping Up</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{onezerothree}}/advanced/RampUp.pptx">PPTX</a>,
+                          <a href="translations/{{onezerothree}}/advanced/RampUp.pdf">PDF</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle advanced gyro gyro_sensor gyro_drift gyro_calibration angle rate">
+                  <br>  <p class="tab-index tab-closed"><a id="104"
+                  href="#" title="Close">Introduction to Gyro Sensor</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{onezerofour}}/advanced/Gyro.pptx">PPTX</a>,
+                          <a href="translations/{{onezerofour}}/advanced/Gyro.pdf">PDF</a>
+                        </li>
+                        <li>Myths and Truths About the Gyro:<a href="translations/en-us/guides/GyroGuide.pdf">Quick Guide</a> (English)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                 <div class="toggle advanced moving gyro gyro_sensor gyro_turns gyro_lag gyro_drit angle">
+                  <br>  <p class="tab-index
+                    tab-closed"><a id="105" href="#" title="Close">Gyro Sensor: Turns</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onezerofive}}/advanced/GyroTurn.pptx">PPTX</a>,
+                        <a href="translations/{{onezerofive}}/advanced/GyroTurn.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle gyro moving advanced gyro_move_straight gyro_sensor gyro_wall_follow proportional_control proportional heading angle">
+            <br>      <p class="tab-index
+                  tab-closed"><a id="109" href="#" title="Close">Gyro Sensor: Move Straight and Wall Follow</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pptx">PPTX</a>,
+                        <a href="translations/{{onezeronine}}/advanced/GyroWallFollow.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle sync_beams parallel_beams synchronization color colour colour_sensor advanced align squaring_on_lines my_blocks square_up straighten_out">
+                <br>  <p class="tab-index tab-closed"><a id="106" href="#" title="Close">Squaring on Lines</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onezerosix}}/advanced/Align.pptx">PPTX</a>,
+                        <a href="translations/{{onezerosix}}/advanced/Align.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle stall advanced stall_detection move_degrees move_seconds abort stall">
+                <br>  <p class="tab-index tab-closed"><a id="107" href="#" title="Close">Stall Detection</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onezeroseven}}/advanced/StallDetection.pptx">PPTX</a>,
+                        <a href="translations/{{onezeroseven}}/advanced/StallDetection.pdf">PDF</a>
+                      </li>
+                      <li>By Hoosier Girlz and Droids Robotics
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle brick advanced menu_system sequencer display brick brick_buttons">
+                <br>  <p class="tab-index tab-closed"><a id="108" href="#" title="Close">Menu System</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pptx">PPTX</a>,
+                        <a href="translations/{{onezeroeight}}/advanced/MenuSystem.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+               <div class="toggle logging advanced temperature software data data_logging live_data_logging remote_data_logging brick_data_logging temperature_sensor autonomous_data_logging data_logging_block rotation_sensor">
+                <br>  <p class="tab-index tab-closed"><a id="112" href="#" title="Close">Data Logging</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <h4>Data Logging for Science Experiments:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pptx">PPTX</a>,
+                        <a href="translations/{{oneonetwo}}/advanced/DataLoggingTemp.pdf">PDF</a>
+                      </li>
+                    </ul>  <h4>Data Logging with Programming Blocks:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pptx">PPTX</a>,
+                        <a href="translations/{{oneonetwo}}/advanced/DataLoggingTurns.pdf">PDF</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="toggle advanced bluetooth messaging">
+                 <br>  <p class="tab-index tab-closed"><a id="113" href="#" title="Close">Bluetooth</a>
+                   </p>
+                   <div class="content-tab closed indent">
+                     <ul>
+                       <li>{{Slides}}
+                         <a href="translations/{{oneonethree}}/advanced/Bluetooth.pptx">PPTX</a>,
+                         <a href="translations/{{oneonethree}}/advanced/Bluetooth.pdf">PDF</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+
+
+                <div class="toggle advanced random simon simon_game ev3_simon">
+                 <br>  <p class="tab-index tab-closed"><a id="114" href="#" title="Close">Random Block</a>
+                   </p>
+                   <div class="content-tab closed indent">
+                     <ul>
+                       <li>{{Slides}}
+                         <a href="translations/{{oneonefour}}/advanced/RandomBlock.pptx">PPTX</a>,
+                         <a href="translations/{{oneonefour}}/advanced/RandomBlock.pdf">PDF</a>
+                       </li>
+                       <li>
+                         <a type="application/ev3" download="RandomBlock-Simon.ev3" href="translations/{{oneonefour}}/advanced/RandomBlock.ev3">EV3 Code (Simon Game)</a>,
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+
+                 <div class="toggle files">
+                  <br>  <p class="tab-index tab-closed"><a id="112" href="#" title="Close">Files</a>
+                    </p>
+                    <div class="content-tab closed indent">
+                      <h4>Downloading and Uploading Files:</h4>
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="translations/{{oneonetwo}}/advanced/DownloadUploadFiles.pptx">PPTX</a>,
+                          <a href="translations/{{oneonetwo}}/advanced/DownloadUploadFiles.pdf">PDF</a>
+                        </li>
+                      </ul>  <h4>Using Files: **Coming Soon***</h4>
+                      <ul>
+                        <li>{{Slides}}
+                          <a href="">PPTX</a>,
+                          <a href="">PDF</a>
+                        </li>
+                      </ul>
+
+                    </div>
+                  </div>
+
+
+
+                <p class="beyond" id='other-intro'>These lessons are intended for EV3 users who have completed all our lessons and interested in trying and learning new techniques and sensors.
+                </p>
+
+		 <br>
+		 <div class="toggle beyond additional_blocks third_party_blocks importing adding_blocks">
+                <br>  <p class="tab-index tab-closed"><a id="150" href="#" title="Close">Importing Third Party Blocks</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivezero}}/beyond/ThirdPartyBlocks.pptx">PPTX</a>,
+                        <a href="translations/{{onefivezero}}/beyond/ThirdPartyBlocks.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+</div>
+
+
+
+<div class="toggle beyond pixy_cam">
+<br>                <p class="tab-index tab-closed"><a id="154" href="#" title="Close">PixyCam for MINDSTORMS</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <h4>Introduction:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivefour}}/beyond/PixyIntro.pptx">PPTX</a>,
+                        <a href="translations/{{onefivefour}}/beyond/PixyIntro.pdf">PDF</a>
+                      </li>
+                    </ul>
+		    <h4>Color Identifier:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivefour}}/beyond/PixyColorIdentifier.pptx">PPTX</a>,
+                        <a href="translations/{{onefivefour}}/beyond/PixyColorIdentifier.pdf">PDF</a>
+                      </li>
+                    </ul>
+		        <h4>Using Color Codes:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivefour}}/beyond/PixyColorCodes.pptx">PPTX</a>,
+                        <a href="translations/{{onefivefour}}/beyond/PixyColorCodes.pdf">PDF</a>
+                      </li>
+                    </ul>
+
+                  </div>
+                </div>
+
+               <div class="toggle beyond mindsensors remote remote_control psp-nx_remote psp_controller psp-nx_controller simon simon_game ev3_simon">
+                 <br>                <p class="tab-index tab-closed"><a id="155" href="#" title="Close">Mindsensors PSP-Nx Controller</a>
+                                  </p>
+                                  <div class="content-tab closed indent">
+                                    <h4>Introduction:</h4>
+                                    <ul>
+                                      <li>{{Slides}}
+                                        <a href="translations/{{onefivefive}}/beyond/PSP-NxController.pptx">PPTX</a>,
+                                        <a href="translations/{{onefivefive}}/beyond/PSP-NxController.pdf">PDF</a>
+                                        </li>
+                                    </ul>
+
+                                    <h4>Simon Game:</h4>
+                                    <ul>
+                                      <li>{{Slides}}
+                                        <a href="translations/{{onefivefive}}/beyond/PSP-NxSimon.pptx">PPTX</a>,
+                                        <a href="translations/{{onefivefive}}/beyond/PSP-NxSimon.pdf">PDF</a>
+                                      </li><li>  <a download="PSP-NxSimon.ev3" href="translations/{{onefivefive}}/beyond/PSP-NxSimon.ev3" type="application/ev3">EV3 Code</a>
+                                        </li>
+                                    </ul>
+
+
+                                  </div>
+                                </div>
+
+
+ <div class="toggle beyond raspberrypi rpi ev3_communication">
+                <br>  <p class="tab-index tab-closed"><a id="151" href="#" title="Close">MINDSTORMS EV3 and Raspberry Pi</a>
+                  </p>
+                  <div class="content-tab closed indent">
+		     <h4>EV3 Raspberry Pi Communicator:</h4>
+                   <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiCommunicator.pptx">PPTX</a>,
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiCommunicator.pdf">PDF</a>
+                      </li>
+		       <li>Python Code:
+                         <a href="translations/{{onefiveone}}/beyond/EV3PiBaseCode.py">Base Code</a>
+			 <a href="translations/{{onefiveone}}/beyond/send.py">RPi Message Sender</a>
+                      </li>
+                    </ul>
+                    <h4>Controlling Lights with an EV3:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiLight.pptx">PPTX</a>,
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiLight.pdf">PDF</a>
+                      </li>
+		                            <li>Python Code:
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiLightS1.py">Solution 1</a>,
+                        <a href="translations/{{onefiveone}}/beyond/EV3PiLightS2.py">Solution 2</a>
+                      </li>
+                    </ul>
+		   <!-- <h4>PixyCam Color Identifier:</h4>
+                   <ul>
+                      <li>{{Slides}}
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pptx">PPTX</a>,
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pdf">PDF</a>
+                      </li>
+                    </ul>
+		        <h4>PixyCam with Color Codes:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pptx">PPTX</a>,
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pdf">PDF</a>
+                      </li>
+                    </ul>-->
+
+                  </div>
+                </div>
+
+ <div class="toggle debian ev3dev linux_ev3 ev3_commmunication beyond raspberrypi rpi">
+                <br>  <p class="tab-index tab-closed"><a id="152" href="#" title="Close">Lessons for ev3dev</a>
+                  </p>
+                  <div class="content-tab closed indent">
+		     <h4>Introduction to ev3dev:</h4>
+                   <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devIntro.pptx">PPTX</a>,
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devIntro.pdf">PDF</a>
+                      </li>
+                   </ul>
+		   <h4>Raspberry Pi and ev3dev Communicator:</h4>
+                   <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devPiCommunicator.pptx">PPTX</a>,
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devPiCommunicator.pdf">PDF</a>
+                      </li>
+                    </ul>
+                    <h4>Controlling Lights using ev3dev and a Raspberry Pi:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devPiLight.pptx">PPTX</a>,
+                        <a href="translations/{{onefivetwo}}/beyond/EV3devPiLight.pdf">PDF</a>
+                      </li>
+
+                    </ul>
+
+		   <!-- <h4>PixyCam Color Identifier:</h4>
+                   <ul>
+                      <li>{{Slides}}
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pptx">PPTX</a>,
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pdf">PDF</a>
+                      </li>
+                    </ul>
+		        <h4>PixyCam with Color Codes:</h4>
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pptx">PPTX</a>,
+                        <a href="translations/en-us/beyond/PixyColorIdentifier.pdf">PDF</a>
+                      </li>
+                    </ul>-->
+
+                  </div>
+                </div>
+
+
+
+
+               <div class="toggle beyond nxt color colour colour_sensor light">
+                <br>  <p class="tab-index tab-closed"><a href="#" id="153" title="Close">NXT Light Sensors in EV3</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{onefivethree}}/advanced/NXTLightSensor.pptx">PPTX</a>,
+                        <a href="translations/{{onefivethree}}/advanced/NXTLightSensor.pdf">PDF</a>
+                      </li>
+                      <li><a href="translations/{{onefivethree}}/advanced/NXTLightSensor.ev3" download="NXTLightSensor.ev3" type="application/ev3">EV3 Code
+                      </li>
+                      <li>By Lego Works
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="toggle beyond EV3_insides VM VM_Instruction_Break">
+                <br>                <p class="tab-index tab-closed"><a id="154" href="#" title="Close">Inside the EV3</a>
+                                  </p>
+                                  <div class="content-tab closed indent">
+                                    <h4>Bytecode and VM: Branching Error (a.k.a VM Instruction Break)</h4>
+                                    <ul>
+                                      <li>{{Slides}}
+                                        <a href="translations/{{onefivefour}}/beyond/BranchingError.pptx">PPTX</a>,
+                                        <a href="translations/{{onefivefour}}/beyond/BranchingError.pdf">PDF</a>
+                                      </li>
+                                    </ul>
+
+
+                                  </div>
+                                </div>
+
+                                <div class="toggle beyond Mindsensons EV3_Lights">
+                                <br>                <p class="tab-index tab-closed"><a id="154" href="#" title="Close">EV3Lights: RGB LED Strip Controller</a>
+                                                  </p>
+                                                  <div class="content-tab closed indent">
+                                                    <h4>Synchronized Lights</h4>
+                                                    <ul>
+                                                      <li>{{Slides}}
+                                                        <a href="translations/{{onefivefour}}/beyond/SynchronizedLights.pptx">PPTX</a>,
+                                                        <a href="translations/{{onefivefour}}/beyond/SynchronizedLights.pdf">PDF</a>
+                                                      </li>
+                                                    </ul>
+
+
+                                                  </div>
+                                                </div>
+
+
+
+                <p class="workshop" id="camp-intro">These are combined lesson curriculum that are
+                  ideal for camps
+                </p>
+
+
+               <div class="toggle workshop nxt">
+                <br>  <p class="tab-index tab-closed">
+                    <a href="#" id="200" title="Close">8hr NXT Camp</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <br>
+                    This set of slides works well for beginner
+                    students. It introduces them to EV3 programming and
+                    teaches them basic movement, turning, loops switches
+                    and sensor usage. It finishes with basic follower
+                    and a final challenge that combines various
+                    programming concepts.
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{twozerozero}}/beginner/NXTBeginner.pptx">PPTX</a>,
+                        <a href="translations/{{twozerozero}}/beginner/NXTBeginner.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+               <div class="toggle workshop fll">
+                <br>  <p class="tab-index tab-closed">
+                    <a href="#" id="201" title="Close">FLL Beginner Workshop</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <br>
+                    This set of slides works well for beginner
+                    students. These slides were used in an 3hr workshop in Ohio. This lesson reviews basic movement. It covers basic sensor usage, switch/loops basics, and basic line follower.
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{twozeroone}}/workshop/BeginnerWorkshop.pptx">PPTX</a>,
+                        <a href="translations/{{twozeroone}}/workshop/BeginnerWorkshop.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+               <div class="toggle workshop fll">
+                <br>  <p class="tab-index tab-closed">
+                    <a href="#" id="202"  title="Close">FLL Intermediate Workshop</a>
+                  </p>
+                  <div class="content-tab closed indent">
+                    <br>
+                    This set of slides works well for intermediate
+                    students. These slides were used in an 3hr workshop in Ohio. This lesson reviews basic movement. It covers squaring on a line, parallel beams basics, and proportional line follower.
+                    <ul>
+                      <li>{{Slides}}
+                        <a href="translations/{{twozerotwo}}/workshop/IntermediateWorkshop.pptx">PPTX</a>,
+                        <a href="translations/{{twozerotwo}}/workshop/IntermediateWorkshop.pdf">PDF</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+</div></div>
+</div>
+              </div> <!-- panel 5 end -->
+
+            </div>
+<!--          </div> <!-- tabs end -->
+
+        </div> <!-- lesson div end -->
+
+
+
+
+
+
+  <div id="dsa-bot">
+
+        <a href='support.html'>
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;" src="images/dsa/generic1.jpg" width="250" height="250">
+        </a>
+
+
+
+        <a href="http://www.mindsensors.com/">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="http://www.mindsensors.com/img/el_banner2.gif" width="250" height="250">
+        </a>
+        <a href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="images/dsa/damienold.jpg" width="250" height="250">
+        </a>
+        <a href="robots.html">
+          <img  src="images/dsa/robotdesign.jpg" width="250" height="250" style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;">
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div> <!-- layout sidebar end -->
+
+
+  <div id="primary" align="middle" class="layout-sidebar-right home-section">
+    <div class="inner group">
+      <div class="group">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+  </div>
+  <!-- END EXTRA CONTENT -->
+
+</div>
+<!-- END WRAPPER -->
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+
+<!-- START FOOTER -->
+<script src="footer.js"></script>
+
+
+  <script>
+  //language = window.location.hash.substring(1);
+  function textFileToArray(filename)
+  {
+    var reader = (window.XMLHttpRequest != null )
+    ? new XMLHttpRequest()
+    : new ActiveXObject("Microsoft.XMLHTTP");
+    reader.open("GET", filename, false );
+    reader.send();
+    return reader.responseText.split(/\r\n|\n|\r/); //.split(/(\r\n|\n)/g);
+  }
+
+  document.write('<scr'+'ipt>var urldes = textFileToArray("translations/'+language+'/lessons.txt");</scr'+'ipt>');
+  </script>
+
+
+  <script>
+
+
+
+
+
+
+  //var a = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+  //var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+  var a = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+
+
+  function inWords (num) {
+    if ((num = num.toString()).length > 9) return 'overflow';
+    //    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+    n = ('000000' + num).substr(-6).match(/^(\d{3})(\d{1})(\d{2})$/);
+    if (!n) return; var str = '';
+    //    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+    //    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+    //    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+    //    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+    //    str += (n[5] != 0) ? ((str != '') ? 'and' : '') + (a[Number(n[5])] || b[n[5][0]] + '' + a[n[5][1]]) + '' : '';
+    str += (n[1] != 0) ? (a[Number(n[1])] || a[n[1][0]] + '' + a[n[1][1]] + '' + a[n[1][2]]) + '' : '';
+    str += (n[2] != 0) ? (a[Number(n[2])]) + '' : '';
+    str += ((n[3] > 9) || (str != '')) ? (a[n[3][0]] + '' + a[n[3][1]]) : (a[Number(n[3])])
+    return str;
+  }
+
+
+  var i = 1;
+  //document.write(inWords(10));
+  document.write('<scr'+'ipt>\
+  var lessonApp = angular.module("lessonApp", []);\
+  lessonApp.controller("lessonCtrl", function($scope) {');
+  document.write("$scope.Slides = '"+slidestext+"' ;");
+/*  while (i < 14) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+  i = 15;
+  while (i < 19) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+  i = 50;
+  while (i < 65) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+
+  i = 100;
+  while (i < 116) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+
+
+
+*/
+
+  i = 0
+  while (i != 300){
+  tabs = $( "#"+i+"" ).parent().parent().prop('className')
+  if (tabs != undefined) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+  }
+  i++
+  }
+
+
+
+
+
+
+
+
+  document.write('});\
+  angular.bootstrap(lessonDiv, ["lessonApp"]);\
+  </scr'+'ipt>');
+
+  if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
+  if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
+  if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
+  if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
+  if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
+    if (alltext != 'none') document.getElementById('all').innerHTML = alltext;
+  if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
+  if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
+  if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
+  if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
+  if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
+  if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
+
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+
+  if (typeof jQuery != 'undefined') {
+    jQuery(document).ready(function($) {
+      var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+      var baseHref = '';
+      if (jQuery('base').attr('href') != undefined)
+      baseHref = jQuery('base').attr('href');
+      jQuery('a').each(function() {
+        var href = jQuery(this).attr('href');
+        if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+          jQuery(this).click(function() {
+            var extLink = href.replace(/^https?\:\/\//i, '');
+            _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+              setTimeout(function() { location.href = href; }, 200);
+              return false;
+            }
+          });
+        }
+        else if (href && href.match(/^mailto\:/i)) {
+          jQuery(this).click(function() {
+            var mailLink = href.replace(/^mailto\:/i, '');
+            _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+          });
+        }
+        else if (href && href.match(filetypes)) {
+          jQuery(this).click(function() {
+            var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+            var filePath = href;
+            _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+              setTimeout(function() { location.href = baseHref + href; }, 200);
+              return false;
+            }
+          });
+        }
+      });
+    });
+}
+
+
+
+
+
+
+
+
+count = 0
+counta = 0
+keywords=[]
+while (count != 300){
+tabs = $( "#"+count+"" ).parent().parent().prop('className')
+if (tabs != undefined) {
+  keywords = keywords.concat(tabs.split(' '))
+  tabname = $("#"+count+"").text().toLowerCase().split(' ').join('_')
+  keywords = keywords.concat(tabname);
+  $("#"+count+"").parent().parent().addClass(tabname);
+  counta++
+}
+count++
+}
+
+
+
+
+  </script>
+  <!-- FOOTER CUT HERE ------------------------------------------------->
+</body>
+</html>

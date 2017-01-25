@@ -1,0 +1,8 @@
+import os
+from glob import glob
+x = glob("*.markdown")
+for dir in x:
+#	os.system("sed -ie $'s/layout\:\ post/layout\:\ post\ \\\nlanguage\:\ \"en-us\"/g' "+dir)
+	os.system("sed -ie $'s/\"en\-us\"/\"en\"/g' "+dir)
+#	os.system('fgrep -v \'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\' '+dir+' > a')
+#	os.system('cp a '+dir)

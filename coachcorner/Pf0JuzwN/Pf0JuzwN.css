@@ -1,0 +1,56 @@
+﻿@font-face {
+	font-family: 'Arial_Unicode_MS_TrueType_0';
+	src: local('Arial_Unicode_MS_TrueType_0');
+	src: url('Arial_Unicode_MS_TrueType_0.ttf') format('truetype');
+}
+
+.fmt-0{font-style:normal;font-weight:bold;font-family:Arial_Unicode_MS_TrueType_0,Arial Unicode MS,serif;color:#feffff;font-size:40pt;}
+
+@font-face {
+	font-family: 'Arial_Unicode_MS_TrueType_1';
+	src: local('Arial_Unicode_MS_TrueType_1');
+	src: url('Arial_Unicode_MS_TrueType_1.ttf') format('truetype');
+}
+
+.fmt-1{font-style:normal;font-weight:normal;font-family:Arial_Unicode_MS_TrueType_1,Arial Unicode MS,serif;color:#6b2085;font-size:32pt;}
+
+@font-face {
+	font-family: 'Times_New_Roman_TrueType_2';
+	src: local('Times_New_Roman_TrueType_2');
+	src: url('Times_New_Roman_TrueType_2.ttf') format('truetype');
+}
+
+.fmt-2{font-style:italic;font-weight:normal;font-family:Times_New_Roman_TrueType_2,Times New Roman,serif;color:#4e8f07;font-size:11pt;}
+
+.fmt-3{font-style:italic;font-weight:normal;font-family:Times_New_Roman_TrueType_2,Times New Roman,serif;color:#00908a;font-size:11pt;}
+
+@font-face {
+	font-family: 'Times_New_Roman_TrueType_3';
+	src: local('Times_New_Roman_TrueType_3');
+	src: url('Times_New_Roman_TrueType_3.ttf') format('truetype');
+}
+
+.fmt-4{font-style:normal;font-weight:normal;font-family:Times_New_Roman_TrueType_3,Times New Roman,serif;color:#41495a;font-size:10pt;}
+
+@font-face {
+	font-family: 'Times_New_Roman_TrueType_4';
+	src: local('Times_New_Roman_TrueType_4');
+	src: url('Times_New_Roman_TrueType_4.ttf') format('truetype');
+}
+
+.fmt-5{font-style:normal;font-weight:bold;font-family:Times_New_Roman_TrueType_4,Times New Roman,serif;color:#41495a;font-size:10pt;}
+
+.fmt-6{font-style:italic;font-weight:normal;font-family:Times_New_Roman_TrueType_2,Times New Roman,serif;color:#41495a;font-size:10pt;}
+
+.fmt-7{font-style:normal;font-weight:bold;font-family:Arial_Unicode_MS_TrueType_0,Arial Unicode MS,serif;color:#521b92;font-size:15pt;}
+
+.fmt-8{font-style:normal;font-weight:bold;font-family:Arial_Unicode_MS_TrueType_0,Arial Unicode MS,serif;color:#521b92;font-size:9pt;}
+
+@font-face {
+	font-family: 'Arial_Unicode_MS_TrueType_5';
+	src: local('Arial_Unicode_MS_TrueType_5');
+	src: url('Arial_Unicode_MS_TrueType_5.ttf') format('truetype');
+}
+
+.fmt-9{font-style:italic;font-weight:bold;font-family:Arial_Unicode_MS_TrueType_5,Arial Unicode MS,serif;color:#929292;font-size:15pt;}
+

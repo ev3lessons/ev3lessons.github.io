@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script
+src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+
+var points = 0;
+var M01 = 0;
+var M02 = 0;
+var M03 = 0;
+var M03a = 0;
+var M03b = 0;
+var M04blu = 0;
+var M04yel = 0;
+var M04bla = 96;
+var M04 = 96;
+var M05 = 0;
+var M06 = 0;
+var M07a = 0;
+var M07b = 0;
+var M07c = 0;
+var M07 = 0;
+var M08a = 0;
+var M08b = 0;
+var M08 = 0;
+var M09 = 0;
+var M10 = 0; 
+var M11 = 0; 
+var M12 = 0;
+
+function resetform() {
+    document.getElementById("form").reset()
+    document.getElementById("BlackBarsOrig").value = 12;
+    points = 0;
+    M01 = 0;
+    M02 = 0;
+    M03 = 0;
+    M03a = 0;
+    M03b = 0;
+    M04blu = 0;
+    M04yel = 0;
+    M04bla = 96;
+    M04 = 96;
+    M05 = 0;
+    M06 = 0;
+    M07a = 0;
+    M07b = 0;
+    M07c = 0;
+    M07 = 0;
+    M08a = 0;
+    M08b = 0;
+    M08 = 0;
+    M09 = 0;
+    M10 = 0; 
+    M11 = 0; 
+    M12 = 0;
+    calc(0,43);
+}
+
+    
+function dropdowncheck(ppi, id, id2) {
+    var index = document.getElementById(id2).selectedIndex;
+    calc(ppi*index, id);
+}
+
+function dropdowncheck(ppi, id, id2) {
+    var dropdown = document.getElementById(id2);
+    //  alert(selectedDate.toString());
+    //  alert("Index = " + selectedDate.selectedIndex);
+    // var oStartDT = dropdown.options[selectedDate.selectedIndex].value;
+    var index = dropdown.selectedIndex;
+//    alert(ppi*index);
+    calc(ppi*index, id);
+}
+
+
+function calc(points, id) {  
+    if (id == 11) {
+	M01 = points;
+	if (points == 240) {
+	    document.getElementById("safeM04y").checked = true;
+	    document.getElementById("safeM04b").checked = 1;
+	    document.getElementById("westM04y").disabled = true;
+	    document.getElementById("safeM04y").disabled = true;
+	    document.getElementById("elseM04y").disabled = true;
+	    document.getElementById("westM04b").disabled = true;
+	    document.getElementById("safeM04b").disabled = true;
+	    document.getElementById("elseM04b").disabled = true;
+	    document.getElementById("YellowBars").value = 0;
+	    document.getElementById("BlueBars").value = 0;
+	} else {
+	    document.getElementById("westM04y").disabled = false;
+	    document.getElementById("safeM04y").disabled = false;
+	    document.getElementById("elseM04y").disabled = false;
+	    document.getElementById("westM04b").disabled = false;
+	    document.getElementById("safeM04b").disabled = false;
+	    document.getElementById("elseM04b").disabled = false;
+	}
+	if (points == 180) {
+	    if ((document.getElementById("YellowBin").selectedIndex != 1) &&
+		(document.getElementById("BlueBin").selectedIndex != 1))
+		alert("At least one of your bins must be in other team's Safety!");
+	}
+	    
+    } else if (id == 21) {
+	M02 = points;
+    } else if (id == 31) {
+	M03a = points;
+        M03 = M03a + M03b;
+    } else if (id == 32) {
+	M03b = points;
+        M03 = M03a + M03b;
+    } else if (id == 41) {
+        var perbin = $("input[name=YellowBin]:checked").val()
+	M04yel = document.getElementById("YellowBars").value * perbin;
+	M04 = M04yel + M04blu + M04bla;
+	var numBin = 0;
+	if (perbin == 0)
+	    numBin++;
+	var othperbin = $("input[name=BlueBin]:checked").val() 
+	if (othperbin == 0)
+	    numBin++;
+	if (numBin > document.getElementById("RecMat").value) {
+	    document.getElementById("RecMat").min = numBin;
+	    M01 = 60 * numBin;
+	}
+    } else if (id == 42) {
+        var perbin = $("input[name=BlueBin]:checked").val()
+	M04yel = document.getElementById("BlueBars").value * perbin;
+	M04 = M04yel + M04blu + M04bla;
+	var numBin = 0;
+	if (perbin == 0)
+	    numBin++;
+	var othperbin = $("input[name=YellowBin]:checked").val() 
+	if (othperbin == 0)
+	    numBin++;
+	if (numBin > document.getElementById("RecMat").value) {
+	    document.getElementById("RecMat").min = numBin;
+	    M01 = 60 * numBin;
+	}
+    } else if (id == 43) {
+	var bbo = document.getElementById("BlackBarsOrig").value;
+	var bbb = document.getElementById("BlackBarsBin").value;
+	var bbp = 12 - bbo - bbb;
+	if (bbp < 0) {
+	    bbb = 12 - bbo;
+	    bbp = 0;
+	    document.getElementById("BlackBarsBin").value = bbb;
+	}
+	document.getElementById('BlackBarPen').innerHTML = bbp;
+	M04bla = 8 * bbo + 3 * bbb - (8 * bbp);
+	M04 = M04yel + M04blu + M04bla;
+    } else if (id == 44) {
+	var bbo = document.getElementById("BlackBarsOrig").value;
+	var bbb = document.getElementById("BlackBarsBin").value;
+	var bbp = 12 - bbo - bbb;
+	if (bbp < 0) {
+	    bbo = 12 - bbb;
+	    bbp = 0;
+	    document.getElementById("BlackBarsOrig").value = bbo;
+	}
+	document.getElementById('BlackBarPen').innerHTML = bbp;
+	M04bla = 8 * bbo + 3 * bbb - (8 * bbp);
+	M04 = M04yel + M04blu + M04bla;
+    } else if (id == 51) {
+	M05 = points;
+    } else if (id == 61) {
+	if (points == 1) {
+	    document.getElementById("noM06b").checked = true;
+	    document.getElementById("noM06c").checked = true;
+	    document.getElementById("yesM06b").disabled = true;
+	    document.getElementById("yesM06c").disabled = true;
+	    document.getElementById("noM06b").disabled = true;
+	    document.getElementById("noM06c").disabled = true;
+	    M06 = 0;
+	} else {
+	    document.getElementById("yesM06b").disabled = false;
+	    document.getElementById("noM06b").disabled = false;
+	    document.getElementById("yesM06c").disabled = false;
+	    document.getElementById("noM06c").disabled = false;
+	}
+    } else if (id == 62) {
+	M06 = points;
+	document.getElementById("noM06c").checked = true;
+    } else if (id == 63) {
+	M06 = points;
+	document.getElementById("noM06b").checked = true;
+    } else if (id == 71) {
+	M07a = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 72) {
+	M07b = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 73) {
+	M07c = points;
+	M07 = M07a + M07b + M07c;
+    } else if (id == 81) {
+	M08a = points;
+	M08 = M08a + M08b;
+    } else if (id == 82) {
+	document.getElementById("yesM08a").checked = true;
+	M08a = 60;
+	M08b = points;
+	M08 = M08a + M08b;
+    } else if (id == 91) {
+	M09 = points;
+    } else if (id == 101) {
+	M10 = points;
+	var x = document.getElementById("BlackBarsOrig");
+	if (points == 0) {
+	    x.max = 12;
+	} else {
+	    if (x.selectedIndex > 8) {
+		x.value=8;
+                x.selected=8;
+            }
+            x.max = 8;
+	    calc(0,43);
+	}
+    } else if (id == 111) {
+	M11 = points;
+    } else if (id == 121) {
+	M12 = points;
+	document.getElementById("yesM08a").checked = true;
+	M08a = 60;
+	M08 = M08a + M08b;
+    }
+
+    document.getElementById('M01pts').innerHTML = M01;
+    document.getElementById('M02pts').innerHTML = M02;
+    document.getElementById('M03pts').innerHTML = M03;
+    document.getElementById('M04pts').innerHTML = M04;
+    document.getElementById('M05pts').innerHTML = M05;
+    document.getElementById('M06pts').innerHTML = M06;
+    document.getElementById('M07pts').innerHTML = M07;
+    document.getElementById('M08pts').innerHTML = M08;
+    document.getElementById('M09pts').innerHTML = M09;
+    document.getElementById('M10pts').innerHTML = M10;
+    document.getElementById('M11pts').innerHTML = M11;
+    document.getElementById('M12pts').innerHTML = M12;
+    var points = M01 + M02 + M03 + M04 + M05 + M06 + M07 + M08 + M09 + M10 + M11 + M12;
+    document.getElementById('points').value = points + ' Points ';
+
+
+    var ranges = $("input[data-type='range']");
+    var radios = $("input[type='radio']");
+
+    ranges.slider("refresh");
+    radios.checkboxradio("refresh");
+}
+
+    <!--
+
+var viewportwidth;
+var viewportheight;
+
+// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+if (typeof window.innerWidth != 'undefined')
+{
+    viewportwidth = window.innerWidth,
+    viewportheight = window.innerHeight
+}
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+else if (typeof document.documentElement != 'undefined'
+	 && typeof document.documentElement.clientWidth !=
+	 'undefined' && document.documentElement.clientWidth != 0)
+{
+    viewportwidth = document.documentElement.clientWidth,
+    viewportheight = document.documentElement.clientHeight
+}
+
+// older versions of IE
+
+else
+{
+    viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+}
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+
+</head>
+<h1>Trash Trek Scorer by EV3Lessons/Droids Robotics</h1>
+
+<table>
+  <tr>
+    <td>
+      <iframe src="countdown.html" style="border:none" scrolling="no" width="200" height="120">
+      </iframe>
+    </td>
+    <td>
+      <iframe src="countup.html" style="border:none" width="250" scrolling="no" height="120">
+      </iframe>
+    </td>
+    <td>
+      <center>
+      <fieldset>
+      <legend size="10">Score</legend>
+      <input type='text' size='10'  value='96 Points ' readonly style="text-align: right; list-style-type: none; background-color: red; color: white; font-size: 150%; border: none;" id="points">
+      </fieldset>
+         <input type="button" onclick="resetform()" value="Reset Score" style="background-color: red; color: white; text-size: 200%">
+      </center>
+    </td>
+  </tr>
+</table>
+
+<form id="form">
+<div class="missions">
+<script>
+    if (viewportwidth > 500) {
+	document.write('<table style="border: none" border="0">');
+    }
+</script>
+
+  <tr style="vertical-align: top;">
+    <td>
+      <table style="border: 1px solid black; border-collapse: collapse; " border="1">
+	<tr>
+	  <td rowspan="3"> <img src='missions/M01.png' width="80"></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M01: Using Recycled Material:
+	    <i style="font-style: normal;" id="M01pts">0</i>  
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Number of Green Bins with matching bars in other team's Safety
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="RecMat" id="RecMat" value="0" min="0" max="4" step="1" onchange="calc(this.value*60,11)">
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M02.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M02: Methane:
+	    <i style="font-style: normal;" id="M02pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many locations has the Methane been installed in?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="Methane" id="Methane" value="0" min="0" max="2" step="1" onchange="calc(this.value*40,21)">
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M03.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M03: Transport:
+	    <i style="font-style: normal;" id="M03pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Does the Truck support all of the Yellow Bin's weight?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	    <label for="yesM03a">Yes</label>
+	    <input type="radio" onclick="calc(50, 31)" name="M03a" id="yesM03a">
+	    <label for="noM03a">No</label>
+	    <input type="radio" onclick="calc(0, 31)" name="M03a" id="noM03a" checked>	
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Yellow Bin completely East of Truck's Guide?
+	  </td>
+	</tr>
+
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	    <input  type="radio" onclick="calc(60, 32)" name="M03b" id="yesM03b" >
+	    <label for="yesM03b">Yes</label>
+	    <input type="radio"  onclick="calc(0, 32); " name="M03b" id="noM03b" checked>
+	    <label for="noM03b">No</label>
+	    </fieldset>
+	    </p>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="15"><img width="80" src='missions/M04.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">
+	    M04: Sorting:
+	    <i style="font-style: normal;" id="M04pts">96</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Yellow Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+		<input type="range" data-show-value="true" name="YellowBars" id="YellowBars" value="0" min="0" max="9" step="1" onchange="calc(0,41)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Yellow Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="westM04y">West Transfer Area</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="westM04y" value="7">
+	    <label for="safeM04y">Other team's Safety</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="safeM04y" value="0">	
+	    <label for="elseM04y">Elsewhere</label>
+	    <input type="radio" onclick="calc(0, 41)" name="YellowBin" id="elseM04y" value="6" checked>	
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many of the Blue Bars are in matching bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlueBars" id="BlueBars" value="0" min="0" max="6" step="1" onchange="calc(0,42)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Where is the Blue Bars' bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <label for="westM04b">West Transfer Area</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="westM04b" value="7">
+	    <label for="safeM04b">Other team's Safety</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="safeM04b" value="0">	
+	    <label for="elseM04b">Elsewhere</label>
+	    <input type="radio" onclick="calc(0, 42)" name="BlueBin" id="elseM04b" value="6" checked>	
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Black Bars are in their original position/scoring or in Flower Box ?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlackBarsOrig" id="BlackBarsOrig" value="12" min="0" max="12" step="1" onchange="calc(0,43)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are in the matching Green Bin or Landfill Bin?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <input type="range" data-show-value="true" name="BlackBarsBin" id="BlackBarsBin" value="0" min="0" max="12" step="1" onchange="calc(0,44)">
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	      How many Black Bars are elsewhere on the board?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <center>    <p id="BlackBarPen">0
+	    </p></center>
+	</tr>
+
+	<tr>
+	      <td rowspan="3"><img width="80" src='missions/M05.png'></td>
+	      <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M05: Careers:
+		<i style="font-style: normal;" id="M05pts">0</i>
+	      </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+		Is at least one Person in the Sorting Mission Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 51)" name="M05" id="yesM05" >
+	      <label for="yesM05">Yes</label>
+	      <input type="radio" onclick="calc(0, 51)" name="M05" id="noM05" checked>
+	      <label for="noM05">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+      </table>
+
+    </td>
+
+    <td style="vertical-align: top;">
+
+      <table style="border: 1px solid black; border-collapse: collapse;" border="1">
+	
+	<tr>
+	  <td rowspan="7"><img width="80" src='missions/M06.png'></td>
+	  <td width="300" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M06: Scrap Cars:
+	    <i style="font-style: normal;" id="M06pts">0</i>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Was the Car EVER partly in the Safety Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(1, 61)" name="M06a" id="yesM06a" >
+	      <label for="yesM06a">Yes</label>
+	      <input type="radio" onclick="calc(0, 61)" name="M06a" id="noM06a" checked>
+	      <label for="noM06a">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Engine/Windshield installed in the Car?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(65, 62)" name="M06b" id="yesM06b" >
+	      <label for="yesM06b">Yes</label>
+	      <input type="radio" onclick="calc(0, 62)" name="M06b" id="noM06b" checked>
+	      <label for="noM06b">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	<tr>
+	  <td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Car completely folded and in the East Transfer Area?
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(50, 63)" name="M06c" id="yesM06c" >
+	      <label for="yesM06c">Yes</label>
+	      <input type="radio" onclick="calc(0, 63)" name="M06c" id="noM06c" checked>
+	      <label for="noM06c">No</label>
+	    </fieldset>
+	  </td>
+	</tr>
+	
+	<tr>
+	  <td rowspan="7"> <img src='missions/M07.png' width="80"></td>
+	  <td  width="1000%" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M07: Cleanup:
+	    <i style="font-style: normal;" id="M07pts">0</i>
+	</td></tr>
+	<tr>
+	  <td width="300" style="font-size: 100%; background-color: sky;">
+	    How many Plastic Bags are in the Safety Area?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="bags" id="bags" value="0" min="0" max="2" step="1" onchange="calc(this.value*30,71)">
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Animals are completely in any Circle without Plastic Bags?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="animals" id="animals" value="0" min="0" max="3" step="1" onchange="calc(this.value*20,72)">
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Chicken completely in the Small Circle?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(35, 73)" name="M07c" id="yesM07c" >
+	      <label for="yesM07c">Yes</label>
+	      <input type="radio" onclick="calc(0, 73)" name="M07c" id="noM07c" checked>
+	      <label for="noM07c">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="5"><img width="80" src='missions/M08.png'></td>
+	  <td width="200" style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M08: Composting:
+	    <i style="font-style: normal;" id="M08pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Has the Compost been ejected?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 81)" name="M08a" id="yesM08a" >
+	      <label for="yesM08a">Yes</label>
+	      <input type="radio" onclick="calc(0, 81)" name="M08a" id="noM08a" checked>
+	      <label for="noM08a">No</label>
+	      </fieldset>
+	    </p>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(20, 82)" name="M08b" id="yesM08b" >
+	      <label for="yesM08b">Yes</label>
+	      <input type="radio" onclick="calc(0, 82)" name="M08b" id="noM08b" checked>
+	      <label for="noM08b">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img  width="80" src='missions/M09.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M09: Salvage:
+	    <i style="font-style: normal;" id="M09pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Are the Valuables completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(60, 91)" name="M09" id="yesM09" >
+	      <label for="yesM09">Yes</label>
+	      <input type="radio" onclick="calc(0, 91)" name="M09" id="noM09" checked>
+	      <label for="noM09">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M10.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M10: Demolition:
+	    <i style="font-style: normal;" id="M10pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is building demolished (i.e. are all ALL building beams knocked down)?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(85, 101)" name="M10" id="yesM10">
+	      <label for="yesM10">Yes</label>
+	      <input type="radio" onclick="calc(0, 101)" name="M10" id="noM10" checked>
+	      <label for="noM10">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M11.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M11: Purchasing Decisions:
+	    <i style="font-style: normal;" id="M11pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    How many Toy Planes are completely in the Safety Area?
+	</td></tr>
+	<tr><td>
+	  <input type="range" data-show-value="true" name="purchase" id="purchase" value="0" min="0" max="2" step="1" onchange="calc(this.value*40,111)">
+	  </td>
+	</tr>
+
+
+	<tr>
+	  <td rowspan="3"><img width="80" src='missions/M12.png'></td>
+	  <td style="font-size: 110%; text-align: center; background-color: Blue; color: white;">M12: Repurposing:
+	    <i style="font-style: normal;" id="M12pts">0</i>
+	</td></tr>
+	<tr><td width="200" style="font-size: 100%; background-color: sky;">
+	    Is the Compost in either Toy Package (Flower Box)?
+	</td></tr>
+	<tr><td>
+	    <fieldset data-role="controlgroup" data-type="horizontal" style="text-align: center;">
+	      <input type="radio" onclick="calc(40, 121)" name="M12" id="yesM12" >
+	      <label for="yesM12">Yes</label>
+	      <input type="radio" onclick="calc(0, 121)" name="M12" id="noM12"checked>
+	      <label for="noM12">No</label>
+	      </fieldset>
+	    </p>
+	  </td>
+	</tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</div>
+</form>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+    
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+
+</script>

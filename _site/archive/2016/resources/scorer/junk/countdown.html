@@ -1,0 +1,73 @@
+<head>
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<style>
+table, th, td {
+    border: 10px solid black;
+    border-collapse: collapse;
+}
+</style>
+</head>
+
+<body>
+Timer:
+  <table>
+    <tr>
+      <td rowspan='2' style="vertical-align:middle; font-size: 200%">
+	<p id="time">02:30<p>
+      </td>
+      <td>
+	<button onclick="myTimer()">Start</button>
+      </td>
+    </tr>
+    <tr>
+      <td><INPUT TYPE="button" onClick="history.go(0)" VALUE="Reset">
+      </td>
+    </tr>
+  </table>
+<script>
+    var date = new Date();
+    var sec = 30;
+    var min = 2;
+    var a = 0;
+    var audio = new Audio('audio_file.mp3');
+function myTimer() {
+    setInterval(function () {
+       if (sec <= 1) {
+            if (min == 0) {
+                min = 0
+                sec = 0
+                a = 1
+            }
+        }
+      if (a != 1)  {
+        sec = sec-1
+        }
+
+        if (sec == 0) {
+            sec = 60;
+            min = min-1;
+            if (min == 60) {
+                min = 0;
+            }
+        }
+//       if (sec <= 1) {
+//           sec = 0
+//        }
+       if (sec == 60) {
+            if (min == -1) {
+                min = 0
+                sec = 0
+                a = 1
+                audio.play();
+            }
+        }
+
+
+        time = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+        document.getElementById("time").innerHTML = time;
+    }, 1000);
+}
+  </script>
+</body>
+
+
