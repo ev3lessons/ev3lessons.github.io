@@ -8,7 +8,7 @@ minidescription: "This article shares ideas about how to start your season by lo
 sidetitle: ""
 side: ""
 author: "Seshan Brothers<br>Animatronics<br>Pittsburgh, USA"
-authorim: "/images/people/seshanbros.jpg"
+authorim: "/images/people/Seshanbros.jpg"
 ---
 
 What do you do at the start of the season? If you are an experienced team, start with where you ended - last season!

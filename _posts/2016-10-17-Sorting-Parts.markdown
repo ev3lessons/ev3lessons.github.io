@@ -8,7 +8,7 @@ minidescription: "This article shares ideas for how to sort your parts for FIRST
 sidetitle: ""
 side: ""
 author: "Seshan Brothers<br>Animatronics<br>Pittsburgh, USA"
-authorim: "/images/people/seshanbros.jpg"
+authorim: "/images/people/Seshanbros.jpg"
 ---
 
 If you start out well, the rest of the tasks becomes a lot easier. In the case of a robotics team, “well begun” starts with being organized. This article shares both portable sorting techniques as well as ideas for your robotics lab.
