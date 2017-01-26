@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach passion"
+keywords: "Coaching management organizing scheduling getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Team Scheduling"
 minidescription: "This article is about how to manage team scheduling for a FIRST LEGO League team."

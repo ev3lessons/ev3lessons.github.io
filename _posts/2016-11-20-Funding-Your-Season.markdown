@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching roles management organization getting_started"
+keywords: "Coaching roles management funding getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Funding Your Season"
-minidescription: "This article is about learning fill in"
+minidescription: "This article is about how to raise enough money for your team."
 sidetitle: ""
 side: ""
 author: "Jean Findley-Williams<br>Bayou Builders<br>Louisiana, USA"

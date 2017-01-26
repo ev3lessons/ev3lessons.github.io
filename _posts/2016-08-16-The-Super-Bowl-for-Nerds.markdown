@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach passion"
+keywords: "Coaching coach passion team role coach_role"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Getting Started with LEGO Robotics"
-minidescription: "This article is about the benefits of participating in FIRST LEGO League and the role of the coach"
+minidescription: "This article is about the benefits of participating in FIRST LEGO League and the role of the coach."
 sidetitle: ""
 side: ""
 author: "Clueless Dad<br>Tesla Foil<br>Massachusettes, USA<br>Repost from www.raisingnerd.com"

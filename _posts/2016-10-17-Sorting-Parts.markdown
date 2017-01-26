@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach passion fill in"
+keywords: "Coaching organizing sorting getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Sorting Parts"
 minidescription: "This article shares ideas for how to sort your parts for FIRST LEGO League."

@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching motivating"
+keywords: "Coaching motivating getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Motivating Your Team"
 minidescription: "This article is about how to motivate team members."

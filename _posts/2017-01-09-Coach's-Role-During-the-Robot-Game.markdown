@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach coach_role"
+keywords: "Coaching coach coach_role role"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Coach's Role During the Robot Game'"
-minidescription: "This article provides tips for how a coach such behave during the robot game."
+title: "Coach's Role During the Robot Game"
+minidescription: "This article provides tips for how a coach should behave during the robot game."
 sidetitle: ""
 side: ""
 author: "Asha Seshan<br>Droids Robotics<br>Pittsburgh, USA"

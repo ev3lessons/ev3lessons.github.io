@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching FLL budget expenses cost team_budget"
+keywords: "Coaching FLL budget expenses cost team_budget getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Team Budget"
-minidescription: "This article is about basic team expenses each season"
+minidescription: "This article is about basic team expenses each season."
 sidetitle: ""
 side: ""
 author: "Asha Seshan<br>Droids Robotics<br>Pittsburgh, USA<br>"

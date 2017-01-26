@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching competition tournament"
+keywords: "Coaching competition tournament preparation"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Dare to Prepare"
-minidescription: "This article is about learning fill in"
+minidescription: "This article is about how to prepare for tournament day."
 sidetitle: ""
 side: ""
 author: "World Changers<br>Iowa, USA"

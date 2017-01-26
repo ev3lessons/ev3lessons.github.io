@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching roles management organization getting_started"
+keywords: "Coaching roles management organization team getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Choosing Roles - Involving all Members"
-minidescription: "This article is about learning fill in"
+minidescription: "This article is about how to make sure that all team members are involved and learning."
 sidetitle: ""
 side: ""
 author: "Jean Findley-Williams<br>Bayou Builders<br>Louisiana, USA"

@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach_role passion"
+keywords: "Coaching coach_role passion learning"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Learning One Step Ahead of Your Students"
 minidescription: "This article shares the story of one school teacher and his first time starting FIRST LEGO Leauge."

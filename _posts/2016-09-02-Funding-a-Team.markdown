@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching funding getting_started"
+keywords: "Coaching funding expenses getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Template"
 minidescription: "This article is about how to fund your FLL team."

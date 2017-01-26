@@ -1,10 +1,10 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach passion fill in"
+keywords: "Coaching coach passion role coach_role"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "The Joy and Passion of Coaching"
-minidescription: "This article is about learning fill in"
+minidescription: "This article is about one coach's journey through FLL.'"
 sidetitle: ""
 side: ""
 author: "Jucain Butler<br>Patriots TTC<br>Maryland, USA"

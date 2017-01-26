@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching coach passion role getting_started"
+keywords: "Coaching coach passion role getting_started core_values"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Coopertition Through Gaming"
 minidescription: "This article is about how playing board games can improve your teamwork skills."
