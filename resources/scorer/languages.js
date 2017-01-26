@@ -388,7 +388,7 @@ if (language == 'es') {
     $scope.Start = 'Démarrer';
     $scope.Reset = 'Redémarrer';
     $scope.Stop = 'Arrêter';
-    $scope.SaveScore = 'Sauver le score';  
+    $scope.SaveScore = 'Sauvegarder score';  
     $scope.LoadSave = 'Charger le score';  
     $scope.DeleteSave = 'Supprimer tous les scores';  
     DeletedSave = 'Vous avez supprimer tous les scores :-( !!!!';
