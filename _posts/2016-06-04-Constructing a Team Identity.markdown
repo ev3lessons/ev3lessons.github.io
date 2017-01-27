@@ -13,7 +13,7 @@ authorim: "/images/people/insabots.png"
 
 Building a team’s identity is not an easy task. It takes time and depends a lot on the characteristics of team members. Providing an environment and lots of time for interaction among the children is a big step in enabling the team to develop this identity.
 
-![](/images/coachcorner/insabots1.jpg)
+![](/images/coachcorner/Insabots1.jpg)
 
 > I have learned over time that we achieve really cool things when we mix ages and, consequently, different ideas.
 
@@ -35,7 +35,7 @@ Why evole? Is it always necessary to evolve the logo? Does the team identity boi
 
 To conclude, the identity of the team is not limited to a logo and does not happen overnight. It takes time. They need patience, hard work and encouragement, as they strive to find solutions with the help of their coaches and mentors. They know that we don't have all the answers, but we learn TOGETHER! =)
 
-![](/images/coachcorner/insabots2.jpg)
+![](/images/coachcorner/Insabots2.jpg)
 
 
 ### Time to Bond
@@ -50,7 +50,7 @@ During the Trash Trek season, we represented Brazil in the APOC-Asia Pacific Ope
 
 In the midst of our celebration, you also see our flag ... which was created by the students themselves, representing the individual and collective features of the team.
 
-![](/images/coachcorner/insabots3.jpg)
+![](/images/coachcorner/Insabots3.jpg)
 
 
 

@@ -11,7 +11,7 @@ author: "Asha Seshan<br>Droids Robotics<br>Pittsburgh, USA"
 authorim: "/images/people/asha.jpg"
 ---
 
-n this article, I tackle the Internet and the role it can play for a FIRST LEGO League team: the good, the bad and even the ugly. Opinions will vary greatly on this topic.  My opinions are based on 6 years coaching, judging at both regional and international events, and my philosophy on how to get the most out of the FLL for our children.
+In this article, I tackle the Internet and the role it can play for a FIRST LEGO League team: the good, the bad and even the ugly. Opinions will vary greatly on this topic.  My opinions are based on 6 years coaching, judging at both regional and international events, and my philosophy on how to get the most out of the FLL for our children.
 
 ![](/images/coachcorner/Sharing.jpg)
 
