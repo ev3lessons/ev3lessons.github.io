@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching presentations competition"
+keywords: "Coaching presentations competition contest_day"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Preparing for Juding Presentations"
 minidescription: "This article shared tips about how to improve your judging presentations."

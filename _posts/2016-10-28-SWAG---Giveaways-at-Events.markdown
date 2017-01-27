@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching SWAG giveaways competition"
+keywords: "Coaching SWAG giveaways competition contest_day"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "SWAG - Team Giveaways"
 minidescription: "This article gives teams ideas for giveaways."
