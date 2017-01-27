@@ -33,4 +33,5 @@ We then have our team divided into two groups.  At our Tuesday meeting group A w
 
 It is our role as coaches to observe when a team member may be avoiding a particular aspect or becoming too focused on another and to encourage engagement in another part of the planning where they might also be interested.  It is also our role to regularly check in with each team member to get a gauge on if they feel included and respected and to give them suggestions on how to handle certain situations to improve the team’s overall sense of community.
 
+<a href="http://ev3lessons.com/translations/en-us/guides/RolesResponsibilities.docx">EV3Lessons Roles and Responsibilities Chart </a>.
 

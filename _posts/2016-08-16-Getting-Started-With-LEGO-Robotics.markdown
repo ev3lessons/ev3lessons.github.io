@@ -36,10 +36,12 @@ Nope, once again, Clueless Dad had no clue. Being a fan of BattleBots and having
 2. Programming Skills – LEGO Mindstorms is a terrific program that gives them experience in problem solving
 3. Engineering Skills – LEGO gets them building and allows them to solve problems in real-time
 4. Personal Growth & Confidence – There are no parents to hide behind. The kids have to stand up and do it all themselves. First LEGO League gives Nerds the opportunity to surprise even themselves
-.
+
 First LEGO League is an amazing experience for kids and coaches alike. I got to see my team grow and learn essentially all on their own, and was blown away by how far they’d progressed in just a few months as a team.
 
 I, of course, dutifully held down my role, which was to organize and focus their energy around the challenges. Oh, and also to make snacks. They loved my snacks.
+
+<a href="http://ev3lessons.com/translations/en-us/guides/FLLGettingStarted.pdf">EV3Lessons FLL Getting Started Guide</a>
 
 
 

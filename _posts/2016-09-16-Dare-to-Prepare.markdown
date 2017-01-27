@@ -61,6 +61,9 @@ Pens, pencils and Sharpie (to mark water bottles)<br>
 Safety pins (to fix almost anything)<br>
 Lanyards with schedule<br>
 Camera (leave other expensive personal items at home)
+
+<a href="http://ev3lessons.com/translations/en-us/guides/TournamentChecklist.docx">Checklist</a>
+
 ___
 
 
