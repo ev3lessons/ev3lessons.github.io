@@ -8,7 +8,7 @@ minidescription: "This article is about the impact you can have as a FIRST LEGO 
 sidetitle: ""
 side: ""
 author: "Jucain Butler<br>Patriots TTC<br>Maryland, USA"
-authorim: "/images/people/male.png"
+authorim: "/images/people/patriots.jpg"
 ---
 
 As a computer scientist for the Department of Defense in Washington DC, I had been looking for a way to get inner city kids interested and involved in Science and Technology.  A couple years ago, a friend from college told me about a Non-profit S.T.E.M. Organization called the Patriots TTC that was using the LEGO NXT system to teach kinds about robotics and computer programming.  I walked into the first meeting to see a group of energetic and enthusiastic kids and parents and coaches struggling, but eager to learn to use the system.  I introduced myself and told them about my experience in programming, and that began a love for helping and inspiring middle school students to build and program robots, and to consider careers in the S.T.E.M. field.
