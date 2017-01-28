@@ -36,6 +36,7 @@ The single biggest mistake people make is assuming that the sets and the softwar
 -  To download the <b>Education Software</b> visit the<a href="https://www.lego.com/en-us/mindstorms/downloads/"> Edu Version Downloads Page</a><br>
 -  To view the <b>Education Robot Builds</b> (5 main models + 6 expansion models), go to "Model Instructions" inside your Edu version of the software<br>
 -  To install the <b>Retail or Education Firmware</b> on the brick, go to Tools --> Firmware Update inside the EV3 programming software you installed
+-  To install the <b>programming blocks for any new LEGO sensors you add</b> (Gyro, Ultrasonic, Temperature, Sound...), visit the<a href="https://www.lego.com/en-us/mindstorms/downloads/"> Retail Version Downloads Page</a><br>
 
 
 ### Comparison Table

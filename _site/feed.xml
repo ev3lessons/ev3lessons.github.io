@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-27T19:20:57-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-01-28T07:38:15-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/coachcorner/Offseason.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -111,6 +111,7 @@ Often times building and programming a robot for fun results in learning new ski
   &lt;li&gt;To download the &lt;b&gt;Education Software&lt;/b&gt; visit the&lt;a href=&quot;https://www.lego.com/en-us/mindstorms/downloads/&quot;&gt; Edu Version Downloads Page&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;To view the &lt;b&gt;Education Robot Builds&lt;/b&gt; (5 main models + 6 expansion models), go to “Model Instructions” inside your Edu version of the software&lt;br /&gt;&lt;/li&gt;
   &lt;li&gt;To install the &lt;b&gt;Retail or Education Firmware&lt;/b&gt; on the brick, go to Tools –&amp;gt; Firmware Update inside the EV3 programming software you installed&lt;/li&gt;
+  &lt;li&gt;To install the &lt;b&gt;programming blocks for any new LEGO sensors you add&lt;/b&gt; (Gyro, Ultrasonic, Temperature, Sound…), visit the&lt;a href=&quot;https://www.lego.com/en-us/mindstorms/downloads/&quot;&gt; Retail Version Downloads Page&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;comparison-table&quot;&gt;Comparison Table&lt;/h3&gt;
@@ -211,6 +212,7 @@ Useful Links:
   To download the Education Software visit the Edu Version Downloads Page
   To view the Education Robot Builds (5 main models + 6 expansion models), go to “Model Instructions” inside your Edu version of the software
   To install the Retail or Education Firmware on the brick, go to Tools –&amp;gt; Firmware Update inside the EV3 programming software you installed
+  To install the programming blocks for any new LEGO sensors you add (Gyro, Ultrasonic, Temperature, Sound…), visit the Retail Version Downloads Page
 
 
 Comparison Table
