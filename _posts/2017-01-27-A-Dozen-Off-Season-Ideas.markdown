@@ -49,7 +49,7 @@ If you want feedback and ideas, invite a experienced local team to a team meetin
 ### 10) Go online! 
 How about making the team a website or Facebook/Twitter pages? Many FIRST teams have websites and social media sites to connect with other teams and with FIRST. You can use it to collect survey data, share you work with others, and even participate in FLL Twitter Chats.
 
-### 11) Try another LEGO robotics tournanment 
+### 11) Try another LEGO robotics tournament 
 Many states and countries off other LEGO robotics programs that will enhance your FIRST LEGO League skills. Some areas offer Robot Sumo, Robocup and World Robot Olympiad. These do not usually conflict with FIRST LEGO League and still use LEGO MINDSTORMS.
 
 ### 12) Build something completely new
