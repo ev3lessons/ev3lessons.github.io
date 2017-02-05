@@ -52,17 +52,17 @@ none
 Moviéndose con mis bloques
 Girando con mis bloques
 Seguidor de Líneas con My Blocks
-none
+Sensor Infrarrojo
 Depuración
 Bloques de Movimiento
 none
-none
+Botones del Ladrillo EV3
 Calibración de Sensor de Colores
 none
 Como Usar Vigas Paralelas
 none
-none
-none
+Cables de Datos
+Seguidor de Pared Ultrasonico
 none
 none
 none
