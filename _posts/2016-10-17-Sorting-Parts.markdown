@@ -7,7 +7,7 @@ title: "Sorting Parts"
 minidescription: "This article shares ideas for how to sort your parts for FIRST LEGO League."
 sidetitle: ""
 side: ""
-author: "Seshan Brothers<br>Animatronics<br>Pittsburgh, USA"
+author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, USA"
 authorim: "/images/people/Seshanbros.jpg"
 ---
 

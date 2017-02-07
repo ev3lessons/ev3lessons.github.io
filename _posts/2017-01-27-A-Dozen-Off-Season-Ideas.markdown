@@ -7,7 +7,7 @@ title: "A Dozen Off-Season Ideas"
 minidescription: "This article shares ideas for what a FIRST LEGO League can do in the off-season to improve their skills."
 sidetitle: ""
 side: ""
-author: "Seshan Brothers<br>Animatronics<br>Pittsburgh, USA"
+author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, USA"
 authorim: "/images/people/Seshanbros.jpg"
 ---
 

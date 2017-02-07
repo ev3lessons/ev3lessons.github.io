@@ -7,7 +7,7 @@ title: "Start Where the Old Season Ended"
 minidescription: "This article shares ideas about how to start your season by looking at evaluations and setting goals."
 sidetitle: ""
 side: ""
-author: "Seshan Brothers<br>Animatronics<br>Pittsburgh, USA"
+author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, USA"
 authorim: "/images/people/Seshanbros.jpg"
 ---
 
