@@ -1,4 +1,4 @@
-﻿n/a
+n/a
 Como usar las Lecciones para el EV3
 none
 Conceptos Básicos de EV3 Introducción al Bloque EV3 y su Software
@@ -50,7 +50,7 @@ none
 none
 none
 Moviéndose con mis bloques
-Girando con mis bloques
+None
 Seguidor de Líneas con My Blocks
 Sensor Infrarrojo
 Depuración

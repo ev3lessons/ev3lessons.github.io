@@ -1,4 +1,4 @@
-﻿n/a
+n/a
 Como usar Lições EV3
 Construindo uma Base do Robô e Anexos
 Introdução ao Brick e Software
@@ -106,7 +106,7 @@ Usandoo Sensor Gyro e Lidandocom a Instabilidade
 Curvas usando “Gyro”
 Enquadrando nas Linhas
 Detecção de Obstáculos
-Sistema de Menu
+none
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
  Matrizes
 Seguidor proporcional de linha com dois sensores de cor.
