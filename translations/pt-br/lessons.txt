@@ -104,7 +104,7 @@ Seguidor de Linha Proporcional
 Rampa de Aceleração da Velocidade
 Usandoo Sensor Gyro e Lidandocom a Instabilidade
 Curvas usando “Gyro”
-Enquadrando nas Linhas
+none
 Detecção de Obstáculos
 none
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
