@@ -48,19 +48,19 @@ none
 none
 none
 none
-none
+Introduccion a Mis Bloques
 Moviéndose con mis bloques
 none
 Seguidor de Líneas con My Blocks
 Sensor Infrarrojo
 Depuración
 Bloques de Movimiento
-none
+Técnicas de Precisión  
 Botones del Ladrillo EV3
 Calibración de Sensor de Colores
-none
+Variables
 Como Usar Vigas Paralelas
-none
+Operaciones Logicas 
 Cables de Datos
 Seguidor de Pared Ultrasonico
 none
