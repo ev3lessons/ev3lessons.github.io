@@ -54,7 +54,7 @@ none
 Seguidor de Líneas con My Blocks
 Sensor Infrarrojo
 Depuración
-Bloques de Movimiento
+none
 Técnicas de Precisión  
 Botones del Ladrillo EV3
 Calibración de Sensor de Colores
