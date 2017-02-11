@@ -1,4 +1,4 @@
-﻿n/a
+n/a
 none
 none
 none
@@ -16,7 +16,7 @@ none
 none
 none
 Ανάγνωση θυρών και δεδομένων
-none
+Προσαρμοσμένες Εικόνες και Ήχοι
 none
 none
 none
