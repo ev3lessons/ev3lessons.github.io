@@ -49,9 +49,9 @@ none
 none
 none
 Introduccion a Mis Bloques
-Moviéndose con mis bloques
 none
-Seguidor de Líneas con My Blocks
+none
+none
 Sensor Infrarrojo
 Depuración
 none
