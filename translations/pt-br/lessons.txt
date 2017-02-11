@@ -54,7 +54,7 @@ My Block Girar Graus
 My Blocks Seguidor de Linha Colorida com Entradas - Mover Distância / Mover até encontrar o Preto
 Sensor Infravermelho
 Técnicas de Debugging (correção de erros na programação)
-Blocos de Movimento
+none
 Segurança
 Botões do Bloco Como Sensores
 Calibração do Sensor de Cores

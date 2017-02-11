@@ -54,7 +54,7 @@ Draaien met mijn blokken
 Kleuren lijnvolger / Mijn blokken
 Infrarood Sensor
 Debuggen
-Beweegblokken
+none
 Betrouwbaarheid
 none
 Kleurensensor kalibreren
