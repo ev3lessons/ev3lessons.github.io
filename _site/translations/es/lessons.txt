@@ -1,5 +1,5 @@
-﻿n/a
-Como usar las Lecciones para el EV3
+n/a
+none
 none
 Conceptos Básicos de EV3 Introducción al Bloque EV3 y su Software
 none
@@ -48,19 +48,19 @@ none
 none
 none
 none
+Introduccion a Mis Bloques
 none
-Moviéndose con mis bloques
-Girando con mis bloques
-Seguidor de Líneas con My Blocks
+none
+none
 Sensor Infrarrojo
 Depuración
-Bloques de Movimiento
 none
+Técnicas de Precisión  
 Botones del Ladrillo EV3
 Calibración de Sensor de Colores
-none
+Variables
 Como Usar Vigas Paralelas
-none
+Operaciones Logicas 
 Cables de Datos
 Seguidor de Pared Ultrasonico
 none

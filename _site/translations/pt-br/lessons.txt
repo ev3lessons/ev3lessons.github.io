@@ -1,5 +1,5 @@
-﻿n/a
-Como usar Lições EV3
+n/a
+none
 Construindo uma Base do Robô e Anexos
 Introdução ao Brick e Software
 Movendo em Linha Reta
@@ -54,7 +54,7 @@ My Block Girar Graus
 My Blocks Seguidor de Linha Colorida com Entradas - Mover Distância / Mover até encontrar o Preto
 Sensor Infravermelho
 Técnicas de Debugging (correção de erros na programação)
-Blocos de Movimento
+none
 Segurança
 Botões do Bloco Como Sensores
 Calibração do Sensor de Cores
@@ -104,9 +104,9 @@ Seguidor de Linha Proporcional
 Rampa de Aceleração da Velocidade
 Usandoo Sensor Gyro e Lidandocom a Instabilidade
 Curvas usando “Gyro”
-Enquadrando nas Linhas
+none
 Detecção de Obstáculos
-Sistema de Menu
+none
 Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
  Matrizes
 Seguidor proporcional de linha com dois sensores de cor.

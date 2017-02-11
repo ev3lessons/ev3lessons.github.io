@@ -1,5 +1,5 @@
 n/a
-Hoe je EV3 lessen moet gebruiken
+none
 Robot ontwerp
 Introductie Intelligente steen en software
 Rechtdoor rijden
@@ -54,7 +54,7 @@ Draaien met mijn blokken
 Kleuren lijnvolger / Mijn blokken
 Infrarood Sensor
 Debuggen
-Beweegblokken
+none
 Betrouwbaarheid
 none
 Kleurensensor kalibreren
@@ -104,9 +104,9 @@ Lijnvolgers: van basis tot proportioneel
 none
 De gyroscoop en omgaan met overgevoeligheid
 none
-Uitlijnen van de robot
+none
 Klemdetectie
-Menu systeem
+none
 Bewegen in een rechte lijn en het volgen van een muur met gyroscoop
 Programmeren met Reeksen
 none
