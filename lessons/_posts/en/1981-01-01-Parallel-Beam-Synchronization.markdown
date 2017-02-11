@@ -1,0 +1,11 @@
+---
+title: "Parallel Beam Synchronization"
+searchterms: "toggle advanced software parallel_beams sync_beams split_task task_split synchronization parallel_beam_synchroniztion parallel_beam_synchronization"
+lang: "en"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/advanced/SyncBeams.pptx">PPTX</a>,
+ <a href="translations/en-us/advanced/SyncBeams.pdf">PDF</a>
+ </li>
+ </ul>

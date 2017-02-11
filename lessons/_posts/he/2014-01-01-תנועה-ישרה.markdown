@@ -1,0 +1,13 @@
+---
+title: "תנועה ישרה"
+searchterms: "toggle beginner moving ipad programming_app tablet android app moving_straight forward backward תנועה_ישרה"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/he/beginner/MovingStraight.pptx">PPTX</a>,
+ <a href="translations/he/beginner/MovingStraight.pdf">PDF</a>
+ </li>
+ <li><a href="translations/he/beginner/MovingStraight.docx">Worksheet</a>
+ </li>
+ </ul>

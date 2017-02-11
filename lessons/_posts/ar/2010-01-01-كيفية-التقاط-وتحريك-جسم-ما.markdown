@@ -1,0 +1,11 @@
+---
+title: "كيفية التقاط وتحريك جسم ما"
+searchterms: "beginner"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/ar/beginner/MoveObject.pptx">PPTX</a>,
+ <a href="translations/ar/beginner/MoveObject.pdf">PDF</a>
+ </li>
+ </ul>

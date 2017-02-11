@@ -1,0 +1,11 @@
+---
+title: "מערכים"
+searchterms: "toggle advanced arrays software array_operations array_block read write מערכים"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/he/advanced/Arrays.pptx">PPTX</a>,
+ <a href="translations/he/advanced/Arrays.pdf">PDF</a>
+ </li>
+ </ul>

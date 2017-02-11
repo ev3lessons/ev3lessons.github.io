@@ -1,0 +1,13 @@
+---
+title: "Klemdetectie"
+searchterms: "toggle stall advanced stall_detection move_degrees move_seconds abort stall klemdetectie"
+lang: "nl"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/nl/advanced/StallDetection.pptx">PPTX</a>,
+ <a href="translations/nl/advanced/StallDetection.pdf">PDF</a>
+ </li>
+ <li>By Hoosier Girlz and Droids Robotics
+ </li>
+ </ul>

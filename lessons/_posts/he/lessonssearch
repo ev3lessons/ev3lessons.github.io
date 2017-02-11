@@ -1,0 +1,27 @@
+toggle beginner robot base_robot robot_design droidbot בנו_רובוט_בסיסי_עם_זרועות
+toggle beginner programs programmes programming programming_app programing introev3 brick software ev3 buttons centre up- down- left- right- center- ipad tablet android app introduction introduction_to_brick_and_software מבוא_ללבנה_ולתוכנה
+toggle beginner moving ipad programming_app tablet android app moving_straight forward backward תנועה_ישרה
+toggle beginner pseudocode פסאודו_קוד_/_קוד_דמה
+toggle beginner moving programming_app ipad app turning tablet pivot spin point android סיבוב
+toggle beginner display programming_app displaying_text_and_graphics ipad tablet text graphics android display_block display_graphics app הצגת_מלל_וגרפיקה
+toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on חיישן_מגע
+toggle beginner color colour colour_sensor sensors programming_app colour_sensor color_sensor ipad tablet app reflected_light light_sensor color_mode colour_mode android חיישן_צבע
+toggle beginner loops programming_app app ipad tablet android לולאות
+toggle beginner switches ipad app tablet android מתגים
+toggle beginner ultrasonic sensors ipad ultrasonic_sensor programming_app app tablet android חיישן_אולטרא_סוני
+toggle beginner beginner color colour colour_sensor follower basic line_tracker sensors ipad tablet programming_app app android line_follower line colour_sensor basic_line_follower מעקב_פשוט_אחר_קו
+toggle beginner large_motor_block attachments passive medium_motor_block moving object moving_object העברה_של_חפץ
+toggle beginner challenge final_challenge אתגר_מסכם
+toggle intermediate software myblocks blocks my_blocks parameters parametres inputs outputs my_block_builder בלוק_מותאם_אישית
+toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with תנועה_עם_בלוק_מותאם_אישית
+toggle intermediate myblocks moving turning my_blocks turn_degrees turning_with rotation_sensor פנייה_עם_בלוק_מותאם_אישית
+line_follower line toggle line intermediate color colour colour_sensor sensors follower linefollower tracker line_traker my_blocks sensor_block מעקב_אחר_קו_צבע_עם_בלוק_מותאם_אישית
+toggle intermediate infrared sensors infrared_sensor beacon remote remote_control חיישן_אינפרא_אדום
+toggle intermediate debugging sound display brick_buttons ניפוי_שגיאות
+toggle intermediate moving move_blocks synchronization motor_synchronization regulated_power unregulated_motor ramp_up ramp_down בלוקים_לויסות_התנועה
+toggle intermediate color colour colour_sensor sensors calibration calibrate colour_calibration כיול_חיישן_צבע
+toggle intermediate variables software wires wired_display_blocks inputs משתנים
+toggle intermediate software parallel_beams sync_beams multitasking task_split split_task חוטים_מקבילים
+toggle advanced arrays software array_operations array_block read write מערכים
+toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line מעקב_פרופורציונלי_אחר_קו
+

@@ -1,0 +1,9 @@
+---
+title: "בנו רובוט בסיסי עם זרועות"
+searchterms: "toggle beginner robot base_robot robot_design droidbot בנו_רובוט_בסיסי_עם_זרועות"
+lang: "he"
+---
+<ul>
+ <li><a href="robots.html">Robot Design Lessons page</a>
+ </li>
+ </ul>

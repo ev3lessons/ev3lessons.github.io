@@ -1,0 +1,35 @@
+beginner introev3 toggle hoe_je_ev3_lessen_moet_gebruiken
+toggle beginner robot base_robot robot_design droidbot robot_ontwerp
+toggle beginner programs programmes programming programming_app programing introev3 brick software ev3 buttons centre up- down- left- right- center- ipad tablet android app introduction introduction_to_brick_and_software introductie_intelligente_steen_en_software
+toggle beginner moving ipad programming_app tablet android app moving_straight forward backward rechtdoor_rijden
+toggle beginner pseudocode
+toggle beginner moving programming_app ipad app turning tablet pivot spin point android draaien
+toggle beginner display programming_app displaying_text_and_graphics ipad tablet text graphics android display_block display_graphics app tekst_en_grafieken_weergeven
+toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on tastsensor
+toggle beginner color colour colour_sensor sensors programming_app colour_sensor color_sensor ipad tablet app reflected_light light_sensor color_mode colour_mode android kleurensensor
+toggle beginner loops programming_app app ipad tablet android herhalingen
+toggle beginner switches ipad app tablet android schakelingen(keuzes)
+toggle beginner ultrasonic sensors ipad ultrasonic_sensor programming_app app tablet android ultrasone_sensor
+toggle beginner beginner color colour colour_sensor follower basic line_tracker sensors ipad tablet programming_app app android line_follower line colour_sensor basic_line_follower basis_lijnvolger
+toggle beginner large_motor_block attachments passive medium_motor_block moving object moving_object een_object_verplaatsen
+toggle beginner challenge final_challenge eindopdracht
+toggle intermediate software myblocks blocks my_blocks parameters parametres inputs outputs my_block_builder mijn_blokken_met_inputs/outputs
+toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with bewegen_met_mijn_blokken
+toggle intermediate myblocks moving turning my_blocks turn_degrees turning_with rotation_sensor draaien_met_mijn_blokken
+line_follower line toggle line intermediate color colour colour_sensor sensors follower linefollower tracker line_traker my_blocks sensor_block kleuren_lijnvolger_/_mijn_blokken
+toggle intermediate infrared sensors infrared_sensor beacon remote remote_control infrarood_sensor
+toggle intermediate debugging sound display brick_buttons debuggen
+toggle intermediate moving move_blocks synchronization motor_synchronization regulated_power unregulated_motor ramp_up ramp_down beweegblokken
+toggle intermediate debugging alignment battery fll first_lego_league coast reliability betrouwbaarheid
+toggle intermediate color colour colour_sensor sensors calibration calibrate colour_calibration kleurensensor_kalibreren
+toggle intermediate variables software wires wired_display_blocks inputs variabelen
+toggle intermediate software parallel_beams sync_beams multitasking task_split split_task parallelle_blokken
+toggle advanced software parallel_beams sync_beams split_task task_split synchronization parallel_beam_synchroniztion parallelle_balken_synchronisatie
+toggle advanced arrays software array_operations array_block read write programmeren_met_reeksen
+toggle dog_follower line_follower line advanced proportional proportional_control proportionele_besturing
+toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line lijnvolgers:_van_basis_tot_proportioneel
+toggle advanced gyro gyro_sensor gyro_drift gyro_calibration angle rate de_gyroscoop_en_omgaan_met_overgevoeligheid
+toggle gyro moving advanced gyro_move_straight gyro_sensor gyro_wall_follow proportional_control proportional heading angle bewegen_in_een_rechte_lijn_en_het_volgen_van_een_muur_met_gyroscoop
+toggle sync_beams parallel_beams synchronization color colour colour_sensor advanced align squaring_on_lines my_blocks square_up straighten_out uitlijnen_van_de_robot
+toggle stall advanced stall_detection move_degrees move_seconds abort stall klemdetectie
+toggle brick advanced menu_system sequencer display brick brick_buttons menu_systeem

@@ -1,0 +1,11 @@
+---
+title: "Variáveis"
+searchterms: "toggle intermediate variables software wires wired_display_blocks inputs variáveis"
+lang: "pt"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/pt-br/intermediate/Variables.pptx">PPTX</a>,
+ <a href="translations/pt-br/intermediate/Variables.pdf">PDF</a>
+ </li>
+ </ul>

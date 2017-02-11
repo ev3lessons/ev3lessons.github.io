@@ -1,0 +1,11 @@
+---
+title: "הצגת מלל וגרפיקה"
+searchterms: "toggle beginner display programming_app displaying_text_and_graphics ipad tablet text graphics android display_block display_graphics app הצגת_מלל_וגרפיקה"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/he/beginner/Display.pptx">PPTX</a>,
+ <a href="translations/he/beginner/Display.pdf">PDF</a>
+ </li>
+ </ul>

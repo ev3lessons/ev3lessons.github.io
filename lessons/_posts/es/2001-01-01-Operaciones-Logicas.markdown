@@ -1,0 +1,11 @@
+---
+title: "Operaciones Logicas"
+searchterms: "intermediate"
+lang: "es"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/es/intermediate/Logic.pptx">PPTX</a>,
+ <a href="translations/es/intermediate/Logic.pdf">PDF</a>
+ </li>
+ </ul>

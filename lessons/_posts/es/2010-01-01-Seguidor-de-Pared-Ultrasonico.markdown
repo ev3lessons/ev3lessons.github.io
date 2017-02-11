@@ -1,0 +1,11 @@
+---
+title: "Seguidor de Pared Ultrasonico"
+searchterms: "intermediate"
+lang: "es"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/es/intermediate/UltrasonicWallFollow.pptx">PPTX</a>,
+ <a href="translations/es/intermediate/UltrasonicWallFollow.pdf">PDF</a>
+ </li>
+ </ul>

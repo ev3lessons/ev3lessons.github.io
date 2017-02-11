@@ -1,0 +1,11 @@
+---
+title: "משתנים"
+searchterms: "toggle intermediate variables software wires wired_display_blocks inputs משתנים"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/he/intermediate/Variables.pptx">PPTX</a>,
+ <a href="translations/he/intermediate/Variables.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,12 @@
+---
+title: "Lessons for ev3dev"
+searchterms: "toggle debian ev3dev linux_ev3 ev3_commmunication beyond raspberrypi rpi lessons_for_ev3dev"
+lang: "en"
+---
+ <h4>Introduction:</h4>
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/beyond/PixyIntro.pptx">PPTX</a>,
+ <a href="translations/en-us/beyond/PixyIntro.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,11 @@
+---
+title: "استكشاف أخطاء البرمجة وتصحيحها"
+searchterms: "intermediate"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/ar/intermediate/Debug.pptx">PPTX</a>,
+ <a href="translations/ar/intermediate/Debug.pdf">PDF</a>
+ </li>
+ </ul>
