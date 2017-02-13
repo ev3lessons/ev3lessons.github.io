@@ -12,7 +12,7 @@ authorim: "/images/people/Seshanbros.jpg"
 ---
 One of the most common questions we receive is about the difference between the three MINDSTORMS sets available to FIRST LEGO League teams: <b>Home Edition</b>, <b>Education Edition</b>, and the <b>FIRST LEGO League Bundle edition</b>. We decided to put together a comparison sheet to help coaches decide what to buy. 
 
-![](/images/coachcorner/Versions.jpg)
+![](/images/coachcorner/Versions.png)
 
 ### Three MINDSTORMS options for teams
 
