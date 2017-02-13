@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-13T12:22:00-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">NXT and EV3 - Working Together</title><link href="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html" rel="alternate" type="text/html" title="NXT and EV3 - Working Together" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html">&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Blocks.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-13T13:36:29-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">NXT and EV3 - Working Together</title><link href="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html" rel="alternate" type="text/html" title="NXT and EV3 - Working Together" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html">&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Blocks.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;ev3-or-nxt&quot;&gt;EV3 or NXT?&lt;/h3&gt;
 
@@ -115,46 +115,51 @@
       &lt;td style=&quot;text-align: center&quot;&gt;Yes &lt;br /&gt;(Light sensor as Sound)&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">MINDSTORMS Resources</title><link href="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html" rel="alternate" type="text/html" title="MINDSTORMS Resources" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html">&lt;p&gt;We often get asked about resources for learning to program with EV3.&lt;/p&gt;
+&lt;/table&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">MINDSTORMS Resources</title><link href="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html" rel="alternate" type="text/html" title="MINDSTORMS Resources" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html">&lt;p&gt;As most of you know, we are the founders of &lt;a href=&quot;http://www.ev3lessons.com&quot;&gt;EV3Lessons&lt;/a&gt;. We do our best to provide a comprehensive site for MINDSTORMS users and robotics teams.&lt;/p&gt;
+
+&lt;p&gt;There are other good curriculum resources as well. The list we created has websites and books that are designed to inspire and learn from. Their focus is not on winning competitions and shortcuts to success, but on learning the concepts.&lt;/p&gt;
+
+&lt;p&gt;There are also other alternative lists that we want to point you to. &lt;a href=&quot;http://www.damienkee.com/lego-mindstorms-resources/&quot;&gt;Damien Kee’s MINDSTORMS Resources List&lt;/a&gt; is also a useful guide and has additional online tutorials for you to look at.  We will update this guide as we find and review resources.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/coachcorner/Resources.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;free-organized-curriculum-for-mindstorms-programming&quot;&gt;Free Organized Curriculum for MINDSTORMS Programming&lt;/h3&gt;
-&lt;p&gt;This list of resources only includes organized curriculum resources for MINDSTORMS that focus on EV3 programming. It does not include individual YouTube channels unless there is a distinct curriculum provided.&lt;/p&gt;
+&lt;h3 id=&quot;free-curriculum-by-lego-education&quot;&gt;Free Curriculum by LEGO Education&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://education.lego.com/en-us/downloads/mindstorms-ev3&quot;&gt;LEGO Education&lt;/a&gt;: Various curriculum created by LEGO Education&lt;br /&gt;
+Also look at the built-in lessons in the EV3 Programming Software you installed on your computer.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.ev3lessons.com&quot;&gt;EV3Lessons&lt;/a&gt;: Comprehensive programming tutorials for Beginner through Advanced and Beyond&lt;br /&gt;
-&lt;a href=&quot;http://www.education.rec.ri.cmu.edu/content/lego/ev3/&quot;&gt;CMU Robotics Academy &lt;/a&gt;: Complete introductory curriculum for the EV3&lt;br /&gt;
-&lt;a href=&quot;https://education.lego.com/en-us/downloads/mindstorms-ev3&quot;&gt;LEGO Education&lt;/a&gt;: Various curriculum created by LEGO Education&lt;br /&gt;
-&lt;a href=&quot;http://www.stemcenteric.com&quot;&gt;STEMCentric&lt;/a&gt;: Mostly introductory-level with a few intermediate-level topics.&lt;br /&gt;
-&lt;a href=&quot;http://stemrobotics.cs.pdx.edu/node/2643&quot;&gt;STEMRobotics&lt;/a&gt;: Well organized repository for educational materials and curriculum guides for robotics.&lt;br /&gt;
-&lt;a href=&quot;http://www.wafflesrobotics.com/fll/fll-resources/&quot;&gt;WAFFLES Community Robotics&lt;/a&gt;: Comprehensive block by block introduction to programming by a FIRST team. () &lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;websites-with-free-introductory-curriculum&quot;&gt;Websites with Free Introductory Curriculum&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.education.rec.ri.cmu.edu/content/lego/ev3/&quot;&gt;CMU Robotics Academy &lt;/a&gt;: Complete introductory curriculum for the EV3&lt;br /&gt;
+&lt;a href=&quot;http://www.stemcentric.com/ev3-tutorial&quot;&gt;STEMCentric&lt;/a&gt;: Mostly introductory-level with a few intermediate-level topics.&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;curriculum-for-school-teachers&quot;&gt;Curriculum for School Teachers&lt;/h3&gt;
-&lt;p&gt;Kee, Damien. &lt;a href=&quot;http://www.damienkee.com/classroom-activities-ev3/&quot;&gt;Classroom Activities for the Busy Teacher: EV3&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://stemrobotics.cs.pdx.edu/node/2643&quot;&gt;STEMRobotics&lt;/a&gt;: Well organized repository for educational materials and curriculum guides for robotics.&lt;br /&gt;
-&lt;a href=&quot;http://www.legoengineering.com&quot;&gt;LEGOEngineering&lt;/a&gt;: Developed by TUFTS CEEO. Has a variety of resources and projects. &lt;br /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;free-organized-curriculum-for-school-teachers&quot;&gt;Free Organized Curriculum for School Teachers&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://stemrobotics.cs.pdx.edu/node/2643&quot;&gt;STEMRobotics&lt;/a&gt;: Organized repository for educational materials and curriculum guides for MINDSTORMS instructors by Portland State University.&lt;br /&gt;
+&lt;a href=&quot;http://www.legoengineering.com&quot;&gt;LEGOEngineering&lt;/a&gt;: A wide range of resources and support materials specifically for educators organized by Tufts CEEO. &lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;curriculum-resource-book&quot;&gt;Curriculum Resource Book&lt;/h3&gt;
+&lt;p&gt;Kee, Damien. &lt;a href=&quot;http://www.damienkee.com/classroom-activities-ev3/&quot;&gt;Classroom Activities for the Busy Teacher: EV3&lt;/a&gt;. Also includes worksheets and challenges.&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;free-organized-curriculum-by-first-teams&quot;&gt;Free Organized Curriculum by FIRST teams&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.wafflesrobotics.com/fll/fll-resources/&quot;&gt;WAFFLES Community Robotics&lt;/a&gt;: Comprehensive block by block introduction to programming by a FIRST team in Canada. &lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;organization-and-planning-resources-for-fll-teams&quot;&gt;Organization and Planning Resources for FLL Teams&lt;/h3&gt;
-
 &lt;p&gt;&lt;a href=&quot;http://www.ev3lessons.com&quot;&gt;EV3Lessons&lt;/a&gt;: Has mission planning worksheets, calculators and templates useful for teams. Also host several online/interactive tools such as a Sketcher for teams to map out missions. Resources are updated every season.&lt;br /&gt;
 &lt;a href=&quot;http://www.techbrick.com&quot;&gt;Techbrick&lt;/a&gt;: Has worksheets, images and blank templates for use by teams. Resources are updated every season. Information from previous seasons are archived so if you need access to materials from older challenges, you can find them here.&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;stores-to-buy-parts-for-your-ev3&quot;&gt;Stores to buy parts for your EV3&lt;/h3&gt;
+&lt;h3 id=&quot;first-lego-league-curriculum&quot;&gt;FIRST LEGO League Curriculum&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://fllblog.wordpress.com/2016/07/25/taking-your-first-steps/&quot;&gt;FIRST Steps&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;stores-to-buy-additional-lego-or-mindstorms-parts&quot;&gt;Stores to buy additional LEGO or MINDSTORMS parts&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.lego.com&quot;&gt;LEGO&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.legoeducation.com&quot;&gt;LEGO Education&lt;/a&gt;&lt;br /&gt;
 Use for specific parts and complete sets Bricklink.com or Brickowl.com
 Mindsensors and HiTechnic offer non-LEGO branded sensors that are compatible with the EV3&lt;/p&gt;
 
-&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+&lt;h3 id=&quot;technic-and-mindstorms-reference-books&quot;&gt;TECHNIC and MINDSTORMS Reference Books&lt;/h3&gt;
 &lt;p&gt;Benedettelli, Daniele. The LEGO MINDSTORMS EV3 Laboratory&lt;br /&gt;
 Isogawa, Yoshihito. The LEGO MINDSTORMS EV3 Idea Book&lt;br /&gt;
 Isogawa, Yoshihito. The LEGO Technic Idea Book&lt;br /&gt;
 Kmiec, Pawel. The Unofficial LEGO Technic Builder’s Guide&lt;br /&gt;
-Kee, Damien. &lt;a href=&quot;http://www.damienkee.com/classroom-activities-ev3/&quot;&gt;Classroom Activities for the Busy Teacher&lt;/a&gt;&lt;br /&gt;
 Valk, Laurens. The LEGO MINDSTORMS EV3 Discovery Book&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;first-lego-league-curriculum&quot;&gt;FIRST LEGO League Curriculum&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://fllblog.wordpress.com/2016/07/25/taking-your-first-steps/&quot;&gt;FIRST Steps&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;challengesprojects&quot;&gt;Challenges/Projects&lt;/h3&gt;
 
@@ -162,7 +167,7 @@ Valk, Laurens. The LEGO MINDSTORMS EV3 Discovery Book&lt;br /&gt;&lt;/p&gt;
 &lt;a href=&quot;https://mindstorms.dreschallenges.com/&quot;&gt;Dr.E’s Challenges&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.drgraeme.org/EV3/EV3.html&quot;&gt;Dr Graeme&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.nxtprograms.com&quot;&gt;NXT Projects&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.damienkee.com/&quot;&gt;Dr.Damien Kee&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">We often get asked about resources for learning to program with EV3.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
+&lt;a href=&quot;http://www.damienkee.com/&quot;&gt;Dr.Damien Kee&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">As most of you know, we are the founders of EV3Lessons. We do our best to provide a comprehensive site for MINDSTORMS users and robotics teams.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/coachcorner/Offseason.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
