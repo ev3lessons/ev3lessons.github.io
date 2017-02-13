@@ -89,7 +89,7 @@ document.write('\
 	    <div class="widget-last widget widget_text right">\
 	      <div style="padding-top: 8px" class="textwidget">\
 	        <div class="socials-default-small default">\
-		  <a href="http://www.facebook.com/pages/EV3-Lessons/1544442149123833">\
+		  <a href="https://www.facebook.com/ev3lessons/">\
 		  <img src="images/icons/socials-new/facebook.png" alt="Facebook" title="Facebook" width="23" height="23" border="0">\
                   </a>\
 		</div>\
@@ -99,18 +99,8 @@ document.write('\
 		  <img src="images/icons/socials-new/twitter.png" alt="Twitter" title="Twitter" width="23" height="23" border="0">\
                   </a>\
 		</div>\
-		<div class="socials-default-small twitter-small default">\
-		  <a href="http://droidsrobotics.tumblr.com/">\
-		  <img src="images/icons/socials-new/tumblr.png" alt="Tumblr" title="Tumblr" width="23" height="23" border="0">\
-                  </a>\
-		</div>\
-		<div class="socials-default-small flickr-small default">\
-		  <a href="https://www.flickr.com/photos/50840754@N02/sets/">\
-		  <img src="images/icons/socials-new/flickr.png" alt="Flickr" title="Flickr" width="23" height="23" border="0">\
-                  </a>\
-		</div>\
 		<div class="socials-default-small default">\
-		  <a href="https://www.youtube.com/user/DroidsRobotics" >\
+		  <a href="https://www.youtube.com/channel/UCNolfy4KiFUZmjSHg8iJ7-As" >\
 		  <img src="images/icons/socials-new/youtube.png" alt="YouTube" title="YouTube" width="23" height="23" border="0">\
                   </a>\
 		</div>\

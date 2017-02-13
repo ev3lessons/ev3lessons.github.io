@@ -204,7 +204,7 @@ document.write('\
           <h1>\
             <a class="logo-text" href="index.html" title="EV3Lessons.com">EV3<span>Lessons.com</span></a>\
           </h1>\
-          <p>by <a href="http://brothers.seshan.org">Seshan Brothers</a></p>\
+          <p>by <a href="http://www.beyondtheinstructions.com">Seshan Brothers</a></p>\
         </div>\
         <!-- END LOGO -->\
 <div ng-app="MenuApp" ng-controller="MenuCtrl">\
