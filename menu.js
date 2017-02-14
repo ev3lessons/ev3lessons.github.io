@@ -223,7 +223,6 @@ document.write('\
                 <li><a  href="tablet.html#'+language+'">{{Monefive}}</a></li>\
                 <li><a  href="challenges.html#'+language+'">{{Monefour}}</a></li>\
 		<li><a  href="HourOfEV3.html#'+language+'">{{Monethree}}</a></li>\
-		<li><a  href="guides.html#'+language+'">{{Monesix}}</a></li>\
             </ul>\
         </li>\
 	 <li>\
@@ -269,7 +268,6 @@ document.write('\
                 <option  value="tablet.html#'+language+'">{{Monefive}}</a></option>\
                 <option  value="challenges.html#'+language+'">{{Monefour}}</a></option>\
 		<option  value="HourOfEV3.html#'+language+'">{{Monethree}}</a></option>\
-		<option  value="guides.html#'+language+'">{{Monesix}}</a></option>\
             \
 	 <option\
              value="resources.html#'+language+'">{{Mtwozero}} <span class="arrow">&#9660;</span></a>\
@@ -311,7 +309,6 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Monetwo = 'Robot Designs';
     $scope.Monethree = 'Hour of EV3';
     $scope.Monefour = 'Skill Challenges';
-    $scope.Monesix = 'One-Page Guides';
     $scope.Mtwozero = 'Resources';
     $scope.Mtwoone = 'Animal Allies Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
