@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-14T10:04:26-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">NXT and EV3 - Working Together</title><link href="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html" rel="alternate" type="text/html" title="NXT and EV3 - Working Together" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/NXT-and-EV3.html">&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Blocks.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-15T07:18:07-05:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">NXT and EV3 - Working Together</title><link href="http://localhost:4000/coachcorner/2017/02/15/NXT-and-EV3.html" rel="alternate" type="text/html" title="NXT and EV3 - Working Together" /><published>2017-02-15T00:00:00-05:00</published><updated>2017-02-15T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/15/NXT-and-EV3</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/15/NXT-and-EV3.html">&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Blocks.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;ev3-or-nxt&quot;&gt;EV3 or NXT?&lt;/h3&gt;
 
@@ -115,59 +115,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt;Yes &lt;br /&gt;(Light sensor as Sound)&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">MINDSTORMS Resources</title><link href="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html" rel="alternate" type="text/html" title="MINDSTORMS Resources" /><published>2017-02-13T00:00:00-05:00</published><updated>2017-02-13T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/02/13/MINDSTORMS-Tutorials.html">&lt;p&gt;As most of you know, we are the founders of &lt;a href=&quot;http://www.ev3lessons.com&quot;&gt;EV3Lessons&lt;/a&gt;. We do our best to provide a comprehensive site for MINDSTORMS users and robotics teams.&lt;/p&gt;
-
-&lt;p&gt;There are other good curriculum resources as well. The list we created has websites and books that are designed to inspire and learn from. Their focus is not on winning competitions and shortcuts to success, but on learning the concepts.&lt;/p&gt;
-
-&lt;p&gt;There are also other alternative lists that we want to point you to. &lt;a href=&quot;http://www.damienkee.com/lego-mindstorms-resources/&quot;&gt;Damien Kee’s MINDSTORMS Resources List&lt;/a&gt; is also a useful guide and has additional online tutorials for you to look at.  We will update this guide as we find and review resources.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Resources.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;free-curriculum-by-lego-education&quot;&gt;Free Curriculum by LEGO Education&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://education.lego.com/en-us/downloads/mindstorms-ev3&quot;&gt;LEGO Education&lt;/a&gt;: Various curriculum created by LEGO Education&lt;br /&gt;
-Also look at the built-in lessons in the EV3 Programming Software you installed on your computer.&lt;/p&gt;
-
-&lt;h3 id=&quot;websites-with-free-introductory-curriculum&quot;&gt;Websites with Free Introductory Curriculum&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.education.rec.ri.cmu.edu/content/lego/ev3/&quot;&gt;CMU Robotics Academy &lt;/a&gt;: Complete introductory curriculum for the EV3&lt;br /&gt;
-&lt;a href=&quot;http://www.stemcentric.com/ev3-tutorial&quot;&gt;STEMCentric&lt;/a&gt;: Mostly introductory-level with a few intermediate-level topics.&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;free-organized-curriculum-for-school-teachers&quot;&gt;Free Organized Curriculum for School Teachers&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://stemrobotics.cs.pdx.edu/node/2643&quot;&gt;STEMRobotics&lt;/a&gt;: Organized repository for educational materials and curriculum guides for MINDSTORMS instructors by Portland State University.&lt;br /&gt;
-&lt;a href=&quot;http://www.legoengineering.com&quot;&gt;LEGOEngineering&lt;/a&gt;: A wide range of resources and support materials specifically for educators organized by Tufts CEEO. &lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;curriculum-resource-book&quot;&gt;Curriculum Resource Book&lt;/h3&gt;
-&lt;p&gt;Kee, Damien. &lt;a href=&quot;http://www.damienkee.com/classroom-activities-ev3/&quot;&gt;Classroom Activities for the Busy Teacher: EV3&lt;/a&gt;. Also includes worksheets and challenges.&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;free-organized-curriculum-by-first-teams&quot;&gt;Free Organized Curriculum by FIRST teams&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.wafflesrobotics.com/fll/fll-resources/&quot;&gt;WAFFLES Community Robotics&lt;/a&gt;: Comprehensive block by block introduction to programming by a FIRST team in Canada. &lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;organization-and-planning-resources-for-fll-teams&quot;&gt;Organization and Planning Resources for FLL Teams&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ev3lessons.com&quot;&gt;EV3Lessons&lt;/a&gt;: Has mission planning worksheets, calculators and templates useful for teams. Also host several online/interactive tools such as a Sketcher for teams to map out missions. Resources are updated every season.&lt;br /&gt;
-&lt;a href=&quot;http://www.techbrick.com&quot;&gt;Techbrick&lt;/a&gt;: Has worksheets, images and blank templates for use by teams. Resources are updated every season. Information from previous seasons are archived so if you need access to materials from older challenges, you can find them here.&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;first-lego-league-curriculum&quot;&gt;FIRST LEGO League Curriculum&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://fllblog.wordpress.com/2016/07/25/taking-your-first-steps/&quot;&gt;FIRST Steps&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;stores-to-buy-additional-lego-or-mindstorms-parts&quot;&gt;Stores to buy additional LEGO or MINDSTORMS parts&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.lego.com&quot;&gt;LEGO&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.legoeducation.com&quot;&gt;LEGO Education&lt;/a&gt;&lt;br /&gt;
-Use for specific parts and complete sets Bricklink.com or Brickowl.com
-Mindsensors and HiTechnic offer non-LEGO branded sensors that are compatible with the EV3&lt;/p&gt;
-
-&lt;h3 id=&quot;technic-and-mindstorms-reference-books&quot;&gt;TECHNIC and MINDSTORMS Reference Books&lt;/h3&gt;
-&lt;p&gt;Benedettelli, Daniele. The LEGO MINDSTORMS EV3 Laboratory&lt;br /&gt;
-Isogawa, Yoshihito. The LEGO MINDSTORMS EV3 Idea Book&lt;br /&gt;
-Isogawa, Yoshihito. The LEGO Technic Idea Book&lt;br /&gt;
-Kmiec, Pawel. The Unofficial LEGO Technic Builder’s Guide&lt;br /&gt;
-Valk, Laurens. The LEGO MINDSTORMS EV3 Discovery Book&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;challengesprojects&quot;&gt;Challenges/Projects&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://theNXTstep.com&quot;&gt;The NXT Step&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;https://mindstorms.dreschallenges.com/&quot;&gt;Dr.E’s Challenges&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.drgraeme.org/EV3/EV3.html&quot;&gt;Dr Graeme&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.nxtprograms.com&quot;&gt;NXT Projects&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://www.damienkee.com/&quot;&gt;Dr.Damien Kee&lt;/a&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">As most of you know, we are the founders of EV3Lessons. We do our best to provide a comprehensive site for MINDSTORMS users and robotics teams.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
+&lt;/table&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">A Dozen Off-Season Ideas</title><link href="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html" rel="alternate" type="text/html" title="A Dozen Off-Season Ideas" /><published>2017-01-27T00:00:00-05:00</published><updated>2017-01-27T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html">&lt;p&gt;What can your team do in the off-season?  There is so much you CAN do….&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/coachcorner/Offseason.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -469,4 +417,23 @@ Van den Dungen, M. &amp;amp; Smith, W. (2010), Multiple paths to professionaliza
 
 &lt;p&gt;In hindsight, the only failure we had in our rookie season was me, as a coach, focusing too much on advancing to championship and not enough about the lessons learned along the way. After all… What we discover is more important than what we win, right?&lt;/p&gt;
 
-&lt;p&gt;My hope for other coaches out there would be that they not only embrace their “failures” but view them as successes. Every time your team experiences a failure - whether it’s a robot that doesn’t do what you want it to do, a team that struggles to work as one, or a project solution that isn’t viable - remember that failure is always an option… as long as you learn from it.&lt;/p&gt;</content><author><name>Ken Kirk&lt;br&gt;Electric LEGOs&lt;br&gt;California, USA</name></author><summary type="html">This famous quote from the Mythbusters has become a favorite saying of our team. But it took us a couple of years to embrace it. Hopefully our story can help you to learn this lesson quicker.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry></feed>
+&lt;p&gt;My hope for other coaches out there would be that they not only embrace their “failures” but view them as successes. Every time your team experiences a failure - whether it’s a robot that doesn’t do what you want it to do, a team that struggles to work as one, or a project solution that isn’t viable - remember that failure is always an option… as long as you learn from it.&lt;/p&gt;</content><author><name>Ken Kirk&lt;br&gt;Electric LEGOs&lt;br&gt;California, USA</name></author><summary type="html">This famous quote from the Mythbusters has become a favorite saying of our team. But it took us a couple of years to embrace it. Hopefully our story can help you to learn this lesson quicker.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">Funding Your Season</title><link href="http://localhost:4000/coachcorner/2016/11/20/Funding-Your-Season.html" rel="alternate" type="text/html" title="Funding Your Season" /><published>2016-11-20T00:00:00-05:00</published><updated>2016-11-20T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2016/11/20/Funding-Your-Season</id><content type="html" xml:base="http://localhost:4000/coachcorner/2016/11/20/Funding-Your-Season.html">&lt;p&gt;Bayou Builders is a community-based team sponsored by the Louisiana Children’s Discovery Center. We’re committed to providing opportunities for all children who possess an interest to experience FLL. We strive to keep costs low for members to allow a more diverse and rich experience for everyone. Our sponsor provides us with meeting space and storage. Money for basic operation and competitions falls on our ingenuity. We are a large team. When we’re able to extend our season, this means raising big money!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Bayoubuilders2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;funding-basic-needs&quot;&gt;Funding Basic Needs&lt;/h3&gt;
+
+&lt;p&gt;Each summer we offer a series of two-day robotics camps. The money raised from these camps ($30-$40 per student) is used to purchase additional LEGO and computer equipment. Remaining money is used for operating expenses during competition season. If a child expresses a desire to attend but doesn’t possess the financial means, we offer “scholarships” whereby we defer the cost. We also apply annually for grants to assist with cost of team registration and the Hield kit.&lt;/p&gt;
+
+&lt;h3 id=&quot;funding-competition-costs&quot;&gt;Funding Competition Costs&lt;/h3&gt;
+
+&lt;p&gt;During our rookie year (World Class), we were fortunate to extend the season as Louisiana’s Runner-Up for the Champion’s Award. This meant raising $15,000 to defray cost for our 10-person team to attend the North American Open at LEGOLAND in Carlsbad, CA. During the Trash Trek season, our team was awarded Louisiana’s Champion’s Award; landing us the task of raising $11,000 to defray cost of the team’s participation at the FLL World Festival.&lt;/p&gt;
+
+&lt;p&gt;Raising such a large amount of money requires a lot of organization &amp;amp; determination to try anything. The following is a list of our more successful efforts: Hosting Family Lego Night and Adult Fan of LEGO Night, doing presentations at our local Rotary Clubs, Kiwanis, Junior Auxiliary &amp;amp; city administration, creating custom STEM events for Santa Fe Cattle Company, Chick Hil’A &amp;amp; Learning Express Toys, sending out sponsorship letters, selling LEGO arts &amp;amp; crafts, and garage sales. In addition, we asked companies that we regularly do business with if they could assist us. This got us 80 bags from our tourism bureau to hand out in CA and a banner from K-Team Printing for our pit area. We also submitted regular articles to our local paper to keep the community aware of the team’s successes and needs.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Money for basic operation and competition fall on our ingenuity.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;community-outreach&quot;&gt;Community Outreach&lt;/h3&gt;
+&lt;p&gt;While there may not be an immediate Hinancial gain from participating in a community outreach event, we cannot stress enough the importance of such. It is an excellent way to build team members’ presentation skills while also sparking an interest in STEM and awareness of FIRST. Over the past two years we have been asked to present at a variety of Mini Make Fairs from local libraries to Barnes &amp;amp; Nobles. We’ve provided demonstrations for Tulane University, SLU, the Louisiana Teacher of the Year Conference and local children’s museums. As a result of this outreach last year, we were awarded a grant through DOW, which was essential in securing the team’s participation in St. Louis.&lt;/p&gt;</content><author><name>Jean Findley-Williams&lt;br&gt;Bayou Builders&lt;br&gt;Louisiana, USA</name></author><summary type="html">Bayou Builders is a community-based team sponsored by the Louisiana Children’s Discovery Center. We’re committed to providing opportunities for all children who possess an interest to experience FLL. We strive to keep costs low for members to allow a more diverse and rich experience for everyone. Our sponsor provides us with meeting space and storage. Money for basic operation and competitions falls on our ingenuity. We are a large team. When we’re able to extend our season, this means raising big money!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry></feed>
