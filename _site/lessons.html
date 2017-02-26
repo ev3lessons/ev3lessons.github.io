@@ -54,6 +54,14 @@ if (decodeURI(window.location.search.substring(1)) != "") {
 show(decodeURI(window.location.search.substring(1)))
 document.getElementById('search').value = decodeURI(window.location.search.substring(1))
 }
+document.getElementById("search")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("go").click();
+        //alert("HI")
+}
+});
 }
 </script>
 
@@ -241,19 +249,26 @@ alert(max)
    document.getElementsByClassName("beyond")[x].style.display = "none"
   x ++
   }
+
     x = 0
-    while (x != document.getElementsByClassName("workshop").length) {
-   document.getElementsByClassName("workshop")[x].style.display = "none"
+    while (x != document.getElementsByClassName("wro").length) {
+   document.getElementsByClassName("wro")[x].style.display = "none"
   x ++
 	}
-
-
 
   x = 0
   while (x != document.getElementsByClassName(value).length) {
    document.getElementsByClassName(value)[x].style.display = "block"
   x ++
 	}
+
+
+    x = 0
+    while (x != document.getElementsByClassName("workshop").length) {
+   document.getElementsByClassName("workshop")[x].style.display = "none"
+  x ++
+}
+
 
 
 if (language == "fr") {
@@ -773,7 +788,10 @@ x = 0
               <li><h4><a onclick="show('intermediate')" id="int" href="#tab1" title="Intermediate">Intermediate</a></h4></li>
               <li><h4><a onclick="show('advanced')" id="adv" href="#tab1" title="Advanced">Advanced</a></h4></li>
               <li><h4><a onclick="show('beyond')" id="other" href="#tab1" title="Contributed Lessons">Beyond</a></h4></li>
-              <li><h4><a onclick="show('workshop')" id="camp" href="#tab1" title="Camp Curriculum">Workshops</a></h4></li>
+              <li><h4><a onclick="show('wro')" id="wro" href="#tab1"
+	      title="Camp Curriculum">WRO</a></h4></li>
+	      <li><h4><a style="display: none;" onclick="show('workshops')" id="camp" href="#tab1" title="Camp Curriculum">Workshops</a></h4></li>
+
                   <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
                     <!--<datalist id='listid'>
                         <option label='sensors' value='sensors'>
@@ -787,7 +805,7 @@ x = 0
                                    <option label='infrared' value='infrared'>
                              </datalist>-->
 
-                    <button onclick="show(document.getElementById('search').value)">Go!</button></a></h4></li>
+                    <button id="go" onclick="show(document.getElementById('search').value)">Go!</button></a></h4></li>
             </ul>
             <div class="border-box group">
 
@@ -800,8 +818,16 @@ x = 0
 <div class="el"><b>Δεν είναι όλα τα μαθήματα είναι εδώ, επειδή δεν έχουν μεταφραστεί ακόμα. Για να δείτε όλα τα μαθήματα (στα αγγλικά) κάντε κλικ στην σημαία των ΗΠΑ στην κορυφή.</b></div>
 <div class="ct"><b>No totes les classes són aquí, perquè no s'han traduït encara. Per veure totes les lliçons (en anglès) feu clic a la bandera dels Estats Units en la barra superior.</b></div>
 <div class="he"><b>לא כל השיעורים הם כאן, כי הם לא תורגמו עדיין. כדי להציג את כל השיעורים (באנגלית) לחץ על דגל ארה"ב על העליונה.</b></div>
-<div class="de"><b>Nicht alle Lektionen sind hier, weil sie noch nicht übersetzt wurden. Um alle Lektionen (auf Englisch) anzuzeigen, klicken Sie auf die US-Flagge in der oberen Leiste.</b></div>
-<div>English site: <a href="/lessons.html#en-us" onclick="setTimeout(function(){location.reload(true);},100)">click here</a></div>
+<div class="de"><b>Nicht alle Lektionen sind hier, weil sie noch nicht
+  übersetzt wurden. Um alle Lektionen (auf Englisch) anzuzeigen,
+  klicken Sie auf die US-Flagge in der oberen Leiste.</b></div>
+  <script>
+  if (language != "en-us") {
+  document.write('<div>English site: <a href="/lessons.html#en-us"\
+    onclick="setTimeout(function(){location.reload(true);},100)">click\
+    here</a></div>')
+    }
+  </script>
 
                 <p class="beginner" id="beg-intro">These lessons are for students new to the
                   EV3. These lessons are designed to be completed in
@@ -822,10 +848,13 @@ x = 0
                 </p>
 
 
-                <p class="workshop" id="camp-intro">These are combined lesson curriculum that are
+                <p style="display: none" class="workshop" id="camp-intro">These are combined lesson curriculum that are
                   ideal for camps
                 </p>
 
+                <p style="" class="wro" id="wro-intro">These are
+                lessons to help WRO teams.
+                </p>
 
 <br>
 <script>jekyll = 0</script>
@@ -4922,6 +4951,25 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
+                <div class="toggle toggle wro blank en">
+                  <p class="tab-index tab-closed">
+<script>
+document.write(' <a id="'+jekyll+'" href="#" title="Close">Comparing FIRST LEGO League and World Robot Olympiad</a>')
+jekyll = jekyll+1
+</script>
+
+                  </p>
+                  <div class="content-tab closed indent">
+			<ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/wro/FLLWRO.pdf">PDF</a>
+ </li>
+ </ul>
+
+                  </div>
+<br>
+                </div>
+	 
                 <div class="toggle toggle workshop fll fll_beginner_workshop en">
                   <p class="tab-index tab-closed">
 <script>
@@ -4945,6 +4993,26 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
+                <div class="toggle toggle wro HiTechnic en">
+                  <p class="tab-index tab-closed">
+<script>
+document.write(' <a id="'+jekyll+'" href="#" title="Close">Importing HiTechnic Blocks</a>')
+jekyll = jekyll+1
+</script>
+
+                  </p>
+                  <div class="content-tab closed indent">
+			<ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/wro/ImportingHiTechnicBlocks.pptx">PPTX</a>,
+ <a href="translations/en-us/wro/ImportingHiTechnicBlocks.pdf">PDF</a>
+ </li>
+ </ul>
+
+                  </div>
+<br>
+                </div>
+	 
                 <div class="toggle toggle workshop fll fll_intermediate_workshop en">
                   <p class="tab-index tab-closed">
 <script>
@@ -4961,6 +5029,46 @@ jekyll = jekyll+1
  <li class="ng-binding">Slides:
  <a href="translations/en-us/workshop/IntermediateWorkshop.pptx">PPTX</a>,
  <a href="translations/en-us/workshop/IntermediateWorkshop.pdf">PDF</a>
+ </li>
+ </ul>
+
+                  </div>
+<br>
+                </div>
+	 
+                <div class="toggle toggle wro HiTechnic Color en">
+                  <p class="tab-index tab-closed">
+<script>
+document.write(' <a id="'+jekyll+'" href="#" title="Close">Introduction to the HiTechnic Color Sensor</a>')
+jekyll = jekyll+1
+</script>
+
+                  </p>
+                  <div class="content-tab closed indent">
+			<ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/wro/HiTechnicColor.pptx">PPTX</a>,
+ <a href="translations/en-us/wro/HiTechnicColor.pdf">PDF</a>
+ </li>
+ </ul>
+
+                  </div>
+<br>
+                </div>
+	 
+                <div class="toggle toggle wro Color HiTechnic en">
+                  <p class="tab-index tab-closed">
+<script>
+document.write(' <a id="'+jekyll+'" href="#" title="Close">Comparing the EV3 and HiTechnic Color Sensors</a>')
+jekyll = jekyll+1
+</script>
+
+                  </p>
+                  <div class="content-tab closed indent">
+			<ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/wro/ColorSensorComparison.pptx">PPTX</a>,
+ <a href="translations/en-us/wro/ColorSensorComparison.pdf">PDF</a>
  </li>
  </ul>
 

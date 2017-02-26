@@ -1,0 +1,11 @@
+---
+title: "Introduction to the HiTechnic Color Sensor"
+searchterms: "toggle wro HiTechnic Color"
+lang: "en"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/wro/HiTechnicColor.pptx">PPTX</a>,
+ <a href="translations/en-us/wro/HiTechnicColor.pdf">PDF</a>
+ </li>
+ </ul>
