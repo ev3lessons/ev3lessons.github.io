@@ -10,7 +10,5 @@ lang: "en"
  </li>
  <li><a href="translations/en-us/beginner/Turning.docx">Worksheet</a>
  </li>
- <li>Truth About Turns - Pivot Turns <a href="translations/en-us/guides//PivotTurns.pdf">Quick
- Guide</a> (English)
- </li>
+
  </ul>

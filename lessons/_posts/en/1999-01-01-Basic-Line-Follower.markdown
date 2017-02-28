@@ -10,6 +10,4 @@ lang: "en"
  </li>
  <li> <a href="translations/en-us/beginner/BasicLineFollower.docx">Worksheet</a>
  </li>
- <li>One Minute Line Follower: <a href="translations/en-us/guides//OneMinuteLineFollower.pdf">Quick Guide</a> (English)
- </li>
  </ul>
