@@ -5,8 +5,8 @@ lang: "el"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/MyBlocks.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/MyBlocks.pdf">PDF</a>
+ <a href="translations/el/intermediate/MyBlocks.pptx">PPTX</a>,
+ <a href="translations/el/intermediate/MyBlocks.pdf">PDF</a>
  </li>
  
  </ul>
