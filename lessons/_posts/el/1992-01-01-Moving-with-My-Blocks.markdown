@@ -1,0 +1,11 @@
+---
+title: "Προχώρα απόσταση"
+searchterms: "toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with moving_with_my_blocks"
+lang: "en"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/en-us/intermediate/MoveDistance.pptx">PPTX</a>,
+ <a href="translations/en-us/intermediate/MoveDistance.pdf">PDF</a>
+ </li>
+</ul>
