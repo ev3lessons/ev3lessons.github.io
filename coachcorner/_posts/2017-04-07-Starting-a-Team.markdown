@@ -7,7 +7,7 @@ title: "A Day in the Life of a Coach - Starting a Team"
 minidescription: "This article is the first in the series of articles sharing different aspects of being a coach."
 sidetitle: ""
 side: ""
-author: "Swati Gupta<br>Robotics & Kids<br>USA"
+author: "Swati Mittal<br>Robotics & Kids<br>USA"
 authorim: "/images/people/female.jpg"
 ---
 I will be writing a few articles in this series. This is the first of them. It is based on my experiences and I think all parents who are coaches/ assistant coaches/mentors or just parents of kids participating in FLL can relate to various points here. Please contribute and add more points to this to make the journey of FLL easier, more fulfilling and more rewarding for kids and parents alike.
@@ -17,9 +17,9 @@ I will be writing a few articles in this series. This is the first of them. It i
 Here comes the team registration day. Here are my thoughts on creating a good, balanced team this year.
 <br>
 
-<b>Team Size:</b> I found that a team size of just four is good. Not too small; they all will have enough work to do with not much pressure on any one of them. Not too big either, else it would have been a nightmare managing all of their schedules and finding a time that suits all for weekly team meeting.
+<b>Team Size:</b> I found that a team size of four/five is good. Not too small; they all will have enough work to do with not much pressure on any one of them. Not too big either, else it would have been a nightmare managing all of their schedules and finding a time that suits all for weekly team meeting.
 
-<b>Proximity:</b> It’s good if they all live in same neighborhood and go to same school. They all like to play basketball too. The team will bond well. I can have some friendly basketball matches in between to help them relax and focus. I should probably look for the next Warriors game tickets too. All the families can go together, it will be a good time to enjoy as a team, the whole team.
+<b>Proximity:</b> It’s good they all live in same neighborhood and go to same school. They all like to play basketball too. The team will bond well. I can have some friendly basketball matches in between to help them relax and focus. I should probably look for the next Warriors game tickets too. All the families can go together, it will be a good time to enjoy as a team, the whole team.
 
 <b>First Steps:</b> Team and parents are coming for the meeting in the evening. I will let kids come up with the team name and may be a logo as well. I should make a google group with parents and kids so that everyone can share ideas and we can decide about team meetings. Let me gather all the information I have till now so that we can see it and discuss about it when we meet. I am so excited, hope the kids are too.
 <br>
