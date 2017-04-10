@@ -8,6 +8,4 @@ lang: "en"
  <a href="translations/en-us/beginner/Touch.pptx">PPTX</a>,
  <a href="translations/en-us/beginner/Touch.pdf">PDF</a>
  </li>
- <li>Using Sensors: Move Until <a href="translations/en-us/guides//MoveUntil.pdf">Quick Guide</a> (English)
- </li>
  </ul>
