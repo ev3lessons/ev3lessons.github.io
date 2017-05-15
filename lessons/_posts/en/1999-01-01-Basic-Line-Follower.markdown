@@ -10,4 +10,8 @@ lang: "en"
  </li>
  <li> <a href="translations/en-us/beginner/BasicLineFollower.docx">Worksheet</a>
  </li>
+<li class="ng-binding">Slides:
+<a href="translations/en-us/beginner/BasicLineFollowerNXT.pptx">NXT Version PPTX</a>
+<a href="translations/en-us/beginner/BasicLineFollowerNXT.pdf">NXT Version PDF</a>
+</li>
  </ul>
