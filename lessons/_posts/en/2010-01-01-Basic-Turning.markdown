@@ -8,11 +8,11 @@ lang: "en"
  <a href="translations/en-us/beginner/Turning.pptx">PPTX</a>,
  <a href="translations/en-us/beginner/Turning.pdf">PDF</a>
  </li>
+<li class="ng-binding">NXT Slides:
+<a href="translations/en-us/beginner/TurningNXT.pptx">PPTX</a>,
+<a href="translations/en-us/beginner/TurningNXT.pdf">PDF</a>
  <li><a href="translations/en-us/beginner/Turning.docx">Worksheet</a>
  </li>
-<li class="ng-binding">Slides:
-<a href="translations/en-us/beginner/TurningNXT.pptx">NXT Version PPTX</a>,
-<a href="translations/en-us/beginner/TurningNXT.pdf">NXT Version PDF</a>
 </li>
 
  </ul>
