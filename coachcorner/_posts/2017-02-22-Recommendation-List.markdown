@@ -51,7 +51,7 @@ Also look at the built-in lessons in the EV3 Programming Software you installed 
 ### MINDSTORMS-Related Forums and Facebook Groups
 <a href="http://forums.usfirst.org/forumdisplay.php?24-FIRST-LEGO-League">FIRST LEGO League Forum</a><br>
 <a href="https://listserv.jmu.edu/cgi-bin/wa?A0=VADCFLL-L">VA-DC FIRST LEGO League Listserv</a><br>
-<a href="https://community.education.lego.com/">LEGO Education Community</a><br>
+<a href="https://community.education.lego.com/">LEGO Education Community (retired starting June 1, 2017)</a><br>
 <a href="https://www.facebook.com/groups/legomindstorms/">LEGO MINDSTORMS Facebook Group</a><br>
 <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL Share and Learn Facebook Group</a><br>
 
@@ -79,7 +79,7 @@ Kee, Damien. <a href="http://www.damienkee.com/classroom-activities-ev3/">Classr
 <a href="http://www.damienkee.com/">Dr. Damien Kee</a><br>
 <a href="http://www.ev3dev.org/">EV3Dev</a><br>
 
-### MINDSTORMS Competitions available to schools
+### MINDSTORMS Competitions
 <a href="http://www.firstlegolegue.org">FIRST LEGO League</a><br>
 <a href="http://www.wroboto.org">World Robot Olympiad</a><br>
 
