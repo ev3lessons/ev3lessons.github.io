@@ -200,7 +200,19 @@ bb = 0
 		       document.getElementsByClassName("toggle")[x].style.display = "none"
 		       x ++
 		       }
-		       
+
+
+		       x = 0
+		       while (x != document.getElementsByClassName("beginner").length) {
+		       document.getElementsByClassName("beginner")[x].style.display = "none"
+		       x ++
+}
+		       x = 0
+		       while (x != document.getElementsByClassName("swift").length) {
+		       document.getElementsByClassName("swift")[x].style.display = "none"
+		       x ++
+		       }
+
 //value=keywords[max]
 ///alert(value)
 		 x = 0
@@ -242,10 +254,18 @@ bb = 0
        <div id="lessonDiv" ng-controller="lessonCtrl">
       <div class="tabs-container">
             <ul class="tabs">
-<li><h4><a onclick="show('toggle')" id="all" href="#tab1" title="Beginner">All</a></h4></li>
-              <li><h4><a onclick="show('beginner')" id="beg" href="#tab1" title="Beginner">Beginner</a></h4></li>
-                 <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
-                    <!--<datalist id='listid'>
+<li><h4><a onclick="show('toggle')" id="all" href="#tab1"
+	      title="Beginner">All</a></h4></li>
+	      
+              <li><h4><a onclick="show('beginner')" id="beg3"
+              href="#tab1" title="EV3 Programming App Lessons">EV3 Programming App Lessons</a></h4></li>
+
+	      <li><h4><a onclick="show('swift')" id="swift"
+	      href="#tab1" title="Swift">Swift Lessons</a></h4></li>
+
+	      <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
+
+	    <!--<datalist id='listid'>
                         <option label='sensors' value='sensors'>
                            <option label='color' value='color'>
                              <option label='touch' value='touch'>
@@ -273,16 +293,16 @@ bb = 0
       Color Sensor: <input onclick="show()" id="7a" type="checkbox">
 -->
 
+<!--Beginner-->
 
-
-                <p class="beginner" id="beg-intro">These lessons are for students new to the
-                  EV3. These lessons are designed to be completed in
-                  order.
+                <p class="beginner" id="beg-intro">These lessons are
+                for students who want to program the EV3 using a
+                tablet and the EV3 Programmer App.
 
                 </p>
-	<br>
+	
         <div class="beginner install kindle amazon_fire
-	ev3_app programmer_app toggle">
+	ev3_app programmer_app toggle"><br>
         <p class="tab-index tab-closed">
         <a id="1" href="#" title="Close">Installing the
 	EV3 Programmer App on the Amazon Kindle Fire</a>
@@ -297,9 +317,9 @@ bb = 0
         </div>
         </div>
 
-                <br>
+              
         <div class="beginner connecting robot
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle">  <br>
         <p class="tab-index tab-closed">
         <a id="2" href="#" title="Close">Connecting a Robot to the App</a>
         </p>
@@ -314,9 +334,9 @@ bb = 0
         </div>
 
 
-                                                <br>
+                                             
         <div class="beginner introduction EV3
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle">   <br>
         <p class="tab-index tab-closed">
         <a id="3" href="#" title="Close">Introduction to the EV3</a>
         </p>
@@ -330,9 +350,9 @@ bb = 0
         </div>
         </div>
 
-                                                                <br>
+                                                              
         <div class="beginner port_view
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle">  <br>
         <p class="tab-index tab-closed">
         <a id="4" href="#" title="Close">Port View</a>
         </p>
@@ -346,9 +366,9 @@ bb = 0
         </div>
         </div>
 
-                                                                                <br>
+                                                                               
         <div class="moving straight beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"> <br>
         <p class="tab-index tab-closed">
         <a id="5" href="#" title="Close">Moving Straight</a>
         </p>
@@ -362,9 +382,9 @@ bb = 0
         </div>
         </div>
 
-                                                                                                <br>
+                                                                                               
         <div class="turning beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"> <br>
         <p class="tab-index tab-closed">
         <a id="5" href="#" title="Close">Basic Turning</a>
         </p>
@@ -379,9 +399,9 @@ bb = 0
         </div>
 
 
-                                                                <br>
+                                                                
         <div class="Displaying text graphics beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"><br>
         <p class="tab-index tab-closed">
         <a id="6" href="#" title="Close">Displaying Text and Graphics</a>
         </p>
@@ -396,9 +416,9 @@ bb = 0
         </div>
 
 
-                                                                                <br>
+                                                                              
         <div class="touch sensor beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle">  <br>
         <p class="tab-index tab-closed">
         <a id="7" href="#" title="Close">Introduction to Touch Sensor</a>
         </p>
@@ -412,9 +432,9 @@ bb = 0
         </div>
         </div>
 
-                                                                                                <br>
+                                                                                               
         <div class="color colour sensor beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"> <br>
         <p class="tab-index tab-closed">
         <a id="8" href="#" title="Close">Introduction to Color Sensor</a>
         </p>
@@ -429,9 +449,9 @@ bb = 0
         </div>
 
 
-                                                                                                                <br>
+                                                                                                               
         <div class="loop loops beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"> <br>
         <p class="tab-index tab-closed">
         <a id="9" href="#" title="Close">Loops</a>
         </p>
@@ -445,9 +465,9 @@ bb = 0
         </div>
 	</div>
 
-	                                                                   <br>
+	                                                                  
         <div class="switch switches beginner
-        ev3_app programmer_app toggle">
+        ev3_app programmer_app toggle"> <br>
         <p class="tab-index tab-closed">
         <a id="10" href="#" title="Close">Switches</a>
         </p>
@@ -461,9 +481,10 @@ bb = 0
         </div>
         </div>
 
-                                                                                                                                                <br>
+                                                                                                                                              
         <div class="ultrasonic sensor beginner
-        ev3_app programmer_app toggle">
+	  ev3_app programmer_app toggle">
+	    <br>
         <p class="tab-index tab-closed">
         <a id="11" href="#" title="Close">Introduction to Ultrasonic Sensor</a>
         </p>
@@ -477,13 +498,14 @@ bb = 0
         </div>
         </div>
 
-                                                                                                                                                                <br>
+                                                                                                                                                               
 
 
 
 	<div class="line_follower beginner
         ev3_app programmer_app toggle">
-        <p class="tab-index tab-closed">
+ <br>
+	  <p class="tab-index tab-closed">
         <a id="12" href="#" title="Close">Basic Line Follower</a>
         </p>
         <div class="content-tab closed indent">
@@ -496,9 +518,10 @@ bb = 0
         </div>
         </div>
 
-    <br>
+ 
         <div class="final challenge beginner
-              ev3_app programmer_app toggle">
+	  ev3_app programmer_app toggle">
+	     <br>
               <p class="tab-index tab-closed">
               <a id="13" href="#" title="Close">Final Challenge</a>
               </p>
@@ -512,7 +535,35 @@ bb = 0
               </div>
               </div>
 
-	</div></div>
+
+<!--Swift -->
+
+	          <p class="swift" id="swint">These lessons are
+                for students who want to program the EV3 using a
+                tablet and Swift for Apple iOS.
+
+                </p>
+        <div class="final challenge swift
+	  ev3_app programmer_app toggle">
+	   <br>
+              <p class="tab-index tab-closed">
+              <a id="100" href="#" title="Close">EV3 & Swift: Getting Started</a>
+              </p>
+              <div class="content-tab closed indent">
+              <ul>
+              <li>{{Slides}}
+              <a href='translations/en-us/swift/EV3SwiftGettingStarted.pptx'>PPTX</a>,
+              <a href='translations/en-us/swift/EV3SwiftGettingStarted.pdf'>PDF</a>
+              </li>
+              </ul>
+              </div>
+              </div>
+
+
+
+	      <!--END ALL-->
+
+	      </div></div>
 
 
 </div></div>
@@ -716,7 +767,7 @@ bb = 0
 */
 
   i = 0
-  while (i != 300){
+  while (i != 400){
   tabs = $( "#"+i+"" ).parent().parent().prop('className')
   if (tabs != undefined) {
     if (urldes[i] != "none") {
