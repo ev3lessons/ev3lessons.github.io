@@ -24,7 +24,7 @@ If you know of other good resources we should add, let us know at team@ev3lesson
 <a href="https://www.udemy.com/ev3-basic-getting-started/#%2F"> Udemy Video-based Lessons by Nigel Ward </a><br>
 <a href= "http://ev3basic.blogspot.com/"> Teaching with Robots: </a> Lecture Summary<br>
 <a href= "http://ev3basic.blogspot.com/p/materials.html"> Teaching with Robots: </a> PPTX slides and code<br>
-<a href="https://onedrive.live.com/view.aspx?resid=B222F4E659AAFCA5!281088&ithint=onenote%2c&app=OneNote&authkey=!ABn7nL9tKUTChd0"> EV3 Programming Using Textual Languages </a>: Supplemental material by Anthony Orme (link coming soon)
+<a href="https://onedrive.live.com/view.aspx?resid=B222F4E659AAFCA5!281088&ithint=onenote%2c&app=OneNote&authkey=!ABn7nL9tKUTChd0"> EV3 Programming Using Textual Languages </a>: Supplemental material by Anthony Orme
 
 <b>Swift:</b> A multi-purpose programming language created by Apple for iOS. 
 <br>Download App from the <a href="https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8App"> iTunes or App Store </a>. 
