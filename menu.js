@@ -310,7 +310,7 @@ menuApp.controller("MenuCtrl", function($scope) {
     $scope.Monethree = 'Hour of EV3';
     $scope.Monefour = 'Skill Challenges';
     $scope.Mtwozero = 'Resources';
-    $scope.Mtwoone = 'Animal Allies Scorer';
+    $scope.Mtwoone = 'Hydro Dynamics Scorer';
     $scope.Mtwotwo = 'Wheel Converter';
     $scope.Mtwothree = 'Interactive Sketcher';
     $scope.Mtwofour = 'Challenges';
