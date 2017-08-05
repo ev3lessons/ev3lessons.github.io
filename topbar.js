@@ -11,6 +11,23 @@ if (window.location.hash == "#br") {
     // location.reload();
 }
 
+
+if (window.location.hash != ""){
+deleteAllCookies()
+
+document.cookie = "ev3cookie"+window.location.hash.substring(1);
+}
+
+
+function deleteAllCookies() {
+ var c = document.cookie.split("; ");
+ for (i in c) 
+  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";    
+}
+document.cookie=""
+//for (var it in $.cookie()) $.removeCookie(it);
+
+//alert(document.cookie)
 langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 	
 if (document.cookie && window.location.hash == "") {
@@ -66,7 +83,7 @@ for (i = 0; i < langs.length; i++) {
     window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
 document.write('\
 		<div class="socials-default-small  default ovd">\
-		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="document.cookie=\'ev3cookie'+langs[i].split(':')[0]+'\';setTimeout(function(){location.reload(true);},100)">\
+		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="deleteAllCookies();document.cookie=\'ev3cookie'+langs[i].split(':')[0]+'\';setTimeout(function(){location.reload(true);},100)">\
 		  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
