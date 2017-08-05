@@ -17,7 +17,7 @@ if (document.cookie && window.location.hash == "") {
 str =document.cookie
 var i;
 for (i = 0; i < langs.length; i++) {
-    tmp =str.search(langs[i].split(':')[0])
+    tmp =str.search('ev3cookie'+langs[i].split(':')[0])
     if (tmp != -1) {
 window.location.hash = "#"+langs[i].split(':')[0]
   setTimeout(function(){location.reload(true);},100);
@@ -64,7 +64,7 @@ for (i = 0; i < langs.length; i++) {
     window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
 document.write('\
 		<div class="socials-default-small  default ovd">\
-		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="document.cookie=\''+langs[i].split(':')[0]+'\';setTimeout(function(){location.reload(true);},100)">\
+		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="document.cookie=\'ev3cookie'+langs[i].split(':')[0]+'\';setTimeout(function(){location.reload(true);},100)">\
 		  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
