@@ -484,9 +484,9 @@ function carousel() {
 
 
            <div style="text-align: left;" class="inner home-portfolio home-services home-section group">
-	      <h2><span>EV3Lessons.com</span> announcements</h2>
+	      <h2><span>EV3Lessons.com:</span> What's New?</h2>
 	    <div class="hentry-post group first">
-	      <h3>Recent Coach's Corner</h3>
+	      <h3>Coach's Corner</h3>
     
       <li><a class="post-link" href="lessons.html">Act it Out V.2.0</a></li>
     
@@ -520,7 +520,7 @@ function carousel() {
      
 </div>
 			   <div class="hentry-post group ">
-			        <h3>Recent Team Building Activities</h3>
+			        <h3>Team Building</h3>
 	       
       <li><a class="post-link" href="/corevalues/2017/08/05/Act-it-Out-V2.html">Act it Out V.2.0</a></li>
     
@@ -557,7 +557,12 @@ function carousel() {
 	<script>
 	  tmp =''
 	  	  if (language != 'en-us') {
-		  document.write('<scr'+tmp+'ipt src="translations/'+language+'/index.js"></scr'+tmp+'ipt>')
+//		  document.write('<scr'+tmp+'ipt src="translations/'+language+'/index.js"></scr'+tmp+'ipt>')
+document.write('<div id="includedContentindex"></div>')
+    $(function(){
+      $("#includedContentindex").load("translations/"+language+"/index.html"); 
+    })
+
 		  }
 </script>
     <!-- FOOTER CUT HERE ------------------------------------------------->

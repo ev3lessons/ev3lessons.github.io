@@ -441,7 +441,12 @@
 	<script>
 	  tmp =''
 	  	  if (language != 'en-us') {
-		  document.write('<scr'+tmp+'ipt src="translations/'+language+'/index.js"></scr'+tmp+'ipt>')
+//		  document.write('<scr'+tmp+'ipt src="translations/'+language+'/index.js"></scr'+tmp+'ipt>')
+document.write('<div id="includedContentindex"></div>')
+    $(function(){
+      $("#includedContentindex").load("translations/"+language+"/index.html"); 
+    })
+
 		  }
 </script>
     <!-- FOOTER CUT HERE ------------------------------------------------->
