@@ -131,66 +131,50 @@
   </script>
   <center>
 <script>
-    if (viewportwidth > 600) {
-    document.write('\
-    <table width="100%" style="align: middle">\
-  <tr>\
-        <td>\
-       <button onClick="document.calculator.wheelSize.value=\'94.2\'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo1.png" alt="Basic EV3 wheel"> </button>\
-        </td>\
-    <td>\
-       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo2.JPG" alt="Basic EV3 wheel"> </button>\
-     </td>\
-    <td>\
-       <button onClick="document.calculator.wheelSize.value=\'81.6\'" type="button">     <img width="120" height="120" src="resources/wheelconverter/photo3.JPG" alt="Largest NXT wheel"> </button>\
-    </td>\
-    <td>\
-       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">     <img src="resources/wheelconverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>\
-    </td>\
-    <td>\
-      <button onClick="document.calculator.wheelSize.value=\'43.2\'" type="button">      <img src="resources/wheelconverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>\
-    </td>\
-    </tr>\
-  <tr align="center">\
-            <td>\
-    \
-                {{five}}\
-            <br>\
-        </td>\
-        <td>\
-    \
-               {{six}}\
-            <br>\
-        </td>\
-        <td>\
-\
-               {{seven}}\
-            <br>\
-        </td>\
-        <td>\
-          \
-                {{eight}}\
-            <br>\
-        </td>\
-        <td>\
-       \
-               {{nine}}\
-            <br>\
-        </td>\
-</tr>\
-</table>');
+//    if (viewportwidth > 600) {
+//    document.write('
+</script>
+<style>
+@media screen and (max-width: 716px) {
+td{
+    display:block;
+}
+}
+  </style>
+    <table width="100%" style="align: middle">
+  <tr>
+        <td>
+       <button style="height: 130px; width:130px;-webkit-appearance: none;"  onClick="document.calculator.wheelSize.value='94.2'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo1.png" alt="Basic EV3 wheel"> </button><br> {{five}}
+        </td>
+    <td>
+       <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='56'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo2.JPG" alt="Basic EV3 wheel"> </button> <br> {{six}}
+     </td>
+    <td>
+       <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='81.6'" type="button">     <img width="120" height="120" src="resources/wheelconverter/photo3.JPG" alt="Largest NXT wheel"> </button> <br> {{seven}}
+    </td>
+    <td>
+       <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='56'" type="button">     <img src="resources/wheelconverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button> <br> {{eight}}
+    </td>
+    <td>
+      <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='43.2'" type="button">      <img src="resources/wheelconverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button> <br> {{nine}}
+    </td>
+    </tr>
+ 
+</table>
+<script>
+//');
 } else {
-    document.write('<br>\
-       <button onClick="document.calculator.wheelSize.value=\'94.2\'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo1.png" alt="Basic EV3 wheel"> </button>\
-                <br>{{five}}<br>\
-                     <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo2.JPG" alt="Basic EV3 wheel"> </button>\
-       <br> {{six}}<br>\
-         <button onClick="document.calculator.wheelSize.value=\'81.6\'" type="button">     <img width="120" height="120" src="resources/wheelconverter/photo3.JPG" alt="Largest NXT wheel"> </button>\
-      <br>{{seven}}<br>\
-       <button onClick="document.calculator.wheelSize.value=\'56\'" type="button">     <img src="resources/wheelconverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>\
-       <br>{{eight}}<br>\
-        <button onClick="document.calculator.wheelSize.value=\'43.2\'" type="button">      <img src="resources/wheelconverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>\
-   <br>{{nine}}<br>\
+    document.write('<br>
+       <button onClick="document.calculator.wheelSize.value='94.2'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo1.png" alt="Basic EV3 wheel"> </button>
+                <br>{{five}}<br>
+                     <button onClick="document.calculator.wheelSize.value='56'" type="button">    <img width="120" height="120" src="resources/wheelconverter/photo2.JPG" alt="Basic EV3 wheel"> </button>
+       <br> {{six}}<br>
+         <button onClick="document.calculator.wheelSize.value='81.6'" type="button">     <img width="120" height="120" src="resources/wheelconverter/photo3.JPG" alt="Largest NXT wheel"> </button>
+      <br>{{seven}}<br>
+       <button onClick="document.calculator.wheelSize.value='56'" type="button">     <img src="resources/wheelconverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button>
+       <br>{{eight}}<br>
+        <button onClick="document.calculator.wheelSize.value='43.2'" type="button">      <img src="resources/wheelconverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button>
+   <br>{{nine}}<br>
 ');
 }
 </script>
