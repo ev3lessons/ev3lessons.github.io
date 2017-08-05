@@ -70,6 +70,7 @@ var de  = ''+ page +'#de';
 // alert(href);
 
 document.write('\
+<!--  <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />-->\
         <div id="topbar">\
 	  <div class="inner group">\
 	    <div class="widget-last widget widget_text left">\
