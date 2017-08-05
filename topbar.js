@@ -20,7 +20,9 @@ for (i = 0; i < langs.length; i++) {
     tmp =str.search('ev3cookie'+langs[i].split(':')[0])
     if (tmp != -1) {
 window.location.hash = "#"+langs[i].split(':')[0]
-  setTimeout(function(){location.reload(true);},100);
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
+
 }
 }
 
