@@ -48,7 +48,7 @@ function carousel() {
            <div style="text-align: left;" class="inner home-portfolio home-services home-section group">
 	      <h2><span>EV3Lessons.com</span> announcements</h2>
 	    <div class="hentry-post group first">
-	      <h3>Recent Coach Corner</h3>
+	      <h3>Recent Coach's Corner</h3>
     {% for post in site.posts limit:5 %}
       <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>
     {% endfor %}
@@ -57,20 +57,22 @@ function carousel() {
 			    <div class="hentry-post group">
 			      <h3>Lessons</h3>
 			       {% for post in site.categories.lessons limit:5 %}
+<!--			      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>-->
+			            <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>
+    {% endfor %} 
+</div>
+			   <div class="hentry-post group ">
+			        <h3>Recent Team Building Activities</h3>
+	       {% for post in site.categories.corevalues limit:5 %}
       <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
     {% endfor %} 
-
-
 			    </div>
-			    <div class="hentry-post group">
+			    <div class="hentry-post group last">
 			      <h3>Help Requested</h3>
 			      <p>Looking for translator and contributors.
 			     </p>
 			    </div>
-			   <div class="hentry-post group last">
-			        <h3>Have a Question?</h3>
-			        <p><a href="contact.html">Email us</a></p>
-			    </div>
+
 			    
 			  
 		</div>
