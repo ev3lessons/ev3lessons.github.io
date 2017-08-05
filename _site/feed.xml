@@ -1,28 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-05T11:59:31-04:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">Core value</title><link href="http://localhost:4000/corevalues/2017/06/14/1st-Core-VAlue.html" rel="alternate" type="text/html" title="Core value" /><published>2017-06-14T00:00:00-04:00</published><updated>2017-06-14T00:00:00-04:00</updated><id>http://localhost:4000/corevalues/2017/06/14/1st-Core-VAlue</id><content type="html" xml:base="http://localhost:4000/corevalues/2017/06/14/1st-Core-VAlue.html">&lt;p&gt;asfdsfdsfsdf
-Did you know that you can use alternative programming languages on your EV3?  Here are some useful resources for getting started.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-08-05T12:59:58-04:00</updated><id>http://localhost:4000//</id><title type="html">Coach’s Corner</title><subtitle>I am the founder of EV3Lessons</subtitle><entry><title type="html">Act it Out V.2.0</title><link href="http://localhost:4000/corevalues/2017/08/05/Act-it-Out-V2.html" rel="alternate" type="text/html" title="Act it Out V.2.0" /><published>2017-08-05T00:00:00-04:00</published><updated>2017-08-05T00:00:00-04:00</updated><id>http://localhost:4000/corevalues/2017/08/05/Act-it-Out-V2</id><content type="html" xml:base="http://localhost:4000/corevalues/2017/08/05/Act-it-Out-V2.html">&lt;p&gt;&lt;img src=&quot;/images/CoreValues/Pokedragon.jpg&quot; style=&quot;max-width: 100%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If you know of other good resources we should add, let us know at team@ev3lessons.com.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Objectives:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coming to a consensus&lt;/li&gt;
+  &lt;li&gt;Developing creativity&lt;/li&gt;
+  &lt;li&gt;Communicating with each other&lt;/li&gt;
+  &lt;li&gt;Making sure everyone has a role&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/coachcorner/Resources2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Materials:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paper&lt;/li&gt;
+  &lt;li&gt;Box/hat/envelope to hold paper.&lt;/li&gt;
+  &lt;li&gt;A random collection of objects (paper, cone, hat, bandana, ping pong ball)&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;b&gt;EV3 Basic:&lt;/b&gt; A textual programming language that uses Microsoft Small Basic with an EV3 extension.&lt;br /&gt; 
-&lt;a href=&quot;http://www.EV3Basic.com&quot;&gt; EV3 Basic Introduction by EV3Basic.com &lt;/a&gt; &lt;br /&gt;
-&lt;a href=&quot;https://www.udemy.com/ev3-basic-getting-started/#%2F&quot;&gt; Udemy Video-based Lessons by Nigel Ward &lt;/a&gt;&lt;br /&gt;
-&lt;a href=&quot;http://ev3basic.blogspot.com/&quot;&gt; Teaching with Robots: &lt;/a&gt; Lecture Summary&lt;br /&gt;
-&lt;a href=&quot;http://ev3basic.blogspot.com/p/materials.html&quot;&gt; Teaching with Robots: &lt;/a&gt; PPTX slides and code&lt;br /&gt;
-&lt;a href=&quot;https://onedrive.live.com/view.aspx?resid=B222F4E659AAFCA5!281088&amp;amp;ithint=onenote%2c&amp;amp;app=OneNote&amp;amp;authkey=!ABn7nL9tKUTChd0&quot;&gt; EV3 Programming Using Textual Languages &lt;/a&gt;: Supplemental material by Anthony Orme&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Setup:&lt;/b&gt;
+On strips of paper, write out differnt things/processes your team can act out. Fold them so that the team cannot read them when picking one. Place all of them in an envelope/box or spread of a table. Place the random collection of objects in a box.&lt;/p&gt;
 
-&lt;p&gt;&lt;b&gt;Swift:&lt;/b&gt; A multi-purpose programming language created by Apple for iOS. 
-&lt;br /&gt;Download App from the &lt;a href=&quot;https://itunes.apple.com/us/app/swift-playgrounds/id908519492?mt=8App&quot;&gt; iTunes or App Store &lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Instructions to Team:&lt;/b&gt;
+Select one piece of paper without looking at the words on it. Also select one object from the box. As a team, act out whatever is on the paper. You have 5 minutes to plan and act out whatever is one the paper and incorporate the 1 object you picked. Your time begins now.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.robotc.net/&quot;&gt; Robot-C &lt;/a&gt;: A C-based programming language for robotics systems.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Notes:&lt;/b&gt;
+This Challenge is a test of the team’s imagination and creativity and decision making skills.
+You can come up many different ideas: fish, airplane, carousel, car, explorer in the jungle, shoe factory, etc.&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, PA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">Act it Out V.1.0</title><link href="http://localhost:4000/corevalues/2017/07/05/Act-it-Out-V1.html" rel="alternate" type="text/html" title="Act it Out V.1.0" /><published>2017-07-05T00:00:00-04:00</published><updated>2017-07-05T00:00:00-04:00</updated><id>http://localhost:4000/corevalues/2017/07/05/Act-it-Out-V1</id><content type="html" xml:base="http://localhost:4000/corevalues/2017/07/05/Act-it-Out-V1.html">&lt;p&gt;&lt;img src=&quot;/images/CoreValues/Juggling.jpg&quot; style=&quot;max-width: 100%&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.ev3dev.org/&quot;&gt;EV3Dev.org&lt;/a&gt;: A Debian Linux-based operating system lets you run many programming languages including Python.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Objectives:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Coming to a consensus&lt;/li&gt;
+  &lt;li&gt;Developing creativity&lt;/li&gt;
+  &lt;li&gt;Communicating with each other&lt;/li&gt;
+  &lt;li&gt;Making sure everyone has a role&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.lejos.org/ev3.php&quot;&gt;leJOS: &lt;/a&gt; A Java virtual machine&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Materials:&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paper&lt;/li&gt;
+  &lt;li&gt;Box/hat/envelope to hold paper.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.open-roberta.org/en/welcome/&quot;&gt;OpenRoberta: &lt;/a&gt; A free, cloud-based platform for programming EV3 robots.&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, PA</name></author><summary type="html">asfdsfdsfsdf
-Did you know that you can use alternative programming languages on your EV3?  Here are some useful resources for getting started.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">Alternative Programming Languages for the EV3</title><link href="http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages.html" rel="alternate" type="text/html" title="Alternative Programming Languages for the EV3" /><published>2017-06-14T00:00:00-04:00</published><updated>2017-06-14T00:00:00-04:00</updated><id>http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages.html">&lt;p&gt;Did you know that you can use alternative programming languages on your EV3?  Here are some useful resources for getting started.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Setup:&lt;/b&gt;
+On strips of paper, write out differnt things/processes your team can act out. Fold them so that the team cannot read them when picking one. Place all of them in an envelope/box or spread of a table.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Instructions to Team:&lt;/b&gt;
+Select one piece of paper without looking at the words on it. Also select one object from the box. As a team, act out whatever is on the paper. You have 5 minutes to plan and act out whatever is one the paper. Your time begins now.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Notes:&lt;/b&gt;
+This Challenge is a test of the team’s imagination and creativity and decision making skills.
+You can come up many different ideas: fish, airplane, carousel, car, explorer in the jungle, shoe factory, etc.&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, PA</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">Alternative Programming Languages for the EV3</title><link href="http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages.html" rel="alternate" type="text/html" title="Alternative Programming Languages for the EV3" /><published>2017-06-14T00:00:00-04:00</published><updated>2017-06-14T00:00:00-04:00</updated><id>http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/06/14/Alternative-Programming-Languages.html">&lt;p&gt;Did you know that you can use alternative programming languages on your EV3?  Here are some useful resources for getting started.&lt;/p&gt;
 
 &lt;p&gt;If you know of other good resources we should add, let us know at team@ev3lessons.com.&lt;/p&gt;
 
@@ -466,30 +491,4 @@ Kee, Damien. &lt;a href=&quot;http://www.damienkee.com/classroom-activities-ev3/
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Prices and information are accurate as of January 27, 2017. If you see any errors, please email team@ev3lessons.com with corrections. Prices are in US Dollars and taken from the FIRST LEGO League, LEGO.com and LEGOEducation websites. They are subject to change.&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">One of the most common questions we receive is about the difference between the three MINDSTORMS sets available to FIRST LEGO League teams: Home Edition, Education Edition, and the FIRST LEGO League Bundle edition. We decided to put together a comparison sheet to help coaches decide what to buy.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry><entry><title type="html">Coach’s Role During the Robot Game</title><link href="http://localhost:4000/coachcorner/2017/01/09/Coach-s-Role-During-the-Robot-Game.html" rel="alternate" type="text/html" title="Coach's Role During the Robot Game" /><published>2017-01-09T00:00:00-05:00</published><updated>2017-01-09T00:00:00-05:00</updated><id>http://localhost:4000/coachcorner/2017/01/09/Coach%60s-Role-During-the-Robot-Game</id><content type="html" xml:base="http://localhost:4000/coachcorner/2017/01/09/Coach-s-Role-During-the-Robot-Game.html">&lt;p&gt;After six years of competing in FIRST LEGO League, my family had the opportunity to take in a state-level tournament from the other side. In particular, we helped to referee the robot game.  There are many observations and lessons that I hope will help other teams.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/coachcorner/ref.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;let-the-children-speak-for-themselves&quot;&gt;Let the children speak for themselves&lt;/h3&gt;
-
-&lt;p&gt;This is best illustrated through an example. Unfortunately, at our event, the exit path went behind tables while games were still in progress. The volunteer staff did their best to keep the aisle clear for the matches. Occasionally, there was a mishap and an exiting team passed right behind two robot operators. After one particular match, an upset adult walked into the game area and complained that his team should get a do-over because they were bumped from the back. The team was actually still signing off with their table referee at the time when the adult jumped in.  I said I would talk to the team. Before the team left, I went over and asked the kids on the team if they were bumped during the run and if it impacted them or their robot in any way.  All the kids unanimously said, “No”.&lt;/p&gt;
-
-&lt;p&gt;Parents and coaches, let the kids decide if something bothered them before stepping in. The referees always give the kids the benefit of the doubt and will do their best to rectify the situation. So, coaches, sit back, relax and enjoy the show. Let the kids talk to the referees.&lt;/p&gt;
-
-&lt;h3 id=&quot;listen-to-the-children&quot;&gt;Listen to the Children&lt;/h3&gt;
-
-&lt;p&gt;If the team has issues with one of the mission models and wants to contest the scoring by the referee, all they have to do is politely ask to talk to the Head Referee who will rule consistently across all tables at a tournament. Accept the ruling given.&lt;/p&gt;
-
-&lt;p&gt;In most cases, the referee can operate the model by hand to check to see if it is working correctly. There have certainly been cases when the model did not work (even by hand) and and my team was given the points. However, in majority of cases where the model works by hand, it just means the team’s solution was not robust enough.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, we witnessed several instances when adults on the team began arguing for points with the table referee and the head referee. Amusingly, kids on the team had to console the adult, saying, “Coach, let it go.” You know when the kids are calming the coach down that the coach is taking the event much too seriously. This reflects poorly on the team. I hope all team members have the guts to tell their coaches when they are too involved.&lt;/p&gt;
-
-&lt;h3 id=&quot;let-the-children-make-decisions&quot;&gt;Let the children make decisions&lt;/h3&gt;
-
-&lt;p&gt;FIRST is about the children making the decisions.  It is alarming to see the number of teams that look to their coaches (or walk up to their coaches) in the middle of the run when things don’t go right. We have even seen coaches yell out instructions to the team members.&lt;/p&gt;
-
-&lt;p&gt;The Droids have never looked at me in six years of competing. They make their own decisions to run a mission or re-run a mission.  In fact, they appear so calm and in sync that table referees and resetters have made comments to me about how independent they are. Making their own decision during tense moments is all part of the program. Let the team decide.&lt;/p&gt;
-
-&lt;h3 id=&quot;coachs-role-during-the-robot-game&quot;&gt;Coach’s role during the robot game&lt;/h3&gt;
-
-&lt;p&gt;So, what is the coach’s role?  Let them know when and where they need to be.  Take photos and video. Be the first to congratulate. Be the loudest to cheer regardless of how the run went. Be their supporter, but not the decision maker.&lt;/p&gt;</content><author><name>Asha Seshan&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">After six years of competing in FIRST LEGO League, my family had the opportunity to take in a state-level tournament from the other side. In particular, we helped to referee the robot game.  There are many observations and lessons that I hope will help other teams.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry></feed>
+&lt;p&gt;Prices and information are accurate as of January 27, 2017. If you see any errors, please email team@ev3lessons.com with corrections. Prices are in US Dollars and taken from the FIRST LEGO League, LEGO.com and LEGOEducation websites. They are subject to change.&lt;/p&gt;</content><author><name>Seshan Brothers&lt;br&gt;Droids Robotics&lt;br&gt;Pittsburgh, USA</name></author><summary type="html">One of the most common questions we receive is about the difference between the three MINDSTORMS sets available to FIRST LEGO League teams: Home Edition, Education Edition, and the FIRST LEGO League Bundle edition. We decided to put together a comparison sheet to help coaches decide what to buy.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/Butler/Passion/1/img/3.png" /></entry></feed>
