@@ -73,7 +73,7 @@
       strokeStyle: {
         icon: 'colorPicker',
         title: 'Stroke Color',
-        callback: function (color) { this.setStrokeStyle(color); }
+        callback: function (color) { this.setStrokeStyle('green'); }
       }      
     }
   };

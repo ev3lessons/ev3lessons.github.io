@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+    <!--<![endif]-->
+    <head>
+
+        <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST LEGO League and WRO contests as well as classrooms. This site is operated by the Seshan Brothers.">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>EV3Lessons.com | by Seshan Brothers</title>
+
+        <!-- [favicon] begin -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- [favicon] end -->
+
+        <!-- CSS Main -->
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+
+<!-- HEADER CUT HERE ------------------------------------------------->
+
+    </head>
+    <body class="no_js responsive boxed-layout chrome ">
+
+        <!-- TOPBAR -->
+        <script src="topbar.js"></script>
+        <!-- END TOPBAR -->
+        <!-- START WRAPPER -->
+        <div class="wrapper group">
+            <!-- START HEADER -->
+            <div id="header" class="group">
+                <div class="group inner">
+
+
+                    <!-- START NAV -->
+		    <script src="menu.js"></script>
+                    <!-- END NAV -->
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+	    <!-- HEADER CUT HERE ------------------------------------------------->
+<div class=" home-section group">
+<div class="title">
+
+
+
+
+<style>
+#viewport {
+    background: #bbb;
+    width: 350px;
+    padding: 5px;
+    position: relative;
+}
+#viewport img {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;  /* = image height div 2 */
+}
+#viewport span {
+    margin-left: 68px;  /* = image width + 8 */
+    display: block;
+}
+  table, td, th {vertical-align:top;}
+  table td, table th { padding:10px 10px; text-align:center; color:#757475; }
+</style>
+
+<div align="">
+  <center>
+<h1>Team Building & FLL Core Value Activities</h1>
+</center>
+<div align="center">
+  <script>
+<!--
+
+ var viewportwidth;
+ var viewportheight;
+
+ // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+ if (typeof window.innerWidth != 'undefined')
+ {
+      viewportwidth = window.innerWidth,
+      viewportheight = window.innerHeight
+ }
+
+// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+
+ else if (typeof document.documentElement != 'undefined'
+     && typeof document.documentElement.clientWidth !=
+     'undefined' && document.documentElement.clientWidth != 0)
+ {
+       viewportwidth = document.documentElement.clientWidth,
+       viewportheight = document.documentElement.clientHeight
+ }
+
+ // older versions of IE
+
+ else
+ {
+       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+       viewportheight = document.getElementsByTagName('body')[0].clientHeight
+ }
+//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//-->
+</script>
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script>
+<script>
+
+  if ((viewportwidth > 800) && (screen.width > 800)) {
+      document.write( '<table border="0" align="left" style="none" width="100%">');
+//	document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
+//      document.write('<p>Your screen width is '+screen.width+'</p>');
+  } else {
+  }
+
+</script>
+<p>
+Use these activities to get to know your teammates and learn to work together better.
+</p>
+    <tr>
+      <td>
+	  <table style="border: 1px solid black; border-collapse: collapse; font-size: 200%" width="100%" >
+	  <tr>
+	    <td align="left">
+
+	      <img align="left" height="150" width="250" src="images/CoreValues/NoMaterials.jpg" alt="" />
+	    </td>
+
+	    <td >
+
+
+
+		<a href="translations/en-us/CoreValues/ActItOut.pdf">Act it Out</a><br>
+		<a href="translations/en-us/CoreValues/AllAboard.pdf">All Aboard!</a><br>
+		<a href="translations/en-us/CoreValues/FlipOver.pdf">Flip Over!</a><br></td><td>
+    <a href="translations/en-us/CoreValues/HumanKnot.pdf">Human Knot</a><br>
+    <a href="translations/en-us/CoreValues/CircleOfFriends.pdf">Circle Of Friends</a><br>
+    <a href="translations/en-us/CoreValues/AllInALine.pdf">All in a Line</a><br>
+      <a href="translations/en-us/CoreValues/Birthday.pdf">Birthday Order</a><br>
+      <a href="translations/en-us/CoreValues/HumanCharacters.pdf">Human Characters</a><br>
+
+	    </td>
+	  </tr>
+	</table>
+      <!--Place 1-->
+      </td>
+ </tr>
+	  <tr>
+      <td>
+		<table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	  <img  align="left"   height="150" width="250" src="images/CoreValues/5.jpg" alt="" />
+	    </td>
+
+	    <td >
+
+	       <a Href="translations/en-us/CoreValues/GuessWho.pdf">Guess Who</a><br>
+          <a Href="translations/en-us/CoreValues/Team.pdf">We are a TEAM</a><br>
+          <a Href="translations/en-us/CoreValues/OneWord.pdf">One Word</a><br>
+          <a href="translations/en-us/CoreValues/Compliments.pdf">Compliments</a><br>
+	    </td>
+	  </tr>
+	</table>
+       <!--Place 2-->
+      </td>
+</tr><tr>
+      <td>
+        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%" >
+	  <tr>
+	    <td>
+<img height="150" width="250" align="left" src="images/CoreValues/7.jpg" alt="" />
+	    </td>
+	    <td >
+        <a Href="translations/en-us/CoreValues/InspireCoreValues.pdf">#INSPIRECoreValues</a><br>
+         <a Href="translations/en-us/CoreValues/NameCoreValues.pdf">Name the Core Values</a><br>
+         <a Href="translations/en-us/CoreValues/LearnCoreValues.pdf">Learn the Core Values</a><br>
+	    </td>
+	  </tr>
+	</table>
+     </td>
+
+    </tr>
+    <tr>
+
+      <td>
+      <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	      <img height="150" width="250" align="left" src="images/CoreValues/construction.jpg" alt="" />
+	    </td>
+
+	    <td>
+
+
+
+
+        <a href="translations/en-us/CoreValues/BookShelf.pdf">Book Shelf</a><br>
+        <a href="translations/en-us/CoreValues/StackThem.pdf">Stack Them</a><br>
+        <a href="translations/en-us/CoreValues/MarbleRun.pdf">Marble Run</a><br>
+        <a href="translations/en-us/CoreValues/WearIt.pdf">Wear It</a><br>
+        <a href="translations/en-us/CoreValues/PaperTowerBuilding.pdf">Paper Tower Building</a><br>
+	    </td>
+	  </tr>
+	</table>
+      </td>
+ </tr>
+	  <tr>
+
+      <td>
+        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	      <img height="150" width="250" align="left" src="images/CoreValues/10.jpg" alt="" />
+	    </td>
+
+	    <td>
+
+
+
+
+<a href="translations/en-us/CoreValues/Sets.pdf">Sets</a><br>
+<a href="translations/en-us/CoreValues/HatsOff.pdf">Hats Off!</a><br>
+<a href="translations/en-us/CoreValues/RecycledArt.pdf">Recycled Art</a><br>
+<a href="translations/en-us/CoreValues/Stranded.pdf">Stranded</a><br>
+<a href="translations/en-us/CoreValues/Hip.pdf">Joined at the Hip</a><br>
+<a href="translations/en-us/CoreValues/Air.pdf">Up in the Air</a><br>
+<a href="translations/en-us/CoreValues/HandPencilHand.pdf">Hand-Pencil-Hand</a><br>
+<a href="translations/en-us/CoreValues/GiantSkis.pdf">Giant Skis</a><br>
+
+	    </td>
+	  </tr>
+	</table>
+      </td>
+
+	  </tr>
+	  	  <tr>
+
+      <td>
+        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	      <img height="150" width="250" align="left" src="images/CoreValues/6.jpg" alt="" />
+	    </td>
+
+	    <td>
+
+        <a href="translations/en-us/CoreValues/ModelDuplicator.pdf">Model Duplicator</a><br>
+	<a href="translations/en-us/CoreValues/BlindBuild.pdf"> Blind Build</a><br>
+	<a href="translations/en-us/CoreValues/MarbleMaze.pdf">Marble Maze</a><br>
+  <a href="translations/en-us/CoreValues/BuildinBag.pdf">Build-In-The-Bag</a><br>
+<a href="translations/en-us/CoreValues/MakeItFit.pdf">Make it Fit</a><br>
+	    </td>
+	  </tr>
+	</table>
+      </td>
+
+	  </tr>
+	  <tr>
+
+      <td>
+        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	      <img height="150" width="250" align="left" src="images/CoreValues/8.jpg" alt="" />
+	    </td>
+
+	    <td>
+
+	<a href="translations/en-us/CoreValues/WatchYourStep.pdf">Watch Your Step!</a><br>
+  	<a href="translations/en-us/CoreValues/RobotOperator.pdf">Robot Operator</a><br>
+	    </td>
+	  </tr>
+	</table>
+      </td>
+
+	  </tr>
+	  	  <tr>
+
+      <td>
+        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
+	  <tr>
+	    <td>
+	      <img height="150" width="250" align="left" src="images/CoreValues/9.jpg" alt="" />
+	    </td>
+
+	    <td>
+
+<a href="translations/en-us/CoreValues/MarbleMaze.pdf">Marble Maze</a><br>
+<a href="translations/en-us/CoreValues/PieceItTogether.pdf">Piece it Together</a><br>
+
+	    </td>
+	  </tr>
+	</table>
+      </td>
+
+	  </tr>
+</table>
+
+</div>
+</div>
+</div>
+<div>
+
+
+
+</div>
+</div>
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+<script src="footer.js"></script>
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+</body>
+</html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

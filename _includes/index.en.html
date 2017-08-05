@@ -1,0 +1,92 @@
+				<div   class="inner home-testimonials home-section group">
+			   <div class="title">
+			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> Users love <br><span>EV3Lessons.com</span></h2>
+			        <p>feedback</p>
+			   </div>
+<div class="w3-content w3-section" style="max-width:500px;float: left;padding:10px">
+  <p class="mySlides"  style="width:100%">"Hands down the best EV3 programming site around."</p>
+  <p class="mySlides"  style="width:100%">"I have purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>
+  <p class="mySlides"  style="width:100%">"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>
+  <p class="mySlides"  style="width:100%">"Your lessons are the best, most useful, and most detailed that I have found!"</p>
+</div>
+			   
+			 <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+			    <script type="text/javascript">
+			        jQuery(function($){
+			            $(".home-testimonials ul").width( 600 - $(".home-testimonials .title").outerWidth() - 20 );
+			            $(".home-testimonials ul").cycle({
+			                fx: "scrollHorz",
+			                speed: 600,
+			                timeout: 4000            });
+			        });
+			    </script>	      
+
+</div>	
+
+			<div class="clear"></div>
+<!--		</div>  
+		<!-- END WRAPPER -->
+
+
+
+
+           <div style="text-align: left;" class="inner home-portfolio home-services home-section group">
+	      <h2><span>EV3Lessons.com</span> announcements</h2>
+	    <div class="hentry-post group first">
+	      <h3>Recent Coach Corner</h3>
+    {% for post in site.posts limit:5 %}
+      <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>
+    {% endfor %}
+	      
+			    </div>
+			    <div class="hentry-post group">
+			      <h3>Lessons</h3>
+			       {% for post in site.categories.lessons limit:5 %}
+      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %} 
+
+
+			    </div>
+			    <div class="hentry-post group">
+			      <h3>Help Requested</h3>
+			      <p>Looking for translator and contributors.
+			     </p>
+			    </div>
+			   <div class="hentry-post group last">
+			        <h3>Have a Question?</h3>
+			        <p><a href="contact.html">Email us</a></p>
+			    </div>
+			    
+			  
+		</div>
+
+
+<div id="primary" align="middle" class=" inner home-portfolio home-section group layout-sidebar-right home-section">
+	    <div class="inner group">
+	    <div class="group">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.
+	    </div>
+	    </div>
+	    </div>
+
+		
+	       </div>
+
+      </div>
+
+  

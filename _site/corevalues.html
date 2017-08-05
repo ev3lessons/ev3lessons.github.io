@@ -10,10 +10,11 @@
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html dir="ltr" lang="en-US">
-    <!--<![endif]-->
+<!--<![endif]-->
+
     <head>
 
-        <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST LEGO League and WRO contests as well as classrooms. This site is operated by the Seshan Brothers.">
+        <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest as well as classrooms. This site is operated by FLL Team Droids Robotics.">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
 
@@ -47,7 +48,7 @@
 <!-- HEADER CUT HERE ------------------------------------------------->
 
     </head>
-    <body class="no_js responsive boxed-layout chrome ">
+    <body class="no_js responsive boxed-layout chrome " onload="addclass()">
 
         <!-- TOPBAR -->
         <script src="topbar.js"></script>
@@ -69,274 +70,122 @@
 	    <!-- HEADER CUT HERE ------------------------------------------------->
 <div class=" home-section group">
 <div class="title">
+  <h1 class="page-heading">FLL Core Value Activities</h1>
+</div>
 
 
+<script>
+ function similar(a,b) {
+    var lengthA = a.length;
+    var lengthB = b.length;
+    var equivalency = 0;
+    var minLength = (a.length > b.length) ? b.length : a.length;
+    var maxLength = (a.length < b.length) ? b.length : a.length;
+    for(var i = 0; i < minLength; i++) {
+        if(a[i] == b[i]) {
+            equivalency++;
+        }
+    }
 
 
-<style>
-#viewport {
-    background: #bbb;
-    width: 350px;
-    padding: 5px;
-    position: relative;
+    var weight = equivalency / maxLength;
+    return (weight * 100) ;
 }
-#viewport img {
-    position: absolute;
-    top: 50%;
-    margin-top: -30px;  /* = image height div 2 */
-}
-#viewport span {
-    margin-left: 68px;  /* = image width + 8 */
-    display: block;
-}
-  table, td, th {vertical-align:top;}
-  table td, table th { padding:10px 10px; text-align:center; color:#757475; }
-</style>
 
-<div align="">
-  <center>
-<h1>Team Building & FLL Core Value Activities</h1>
-</center>
-<div align="center">
-  <script>
+function search(term) {
+document.getElementById('search').value = term
+var valuein = term.toLowerCase().split(' ').join('_');
+	x = 23
+	keys = []
+	while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+//		alert(document.getElementsByTagName('li')[x])
+document.getElementsByTagName('li')[30].className += " "+ document.getElementsByTagName('li')[30].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+		keys = keys.concat(document.getElementsByTagName('li')[x].className.split(' '))
+//		alert(x)
+//		alert(document.getElementsByTagName('li')[x])
+x = x+1
+}
+}
+//alert(term)
+keywords = keys
+  x = 0
+    while (x != document.getElementsByClassName("Coaching").length) {
+   document.getElementsByClassName("Coaching")[x].style.display = "none"
+  x ++
+}
+usemax = 0
+aa=0
+array = []
+  while (aa != keywords.length) {
+//      array[aa] = keywords[aa].indexOf(valuein)
+      array[aa] = similar(keywords[aa],valuein)
+
+  aa++
+}
+//alert(array)
+largest = 0
+bb = 0
+//alert(array)
+
+  max = array.indexOf(Math.max.apply(window,array))
+  value = keywords[max]
+ x = 0
+  while (x != document.getElementsByClassName(value).length) {
+   document.getElementsByClassName(value)[x].style.display = "block"
+  x ++
+	}
+
+
+}
+</script>
+
+
+<div class="home">
 <!--
+Search: <input id="search" type="text">  <input type="button" value="Go!" onclick="search(document.getElementById('search').value)">
+--><br>
 
- var viewportwidth;
- var viewportheight;
+  
 
- // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+<!--<img src=""><br>-->
 
- if (typeof window.innerWidth != 'undefined')
- {
-      viewportwidth = window.innerWidth,
-      viewportheight = window.innerHeight
- }
+  <ul class="post-list">
+    
+<!--      <li>
 
-// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+       <h3>
+         <a class="post-link" href="/corevalues/2017/06/14/1st-Core-VAlue.html">Core value</a>
+        </h3>
+       <span class="post-meta">14 Jun, 2017</span>
 
- else if (typeof document.documentElement != 'undefined'
-     && typeof document.documentElement.clientWidth !=
-     'undefined' && document.documentElement.clientWidth != 0)
- {
-       viewportwidth = document.documentElement.clientWidth,
-       viewportheight = document.documentElement.clientHeight
- }
 
- // older versions of IE
-
- else
- {
-       viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
-       viewportheight = document.getElementsByTagName('body')[0].clientHeight
- }
-//document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
-//-->
-</script>
+<p>        <span class="post-meta">adsfasdfThis article is about using alternative programming languages on the EV3.</span></p>
+      </li>-->
 <script>
-/**
-* Function that tracks a click on an outbound link in Google Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label.
-*/
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-     function () {
-     document.location = url;
-     }
-   });
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevlue Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/06/14/1st-Core-VAlue.html#'+language+'">Core value</a>\
+        </h3>\
+        <span class="post-meta">14 Jun 2017</span>\
+<p>        <span class="post-meta">adsfasdfThis article is about using alternative programming languages on the EV3.</span></p>\
+      </li>\
+')
 }
 </script>
-<script>
+    
+  </ul>
+<br>
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 
-  if ((viewportwidth > 800) && (screen.width > 800)) {
-      document.write( '<table border="0" align="left" style="none" width="100%">');
-//	document.write('<p>Your viewport width is '+viewportwidth+'x'+viewportheight+'</p>');
-//      document.write('<p>Your screen width is '+screen.width+'</p>');
-  } else {
-  }
-
-</script>
-<p>
-Use these activities to get to know your teammates and learn to work together better.
-</p>
-    <tr>
-      <td>
-	  <table style="border: 1px solid black; border-collapse: collapse; font-size: 200%" width="100%" >
-	  <tr>
-	    <td align="left">
-
-	      <img align="left" height="150" width="250" src="images/CoreValues/NoMaterials.jpg" alt="" />
-	    </td>
-
-	    <td >
-
-
-
-		<a href="translations/en-us/CoreValues/ActItOut.pdf">Act it Out</a><br>
-		<a href="translations/en-us/CoreValues/AllAboard.pdf">All Aboard!</a><br>
-		<a href="translations/en-us/CoreValues/FlipOver.pdf">Flip Over!</a><br></td><td>
-    <a href="translations/en-us/CoreValues/HumanKnot.pdf">Human Knot</a><br>
-    <a href="translations/en-us/CoreValues/CircleOfFriends.pdf">Circle Of Friends</a><br>
-    <a href="translations/en-us/CoreValues/AllInALine.pdf">All in a Line</a><br>
-      <a href="translations/en-us/CoreValues/Birthday.pdf">Birthday Order</a><br>
-      <a href="translations/en-us/CoreValues/HumanCharacters.pdf">Human Characters</a><br>
-
-	    </td>
-	  </tr>
-	</table>
-      <!--Place 1-->
-      </td>
- </tr>
-	  <tr>
-      <td>
-		<table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	  <img  align="left"   height="150" width="250" src="images/CoreValues/5.jpg" alt="" />
-	    </td>
-
-	    <td >
-
-	       <a Href="translations/en-us/CoreValues/GuessWho.pdf">Guess Who</a><br>
-          <a Href="translations/en-us/CoreValues/Team.pdf">We are a TEAM</a><br>
-          <a Href="translations/en-us/CoreValues/OneWord.pdf">One Word</a><br>
-          <a href="translations/en-us/CoreValues/Compliments.pdf">Compliments</a><br>
-	    </td>
-	  </tr>
-	</table>
-       <!--Place 2-->
-      </td>
-</tr><tr>
-      <td>
-        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%" >
-	  <tr>
-	    <td>
-<img height="150" width="250" align="left" src="images/CoreValues/7.jpg" alt="" />
-	    </td>
-	    <td >
-        <a Href="translations/en-us/CoreValues/InspireCoreValues.pdf">#INSPIRECoreValues</a><br>
-         <a Href="translations/en-us/CoreValues/NameCoreValues.pdf">Name the Core Values</a><br>
-         <a Href="translations/en-us/CoreValues/LearnCoreValues.pdf">Learn the Core Values</a><br>
-	    </td>
-	  </tr>
-	</table>
-     </td>
-
-    </tr>
-    <tr>
-
-      <td>
-      <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	      <img height="150" width="250" align="left" src="images/CoreValues/construction.jpg" alt="" />
-	    </td>
-
-	    <td>
-
-
-
-
-        <a href="translations/en-us/CoreValues/BookShelf.pdf">Book Shelf</a><br>
-        <a href="translations/en-us/CoreValues/StackThem.pdf">Stack Them</a><br>
-        <a href="translations/en-us/CoreValues/MarbleRun.pdf">Marble Run</a><br>
-        <a href="translations/en-us/CoreValues/WearIt.pdf">Wear It</a><br>
-        <a href="translations/en-us/CoreValues/PaperTowerBuilding.pdf">Paper Tower Building</a><br>
-	    </td>
-	  </tr>
-	</table>
-      </td>
- </tr>
-	  <tr>
-
-      <td>
-        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	      <img height="150" width="250" align="left" src="images/resources/misc.jpg" alt="" />
-	    </td>
-
-	    <td>
-
-
-
-
-<a href="translations/en-us/CoreValues/Sets.pdf">Sets</a><br>
-<a href="translations/en-us/CoreValues/HatsOff.pdf">Hats Off!</a><br>
-<a href="translations/en-us/CoreValues/RecycledArt.pdf">Recycled Art</a><br>
-<a href="translations/en-us/CoreValues/Stranded.pdf">Stranded</a><br>
-<a href="translations/en-us/CoreValues/Hip.pdf">Joined at the Hip</a><br>
-<a href="translations/en-us/CoreValues/Air.pdf">Up in the Air</a><br>
-<a href="translations/en-us/CoreValues/HandPencilHand.pdf">Hand-Pencil-Hand</a><br>
-
-	    </td>
-	  </tr>
-	</table>
-      </td>
-
-	  </tr>
-	  	  <tr>
-
-      <td>
-        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	      <img height="150" width="250" align="left" src="images/CoreValues/6.jpg" alt="" />
-	    </td>
-
-	    <td>
-
-        <a href="translations/en-us/CoreValues/ModelDuplicator.pdf">Model Duplicator</a><br>
-	<a href="translations/en-us/CoreValues/BlindBuild.pdf"> Blind Build</a><br>
-	<a href="translations/en-us/CoreValues/MarbleMaze.pdf">Marble Maze</a><br>
-  <a href="translations/en-us/CoreValues/BuildinBag.pdf">Build-In-The-Bag</a><br>
-<a href="translations/en-us/CoreValues/MakeItFit.pdf">Make it Fit</a><br>
-	    </td>
-	  </tr>
-	</table>
-      </td>
-
-	  </tr>
-	  <tr>
-
-      <td>
-        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	      <img height="150" width="250" align="left" src="images/CoreValues/8.jpg" alt="" />
-	    </td>
-
-	    <td>
-
-	<a href="translations/en-us/CoreValues/WatchYourStep.pdf">Watch Your Step!</a><br>
-  	<a href="translations/en-us/CoreValues/RobotOperator.pdf">Robot Operator</a><br>
-	    </td>
-	  </tr>
-	</table>
-      </td>
-
-	  </tr>
-	  	  <tr>
-
-      <td>
-        <table style="border: 1px solid black; border-collapse: collapse; font-size:200%" width="100%">
-	  <tr>
-	    <td>
-	      <img height="150" width="250" align="left" src="images/CoreValues/9.jpg" alt="" />
-	    </td>
-
-	    <td>
-
-<a href="translations/en-us/CoreValues/MarbleMaze.pdf">Marble Maze</a><br>
-<a href="translations/en-us/CoreValues/PieceItTogether.pdf">Piece it Together</a><br>
-
-	    </td>
-	  </tr>
-	</table>
-      </td>
-
-	  </tr>
-</table>
+</div>
 
 </div>
 </div>
@@ -355,6 +204,25 @@ Use these activities to get to know your teammates and learn to work together be
 
 </body>
 </html>
+
+
+
+<script>
+function addclass() {
+x = 22
+while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+                        document.getElementsByTagName('li')[x].className += " " +document.getElementsByTagName('li')[x].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+//alert(document.getElementsByTagName('li')[x].className)
+                        x = x+1
+}
+}
+}
+</script>
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

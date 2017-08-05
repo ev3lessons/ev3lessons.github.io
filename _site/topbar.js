@@ -10,7 +10,13 @@ if (window.location.hash == "#br") {
     var language = "en-us";
     // location.reload();
 }
-var page = window.location.href.split("#")[0];
+langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
+var page = window.location.href.split("#")[0] + '#';
+var i;
+for (i = 0; i < langs.length; i++) {
+    window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
+}
+/*
 var enus = ''+ page +'#en-us';
 var es = ''+ page +'#es';
 var nl = ''+ page +'#nl';
@@ -21,6 +27,7 @@ var fr  = ''+ page +'#fr';
 var ct  = ''+ page +'#ct';
 var he  = ''+ page +'#he';
 var de  = ''+ page +'#de';
+*/
 // var page = window.location.href.split("#")[0];
 // alert (page);
 // var href = window.location.href;
@@ -30,60 +37,26 @@ document.write('\
         <div id="topbar">\
 	  <div class="inner group">\
 	    <div class="widget-last widget widget_text left">\
-	      <div class="lang" style="padding-top: 4px" class="textwidget">\
-	        <div style="padding-top: 8px; color: #FFF; width: inherit" class="socials-default-small default">\
+	      <div class="" style="padding-top: 4px; z-index:100000000000;" class="textwidget">\
+	   <!--    <div style="padding-top: 8px; color: #FFF; width: inherit" class="socials-default-small default ovd">\
                   Languages: \
-		</div>\
-		<div class="socials-default-small  default">\
-		  <a href="'+ enus +'" onclick="setTimeout(function(){location.reload(true);},100)">\
-		  <img src="images/icons/countries/us.png" alt="English" title="English" width="26" height="26" border="0">\
+		</div>-->\
+')
+var i;
+for (i = 0; i < langs.length; i++) {
+    window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
+document.write('\
+		<div class="socials-default-small  default ovd">\
+		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="setTimeout(function(){location.reload(true);},100)">\
+		  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
-	        <div class="socials-default-small default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ nl +'">\
-		  <img src="images/icons/countries/nl.png" alt="Nederlands" title="Nederlands" width="26" height="26" border="0">\
-		  </a>\
-		</div>\
-                <div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ ptbr +'">\
-		  <img src="images/icons/countries/br.png" alt="Portugues" title="Portugues" width="26" height="26" border="0">\
-		  </a>\
-		</div>\
-		<div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ es +'">\
-		  <img src="images/icons/countries/es.png" alt="Espa&ntilde;ol" title="Espa&ntilde;ol" width="26" height="26" border="0">\
-		  </a>\
-		</div>			                          \
-		<div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ar+'">\
-		  <img src="images/icons/countries/sa.png" alt="العَرَبِيةُ‎‎" title="العَرَبِيةُ‎" width="26" height="26" border="0">\
-		  </a>\
-		</div>\
-		<div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+el+'">\
-		  <img src="images/icons/countries/small/Greece.png" alt="Ελληνικά" title="Ελληνικά‎" width="26" height="26" border="0">\
-		  </a>\
-	      </div>\
-		<div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+fr+'">\
-		  <img src="images/icons/countries/small/France.png" alt="français" title="français‎" width="26" height="26" border="0">\
-		  </a>\
-	      </div>\
-		<div class="socials-default-small  default">\
-		  <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+ct+'">\
-		  <img src="images/icons/countries/ct.png" alt="català" title="català" width="26" height="26" border="0">\
-		  </a>\
-	      </div>\
-      <div class="socials-default-small  default">\
-          <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+he+'">\
-          <img src="images/icons/countries/small/Israel.png" alt="עברית" title="עברית" width="26" height="26" border="0">\
-          </a>\
-            </div>\
-      <div class="socials-default-small  default">\
-          <a onclick="setTimeout(function(){location.reload(true);},100)" href="'+de+'">\
-          <img src="images/icons/countries/small/Germany.png" alt="de" title="de" width="26" height="26" border="0">\
-          </a>\
-            </div>\
+')
+}
+
+
+
+document.write('\
 </div></div>\
 \
 	    <div class="widget-last widget widget_text right">\

@@ -1120,7 +1120,7 @@ overflow: hidden;
 
 
 @media screen and (min-width: 500px) {
-   #nav {display: inline;}
+//   #nav {display: inline;}
 #nav-drop {display: none;}
 .lang {display: inline;}
 #lang-drop {display: none;}

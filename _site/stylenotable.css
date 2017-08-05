@@ -1,3 +1,4 @@
+//L1127
 /*
 Theme name: Memento
 Theme URI: http://yithemes.com/themes/html/memento-a-template-html-free/
@@ -55,7 +56,7 @@ body .last-row                         { margin-bottom:0; }
 .wrapper                          { padding: 0; min-width:1000px }              
 .boxed-layout .wrapper 	          { width:1000px; margin:0 auto; } 
 .inner                            { width:960px; position:relative; margin:0 auto; padding: 0 20px; /* main width */ }     
-.responsive .inner                { max-width:960px; width:auto; }
+//.responsive .inner                { max-width:960px; width:auto; }
 body.responsive.isMobile .wrapper { overflow:hidden; }
 
 /* ====================== START MAIN STRUCTURE ====================== */
@@ -1118,19 +1119,22 @@ overflow: hidden;
 
 
 @media screen and (max-width: 500px) {
-		      #nav {display: none;}
+		      #nav-big {display: none;}
 		       #nav-drop {display: inline;}
 .lang {display: none;}
-#lang-drop {display: inline;}
+lang-drop {display: inline;}
 #dsa  {display: none;}
 #dsa-bot  {display: inline;}
 .socials-default-small {display: none;}
 //body {background: #fff;}
 }
 
+@media screen and (max-width: 499px) {
+.ovd {display: inline;}
+}
 
 @media screen and (min-width: 500px) {
-   #nav {display: inline;}
+   #nav-big {display: inline;}
 #nav-drop {display: none;}
 .lang {display: inline;}
 //#lang-drop {display: none;}
