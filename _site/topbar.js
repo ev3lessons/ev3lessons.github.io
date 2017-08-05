@@ -10,7 +10,24 @@ if (window.location.hash == "#br") {
     var language = "en-us";
     // location.reload();
 }
+
 langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
+	
+if (document.cookie && window.location.hash == "") {
+str =document.cookie
+var i;
+for (i = 0; i < langs.length; i++) {
+    tmp =str.search(langs[i].split(':')[0])
+    if (tmp != -1) {
+window.location.hash = "#"+langs[i].split(':')[0]
+  setTimeout(function(){location.reload(true);},100);
+}
+}
+
+//alert('a')
+//window.location.hash = "#"+document.cookie.split(';')[0]
+//  setTimeout(function(){location.reload(true);},100);
+}
 var page = window.location.href.split("#")[0] + '#';
 var i;
 for (i = 0; i < langs.length; i++) {
@@ -47,7 +64,7 @@ for (i = 0; i < langs.length; i++) {
     window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
 document.write('\
 		<div class="socials-default-small  default ovd">\
-		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="setTimeout(function(){location.reload(true);},100)">\
+		  <a href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="document.cookie=\''+langs[i].split(':')[0]+'\';setTimeout(function(){location.reload(true);},100)">\
 		  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
 		  </a>\
 		</div>\
