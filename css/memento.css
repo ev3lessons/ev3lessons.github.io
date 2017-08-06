@@ -1108,8 +1108,9 @@ li.sfHover > a > .sf-sub-indicator {
 }
 /* ====================== END HOME ====================== */
 /* ====================== START PRIMARY CONTENT ====================== */
+
 #primary .inner {
-  font-size: 12px;
+//  font-size: 12px;
   padding: 0;
 }
 /* === SIDEBAR */
