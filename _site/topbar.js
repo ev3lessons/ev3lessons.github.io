@@ -13,6 +13,8 @@ if (window.location.hash == "#br") {
 
 
 if (window.location.hash != ""){
+document.cookie = "ev3cookie"+window.location.hash.substring(1);
+
 if (document.cookie != ""){
 deleteAllCookies()
 }
