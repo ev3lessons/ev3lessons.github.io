@@ -3,6 +3,48 @@
       <div class="inner group">
         <div class="left">
           <p>
+<script>
+var arrTimes = [];
+var i = 0; // start
+var timesToTest = 2;
+var tThreshold = 150; //ms
+var testImage = "http://www.google.com/images/phd/px.gif"; // small image in your server
+var dummyImage = new Image();
+var isConnectedFast = false;
+
+testLatency(function(avg){
+    isConnectedFast = (avg <= tThreshold);
+    /** output */
+  //  document.body.appendChild(
+      //  document.createTextNode("Time: " + (avg.toFixed(2)) + "ms - isConnectedFast? " + isConnectedFast)
+    //);
+    if (isConnectedFast != true) {
+document.write("Slow Connection? You can use the <a href='http://classic.ev3lessons.com/'>Classic Site</a> instead.")
+}
+});
+
+/** test and average time took to download image from server, called recursively timesToTest times */
+function testLatency(cb) {
+    var tStart = new Date().getTime();
+    if (i<timesToTest-1) {
+        dummyImage.src = testImage + '?t=' + tStart;
+        dummyImage.onload = function() {
+            var tEnd = new Date().getTime();
+            var tTimeTook = tEnd-tStart;
+            arrTimes[i] = tTimeTook;
+            testLatency(cb);
+            i++;
+        };
+    } else {
+        /** calculate average of array items then callback */
+        var sum = arrTimes.reduce(function(a, b) { return a + b; });
+        var avg = sum / arrTimes.length;
+        cb(avg);
+    }
+}   
+</script>
+
+<br>
             Copyright EV3Lessons.com 2015 -
             Powered by <strong>Seshan Brothers</strong><br>LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site. <!--LEGO® and MINDSTORMS® are trademarks of the LEGO Group of companies which does not sponsor, authorize or endorse this site.--> 
           </p>
