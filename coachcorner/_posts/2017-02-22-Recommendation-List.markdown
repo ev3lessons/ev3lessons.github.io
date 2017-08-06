@@ -64,7 +64,6 @@ Also look at the built-in lessons in the EV3 Programming Software you installed 
 <a href="https://www.hitechnic.com">HiTechnic</a>: For non-LEGO branded sensors that are compatible with the EV3<br>
 
 ### TECHNIC and MINDSTORMS Books
-Benedettelli, Daniele. The LEGO MINDSTORMS EV3 Laboratory<br>
 Isogawa, Yoshihito. The LEGO MINDSTORMS EV3 Idea Book<br>
 Isogawa, Yoshihito. The LEGO Technic Idea Book<br>
 Kmiec, Pawel. The Unofficial LEGO Technic Builder’s Guide<br>
