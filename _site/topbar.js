@@ -1,3 +1,20 @@
+function get_browser_version(){
+  var N=navigator.appName, ua=navigator.userAgent, tem;
+  var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+  if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+  M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
+  return M[1];
+}
+
+var browser = navigator.appName;
+var version = get_browser_version();
+
+if (browser=="Microsoft Internet Explorer") {
+    if (version<="9.0") 
+        document.location.href="http://classic.ev3lessons.com/" 
+} 
+
+
 if (window.location.hash) {
     // Puts hash in variable, and removes the # character
     var language = window.location.hash.substring(1);
