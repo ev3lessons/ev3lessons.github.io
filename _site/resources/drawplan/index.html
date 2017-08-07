@@ -1,0 +1,447 @@
+<html>
+<!--  <div  id="wPaint2" style="position:fixed;
+    width:auto; top:0px;height:90%; background-color:#7a7a7a; margin:70px auto
+    20px auto;">-->
+    <img id="scream" src="hydrodynamics.jpg" style="display:inline;width:80%;
+   height:auto;position: fixed;    bottom: -10000;   left: -100000" alt="The Scream">
+   
+<img style="display:none;" id="hihi">
+<a id="sampurl" download="canvas.png"></a>
+<link rel="icon" type="image/vnd.microsoft.icon"  href="/favicon.ico" />
+<link rel="Stylesheet" type="text/css" href="./demo/demo.css" />
+<link rel="Stylesheet" type="text/css" href="./style.css" />
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="jqm-spinbox.min.js"></script>
+
+
+<!-- fileend -->
+
+<!-- headstart -->
+
+<!--<div style="right: 5px; position:fixed; top: 5px; z-index: -1000">
+  <a target="_blank" href="https://play.google.com/store/apps/details?id=com.ev3lessons.ev3lessons.trashtrekscorer">
+    <img  alt="Android app on Google Play"
+    src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+  </a>
+</div>-->
+<center>
+</center>
+<!--<a id="canvasImg" download="myEV3LessonsSketch.png" href="#" onclick="
+/*var canvas = document.getElementById('wPaint-canvas');
+var context = canvas.getContext('2d');
+
+draw cloud
+context.beginPath();
+context.moveTo(170, 80);
+context.bezierCurveTo(130, 100, 130, 150, 230, 150);
+context.bezierCurveTo(250, 180, 320, 180, 340, 150);
+context.bezierCurveTo(420, 150, 420, 120, 390, 100);
+context.bezierCurveTo(430, 40, 370, 30, 340, 50);
+context.bezierCurveTo(320, 5, 250, 20, 250, 50);
+context.bezierCurveTo(200, 5, 150, 20, 170, 80);
+context.closePath();
+context.lineWidth = 5;
+context.fillStyle = '#8ED6FF';
+context.fill();
+context.strokeStyle = '#0000ff';
+context.stroke();
+
+// save canvas image as data url (png format by default)
+var dataURL = canvas.toDataURL();
+
+// set canvasImg image src to dataURL
+// so it can be saved as an image
+document.getElementById('canvasImg').href = dataURL;
+//download:dataURL;*/">Show
+drawing as picture</a>-->
+<div class="content-box">
+  <!-- JavaScripts-->
+  <!-- jQuery UI -->
+  <script type="text/javascript" src="./lib/jquery.ui.core.1.10.3.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery.ui.widget.1.10.3.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery.ui.mouse.1.10.3.min.js"></script>
+  <script type="text/javascript" src="./lib/jquery.ui.draggable.1.10.3.min.js"></script>
+  <link rel="Stylesheet" type="text/css" href="./lib/wColorPicker.min.css" />
+
+  <!-- wColorPicker -->
+  <script type="text/javascript" src="./lib/wColorPicker.min.js"></script>
+  <!-- wPaint -->
+  <link rel="Stylesheet" type="text/css" href="./wPaint.min.css" />
+  <script type="text/javascript" src="./wPaint.min.js"></script>
+  <script type="text/javascript" src="./plugins/main/src/wPaint.menu.main.js"></script>
+  <script type="text/javascript" src="./plugins/text/wPaint.menu.text.min.js"></script>
+  <script type="text/javascript" src="./plugins/shapes/wPaint.menu.main.shapes.min.js"></script>
+  <script type="text/javascript" src="./plugins/file/wPaint.menu.main.file.min.js"></script>
+
+
+  <style>
+//  input{position:absolute; top:-100px;}
+  #container {
+    position: relative;
+  }
+
+  #holder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    padding: 5px;
+    //  background-color: white;
+    //  border: 2px solid red;
+  }
+  </style>
+
+  <div data-role="tabs">
+    <div data-tap-toggle="false" data-role="header" data-position="fixed" style="z-index: 20000000000000000000000000000">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#fragment-1" class="ui-btn-active">Draw</a></li>
+          <li><a href="#fragment-2">Saves</a></li>
+        </ul>
+      </div>
+      </div>
+      <div id="fragment-1">
+  <script>
+//  width = screen.width-100
+//  height = String((width*530/944)-100)
+//  width = String(width)
+//  height = screen.height-100
+
+//  width = String(height*944/530)
+//  height = String(height)
+width = window.innerWidth
+height = window.innerHeight-100
+//944x530
+    document.write('<div  id="wPaint" style="position:fixed;\
+    width:80%; top:0px;height:auto%; background-color:#7a7a7a; margin:70px auto\
+    20px auto;">');
+
+  </script>
+<!-- height="100%" width="100%"-->
+  <div id="container" >
+    <img src="hydrodynamics.jpg" style="       width:100%;
+   height:auto;">
+    <div id="holder" style="z-index: 1000000000000000000000">
+<div data-type="horizontal" data-role="controlgroup">
+  <button data-inline="true" class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','yellow');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: yellow; width: 20px; height: 20px;    
+   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+
+  <button data-inline="true" class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','green');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: green; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','red');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: red; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','blue');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: blue; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','orange');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: orange; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','brown');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: brown; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','black');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: black; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setStrokeStyle','white');$('#wPaint').wPaint('setLineWidth',3);" style="background-color: white; width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setMode','eraser');$('#wPaint').wPaint('setLineWidth',10);" style="background: url(eraser-icon-5.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('clear');" style="background: url(clear.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('undo');" style="background: url(undo.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('redo');" style="background: url(redo.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setMode','pencil'); $('#wPaint').wPaint('setLineWidth',3);" style="background: url(pencil.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setMode','line'); $('#wPaint').wPaint('setLineWidth',3);" style="background: url(line.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setMode','rectangle'); $('#wPaint').wPaint('setLineWidth',3);$('#wPaint').wPaint('setFillStyle','transparent');" style="background: url(rectangle.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+  <button class="button" onclick="$('#wPaint').wPaint('setMode','text'); $('#wPaint').wPaint('setFontSize','25');$('#wPaint').wPaint('setFillStyle','red');" style="background: url(text.png); background-color: grey;width: 20px; height: 20px;   background-size: contain;  background-position: center; 
+    background-repeat: no-repeat;"> </button>
+</div>
+    </div>
+  </div>
+  </div></div>
+<div id="fragment-2">
+  <button class="button" onclick="svimg(); mymax = window.localStorage.canvasImage.split('|').length-1; alert('saved')"data-inline="true" style="">Save Drawing to Local Storage</button>
+<button onclick="window.localStorage.canvasImage = ''; document.getElementById('saveid').max = 1 ; alert('deleted all saves')"data-inline="true">Delete All Saves in Local Storage</button>
+
+  <br>
+
+<table>
+  <tr>
+    <td>
+<button data-inline="true" onclick="loadsave(window.localStorage.canvasImage.split('|')[parseInt(document.getElementById('saveid').value)])">Click to Load Save from Local Storage (choose which save-->):</button>
+    </td>
+    <td>
+<script>
+if (window.localStorage.canvasImage == undefined) {
+window.localStorage.canvasImage = ''
+}
+mymax = window.localStorage.canvasImage.split('|').length-1;
+document.write('<input  id="saveid" type="text" data-inline="true" data-role="spinbox" onchange="if (mymax < this.value) {this.value = mymax} " min="1" value="1">')</script>
+    </td>
+  </tr>
+  </table>
+
+  <br>
+<br>
+<a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
+              <button data-inline="true" class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Local Storage Save File for Sharing</button>
+              <script type="text/javascript">
+              var anchor = document.getElementById('export');
+              anchor.onclick = function() {
+                var currentTime = new Date()
+                var day = currentTime.getDate()
+                anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.canvasImage);
+                anchor.download = day + 'myscores.DRCI';
+                //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRAA1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
+              };
+</script>
+
+  <button class="ui-mini" data-inline="true" onclick="// alert('choose .DRCI file') ; 
+document.getElementById('fileInput').click() ">Import Save File to Local Storage</button>
+
+<button data-inline="true" onclick="exporter(); setTimeout(function(){hello();document.getElementById('sampurl').href = image;document.getElementById('sampurl').click()},500)">Export Drawing as PNG</button>
+<input onchange="" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput"><br>
+Drawplan Scoring System Version 4.0.0 Beta<br>
+Drawplan Hydro Dynamics Verison 0.0.2 Beta
+</div>
+</div>
+</div>
+<center><article>
+
+<p><input style="position: fixed; top:-100px;" id="imageLoader" name="imageLoader" type="file"></p>
+<i style="display: none;" id="status">File API &amp; FileReader API not supported</i>
+</article></center>
+
+<center id="wPaint-img"></center>
+<script type="text/javascript">
+function OpenInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
+var dataUrl;
+var imageData = $("#wPaint").wPaint("image");
+
+$("#canvasImage").attr('src', imageData);
+$('#wPaint').wPaint('image', '<image_data>');
+
+var images = [
+  '/test/uploads/wPaint.png',
+];
+function saveImg(image) {
+  /*    var _this = this;
+
+  $.ajax({
+  type: 'POST',
+  url: '/test/upload.php',
+  data: {image: image},
+  success: function (resp) {
+
+  // internal function for displaying status messages in the canvas
+  _this._displayStatus('Image saved successfully');
+
+  // doesn't have to be json, can be anything
+  // returned from server after upload as long
+  // as it contains the path to the image url
+  // or a base64 encoded png, either will work
+  resp = $.parseJSON(resp);
+
+  // update images array / object or whatever
+  // is being used to keep track of the images
+  // can store path or base64 here (but path is better since it's much smaller)
+  images.push(resp.img);
+
+  // do something with the image
+  $('#wPaint-img').attr('src', image);
+}
+});*/
+var imgCanvas = document.getElementById('wPaint-canvas');
+var imgAsDataURL = imgCanvas.toDataURL("image/png");
+
+window.localStorage.canvasImage = imgAsDataURL;
+}
+function svimg() {
+var imgCanvas = document.getElementById('wPaint-canvas');
+var imgAsDataURL = imgCanvas.toDataURL("image/png");
+
+window.localStorage.canvasImage = window.localStorage.canvasImage + '|' + imgAsDataURL;
+}
+
+
+function loadImgBg () {
+
+  // internal function for displaying background images modal
+  // where images is an array of images (base64 or url path)
+  // NOTE: that if you can't see the bg image changing it's probably
+  // becasue the foregroud image is not transparent.
+  this._showFileModal('bg', images);
+}
+
+function loadImgFg () {
+
+  /*  // internal function for displaying foreground images modal
+  // where images is an array of images (base64 or url path)
+  this._showFileModal('fg', images);
+  */
+  //alert('hi');
+  ///    $("#imageLoader").click();
+  document.getElementById('hihi').src =  window.localStorage.canvasImage;
+  var c = document.getElementById("wPaint-canvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("hihi");
+  ctx.drawImage(img,10,10);
+};
+function loadsave(data) {
+  document.getElementById('hihi').src =  data;
+  var c = document.getElementById("wPaint-canvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("hihi");
+  ctx.drawImage(img,0,0);
+
+}
+
+
+
+
+// init wPaint
+$('#wPaint').wPaint({
+  path: './',
+  menuOffsetLeft: -35,
+  menuOffsetTop: -50,
+  saveImg: saveImg,
+  loadImgBg: loadImgBg,
+  loadImgFg: loadImgFg,
+  //	  image: "trashtrek-field.jpg"
+});
+$(function() {
+  $("#btnSave").click(function() {
+    html2canvas($("#widget"), {
+      onrendered: function(canvas) {
+        theCanvas = canvas;
+        document.body.appendChild(canvas);
+
+        // Convert and download as image
+        Canvas2Image.saveAsPNG(canvas);
+        $("#img-out").append(canvas);
+        // Clean up
+        //document.body.removeChild(canvas);
+      }
+    });
+  });
+});
+
+
+
+</script>
+<script>
+//var img;
+var imageLoader = document.getElementById('imageLoader');
+imageLoader.addEventListener('change', handleImage, false);
+var canvas = document.getElementById('wPaint-canvas');
+var ctx = canvas.getContext('2d');
+
+
+function handleImage(e){
+  /*    var reader = new FileReader();
+  reader.onload = function(event){
+  var img = new Image();
+  img.onload = function(){
+  canvas.width = img.width;
+  canvas.height = img.height;
+  ctx.drawImage(img,0,0);
+}
+img.src = event.target.result;
+}
+reader.readAsDataURL(e.target.files[0]);     */
+
+
+var img = new Image(); // The canvas drawImage() method expects an image object.
+
+img.src = window.localStorage.canvasImage; // Retrieve the last saved artistic achievement from persistent local storage.
+//img.onload = function() { // Only render the saved drawing when the image object has fully loaded the drawing into memory.
+ctx.drawImage(img, 0, 0); // Draw the image starting at canvas coordinate (0, 0) - the upper left-hand corner of the canvas.
+//}
+}
+
+
+</script>
+<script>
+var imageLoader = document.getElementById('imageLoader');
+imageLoader.addEventListener('change', handleImage, false);
+var canvas = document.getElementById('wPaint-canvas');
+var ctx = canvas.getContext('2d');
+
+
+function handleImage(e){
+  var reader = new FileReader();
+  reader.onload = function(event){
+    var img = new Image();
+    img.onload = function(){
+      canvas.width = img.width;
+      canvas.height = img.height;
+      ctx.drawImage(img,0,0);
+    }
+    img.src = event.target.result;
+  }
+  reader.readAsDataURL(e.target.files[0]);
+}
+
+function exporter() {
+    imgCanvas = document.getElementById('wPaint-canvas');
+    imgAsDataURL = imgCanvas.toDataURL("image/png");
+    c = document.getElementById("wPaint-canvas");
+    ctx = c.getContext("2d");
+    img = document.getElementById("scream");
+    ctx.drawImage(img, 0, 0,document.getElementById("scream").width,document.getElementById("scream").height);
+setTimeout(hello(), 500);
+}
+image = ''
+function hello() {
+document.getElementById('hihi').src =  imgAsDataURL;   img = document.getElementById("hihi"); ctx.drawImage(img,0,0);image = imgCanvas.toDataURL("image/png"); //window.location.href=image;
+}
+
+
+
+
+  window.onload = function() {
+    //document.getElementById('noshark').click()
+//    check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
+    var fileInput = document.getElementById('fileInput');
+    fileInput.addEventListener('change', function(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
+      if (1==1) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          data = reader.result;
+          //alert(data)
+          window.localStorage.canvasImage = data;
+	  alert('Imported. Please Refresh to load a Save/Make new Saves')
+        }
+        reader.readAsText(file);
+      } else {
+      }
+    });
+}
+
+</script>
+</div>
+</div>
+
+</footer>
+<!-- footend -->
+</body>
+
+</html>
+</div>
+<style>
+.wPaint-menu {
+display: none
+}
+</style>
+
+</html>

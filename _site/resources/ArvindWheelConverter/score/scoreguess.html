@@ -1,0 +1,155 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+$(document).bind('mobileinit',function(){
+  $.mobile.changePage.defaults.changeHash = false;
+  $.mobile.hashListeningEnabled = false;
+  $.mobile.pushStateEnabled = false;
+});
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+<script src="highcharts.js"></script>
+<script src="exporting.js"></script>
+<script src="angular.min.js"></script>
+<script src="scorer.js"></script>
+
+
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="scorer.min.css" />
+
+
+
+
+<h1>Animal Allies Scorer (Guess the Missions version)</h1>
+<div data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+	<h1 id="allpoints">Points: 0</h1>
+</div>
+<script src="html.js"></script>
+
+</head>
+<body>
+  <div role="main" class="ui-content">
+
+    <div data-role="tabs">
+
+<div id="tabs-1">
+<table>
+  <tr>
+    <script>
+
+    mobile = 500
+    all_screen = 0
+    startrow(all_screen)
+
+    starttable('MO1: Seal and Camera:','seal.png' , ['camera','seal'])
+      createbutton("camera", 100 ,'Is the Camera completely in the Safety Area?')
+      createbutton("seal", 0 ,'Was the Seal ever moved from its starting position?')
+      createbuttonconflict('camera','seal','seal')
+    endtable()
+
+    starttable('MO2: Tank and Shark:','sharktank.png' , ['shark','shark2'])
+      createbutton("shark", 40, 'Is the Tank and the Shark completely in the Left Box?')
+      createbutton("shark2", 60, 'Is the Tank and the Shark completely in the Right Box?')
+      createbuttonconflict('shark','shark2','')
+    endtable()
+
+    starttable('MO3: Our Little Friend:','pigwheel.png' , ['ourlittlefriend', 'farm'])
+      createbutton("ourlittlefriend", 100, 'Are the Wheels attached to the Pig?')
+      createbutton("farm", 100, 'Is the Pig with Wheels completely in the Farm Area?')
+    endtable()
+
+    starttable('MO4: Zoologist:','zoologist.png' , ['zoologist'])
+      createbutton("zoologist", 100 , 'Is the Zoologist completely in the Safety Area?')
+    endtable()
+
+    starttable('MO5: Dog and Trainer:','dogandtrainer.png' , ['dogandtrainer'])
+      createbutton("dogandtrainer", 100 , 'Is the Dog and Trainer completely on the road?')
+    endtable()
+
+    starttable('MO6: Beehive and Honey:','beehiveandhoney.png' , ['beehive', 'honey'])
+      createbutton("beehive", 100 , 'Has the honey been ejected?')
+      createbutton("honey", 100 , 'Is the Honey completely in the Safety Area?')
+    endtable()
+
+    endrow(mobile)
+    startrow(mobile)
+
+    starttable('MO7: Bee:','bee.png' , ['bee'])
+      createbutton("bee", 100 , 'Is the Bee completely in the Safety Area?')
+    endtable()
+
+    starttable('MO8: The Panda Observation and Return:','pandaobservation.png' , ['pandaobservation'])
+     createbutton("pandaobservation", 100 , 'Is the model completely unfolded?')
+    endtable()
+
+    starttable('MO9: Biomimicry Wall:','biomimicrywall.png' , ['biomimicrywall'])
+     createbutton("biomimicrywall", 100 , 'Is the White Gecko hanging on the Biomimicry Wall?')
+    endtable()
+
+    starttable('M10: Service Dog and Man:','servicedogsmall.png' , ['servicedog'])
+     createbutton("servicedog", 100 , 'Has the Bar been completely pushed down?')
+    endtable()
+
+    starttable('M11: Animal Conservation:','animalconservation.png', ['food'])
+     createrange("food", 100 , 0, 5, 0, 'How many Animals have been exchanged with the other team?')
+    endtable()
+
+    starttable('M12: Manure Samples:','manuresamples.png', ['manuresamples','manuresamples2'])
+      createrange("manuresamples", 10 , 0, 12, 10, 'How many Manure Samples are in barren field or in the corner referee storage?')
+      createrange("manuresamples2", -10 , 0, 12, 2, 'How many Manure Samples are on the challenge mat, but not in the barren field?')
+    endtable()
+
+    starttable('M13: Food and Refrigerator:','refrigerator.png', ['foodandrefrigerator', 'foodandrefrigerator2'])
+     createrange("foodandrefrigerator1", 100 , 0, 8, 0, 'How many Food items have been removed from the refrigerator?') 
+     createrange("foodandrefrigerator2", 100 , 0, 8, 0, 'How many Food items have been delivered to the matching Animals?') 
+    endtable()
+
+    starttable('M14: Milking Automation:','milkingautomation.png', ['milkingautomation'])
+     createbutton("milkingautomation", 100 , 'Is only milk ejected? (No manure on challenge mat)')
+    endtable()
+
+    starttable('M15: Ramp:','ramp.png', ['ramp'])
+     createbutton("ramp", 100 , 'Is the Ramp tilted towards the east end?')
+    endtable()
+
+
+//createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+
+endrow(all_screen)
+
+</script>
+</tr>
+</table>
+</div>
+  <div id="tabs-2">
+    <p>coming soon</p>
+  </div>
+   <div id="tabs-3">
+    <p>coming soon</p>
+  </div>
+          <div data-role="navbar">
+
+	  <div data-role="header" data-position="fixed">
+
+ <ul>
+    <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+    <li><a href="#tabs-2">Timers</a></li>
+    <li><a href="#tabs-3">Saves</a></li>
+  </ul>
+  </div>
+</div>
+</div>
+</div>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65893558-1', 'auto');
+    ga('send', 'pageview');
+</script>
+</body>
+
