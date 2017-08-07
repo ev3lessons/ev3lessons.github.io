@@ -50,10 +50,20 @@
 </head>
 <script>
 function url() {
-if (decodeURI(window.location.search.substring(1)) != "") {
+if (getParameterByName('q')) {
+show(decodeURI(getParameterByName('q')))
+document.getElementById('search').value = decodeURI(getParameterByName('q'))
+}
+
+
+if (window.location.search.substring(1) != "") {
+ if (window.location.search.substring(1).search('lang') == -1 &&window.location.search.substring(1).search('q=')) {
 show(decodeURI(window.location.search.substring(1)))
 document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+
 }
+}
+
 document.getElementById("search")
     .addEventListener("keyup", function(event) {
     event.preventDefault();

@@ -50,10 +50,20 @@
 </head>
 <script>
 function url() {
-if (decodeURI(window.location.search.substring(1)) != "") {
+if (getParameterByName('q')) {
+show(decodeURI(getParameterByName('q')))
+document.getElementById('search').value = decodeURI(getParameterByName('q'))
+}
+
+
+if (window.location.search.substring(1) != "") {
+ if (window.location.search.substring(1).search('lang') == -1 &&window.location.search.substring(1).search('q=')) {
 show(decodeURI(window.location.search.substring(1)))
 document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+
 }
+}
+
 document.getElementById("search")
     .addEventListener("keyup", function(event) {
     event.preventDefault();
@@ -995,27 +1005,6 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Technic Building Basics</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                        <ul>
-                          <li>Slides: <a href="translations/en-us/robots/TechnicBasics.pptx">PPTX</a>, <a href="translations/en-us/robots/TechnicBasics.pdf">PDF </a></li>
-
-                        </ul>
-                      </div>
-
-                  </div>
-<br>
-                </div>
-	 
                 <div class="toggle toggle beginner robot base_robot robot_design droidbot construindo_uma_base_do_robô_e_anexos pt">
                   <p class="tab-index tab-closed">
 <script>
@@ -1137,29 +1126,6 @@ jekyll = jekyll+1
  <li><a href="translations/ar/beginner/MovingStraight.docx">Worksheet</a>
  </li>
  </ul>
-
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Building a Robot for Our Lessons</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<li>
-<div class="content-tab closed" style="display: none;">
-
-                        <ul>
-                          <li>Slides: <a href="translations/en-us/robots/BaseRobot.pptx">PPTX</a>, <a href="translations/en-us/robots/BaseRobot.pdf">PDF </a></li>
-
-                        </ul>
-                      </div>
-</li>
 
                   </div>
 <br>
@@ -1368,29 +1334,6 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Building a Competition Robot</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                      <ul>
-                          <li>Slides: <a href="translations/en-us/robots/FLLRobot.pptx">PPTX</a>, <a href="translations/en-us/robots/FLLRobot.pdf">PDF </a></li>
-
-
-                        </ul>
-
-                          </div>
-
-                  </div>
-<br>
-                </div>
-	 
                 <div class="toggle toggle beginner programs programmes programming programming_app programing introev3 brick software ev3 buttons centre up- down- left- right- center- ipad tablet android app introduction en">
                   <p class="tab-index tab-closed">
 <script>
@@ -1515,27 +1458,6 @@ jekyll = jekyll+1
  <a href="translations/el/beginner/PortView.pdf">PDF</a>
  </li>
  </ul>
-
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Cable Management</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                                <ul>
-                                  <li>Slides: <a href="translations/en-us/robots/CableManagement.pptx">PPTX</a>, <a href="translations/en-us/robots/CableManagement.pdf">PDF </a></li>
-
-                                </ul>
-                              </div>
 
                   </div>
 <br>
@@ -1685,29 +1607,6 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Color Sensor Positioning and Shielding</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                              <ul>
-                                  <li>Slides: <a href="translations/en-us/robots/Shielding.pptx">PPTX</a>, <a href="translations/en-us/robots/Shielding.pdf">PDF </a></li>
-
-
-                                </ul>
-
-                                  </div>
-
-                  </div>
-<br>
-                </div>
-	 
                 <div class="toggle toggle beginner pseudocode começando_com_pseudocódigo pt">
                   <p class="tab-index tab-closed">
 <script>
@@ -1823,29 +1722,6 @@ jekyll = jekyll+1
  </li>
 
  </ul>
-
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Gearing for LEGO Robots</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                                  <ul>
-                                      <li>Slides: <a href="translations/en-us/robots/Gears.pptx">PPTX</a>, <a href="translations/en-us/robots/Gears.pdf">PDF </a></li>
-
-
-                                    </ul>
-
-                                      </div>
 
                   </div>
 <br>
@@ -1980,29 +1856,6 @@ jekyll = jekyll+1
  <a href="translations/ar/beginner/MoveObject.pdf">PDF</a>
  </li>
  </ul>
-
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Gyro Sensor Positioning</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                                      <ul>
-                                          <li>Slides: <a href="translations/en-us/robots/GyroPosition.pptx">PPTX</a>, <a href="translations/en-us/robots/GyroPosition.pdf">PDF </a></li>
-
-
-                                        </ul>
-
-                                          </div>
 
                   </div>
 <br>
@@ -2158,29 +2011,6 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Wheels</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                                          <ul>
-                                              <li>Slides: <a href="translations/en-us/robots/Wheels.pptx">PPTX</a>, <a href="translations/en-us/robots/Wheels.pdf">PDF </a></li>
-
-
-                                            </ul>
-
-                                              </div>
-
-                  </div>
-<br>
-                </div>
-	 
                 <div class="toggle toggle beginner display custom sounds sound_block display_block image_editor sound_editor images sons_e_imagens_customizadas pt">
                   <p class="tab-index tab-closed">
 <script>
@@ -2325,29 +2155,6 @@ jekyll = jekyll+1
 <br>
                 </div>
 	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Passive Attachments</a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			<div class="content-tab closed" style="display: none;">
-
-                                              <ul>
-                                                  <li>Slides: <a href="translations/en-us/robots/PassiveAttachments.pptx">PPTX</a>, <a href="translations/en-us/robots/PassiveAttachments.pdf">PDF </a></li>
-
-
-                                                </ul>
-
-                                                  </div>
-
-                  </div>
-<br>
-                </div>
-	 
                 <div class="toggle toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on sensor_de_toque pt">
                   <p class="tab-index tab-closed">
 <script>
@@ -2468,21 +2275,6 @@ jekyll = jekyll+1
  <a href="translations/ar/intermediate/ParallelBeams.pdf">PDF</a>
  </li>
  </ul>
-
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle lesson en">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close"></a>')
-jekyll = jekyll+1
-</script>
-
-                  </p>
-                  <div class="content-tab closed indent">
-			
 
                   </div>
 <br>
