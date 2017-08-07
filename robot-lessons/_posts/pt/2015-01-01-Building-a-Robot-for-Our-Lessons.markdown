@@ -1,0 +1,12 @@
+---
+title: "Construindo Um Robô Para Nossas Lições"
+searchterms: "lesson"
+lang: "pt"
+---
+<div class="content-tab closed" style="display: none;">
+
+                        <ul>
+                          <li><a href="translations/pt-br/robots/1-Construindo Um Robô Para Nossas Lições.pptx">PPTX</a></li>
+
+                        </ul>
+                      </div>

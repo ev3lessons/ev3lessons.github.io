@@ -19,7 +19,7 @@ while y != 65:
 	os.system('echo \''+line+'\' >> lessons/_posts/'+str(date)+'-01-01-'+name+'.markdown')
 	print line
 	#time.sleep(0.1)
-	if "</ul>" in line:
+	if "</div>" in line:
 		x = 1
  #fo.readline()
 # Close opend file

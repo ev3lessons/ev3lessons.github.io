@@ -9,7 +9,7 @@ fo3 = open("lessonssearch", "rw+")
 
 x = 0
 y = 0
-while y < 64:
+while y < 10:
  print '---'
  print 'title: "'+fo2.readline().replace("\n","")+'"'
  print 'searchterms: "'+fo3.readline().replace("\n","")+'"'
@@ -21,7 +21,7 @@ while y < 64:
 	line = fo.readline().replace("\n","")
 	print line
 	#time.sleep(0.1)
-	if "</ul>" in line:
+	if "</div>" in line:
 		x = 1
  #fo.readline()
 # Close opend file
