@@ -1,3 +1,6 @@
+langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
+
+
 function get_browser_version(){	
   var N=navigator.appName, ua=navigator.userAgent, tem;
   var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
@@ -44,6 +47,21 @@ if (getParameterByName('lang') != null) {
 localStorage.lang = "ev3cookie"+language;
 } else {
 var language = 'en-us'
+
+navlang=navigator.language.split('-')[0]
+//str =localStorage.lang
+var i;
+for (i = 0; i < langs.length; i++) {
+    str=langs[i].split(':')[0]
+    tmp =str.search(navlang)
+    if (tmp != -1) {
+//window.location.hash = "#"+langs[i].split(':')[0]
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
+
+}
+}
+
 }
 
 
@@ -60,7 +78,6 @@ document.cookie=""
 //for (var it in $.cookie()) $.removeCookie(it);
 
 //alert(document.cookie)
-langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 	
 //if (document.cookie && window.location.hash == "") {
 //str =document.cookie
