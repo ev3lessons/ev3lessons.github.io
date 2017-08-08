@@ -49,7 +49,7 @@ function carousel() {
 	      <h2><span>EV3Lessons.com:</span> What's New?</h2>
 	    <div class="hentry-post group first">
 	      <h3>Coach's Corner</h3>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.categories.coachcorner limit:5 %}
       <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>
     {% endfor %}
 	      
