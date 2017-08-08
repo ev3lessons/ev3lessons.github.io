@@ -44,7 +44,9 @@ if (window.location.hash) {
 
 if (getParameterByName('lang') != null) {
     var language = getParameterByName('lang');
+//if (getParameterByName('langsave') != 'no') {
 localStorage.lang = "ev3cookie"+language;
+//}
 } else {
 var language = 'en-us'
 

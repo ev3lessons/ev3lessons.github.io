@@ -16,7 +16,7 @@ html, body { min-height:101% }
 
 body {
     background: #fff;
-    font-size: 12px;
+//    font-size: 12px;
     min-width: 1000px !important;
     width: 100% !important;
 }

@@ -873,6 +873,7 @@ x = 0
                 </p>
 
 <br>
+
 <script>jekyll = 0</script>
     {% for post in site.categories.lessons %}
                 <div class="toggle {{post.searchterms}} {{post.lang}}">
@@ -881,10 +882,14 @@ x = 0
 document.write(' <a id="'+jekyll+'" href="#" title="Close">{{post.title}}</a>')
 jekyll = jekyll+1
 </script>
-
                   </p>
                   <div class="content-tab closed indent">
 			{{ post.content }}
+<script>
+if (getParameterByName('share') == "yes") {
+document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?lang='+language+'&q='+'{{post.title}}'.toLowerCase().split(' ').join('_'))\">Get shareable link for '{{post.title}}' lesson</button>")
+}
+</script>
                   </div>
 <br>
                 </div>
