@@ -1,6 +1,6 @@
 ---
 title: "Proportional Line Follower"
-searchterms: "toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line"
+searchterms: "toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower "
 lang: "en"
 ---
  <ul>
