@@ -3,7 +3,7 @@ layout: post2
 language: "en"
 keywords: "Coaching getting_started FLL FLL resources"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "To Rebuild of Not to Rebuild"
+title: "To Rebuild or Not to Rebuild"
 minidescription: "This article is about whether or not teams should create a new competition robot each year."
 sidetitle: ""
 side: ""
