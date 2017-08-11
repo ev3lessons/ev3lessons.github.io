@@ -17,7 +17,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 
 Lots of great ideas about what individual parts to buy, which Technic sets can be useful and where to buy them all.
 
-<img src="/images/coachcorner/bucketwheel.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/bucketwheel.jpg" style="max-width: 100%" />
 
 Image Credit: LEGO
 

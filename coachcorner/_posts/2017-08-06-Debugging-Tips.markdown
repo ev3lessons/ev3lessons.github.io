@@ -16,7 +16,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 Francis Cariño Belizario:</b> How do you all debug programs? I think collecting some of our teams' favorite techniques in one place could be really helpful to new teams.
 
 
-<img src="/images/coachcorner/Debugging.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/Debugging.jpg" style="max-width: 100%" />
 
 
 **Response from Stephanie Ozenne**

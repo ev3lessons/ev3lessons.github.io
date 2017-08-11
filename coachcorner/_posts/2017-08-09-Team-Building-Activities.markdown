@@ -14,7 +14,7 @@ authorim: "/images/people/asha.jpg"
 This article was inspired by a visit to the Forge Initiative in Cary, North Carolina. <a href="http://theforgeinitiative.org/">The Forge Initiative </a> is a STEM/Makerspace for kids, adults and several FIRST teams.
 
 
-<img src="/images/coachcorner/TeamBuildingWall.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/TeamBuildingWall.jpg" style="max-width: 100%" />
 
 The above photograph is an organized wall full of misalaneous items. There are balls and bells, cardboard and foamboard, popsicle sticks and cones, bandanas and more. All the items were neatly organized alphabetically.  I love this idea of keeping a random collection of objects. While our own collection is not nearly as organized, I too like to pull random objects toghether to come up with team building activities.
 

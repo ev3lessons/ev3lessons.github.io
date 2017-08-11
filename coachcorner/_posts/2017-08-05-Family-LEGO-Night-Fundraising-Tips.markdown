@@ -15,7 +15,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 <b>Question from 
 Jennifer Francis:</b> Our team is looking at hosting a family Lego night as a fundraiser to buy an extra team robot/computer. Where would we find or how could we get a large amount of Legos to sustain such an event? Does anyone have any suggestions or has anyone done something like this that can offer some tips?
 
-<img src="/images/coachcorner/FamilyLEGONight.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/FamilyLEGONight.jpg" style="max-width: 100%" />
 
 
 **Response from Michael Risch**

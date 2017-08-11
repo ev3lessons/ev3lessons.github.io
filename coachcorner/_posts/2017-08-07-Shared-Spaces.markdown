@@ -15,7 +15,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 <b>Question from Simon Ward:</b> How do teams manage the table and models between meetings? I'm guessing "leave it set up" is the best option. But what if space is limited, or it's a shared room? We have this space (my classroom), but it's a shared room. How practical is continually setting up/putting away models? I'm trying to weigh up time spent setting up / putting away vs. risk of other classes tampering with the set up of models, and putting the table out of action for the rest of the year.
 
 
-<img src="/images/coachcorner/SharedRoom.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/SharedRoom.jpg" style="max-width: 100%" />
 
 Photo Credit: Simon Ward
 

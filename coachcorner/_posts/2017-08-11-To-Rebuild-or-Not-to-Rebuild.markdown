@@ -16,7 +16,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 ### Should you keep your robot from year to year, or should you redesign each year?
  
 
-<img src="/images/coachcorner/DroidBot.png" style="max-width: 100%" />"
+<img src="/images/coachcorner/DroidBot.png" style="max-width: 100%" />
 
 
 **Response by Layne Kirk**

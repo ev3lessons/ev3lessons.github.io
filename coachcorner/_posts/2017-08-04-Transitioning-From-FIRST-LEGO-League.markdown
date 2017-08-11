@@ -16,7 +16,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 Francis Cariño Belizario:</b> Any of your FLL team members also part of an FTC team? Any transition stories?
 
 
-<img src="/images/coachcorner/Transition.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/Transition.jpg" style="max-width: 100%" />
 
 **Response from Gloria Gibson**
 

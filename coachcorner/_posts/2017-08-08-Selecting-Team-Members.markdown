@@ -15,7 +15,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 <b>Question from Mic Lowne:</b> I've been running teams in schools since food factor and the biggest problem I face each year is selecting the 10 students out of 20-30 that want to be a part of the the team. How do other school based coaches deal with this? Usually I select based on 1st-attitude/willingness to learn, 2nd-attendance, 3rd-skill, 4th-an "application letter". Thoughts?
 
 
-<img src="/images/coachcorner/SelectingTeam.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/SelectingTeam.jpg" style="max-width: 100%" />
 
 **Response from Layne Kirk**
 
