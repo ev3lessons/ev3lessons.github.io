@@ -13,7 +13,7 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##Should you keep your robot from year to year, or should you redesign each year?##
+### Should you keep your robot from year to year, or should you redesign each year?
  
 
 <img src="/images/coachcorner/DroidBot.png" style="max-width: 100%" />"

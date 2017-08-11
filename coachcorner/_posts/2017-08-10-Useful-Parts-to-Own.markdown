@@ -13,7 +13,7 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##What are some useful extra parts a team should have? Where can these be bought?##
+### What are some useful extra parts a team should have? Where can these be bought?
 
 Lots of great ideas about what individual parts to buy, which Technic sets can be useful and where to buy them all.
 
