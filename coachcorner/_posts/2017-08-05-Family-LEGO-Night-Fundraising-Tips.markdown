@@ -1,7 +1,7 @@
 ---
 layout: post2
 language: "en"
-keywords: "Coaching getting_started FLL FLL resources"
+keywords: "Coaching getting_started funding FLL FLL resources"
 image: "/images/Butler/Passion/1/img/3.png"
 title: "Family LEGO Night: Fundraising Tips"
 minidescription: "This article shares tips for how to run a Family LEGO Night as a team fundraising activity."
