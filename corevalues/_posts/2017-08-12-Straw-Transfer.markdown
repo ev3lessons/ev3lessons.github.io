@@ -8,11 +8,11 @@ minidescription: "This is a team building activity where transfer a ring using o
 sidetitle: ""
 side: ""
 author: "Cadmes Creators<br>The Netherlands"
-authorim: "/images/people/cadmes.png"
+authorim: "/images/people/cadmes.jpg"
 ---
 
 
-<img src="/images/CoreValues/StrawTransfer.jpg" style="max-width: 100%">
+<img src="/images/CoreValues/StrawTransfer.png" style="max-width: 100%">
 
 <b>Objectives:</b>
 - Coordinating a physical activity

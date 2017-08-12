@@ -11,7 +11,7 @@ authorim: "/images/people/Seshanbros.jpg"
 ---
 
 
-<img src="/images/CoreValues/Pokedragon.jpg" style="max-width: 100%">
+<img src="/images/CoreValues/MarbleRun.jpg" style="max-width: 100%">
 
 <b>Objectives:</b>
 - Learn to make decisions together
