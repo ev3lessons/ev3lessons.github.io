@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Stack Them"
+title: "Learn the Core Values"
 minidescription: "This is a team building activity will help the team understand the Core Values."
 sidetitle: ""
 side: ""
