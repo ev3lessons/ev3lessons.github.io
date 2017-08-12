@@ -1,0 +1,34 @@
+---
+layout: postcv
+language: "en"
+keywords: "corevalue team_building"
+image: "/images/Butler/Passion/1/img/3.png"
+title: "Flip Over"
+minidescription: "This is a team building activity where your team has to flip over the towel they are standing on."
+sidetitle: ""
+side: ""
+author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, PA"
+authorim: "/images/people/Seshanbros.jpg"
+---
+
+
+<img src="/images/CoreValues/TurnOver.jpg" style="max-width: 100%">
+
+<b>Objectives:</b>
+- Coming to a consensus
+- Working together in a small
+space
+
+<b>Materials:</b>
+A large towel or small blanket
+- It must fit your entire team on it.
+
+<b>Setup:</b>
+Leave the towel/blanket in the middle of the floor fully open
+
+<b>Instructions to Team:</b>
+Every one should start off on the blanket. Now, flip the blanket over. No one’s feet should ever touch the floor.
+
+<b>Notes:</b>
+This activity requires the students to be comfortable being very close to each other/ touch each other.
+During the activity, listen to their conversation and decision making process.

@@ -1,0 +1,35 @@
+---
+layout: postcv
+language: "en"
+keywords: "corevalue team_building"
+image: "/images/Butler/Passion/1/img/3.png"
+title: "We are a TEAM"
+minidescription: "This is a team building activity where students express their appreciation for each other."
+sidetitle: ""
+side: ""
+author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, PA"
+authorim: "/images/people/Seshanbros.jpg"
+---
+
+
+<img src="/images/CoreValues/TEAM.jpg" style="max-width: 100%">
+
+<b>Objectives:</b>
+- Getting to know teammates
+- Respecting teammates
+- Understanding different skills and contributions
+
+<b>Materials:</b>
+- Small pieces of paper (or sticky notes)
+- Glue sticks (if you did not use sticky notes)
+- 4 large sheets of paper
+
+<b>Setup:</b>
+- Leave materials on the table, Each student should be given around 2-4 sticky notes.
+
+<b>Instructions to Team:</b>
+Write a compliment about someone else on your team. When you are done, spell out the word TEAM. Make sure everyone has a compliment - even coaches and mentors.
+
+<b>Notes:</b>
+This is a good activity for towards the end of the season, once students know each other. At the end, take turns reading the compliments out - read out at least one per person on the team.
+

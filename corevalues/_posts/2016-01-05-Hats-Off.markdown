@@ -1,0 +1,34 @@
+---
+layout: postcv
+language: "en"
+keywords: "corevalue team_building"
+image: "/images/Butler/Passion/1/img/3.png"
+title: "Hats Off"
+minidescription: "This is a team building activity where your team has to try on a hat without hands."
+sidetitle: ""
+side: ""
+author: "Bayou Builders<br>Louisiana"
+authorim: "/images/people/BayouBuilders.jpg"
+---
+
+
+<img src="/images/CoreValues/HatsOff.jpg" style="max-width: 100%">
+
+<b>Objectives:</b>
+- Exercise creative thinking
+- Work together to develop a plan
+- Listen to instructions 
+- Trust teammates
+
+<b>Materials:</b>
+- One or more hats that would fit any head
+
+<b>Setup:</b>
+Leave the hat on a table or start it on one student’s head
+
+<b>Instructions to Team:</b>
+Everyone must wear the hat at some point during the activity. You cannot use your hands to touch the hat at any time.
+Get creative!
+
+<b>Notes:</b>
+The more unique the hat, the more fun and engaging the activity can become. Just about any “one size fits all” hat will work. If the team has a fun hat that they wear for competition, use of the hat can be a great way to build team spirit and identity. This activity is a lot of fun in larger groups.
