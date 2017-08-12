@@ -8,7 +8,7 @@ minidescription: "This is a team building activity where your team has to try on
 sidetitle: ""
 side: ""
 author: "Bayou Builders<br>Louisiana"
-authorim: "/images/people/BayouBuilders.jpg"
+authorim: "/images/people/bayou.jpg"
 ---
 
 
