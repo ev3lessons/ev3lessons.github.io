@@ -12,7 +12,7 @@ authorim: "/images/people/cadmes.jpg"
 ---
 
 
-<img src="/images/CoreValues/HumanCharacter.jpg" style="max-width: 100%">
+<img src="/images/CoreValues/HumanCharacter.png" style="max-width: 100%">
 
 <b>Objectives:</b>
 - Learning to work together and coordinate

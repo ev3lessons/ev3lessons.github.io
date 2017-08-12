@@ -8,7 +8,7 @@ minidescription: "This is a team building activity where team members coordinate
 sidetitle: ""
 side: ""
 author: "Cadmes Creators<br>The Netherlands"
-authorim: "/images/people/cadmes.jpg"
+authorim: "/images/people/cadmes.png"
 ---
 
 
