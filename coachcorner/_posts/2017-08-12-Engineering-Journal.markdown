@@ -14,9 +14,12 @@ authorim: "/images/people/group.jpg"
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
 **Questions from Amanda Espy Barbulescu: Do any teams use a form to record what's been done during their meetings, in terms of robot design/building/programming/missions? If so, would you mind sharing it? Do you do it electronically or on paper?**
+
+Engineering Journals are not required in FIRST LEGO League, but some for of record keeping can be useful.  Take a look at some of the examples and ideas below. Some teams type up their notes and some teams hand write them. Some teams will print them out and place in a binder, while others will use a school notebook. There is no right or wrong way. Do what is best for your team.
  
 
-<img src="/images/coachcorner/EngineeringJournal.png" style="max-width: 100%" />
+<img src="/images/coachcorner/EngineeringJournal.jpg" style="max-width: 100%" />
+
 Image Credit: Bayou Builders from Louisiana
 
 **Response by Francis Cariño Belizario**
@@ -25,8 +28,8 @@ Both our teams used both an engineering book (which we simply call diary) to be 
 
 **Response by Jessi Scott**
 
-Here's pictures from the BinaryMcBrickBots' logs. Taking these pictures is the first time I've touched them.
-<img src="/images/coachcorner/EngineeringJournal2.png" style="max-width: 100%" />
+Here are pictures from the BinaryMcBrickBots' logs. Taking these pictures is the first time I've touched them.
+<img src="/images/coachcorner/EngineeringJournal2.jpg" style="max-width: 100%" />
 
 **Response by Faith Knudsen Bongiorno** 
 
@@ -46,6 +49,6 @@ We encourage teams to keep to some form of documentation (whatever works best fo
 
 The Bayou Builders from Louisiana provide great examples for an Engineering Notebook on their Facebook page. These ideas are shared here with their permission.
 
-<img src="/images/coachcorner/EngineeringJournal4.png" style="max-width: 100%" />
+<img src="/images/coachcorner/EngineeringJournal4.jpg" style="max-width: 100%" />
 
-<img src="/images/coachcorner/EngineeringJournal5.png" style="max-width: 100%" />
+<img src="/images/coachcorner/EngineeringJournal5.jpg" style="max-width: 100%" />
