@@ -35,15 +35,15 @@ Here are pictures from the BinaryMcBrickBots' logs. Taking these pictures is the
 
 Teams I work with are required to keep written log, in pen, and needs to have date, members present, goals for meeting, and what was achieved. Any notes for next meeting.
 
-**Response by Gloria Gibson** 
+**Response by Gloria Gibson (Florida)** 
 
 I don't have copy here--they are at school but what we do for technical is lots of drawings, prototyping etc and pictures to document. Prior to programming, we use photo maps to layout robot paths, which missions to combine and what sensors they would use--this helps with robot build to make sure we put sensors in correct places and sizing of robot for spaces they want to travel. Once robot is built for programming, I have a form that has blocks for each move robot makes--any changes are logged in the blocks......some are simple like charting how many rotations for turns (rookie team) or degrees for gyro turns. This allows team to pick up next meeting and if something isn't correct--they already know what worked/didn't work. I feel that documentation is one of the best tools we can teach future engineers--it's also worth noting that the team has been recognized many times by judges for their extensive documentation--one team even received Judges Award at Legoland California for their engineer notebook.
 
-**Response by Seshan Brothers** 
+**Response by Seshan Brothers (Pennsylvania)** 
 
-We encourage teams to keep to some form of documentation (whatever works best for the team). Sometimes, it is a notebook or binder. It can be handwritten or printed. Here is an example of what we give out to teams we mentor. (Not able to attach it as PDF/Word in this comment.)
+We encourage teams to keep to some form of documentation (whatever works best for the team). Sometimes, it is a notebook or binder. It can be handwritten or printed. Here is an example of what we give out to teams we mentor.
 
-<img src="/images/coachcorner/EngineeringJournal3.png" style="max-width: 100%" />
+<img src="/images/coachcorner/EngineeringJournal3.jpg" style="max-width: 100%" />
 
 **Response by Asha Seshan** 
 
