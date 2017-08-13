@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Flip Over"
+title: "Model Duplicator"
 minidescription: "This is a team building activity where half of the team has to give instructions to duplicate a model."
 sidetitle: ""
 side: ""

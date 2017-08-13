@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Flip Over"
+title: "Turn Over"
 minidescription: "This is a team building activity where your team has to flip over the towel they are standing on."
 sidetitle: ""
 side: ""
