@@ -1,0 +1,64 @@
+How to use these lessons
+Build a Base Robot
+Introduction to Brick and Software
+Port View
+Moving Straight
+Pseudocode
+Basic Turning
+Displaying Text and Graphics
+Custom Images and Sounds
+Introduction to Touch Sensor
+Introduction to Color Sensor
+Loops
+Switches
+Importing Additional LEGO Blocks
+Sound Block
+Introduction to Sound Sensor
+Introduction to Ultrasonic Sensor
+Basic Line Follower
+Moving An Object
+Final Challenge
+Basic Ultrasonic Wall Follower
+Brick Buttons as Sensors
+Data Wires
+My Blocks with Inputs or Outputs
+Moving with My Blocks
+Turning with My Blocks
+Color Line Follower with My Blocks
+Infrared Sensor
+Debugging Techniques
+Move Blocks
+Reliability Techniques
+Color Sensor Calibration
+Variables
+Logic Operations and Decision Making
+Introduction to Parallel Beams
+Parallel Beam Synchronization
+Arrays
+Introduction to Proportional Control
+Proportional Line Follower
+Proportional Two Color Line Follower
+Proportional Ultrasonic Wall Follower
+Proportional Control with the Sound Sensor
+Ramping Up
+Introduction to Gyro Sensor
+Gyro Sensor - Turns
+Gyro Sensor - Move Straight and Wall Follow
+Squaring on Lines
+Stall Detection
+Menu System
+Data Logging
+Bluetooth
+Random Block
+Files
+Importing Third Party Blocks
+PixyCam for MINDSTORMS
+Mindsensors PSP-Nx Controller
+MINDSTORMS EV3 and Raspberry Pi
+Lessons for ev3dev
+NXT Light Sensors in EV3
+Inside the EV3
+EV3Lights - RGB LED Strip Controller
+8hr NXT Camp
+FLL Beginner Workshop
+FLL Intermediate Workshop

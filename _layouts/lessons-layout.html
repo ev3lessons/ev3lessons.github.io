@@ -279,7 +279,7 @@ alert(max)
   x ++
 }
 
-
+/*
 
 if (language == "fr") {
     x = 0
@@ -761,6 +761,24 @@ x = 0
 
 }
 
+
+*/
+
+
+var i;
+for (i = 0; i < langs.length; i++) {
+
+		if (langs[i].split(':')[0] != language) {
+		    x = 0
+    while (x != document.getElementsByClassName(langs[i].split(':')[0].split('-')[0]).length) {
+   document.getElementsByClassName(langs[i].split(':')[0].split('-')[0])[x].style.display = "none"
+  x ++
+        }
+		}
+		
+		}
+
+		
 }
 
 

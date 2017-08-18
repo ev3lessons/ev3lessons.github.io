@@ -1,0 +1,686 @@
+ <!DOCTYPE html>
+<base href="/">
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+  <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+
+  <title>EV3Lessons.com | by Seshan Brothers</title>
+
+  <!-- [favicon] begin -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <!-- [favicon] end -->
+
+  <!-- CSS Main -->
+  <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+  <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+  <!-- CSS Social -->
+  <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+  <!-- JavaScripts -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+  <!-- HEADER CUT HERE ------------------------------------------------->
+
+
+</head>
+<script>
+function url() {
+if (decodeURI(window.location.search.substring(1)) != "") {
+show(decodeURI(window.location.search.substring(1)))
+document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+}
+}
+</script>
+
+<body class="no_js responsive boxed-layout chrome " onload="show('toggle') ; url(); ">
+
+  <!-- TOPBAR -->
+  <div id="po1">
+    <script src="topbar.js"></script>
+    <!-- END TOPBAR -->
+  </div>
+
+  <!-- START WRAPPER -->
+  <div class="wrapper group">
+    <!-- START HEADER -->
+    <div id="header" class="group">
+      <div class="group inner">
+
+
+        <!-- START NAV -->
+        <script src="menu.js"></script>
+        <!-- END NAV -->
+      </div>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- HEADER CUT HERE ------------------------------------------------->
+
+    <script>
+    var alltext = "none"
+    var slidestext = "Slides:"
+    var introText = ["none","none","none","none","none"];
+    var pgintro = 'none';
+    if (language == 'en-us') {
+      var lev = ["Beginner","Intermediate","Advanced","none","none"];
+    }
+
+    if (language == 'el') {
+      pgintro = "Μαθήματα προγραμματισμού";
+      var lev = ["Αρχάριο επίπεδο","Μεσαίο επίπεδο","Ανώτερο επίπεδο","Άλλα","Camp"];
+      introText[0]="Αυτά τα μαθήματα είναι για μαθητές νέους στα EV3. Αυτά τα μαθήματα έχουν σχεδιαστεί να ολοκληρωθούν με την σειρά.";
+      introText[1]="Αυτά τα μαθήματα είναι για μαθητές οι οποίοι κατανοούν την βασική χρήση των κινήσεων και των αισθητήρων";
+      introText[2]="Αυτά τα μαθήματα είναι για μαθητές οι οποίοι είναι ήδη εξοικειωμένοι με τα MyBlocks και την ακολουθία γραμμής (line following).";
+      introText[3]='Αυτά τα μαθήματα έχουν καταχωρηθεί από άλλες ομάδες και χρήστες των EV3. Στο  <a href="contributorfaq.html"> Contributor FAQ</a> μπορείτε να υποβάλετε και εσείς κάποιο μάθημα';
+      introText[4]="Αυτά τα μαθήματα είναι συνδυασμός μαθημάτων κατάλληλα για ενημερώσεις.";
+
+
+    }
+    if (language == "es") {
+      var lev = ["Principiante","Intermedio","Avanzado","none","none"];
+    }
+
+    if (language == "nl") {
+      pgintro = "Programmeer lessen";
+      introText[0]="Deze lessen zijn voor leerlingen die nog niet bekend zijn met de EV3. De lessen zijn ontworpen om in volgorde te leren.";
+      introText[1]="Deze lessen zijn voor leerlingen die de de basis bewegingen en het gebruik van sensoren begrijpen. ";
+      introText[2]="Deze lessen zijn voor leerlingen die bekend zijn met mijn blokken en lijnen volgen";
+      var lev = ["Beginner","Gevorderden","Geavanceerde","none","none"];
+    }
+
+    if (language == "ar") {
+    }
+
+    if (language == "pt-br") {
+      var lev = ["Básicas","Intermediário","Avançada","Além","Oficinas"];
+      alltext = "Todos"
+      introText[0]="Essas lições são para novos estudantes do EV3. Essas lições foram feitas para serem completadas em ordem.";
+      introText[1]="Essas lições são para estudantes que entendem movimentos básicos e uso de sensores.";
+      introText[2]="Essas lições são para estudantes já familiarizados com MyBlocks e seguidores de linha.";
+      introText[3]="Essas lições foram feitas para usuários do EV3 que já completaram todas as lições anteriores e estão interessados  em desenvolver e aprender novas técnicas.  ";
+      introText[4] = "Essas são lições combinadas ideais para utilizar em campo.";
+    }
+
+
+    if (language == 'fr') {
+      pgintro = "none";
+      var lev = ["Débutant","Intermédiaire","Avancé","none","none"];
+      introText[0]="Ces leçons sont destinées aux nouveaux venus dans l'univers EV3. Elles offrent une progression logique, suivez les dans l'ordre!";
+      introText[1]="Ces leçons sont destinées à ceux d'entre vous qui ont déjà une connaissance des déplacements de base, et de l'utilisation des capteurs.";
+      introText[2]="Ces leçons sont destinées aux plus avancés d'entre vous, maîtrisant les blocs personnalisés et le suivi de ligne.";
+      introText[3]="Ces leçons sont conçues par des équipes FLL et des passionnés d'EV3. Si vous voulez contribuer, consultez la rubrique Comment aider?";
+      introText[4]="Ces documents combinent plusieurs leçons dans un cursus idéal pour un camp, un week-end thématique...";
+    }
+    if (language == 'he') {
+      pgintro = "שיעורים";
+      var lev = ["מתחילים  ","בקיאים "," מתקדמים"," אחר"," סדנאות "];
+      introText[0]="שיעורים אלו הינם עבור תלמידים החדשים בשימוש בבקר, אנא צפו בהם לפי הסדר.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[1]="שיעורים אלה הינם עבור תלמידים המבינים את עקרונות התנועה הבסיסית של הרובוט ושימוש בחיישנים<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[2]="שיעורים אלה הינם עבור תלמידים המכירים כבר את יצירת הבלוק המותאם אישית ומעקב אחר קו.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[3]="שיעורים אלה נתרמו על ידי קבוצות ומשתמשי EV3 אחרים אנא פנה לקישור זה - שאלות ותשובות נפוצות - על מנת להשלים את השיעור.<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+      introText[4]="שיעורים אלה מאוגדים יחד כתכנית למידה אידאלית עבור מחנות אימון<br>שימו לב: המצגות המתורגמות נמצאות בשעורים ששמם כתוב בעברית, היכן ששם השעור<br>מופיע באנגלית המצגות עדיין לא תורגמו";
+    }
+    </script>
+
+
+{% include ads.html %}
+
+
+
+
+      <script>
+  var array = []
+
+  function similar(a,b) {
+    var lengthA = a.length;
+    var lengthB = b.length;
+    var equivalency = 0;
+    var minLength = (a.length > b.length) ? b.length : a.length;
+    var maxLength = (a.length < b.length) ? b.length : a.length;
+    for(var i = 0; i < minLength; i++) {
+        if(a[i] == b[i]) {
+            equivalency++;
+        }
+    }
+
+
+    var weight = equivalency / maxLength;
+    return (weight * 100) ;
+}
+
+function show(data) {
+       var valuein = data.toLowerCase().split(' ').join('_');
+
+//  keywords = ["infrared","toggle","beginner","intermediate","advanced","beyond","workshop","sensors","colour colour_sensor","color","ultrasonic","touch","gyro","proportional","introev3","linefollower","brick","software","data","wires","tablet"]
+
+
+  aa = 0
+  usemax = 0
+  while (aa != keywords.length) {
+//      array[aa] = keywords[aa].indexOf(valuein)
+      array[aa] = similar(keywords[aa],valuein)
+
+  aa++
+}
+//alert(array)
+largest = 0
+bb = 0
+//alert(array)
+
+  max = array.indexOf(Math.max.apply(window,array))
+  value = keywords[max]
+//alert(max)
+/*
+if (data == "advanced") {
+value = "advanced"
+}
+if (data == "workshop") {
+value = "workshop"
+}
+if (data == "beyond") {
+value = "beyond"
+}
+if (data == "intermediate") {
+value = "intermediate"
+}
+if (data == "beginner") {
+value = "beginner"
+}
+if (data == "toggle") {
+value = "toggle"
+}
+alert(value)
+
+alert(max)
+*/
+
+  x = 0
+    while (x != document.getElementsByClassName("beginner").length) {
+   document.getElementsByClassName("beginner")[x].style.display = "none"
+  x ++
+  }
+  x = 0
+    while (x != document.getElementsByClassName("intermediate").length) {
+   document.getElementsByClassName("intermediate")[x].style.display = "none"
+  x ++
+  }
+    x = 0
+    while (x != document.getElementsByClassName("advanced").length) {
+   document.getElementsByClassName("advanced")[x].style.display = "none"
+  x ++
+	}
+ x = 0
+    while (x != document.getElementsByClassName("beyond").length) {
+   document.getElementsByClassName("beyond")[x].style.display = "none"
+  x ++
+  }
+    x = 0
+    while (x != document.getElementsByClassName("workshop").length) {
+   document.getElementsByClassName("workshop")[x].style.display = "none"
+  x ++
+	}
+
+
+
+  x = 0
+  while (x != document.getElementsByClassName(value).length) {
+   document.getElementsByClassName(value)[x].style.display = "block"
+  x ++
+	}
+
+}
+
+
+
+
+
+      </script>
+
+
+  <div id="page_meta" class="home-section">
+      <div class="inner group">
+
+        <div class="meta-left">
+          <h2 id="pg-intro" class="page-title">Programming Lessons </h2>
+        </div>
+      </div>
+    </div>
+    <!-- /PAGE META -->
+    <div id="primary" class="layout-sidebar-right home-section">
+      <div class="inner group">
+        <div class="group">
+
+          EV3Lessons has tested and approved all lessons in Beginner,
+          Intermediate, Advanced, Beyond, and Workshops.  If you use any of the
+          lessons in your own classrooms/workshops, or use any techniques/code
+          presented on this site in a contest, you must
+          credit the original author for the work/idea.
+        </p>
+
+       <div id="lessonDiv" ng-controller="lessonCtrl">
+      <div class="tabs-container">
+            <ul class="tabs">
+<li><h4><a onclick="show('toggle')" id="all" href="#tab1" title="Beginner">All</a></h4></li>
+              <li><h4><a onclick="show('beginner')" id="beg" href="#tab1" title="Beginner">Beginner</a></h4></li>
+              <li><h4><a onclick="show('intermediate')" id="int" href="#tab1" title="Intermediate">Intermediate</a></h4></li>
+              <li><h4><a onclick="show('advanced')" id="adv" href="#tab1" title="Advanced">Advanced</a></h4></li>
+              <li><h4><a onclick="show('beyond')" id="other" href="#tab1" title="Contributed Lessons">Beyond</a></h4></li>
+              <li><h4><a onclick="show('workshop')" id="camp" href="#tab1" title="Camp Curriculum">Workshops</a></h4></li>
+                  <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
+                    <!--<datalist id='listid'>
+                        <option label='sensors' value='sensors'>
+                           <option label='color' value='color'>
+                             <option label='touch' value='touch'>
+                             <option label='ultrasonic' value='ultrasonic'>
+                               <option label='gyro' value='gyro'>
+                               <option label='software' value='software'>
+                                 <option label='tablet' value='tablet'>
+                                 <option label='linefollower' value='linefollower'>
+                                   <option label='infrared' value='infrared'>
+                             </datalist>-->
+
+                    <button onclick="show(document.getElementById('search').value)">Go!</button></a></h4></li>
+            </ul>
+            <div class="border-box group">
+
+              <div id="tab1" class="panel group">
+
+
+
+
+                <p class="beginner" id="beg-intro">These lessons are for students new to the
+                  EV3. These lessons are designed to be completed in
+                  order.
+
+                </p>
+
+              <p class="intermediate" id="int-intro">These lessons are for students who understand basic
+                      movement and sensor use.
+                    </p>
+
+                <p class="advanced" id="adv-intro">These lessons are for students already familiar
+                    with MyBlocks and line following.
+                  </p>
+
+
+                <p class="beyond" id='other-intro'>These lessons are intended for EV3 users who have completed all our lessons and interested in trying and learning new techniques and sensors.
+                </p>
+
+
+                <p class="workshop" id="camp-intro">These are combined lesson curriculum that are
+                  ideal for camps
+                </p>
+
+
+<br>
+<script>jekyll = 0</script>
+    {% for post in site.categories.lessons %}
+{% if post.lang == 'fr' %}
+                <div class="{{post.searchterms}}">
+                  <p class="tab-index tab-closed">
+<script>
+document.write(' <a id="'+jekyll+'" href="#" title="Close">{{post.title}}</a>')
+jekyll = jekyll+1
+</script>
+
+                  </p>
+                  <div class="content-tab closed indent">
+			{{ post.content }}
+                  </div>
+<br>
+                </div>
+{% endif %}
+	 {% endfor %}
+
+
+
+
+
+
+
+
+</div></div>
+</div>
+              </div> <!-- panel 5 end -->
+
+            </div>
+<!--          </div> <!-- tabs end -->
+
+        </div> <!-- lesson div end -->
+
+
+
+
+
+
+  <div id="dsa-bot">
+
+        <a href='support.html'>
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;" src="images/dsa/generic1.jpg" width="250" height="250">
+        </a>
+
+
+
+        <a href="http://www.mindsensors.com/">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="http://www.mindsensors.com/img/el_banner2.gif" width="250" height="250">
+        </a>
+        <a href="http://www.damienkee.com/classroom-activities-ev3?utm_source=ev3lessons&utm_medium=banner&utm_campaign=2015">
+          <img style="border-style: solid;
+          border-width: 2px;
+          border-color: #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;"
+          src="images/dsa/damienold.jpg" width="250" height="250">
+        </a>
+        <a href="robots.html">
+          <img  src="images/dsa/robotdesign.jpg" width="250" height="250" style="border-style: solid;
+          border-width: 2px;
+          border-color : #98bf21;
+          border-top-left-radius: 10px 5px;
+          border-bottom-right-radius: 10px 5px;
+          border-bottom-left-radius: 10px 5px;
+          border-top-right-radius: 10px 5px;">
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div> <!-- layout sidebar end -->
+
+
+  <div id="primary" align="middle" class="layout-sidebar-right home-section">
+    <div class="inner group">
+      <div class="group">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+      </div>
+    </div>
+  </div>
+  <!-- END EXTRA CONTENT -->
+
+</div>
+<!-- END WRAPPER -->
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+
+<!-- START FOOTER -->
+<script src="footer.js"></script>
+
+
+  <script>
+  //language = window.location.hash.substring(1);
+  function textFileToArray(filename)
+  {
+    var reader = (window.XMLHttpRequest != null )
+    ? new XMLHttpRequest()
+    : new ActiveXObject("Microsoft.XMLHTTP");
+    reader.open("GET", filename, false );
+    reader.send();
+    return reader.responseText.split(/\r\n|\n|\r/); //.split(/(\r\n|\n)/g);
+  }
+
+  document.write('<scr'+'ipt>var urldes = textFileToArray("translations/'+language+'/lessons.txt");</scr'+'ipt>');
+  </script>
+
+
+  <script>
+
+
+
+
+
+
+  //var a = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+  //var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+  var a = ['zero','one','two','three','four','five','six','seven','eight','nine'];
+
+
+  function inWords (num) {
+    if ((num = num.toString()).length > 9) return 'overflow';
+    //    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+    n = ('000000' + num).substr(-6).match(/^(\d{3})(\d{1})(\d{2})$/);
+    if (!n) return; var str = '';
+    //    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+    //    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+    //    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+    //    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+    //    str += (n[5] != 0) ? ((str != '') ? 'and' : '') + (a[Number(n[5])] || b[n[5][0]] + '' + a[n[5][1]]) + '' : '';
+    str += (n[1] != 0) ? (a[Number(n[1])] || a[n[1][0]] + '' + a[n[1][1]] + '' + a[n[1][2]]) + '' : '';
+    str += (n[2] != 0) ? (a[Number(n[2])]) + '' : '';
+    str += ((n[3] > 9) || (str != '')) ? (a[n[3][0]] + '' + a[n[3][1]]) : (a[Number(n[3])])
+    return str;
+  }
+
+
+  var i = 1;
+  //document.write(inWords(10));
+  document.write('<scr'+'ipt>\
+  var lessonApp = angular.module("lessonApp", []);\
+  lessonApp.controller("lessonCtrl", function($scope) {');
+  document.write("$scope.Slides = '"+slidestext+"' ;");
+/*  while (i < 14) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+  i = 15;
+  while (i < 19) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+  i = 50;
+  while (i < 65) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+
+  i = 100;
+  while (i < 116) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+    i = i + 1;
+  }
+
+
+
+*/
+
+  i = 0
+  while (i != 300){
+  tabs = $( "#"+i+"" ).parent().parent().prop('className')
+  if (tabs != undefined) {
+    if (urldes[i] != "none") {
+      document.getElementById(String(i)).innerHTML = urldes[i];
+      document.write('$scope.'+inWords(i)+' = "'+language+'";');
+    } else {
+      document.write('$scope.'+inWords(i)+' = "en-us";');
+      if (language != 'en-us'){
+        document.getElementById(String(i)).innerHTML = document.getElementById(String(i)).innerHTML + ' <i style="color: red">(English)</i>';
+      }
+    }
+  }
+  i++
+  }
+
+
+
+
+
+
+
+
+  document.write('});\
+  angular.bootstrap(lessonDiv, ["lessonApp"]);\
+  </scr'+'ipt>');
+
+  if (lev[0] != 'none') document.getElementById('beg').innerHTML = lev[0];
+  if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
+  if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
+  if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
+  if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
+    if (alltext != 'none') document.getElementById('all').innerHTML = alltext;
+  if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
+  if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
+  if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
+  if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
+  if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
+  if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
+
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+
+  if (typeof jQuery != 'undefined') {
+    jQuery(document).ready(function($) {
+      var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+      var baseHref = '';
+      if (jQuery('base').attr('href') != undefined)
+      baseHref = jQuery('base').attr('href');
+      jQuery('a').each(function() {
+        var href = jQuery(this).attr('href');
+        if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+          jQuery(this).click(function() {
+            var extLink = href.replace(/^https?\:\/\//i, '');
+            _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+              setTimeout(function() { location.href = href; }, 200);
+              return false;
+            }
+          });
+        }
+        else if (href && href.match(/^mailto\:/i)) {
+          jQuery(this).click(function() {
+            var mailLink = href.replace(/^mailto\:/i, '');
+            _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+          });
+        }
+        else if (href && href.match(filetypes)) {
+          jQuery(this).click(function() {
+            var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+            var filePath = href;
+            _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+            if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+              setTimeout(function() { location.href = baseHref + href; }, 200);
+              return false;
+            }
+          });
+        }
+      });
+    });
+}
+
+
+
+
+
+
+
+
+count = 0
+counta = 0
+keywords=[]
+while (count != 300){
+tabs = $( "#"+count+"" ).parent().parent().prop('className')
+if (tabs != undefined) {
+  keywords = keywords.concat(tabs.split(' '))
+  tabname = $("#"+count+"").text().toLowerCase().split(' ').join('_')
+  keywords = keywords.concat(tabname);
+  $("#"+count+"").parent().parent().addClass(tabname);
+  counta++
+}
+count++
+}
+
+
+
+
+  </script>
+  <!-- FOOTER CUT HERE ------------------------------------------------->
+</body>
+</html>

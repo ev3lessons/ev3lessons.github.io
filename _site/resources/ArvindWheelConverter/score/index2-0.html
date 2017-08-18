@@ -1,0 +1,408 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+
+  if (window.location.hash) {
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
+    if (window.location.hash == "#br") {
+      window.location.hash = "#pt-br";
+      setTimeout(function(){location.reload(true);},100);
+    }
+  } else {
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
+  }
+  var page = window.location.href.split("#")[0];
+  var enus = ''+ page +'#en-us';
+  var es = ''+ page +'#es';
+  var nl = ''+ page +'#nl';
+  var ar = ''+ page +'#ar';
+  var ptbr = ''+ page +'#pt-br';
+  var el  = ''+ page +'#el';
+  var fr  = ''+ page +'#fr';
+  var ct  = ''+ page +'#ct';
+  var he  = ''+ page +'#he';
+  // var page = window.location.href.split("#")[0];
+  // alert (page);
+  // var href = window.location.href;
+  // alert(href);
+
+
+  </script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="exporting.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="scorer.js"></script>
+  <script src="timers.js"></script>
+  <script src="saver.js"></script>
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="scorer.min.css" />
+
+  <script type="text/javascript" src="jqm-spinbox.min.js"></script>
+
+  <div ng-app="MenuApp" ng-controller="MenuCtrl">
+    <br>
+    <div>
+      <div style="float: right; margin-right: 20px; font-size:12px">by <a href="http://ev3lessons.com" data-ajax="false">EV3Lessons.com</a>
+      </div>
+      <div style="float: left; margin-left:10px">  <a href="#en-us" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/us.png"></a>
+        <a href="#pt-br" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/br.png"></a>
+        <a href="#nl" data-ajax="false" onclick="setTimeout(function(){window.location.reload(true);},100)"><img src="../../images/icons/countries/nl.png"></a>
+      </div>
+      <div style="margin: 0 auto; width: 400px; font-size:24px"><b>{{Title}}</b>
+      </div>
+
+    </div>
+    <br>
+
+    <div data-tap-toggle="false" data-role="footer" style="background-color: green; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+      <h1 style="padding-top:0; padding-bottom:0" id="allpoints">{{Points}}: 0 <input type="button" value="Reset" class="ui-mini" onclick="window.location.reload()"></h1>
+    </div>
+    <script src="html.js"></script>
+
+  </head>
+  <body onload="check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');
+  $('#yesallsamples').checkboxradio('disable');">
+  <div role="main" class="ui-content">
+
+    <div data-role="tabs">
+
+      <div id="tabs-1">
+        <table>
+          <tr>
+            <script>
+
+            mobile = 500
+            mobile1 = 1000
+
+            all_screen = 0
+            startrow(all_screen)
+
+            starttable('M01', '{{M01}}','sharktank.png' , ['shark','shark2','shark3'], 1)
+            createbutton("shark", 7, '{{M01a}}')
+            createbutton("shark2", 10, '{{M01b}}')
+            createbutton("shark3", 20, '{{M01c}}')
+            createbuttonconflict('shark','shark2','')
+            createbuttonenables('shark','shark3')
+            createbuttonenables('shark2','shark3')
+            createcomment('{{M01d}}')
+            endtable()
+
+            starttable('M02', '{{M02}}','servicedogsmall.png', ['servicedog'], 1)
+            createbutton("servicedog", 15 , '{{M02a}}')
+            createcomment('{{M02b}}')
+            endtable()
+
+            starttable('M03', '{{M03}}','animalconservation.png', ['pairs'], 1)
+            createrange("pairs", 20 , 0, 5, 0, '{{M03a}}')
+            createcomment('{{M03b}}')
+            endtable()
+
+            starttable('M04', '{{M04}}','refrigerator.png', ['food'], 1)
+            createrange("food", 10 , 0, 8, 0, '{{M04a}}')
+            createcomment('{{M04b}}')
+            endtable()
+
+            starttable('M05', '{{M05}}','biomimicrywall.png' , ['biomimicrywall','biomimicrywall2'], 1)
+            createbutton("biomimicrywall", 15 , '{{M05a}}')
+            createbutton("biomimicrywall2", 32 , '{{M05b}}')
+            createcomment('{{M05c}}')
+            endtable()
+
+            breakrow(mobile1,100000)
+
+            starttable('M06', '{{M06}}','milkingautomation.png', ['milkingautomation','milkingautomation2'], 1)
+            createbutton("milkingautomation", 15 , '{{M06a}}')
+            createbutton("milkingautomation2", 20 , '{{M06b}}')
+            createbuttonconflict('milkingautomation','milkingautomation2','')
+            createcomment('{{M06c}}')
+            endtable()
+
+            //            endrow(mobile)
+            //            startrow(mobile)
+
+            starttable('M07', '{{M07}}','pandaobservation.png' , ['pandaobservation'], 0)
+            createbutton("pandaobservation", 10 , '{{M07a}}')
+            endtable()
+
+            starttable('M08', '{{M08}}','seal.png' , ['camera'], 0)
+            createbutton("camera", 15 ,'{{M08a}}')
+            endtable()
+
+            breakrow(mobile,mobile1)
+
+            starttable('M09', '{{M09}}','zoologist.png' , ['dogandtrainer', 'zoologist','manure'], 1)
+            createbutton("dogandtrainer", 12 , '{{M09a}}')
+            createbutton("zoologist", 15 , '{{M09b}}')
+            createrange("manure", 5 , 0, 7, 0, '{{M09c}}')
+            createcomment('{{M09d}}')
+            endtable()
+
+            starttable('M10', '{{M10}}','beehiveandhoney.png' , ['beehive', 'honey'], 0)
+            createbutton("beehive", 12 , '{{M10a}}')
+            createbutton("honey", 15 , '{{M10b}}')
+            createbuttonconflict('beehive','honey','')
+            endtable()
+
+            breakrow(mobile1,100000)
+
+            starttable('M11', '{{M11}}','pigwheel.png' , ['ourlittlefriend', 'farm'], 0)
+            createbutton("ourlittlefriend", 9, '{{M11a}}')
+            createbutton("farm", 15, '{{M11b}}')
+            createbuttonconflict('ourlittlefriend','farm','')
+            endtable()
+
+            //            endrow(mobile1)
+            //            startrow(mobile1)
+
+            starttable('M12', '{{M12}}','seal.png' , ['seal'], 0)
+            createbutton("seal", 1 ,'{{M12a}}')
+            endtable()
+
+            starttable('M13', '{{M13}}','milk.png', ['milk'], 0)
+            createbutton("milk", 1 , '{{M13a}}')
+            endtable()
+
+            starttable('M14', '{{M14}}','ramp.png', ['ramp1','ramp2','ramp3'], 0)
+            createbutton("ramp1", 2 , '{{M14a}}')
+            createbutton("ramp2", 3 , '{{M14b}}')
+            createbutton("ramp3", 4 , '{{M14c}}')
+            createbuttonconflict('milk','ramp1','')
+            createbuttonconflict('milk','ramp2','')
+            createbuttonconflict('milk','ramp3','')
+            createbuttonconflict('ramp1','ramp2','')
+            createbuttonconflict('ramp1','ramp3','')
+            createbuttonconflict('ramp2','ramp3','')
+            endtable()
+
+            starttable('M15', '{{M15}}','manuresamples.png', ['allsamples'], 0)
+            createbutton("allsamples", 5 , '{{M15a}}')
+            endtable()
+
+            starttable('P','{{Penalty}}','manuresamples.png', ['penalty'], 0)
+            createrange("penalty", -6 , 0, 5, 0, '{{Penaltya}}')
+            endtable()
+
+
+            //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+
+            endrow(all_screen)
+
+
+
+            </script>
+          </tr>
+        </table>
+      </div>
+      <div id="tabs-2">
+        <p>
+          <div class="ui-mini" id="Timer">
+            Timer:
+            <table style="border: 10px solid black; border-collapse: collapse;">
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                  <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                  </p>
+                </td>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" onclick="CDtimer()">Start</button>
+                </td>
+              </tr>
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Pause</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="ui-mini" id="Stopwatch">
+            Stopwatch:
+            <table style="border: 10px solid black; border-collapse: collapse;">
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                  <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                  </p>
+                </td>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Pause</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p>
+      </div>
+      <div id="tabs-3">
+        <div style="width: 340">     <input type="button" onclick="saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRAAscorer.split('/').length-1"   value="Save Score"></div>
+        <br>
+
+        <div class="ui-grid-b ui-responsive">
+          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">    <input style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)" value="Load Save:"></div></div>
+          <div class="ui-block-b" style="width: 170">
+
+            <div data-role="stepper" data-direction="vertical">
+
+              <script>
+              start = 1; maximum = window.localStorage.DRAAscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
+              document.write(' <input data-role="spinbox"  type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
+
+              </script>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div style="width: 340">	  <input type="button" onclick="window.localStorage.DRAAscorer = ''; window.localStorage.DRAA1scorer = '' ; alert('Please reload to delete saves!')" value="Delete all Saves"></div>
+
+        <script>
+
+        </script>
+        <script>
+
+        </script>
+        <div style="width: 340">
+          <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+          <div id="saves" ></div>
+
+          <button class="ui-mini" onclick=" alert('choose .DRAA file') ; document.getElementById('fileInput').click() ; alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click()
+          ;">Import Saved Scores</button>
+
+          <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRAAscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
+          <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRAAscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
+
+          <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
+          <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
+          <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Saved Scores</button>
+          <script type="text/javascript">
+          var anchor = document.getElementById('export');
+          var anchor2 = document.getElementById('export2');
+
+          anchor.onclick = function() {
+            var currentTime = new Date()
+            var day = currentTime.getDate()
+            anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRAAscorer);
+            anchor.download = day + 'myscores.DRAA';
+            //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRAA1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
+          };
+          anchor2.onclick = function() {
+            var currentTime = new Date()
+            var day = currentTime.getDate()
+            anchor2.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRAA1scorer);
+            anchor2.download = day + 'myscores.AA1EV3';
+          }
+          </script>
+
+        </div>
+
+      </div>
+      <div data-role="navbar">
+
+        <div data-tap-toggle="false" data-role="header" data-position="fixed">
+
+          <ul>
+            <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+            <li><a href="#tabs-2">{{Timers}}</a></li>
+            <li><a href="#tabs-3">{{Saves}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="languages.js"></script>
+<script>
+
+loadsaves(); drawBasic();
+
+</script>
+</body>
+<script>
+window.onload = function() {
+  var fileInput = document.getElementById('fileInput');
+
+  fileInput.addEventListener('change', function(e) {
+    var file = fileInput.files[0];
+    var textType = /text.*/;
+
+    if (1==1) {
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        data = reader.result;
+        //alert(data)
+
+        window.localStorage.DRAAscorer = data;
+      }
+
+      reader.readAsText(file);
+    } else {
+
+    }
+  });
+
+
+
+  var fileInput2 = document.getElementById('fileInput2');
+
+  fileInput2.addEventListener('change', function(e) {
+    var file2 = fileInput2.files[0];
+    var textType2 = /text.*/;
+
+    if (1==1) {
+      var reader2 = new FileReader();
+
+      reader2.onload = function(e) {
+
+        data2 = reader2.result;
+        //alert(data2)
+        window.localStorage.DRAA1scorer =  data2;
+      }
+
+      reader2.readAsText(file2);
+    } else {
+
+    }
+  });
+
+}
+
+</script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+</script>
