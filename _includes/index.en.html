@@ -3,11 +3,22 @@
 			        <h2><img src="images/icons/comment.png" alt="icon-adjust" /> Users love <br><span>EV3Lessons.com</span></h2>
 			        <p>feedback</p>
 			   </div>
-<div class="w3-content w3-section" style="max-width:500px;float: left;padding:10px">
-  <p class="mySlides"  style="width:100%">"Hands down the best EV3 programming site around."</p>
-  <p class="mySlides"  style="width:100%">"I have purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>
-  <p class="mySlides"  style="width:100%">"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>
-  <p class="mySlides"  style="width:100%">"Your lessons are the best, most useful, and most detailed that I have found!"</p>
+<div class="w3-content w3-section" style="max-width:500px;float: left;padding-left:15px; text-align: left;">
+  <p class="mySlides"  style="width:100%; ">"Hands down the best EV3 programming site around."</p>
+  <p class="mySlides"  style="width:100%; ">"I have purchased,  created and recreated curriculum material for my robotics classes over the past 6 years and put it all aside when I found your website."</p>
+  <p class="mySlides"  style="width:100%; ">"Whenever I meet rookie teams, I ALWAYS refer them to your site."</p>
+  <p class="mySlides"  style="width:100%; ">"Your lessons are the best, most useful, and most detailed that I have found!"</p>
+  <p class="mySlides"  style="width:100%">"EV3Lessons is about the most extensive and accurate EV3 information I have seen."</p>
+  <p class="mySlides"  style="width:100%">"Your site is amazing!"</p>
+  <p class="mySlides"  style="width:100%">"I have been a FLL referee
+			   for several years in the in
+			   Netherlands. When I was a referee, some
+			   kids referred me to this site. The children
+			   told me how how much they have leaned from
+  this site."</p>
+   <p class="mySlides"  style="width:100%">"The go-to site for FIRST
+			   LEGO League teams."</p>
+  
 </div>
 			   
 			 <script>
@@ -56,9 +67,14 @@ function carousel() {
 			    </div>
 			    <div class="hentry-post group">
 			      <h3>Lessons</h3>
-			       {% for post in site.categories.lessons limit:5 %}
-<!--			      <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>-->
-			            <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>
+			       {% for post in site.categories.lessons limit:17 %}
+
+<script>
+if ('{{ post.lang }}' == 'en') {
+document.write('			            <li><a class="post-link" href="lessons.html">{{ post.title }}</a></li>')
+}
+</script>
+
     {% endfor %} 
 </div>
 			   <div class="hentry-post group ">
