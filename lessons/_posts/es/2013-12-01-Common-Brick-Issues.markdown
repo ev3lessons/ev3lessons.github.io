@@ -1,0 +1,14 @@
+---
+title: "Problemas Comunes del Brick"
+searchterms: "toggle beginner programs programmes programming programming_app programing introev3 brick software ev3 buttons centre up- down- left- right- center- ipad tablet android app introduction"
+lang: "es"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/es/beginner/CommonIssues.pptx">PPTX</a>,
+ <a href="translations/es/beginner/CommonIssues.pdf">PDF</a>
+ </li>
+
+
+
+ </ul>
