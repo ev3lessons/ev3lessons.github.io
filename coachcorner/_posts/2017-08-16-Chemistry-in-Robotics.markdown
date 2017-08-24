@@ -13,7 +13,7 @@ authorim: "/images/people/bananas.jpg"
 
 Several coaches and parents have asked one version or another of a question over the past two years that basically boils down to this – How did you pick the kids that would be on your team?  Now in our third season with the High Voltage Couch Bananas, we have a single and simple answer – CHEMISTRY.  
 
-<img src="/images/coachcorner/BananasFLL.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/BananasFLL.jpg" style="max-width: 100%" />
 
 
 Granted, as a non-school based team, we had some flexibility that some coaches or programs may not.  We got to choose who we were going to invite when we founded the team.  That meant we could start with some criteria, but what criteria should we look at?  It’s not exactly like we could get math test scores or look at report cards!  Instead, we decided to start somewhere that made sense.  We looked for a group of kids that already got along… really, really well.  We figured that if we could find kids that already had natural chemistry, they stood a better chance to survive the stress that would be added by having to learn something entirely foreign… like robotics… from some people that had never done this before! (Namely my wife and I.)  

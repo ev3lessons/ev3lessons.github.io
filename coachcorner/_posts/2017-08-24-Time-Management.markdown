@@ -13,12 +13,12 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##ßHow do you assist your kiddos with time management?
+##How do you assist your team with time management?
 
-<img src="/images/coachcorner/Schedule.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/Schedule.jpg" style="max-width: 100%" />
 Photo Credit: Jessi Scott
 
-**Response by Charles Angel **
+**Response by Charles Angel**
 
 Good question. We are diving into that more with our FTC team, but I'm not sure I've done very well with my FLL teams in the past. One thing that helps us with "deadlines" is having the team create goals for the scrimmage...updating goals for regionals...and updating goals if the team advances farther. Each meeting we talk about where we are on each goal and what we need to do to get there. We haven't broken it down into tasks as much, which would be good and provide more short-term goals to accomplish.
 
