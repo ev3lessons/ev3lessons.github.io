@@ -7,7 +7,7 @@ title: "Why Chemistry Matters in Robotics"
 minidescription: "This article is about how to pick kids to be on a team."
 sidetitle: ""
 side: ""
-author: Chad Houck
+author: "Chad Houck<br>Couch Bananas<br>Idaho, USA"
 authorim: "/images/people/bananas.jpg"
 ---
 
