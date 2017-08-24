@@ -13,7 +13,7 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##How do you assist your kiddos with time management?##
+##ßHow do you assist your kiddos with time management?
 
 <img src="/images/coachcorner/Schedule.jpg" style="max-width: 100%" />"
 Photo Credit: Jessi Scott
