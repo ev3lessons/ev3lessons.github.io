@@ -1,7 +1,7 @@
 ---
 title: "Moviéndose derecho"
-searchterms: "toggle beginner moving ipad programming_app tablet android app moving_straight forward backward"
-lang: "en"
+searchterms: "toggle beginner moving moving_straight forward backward"
+lang: "es"
 ---
  <ul>
  <li class="ng-binding">Slides:
