@@ -1,5 +1,5 @@
 ---
-title: "What Makes a Project Innovative?"
+title: "What Makes a Project Innovative? *Coming Soon*"
 searchterms: "toggle fll research_project research"
 lang: "en"
 ---
