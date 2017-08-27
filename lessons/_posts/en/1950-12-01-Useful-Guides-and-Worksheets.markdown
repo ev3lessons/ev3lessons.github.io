@@ -7,17 +7,29 @@ lang: "en"
 <li >Roles and Responsibilities Chart:
 <a href="translations/en-us/fll/RolesandResponsibilities.docx">Word docx</a>
  </li>
-<li >Pseudocode for Missions:
+<li >Pseudocode Worksheet for Missions:
 <a href="translations/en-us/fll/FLLMissionPseudocode.docx">Word docx</a>
 </li>
-<li >Mission Strategy Guide *Coming Soon*:
+<li >Mission Strategy Worksheet *Coming Soon*:
 <a href="">Word Doc</a>
 </li>
-<li >Run Notecards *Coming Soon*:
-<a href="">Word Doc</a>
+<li >Run Notecards:
+<a href="translations/en-us/fll/RunNotecards.pptx">PPTX</a>
 <li >Engineering Journal:
 <a href="translations/en-us/fll/EngJournal2017.docx">Word docx</a>
 </li>
-
+<li >Tournament Checklist:
+<a href="translations/en-us/fll/TournamentChecklist.docx">Word docx</a>
+</li>
+</li>
+<li >Core Values Poster (by Ana Paula from Roboticando):
+<a href="translations/en-us/fll/CoreValuesPoster.pdf">PDF</a>
+</li>
+<li >Mission Strategy Quick Guide:
+<a href="translations/en-us/fll/FLLStrategy.pdf">PDF</a>
+</li>
+<li >LEGO CAD Tools Quick Guide:
+<a href="translations/en-us/fll/LEGOCAD.pdf">PDF</a>
+</li>
 </li>
  </ul>
