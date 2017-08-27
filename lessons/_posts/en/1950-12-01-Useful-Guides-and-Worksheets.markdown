@@ -4,19 +4,19 @@ searchterms: "toggle fll "
 lang: "en"
 ---
  <ul>
- <li >Roles and Responsibilities Chart
+<li >Roles and Responsibilities Chart:
 <a href="translations/en-us/fll/RolesandResponsibilities.docx">Word docx</a>
  </li>
-<li >Pseudocode for Missions
+<li >Pseudocode for Missions:
 <a href="translations/en-us/fll/FLLMissionPseudocode.docx">Word docx</a>
 </li>
-<li >Mission Strategy Guide *Coming Soon
+<li >Mission Strategy Guide *Coming Soon*:
 <a href="">Word Doc</a>
 </li>
-<li >Run Notecards *Coming Soon
+<li >Run Notecards *Coming Soon*:
 <a href="">Word Doc</a>
-<li >Engineering Journal
-<a href="translations/en-us/fll/EngJournal2017.docx">Word docx</a>,
+<li >Engineering Journal:
+<a href="translations/en-us/fll/EngJournal2017.docx">Word docx</a>
 </li>
 
 </li>
