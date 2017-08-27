@@ -7,11 +7,9 @@ lang: "en"
 <li >Roles and Responsibilities Chart:
 <a href="translations/en-us/fll/RolesandResponsibilities.docx">Word docx</a>
  </li>
-<li >Pseudocode Worksheet for Missions:
-<a href="translations/en-us/fll/FLLMissionPseudocode.docx">Word docx</a>
-</li>
-<li >Mission Strategy Worksheet *Coming Soon*:
-<a href="">Word Doc</a>
+
+<li >LEGO CAD Tools Quick Guide:
+<a href="translations/en-us/fll/LEGOCAD.pdf">PDF</a>
 </li>
 <li >Run Notecards:
 <a href="translations/en-us/fll/RunNotecards.pptx">PPTX</a>
@@ -28,8 +26,12 @@ lang: "en"
 <li >Mission Strategy Quick Guide:
 <a href="translations/en-us/fll/FLLStrategy.pdf">PDF</a>
 </li>
-<li >LEGO CAD Tools Quick Guide:
-<a href="translations/en-us/fll/LEGOCAD.pdf">PDF</a>
+<li >Pseudocode Worksheet for Missions:
+<a href="translations/en-us/fll/FLLMissionPseudocode.docx">Word docx</a>
 </li>
+<li >Mission Strategy Worksheet *Coming Soon*:
+<a href="">Word Doc</a>
 </li>
+
+
  </ul>

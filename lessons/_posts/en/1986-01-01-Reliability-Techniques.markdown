@@ -1,6 +1,6 @@
 ---
 title: "Reliability Techniques"
-searchterms: "toggle intermediate debugging alignment battery fll first_lego_league coast reliability reliability_techniques"
+searchterms: "toggle intermediate debugging alignment battery coast reliability reliability_techniques"
 lang: "en"
 ---
  <ul>
