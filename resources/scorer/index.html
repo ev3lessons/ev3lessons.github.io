@@ -75,7 +75,7 @@
                 endtable()
 
                 starttable('M03', 'Pump Addition','M03.png', ['pumpaddition'], 0)
-		            createbutton("pumpaddition", 20 , 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?')
+                createbutton("pumpaddition", 20 , 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?')
                 endtable()
 
                 starttable('M04', 'Rain','M04.png', ['rain'], 0)
@@ -87,18 +87,18 @@
                 endtable()
 
                 starttable('M06', 'Water Treatment','M06.png', ['watertreatment'], 0)
-                createbutton("watertreatment", 30, 'Has the Big Water been ejected, due only to moving the Toilet lever?')
+                createbutton("watertreatment", 20, 'Has the Big Water been ejected, due only to moving the Toilet lever?')
                 endtable()
 
 
                 starttable('M07', 'Fountain','M07.png' , ['fountain'], 0)
-                createbutton("fountain", 10 , 'Has the Fountain’s middle layer risen some obvious height, due only to a Big Water in the gray tub?')
+                createbutton("fountain", 20 , 'Has the Fountain’s middle layer risen some obvious height, due only to a Big Water in the gray tub?')
                 endtable()
 
                 starttable('M08', 'Manhole Covers','M08.png', ['manholecovers', 'manholecovers2'], 0)
                 createrange("manholecovers", 15 , 0, 2, 0, 'How many Manhole covers are flipped over past veritical without ever reaching Base?','')
                 createbutton("manholecovers2", 30 , 'Are both Manhole covers completely in separate Tripod targets?')
-endtable()
+                endtable()
 
                 breakrow(mobile1,100000)
 
@@ -150,20 +150,20 @@ endtable()
                 createbutton("fire", 25, 'Did the fire drop only by making the Firetruck apply direct force to the House’s lever?')
                 endtable()
 
-		 starttable('M16', 'Water Collection', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+		            starttable('M16', 'Water Collection', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
                 createbutton("collection1", 10, 'Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water?')
                 createrange("collection2", 10, 0, 4, 0, 'How many Big Water are there that are touching the mat in the Water Target and touching nothing else other than the target and/or other water?','')
                 createbutton("collection3", 30, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?')
                 createcomment('Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.')
                 endtable()
 
-		starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
-                createbutton("slingshot1", 20 , 'Is the Sligshot completely in its target?')
-                createbutton("slingshot2", 15 , 'Is the Dirty Water and a Rain completely in the Slingshot target?')
+		            starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Is the Sligshot completely in its target?')
+                createbutton("slingshot2", 15, 'Is the Dirty Water and a Rain completely in the Slingshot target?')
                 createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
-		starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
+		            starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
                 createbutton("faucet", 25, 'Is the water level obviously more blue than white as seen from above the cup, only by turning the Faucet handle?')
                 endtable()
 
