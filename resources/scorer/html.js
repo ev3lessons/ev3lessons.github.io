@@ -76,7 +76,7 @@ function startrow(width) {
   if (window.innerWidth > width) {
     //alert(screen.width)
     //alert(width)
-    document.write('<td style="display: inline-block; valign="top">')
+    document.write('<td style="display: inline-block;" valign="top">')
   }
 }
 function endrow(width) {

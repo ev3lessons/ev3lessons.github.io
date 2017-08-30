@@ -98,7 +98,8 @@
                 starttable('M08', 'Manhole Covers','M08.png', ['manholecovers', 'manholecovers2'], 0)
                 createrange("manholecovers", 15 , 0, 2, 0, 'How many Manhole covers are flipped over past veritical without ever reaching Base?','')
                 createbutton("manholecovers2", 30 , 'Are both Manhole covers completely in separate Tripod targets?')
-                endtable()
+endtable()
+
                 breakrow(mobile1,100000)
 
 
@@ -142,6 +143,7 @@
                 createbutton("well2", 25, 'Is the Water Well in contact with the mat and that contact is completely in the Water Well target?')
                 createbuttonconflict('well','well2','')
                 endtable()
+
                 breakrow(mobile1,100000)
 
                 starttable('M15', 'Fire','M15.png', ['fire'], 0)
