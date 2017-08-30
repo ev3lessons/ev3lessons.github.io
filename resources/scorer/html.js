@@ -76,20 +76,20 @@ function startrow(width) {
   if (window.innerWidth > width) {
     //alert(screen.width)
     //alert(width)
-    document.write('<newtag><td valign="top">')
+    document.write('<td style="display: inline-block; valign="top">')
   }
 }
 function endrow(width) {
   if (window.innerWidth < width) {
     //alert('activate')
-    document.write('</td></newtag>')
+    document.write('</td>')
   }
 }
 
 function breakrow(minwidth, maxwidth) {
   if (window.innerWidth > minwidth && window.innerWidth < maxwidth) {
-    document.write('</td></newtag>')
-    document.write('<newtag><td valign="top">')
+    document.write('</td>')
+    document.write('<td style="display: inline-block;" valign="top">')
   } else {
   }
 }

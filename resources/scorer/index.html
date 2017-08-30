@@ -53,7 +53,7 @@
           <form id="missions">
             <style>
             #table_id  {display: block; }
-      #table_id  tr newtag td {display: inline-block; }
+//      tr td {display: inline-block; }
 
             </style>
             <table style="display: block;" id="table_id">
@@ -150,7 +150,7 @@
 
 		            starttable('M16', 'Water Collection', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
                 createbutton("collection1", 10, 'Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water?')
-                createrange("collection2", 10, 0, 5, 0, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?','')
+                createrange("collection2", 10, 0, 5, 0, 'How many Big Water are there that are touching the mat in the Water Target and touching nothing else other than the target and/or other water?','')
                 createbutton("collection3", 30, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?')
                 createcomment('Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.')
                 endtable()
