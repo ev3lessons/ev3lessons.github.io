@@ -78,6 +78,7 @@ maxwater = 5
 fountainUsed = 0
 treatmentUsed = 1
 flowerUsed = 0
+stackUsed = 0
 
 function recalc(points,mission,alt){
   if (alt == 1 && points == 0) {
@@ -99,7 +100,7 @@ function recalc(points,mission,alt){
       } else {
 	  fountainUsed = 0
       }
-      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed - stackUsed
   }
 
   if ((mission=="flower1")) {
@@ -108,7 +109,7 @@ function recalc(points,mission,alt){
       } else {
 	  flowerUsed = 0
       }
-      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed - stackUsed
   }
 
   if ((mission=="watertreatment")) {
@@ -117,7 +118,16 @@ function recalc(points,mission,alt){
       } else {
 	  treatmentUsed = 1
       }
-      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed - stackUsed
+  }
+
+  if ((mission=="collection3")) {
+      if (points > 0) {
+	  stackUsed = 1
+      } else {
+	  stackUsed = 0
+      }
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed - stackUsed
   }
     
   counter = 0
