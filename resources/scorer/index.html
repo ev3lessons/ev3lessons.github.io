@@ -1,3 +1,393 @@
-<h1>Hydro Dynamics Version Coming Soon!</h1>
-<a href="/resources.html"><< Back</a>
-<br><a href="/archive">Archive</a>			 
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+
+
+  </script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="exporting.js"></script>
+  <script src="scorer.js"></script>
+  <script src="timers.js"></script>
+  <script src="saver.js"></script>
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="scorer.min.css" />
+
+  <script type="text/javascript" src="jqm-spinbox.min.js"></script>
+
+  <div ng-app="MenuApp" ng-controller="MenuCtrl">
+    <br>
+    <div>
+      <div style="float: right; margin-right: 20px; font-size:12px">by <a href="http://ev3lessons.com" data-ajax="false"><img src="images/ev3lessons.jpg" width="139"></a>
+      </div>
+      <div style="float: left; margin-left:10px">
+          </div>
+      <div style="margin: 0 auto; width: 400px; font-size:24px"><b>Hydro Dynamics Scorer</b>
+      </div>
+
+    </div>
+    <br>
+
+    <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+      <h1 style="padding-top:0; padding-bottom:0" ><i>Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot|0,slingshot2|0,faucet|0,penalty|0");'></h1>
+    </div>
+    <script src="html.js"></script>
+
+  </head>
+  <body onload="check_missions('piperemoval');recalc(0,'piperemoval',1);">
+    <div role="main" class="ui-content">
+
+      <div data-role="tabs">
+
+        <div id="tabs-1">
+          <form id="missions">
+            <style>
+            #table_id  {display: block; }
+      #table_id  tr newtag td {display: inline-block; }
+
+            </style>
+            <table style="display: block;" id="table_id">
+              <tr>
+                <script>
+
+                mobile = 500
+                mobile1 = 1000
+
+                all_screen = 0
+                startrow(all_screen)
+
+                starttable('M01', 'Pipe Removal','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Is the broken pipe completely in base?')
+                endtable()
+
+                starttable('M02', 'Flow','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Is one Big Water in the other’s field as a result of turning the Pump System’s valve(s)?')
+                endtable()
+
+                starttable('M03', 'Pump Addition','M03.png', ['pumpaddition'], 0)
+		            createbutton("pumpaddition", 20 , 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?')
+                endtable()
+
+                starttable('M04', 'Rain','M04.png', ['rain'], 0)
+		            createbutton("rain", 20 , 'Did at least one Rain come out of the Rain Cloud?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Has the Filter been moved north until the lock latch drops?')
+                endtable()
+
+                starttable('M06', 'Water Treatment','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 30, 'Has the Big Water been ejected, due only to moving the Toilet lever?')
+                endtable()
+
+
+                starttable('M07', 'Fountain','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 10 , 'Has the Fountain’s middle layer risen some obvious height, due only to a Big Water in the gray tub?')
+                endtable()
+
+                starttable('M08', 'Manhole Covers','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'How many Manhole covers are filled over past veritical without ever reaching Base?','')
+                createbutton("manholecovers2", 10 , 'Are both Manhole covers completely in separate Tripod targets?')
+                endtable()
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Tripod','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Is the inspection camera Tripod partly in either Tripod target, with all of its feet touching the mat?')
+                createbutton("tripod2", 20 , 'Is the inspection camera Tripod completely in either Tripod target, with all of its feet touching the mat?')
+		            createbuttonconflict('tripod','tripod2','')
+                endtable()
+                //            endrow(mobile)
+                //            startrow(mobile)
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Pipe Replacement','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Is the New Pipe in the location the Broken Pile was, in full/flat contact with the mat?')
+                endtable()
+
+
+                starttable('M11', 'Pipe Construction','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Is the New Pipe partly in its target, in full/flat contact with the mat?')
+                createbutton("pipeconstruction2", 20, 'Is the New Pipe completely in its target, in full/flat contact with the mat?')
+                createbuttonconflict('pipeconstruction','pipeconstruction2','')
+                endtable()
+
+                //            endrow(mobile1)
+                //            startrow(mobile1)
+
+                starttable('M12', 'Sludge','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Is the Sludge touching the visible wood of any of the six drawn garden boxes?')
+                endtable()
+
+                starttable('M13', 'Flower','M13.png', ['flower', 'flower2'], 0)
+                createbutton("flower", 30 , 'Has the Flower risen some obvious height and stays there, due only to a Big Water in the brown pot?')
+                createbutton("flower2", 30 , 'Does the Flower have at least one Rain in the purple part, touching nothing but the Flower model.')
+                createbuttonenables('flower','flower2')
+                endtable()
+
+                starttable('M14', 'Water Well','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Is the Water Well in contact with the mat and that contact is partly inside the Water Well target?')
+                createbutton("well2", 25, 'Is the Water Well in contact with the mat and that contact is completely in the Water Well target?')
+                createbuttonconflict('well','well2','')
+                endtable()
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Fire','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Did the fire drop only by making the Firetruck apply direct force to the House’s lever?')
+                endtable()
+
+		            starttable('M16', 'Water Collection', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water?')
+                createrange("collection2", 10, 0, 5, 0, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?','')
+                createbutton("collection3", 30, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?')
+                createcomment('Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.')
+                endtable()
+
+		            starttable('M17', 'Slingshot','M17.png', ['slingshot', 'slingshot2'], 0)
+                createbutton("slingshot", 20 , 'Is the Sligshot completely in its target?')
+                createbutton("slingshot2", 15 , 'Is the Dirty Water and a Rain completely in the Slingshot target?')
+                createbuttonenables('slingshot','slingshot2','')
+                endtable()
+
+		            starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Is the water level obviously more blue than white as seen from above the cup, only by turning the Faucet handle?')
+                endtable()
+
+                starttable('P','Penalties','penalty.png', ['penalty'], 0)
+                createrange("penalty", -6 , 0, 6, 0, 'How many penalties are in the white triangle area?','')
+                endtable()
+
+
+                //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+
+                endrow(all_screen)
+
+
+
+                </script>
+              </tr>
+            </table>
+            <br>
+
+          </form>
+        </div>
+        <div id="tabs-2">
+          <p>
+            <div class="ui-mini" id="Timer">
+              Timer:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                    <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="CDtimer()">Start</button>
+                  </td>
+                </tr>
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+
+            <div class="ui-mini" id="Stopwatch">
+              Stopwatch:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                    <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </p>
+        </div>
+        <div id="tabs-3">
+          <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
+          <br>
+
+          <div class="ui-grid-b ui-responsive">
+            <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
+              <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
+              <div class="ui-block-b" style="width: 170">
+
+                <div data-role="stepper" data-direction="vertical">
+                <style>
+                input[type=number]::-webkit-outer-spin-button,
+                input[type=number]::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+
+                input[type=number] {
+                  -moz-appearance:textfield;
+                  }		</style>
+                  <script>
+                  start = 1; maximum = window.localStorage.DRHDSscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
+                  document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
+
+                  </script>
+                </div>
+
+              </div>
+
+            </div>
+            <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
+
+            <div style="width: 340">
+              <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+              <div id="saves" ></div>
+
+              <button class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
+//alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">Import Save</button>
+
+              <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
+              <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
+
+              <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
+              <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
+              <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
+              <script type="text/javascript">
+              var anchor = document.getElementById('export');
+              var anchor2 = document.getElementById('export2');
+
+              anchor.onclick = function() {
+                var currentTime = new Date()
+                var day = currentTime.getDate()
+                anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDSscorer + ';' + window.localStorage.DRHDS1scorer);
+                anchor.download = day + 'myscores.DRHD';
+                //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
+              };
+              anchor2.onclick = function() {
+                var currentTime = new Date()
+            //    var day = currentTime.getDate()
+            //    anchor2.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);
+            //    anchor2.download = day + 'myscores.AA1EV3';
+              }
+              </script>
+
+            </div>
+
+          </div>
+          <div data-role="navbar">
+
+            <div data-tap-toggle="false" data-role="header" data-position="fixed">
+
+              <ul>
+                <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+                <li><a href="#tabs-2">Timers</a></li>
+                <li><a href="#tabs-3">Saves</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="languages.js"></script>
+    <script>
+
+
+    </script>
+  </body>
+  <script>
+  window.onload = function() {
+    loadsaves(); drawBasic();
+
+    //document.getElementById('noshark').click()
+    check_missions('slingshot2');recalc(0,'slingshot2', 0)
+ //   check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
+    var fileInput = document.getElementById('fileInput');
+
+    fileInput.addEventListener('change', function(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
+
+      if (1==1) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          data = reader.result;
+          //alert(data)
+
+          window.localStorage.DRHDSscorer = data.split(';')[0];
+          window.localStorage.DRHDS1scorer = data.split(';')[1];
+        }
+
+        reader.readAsText(file);
+      } else {
+
+      }
+    });
+
+
+
+    var fileInput2 = document.getElementById('fileInput2');
+
+    fileInput2.addEventListener('change', function(e) {
+      var file2 = fileInput2.files[0];
+      var textType2 = /text.*/;
+
+      if (1==1) {
+        var reader2 = new FileReader();
+
+        reader2.onload = function(e) {
+
+          data2 = reader2.result;
+          //alert(data2)
+          window.localStorage.DRHDS1scorer =  data2;
+        }
+
+        reader2.readAsText(file2);
+      } else {
+
+      }
+    });
+
+  }
+  </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
+Scoring System Version 3.9.9 v4.0.0 Alpha
