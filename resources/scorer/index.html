@@ -39,7 +39,7 @@
     <br>
 
     <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-      <h1 style="padding-top:0; padding-bottom:0" ><i>Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot|0,slingshot2|0,faucet|0,penalty|0");'></h1>
+      <h1 style="padding-top:0; padding-bottom:0" ><i>Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
     </div>
     <script src="html.js"></script>
 
@@ -157,10 +157,10 @@ endtable()
                 createcomment('Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.')
                 endtable()
 
-		starttable('M17', 'Slingshot','M17.png', ['slingshot', 'slingshot2'], 0)
-                createbutton("slingshot", 20 , 'Is the Sligshot completely in its target?')
+		starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20 , 'Is the Sligshot completely in its target?')
                 createbutton("slingshot2", 15 , 'Is the Dirty Water and a Rain completely in the Slingshot target?')
-                createbuttonenables('slingshot','slingshot2','')
+                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
 		starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
@@ -168,7 +168,7 @@ endtable()
                 endtable()
 
                 starttable('P','Penalties','penalty.png', ['penalty'], 0)
-                createrange("penalty", -6 , 0, 6, 0, 'How many penalties are in the white triangle area?','')
+                createrange("penalty", -5 , 0, 6, 0, 'How many penalties are in the white triangle area?','')
                 endtable()
 
 

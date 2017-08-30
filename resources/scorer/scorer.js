@@ -32,31 +32,31 @@ function checkbuttonenables(mission,enabled) {
 }
 
 function check_missions(mission) {
-  counter = 0
-  while (counter < conflicts.length){
-    if (conflicts[counter][2] == '') {
-      checkbuttonconflict(conflicts[counter][0],conflicts[counter][1],mission)
+  conflictcount = 0
+  while (conflictcount < conflicts.length){
+    if (conflicts[conflictcount][2] == '') {
+      checkbuttonconflict(conflicts[conflictcount][0],conflicts[conflictcount][1],mission)
     }
     else {
-      checkbuttonconflict(conflicts[counter][0],conflicts[counter][1],conflicts[counter][2])
+      checkbuttonconflict(conflicts[conflictcount][0],conflicts[conflictcount][1],conflicts[conflictcount][2])
     }
-    counter = counter + 1
+    conflictcount = conflictcount + 1
   }
-  counter = 0
-  while (counter < enables.length){
-    thismission = enables[counter][1]
+  enablecount = 0
+  while (enablecount < enables.length){
+    thismission = enables[enablecount][1]
       $('#no'+thismission).checkboxradio('disable');
       $('#yes'+thismission).checkboxradio('disable');
-    counter = counter + 1
+    enablecount = enablecount + 1
   }
-  counter = 0
-  while (counter < enables.length){
-    checkbuttonenables(enables[counter][0],enables[counter][1])
-    counter = counter + 1
+  enablecount = 0
+  while (enablecount < enables.length){
+    checkbuttonenables(enables[enablecount][0],enables[enablecount][1])
+    enablecount = enablecount + 1
   }
-  counter = 0
-  while (counter < enables.length){
-    thismission = enables[counter][1]
+  enablecount = 0
+  while (enablecount < enables.length){
+    thismission = enables[enablecount][1]
     if ($('#no'+thismission).is(':disabled')) {
       document.getElementById('yes'+thismission).checked = false
       document.getElementById('no'+thismission).checked = true
@@ -64,10 +64,8 @@ function check_missions(mission) {
       // $('yes'+thismission).checkboxradio("refresh");
       // $('no'+thismission).checkboxradio("refresh");
     }
-    counter = counter + 1
+    enablecount = enablecount + 1
   }
-  $('#noallsamples').checkboxradio('disable');
-  $('#yesallsamples').checkboxradio('disable');
 
   $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
 }
