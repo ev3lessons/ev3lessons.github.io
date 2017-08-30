@@ -74,6 +74,11 @@ function check_missions(mission) {
 
 
 savepts = 0
+maxwater = 5
+fountainUsed = 0
+treatmentUsed = 1
+flowerUsed = 0
+
 function recalc(points,mission,alt){
   if (alt == 1 && points == 0) {
     savepts = 1
@@ -88,6 +93,33 @@ function recalc(points,mission,alt){
   window[mission] = points
   window[mission+'save'] = savepts
 
+  if ((mission=="fountain")) {
+      if (points > 0) {
+	  fountainUsed = 1
+      } else {
+	  fountainUsed = 0
+      }
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+  }
+
+  if ((mission=="flower1")) {
+      if (points > 0) {
+	  flowerUsed = 1
+      } else {
+	  flowerUsed = 0
+      }
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+  }
+
+  if ((mission=="watertreatment")) {
+      if (points > 0) {
+	  treatmentUsed = 0
+      } else {
+	  treatmentUsed = 1
+      }
+      document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed
+  }
+    
   counter = 0
   allmission = 0
   while (counter < all_mission.length){
