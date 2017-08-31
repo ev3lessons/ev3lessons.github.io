@@ -30,6 +30,25 @@ function checkbuttonenables(mission,enabled) {
     $('#yes'+enabled).checkboxradio('enable');
   }
 }
+enables2 = []
+function createsliderenables(mission,enabled){
+  enables2 = enables2.concat([[mission,enabled]])
+}
+
+function checksliderenables(mission,enabled) {
+  if (document.getElementById(mission).value == 2) {
+    $('#no'+enabled).checkboxradio('enable');
+    $('#yes'+enabled).checkboxradio('enable');
+  } else if (document.getElementById(mission).value != 2) {
+      //  $('#no'+enabled).click();
+          $('#no'+enabled).checkboxradio('enable');
+    $('#yes'+enabled).checkboxradio('enable');
+      document.getElementById('nomanholecovers2').click()
+          $('#no'+enabled).checkboxradio('disable');
+    $('#yes'+enabled).checkboxradio('disable');
+  }
+    
+}
 
 function check_missions(mission) {
   conflictcount = 0
@@ -49,9 +68,22 @@ function check_missions(mission) {
       $('#yes'+thismission).checkboxradio('disable');
     enablecount = enablecount + 1
   }
+      enablecount = 0
+  while (enablecount < enables2.length){
+    thismission = enables2[enablecount][1]
+      $('#no'+thismission).checkboxradio('disable');
+      $('#yes'+thismission).checkboxradio('disable');
+    enablecount = enablecount + 1
+  }
+    checksliderenables("manholecovers", "manholecovers2")
   enablecount = 0
   while (enablecount < enables.length){
     checkbuttonenables(enables[enablecount][0],enables[enablecount][1])
+    enablecount = enablecount + 1
+  }
+      enablecount = 0
+  while (enablecount < enables2.length){
+    checksliderenables(enables2[enablecount][0],enables2[enablecount][1])
     enablecount = enablecount + 1
   }
   enablecount = 0
@@ -79,6 +111,16 @@ flowerUsed = 0
 stackUsed = 0
 
 function recalc(points,mission,alt){
+
+          enablecount = 0
+  while (enablecount < enables2.length){
+    thismission = enables2[enablecount][1]
+      $('#no'+thismission).checkboxradio('disable');
+      $('#yes'+thismission).checkboxradio('disable');
+    enablecount = enablecount + 1
+  }
+    checksliderenables("manholecovers", "manholecovers2")
+    
   if (alt == 1 && points == 0) {
     savepts = 1
   } else if (alt == 1 && points != 0) {
