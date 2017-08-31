@@ -35,7 +35,7 @@
 langs=['en-us:United States:English','pt-br:Brazil:Portugues']
 
 
-function get_browser_version(){	
+function get_browser_version(){
   var N=navigator.appName, ua=navigator.userAgent, tem;
   var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
   if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
@@ -57,9 +57,9 @@ var browser = navigator.appName;
 var version = get_browser_version();
 
 if (browser=="Microsoft Internet Explorer") {
-    if (version<="9.0") 
-        document.location.href="http://classic.ev3lessons.com/" 
-} 
+    if (version<="9.0")
+        document.location.href="http://classic.ev3lessons.com/"
+}
 
 /*
 if (window.location.hash) {
@@ -106,15 +106,15 @@ for (i = 0; i < langs.length; i++) {
 function deleteAllCookies() {
 if (navigator.cookieEnabled = true) {
  var c = document.cookie.split("; ");
- for (i in c) 
-  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";    
+ for (i in c)
+  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
 }
 document.cookie=""
 //for (var it in $.cookie()) $.removeCookie(it);
 
 //alert(document.cookie)
-	
+
 //if (document.cookie && window.location.hash == "") {
 //str =document.cookie
 
@@ -176,7 +176,7 @@ if (window.location.hash) {
 //  window.location.hash = "#pt-br";
 //  setTimeout(function(){location.reload(true);},100);
 //}
-} 
+}
 /*else {
     // window.location.replace("#en-us");
     var language = "en-us";
@@ -187,7 +187,7 @@ if (window.location.hash) {
 //langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 
 
-function get_browser_version(){	
+function get_browser_version(){
   var N=navigator.appName, ua=navigator.userAgent, tem;
   var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
   if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
@@ -209,9 +209,9 @@ var browser = navigator.appName;
 var version = get_browser_version();
 
 if (browser=="Microsoft Internet Explorer") {
-    if (version<="9.0") 
-        document.location.href="http://classic.ev3lessons.com/" 
-} 
+    if (version<="9.0")
+        document.location.href="http://classic.ev3lessons.com/"
+}
 
 /*
 if (window.location.hash) {
@@ -258,15 +258,15 @@ for (i = 0; i < langs.length; i++) {
 function deleteAllCookies() {
 if (navigator.cookieEnabled = true) {
  var c = document.cookie.split("; ");
- for (i in c) 
-  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";    
+ for (i in c)
+  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
 }
 }
 document.cookie=""
 //for (var it in $.cookie()) $.removeCookie(it);
 
 //alert(document.cookie)
-	
+
 //if (document.cookie && window.location.hash == "") {
 //str =document.cookie
 
@@ -328,7 +328,7 @@ if (window.location.hash) {
 //  window.location.hash = "#pt-br";
 //  setTimeout(function(){location.reload(true);},100);
 //}
-} 
+}
 /*else {
     // window.location.replace("#en-us");
     var language = "en-us";
@@ -513,15 +513,15 @@ title = 'Hydro Dynamics Punkterechner'
                 endtable()
 
                 starttable('M02', 'Pumpsystem','M02.png', ['flow'], 0)
-                createbutton("flow", 25 , 'Befindet sich eine groﬂe Wassermenge nur durch Drehung des/der Pumpventil(e)?')
+                createbutton("flow", 25 , 'Befindet sich eine große Wassermenge nur durch Drehung des/der Pumpventil(e)?')
                 endtable()
 
                 starttable('M03', 'Zusatzpumpe','M03.png', ['pumpaddition'], 0)
-                createbutton("pumpaddition", 20 , 'Ber¸hrt die Zusatzpumpe ausschlieﬂlich innerhalb ihres Zielgebiets die Spielfeldmatte?')
+                createbutton("pumpaddition", 20 , 'Berührt die Zusatzpumpe ausschließlich innerhalb ihres Zielgebiets die Spielfeldmatte?')
                 endtable()
 
                 starttable('M04', 'Regen','M04.png', ['rain'], 0)
-                createbutton("rain", 20 , 'Befindet sich mindestens ein Regentropfen auﬂerhalb der Regenwolke?')
+                createbutton("rain", 20 , 'Befindet sich mindestens ein Regentropfen außerhalb der Regenwolke?')
                 endtable()
 
                 starttable('M05', 'Filter','M05.png' , ['filter'], 0)
@@ -529,12 +529,12 @@ title = 'Hydro Dynamics Punkterechner'
                 endtable()
 
                 starttable('M06', 'Wasseraufbereitung','M06.png', ['watertreatment'], 0)
-                createbutton("watertreatment", 20, 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine groﬂe Wassermenge ausgeworfen?')
+                createbutton("watertreatment", 20, 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine große Wassermenge ausgeworfen?')
                 endtable()
 
 
                 starttable('M07', 'Springbrunnen','M07.png' , ['fountain'], 0)
-                createbutton("fountain", 20 , 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine groﬂe Wassermenge in der grauen Wanne geschehen?')
+                createbutton("fountain", 20 , 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine große Wassermenge in der grauen Wanne geschehen?')
                 endtable()
 
                 starttable('M08', 'Gullydeckel','M08.png', ['manholecovers', 'manholecovers2'], 0)
@@ -546,8 +546,8 @@ title = 'Hydro Dynamics Punkterechner'
 
 
                 starttable('M09', 'Stativ','M09.png' , ['tripod','tripod2'], 0)
-                createbutton("tripod", 15 , 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen F¸ﬂen die Spielfeldmatte?')
-                createbutton("tripod2", 20 , 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen F¸ﬂen die Spielfeldmatte?')
+                createbutton("tripod", 15 , 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
+                createbutton("tripod2", 20 , 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
                 createbuttonconflict('tripod','tripod2','')
                 endtable()
 
@@ -560,18 +560,18 @@ title = 'Hydro Dynamics Punkterechner'
 
 
                 starttable('M11', 'Rohrleitung bauen','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-                createbutton("pipeconstruction", 15, 'Rohrleitung bauen')
-                createbutton("pipeconstruction2", 20, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?')
+                createbutton("pipeconstruction", 15, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?')
+                createbutton("pipeconstruction2", 20, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?')
                 createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
-                starttable('M12', 'Kl‰rschlamm','M12.png', ['sludge'], 0)
-                createbutton("sludge", 30 ,'Ber¸rhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzk‰sten?')
+                starttable('M12', 'Klärschlamm','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Berürhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzkästen?')
                 endtable()
 
                 starttable('M13', 'Blume','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?')
-                createbutton("flower2", 30 , 'Befindet sich zusützlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?')
+                createbutton("flower2", 30 , 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?')
                 createbuttonenables('flower1','flower2')
                 endtable()
 
@@ -588,10 +588,10 @@ title = 'Hydro Dynamics Punkterechner'
                 endtable()
 
                 starttable('M16', 'Wasser sammeln', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-                createbutton("collection1", 10, 'Befindet sich min. 1 Regentropfen im Zielgebiet, ber¸hrt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?')
-                createrange("collection2", 10, 0, 4, 0, 'Wie viele groﬂe Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?','')
-                createbutton("collection3", 30, 'Befindet sich mindestens eine groﬂe Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?')
-                createcomment('Hinweis: Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser ber¸hren, jedoch von nichts anderem berührt oder umschlossen werden.')
+                createbutton("collection1", 10, 'Befindet sich min. 1 Regentropfen im Zielgebiet, berührt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?')
+                createrange("collection2", 10, 0, 4, 0, 'Wie viele große Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?','')
+                createbutton("collection3", 30, 'Befindet sich mindestens eine große Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?')
+                createcomment('Hinweis: Das Zielgebiet darf nie die weiße Grenzlinie berühren oder überqueren. Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser berühren, jedoch von nichts anderem berührt oder umschlossen werden.')
                 endtable()
 
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
@@ -601,11 +601,11 @@ title = 'Hydro Dynamics Punkterechner'
                 endtable()
 
                 starttable('M18', 'Wasserhahn','M18.png', ['faucet'], 0)
-                createbutton("faucet", 25, 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiﬂ und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?')
+                createbutton("faucet", 25, 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiß und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?')
                 endtable()
 
                 starttable('P','Strafpunkte:','penalty.png', ['penalty'], 0)
-                createrange("penalty", -5 , 0, 6, 0, 'Wie viele Strafpunkte befinden sich im weiﬂen Dreieck im S¸dosten der Spielfeldmatte?','')
+                createrange("penalty", -5 , 0, 6, 0, 'Wie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?','')
                 endtable()
 
 
@@ -726,7 +726,7 @@ title = 'Marcador Hydro Dynamics'
 title = "Hydro Dynamics Scorer"
 yes = "Yes"
 no = "No"
-		
+
                 startrow(all_screen)
 
                 starttable('M01', 'Pipe Removal','M01.png' , ['piperemoval'], 0)
