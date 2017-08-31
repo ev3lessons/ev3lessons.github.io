@@ -482,7 +482,7 @@ endtable()
                 createbutton("collection1", 10, 'Há no mínimo uma Chuva tocando o tapete no Alvo da Água, e tocando nada mais além do alvo e/ou outras águas?')
                 createrange("collection2", 10, 0, 4, 0, 'Quantas Água Grande estão tocando o tapete no Alvo da Água, e tocando nada mais além do alvo e/ou outras águas?','')
                 createbutton("collection3", 30, 'O Alvo da Água atinge a Linha branca Fora do Limite?')
-                createcomment('Nota: A Água pode estar tocando o alvo, e/ou outras águas, sem tocar ou se guiada por mais nada.')
+                createcomment('Nota: O alvo não deve tocar fora dos limites da linha. A água pode estar tocando o alvo e/ou outtra água, mas não pode tocar nem ser guiado por qualquer outra coisa.')
                 endtable()
 
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
@@ -643,7 +643,7 @@ title = 'Marcador Hydro Dynamics'
 
 
                 starttable('M07', 'Fuente','M07.png' , ['fountain'], 0)
-                createbutton("fountain", 20 , '¿La capa de en medio de la Fuente ha subido hasta una altura evidente, debido solo al Agua Grande en la cuba gris?')
+                createbutton("fountain", 20 , '¿La capa de en medio de la Fuente ha subido a una altura suficiente, debido solo al Agua Grande en la cuba gris?')
                 endtable()
 
                 starttable('M08', 'Tapas de Alcantarilla','M08.png', ['manholecovers', 'manholecovers2'], 0)
@@ -679,7 +679,7 @@ title = 'Marcador Hydro Dynamics'
                 endtable()
 
                 starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
-                createbutton("flower1", 30 , '¿Ha subido la Flor hasta una altura evidente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
+                createbutton("flower1", 30 , '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
                 createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?')
                 createbuttonenables('flower1','flower2')
                 endtable()
@@ -697,10 +697,10 @@ title = 'Marcador Hydro Dynamics'
                 endtable()
 
                 starttable('M16', 'Recolección de Agua', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-                createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/u otra agua?')
-                createrange("collection2", 10, 0, 4, 0, '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/u otra agua?','')
+                createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/o otra agua?')
+                createrange("collection2", 10, 0, 4, 0, '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/o otra agua?','')
                 createbutton("collection3", 30, '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?')
-                createcomment('Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/u otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.')
+                createcomment('Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/o otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.')
                 endtable()
 
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
@@ -709,8 +709,8 @@ title = 'Marcador Hydro Dynamics'
                 createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
-                starttable('M18', 'Lavamanos','M18.png', ['faucet'], 0)
-                createbutton("faucet", 25, '¿Es el nivel del agua evidentemente más azul que blanco según se ve desde arriba de la taza, * sólo girando el mando del lavamanos?')
+                starttable('M18', 'Grifo','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, '¿El nivel de agua es claramente más azul que blanco como se ve desde arriba de la taza, sólo girando el mango del grifo?')
                 endtable()
 
                 starttable('P','Penalizaciones','penalty.png', ['penalty'], 0)
