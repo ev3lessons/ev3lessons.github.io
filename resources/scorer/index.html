@@ -33,7 +33,7 @@
 <script>
 //langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 
-langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský']
+langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský','nl:Netherlands:Nederlands']
 
 
 function get_browser_version(){
@@ -607,6 +607,115 @@ title = 'Hydro Dynamics Punkterechner'
 
                 starttable('P','Strafpunkte:','penalty.png', ['penalty'], 0)
                 createrange("penalty", -5 , 0, 6, 0, 'Wie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'nl') {
+yes = 'Ja'
+no = 'Nee'
+title = 'Hydro Daynamics Puntenteller'
+                startrow(all_screen)
+
+                starttable('M01', 'Pijp verwijderen','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Is de gebroken pijp volledig in de basis?')
+                endtable()
+
+                starttable('M02', 'Stroming','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Is 1 groot water in het veld van het andere team doordat er gedraaid is aan de kleppen van het pompsysteem')
+                endtable()
+
+                starttable('M03', 'Extra pomp plaatsen','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Is de extra pomp in contact met de mat en volledig binnen het plaatsingsgebied?')
+                endtable()
+
+                starttable('M04', 'Regen','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Is tenminste 1 regendruppel uit de regenwolk gekomen?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Is de filter noordwaarts verplaatst tot dat de blokkeringsgrendel valt?')
+                endtable()
+
+                starttable('M06', 'Waterzuivering','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Is het grote water uitgeworpen door alleen de toilethendel te bewegen?')
+                endtable()
+
+
+                starttable('M07', 'Fontein','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Is de middelste laag van de fontein duidelijk omhoog gekomen, door uitsluitend het plaatsen van groot water in de grijze kuip?')
+                endtable()
+
+                starttable('M08', 'Putdeksel','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Hoeveel putdeksels zijn er duidelijk voorbij verticaal gedraaid, zonder dat ze in de basis zijn geweest?','')
+                createbutton("manholecovers2", 30 , 'Zijn alle twee de putdeksel volledig in afzonderlijke statiefgebieden?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Statief','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?')
+                createbutton("tripod2", 20 , 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?')
+                createbuttonconflict('tripod','tripod2','')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Leiding vervangen','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Is de nieuwe leiding op de plaats waar de gebroken leiding was, in volledig/vlak contact met de mat')
+                endtable()
+
+
+                starttable('M11', 'Leidingencontructie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?')
+                createbutton("pipeconstruction2", 20, 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?')
+                createbuttonconflict('pipeconstruction','pipeconstruction2','')
+                endtable()
+
+                starttable('M12', 'Slib','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Raakt het slib zichtbaar het hout van een van de 6 getekende plantenbakken?')
+                endtable()
+
+                starttable('M13', 'Bloem','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?')
+                createbutton("flower2", 30 , 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?')
+                createbuttonenables('flower1','flower2')
+                endtable()
+
+                starttable('M14', 'Waterput','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?')
+                createbutton("well2", 25, 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?')
+                createbuttonconflict('well','well2','')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Vuur','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Is het vuur gezakt door de brandweeraut direct kracht te laten uitvoeren op de hendel van het huis?')
+                endtable()
+
+                starttable('M16', 'Waterwinning', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Raakt er tenminste 1 regendruppel de mat in het waterdoel aan en raakt het verder niets anders aan dan het gebied en/of ander water?')
+                createrange("collection2", 10, 0, 4, 0, 'Hoeveel groot water raakt de mat in het waterdoel aan en raakt het verder niets anders aan dan het doel en/of ander water?','')
+                createbutton("collection3", 30, 'Is er tenminste 1 groot water boven op het andere grote water dat niets anders raakt dan ander water')
+                createcomment('Opm: Water mag het waterdoel en/of ander water raken maar nooit iets anders, noch door iets anders geleid worden.')
+                endtable()
+
+                starttable('M17', 'Katapult','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Is de katapult volledig in het doelgebied?')
+                createbutton("slingshot2", 15, 'Is het vuile water en een regen volledig in het doelgebied van de katapult?')
+                createbuttonenables('slingshot1','slingshot2')
+                endtable()
+
+                starttable('M18', 'Kraan','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Is het waterniveau duidelijk blauwer dan wit van bovenaf het kopje gezien, *door alleen aan het handvat van de kraan te draaien?')
+                endtable()
+
+                starttable('P','Strafpunten','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Hoeveel strafpunten liggen er in de witte driehoek?','')
                 endtable()
 
 
