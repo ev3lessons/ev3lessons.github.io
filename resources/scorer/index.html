@@ -1,5 +1,6 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <head>
+<title>Scorer</title>
   <meta charset="UTF-8" />
 
   <script src="jquery-1.11.3.min.js"></script>
@@ -32,7 +33,7 @@
 <script>
 //langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 
-langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español']
+langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský']
 
 
 function get_browser_version(){
@@ -715,6 +716,115 @@ title = 'Marcador Hydro Dynamics'
 
                 starttable('P','Penalizaciones','penalty.png', ['penalty'], 0)
                 createrange("penalty", -5 , 0, 6, 0, '¿Cuántas penalizaciones hay en la zona del triángulo blanco?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'sk') {
+yes = 'Áno'
+no = 'Nie'
+title = 'Hydro Dynamics Hodnotenie'
+                startrow(all_screen)
+
+                starttable('M01', 'Pokazené potrubie','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Je pokazené potrubie celkom na základni?')
+                endtable()
+
+                starttable('M02', 'Prúdenie','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Je práve jedna veľká voda na ihrisku druhého tímu a stalo sa to následkom otáčania ventilov na pumpe?')
+                endtable()
+
+                starttable('M03', 'Čerpadlo','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Je čerpadlo v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
+                endtable()
+
+                starttable('M04', 'Dážď','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Vypadla z oblaku aspoň jedna dažďová kvapka?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Posunul sa biely filter na sever až tak, že zapadla západka?')
+                endtable()
+
+                starttable('M06', 'Čistička vody','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Vypadla z čističky veľká voda následkom stlačenia páčky na záchode?')
+                endtable()
+
+
+                starttable('M07', 'Fontána','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Je stredná vrstva fontány viditeľne nadvihnutá iba vďaka tomu, že sa veľká voda nachádza n sivej nádrži fontány?')
+                endtable()
+
+                starttable('M08', 'Poklopy','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Koľko poklopov je prevrátených bez toho aby sa kedykoľvek predtým ocitli na základni?','')
+                createbutton("manholecovers2", 30 , 'Nachádzajú sa oba poklopy celkom v cieľových oblastiach? Každý z nich musí byť v inej oblasti.')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Trojnožka','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
+                createbutton("tripod2", 20 , 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
+                createbuttonconflict('tripod','tripod2','')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Oprava potrubia','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Je nové, modré potrubie na mieste, kde predtým bolo žlté potrubie a dotýka sa úplne/naplocho hracej plochy?')
+                endtable()
+
+
+                starttable('M11', 'Nové potrubie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
+                createbutton("pipeconstruction2", 20, 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
+                createbuttonconflict('pipeconstruction','pipeconstruction2','')
+                endtable()
+
+                starttable('M12', 'Kal','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Dotýka sa kal viditeľného dreva ktoréhokoľvek zo záhradných záhonov?')
+                endtable()
+
+                starttable('M13', 'Kvet','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?')
+                createbutton("flower2", 30 , 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?')
+                createbuttonenables('flower1','flower2')
+                endtable()
+
+                starttable('M14', 'Studňa','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?')
+                createbutton("well2", 25, 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
+                createbuttonconflict('well','well2','')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Oheň','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Klesol oheň tým, že hasičské auto priamo zatlačilo na žltú páčku modelu domu?')
+                endtable()
+
+                starttable('M16', 'Zachytávanie vody', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Nachádza sa v rámčeku aspoň jedna dažďová kvapka, ktorá sa dotýka hracej plochy a nedotýka sa ničoho iného iba rámčeka a/alebo inej vody?')
+                createrange("collection2", 10, 0, 4, 0, 'Koľko veľkých vôd, ktoré sa dotýkajú hracej plochy a nedotýkajú sa ničoho iného ako rámčeku a/alebo inej vody sa nachádza v rámčeku?','')
+                createbutton("collection3", 30, 'Nachádza sa v rámčeku aspoň jedna veľká voda, ktorá je položená na inej vode a nedotýka sa pritom ničoho iného iba inej vody?')
+                createcomment('Poznámka: Rámček sa nikdy nesmie dotknúť bielej hraničnej čiary. Voda sa môže dotýkať rámčeka a/alebo inej vody ale nesmie sa dotýkať alebo pridržiavaná ničím iným.')
+                endtable()
+
+                starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Je Slingshot celkom v cieľovej oblasti?')
+                createbutton("slingshot2", 15, 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?')
+                createbuttonenables('slingshot1','slingshot2')
+                endtable()
+
+                starttable('M18', 'Vodovodný kohútik','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Je vodná hladina viditeľne viac modrá ako biela pri pohľade zhora do pohára a stalo sa tak iba otáčaním točky kohútika?')
+                endtable()
+
+                starttable('P','Penalizácia','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Koľko penalizačných diskov je v bielom trojuholníku?','')
                 endtable()
 
 
