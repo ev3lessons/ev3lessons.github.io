@@ -495,7 +495,7 @@ endtable()
                 createbutton("faucet", 25, 'O nível de agua esta obviamente mais azul que branca, visto de cima da xícara, através apenas do giro da torneira?')
                 endtable()
 
-                starttable('P','PENALIDADES','penalty.png', ['penalty'], 0)
+                starttable('P','Penalidades','penalty.png', ['penalty'], 0)
                 createrange("penalty", -5 , 0, 6, 0, 'Quantos discos de Penalidade estão na área do triângulo branco?','')
                 endtable()
 
@@ -617,28 +617,28 @@ no = 'No'
 title = 'Marcador Hydro Dynamics'
                 startrow(all_screen)
 
-                starttable('M01', 'Retirada de tuberÌa','M01.png' , ['piperemoval'], 0)
-                createbutton("piperemoval", 20, '¿La tuberÌa rota est· completamente dentro de la Base?')
+                starttable('M01', 'Retirada de tubería','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, '¿La tubería rota está completamente dentro de la Base?')
                 endtable()
 
                 starttable('M02', 'Flujo','M02.png', ['flow'], 0)
-                createbutton("flow", 25 , '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la v·lvula del Sistema de Bombeo?')
+                createbutton("flow", 25 , '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la válvula del Sistema de Bombeo?')
                 endtable()
 
                 starttable('M03', 'Bomba Adicional','M03.png', ['pumpaddition'], 0)
-                createbutton("pumpaddition", 20 , '¿La Bomba Adicional est· en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?')
+                createbutton("pumpaddition", 20 , '¿La Bomba Adicional está en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?')
                 endtable()
 
                 starttable('M04', 'Lluvia','M04.png', ['rain'], 0)
-                createbutton("rain", 20 , '¿Al menos una Lluvia saliÛ de la Nube de Lluvia?')
+                createbutton("rain", 20 , '¿Al menos una Lluvia salió de la Nube de Lluvia?')
                 endtable()
 
                 starttable('M05', 'Filtro','M05.png' , ['filter'], 0)
-                createbutton("filter", 30 , '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caÌdo?')
+                createbutton("filter", 30 , '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caído?')
                 endtable()
 
                 starttable('M06', 'Tratamiento del Agua','M06.png', ['watertreatment'], 0)
-                createbutton("watertreatment", 20, '¿Se ha expulsado el Agua Grande, debido solo a la acciÛn de mover la palanca del inodoro?')
+                createbutton("watertreatment", 20, '¿Se ha expulsado el Agua Grande, debido solo a la acción de mover la palanca del inodoro?')
                 endtable()
 
 
@@ -647,74 +647,74 @@ title = 'Marcador Hydro Dynamics'
                 endtable()
 
                 starttable('M08', 'Tapas de Alcantarilla','M08.png', ['manholecovers', 'manholecovers2'], 0)
-                createrange("manholecovers", 15 , 0, 2, 0, '¿u·ntas Tapas de Alcantarilla se han dado la vuelta m·s all· de la vertical sin haber ido a la Base?','')
-                createbutton("manholecovers2", 30 , '¿Est·n ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del TrÌpode?')
+                createrange("manholecovers", 15 , 0, 2, 0, '¿Cuántas Tapas de Alcantarilla se han dado la vuelta más allá de la vertical sin haber ido a la Base?','')
+                createbutton("manholecovers2", 30 , '¿Están ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del Trípode?')
                 endtable()
 
                 breakrow(mobile1,100000)
 
 
-                starttable('M09', 'TrÌpode','M09.png' , ['tripod','tripod2'], 0)
-                createbutton("tripod", 15 , '¿Est· el TrÌpode de la c·mara de inspecciÛn parcialmente dentro de alguno de los objetivos del TrÌpode, con todas sus patas tocando el tapete?')
-                createbutton("tripod2", 20 , '¿Est· el TrÌpode de la c·mara de inspecciÛn completamente dentro de alguno de los objetivos del TrÌpode, con todas sus patas tocando el tapete?')
+                starttable('M09', 'Trípode','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
+                createbutton("tripod2", 20 , '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
                 createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
 
 
-                starttable('M10', 'SustituciÛn de TuberÌa','M10.png' , ['pipereplacement'], 0)
-                createbutton("pipereplacement", 20 , '¿La Nueva TuberÌa est· en el lugar donde estaba la TuberÌa Rota, en total contacto con el tapete?')
+                starttable('M10', 'Sustitución de Tubería','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , '¿La Nueva Tubería está en el lugar donde estaba la Tubería Rota, en total contacto con el tapete?')
                 endtable()
 
 
-                starttable('M11', 'ConstrucciÛn de TuberÌa','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-                createbutton("pipeconstruction", 15, 'ConstrucciÛn de TuberÌa')
-                createbutton("pipeconstruction2", 20, '¿La Nueva TuberÌa est· parcialmente dentro de su objetivo, en total contacto con el tapete?')
+                starttable('M11', 'Construcción de Tubería','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?')
+                createbutton("pipeconstruction2", 20, '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?')
                 createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Lodo','M12.png', ['sludge'], 0)
-                createbutton("sludge", 30 ,'¿Est· el Lodo tocando la madera visible de cualquiera de las seis cajas de jardÌn dibujadas?')
+                createbutton("sludge", 30 ,'¿Está el Lodo tocando la madera visible de cualquiera de las seis cajas de jardín dibujadas?')
                 endtable()
 
                 starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
-                createbutton("flower1", 30 , '¿Ha subido la Flor hasta una altura evidente y permancece allÌ, debido solo al Agua Grande en la maceta marrÛn?')
-                createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte p˙rpura, tocando nada m·s que el modelo de la Flor?')
+                createbutton("flower1", 30 , '¿Ha subido la Flor hasta una altura evidente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
+                createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?')
                 createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Pozo de Agua','M14.png', ['well','well2'], 0)
-                createbutton("well", 15, '¿Est· el Pozo de Agua en contacto con el tapete y ese contacto est· parcialmente dentro del objetivo del Pozo de Agua?')
-                createbutton("well2", 25, '¿Est· el Pozo de Agua en contacto con el tapete y ese contacto est· completamente dentro del objetivo del Pozo de Agua?')
+                createbutton("well", 15, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?')
+                createbutton("well2", 25, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?')
                 createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
 
                 starttable('M15', 'Fuego','M15.png', ['fire'], 0)
-                createbutton("fire", 25, '¿DisminuyÛ el fuego solo haciendo que el CamiÛn de Bomberos aplicara fuerza directamente a la palanca de la Casa?')
+                createbutton("fire", 25, '¿Disminuyó el fuego solo haciendo que el Camión de Bomberos aplicara fuerza directamente a la palanca de la Casa?')
                 endtable()
 
-                starttable('M16', 'RecolecciÛn de Agua', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-                createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada m·s que el objetivo y/u otra agua?')
-                createrange("collection2", 10, 0, 4, 0, '¿Cuntas Aguas Grandes hay que estÈn tocando el tapete en el Objetivo del Agua y tocando nada m·s que el objetivo y/u otra agua?Cu·ntas Aguas Grandes hay que estÈn tocando el tapete en el Objetivo del Agua y tocando nada m·s que el objetivo y/u otra agua?Cu·ntas Aguas Grandes hay que estÈn tocando el tapete en el Objetivo del Agua y tocando nada m·s que el objetivo y/u otra agua?Cu·ntas Aguas Grandes hay que estÈn tocando el tapete en el Objetivo del Agua y tocando nada m·s que el objetivo y/u otra agua?Cu·ntas Aguas Grandes hay que estÈn tocando el tapete en el Objetivo del Agua y tocando nada m·s que el objetivo y/u otra agua?','')
+                starttable('M16', 'Recolección de Agua', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/u otra agua?')
+                createrange("collection2", 10, 0, 4, 0, '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/u otra agua?','')
                 createbutton("collection3", 30, '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?')
-                createcomment('Nota: El agua puede estar tocando el objetivo, y/u otra agua, pero no estar tocando ni guiada por cualquier otra cosa.')
+                createcomment('Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/u otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.')
                 endtable()
 
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
-                createbutton("slingshot1", 20, '¿Est· el Slingshot completamente dentro de su objetivo?')
-                createbutton("slingshot2", 15, '¿Est· el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?')
+                createbutton("slingshot1", 20, '¿Está el Slingshot completamente dentro de su objetivo?')
+                createbutton("slingshot2", 15, '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?')
                 createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Lavamanos','M18.png', ['faucet'], 0)
-                createbutton("faucet", 25, '¿Es el nivel del agua evidentemente m·s azul que blanco seg˙n se ve desde arriba de la taza, * sÛlo girando el mando del lavamanos?')
+                createbutton("faucet", 25, '¿Es el nivel del agua evidentemente más azul que blanco según se ve desde arriba de la taza, * sólo girando el mando del lavamanos?')
                 endtable()
 
-                starttable('P','PENALIZACIONES','penalty.png', ['penalty'], 0)
-                createrange("penalty", -5 , 0, 6, 0, '¿Cuntas penalizaciones hay en la zona del tri·ngulo blanco?','')
+                starttable('P','Penalizaciones','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, '¿Cuántas penalizaciones hay en la zona del triángulo blanco?','')
                 endtable()
 
 
