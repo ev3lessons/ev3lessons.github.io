@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <head>
-  <title>Scorer</title>
+<title>Scorer</title>
   <meta charset="UTF-8" />
 
   <script src="jquery-1.11.3.min.js"></script>
@@ -30,74 +30,74 @@
   <script type="text/javascript" src="jqm-spinbox.min.js"></script>
 
 
-  <script>
-  //langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
+<script>
+//langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
 
-  langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský','nl:Netherlands:Nederlands']
+langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský','nl:Netherlands:Nederlands']
 
 
-  function get_browser_version(){
-    var N=navigator.appName, ua=navigator.userAgent, tem;
-    var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
-    if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
-    M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
-    return M[1];
-  }
+function get_browser_version(){
+  var N=navigator.appName, ua=navigator.userAgent, tem;
+  var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+  if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+  M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
+  return M[1];
+}
 
-  function getParameterByName(name, url) {
+function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-    results = regex.exec(url);
+        results = regex.exec(url);
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
-  }
+}
 
-  var browser = navigator.appName;
-  var version = get_browser_version();
+var browser = navigator.appName;
+var version = get_browser_version();
 
-  if (browser=="Microsoft Internet Explorer") {
+if (browser=="Microsoft Internet Explorer") {
     if (version<="9.0")
-    document.location.href="http://classic.ev3lessons.com/"
-  }
+        document.location.href="http://classic.ev3lessons.com/"
+}
 
-  /*
-  if (window.location.hash) {
-  // Puts hash in variable, and removes the # character
-  var language = window.location.hash.substring(1);
-  //if (window.location.hash == "#br") {
-  //  window.location.hash = "#pt-br";
-  //  setTimeout(function(){location.reload(true);},100);
-  //}
+/*
+if (window.location.hash) {
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
+//if (window.location.hash == "#br") {
+//  window.location.hash = "#pt-br";
+//  setTimeout(function(){location.reload(true);},100);
+//}
 } else {
-// window.location.replace("#en-us");
-var language = "en-us";
-// location.reload();
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
 }
 */
 
 if (getParameterByName('lang') != null) {
-  var language = getParameterByName('lang');
-  //if (getParameterByName('langsave') != 'no') {
-  localStorage.lang = "ev3cookie"+language;
-  //}
+    var language = getParameterByName('lang');
+//if (getParameterByName('langsave') != 'no') {
+localStorage.lang = "ev3cookie"+language;
+//}
 } else {
-  var language = 'en-us'
+var language = 'en-us'
 
-  navlang=navigator.language.split('-')[0]
-  //str =localStorage.lang
-  var i;
-  for (i = 0; i < langs.length; i++) {
+navlang=navigator.language.split('-')[0]
+//str =localStorage.lang
+var i;
+for (i = 0; i < langs.length; i++) {
     str=langs[i].split(':')[0]
     tmp =str.search(navlang)
     if (tmp != -1) {
-      //window.location.hash = "#"+langs[i].split(':')[0]
-      //  setTimeout(function(){location.reload(true);},100);
-      var language = langs[i].split(':')[0];
+//window.location.hash = "#"+langs[i].split(':')[0]
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
 
-    }
-  }
+}
+}
 
 }
 
@@ -105,11 +105,11 @@ if (getParameterByName('lang') != null) {
 
 
 function deleteAllCookies() {
-  if (navigator.cookieEnabled = true) {
-    var c = document.cookie.split("; ");
-    for (i in c)
-    document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  }
+if (navigator.cookieEnabled = true) {
+ var c = document.cookie.split("; ");
+ for (i in c)
+  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+}
 }
 document.cookie=""
 //for (var it in $.cookie()) $.removeCookie(it);
@@ -121,36 +121,36 @@ document.cookie=""
 
 str =localStorage.lang
 if (localStorage.lang && window.location.hash == "") {
-  var i;
-  for (i = 0; i < langs.length; i++) {
+var i;
+for (i = 0; i < langs.length; i++) {
     tmp =str.search('ev3cookie'+langs[i].split(':')[0])
     if (tmp != -1) {
-      //window.location.hash = "#"+langs[i].split(':')[0]
-      //  setTimeout(function(){location.reload(true);},100);
-      var language = langs[i].split(':')[0];
+//window.location.hash = "#"+langs[i].split(':')[0]
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
 
-    }
-  }
+}
+}
 
 
 
-  //alert('a')
-  //window.location.hash = "#"+document.cookie.split(';')[0]
-  //  setTimeout(function(){location.reload(true);},100);
+//alert('a')
+//window.location.hash = "#"+document.cookie.split(';')[0]
+//  setTimeout(function(){location.reload(true);},100);
 }
 
 
 
 
 function createCookie(lang){
-  localStorage.lang = "ev3cookie"+lang
+localStorage.lang = "ev3cookie"+lang
 }
 
 
 var page = window.location.href.split("?")[0].split("#")[0] + '?lang=';
 var i;
 for (i = 0; i < langs.length; i++) {
-  window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
+    window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
 }
 /*
 var enus = ''+ page +'#en-us';
@@ -171,17 +171,17 @@ var de  = ''+ page +'#de';
 
 
 if (window.location.hash) {
-  // Puts hash in variable, and removes the # character
-  var language = window.location.hash.substring(1);
-  //if (window.location.hash == "#br") {
-  //  window.location.hash = "#pt-br";
-  //  setTimeout(function(){location.reload(true);},100);
-  //}
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
+//if (window.location.hash == "#br") {
+//  window.location.hash = "#pt-br";
+//  setTimeout(function(){location.reload(true);},100);
+//}
 }
 /*else {
-// window.location.replace("#en-us");
-var language = "en-us";
-// location.reload();
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
 }*/
 
 
@@ -197,59 +197,59 @@ function get_browser_version(){
 }
 
 function getParameterByName(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-  results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 var browser = navigator.appName;
 var version = get_browser_version();
 
 if (browser=="Microsoft Internet Explorer") {
-  if (version<="9.0")
-  document.location.href="http://classic.ev3lessons.com/"
+    if (version<="9.0")
+        document.location.href="http://classic.ev3lessons.com/"
 }
 
 /*
 if (window.location.hash) {
-// Puts hash in variable, and removes the # character
-var language = window.location.hash.substring(1);
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
 //if (window.location.hash == "#br") {
 //  window.location.hash = "#pt-br";
 //  setTimeout(function(){location.reload(true);},100);
 //}
 } else {
-// window.location.replace("#en-us");
-var language = "en-us";
-// location.reload();
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
 }
 */
 
 if (getParameterByName('lang') != null) {
-  var language = getParameterByName('lang');
-  //if (getParameterByName('langsave') != 'no') {
-  localStorage.lang = "ev3cookie"+language;
-  //}
+    var language = getParameterByName('lang');
+//if (getParameterByName('langsave') != 'no') {
+localStorage.lang = "ev3cookie"+language;
+//}
 } else {
-  var language = 'en-us'
+var language = 'en-us'
 
-  navlang=navigator.language.split('-')[0]
-  //str =localStorage.lang
-  var i;
-  for (i = 0; i < langs.length; i++) {
+navlang=navigator.language.split('-')[0]
+//str =localStorage.lang
+var i;
+for (i = 0; i < langs.length; i++) {
     str=langs[i].split(':')[0]
     tmp =str.search(navlang)
     if (tmp != -1) {
-      //window.location.hash = "#"+langs[i].split(':')[0]
-      //  setTimeout(function(){location.reload(true);},100);
-      var language = langs[i].split(':')[0];
+//window.location.hash = "#"+langs[i].split(':')[0]
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
 
-    }
-  }
+}
+}
 
 }
 
@@ -257,11 +257,11 @@ if (getParameterByName('lang') != null) {
 
 
 function deleteAllCookies() {
-  if (navigator.cookieEnabled = true) {
-    var c = document.cookie.split("; ");
-    for (i in c)
-    document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  }
+if (navigator.cookieEnabled = true) {
+ var c = document.cookie.split("; ");
+ for (i in c)
+  document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+}
 }
 document.cookie=""
 //for (var it in $.cookie()) $.removeCookie(it);
@@ -273,36 +273,36 @@ document.cookie=""
 
 str =localStorage.lang
 if (localStorage.lang && window.location.hash == "") {
-  var i;
-  for (i = 0; i < langs.length; i++) {
+var i;
+for (i = 0; i < langs.length; i++) {
     tmp =str.search('ev3cookie'+langs[i].split(':')[0])
     if (tmp != -1) {
-      //window.location.hash = "#"+langs[i].split(':')[0]
-      //  setTimeout(function(){location.reload(true);},100);
-      var language = langs[i].split(':')[0];
+//window.location.hash = "#"+langs[i].split(':')[0]
+//  setTimeout(function(){location.reload(true);},100);
+    var language = langs[i].split(':')[0];
 
-    }
-  }
+}
+}
 
 
 
-  //alert('a')
-  //window.location.hash = "#"+document.cookie.split(';')[0]
-  //  setTimeout(function(){location.reload(true);},100);
+//alert('a')
+//window.location.hash = "#"+document.cookie.split(';')[0]
+//  setTimeout(function(){location.reload(true);},100);
 }
 
 
 
 
 function createCookie(lang){
-  localStorage.lang = "ev3cookie"+lang
+localStorage.lang = "ev3cookie"+lang
 }
 
 
 var page = window.location.href.split("?")[0].split("#")[0] + '?lang=';
 var i;
 for (i = 0; i < langs.length; i++) {
-  window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
+    window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
 }
 /*
 var enus = ''+ page +'#en-us';
@@ -323,17 +323,17 @@ var de  = ''+ page +'#de';
 
 
 if (window.location.hash) {
-  // Puts hash in variable, and removes the # character
-  var language = window.location.hash.substring(1);
-  //if (window.location.hash == "#br") {
-  //  window.location.hash = "#pt-br";
-  //  setTimeout(function(){location.reload(true);},100);
-  //}
+    // Puts hash in variable, and removes the # character
+    var language = window.location.hash.substring(1);
+//if (window.location.hash == "#br") {
+//  window.location.hash = "#pt-br";
+//  setTimeout(function(){location.reload(true);},100);
+//}
 }
 /*else {
-// window.location.replace("#en-us");
-var language = "en-us";
-// location.reload();
+    // window.location.replace("#en-us");
+    var language = "en-us";
+    // location.reload();
 }*/
 
 
@@ -341,712 +341,914 @@ var language = "en-us";
 
 var i;
 for (i = 0; i < langs.length; i++) {
-  //    window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
-  document.write('\
-  <a data-ajax="false" href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="createCookie(\''+langs[i].split(":")[0]+'\');setTimeout(function(){location.reload(true);},100)">\
-  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
-  </a>\
-  ')
+//    window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
+document.write('\
+		  <a data-ajax="false" href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="createCookie(\''+langs[i].split(":")[0]+'\');setTimeout(function(){location.reload(true);},100)">\
+		  <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
+		  </a>\
+')
 }
 
 </script>
 
-<div ng-app="MenuApp" ng-controller="MenuCtrl">
-  <br>
-  <div>
-    <div style="float: right; margin-right: 20px; font-size:12px">by <a href="http://ev3lessons.com" data-ajax="false"><img src="images/ev3lessons.jpg" width="139"></a>
+  <div ng-app="MenuApp" ng-controller="MenuCtrl">
+    <br>
+    <div>
+      <div style="float: right; margin-right: 20px; font-size:12px">by <a href="http://ev3lessons.com" data-ajax="false"><img src="images/ev3lessons.jpg" width="139"></a>
+      </div>
+      <div style="float: left; margin-left:10px">
+          </div>
+      <div style="margin: 0 auto; width: 400px; font-size:24px"><b id='title'>Hydro Dynamics Scorer</b>
+      </div>
+
     </div>
-    <div style="float: left; margin-left:10px">
+    <br>
+
+    <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+      <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
     </div>
-    <div style="margin: 0 auto; width: 400px; font-size:24px"><b id='title'>Hydro Dynamics Scorer</b>
-    </div>
+    <script src="html.js"></script>
 
-  </div>
-  <br>
+  </head>
+  <body onload="check_missions('piperemoval');recalc(0,'piperemoval',1);">
+    <div role="main" class="ui-content">
 
-  <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-    <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
-  </div>
-  <script src="html.js"></script>
+      <div data-role="tabs">
 
-</head>
-<body onload="check_missions('piperemoval');recalc(0,'piperemoval',1);">
-  <div role="main" class="ui-content">
-
-    <div data-role="tabs">
-
-      <div id="tabs-1">
-        <form id="missions">
-        <style>
-        #table_id  {display: block; }
-        //      tr td {display: inline-block; }
-
-        </style>
-        <table style="display: block;" id="table_id">
-          <tr>
-            <script>
-
-            mobile = 500
-            mobile1 = 1000
-
-            all_screen = 0
-
-
-            if (language == 'pt-br') {
-              yes = 'Sim'
-              no = 'Não'
-              title = 'Hydro Dynamics Pontuação'
-              pointsText = 'Pontos'
-              resetText = 'Reiniciar'
-              M01title = 'Remoção do cano'
-              M01a = 'O cano quebrado está completamente na Base?'
-              M02title = 'Vazão'
-              M02a = 'A Água Grande está na arena da outra equipe sendo girada somente pela Válvula do Sistema de Bombas?'
-              M03title = 'Bomba da Água'
-              M03a = 'A Bomba da Água está em contato com o tapete e completamente no alvo da Bomba da Água?'
-              M04title = 'Chuva'
-              M04a = 'Caiu pelo menos uma chuva da Nuvem de Chuva?'
-              M05title = 'Filtro'
-              M05a = 'O Filtro foi movido para o norte até que a trava da tranca caia?'
-              M06title = 'Tratamento de Água'
-              M06a = 'A Água Grande foi ejetada movendo apenas a alavanca do vaso?'
-              M07title = 'Fonte'
-              M07a = 'A camada média da Fonte subiu (e permaneceu na posição) a uma altura visível, devido apenas a uma Água Grande na cuba cinza?'
-              M08title ='Tampas de Bueiro'
-              M08a = 'Quantas Tampas de Bueiro foram viradas ultrapassando a linha vertical, sem que cheguem na Base?'
-              M08b = 'Ambas Tampas de Bueiro estão completamente em alvos separados do Tripé?'
-              M09title = 'Tripé'
-              M09a = 'O Tripé da câmera de inspeção está parcialmente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete?'
-              M09b = 'O Tripé da câmera de inspeção está completamente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete?'
-              M10title = 'Substituição de Cano'
-              M10a = 'O Novo Cano posicionado no lugar do cano quebrado, está em contato total/horizontal com o tapete?'
-              M11title = 'Construção de Cano'
-              M11a = 'O Novo Cano está parcialmente em seu alvo, em contato total/horizontal com o tapete?'
-              M11b = 'O Novo Cano está completamente em seu alvo, em contato total/horizontal com o tapete?'
-              M12title = 'Lama'
-              M12a = 'A Lama está tocando a madeira visível de qualquer de uma das seis caixas de jardim desenhadas?'
-              M13title = 'Flor'
-              M13a = 'A Flor subiu a uma altura visível e ficou lá, devido apenas a uma Água Grande no vaso marrom?'
-              M13b = 'Flor tem pelo menos uma chuva na parte roxa, sem tocar nada além do modelo da Flor?'
-              M14title = 'Poço de Água'
-              M14a = 'O Poço de Água está em contato com o tapete e este contato está parcialmente no alvo do Poço de Água?'
-              M14b = 'O Poço de Água está em contato com o tapete e este contato está completamente no alvo do Poço de Água?'
-              M15title = 'Fogo'
-              M15a = 'O Fogo caiu com o Caminhão de Bombeiro aplicando forca diretamente na alavanca da Casa?'
-              M16title = 'Coleta de Água'
-              M16a = 'Existe pelo menos uma Chuva tocando o tapete no Alvo da Água e não tocando mais nada a não ser o alvo e/ou outra água?'
-              M16b = 'Quantas Água Grande estão tocando o tapete no Alvo da Água e não tocando mais nada a não ser o alvo e/ou outra água?'
-              M16c = 'Existe ao menos uma Água Grande no topo de uma outra Água Grande com nada tocando nela com exceção de outra água?'
-              M16d = 'Nota: O alvo não deve tocar a linha branca fora dos limites. A água pode estar tocando o alvo e/ou outra água, mas não pode tocar nem ser guiado por qualquer outra coisa.'
-              M17title = 'Slingshot'
-              M17a = 'O Slingshot está completamente em seu alvo?'
-              M17b = 'A Água Suja e uma Chuva estão completamente no alvo do Slingshot?'
-              M18title = 'Torneira'
-              M18a = 'O nível de agua esta obviamente mais azul que branca, visto de cima da xícara, através apenas do giro da torneira?'
-              PenaltyTitle = 'Penalidades'
-              PenaltyText = 'Quantos discos de Penalidade estão na área do triângulo branco?'
-
-            } else if (language == 'de') {
-              yes = 'Ja'
-              no = 'Nein'
-              title = 'Hydro Dynamics Punkterechner'
-              pointsText = 'Punkte'
-              resetText = 'Zurücksetzen'
-              M01title = 'Rohrleitung entfernen'
-              M01a = 'Befindet sich die kaputte Rohrleitung komplett in der Base?'
-              M02title = 'Pumpsystem'
-              M02a = 'Befindet sich eine große Wassermenge nur durch Drehung des/der Pumpventil(e)?'
-              M03title = 'Zusatzpumpe'
-              M03a = 'Berührt die Zusatzpumpe ausschließlich innerhalb ihres Zielgebiets die Spielfeldmatte?'
-              M04title = 'Regen'
-              M04a = 'Befindet sich mindestens ein Regentropfen außerhalb der Regenwolke?'
-              M05title = 'Filter'
-              M05a = 'Ist der Verriegelungshebel des Filters eingerastet?'
-              M06title = 'Wasseraufbereitung'
-              M06a = 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine große Wassermenge ausgeworfen?'
-              M07title = 'Springbrunnen'
-              M07a = 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine große Wassermenge in der grauen Wanne geschehen?'
-              M08title ='Gullydeckel'
-              M08a = 'Wie viele Gullydeckel sind erkennbar weiter als senkrecht umgedreht ohne jemals in der Base gewesen zu sein?'
-              M08b = 'Befinden sich beide Gullydeckel jeweils einzeln und komplett in einem Zielgebiet?'
-              M09title = 'Stativ'
-              M09a = 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?'
-              M09b = 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?'
-              M10title = 'Rohrleitung auswechseln'
-              M10a = 'Befindet sich die neue blaue Rohrleitung dort, wo vorher die gelbe kaputte Rohrleitung war und liegt vollständig plan auf der Matte?'
-              M11title = 'Rohrleitung bauen'
-              M11a = 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?'
-              M11b = 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?'
-              M12title = 'Klärschlamm'
-              M12a = 'Berürhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzkästen??'
-              M13title = 'Blume'
-              M13a = 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?'
-              M13b = 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?'
-              M14title = 'Brunnen'
-              M14a = 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist teilweise innerhalb des Zielgebiets?'
-              M14b = 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist komplett innerhalb des Zielgebiets?'
-              M15title = 'Feuer'
-              M15a = 'Sind die Flammen gelöscht und der gelbe Hebel wurde dafür nur mit dem Feuerwehrauto bewegt?'
-              M16title = 'Wasser sammeln'
-              M16a = 'Befindet sich min. 1 Regentropfen im Zielgebiet, berührt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?'
-              M16b = 'Wie viele große Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?'
-              M16c = 'Befindet sich mindestens eine große Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?'
-              M16d = 'Hinweis: Das Zielgebiet darf nie die weiße Grenzlinie berühren oder überqueren. Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser berühren, jedoch von nichts anderem berührt oder umschlossen werden.'
-              M17title = 'Slingshot'
-              M17a = 'Befindet sich der Slingshot komplett inerhalb des Zielgebiets?'
-              M17b = 'Befinden sich zusätzlich auch das Schmutzwasser und der Regentropfen komplett im Zielgebiet?'
-              M18title = 'Wasserhahn'
-              M18a = 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiß und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?'
-              PenaltyTitle = 'Strafpunkte'
-              PenaltyText = 'ie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?'
-
-            } else if (language == 'nl') {
-              yes = 'Ja'
-              no = 'Nee'
-              title = 'Hydro Dynamics Puntenteller'
-              pointsText = 'Punten'
-              resetText = 'Resetten'
-              M01title = 'Pijp verwijderen'
-              M01a = 'Is de gebroken pijp volledig in de basis?'
-              M02title = 'Stroming'
-              M02a = 'Is 1 groot water in het veld van het andere team doordat er gedraaid is aan de kleppen van het pompsysteem'
-              M03title = 'Extra pomp plaatsen'
-              M03a = 'Is de extra pomp in contact met de mat en volledig binnen het plaatsingsgebied?'
-              M04title = 'Regen'
-              M04a = 'Is tenminste 1 regendruppel uit de regenwolk gekomen?'
-              M05title = 'Filter'
-              M05a = 'Is de filter noordwaarts verplaatst tot dat de blokkeringsgrendel valt?'
-              M06title = 'Waterzuivering'
-              M06a = 'Is het grote water uitgeworpen door alleen de toilethendel te bewegen?'
-              M07title = 'Fontein'
-              M07a = 'Is de middelste laag van de fontein duidelijk omhoog gekomen, door uitsluitend het plaatsen van groot water in de grijze kuip?'
-              M08title ='Putdeksel'
-              M08a = 'Hoeveel putdeksels zijn er duidelijk voorbij verticaal gedraaid, zonder dat ze in de basis zijn geweest?'
-              M08b = 'Zijn alle twee de putdeksel volledig in afzonderlijke statiefgebieden?'
-              M09title = 'Statief'
-              M09a = 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?'
-              M09b = 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?'
-              M10title = 'Leiding vervangen'
-              M10a = 'Is de nieuwe leiding op de plaats waar de gebroken leiding was, in volledig/vlak contact met de mat'
-              M11title = 'Leidingencontructie'
-              M11a = 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?'
-              M11b = 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?'
-              M12title = 'Slib'
-              M12a = 'Raakt het slib zichtbaar het hout van een van de 6 getekende plantenbakken?'
-              M13title = 'Bloem'
-              M13a = 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?'
-              M13b = 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?'
-              M14title = 'Waterput'
-              M14a = 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?'
-              M14b = 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?'
-              M15title = 'Vuur'
-              M15a = 'Is het vuur gezakt door de brandweeraut direct kracht te laten uitvoeren op de hendel van het huis?'
-              M16title = 'Waterwinning'
-              M16a = 'Raakt er tenminste 1 regendruppel de mat in het waterdoel aan en raakt het verder niets anders aan dan het gebied en/of ander water?'
-              M16b = 'Hoeveel groot water raakt de mat in het waterdoel aan en raakt het verder niets anders aan dan het doel en/of ander water?'
-              M16c = 'Is er tenminste 1 groot water boven op het andere grote water dat niets anders raakt dan ander water?'
-              M16d = 'et op: Het waterdoel mag nooit de grenslijn raken. Water mag alleen het doel of ander water raken. Het water mag niet geleid of aangeraakt worden door iets anders.'
-              M17title = 'Katapult'
-              M17a = 'Is de katapult volledig in het doelgebied?'
-              M17b = 'Is het vuile water en een regen volledig in het doelgebied van de katapult?'
-              M18title = 'Kraan'
-              M18a = 'Is het waterniveau duidelijk blauwer dan wit van bovenaf het kopje gezien, *door alleen aan het handvat van de kraan te draaien?'
-              PenaltyTitle = 'Strafpunten'
-              PenaltyText = 'Hoeveel strafpunten liggen er in de witte driehoek?'
-
-            } else if (language == 'es') {
-              yes = 'Si'
-              no = 'No'
-              title = 'Marcador Hydro Dynamics'
-
-              pointsText = 'Puntos'
-              resetText = 'Reiniciar'
-              M01title = 'Retirada de tubería'
-              M01a = '¿La tubería rota está completamente dentro de la Base?'
-              M02title = 'Flujo'
-              M02a = '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la válvula del Sistema de Bombeo?'
-              M03title = 'Bomba Adicional'
-              M03a = '¿La Bomba Adicional está en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?'
-              M04title = 'Lluvia'
-              M04a = '¿Al menos una Lluvia salió de la Nube de Lluvia?'
-              M05title = 'Filtro'
-              M05a = '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caído?'
-              M06title = 'Tratamiento del Agua'
-              M06a = '¿Se ha expulsado el Agua Grande, debido solo a la acción de mover la palanca del inodoro?'
-              M07title = 'Fuente'
-              M07a = '¿La capa de en medio de la Fuente ha subido a una altura suficiente, debido solo al Agua Grande en la cuba gris?'
-              M08title ='Tapas de Alcantarilla'
-              M08a = '¿Cuántas Tapas de Alcantarilla se han dado la vuelta más allá de la vertical sin haber ido a la Base?'
-              M08b = '¿Están ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del Trípode?'
-              M09title = 'Trípode'
-              M09a = '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?'
-              M09b = '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?'
-              M10title = 'Sustitución de Tubería'
-              M10a = '¿La Nueva Tubería está en el lugar donde estaba la Tubería Rota, en total contacto con el tapete?'
-              M11title = 'Construcción de Tubería'
-              M11a = '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?'
-              M11b = '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?'
-              M12title = 'Lodo'
-              M12a = '¿Está el Lodo tocando la madera visible de cualquiera de las seis cajas de jardín dibujadas?'
-              M13title = 'Flor'
-              M13a = '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?'
-              M13b = '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?'
-              M14title = 'Pozo de Agua'
-              M14a = '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?'
-              M14b = '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?'
-              M15title = 'Fuego'
-              M15a = '¿Disminuyó el fuego solo haciendo que el Camión de Bomberos aplicara fuerza directamente a la palanca de la Casa?'
-              M16title = 'Recolección de Agua'
-              M16a = '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/o otra agua?'
-              M16b = '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/o otra agua?'
-              M16c = '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?'
-              M16d = 'Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/o otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.'
-              M17title = 'Slingshot'
-              M17a = '¿Está el Slingshot completamente dentro de su objetivo?'
-              M17b = '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?'
-              M18title = 'Grifo'
-              M18a = '¿El nivel de agua es claramente más azul que blanco como se ve desde arriba de la taza, sólo girando el mango del grifo?'
-              PenaltyTitle = 'Penalizaciones'
-              PenaltyText = '¿Cuántas penalizaciones hay en la zona del triángulo blanco?'
-
-            } else if (language == 'sk') {
-              yes = 'Áno'
-              no = 'Nie'
-              title = 'Hydro Dynamics Hodnotenie'
-
-              pointsText = 'Skóre'
-              resetText = 'Reset'
-              M01title = 'Pokazené potrubie'
-              M01a = 'Je pokazené potrubie celkom na základni?'
-              M02title = 'Prúdenie'
-              M02a = 'Je práve jedna veľká voda na ihrisku druhého tímu a stalo sa to následkom otáčania ventilov na pumpe?'
-              M03title = 'Čerpadlo'
-              M03a = 'Je čerpadlo v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?'
-              M04title = 'Dážď'
-              M04a = 'Vypadla z oblaku aspoň jedna dažďová kvapka?'
-              M05title = 'Filter'
-              M05a = 'Posunul sa biely filter na sever až tak, že zapadla západka?'
-              M06title = 'Čistička vody'
-              M06a = 'Vypadla z čističky veľká voda následkom stlačenia páčky na záchode?'
-              M07title = 'Fontána'
-              M07a = 'Je stredná vrstva fontány viditeľne nadvihnutá iba vďaka tomu, že sa veľká voda nachádza n sivej nádrži fontány?'
-              M08title ='Poklopy'
-              M08a = 'Koľko poklopov je prevrátených bez toho aby sa kedykoľvek predtým ocitli na základni?'
-              M08b = 'Nachádzajú sa oba poklopy celkom v cieľových oblastiach? Každý z nich musí byť v inej oblasti.'
-              M09title = 'Trojnožka'
-              M09a = 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?'
-              M09b = 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?'
-              M10title = 'Oprava potrubia'
-              M10a = 'Je nové, modré potrubie na mieste, kde predtým bolo žlté potrubie a dotýka sa úplne/naplocho hracej plochy?'
-              M11title = 'Nové potrubie'
-              M11a = 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?'
-              M11b = 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?'
-              M12title = 'Kal'
-              M12a = 'Dotýka sa kal viditeľného dreva ktoréhokoľvek zo záhradných záhonov?'
-              M13title = 'Kvet'
-              M13a = 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?'
-              M13b = 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?'
-              M14title = 'Studňa'
-              M14a = 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?'
-              M14b = 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?'
-              M15title = 'Oheň'
-              M15a = 'Klesol oheň tým, že hasičské auto priamo zatlačilo na žltú páčku modelu domu?'
-              M16title = 'Zachytávanie vody'
-              M16a = 'Nachádza sa v rámčeku aspoň jedna dažďová kvapka, ktorá sa dotýka hracej plochy a nedotýka sa ničoho iného iba rámčeka a/alebo inej vody?'
-              M16b = 'Koľko veľkých vôd, ktoré sa dotýkajú hracej plochy a nedotýkajú sa ničoho iného ako rámčeku a/alebo inej vody sa nachádza v rámčeku?'
-              M16c = 'Nachádza sa v rámčeku aspoň jedna veľká voda, ktorá je položená na inej vode a nedotýka sa pritom ničoho iného iba inej vody?'
-              M16d = 'Poznámka: Rámček sa nikdy nesmie dotknúť bielej hraničnej čiary. Voda sa môže dotýkať rámčeka a/alebo inej vody ale nesmie sa dotýkať alebo pridržiavaná ničím iným.'
-              M17title = 'Slingshot'
-              M17a = 'Je Slingshot celkom v cieľovej oblasti?'
-              M17b = 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?'
-              M18title = 'Vodovodný kohútik'
-              M18a = 'Je vodná hladina viditeľne viac modrá ako biela pri pohľade zhora do pohára a stalo sa tak iba otáčaním točky kohútika?'
-              PenaltyTitle = 'Penalizácia'
-              PenaltyText = 'Koľko penalizačných diskov je v bielom trojuholníku?'
-
-            } else {
-
-              title = "Hydro Dynamics Scorer"
-              yes = "Yes"
-              no = "No"
-              pointsText = 'Points'
-              resetText = 'Reset'
-              M01title = 'Pipe Removal'
-              M01a = 'Is the broken pipe completely in base?'
-              M02title = 'Flow'
-              M02a = 'Was one Big Water in the other team’s field as a result of turning the Pump System’s valve(s)?'
-              M03title = 'Pump Addition'
-              M03a = 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?'
-              M04title = 'Rain'
-              M04a = 'Did at least one Rain come out of the Rain Cloud?'
-              M05title = 'Filter'
-              M05a = 'Has the Filter been moved north until the lock latch drops?'
-              M06title = 'Water Treatment'
-              M06a = 'Has the Big Water been ejected, due only to moving the Toilet lever?'
-              M07title = 'Fountain'
-              M07a = 'Has the Fountain’s middle layer risen some obvious height, due only to a Big Water in the gray tub?'
-              M08title ='Manhole Covers'
-              M08a = 'How many Manhole covers are flipped over past veritical without ever reaching Base?'
-              M08b = 'Are both Manholecovers completely in separate Tripod targets?'
-              M09title = 'Tripod'
-              M09a = 'Is the inspection camera Tripod partly in either Tripod target, with all of its feet touching the mat?'
-              M09b = 'Is the inspection camera Tripod completely in either Tripod target, with all of its feet touching the mat?'
-              M10title = 'Pipe Replacement'
-              M10a = 'Is the New Pipe in the location the Broken Pipe was, in full/flat contact with the mat?'
-              M11title = 'Pipe Construction'
-              M11a = 'Is the New Pipe partly in its target, in full/flat contact with the mat?'
-              M11b = 'Is the New Pipe completely in its target, in full/flat contact with the mat?'
-              M12title = 'Sludge'
-              M12a = 'Is the Sludge touching the visible wood of any of the six drawn garden boxes?'
-              M13title = 'Flower'
-              M13a = 'Has the Flower risen some obvious height and stays there, due only to a Big Water in the brown pot?'
-              M13b = 'Does the Flower have at least one Rain in the purple part, touching nothing but the Flower model.'
-              M14title = 'Water Well'
-              M14a = 'Is the Water Well in contact with the mat and that contact is partly inside the Water Well target?'
-              M14b = 'Is the Water Well in contact with the mat and that contact is completely in the Water Well target?'
-              M15title = 'Fire'
-              M15a = 'Did the fire drop only by making the Firetruck apply direct force to the House’s lever?'
-              M16title = 'Water Collection'
-              M16a = 'Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water?'
-              M16b = 'How many Big Water are there that are touching the mat in the Water Target and touching nothing else other than the target and/or other water?'
-              M16c = 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?'
-              M16d = 'Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.'
-              M17title = 'Slingshot'
-              M17a = 'Is the Sligshot completely in its target?'
-              M17b = 'Is the Dirty Water and a Rain completely in the Slingshot target?'
-              M18title = 'Faucet'
-              M18a = 'Is the water level obviously more blue than white as seen from above the cup, only by turning the Faucet handle?'
-              PenaltyTitle = 'Penalties'
-              PenaltyText = 'How many penalties are in the white triangle area?'
-            }
-
-            startrow(all_screen)
-
-            starttable('M01', M01title, 'M01.png' , ['piperemoval'], 0)
-            createbutton("piperemoval", 20, M01a)
-            endtable()
-
-            starttable('M02', M02title,'M02.png', ['flow'], 0)
-            createbutton("flow", 25 , M02a)
-            endtable()
-
-            starttable('M03', M03title,'M03.png', ['pumpaddition'], 0)
-            createbutton("pumpaddition", 20 , M03a)
-            endtable()
-
-            starttable('M04', M04title,'M04.png', ['rain'], 0)
-            createbutton("rain", 20 , M04a)
-            endtable()
-
-            starttable('M05', M05title, 'M05.png' , ['filter'], 0)
-            createbutton("filter", 30 , M05a)
-            endtable()
-
-            starttable('M06', M06title, 'M06.png', ['watertreatment'], 0)
-            createbutton("watertreatment", 20, M06a)
-            endtable()
-
-            starttable('M07', M07title, 'M07.png' , ['fountain'], 0)
-            createbutton("fountain", 20 , M07a)
-            endtable()
-
-            starttable('M08', M08title, 'M08.png', ['manholecovers', 'manholecovers2'], 0)
-            createrange("manholecovers", 15 , 0, 2, 0, M08a,'')
-            createbutton("manholecovers2", 30 , M08b)
-
-            endtable()
-
-            breakrow(mobile1,100000)
-
-
-            starttable('M09', M09title, 'M09.png' , ['tripod','tripod2'], 0)
-            createbutton("tripod", 15 , M09a)
-            createbutton("tripod2", 20 , M09b)
-            endtable()
-            //            endrow(mobile)
-            //            startrow(mobile)
-
-            breakrow(mobile,mobile1)
-
-
-            starttable('M10', M10title, 'M10.png' , ['pipereplacement'], 0)
-            createbutton("pipereplacement", 20 , M10a)
-            endtable()
-
-            starttable('M11', M11title, 'M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-            createbutton("pipeconstruction", 15, M11a)
-            createbutton("pipeconstruction2", 20, M11b)
-            endtable()
-
-            //            endrow(mobile1)
-            //            startrow(mobile1)
-
-            starttable('M12', M12title, 'M12.png', ['sludge'], 0)
-            createbutton("sludge", 30 , M12a)
-            endtable()
-
-            starttable('M13', M13title, 'M13.png', ['flower1', 'flower2'], 0)
-            createbutton("flower1", 30 , M13a)
-            createbutton("flower2", 30 , M13b)
-            endtable()
-
-            starttable('M14', M14title, 'M14.png', ['well','well2'], 0)
-            createbutton("well", 15, M14a)
-            createbutton("well2", 25, M14b)
-            endtable()
-
-            breakrow(mobile1,100000)
-
-            starttable('M15', M15title, 'M15.png', ['fire'], 0)
-            createbutton("fire", 25, M15a)
-            endtable()
-
-            starttable('M16', M16title, 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-            createbutton("collection1", 10, M16a)
-            createrange("collection2", 10, 0, 4, 0, M16b,'')
-            createbutton("collection3", 30, M16c)
-            createcomment(M16d)
-            endtable()
-
-            starttable('M17', M17title, 'M17.png', ['slingshot1', 'slingshot2'], 0)
-            createbutton("slingshot1", 20, M17a)
-            createbutton("slingshot2", 15, M17b)
-            endtable()
-
-            starttable('M18', M18title, 'M18.png', ['faucet'], 0)
-            createbutton("faucet", 25, M18a)
-            endtable()
-
-            starttable('P', PenaltyTitle, 'penalty.png', ['penalty'], 0)
-            createrange("penalty", -5 , 0, 6, 0, PenaltyText,'')
-            endtable()
-
-
-            //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
-
-            endrow(all_screen)
-
-            createsliderenables('manholecovers','manholecovers2')
-            createbuttonconflict('tripod','tripod2','')
-            createbuttonconflict('pipeconstruction','pipeconstruction2','')
-            createbuttonenables('flower1','flower2')
-            createbuttonenables('slingshot1','slingshot2')
-            createbuttonconflict('well','well2','')
-
-            document.getElementById('title').innerHTML = title
-
-            </script>
-          </tr>
-        </table>
-        <br>
-
-      </form>
-    </div>
-    <div id="tabs-2">
-      <p>
-        <div class="ui-mini" id="Timer">
-          Timer:
-          <table style="border: 10px solid black; border-collapse: collapse;">
-            <tr style="border: 10px solid black; border-collapse: collapse;">
-              <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
-                <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
-                </p>
-              </td>
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" onclick="CDtimer()">Start</button>
-              </td>
-            </tr>
-            <tr style="border: 10px solid black; border-collapse: collapse;">
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-
-        <div class="ui-mini" id="Stopwatch">
-          Stopwatch:
-          <table style="border: 10px solid black; border-collapse: collapse;">
-            <tr style="border: 10px solid black; border-collapse: collapse;">
-              <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
-                <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
-                </p>
-              </td>
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
-              </td>
-            </tr>
-            <tr>
-              <td style="border: 10px solid black; border-collapse: collapse;">
-                <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Stop</button>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </p>
-    </div>
-    <div id="tabs-3">
-      <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
-      <br>
-
-      <div class="ui-grid-b ui-responsive">
-        <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
-          <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
-          <div class="ui-block-b" style="width: 170">
-
-            <div data-role="stepper" data-direction="vertical">
+        <div id="tabs-1">
+          <form id="missions">
             <style>
-            input[type=number]::-webkit-outer-spin-button,
-            input[type=number]::-webkit-inner-spin-button {
-              -webkit-appearance: none;
-              margin: 0;
-            }
+            #table_id  {display: block; }
+//      tr td {display: inline-block; }
 
-            input[type=number] {
-              -moz-appearance:textfield;
-              }		</style>
-              <script>
-              start = 1; maximum = window.localStorage.DRHDSscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
-              document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
+            </style>
+            <table style="display: block;" id="table_id">
+              <tr>
+                <script>
 
-              </script>
+                mobile = 500
+                mobile1 = 1000
+
+		all_screen = 0
+
+
+if (language == 'pt-br') {
+yes = 'Sim'
+no = 'Não'
+title = 'Hydro Dynamics Pontuação'
+                startrow(all_screen)
+
+                starttable('M01', 'Remoção do cano','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'O cano quebrado está completamente na Base?')
+                endtable()
+
+                starttable('M02', 'Vazão','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'A Água Grande está na arena da outra equipe sendo girada somente pela Válvula do Sistema de Bombas?')
+                endtable()
+
+                starttable('M03', 'Bomba da Água','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'A Bomba da Água está em contato com o tapete e completamente no alvo da Bomba da Água?')
+                endtable()
+
+                starttable('M04', 'Chuva','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Caiu pelo menos uma chuva da Nuvem de Chuva?')
+                endtable()
+
+                starttable('M05', 'Filtro','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'O Filtro foi movido para o norte até que a trava da tranca caia?')
+                endtable()
+
+                starttable('M06', 'Tratamento de Água','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'A Água Grande foi ejetada movendo apenas a alavanca do vaso?')
+                endtable()
+
+
+                starttable('M07', 'Fonte','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'A camada média da Fonte subiu (e permaneceu na posição) a uma altura visível, devido apenas a uma Água Grande na cuba cinza?')
+                endtable()
+
+                starttable('M08', 'Tampas de Bueiro','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Quantas Tampas de Bueiro foram viradas ultrapassando a linha vertical, sem que cheguem na Base?','')
+                createbutton("manholecovers2", 30 , 'Ambas Tampas de Bueiro estão completamente em alvos separados do Tripé?')
+
+endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Tripé','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'O Tripé da câmera de inspeção está parcialmente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete.')
+                createbutton("tripod2", 20 , 'O Tripé da câmera de inspeção está completamente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete.')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Substituição de Cano','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'O Novo Cano posicionado no lugar do cano quebrado, está em contato total/horizontal com o tapete?')
+                endtable()
+
+
+                starttable('M11', 'Construção de Cano','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Construção de Cano')
+                createbutton("pipeconstruction2", 20, 'O Novo Cano está parcialmente em seu alvo, em contato total/horizontal com o tapete?')
+                endtable()
+
+                starttable('M12', 'Lama','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'A Lama está tocando a madeira visível de qualquer de uma das seis caixas de jardim desenhadas?')
+                endtable()
+
+                starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'A Flor subiu a uma altura visível e ficou lá, devido apenas a uma Água Grande no vaso marrom?')
+                createbutton("flower2", 30 , 'Flor tem pelo menos uma chuva na parte roxa, sem tocar nada além do modelo da Flor?')
+                endtable()
+
+                starttable('M14', 'Poço de Água','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'O Poço de Água está em contato com o tapete e este contato está parcialmente no alvo do Poço de Água?')
+                createbutton("well2", 25, 'O Poço de Água está em contato com o tapete e este contato está completamente no alvo do Poço de Água?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Fogo','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'O Fogo caiu com o Caminhão de Bombeiro aplicando forca diretamente na alavanca da Casa?')
+                endtable()
+
+                starttable('M16', 'Coleta de Água', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Existe pelo menos uma Chuva tocando o tapete no Alvo da Água e não tocando mais nada a não ser o alvo e/ou outra água?')
+                createrange("collection2", 10, 0, 4, 0, 'Quantas Água Grande estão tocando o tapete no Alvo da Água e não tocando mais nada a não ser o alvo e/ou outra água?','')
+                createbutton("collection3", 30, 'Existe ao menos uma Água Grande no topo de uma outra Água Grande com nada tocando nela com exceção de outra água?')
+                createcomment('Nota: O alvo não deve tocar a linha branca fora dos limites. A água pode estar tocando o alvo e/ou outra água, mas não pode tocar nem ser guiado por qualquer outra coisa.')
+                endtable()
+
+                starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'O Slingshot está completamente em seu alvo?')
+                createbutton("slingshot2", 15, 'A Água Suja e uma Chuva estão completamente no alvo do Slingshot?')
+                endtable()
+
+                starttable('M18', 'Torneira','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'O nível de agua esta obviamente mais azul que branca, visto de cima da xícara, através apenas do giro da torneira?')
+                endtable()
+
+                starttable('P','Penalidades','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Quantos discos de Penalidade estão na área do triângulo branco?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'de') {
+yes = 'Ja'
+no = 'Nein'
+title = 'Hydro Dynamics Punkterechner'
+                startrow(all_screen)
+
+                starttable('M01', 'Rohrleitung entfernen','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Befindet sich die kaputte Rohrleitung komplett in der Base?')
+                endtable()
+
+                starttable('M02', 'Pumpsystem','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Befindet sich eine große Wassermenge nur durch Drehung des/der Pumpventil(e)?')
+                endtable()
+
+                starttable('M03', 'Zusatzpumpe','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Berührt die Zusatzpumpe ausschließlich innerhalb ihres Zielgebiets die Spielfeldmatte?')
+                endtable()
+
+                starttable('M04', 'Regen','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Befindet sich mindestens ein Regentropfen außerhalb der Regenwolke?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Ist der Verriegelungshebel des Filters eingerastet?')
+                endtable()
+
+                starttable('M06', 'Wasseraufbereitung','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine große Wassermenge ausgeworfen?')
+                endtable()
+
+
+                starttable('M07', 'Springbrunnen','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine große Wassermenge in der grauen Wanne geschehen?')
+                endtable()
+
+                starttable('M08', 'Gullydeckel','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Wie viele Gullydeckel sind erkennbar weiter als senkrecht umgedreht ohne jemals in der Base gewesen zu sein?','')
+                createbutton("manholecovers2", 30 , 'Befinden sich beide Gullydeckel jeweils einzeln und komplett in einem Zielgebiet?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Stativ','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
+                createbutton("tripod2", 20 , 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Rohrleitung auswechseln','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Befindet sich die neue blaue Rohrleitung dort, wo vorher die gelbe kaputte Rohrleitung war und liegt vollständig plan auf der Matte?')
+                endtable()
+
+
+                starttable('M11', 'Rohrleitung bauen','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?')
+                createbutton("pipeconstruction2", 20, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?')
+                endtable()
+
+                starttable('M12', 'Klärschlamm','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Berürhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzkästen?')
+                endtable()
+
+                starttable('M13', 'Blume','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?')
+                createbutton("flower2", 30 , 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?')
+                endtable()
+
+                starttable('M14', 'Brunnen','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist teilweise innerhalb des Zielgebiets?')
+                createbutton("well2", 25, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist komplett innerhalb des Zielgebiets?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Feuer','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Sind die Flammen gelöscht und der gelbe Hebel wurde dafür nur mit dem Feuerwehrauto bewegt?')
+                endtable()
+
+                starttable('M16', 'Wasser sammeln', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Befindet sich min. 1 Regentropfen im Zielgebiet, berührt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?')
+                createrange("collection2", 10, 0, 4, 0, 'Wie viele große Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?','')
+                createbutton("collection3", 30, 'Befindet sich mindestens eine große Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?')
+                createcomment('Hinweis: Das Zielgebiet darf nie die weiße Grenzlinie berühren oder überqueren. Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser berühren, jedoch von nichts anderem berührt oder umschlossen werden.')
+                endtable()
+
+                starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Befindet sich der Slingshot komplett inerhalb des Zielgebiets?')
+                createbutton("slingshot2", 15, 'Befinden sich zusätzlich auch das Schmutzwasser und der Regentropfen komplett im Zielgebiet?')
+                endtable()
+
+                starttable('M18', 'Wasserhahn','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiß und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?')
+                endtable()
+
+                starttable('P','Strafpunkte:','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Wie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'nl') {
+yes = 'Ja'
+no = 'Nee'
+title = 'Hydro Dynamics Puntenteller'
+                startrow(all_screen)
+
+                starttable('M01', 'Pijp verwijderen','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Is de gebroken pijp volledig in de basis?')
+                endtable()
+
+                starttable('M02', 'Stroming','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Is 1 groot water in het veld van het andere team doordat er gedraaid is aan de kleppen van het pompsysteem')
+                endtable()
+
+                starttable('M03', 'Extra pomp plaatsen','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Is de extra pomp in contact met de mat en volledig binnen het plaatsingsgebied?')
+                endtable()
+
+                starttable('M04', 'Regen','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Is tenminste 1 regendruppel uit de regenwolk gekomen?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Is de filter noordwaarts verplaatst tot dat de blokkeringsgrendel valt?')
+                endtable()
+
+                starttable('M06', 'Waterzuivering','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Is het grote water uitgeworpen door alleen de toilethendel te bewegen?')
+                endtable()
+
+
+                starttable('M07', 'Fontein','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Is de middelste laag van de fontein duidelijk omhoog gekomen, door uitsluitend het plaatsen van groot water in de grijze kuip?')
+                endtable()
+
+                starttable('M08', 'Putdeksel','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Hoeveel putdeksels zijn er duidelijk voorbij verticaal gedraaid, zonder dat ze in de basis zijn geweest?','')
+                createbutton("manholecovers2", 30 , 'Zijn alle twee de putdeksel volledig in afzonderlijke statiefgebieden?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Statief','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?')
+                createbutton("tripod2", 20 , 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Leiding vervangen','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Is de nieuwe leiding op de plaats waar de gebroken leiding was, in volledig/vlak contact met de mat')
+                endtable()
+
+
+                starttable('M11', 'Leidingencontructie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?')
+                createbutton("pipeconstruction2", 20, 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?')
+                endtable()
+
+                starttable('M12', 'Slib','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Raakt het slib zichtbaar het hout van een van de 6 getekende plantenbakken?')
+                endtable()
+
+                starttable('M13', 'Bloem','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?')
+                createbutton("flower2", 30 , 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?')
+                endtable()
+
+                starttable('M14', 'Waterput','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?')
+                createbutton("well2", 25, 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Vuur','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Is het vuur gezakt door de brandweeraut direct kracht te laten uitvoeren op de hendel van het huis?')
+                endtable()
+
+                starttable('M16', 'Waterwinning', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Raakt er tenminste 1 regendruppel de mat in het waterdoel aan en raakt het verder niets anders aan dan het gebied en/of ander water?')
+                createrange("collection2", 10, 0, 4, 0, 'Hoeveel groot water raakt de mat in het waterdoel aan en raakt het verder niets anders aan dan het doel en/of ander water?','')
+                createbutton("collection3", 30, 'Is er tenminste 1 groot water boven op het andere grote water dat niets anders raakt dan ander water')
+                createcomment('Let op: Het waterdoel mag nooit de grenslijn raken. Water mag alleen het doel of ander water raken. Het water mag niet geleid of aangeraakt worden door iets anders.')
+                endtable()
+
+                starttable('M17', 'Katapult','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Is de katapult volledig in het doelgebied?')
+                createbutton("slingshot2", 15, 'Is het vuile water en een regen volledig in het doelgebied van de katapult?')
+                endtable()
+
+                starttable('M18', 'Kraan','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Is het waterniveau duidelijk blauwer dan wit van bovenaf het kopje gezien, *door alleen aan het handvat van de kraan te draaien?')
+                endtable()
+
+                starttable('P','Strafpunten','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Hoeveel strafpunten liggen er in de witte driehoek?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'es') {
+yes = 'Si'
+no = 'No'
+title = 'Marcador Hydro Dynamics'
+                startrow(all_screen)
+
+                starttable('M01', 'Retirada de tubería','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, '¿La tubería rota está completamente dentro de la Base?')
+                endtable()
+
+                starttable('M02', 'Flujo','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la válvula del Sistema de Bombeo?')
+                endtable()
+
+                starttable('M03', 'Bomba Adicional','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , '¿La Bomba Adicional está en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?')
+                endtable()
+
+                starttable('M04', 'Lluvia','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , '¿Al menos una Lluvia salió de la Nube de Lluvia?')
+                endtable()
+
+                starttable('M05', 'Filtro','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caído?')
+                endtable()
+
+                starttable('M06', 'Tratamiento del Agua','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, '¿Se ha expulsado el Agua Grande, debido solo a la acción de mover la palanca del inodoro?')
+                endtable()
+
+
+                starttable('M07', 'Fuente','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , '¿La capa de en medio de la Fuente ha subido a una altura suficiente, debido solo al Agua Grande en la cuba gris?')
+                endtable()
+
+                starttable('M08', 'Tapas de Alcantarilla','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, '¿Cuántas Tapas de Alcantarilla se han dado la vuelta más allá de la vertical sin haber ido a la Base?','')
+                createbutton("manholecovers2", 30 , '¿Están ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del Trípode?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Trípode','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
+                createbutton("tripod2", 20 , '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Sustitución de Tubería','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , '¿La Nueva Tubería está en el lugar donde estaba la Tubería Rota, en total contacto con el tapete?')
+                endtable()
+
+
+                starttable('M11', 'Construcción de Tubería','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?')
+                createbutton("pipeconstruction2", 20, '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?')
+                endtable()
+
+                starttable('M12', 'Lodo','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'¿Está el Lodo tocando la madera visible de cualquiera de las seis cajas de jardín dibujadas?')
+                endtable()
+
+                starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
+                createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?')
+                endtable()
+
+                starttable('M14', 'Pozo de Agua','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?')
+                createbutton("well2", 25, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Fuego','M15.png', ['fire'], 0)
+                createbutton("fire", 25, '¿Disminuyó el fuego solo haciendo que el Camión de Bomberos aplicara fuerza directamente a la palanca de la Casa?')
+                endtable()
+
+                starttable('M16', 'Recolección de Agua', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/o otra agua?')
+                createrange("collection2", 10, 0, 4, 0, '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/o otra agua?','')
+                createbutton("collection3", 30, '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?')
+                createcomment('Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/o otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.')
+                endtable()
+
+                starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, '¿Está el Slingshot completamente dentro de su objetivo?')
+                createbutton("slingshot2", 15, '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?')
+                endtable()
+
+                starttable('M18', 'Grifo','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, '¿El nivel de agua es claramente más azul que blanco como se ve desde arriba de la taza, sólo girando el mango del grifo?')
+                endtable()
+
+                starttable('P','Penalizaciones','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, '¿Cuántas penalizaciones hay en la zona del triángulo blanco?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else if (language == 'sk') {
+yes = 'Áno'
+no = 'Nie'
+title = 'Hydro Dynamics Hodnotenie'
+                startrow(all_screen)
+
+                starttable('M01', 'Pokazené potrubie','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Je pokazené potrubie celkom na základni?')
+                endtable()
+
+                starttable('M02', 'Prúdenie','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Je práve jedna veľká voda na ihrisku druhého tímu a stalo sa to následkom otáčania ventilov na pumpe?')
+                endtable()
+
+                starttable('M03', 'Čerpadlo','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Je čerpadlo v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
+                endtable()
+
+                starttable('M04', 'Dážď','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , 'Vypadla z oblaku aspoň jedna dažďová kvapka?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Posunul sa biely filter na sever až tak, že zapadla západka?')
+                endtable()
+
+                starttable('M06', 'Čistička vody','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Vypadla z čističky veľká voda následkom stlačenia páčky na záchode?')
+                endtable()
+
+
+                starttable('M07', 'Fontána','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Je stredná vrstva fontány viditeľne nadvihnutá iba vďaka tomu, že sa veľká voda nachádza n sivej nádrži fontány?')
+                endtable()
+
+                starttable('M08', 'Poklopy','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'Koľko poklopov je prevrátených bez toho aby sa kedykoľvek predtým ocitli na základni?','')
+                createbutton("manholecovers2", 30 , 'Nachádzajú sa oba poklopy celkom v cieľových oblastiach? Každý z nich musí byť v inej oblasti.')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Trojnožka','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
+                createbutton("tripod2", 20 , 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Oprava potrubia','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Je nové, modré potrubie na mieste, kde predtým bolo žlté potrubie a dotýka sa úplne/naplocho hracej plochy?')
+                endtable()
+
+
+                starttable('M11', 'Nové potrubie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
+                createbutton("pipeconstruction2", 20, 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
+                endtable()
+
+                starttable('M12', 'Kal','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Dotýka sa kal viditeľného dreva ktoréhokoľvek zo záhradných záhonov?')
+                endtable()
+
+                starttable('M13', 'Kvet','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?')
+                createbutton("flower2", 30 , 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?')
+                endtable()
+
+                starttable('M14', 'Studňa','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?')
+                createbutton("well2", 25, 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Oheň','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Klesol oheň tým, že hasičské auto priamo zatlačilo na žltú páčku modelu domu?')
+                endtable()
+
+                starttable('M16', 'Zachytávanie vody', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Nachádza sa v rámčeku aspoň jedna dažďová kvapka, ktorá sa dotýka hracej plochy a nedotýka sa ničoho iného iba rámčeka a/alebo inej vody?')
+                createrange("collection2", 10, 0, 4, 0, 'Koľko veľkých vôd, ktoré sa dotýkajú hracej plochy a nedotýkajú sa ničoho iného ako rámčeku a/alebo inej vody sa nachádza v rámčeku?','')
+                createbutton("collection3", 30, 'Nachádza sa v rámčeku aspoň jedna veľká voda, ktorá je položená na inej vode a nedotýka sa pritom ničoho iného iba inej vody?')
+                createcomment('Poznámka: Rámček sa nikdy nesmie dotknúť bielej hraničnej čiary. Voda sa môže dotýkať rámčeka a/alebo inej vody ale nesmie sa dotýkať alebo pridržiavaná ničím iným.')
+                endtable()
+
+                starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Je Slingshot celkom v cieľovej oblasti?')
+                createbutton("slingshot2", 15, 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?')
+                endtable()
+
+                starttable('M18', 'Vodovodný kohútik','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Je vodná hladina viditeľne viac modrá ako biela pri pohľade zhora do pohára a stalo sa tak iba otáčaním točky kohútika?')
+                endtable()
+
+                starttable('P','Penalizácia','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'Koľko penalizačných diskov je v bielom trojuholníku?','')
+                endtable()
+
+
+
+                endrow(all_screen)
+} else {
+
+
+title = "Hydro Dynamics Scorer"
+yes = "Yes"
+no = "No"
+
+                startrow(all_screen)
+
+                starttable('M01', 'Pipe Removal','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, 'Is the broken pipe completely in base?')
+                endtable()
+
+                starttable('M02', 'Flow','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , 'Is one Big Water ever in the other team’s field as a result of turning the Pump System’s valve(s)?')
+                endtable()
+
+                starttable('M03', 'Pump Addition','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?')
+                endtable()
+
+                starttable('M04', 'Rain','M04.png', ['rain'], 0)
+		            createbutton("rain", 20 , 'Did at least one Rain come out of the Rain Cloud?')
+                endtable()
+
+                starttable('M05', 'Filter','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , 'Has the Filter been moved north until the lock latch drops?')
+                endtable()
+
+                starttable('M06', 'Water Treatment','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, 'Has the Big Water been ejected, due only to moving the Toilet lever?')
+                endtable()
+
+
+                starttable('M07', 'Fountain','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , 'Has the Fountain’s middle layer risen some obvious height, due only to a Big Water in the gray tub?')
+                endtable()
+
+                starttable('M08', 'Manhole Covers','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, 'How many Manhole covers are flipped over past veritical without ever reaching Base?','')
+                createbutton("manholecovers2", 30 , 'Are both Manholecovers completely in separate Tripod targets?')
+
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', 'Tripod','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , 'Is the inspection camera Tripod partly in either Tripod target, with all of its feet touching the mat?')
+                createbutton("tripod2", 20 , 'Is the inspection camera Tripod completely in either Tripod target, with all of its feet touching the mat?')
+                endtable()
+                //            endrow(mobile)
+                //            startrow(mobile)
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', 'Pipe Replacement','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , 'Is the New Pipe in the location the Broken Pipe was, in full/flat contact with the mat?')
+                endtable()
+
+
+                starttable('M11', 'Pipe Construction','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, 'Is the New Pipe partly in its target, in full/flat contact with the mat?')
+                createbutton("pipeconstruction2", 20, 'Is the New Pipe completely in its target, in full/flat contact with the mat?')
+                endtable()
+
+                //            endrow(mobile1)
+                //            startrow(mobile1)
+
+                starttable('M12', 'Sludge','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'Is the Sludge touching the visible wood of any of the six drawn garden boxes?')
+                endtable()
+
+                starttable('M13', 'Flower','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , 'Has the Flower risen some obvious height and stays there, due only to a Big Water in the brown pot?')
+                createbutton("flower2", 30 , 'Does the Flower have at least one Rain in the purple part, touching nothing but the Flower model.')
+                endtable()
+
+                starttable('M14', 'Water Well','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, 'Is the Water Well in contact with the mat and that contact is partly inside the Water Well target?')
+                createbutton("well2", 25, 'Is the Water Well in contact with the mat and that contact is completely in the Water Well target?')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', 'Fire','M15.png', ['fire'], 0)
+                createbutton("fire", 25, 'Did the fire drop only by making the Firetruck apply direct force to the House’s lever?')
+                endtable()
+
+		            starttable('M16', 'Water Collection', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, 'Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water?')
+                createrange("collection2", 10, 0, 4, 0, 'How many Big Water are there that are touching the mat in the Water Target and touching nothing else other than the target and/or other water?','')
+                createbutton("collection3", 30, 'Is there at least one Big Water on top of the above Big Water with nothing touching it but other water?')
+                createcomment('Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.')
+                endtable()
+
+		            starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, 'Is the Sligshot completely in its target?')
+                createbutton("slingshot2", 15, 'Is the Dirty Water and a Rain completely in the Slingshot target?')
+                endtable()
+
+		            starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, 'Is the water level obviously more blue than white as seen from above the cup, only by turning the Faucet handle?')
+                endtable()
+
+                starttable('P','Penalties','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, 'How many penalties are in the white triangle area?','')
+                endtable()
+
+
+                //createrange("dogandtrainer", 100 , 0, 10, 'Place shark')
+
+                endrow(all_screen)
+}
+createsliderenables('manholecovers','manholecovers2')
+createbuttonconflict('tripod','tripod2','')
+createbuttonconflict('pipeconstruction','pipeconstruction2','')
+createbuttonenables('flower1','flower2')
+createbuttonenables('slingshot1','slingshot2')
+createbuttonconflict('well','well2','')
+
+document.getElementById('title').innerHTML = title
+
+                </script>
+              </tr>
+            </table>
+            <br>
+
+          </form>
+        </div>
+        <div id="tabs-2">
+          <p>
+            <div class="ui-mini" id="Timer">
+              Timer:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                    <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="CDtimer()">Start</button>
+                  </td>
+                </tr>
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                  </td>
+                </tr>
+              </table>
             </div>
 
-          </div>
 
+            <div class="ui-mini" id="Stopwatch">
+              Stopwatch:
+              <table style="border: 10px solid black; border-collapse: collapse;">
+                <tr style="border: 10px solid black; border-collapse: collapse;">
+                  <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                    <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                    </p>
+                  </td>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="border: 10px solid black; border-collapse: collapse;">
+                    <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </p>
         </div>
-        <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
+        <div id="tabs-3">
+          <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
+          <br>
 
-        <div style="width: 340">
-          <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
-          <div id="saves" ></div>
+          <div class="ui-grid-b ui-responsive">
+            <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
+              <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
+              <div class="ui-block-b" style="width: 170">
 
-          <button class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
-          //alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">Import Save</button>
+                <div data-role="stepper" data-direction="vertical">
+                <style>
+                input[type=number]::-webkit-outer-spin-button,
+                input[type=number]::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
 
-          <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
-          <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
+                input[type=number] {
+                  -moz-appearance:textfield;
+                  }		</style>
+                  <script>
+                  start = 1; maximum = window.localStorage.DRHDSscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
+                  document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
 
-          <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
-          <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
-          <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
-          <script type="text/javascript">
-          var anchor = document.getElementById('export');
-          var anchor2 = document.getElementById('export2');
+                  </script>
+                </div>
 
-          anchor.onclick = function() {
-            var currentTime = new Date()
-            var day = currentTime.getDate()
-            anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDSscorer + ';' + window.localStorage.DRHDS1scorer);
-            anchor.download = day + 'myscores.DRHD';
-            //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
-          };
-          anchor2.onclick = function() {
-            var currentTime = new Date()
+              </div>
+
+            </div>
+            <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
+
+            <div style="width: 340">
+              <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+              <div id="saves" ></div>
+
+              <button class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
+//alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">Import Save</button>
+
+              <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
+              <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
+
+              <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
+              <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
+              <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
+              <script type="text/javascript">
+              var anchor = document.getElementById('export');
+              var anchor2 = document.getElementById('export2');
+
+              anchor.onclick = function() {
+                var currentTime = new Date()
+                var day = currentTime.getDate()
+                anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDSscorer + ';' + window.localStorage.DRHDS1scorer);
+                anchor.download = day + 'myscores.DRHD';
+                //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
+              };
+              anchor2.onclick = function() {
+                var currentTime = new Date()
             //    var day = currentTime.getDate()
             //    anchor2.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);
             //    anchor2.download = day + 'myscores.AA1EV3';
-          }
-          </script>
+              }
+              </script>
 
-        </div>
+            </div>
 
-      </div>
-      <div data-role="navbar">
+          </div>
+          <div data-role="navbar">
 
-        <div data-tap-toggle="false" data-role="header" data-position="fixed">
+            <div data-tap-toggle="false" data-role="header" data-position="fixed">
 
-          <ul>
-            <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
-            <li><a href="#tabs-2">Timers</a></li>
-            <li><a href="#tabs-3">Saves</a></li>
-          </ul>
+              <ul>
+                <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+                <li><a href="#tabs-2">Timers</a></li>
+                <li><a href="#tabs-3">Saves</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<script src="languages.js"></script>
-<script>
+    <script src="languages.js"></script>
+    <script>
 
 
-</script>
-</body>
-<script>
-window.onload = function() {
-  loadsaves(); drawBasic();
+    </script>
+  </body>
+  <script>
+  window.onload = function() {
+    loadsaves(); drawBasic();
 
-  //document.getElementById('noshark').click()
-  check_missions('slingshot2');recalc(0,'slingshot2', 0)
-  //   check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
-  var fileInput = document.getElementById('fileInput');
+    //document.getElementById('noshark').click()
+    check_missions('slingshot2');recalc(0,'slingshot2', 0)
+ //   check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
+    var fileInput = document.getElementById('fileInput');
 
-  fileInput.addEventListener('change', function(e) {
-    var file = fileInput.files[0];
-    var textType = /text.*/;
+    fileInput.addEventListener('change', function(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
 
-    if (1==1) {
-      var reader = new FileReader();
+      if (1==1) {
+        var reader = new FileReader();
 
-      reader.onload = function(e) {
-        data = reader.result;
-        //alert(data)
+        reader.onload = function(e) {
+          data = reader.result;
+          //alert(data)
 
-        window.localStorage.DRHDSscorer = data.split(';')[0];
-        window.localStorage.DRHDS1scorer = data.split(';')[1];
+          window.localStorage.DRHDSscorer = data.split(';')[0];
+          window.localStorage.DRHDS1scorer = data.split(';')[1];
+        }
+
+        reader.readAsText(file);
+      } else {
+
       }
-
-      reader.readAsText(file);
-    } else {
-
-    }
-  });
+    });
 
 
 
-  var fileInput2 = document.getElementById('fileInput2');
+    var fileInput2 = document.getElementById('fileInput2');
 
-  fileInput2.addEventListener('change', function(e) {
-    var file2 = fileInput2.files[0];
-    var textType2 = /text.*/;
+    fileInput2.addEventListener('change', function(e) {
+      var file2 = fileInput2.files[0];
+      var textType2 = /text.*/;
 
-    if (1==1) {
-      var reader2 = new FileReader();
+      if (1==1) {
+        var reader2 = new FileReader();
 
-      reader2.onload = function(e) {
+        reader2.onload = function(e) {
 
-        data2 = reader2.result;
-        //alert(data2)
-        window.localStorage.DRHDS1scorer =  data2;
+          data2 = reader2.result;
+          //alert(data2)
+          window.localStorage.DRHDS1scorer =  data2;
+        }
+
+        reader2.readAsText(file2);
+      } else {
+
       }
+    });
 
-      reader2.readAsText(file2);
-    } else {
+  }
+  </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    }
-  });
-
-}
-</script><script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-65893558-1', 'auto');
-ga('send', 'pageview');
-</script>
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+  </script>
 
 Hydro Dynamics Scoring System Version 1.0.0. Copyright (c) EV3Lessons.com
