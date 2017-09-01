@@ -39,15 +39,7 @@ function checksliderenables(mission,enabled) {
   if (document.getElementById(mission).value == 2) {
     $('#no'+enabled).checkboxradio('enable');
     $('#yes'+enabled).checkboxradio('enable');
-  } else if (document.getElementById(mission).value != 2) {
-      //  $('#no'+enabled).click();
-          $('#no'+enabled).checkboxradio('enable');
-    $('#yes'+enabled).checkboxradio('enable');
-      document.getElementById('nomanholecovers2').click()
-          $('#no'+enabled).checkboxradio('disable');
-    $('#yes'+enabled).checkboxradio('disable');
   }
-    
 }
 
 function check_missions(mission) {
@@ -68,20 +60,19 @@ function check_missions(mission) {
       $('#yes'+thismission).checkboxradio('disable');
     enablecount = enablecount + 1
   }
-      enablecount = 0
+  enablecount = 0
   while (enablecount < enables2.length){
     thismission = enables2[enablecount][1]
       $('#no'+thismission).checkboxradio('disable');
       $('#yes'+thismission).checkboxradio('disable');
     enablecount = enablecount + 1
   }
-    checksliderenables("manholecovers", "manholecovers2")
   enablecount = 0
   while (enablecount < enables.length){
     checkbuttonenables(enables[enablecount][0],enables[enablecount][1])
     enablecount = enablecount + 1
   }
-      enablecount = 0
+  enablecount = 0
   while (enablecount < enables2.length){
     checksliderenables(enables2[enablecount][0],enables2[enablecount][1])
     enablecount = enablecount + 1
@@ -98,7 +89,18 @@ function check_missions(mission) {
     }
     enablecount = enablecount + 1
   }
-
+  enablecount = 0
+  while (enablecount < enables2.length){
+    thismission = enables2[enablecount][1]
+    if ($('#no'+thismission).is(':disabled')) {
+      document.getElementById('yes'+thismission).checked = false
+      document.getElementById('no'+thismission).checked = true
+      recalc(0,thismission,0)
+      // $('yes'+thismission).checkboxradio("refresh");
+      // $('no'+thismission).checkboxradio("refresh");
+    }
+    enablecount = enablecount + 1
+  }
   $("input[type='radio']").attr("checked",true).checkboxradio("refresh");
 }
 
@@ -112,15 +114,6 @@ stackUsed = 0
 
 function recalc(points,mission,alt){
 
-          enablecount = 0
-  while (enablecount < enables2.length){
-    thismission = enables2[enablecount][1]
-      $('#no'+thismission).checkboxradio('disable');
-      $('#yes'+thismission).checkboxradio('disable');
-    enablecount = enablecount + 1
-  }
-    checksliderenables("manholecovers", "manholecovers2")
-    
   if (alt == 1 && points == 0) {
     savepts = 1
   } else if (alt == 1 && points != 0) {
@@ -169,7 +162,7 @@ function recalc(points,mission,alt){
       }
       document.getElementById('collection2').max = maxwater - fountainUsed - treatmentUsed - flowerUsed - stackUsed
   }
-    
+
   counter = 0
   allmission = 0
   while (counter < all_mission.length){
@@ -187,8 +180,6 @@ function recalc(points,mission,alt){
   }
 
   document.getElementById('allpoints').innerHTML = allmission
-  $('#noallsamples').checkboxradio('disable');
-  $('#yesallsamples').checkboxradio('disable');
 
     var ranges = $("input[data-type='range']");
 //    var radios = $("input[type='radio']");

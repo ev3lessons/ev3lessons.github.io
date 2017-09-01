@@ -60,7 +60,7 @@ function createrange(mission, increment, min, max, start, description,js) {
   </tr>\
   <tr>\
   <td width="200">\
-  <input type="range"  data-highlight="true" data-theme="b" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange=\''+js+' recalc(this.value*'+increment+',"'+mission+'",this.value);\'>\
+  <input type="range"  data-highlight="true" data-theme="b" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" max="'+max+'" step="1" onchange="check_missions(\''+mission+'\');recalc(this.value*'+increment+',\''+mission+'\',this.value);">\
   <p id="'+mission+'Txt" style="color: red"></p>\
   </td>\
   </tr>')

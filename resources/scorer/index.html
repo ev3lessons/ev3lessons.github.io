@@ -365,7 +365,7 @@ document.write('\
     <br>
 
     <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
-      <h1 style="padding-top:0; padding-bottom:0" ><i>Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
+      <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod|0,tripod2|0,pipereplacement|0,pipeconstruction|0,pipeconstruction2|0,sludge|0,flower1|0,flower2|0,well|0,well2|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
     </div>
     <script src="html.js"></script>
 
@@ -430,7 +430,7 @@ title = 'Hydro Dynamics Pontuação'
                 starttable('M08', 'Tampas de Bueiro','M08.png', ['manholecovers', 'manholecovers2'], 0)
                 createrange("manholecovers", 15 , 0, 2, 0, 'Quantas Tampas de Bueiro foram viradas ultrapassando a linha vertical, sem que cheguem na Base?','')
                 createbutton("manholecovers2", 30 , 'Ambas Tampas de Bueiro estão completamente em alvos separados do Tripé?')
-                            createsliderenables('manholecovers','manholecovers2')
+                createsliderenables('manholecovers','manholecovers2')
 
 endtable()
 
@@ -1060,7 +1060,6 @@ no = "No"
 
                 endrow(all_screen)
 }
-                createsliderenables('manholecovers','manholecovers2')
 
 document.getElementById('title').innerHTML = title
 
