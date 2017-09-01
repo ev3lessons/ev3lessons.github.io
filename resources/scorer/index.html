@@ -430,7 +430,6 @@ title = 'Hydro Dynamics Pontuação'
                 starttable('M08', 'Tampas de Bueiro','M08.png', ['manholecovers', 'manholecovers2'], 0)
                 createrange("manholecovers", 15 , 0, 2, 0, 'Quantas Tampas de Bueiro foram viradas ultrapassando a linha vertical, sem que cheguem na Base?','')
                 createbutton("manholecovers2", 30 , 'Ambas Tampas de Bueiro estão completamente em alvos separados do Tripé?')
-                createsliderenables('manholecovers','manholecovers2')
 
 endtable()
 
@@ -440,7 +439,6 @@ endtable()
                 starttable('M09', 'Tripé','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , 'O Tripé da câmera de inspeção está parcialmente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete.')
                 createbutton("tripod2", 20 , 'O Tripé da câmera de inspeção está completamente em qualquer alvo do Tripé, com todos os seus pés tocando o tapete.')
-                createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
@@ -454,7 +452,6 @@ endtable()
                 starttable('M11', 'Construção de Cano','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, 'Construção de Cano')
                 createbutton("pipeconstruction2", 20, 'O Novo Cano está parcialmente em seu alvo, em contato total/horizontal com o tapete?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Lama','M12.png', ['sludge'], 0)
@@ -464,13 +461,11 @@ endtable()
                 starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'A Flor subiu a uma altura visível e ficou lá, devido apenas a uma Água Grande no vaso marrom?')
                 createbutton("flower2", 30 , 'Flor tem pelo menos uma chuva na parte roxa, sem tocar nada além do modelo da Flor?')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Poço de Água','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, 'O Poço de Água está em contato com o tapete e este contato está parcialmente no alvo do Poço de Água?')
                 createbutton("well2", 25, 'O Poço de Água está em contato com o tapete e este contato está completamente no alvo do Poço de Água?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -489,7 +484,6 @@ endtable()
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, 'O Slingshot está completamente em seu alvo?')
                 createbutton("slingshot2", 15, 'A Água Suja e uma Chuva estão completamente no alvo do Slingshot?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Torneira','M18.png', ['faucet'], 0)
@@ -549,7 +543,6 @@ title = 'Hydro Dynamics Punkterechner'
                 starttable('M09', 'Stativ','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
                 createbutton("tripod2", 20 , 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
-                createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
@@ -563,7 +556,6 @@ title = 'Hydro Dynamics Punkterechner'
                 starttable('M11', 'Rohrleitung bauen','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?')
                 createbutton("pipeconstruction2", 20, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Klärschlamm','M12.png', ['sludge'], 0)
@@ -573,13 +565,11 @@ title = 'Hydro Dynamics Punkterechner'
                 starttable('M13', 'Blume','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?')
                 createbutton("flower2", 30 , 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Brunnen','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist teilweise innerhalb des Zielgebiets?')
                 createbutton("well2", 25, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist komplett innerhalb des Zielgebiets?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -598,7 +588,6 @@ title = 'Hydro Dynamics Punkterechner'
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, 'Befindet sich der Slingshot komplett inerhalb des Zielgebiets?')
                 createbutton("slingshot2", 15, 'Befinden sich zusätzlich auch das Schmutzwasser und der Regentropfen komplett im Zielgebiet?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Wasserhahn','M18.png', ['faucet'], 0)
@@ -658,7 +647,6 @@ title = 'Hydro Dynamics Puntenteller'
                 starttable('M09', 'Statief','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?')
                 createbutton("tripod2", 20 , 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?')
-                createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
@@ -672,7 +660,6 @@ title = 'Hydro Dynamics Puntenteller'
                 starttable('M11', 'Leidingencontructie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?')
                 createbutton("pipeconstruction2", 20, 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Slib','M12.png', ['sludge'], 0)
@@ -682,13 +669,11 @@ title = 'Hydro Dynamics Puntenteller'
                 starttable('M13', 'Bloem','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?')
                 createbutton("flower2", 30 , 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Waterput','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?')
                 createbutton("well2", 25, 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -707,7 +692,6 @@ title = 'Hydro Dynamics Puntenteller'
                 starttable('M17', 'Katapult','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, 'Is de katapult volledig in het doelgebied?')
                 createbutton("slingshot2", 15, 'Is het vuile water en een regen volledig in het doelgebied van de katapult?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Kraan','M18.png', ['faucet'], 0)
@@ -767,7 +751,6 @@ title = 'Marcador Hydro Dynamics'
                 starttable('M09', 'Trípode','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
                 createbutton("tripod2", 20 , '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
-                createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
@@ -781,7 +764,6 @@ title = 'Marcador Hydro Dynamics'
                 starttable('M11', 'Construcción de Tubería','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?')
                 createbutton("pipeconstruction2", 20, '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Lodo','M12.png', ['sludge'], 0)
@@ -791,13 +773,11 @@ title = 'Marcador Hydro Dynamics'
                 starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
                 createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Pozo de Agua','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?')
                 createbutton("well2", 25, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -816,7 +796,6 @@ title = 'Marcador Hydro Dynamics'
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, '¿Está el Slingshot completamente dentro de su objetivo?')
                 createbutton("slingshot2", 15, '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Grifo','M18.png', ['faucet'], 0)
@@ -876,7 +855,6 @@ title = 'Hydro Dynamics Hodnotenie'
                 starttable('M09', 'Trojnožka','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
                 createbutton("tripod2", 20 , 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
-                createbuttonconflict('tripod','tripod2','')
                 endtable()
 
                 breakrow(mobile,mobile1)
@@ -890,7 +868,6 @@ title = 'Hydro Dynamics Hodnotenie'
                 starttable('M11', 'Nové potrubie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
                 createbutton("pipeconstruction2", 20, 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 starttable('M12', 'Kal','M12.png', ['sludge'], 0)
@@ -900,13 +877,11 @@ title = 'Hydro Dynamics Hodnotenie'
                 starttable('M13', 'Kvet','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?')
                 createbutton("flower2", 30 , 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Studňa','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?')
                 createbutton("well2", 25, 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -925,7 +900,6 @@ title = 'Hydro Dynamics Hodnotenie'
                 starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, 'Je Slingshot celkom v cieľovej oblasti?')
                 createbutton("slingshot2", 15, 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
                 starttable('M18', 'Vodovodný kohútik','M18.png', ['faucet'], 0)
@@ -980,7 +954,6 @@ no = "No"
                 starttable('M08', 'Manhole Covers','M08.png', ['manholecovers', 'manholecovers2'], 0)
                 createrange("manholecovers", 15 , 0, 2, 0, 'How many Manhole covers are flipped over past veritical without ever reaching Base?','')
                 createbutton("manholecovers2", 30 , 'Are both Manholecovers completely in separate Tripod targets?')
-                createsliderenables('manholecovers','manholecovers2')
 
                 endtable()
 
@@ -990,7 +963,6 @@ no = "No"
                 starttable('M09', 'Tripod','M09.png' , ['tripod','tripod2'], 0)
                 createbutton("tripod", 15 , 'Is the inspection camera Tripod partly in either Tripod target, with all of its feet touching the mat?')
                 createbutton("tripod2", 20 , 'Is the inspection camera Tripod completely in either Tripod target, with all of its feet touching the mat?')
-		            createbuttonconflict('tripod','tripod2','')
                 endtable()
                 //            endrow(mobile)
                 //            startrow(mobile)
@@ -1006,7 +978,6 @@ no = "No"
                 starttable('M11', 'Pipe Construction','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
                 createbutton("pipeconstruction", 15, 'Is the New Pipe partly in its target, in full/flat contact with the mat?')
                 createbutton("pipeconstruction2", 20, 'Is the New Pipe completely in its target, in full/flat contact with the mat?')
-                createbuttonconflict('pipeconstruction','pipeconstruction2','')
                 endtable()
 
                 //            endrow(mobile1)
@@ -1019,13 +990,11 @@ no = "No"
                 starttable('M13', 'Flower','M13.png', ['flower1', 'flower2'], 0)
                 createbutton("flower1", 30 , 'Has the Flower risen some obvious height and stays there, due only to a Big Water in the brown pot?')
                 createbutton("flower2", 30 , 'Does the Flower have at least one Rain in the purple part, touching nothing but the Flower model.')
-                createbuttonenables('flower1','flower2')
                 endtable()
 
                 starttable('M14', 'Water Well','M14.png', ['well','well2'], 0)
                 createbutton("well", 15, 'Is the Water Well in contact with the mat and that contact is partly inside the Water Well target?')
                 createbutton("well2", 25, 'Is the Water Well in contact with the mat and that contact is completely in the Water Well target?')
-                createbuttonconflict('well','well2','')
                 endtable()
 
                 breakrow(mobile1,100000)
@@ -1044,7 +1013,6 @@ no = "No"
 		            starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
                 createbutton("slingshot1", 20, 'Is the Sligshot completely in its target?')
                 createbutton("slingshot2", 15, 'Is the Dirty Water and a Rain completely in the Slingshot target?')
-                createbuttonenables('slingshot1','slingshot2')
                 endtable()
 
 		            starttable('M18', 'Faucet','M18.png', ['faucet'], 0)
@@ -1060,6 +1028,12 @@ no = "No"
 
                 endrow(all_screen)
 }
+createsliderenables('manholecovers','manholecovers2')
+createbuttonconflict('tripod','tripod2','')
+createbuttonconflict('pipeconstruction','pipeconstruction2','')
+createbuttonenables('flower1','flower2')
+createbuttonenables('slingshot1','slingshot2')
+createbuttonconflict('well','well2','')
 
 document.getElementById('title').innerHTML = title
 
