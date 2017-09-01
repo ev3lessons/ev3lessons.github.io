@@ -396,8 +396,8 @@ for (i = 0; i < langs.length; i++) {
               yes = 'Sim'
               no = 'Não'
               title = 'Hydro Dynamics Pontuação'
-              pointsText = 'Points'
-              resetText = 'Reset'
+              pointsText = 'Pontos'
+              resetText = 'Reiniciar'
               M01title = 'Remoção do cano'
               M01a = 'O cano quebrado está completamente na Base?'
               M02title = 'Vazão'
@@ -450,429 +450,231 @@ for (i = 0; i < langs.length; i++) {
               yes = 'Ja'
               no = 'Nein'
               title = 'Hydro Dynamics Punkterechner'
-              startrow(all_screen)
+              pointsText = 'Punkte'
+              resetText = 'Zurücksetzen'
+              M01title = 'Rohrleitung entfernen'
+              M01a = 'Befindet sich die kaputte Rohrleitung komplett in der Base?'
+              M02title = 'Pumpsystem'
+              M02a = 'Befindet sich eine große Wassermenge nur durch Drehung des/der Pumpventil(e)?'
+              M03title = 'Zusatzpumpe'
+              M03a = 'Berührt die Zusatzpumpe ausschließlich innerhalb ihres Zielgebiets die Spielfeldmatte?'
+              M04title = 'Regen'
+              M04a = 'Befindet sich mindestens ein Regentropfen außerhalb der Regenwolke?'
+              M05title = 'Filter'
+              M05a = 'Ist der Verriegelungshebel des Filters eingerastet?'
+              M06title = 'Wasseraufbereitung'
+              M06a = 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine große Wassermenge ausgeworfen?'
+              M07title = 'Springbrunnen'
+              M07a = 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine große Wassermenge in der grauen Wanne geschehen?'
+              M08title ='Gullydeckel'
+              M08a = 'Wie viele Gullydeckel sind erkennbar weiter als senkrecht umgedreht ohne jemals in der Base gewesen zu sein?'
+              M08b = 'Befinden sich beide Gullydeckel jeweils einzeln und komplett in einem Zielgebiet?'
+              M09title = 'Stativ'
+              M09a = 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?'
+              M09b = 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?'
+              M10title = 'Rohrleitung auswechseln'
+              M10a = 'Befindet sich die neue blaue Rohrleitung dort, wo vorher die gelbe kaputte Rohrleitung war und liegt vollständig plan auf der Matte?'
+              M11title = 'Rohrleitung bauen'
+              M11a = 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?'
+              M11b = 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?'
+              M12title = 'Klärschlamm'
+              M12a = 'Berürhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzkästen??'
+              M13title = 'Blume'
+              M13a = 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?'
+              M13b = 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?'
+              M14title = 'Brunnen'
+              M14a = 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist teilweise innerhalb des Zielgebiets?'
+              M14b = 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist komplett innerhalb des Zielgebiets?'
+              M15title = 'Feuer'
+              M15a = 'Sind die Flammen gelöscht und der gelbe Hebel wurde dafür nur mit dem Feuerwehrauto bewegt?'
+              M16title = 'Wasser sammeln'
+              M16a = 'Befindet sich min. 1 Regentropfen im Zielgebiet, berührt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?'
+              M16b = 'Wie viele große Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?'
+              M16c = 'Befindet sich mindestens eine große Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?'
+              M16d = 'Hinweis: Das Zielgebiet darf nie die weiße Grenzlinie berühren oder überqueren. Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser berühren, jedoch von nichts anderem berührt oder umschlossen werden.'
+              M17title = 'Slingshot'
+              M17a = 'Befindet sich der Slingshot komplett inerhalb des Zielgebiets?'
+              M17b = 'Befinden sich zusätzlich auch das Schmutzwasser und der Regentropfen komplett im Zielgebiet?'
+              M18title = 'Wasserhahn'
+              M18a = 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiß und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?'
+              PenaltyTitle = 'Strafpunkte'
+              PenaltyText = 'ie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?'
 
-              starttable('M01', 'Rohrleitung entfernen','M01.png' , ['piperemoval'], 0)
-              createbutton("piperemoval", 20, 'Befindet sich die kaputte Rohrleitung komplett in der Base?')
-              endtable()
-
-              starttable('M02', 'Pumpsystem','M02.png', ['flow'], 0)
-              createbutton("flow", 25 , 'Befindet sich eine große Wassermenge nur durch Drehung des/der Pumpventil(e)?')
-              endtable()
-
-              starttable('M03', 'Zusatzpumpe','M03.png', ['pumpaddition'], 0)
-              createbutton("pumpaddition", 20 , 'Berührt die Zusatzpumpe ausschließlich innerhalb ihres Zielgebiets die Spielfeldmatte?')
-              endtable()
-
-              starttable('M04', 'Regen','M04.png', ['rain'], 0)
-              createbutton("rain", 20 , 'Befindet sich mindestens ein Regentropfen außerhalb der Regenwolke?')
-              endtable()
-
-              starttable('M05', 'Filter','M05.png' , ['filter'], 0)
-              createbutton("filter", 30 , 'Ist der Verriegelungshebel des Filters eingerastet?')
-              endtable()
-
-              starttable('M06', 'Wasseraufbereitung','M06.png', ['watertreatment'], 0)
-              createbutton("watertreatment", 20, 'Hat das Wasseraufbereitungsmodell nur durch Bewegung des Toilettenhebels eine große Wassermenge ausgeworfen?')
-              endtable()
-
-
-              starttable('M07', 'Springbrunnen','M07.png' , ['fountain'], 0)
-              createbutton("fountain", 20 , 'Ist die Fontäne des Springbrunnens erkennbar angehoben und ist diees nur durch eine große Wassermenge in der grauen Wanne geschehen?')
-              endtable()
-
-              starttable('M08', 'Gullydeckel','M08.png', ['manholecovers', 'manholecovers2'], 0)
-              createrange("manholecovers", 15 , 0, 2, 0, 'Wie viele Gullydeckel sind erkennbar weiter als senkrecht umgedreht ohne jemals in der Base gewesen zu sein?','')
-              createbutton("manholecovers2", 30 , 'Befinden sich beide Gullydeckel jeweils einzeln und komplett in einem Zielgebiet?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-
-              starttable('M09', 'Stativ','M09.png' , ['tripod','tripod2'], 0)
-              createbutton("tripod", 15 , 'Befindet sich das Kamera-Sativ teilweise in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
-              createbutton("tripod2", 20 , 'Befindet sich das Kamera-Sativ komplett in einem Zielgebiet und brührt mit allen Füßen die Spielfeldmatte?')
-              endtable()
-
-              breakrow(mobile,mobile1)
-
-
-              starttable('M10', 'Rohrleitung auswechseln','M10.png' , ['pipereplacement'], 0)
-              createbutton("pipereplacement", 20 , 'Befindet sich die neue blaue Rohrleitung dort, wo vorher die gelbe kaputte Rohrleitung war und liegt vollständig plan auf der Matte?')
-              endtable()
-
-
-              starttable('M11', 'Rohrleitung bauen','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-              createbutton("pipeconstruction", 15, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich teilweise im Zielgebiet?')
-              createbutton("pipeconstruction2", 20, 'Liegt die neue Rohrleitung komplett plan auf der Spielfeldmatte und befindet sich komplett im Zielgebiet?')
-              endtable()
-
-              starttable('M12', 'Klärschlamm','M12.png', ['sludge'], 0)
-              createbutton("sludge", 30 ,'Berürhhrt der Klärschlamm das sichtbare Holz eines der 6 Pflanzkästen?')
-              endtable()
-
-              starttable('M13', 'Blume','M13.png', ['flower1', 'flower2'], 0)
-              createbutton("flower1", 30 , 'Hat sich die Blume erkennbar aufgerichtet, bleibt so und ist dies nur aufgrund einer großen Wassermenge im braunen Trog geschehen?')
-              createbutton("flower2", 30 , 'Befindet sich zusätzlich mindestens ein Regentropfen so in der violetten Blüte, dass dieser nichts anderes brührt als die Blüte selbst?')
-              endtable()
-
-              starttable('M14', 'Brunnen','M14.png', ['well','well2'], 0)
-              createbutton("well", 15, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist teilweise innerhalb des Zielgebiets?')
-              createbutton("well2", 25, 'Befindet sich der Brunnen in Kontakt mit der Spielfeldmatte und dieser Kontakt ist komplett innerhalb des Zielgebiets?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-              starttable('M15', 'Feuer','M15.png', ['fire'], 0)
-              createbutton("fire", 25, 'Sind die Flammen gelöscht und der gelbe Hebel wurde dafür nur mit dem Feuerwehrauto bewegt?')
-              endtable()
-
-              starttable('M16', 'Wasser sammeln', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-              createbutton("collection1", 10, 'Befindet sich min. 1 Regentropfen im Zielgebiet, berührt die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?')
-              createrange("collection2", 10, 0, 4, 0, 'Wie viele große Wassermengen liegen im Zielgebiet, berühren dort die Spielfeldmatte und nichts anderes als diese, das Zielgebiet und/oder anderes Wasser?','')
-              createbutton("collection3", 30, 'Befindet sich mindestens eine große Wassermenge auf einer anderen Wassermenge, die nichts anderes berührt als anderes Wasser?')
-              createcomment('Hinweis: Das Zielgebiet darf nie die weiße Grenzlinie berühren oder überqueren. Das Wasser im Zielgebiet darf nur das Zielgebiet selbst und/oder anderes Wasser berühren, jedoch von nichts anderem berührt oder umschlossen werden.')
-              endtable()
-
-              starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
-              createbutton("slingshot1", 20, 'Befindet sich der Slingshot komplett inerhalb des Zielgebiets?')
-              createbutton("slingshot2", 15, 'Befinden sich zusätzlich auch das Schmutzwasser und der Regentropfen komplett im Zielgebiet?')
-              endtable()
-
-              starttable('M18', 'Wasserhahn','M18.png', ['faucet'], 0)
-              createbutton("faucet", 25, 'Ist der Wasserstand in der Tasse in der Draufsicht mehr blau als weiß und wurde der Wasserstand nur durch Drehen des gelben Wasserhahns geändert?')
-              endtable()
-
-              starttable('P','Strafpunkte:','penalty.png', ['penalty'], 0)
-              createrange("penalty", -5 , 0, 6, 0, 'Wie viele Strafpunkte befinden sich im weißen Dreieck im Südosten der Spielfeldmatte?','')
-              endtable()
-
-
-
-              endrow(all_screen)
             } else if (language == 'nl') {
               yes = 'Ja'
               no = 'Nee'
               title = 'Hydro Dynamics Puntenteller'
-              startrow(all_screen)
+              pointsText = 'Punten'
+              resetText = 'Resetten'
+              M01title = 'Pijp verwijderen'
+              M01a = 'Is de gebroken pijp volledig in de basis?'
+              M02title = 'Stroming'
+              M02a = 'Is 1 groot water in het veld van het andere team doordat er gedraaid is aan de kleppen van het pompsysteem'
+              M03title = 'Extra pomp plaatsen'
+              M03a = 'Is de extra pomp in contact met de mat en volledig binnen het plaatsingsgebied?'
+              M04title = 'Regen'
+              M04a = 'Is tenminste 1 regendruppel uit de regenwolk gekomen?'
+              M05title = 'Filter'
+              M05a = 'Is de filter noordwaarts verplaatst tot dat de blokkeringsgrendel valt?'
+              M06title = 'Waterzuivering'
+              M06a = 'Is het grote water uitgeworpen door alleen de toilethendel te bewegen?'
+              M07title = 'Fontein'
+              M07a = 'Is de middelste laag van de fontein duidelijk omhoog gekomen, door uitsluitend het plaatsen van groot water in de grijze kuip?'
+              M08title ='Putdeksel'
+              M08a = 'Hoeveel putdeksels zijn er duidelijk voorbij verticaal gedraaid, zonder dat ze in de basis zijn geweest?'
+              M08b = 'Zijn alle twee de putdeksel volledig in afzonderlijke statiefgebieden?'
+              M09title = 'Statief'
+              M09a = 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?'
+              M09b = 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?'
+              M10title = 'Leiding vervangen'
+              M10a = 'Is de nieuwe leiding op de plaats waar de gebroken leiding was, in volledig/vlak contact met de mat'
+              M11title = 'Leidingencontructie'
+              M11a = 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?'
+              M11b = 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?'
+              M12title = 'Slib'
+              M12a = 'Raakt het slib zichtbaar het hout van een van de 6 getekende plantenbakken?'
+              M13title = 'Bloem'
+              M13a = 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?'
+              M13b = 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?'
+              M14title = 'Waterput'
+              M14a = 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?'
+              M14b = 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?'
+              M15title = 'Vuur'
+              M15a = 'Is het vuur gezakt door de brandweeraut direct kracht te laten uitvoeren op de hendel van het huis?'
+              M16title = 'Waterwinning'
+              M16a = 'Raakt er tenminste 1 regendruppel de mat in het waterdoel aan en raakt het verder niets anders aan dan het gebied en/of ander water?'
+              M16b = 'Hoeveel groot water raakt de mat in het waterdoel aan en raakt het verder niets anders aan dan het doel en/of ander water?'
+              M16c = 'Is er tenminste 1 groot water boven op het andere grote water dat niets anders raakt dan ander water?'
+              M16d = 'et op: Het waterdoel mag nooit de grenslijn raken. Water mag alleen het doel of ander water raken. Het water mag niet geleid of aangeraakt worden door iets anders.'
+              M17title = 'Katapult'
+              M17a = 'Is de katapult volledig in het doelgebied?'
+              M17b = 'Is het vuile water en een regen volledig in het doelgebied van de katapult?'
+              M18title = 'Kraan'
+              M18a = 'Is het waterniveau duidelijk blauwer dan wit van bovenaf het kopje gezien, *door alleen aan het handvat van de kraan te draaien?'
+              PenaltyTitle = 'Strafpunten'
+              PenaltyText = 'Hoeveel strafpunten liggen er in de witte driehoek?'
 
-              starttable('M01', 'Pijp verwijderen','M01.png' , ['piperemoval'], 0)
-              createbutton("piperemoval", 20, 'Is de gebroken pijp volledig in de basis?')
-              endtable()
-
-              starttable('M02', 'Stroming','M02.png', ['flow'], 0)
-              createbutton("flow", 25 , 'Is 1 groot water in het veld van het andere team doordat er gedraaid is aan de kleppen van het pompsysteem')
-              endtable()
-
-              starttable('M03', 'Extra pomp plaatsen','M03.png', ['pumpaddition'], 0)
-              createbutton("pumpaddition", 20 , 'Is de extra pomp in contact met de mat en volledig binnen het plaatsingsgebied?')
-              endtable()
-
-              starttable('M04', 'Regen','M04.png', ['rain'], 0)
-              createbutton("rain", 20 , 'Is tenminste 1 regendruppel uit de regenwolk gekomen?')
-              endtable()
-
-              starttable('M05', 'Filter','M05.png' , ['filter'], 0)
-              createbutton("filter", 30 , 'Is de filter noordwaarts verplaatst tot dat de blokkeringsgrendel valt?')
-              endtable()
-
-              starttable('M06', 'Waterzuivering','M06.png', ['watertreatment'], 0)
-              createbutton("watertreatment", 20, 'Is het grote water uitgeworpen door alleen de toilethendel te bewegen?')
-              endtable()
-
-
-              starttable('M07', 'Fontein','M07.png' , ['fountain'], 0)
-              createbutton("fountain", 20 , 'Is de middelste laag van de fontein duidelijk omhoog gekomen, door uitsluitend het plaatsen van groot water in de grijze kuip?')
-              endtable()
-
-              starttable('M08', 'Putdeksel','M08.png', ['manholecovers', 'manholecovers2'], 0)
-              createrange("manholecovers", 15 , 0, 2, 0, 'Hoeveel putdeksels zijn er duidelijk voorbij verticaal gedraaid, zonder dat ze in de basis zijn geweest?','')
-              createbutton("manholecovers2", 30 , 'Zijn alle twee de putdeksel volledig in afzonderlijke statiefgebieden?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-
-              starttable('M09', 'Statief','M09.png' , ['tripod','tripod2'], 0)
-              createbutton("tripod", 15 , 'Is het statief van de inspectiecamera gedeeltelijk in een van beide statiefgebieden en raken alle poten de mat?')
-              createbutton("tripod2", 20 , 'Is het statief van de inspectiecamera volledig in een van beide statiefgebieden en raken alle poten de mat?')
-              endtable()
-
-              breakrow(mobile,mobile1)
-
-
-              starttable('M10', 'Leiding vervangen','M10.png' , ['pipereplacement'], 0)
-              createbutton("pipereplacement", 20 , 'Is de nieuwe leiding op de plaats waar de gebroken leiding was, in volledig/vlak contact met de mat')
-              endtable()
-
-
-              starttable('M11', 'Leidingencontructie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-              createbutton("pipeconstruction", 15, 'Is de nieuwe leiding gedeeltelijk in zijn doel en in volledig/vlak contact met de mat?')
-              createbutton("pipeconstruction2", 20, 'Is de nieuwe leiding volledig in zijn doel, in volledig/vlak contact met de mat?')
-              endtable()
-
-              starttable('M12', 'Slib','M12.png', ['sludge'], 0)
-              createbutton("sludge", 30 ,'Raakt het slib zichtbaar het hout van een van de 6 getekende plantenbakken?')
-              endtable()
-
-              starttable('M13', 'Bloem','M13.png', ['flower1', 'flower2'], 0)
-              createbutton("flower1", 30 , 'Is de bloem duidelijk omhoog gekomen en gebleven door uitsluitend het grote water in de bruine pot te doen?')
-              createbutton("flower2", 30 , 'Heeft de bloem tenminste 1 regendruppel in het paarse deel dat niets anders aanraakt dan het bloemenmodel?')
-              endtable()
-
-              starttable('M14', 'Waterput','M14.png', ['well','well2'], 0)
-              createbutton("well", 15, 'Is de waterput in contact met de mat en is dat contact gedeeltelijk in het doelgebied van de waterput?')
-              createbutton("well2", 25, 'Is de waterput in contact met de mat en is dat contact volledig in het doelgebied van de waterput?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-              starttable('M15', 'Vuur','M15.png', ['fire'], 0)
-              createbutton("fire", 25, 'Is het vuur gezakt door de brandweeraut direct kracht te laten uitvoeren op de hendel van het huis?')
-              endtable()
-
-              starttable('M16', 'Waterwinning', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-              createbutton("collection1", 10, 'Raakt er tenminste 1 regendruppel de mat in het waterdoel aan en raakt het verder niets anders aan dan het gebied en/of ander water?')
-              createrange("collection2", 10, 0, 4, 0, 'Hoeveel groot water raakt de mat in het waterdoel aan en raakt het verder niets anders aan dan het doel en/of ander water?','')
-              createbutton("collection3", 30, 'Is er tenminste 1 groot water boven op het andere grote water dat niets anders raakt dan ander water')
-              createcomment('Let op: Het waterdoel mag nooit de grenslijn raken. Water mag alleen het doel of ander water raken. Het water mag niet geleid of aangeraakt worden door iets anders.')
-              endtable()
-
-              starttable('M17', 'Katapult','M17.png', ['slingshot1', 'slingshot2'], 0)
-              createbutton("slingshot1", 20, 'Is de katapult volledig in het doelgebied?')
-              createbutton("slingshot2", 15, 'Is het vuile water en een regen volledig in het doelgebied van de katapult?')
-              endtable()
-
-              starttable('M18', 'Kraan','M18.png', ['faucet'], 0)
-              createbutton("faucet", 25, 'Is het waterniveau duidelijk blauwer dan wit van bovenaf het kopje gezien, *door alleen aan het handvat van de kraan te draaien?')
-              endtable()
-
-              starttable('P','Strafpunten','penalty.png', ['penalty'], 0)
-              createrange("penalty", -5 , 0, 6, 0, 'Hoeveel strafpunten liggen er in de witte driehoek?','')
-              endtable()
-
-
-
-              endrow(all_screen)
             } else if (language == 'es') {
               yes = 'Si'
               no = 'No'
               title = 'Marcador Hydro Dynamics'
-              startrow(all_screen)
 
-              starttable('M01', 'Retirada de tubería','M01.png' , ['piperemoval'], 0)
-              createbutton("piperemoval", 20, '¿La tubería rota está completamente dentro de la Base?')
-              endtable()
+              pointsText = 'Puntos'
+              resetText = 'Reiniciar'
+              M01title = 'Retirada de tubería'
+              M01a = '¿La tubería rota está completamente dentro de la Base?'
+              M02title = 'Flujo'
+              M02a = '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la válvula del Sistema de Bombeo?'
+              M03title = 'Bomba Adicional'
+              M03a = '¿La Bomba Adicional está en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?'
+              M04title = 'Lluvia'
+              M04a = '¿Al menos una Lluvia salió de la Nube de Lluvia?'
+              M05title = 'Filtro'
+              M05a = '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caído?'
+              M06title = 'Tratamiento del Agua'
+              M06a = '¿Se ha expulsado el Agua Grande, debido solo a la acción de mover la palanca del inodoro?'
+              M07title = 'Fuente'
+              M07a = '¿La capa de en medio de la Fuente ha subido a una altura suficiente, debido solo al Agua Grande en la cuba gris?'
+              M08title ='Tapas de Alcantarilla'
+              M08a = '¿Cuántas Tapas de Alcantarilla se han dado la vuelta más allá de la vertical sin haber ido a la Base?'
+              M08b = '¿Están ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del Trípode?'
+              M09title = 'Trípode'
+              M09a = '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?'
+              M09b = '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?'
+              M10title = 'Sustitución de Tubería'
+              M10a = '¿La Nueva Tubería está en el lugar donde estaba la Tubería Rota, en total contacto con el tapete?'
+              M11title = 'Construcción de Tubería'
+              M11a = '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?'
+              M11b = '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?'
+              M12title = 'Lodo'
+              M12a = '¿Está el Lodo tocando la madera visible de cualquiera de las seis cajas de jardín dibujadas?'
+              M13title = 'Flor'
+              M13a = '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?'
+              M13b = '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?'
+              M14title = 'Pozo de Agua'
+              M14a = '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?'
+              M14b = '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?'
+              M15title = 'Fuego'
+              M15a = '¿Disminuyó el fuego solo haciendo que el Camión de Bomberos aplicara fuerza directamente a la palanca de la Casa?'
+              M16title = 'Recolección de Agua'
+              M16a = '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/o otra agua?'
+              M16b = '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/o otra agua?'
+              M16c = '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?'
+              M16d = 'Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/o otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.'
+              M17title = 'Slingshot'
+              M17a = '¿Está el Slingshot completamente dentro de su objetivo?'
+              M17b = '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?'
+              M18title = 'Grifo'
+              M18a = '¿El nivel de agua es claramente más azul que blanco como se ve desde arriba de la taza, sólo girando el mango del grifo?'
+              PenaltyTitle = 'Penalizaciones'
+              PenaltyText = '¿Cuántas penalizaciones hay en la zona del triángulo blanco?'
 
-              starttable('M02', 'Flujo','M02.png', ['flow'], 0)
-              createbutton("flow", 25 , '¿Hay un Agua Grande en el campo del otro equipo como resultado de girar la válvula del Sistema de Bombeo?')
-              endtable()
-
-              starttable('M03', 'Bomba Adicional','M03.png', ['pumpaddition'], 0)
-              createbutton("pumpaddition", 20 , '¿La Bomba Adicional está en contacto con el tapete y completamente dentro del objetivo de la Bomba Adicional?')
-              endtable()
-
-              starttable('M04', 'Lluvia','M04.png', ['rain'], 0)
-              createbutton("rain", 20 , '¿Al menos una Lluvia salió de la Nube de Lluvia?')
-              endtable()
-
-              starttable('M05', 'Filtro','M05.png' , ['filter'], 0)
-              createbutton("filter", 30 , '¿Se ha movido el Filtro hacia el norte hasta que el pestillo de la cerradura ha caído?')
-              endtable()
-
-              starttable('M06', 'Tratamiento del Agua','M06.png', ['watertreatment'], 0)
-              createbutton("watertreatment", 20, '¿Se ha expulsado el Agua Grande, debido solo a la acción de mover la palanca del inodoro?')
-              endtable()
-
-
-              starttable('M07', 'Fuente','M07.png' , ['fountain'], 0)
-              createbutton("fountain", 20 , '¿La capa de en medio de la Fuente ha subido a una altura suficiente, debido solo al Agua Grande en la cuba gris?')
-              endtable()
-
-              starttable('M08', 'Tapas de Alcantarilla','M08.png', ['manholecovers', 'manholecovers2'], 0)
-              createrange("manholecovers", 15 , 0, 2, 0, '¿Cuántas Tapas de Alcantarilla se han dado la vuelta más allá de la vertical sin haber ido a la Base?','')
-              createbutton("manholecovers2", 30 , '¿Están ambas Tapas de Alcantarilla completamente dentro de cada uno de los objetivos del Trípode?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-
-              starttable('M09', 'Trípode','M09.png' , ['tripod','tripod2'], 0)
-              createbutton("tripod", 15 , '¿Está el Trípode de la cámara de inspección parcialmente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
-              createbutton("tripod2", 20 , '¿Está el Trípode de la cámara de inspección completamente dentro de alguno de los objetivos del Trípode, con todas sus patas tocando el tapete?')
-              endtable()
-
-              breakrow(mobile,mobile1)
-
-
-              starttable('M10', 'Sustitución de Tubería','M10.png' , ['pipereplacement'], 0)
-              createbutton("pipereplacement", 20 , '¿La Nueva Tubería está en el lugar donde estaba la Tubería Rota, en total contacto con el tapete?')
-              endtable()
-
-
-              starttable('M11', 'Construcción de Tubería','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-              createbutton("pipeconstruction", 15, '¿La Nueva Tubería está parcialmente dentro de su objetivo, en total contacto con el tapete?')
-              createbutton("pipeconstruction2", 20, '¿La Nueva Tubería está completamente dentro de su objetivo, en total contacto con el tapete?')
-              endtable()
-
-              starttable('M12', 'Lodo','M12.png', ['sludge'], 0)
-              createbutton("sludge", 30 ,'¿Está el Lodo tocando la madera visible de cualquiera de las seis cajas de jardín dibujadas?')
-              endtable()
-
-              starttable('M13', 'Flor','M13.png', ['flower1', 'flower2'], 0)
-              createbutton("flower1", 30 , '¿Ha subido la Flor a la altura suficiente y permanece allí, debido solo al Agua Grande en la maceta marrón?')
-              createbutton("flower2", 30 , '¿La Flor tiene por lo menos una Lluvia en la parte púrpura, tocando nada más que el modelo de la Flor?')
-              endtable()
-
-              starttable('M14', 'Pozo de Agua','M14.png', ['well','well2'], 0)
-              createbutton("well", 15, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está parcialmente dentro del objetivo del Pozo de Agua?')
-              createbutton("well2", 25, '¿Está el Pozo de Agua en contacto con el tapete y ese contacto está completamente dentro del objetivo del Pozo de Agua?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-              starttable('M15', 'Fuego','M15.png', ['fire'], 0)
-              createbutton("fire", 25, '¿Disminuyó el fuego solo haciendo que el Camión de Bomberos aplicara fuerza directamente a la palanca de la Casa?')
-              endtable()
-
-              starttable('M16', 'Recolección de Agua', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-              createbutton("collection1", 10, '¿Hay al menos una Lluvia que toque el tapete en el Objetivo del Agua y no toque nada más que el objetivo y/o otra agua?')
-              createrange("collection2", 10, 0, 4, 0, '¿Cuántas Aguas Grandes hay que estén tocando el tapete en el Objetivo del Agua y tocando nada más que el objetivo y/o otra agua?','')
-              createbutton("collection3", 30, '¿Hay al menos un Agua Grande encima de otra Agua Grande sin nada que la toque excepto otra agua?')
-              createcomment('Nota: El objetivo nunca debe tocar la Línea de Fuera de Límites. El Agua puede estar tocando el objetivo, y/o otra Agua, pero no estar tocando ni ser guiada por cualquier otra cosa.')
-              endtable()
-
-              starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
-              createbutton("slingshot1", 20, '¿Está el Slingshot completamente dentro de su objetivo?')
-              createbutton("slingshot2", 15, '¿Está el Agua Sucia y la Lluvia completamente dentro del objetivo del Slingshot?')
-              endtable()
-
-              starttable('M18', 'Grifo','M18.png', ['faucet'], 0)
-              createbutton("faucet", 25, '¿El nivel de agua es claramente más azul que blanco como se ve desde arriba de la taza, sólo girando el mango del grifo?')
-              endtable()
-
-              starttable('P','Penalizaciones','penalty.png', ['penalty'], 0)
-              createrange("penalty", -5 , 0, 6, 0, '¿Cuántas penalizaciones hay en la zona del triángulo blanco?','')
-              endtable()
-
-
-
-              endrow(all_screen)
             } else if (language == 'sk') {
               yes = 'Áno'
               no = 'Nie'
               title = 'Hydro Dynamics Hodnotenie'
-              startrow(all_screen)
 
-              starttable('M01', 'Pokazené potrubie','M01.png' , ['piperemoval'], 0)
-              createbutton("piperemoval", 20, 'Je pokazené potrubie celkom na základni?')
-              endtable()
+              pointsText = 'Skóre'
+              resetText = 'Reset'
+              M01title = 'Pokazené potrubie'
+              M01a = 'Je pokazené potrubie celkom na základni?'
+              M02title = 'Prúdenie'
+              M02a = 'Je práve jedna veľká voda na ihrisku druhého tímu a stalo sa to následkom otáčania ventilov na pumpe?'
+              M03title = 'Čerpadlo'
+              M03a = 'Je čerpadlo v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?'
+              M04title = 'Dážď'
+              M04a = 'Vypadla z oblaku aspoň jedna dažďová kvapka?'
+              M05title = 'Filter'
+              M05a = 'Posunul sa biely filter na sever až tak, že zapadla západka?'
+              M06title = 'Čistička vody'
+              M06a = 'Vypadla z čističky veľká voda následkom stlačenia páčky na záchode?'
+              M07title = 'Fontána'
+              M07a = 'Je stredná vrstva fontány viditeľne nadvihnutá iba vďaka tomu, že sa veľká voda nachádza n sivej nádrži fontány?'
+              M08title ='Poklopy'
+              M08a = 'Koľko poklopov je prevrátených bez toho aby sa kedykoľvek predtým ocitli na základni?'
+              M08b = 'Nachádzajú sa oba poklopy celkom v cieľových oblastiach? Každý z nich musí byť v inej oblasti.'
+              M09title = 'Trojnožka'
+              M09a = 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?'
+              M09b = 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?'
+              M10title = 'Oprava potrubia'
+              M10a = 'Je nové, modré potrubie na mieste, kde predtým bolo žlté potrubie a dotýka sa úplne/naplocho hracej plochy?'
+              M11title = 'Nové potrubie'
+              M11a = 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?'
+              M11b = 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?'
+              M12title = 'Kal'
+              M12a = 'Dotýka sa kal viditeľného dreva ktoréhokoľvek zo záhradných záhonov?'
+              M13title = 'Kvet'
+              M13a = 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?'
+              M13b = 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?'
+              M14title = 'Studňa'
+              M14a = 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?'
+              M14b = 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?'
+              M15title = 'Oheň'
+              M15a = 'Klesol oheň tým, že hasičské auto priamo zatlačilo na žltú páčku modelu domu?'
+              M16title = 'Zachytávanie vody'
+              M16a = 'Nachádza sa v rámčeku aspoň jedna dažďová kvapka, ktorá sa dotýka hracej plochy a nedotýka sa ničoho iného iba rámčeka a/alebo inej vody?'
+              M16b = 'Koľko veľkých vôd, ktoré sa dotýkajú hracej plochy a nedotýkajú sa ničoho iného ako rámčeku a/alebo inej vody sa nachádza v rámčeku?'
+              M16c = 'Nachádza sa v rámčeku aspoň jedna veľká voda, ktorá je položená na inej vode a nedotýka sa pritom ničoho iného iba inej vody?'
+              M16d = 'Poznámka: Rámček sa nikdy nesmie dotknúť bielej hraničnej čiary. Voda sa môže dotýkať rámčeka a/alebo inej vody ale nesmie sa dotýkať alebo pridržiavaná ničím iným.'
+              M17title = 'Slingshot'
+              M17a = 'Je Slingshot celkom v cieľovej oblasti?'
+              M17b = 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?'
+              M18title = 'Vodovodný kohútik'
+              M18a = 'Je vodná hladina viditeľne viac modrá ako biela pri pohľade zhora do pohára a stalo sa tak iba otáčaním točky kohútika?'
+              PenaltyTitle = 'Penalizácia'
+              PenaltyText = 'Koľko penalizačných diskov je v bielom trojuholníku?'
 
-              starttable('M02', 'Prúdenie','M02.png', ['flow'], 0)
-              createbutton("flow", 25 , 'Je práve jedna veľká voda na ihrisku druhého tímu a stalo sa to následkom otáčania ventilov na pumpe?')
-              endtable()
-
-              starttable('M03', 'Čerpadlo','M03.png', ['pumpaddition'], 0)
-              createbutton("pumpaddition", 20 , 'Je čerpadlo v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
-              endtable()
-
-              starttable('M04', 'Dážď','M04.png', ['rain'], 0)
-              createbutton("rain", 20 , 'Vypadla z oblaku aspoň jedna dažďová kvapka?')
-              endtable()
-
-              starttable('M05', 'Filter','M05.png' , ['filter'], 0)
-              createbutton("filter", 30 , 'Posunul sa biely filter na sever až tak, že zapadla západka?')
-              endtable()
-
-              starttable('M06', 'Čistička vody','M06.png', ['watertreatment'], 0)
-              createbutton("watertreatment", 20, 'Vypadla z čističky veľká voda následkom stlačenia páčky na záchode?')
-              endtable()
-
-
-              starttable('M07', 'Fontána','M07.png' , ['fountain'], 0)
-              createbutton("fountain", 20 , 'Je stredná vrstva fontány viditeľne nadvihnutá iba vďaka tomu, že sa veľká voda nachádza n sivej nádrži fontány?')
-              endtable()
-
-              starttable('M08', 'Poklopy','M08.png', ['manholecovers', 'manholecovers2'], 0)
-              createrange("manholecovers", 15 , 0, 2, 0, 'Koľko poklopov je prevrátených bez toho aby sa kedykoľvek predtým ocitli na základni?','')
-              createbutton("manholecovers2", 30 , 'Nachádzajú sa oba poklopy celkom v cieľových oblastiach? Každý z nich musí byť v inej oblasti.')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-
-              starttable('M09', 'Trojnožka','M09.png' , ['tripod','tripod2'], 0)
-              createbutton("tripod", 15 , 'Nachádza sa trojnožka čiastočne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
-              createbutton("tripod2", 20 , 'Nachádza sa trojnožka úplne v jednej z cieľových oblastí s tým, že sa všetky jej nohy dotýkajú hracej plochy?')
-              endtable()
-
-              breakrow(mobile,mobile1)
-
-
-              starttable('M10', 'Oprava potrubia','M10.png' , ['pipereplacement'], 0)
-              createbutton("pipereplacement", 20 , 'Je nové, modré potrubie na mieste, kde predtým bolo žlté potrubie a dotýka sa úplne/naplocho hracej plochy?')
-              endtable()
-
-
-              starttable('M11', 'Nové potrubie','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
-              createbutton("pipeconstruction", 15, 'Je nové potrubie čiastočne v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
-              createbutton("pipeconstruction2", 20, 'Je nové potrubie celkom v cieľovej oblasti a má úplný/plochý kontakt s hracou plochou?')
-              endtable()
-
-              starttable('M12', 'Kal','M12.png', ['sludge'], 0)
-              createbutton("sludge", 30 ,'Dotýka sa kal viditeľného dreva ktoréhokoľvek zo záhradných záhonov?')
-              endtable()
-
-              starttable('M13', 'Kvet','M13.png', ['flower1', 'flower2'], 0)
-              createbutton("flower1", 30 , 'Zodvihol sa kvet viditeľne a zostal zodvihnutý iba vďaka tomu, že sa v hnedom kvetináči nachádza veľká voda?')
-              createbutton("flower2", 30 , 'Má zdvihnutý kvet vo fialovej časti aspoň jednu dažďovú kvapku, ktorá sa dotýka iba kvetu a ničoho iného?')
-              endtable()
-
-              starttable('M14', 'Studňa','M14.png', ['well','well2'], 0)
-              createbutton("well", 15, 'Je studňa v kontakte s hracou plochou a nachádza sa čiastočne v cieľovej oblasti?')
-              createbutton("well2", 25, 'Je studňa v kontakte s hracou plochou a nachádza sa celkom v cieľovej oblasti?')
-              endtable()
-
-              breakrow(mobile1,100000)
-
-              starttable('M15', 'Oheň','M15.png', ['fire'], 0)
-              createbutton("fire", 25, 'Klesol oheň tým, že hasičské auto priamo zatlačilo na žltú páčku modelu domu?')
-              endtable()
-
-              starttable('M16', 'Zachytávanie vody', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-              createbutton("collection1", 10, 'Nachádza sa v rámčeku aspoň jedna dažďová kvapka, ktorá sa dotýka hracej plochy a nedotýka sa ničoho iného iba rámčeka a/alebo inej vody?')
-              createrange("collection2", 10, 0, 4, 0, 'Koľko veľkých vôd, ktoré sa dotýkajú hracej plochy a nedotýkajú sa ničoho iného ako rámčeku a/alebo inej vody sa nachádza v rámčeku?','')
-              createbutton("collection3", 30, 'Nachádza sa v rámčeku aspoň jedna veľká voda, ktorá je položená na inej vode a nedotýka sa pritom ničoho iného iba inej vody?')
-              createcomment('Poznámka: Rámček sa nikdy nesmie dotknúť bielej hraničnej čiary. Voda sa môže dotýkať rámčeka a/alebo inej vody ale nesmie sa dotýkať alebo pridržiavaná ničím iným.')
-              endtable()
-
-              starttable('M17', 'Slingshot','M17.png', ['slingshot1', 'slingshot2'], 0)
-              createbutton("slingshot1", 20, 'Je Slingshot celkom v cieľovej oblasti?')
-              createbutton("slingshot2", 15, 'Je špinavá voda a dažďová kvapka celkom v cieľovej oblasti?')
-              endtable()
-
-              starttable('M18', 'Vodovodný kohútik','M18.png', ['faucet'], 0)
-              createbutton("faucet", 25, 'Je vodná hladina viditeľne viac modrá ako biela pri pohľade zhora do pohára a stalo sa tak iba otáčaním točky kohútika?')
-              endtable()
-
-              starttable('P','Penalizácia','penalty.png', ['penalty'], 0)
-              createrange("penalty", -5 , 0, 6, 0, 'Koľko penalizačných diskov je v bielom trojuholníku?','')
-              endtable()
-
-
-
-              endrow(all_screen)
             } else {
 
               title = "Hydro Dynamics Scorer"
               yes = "Yes"
               no = "No"
               pointsText = 'Points'
-              resetText =
+              resetText = 'Reset'
               M01title = 'Pipe Removal'
               M01a = 'Is the broken pipe completely in base?'
               M02title = 'Flow'
-              M02a = 'Is one Big Water ever in the other team’s field as a result of turning the Pump System’s valve(s)?'
+              M02a = 'Was one Big Water in the other team’s field as a result of turning the Pump System’s valve(s)?'
               M03title = 'Pump Addition'
               M03a = 'Is the Pump Addition in contact with the mat and completely inside the Pump Addition target?'
               M04title = 'Rain'
