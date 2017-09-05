@@ -29,8 +29,8 @@ lang: "en"
 <li >Pseudocode Worksheet for Missions:
 <a href="translations/en-us/fll/FLLMissionPseudocode.docx">Word docx</a>
 </li>
-<li >Mission Strategy Worksheet *Coming Soon*:
-<a href="">Word Doc</a>
+<li >Mission Planning Guide:
+<a href="translations/en-us/fll/MissionPlanningGuide.docx">Word docx</a>
 </li>
 
 
