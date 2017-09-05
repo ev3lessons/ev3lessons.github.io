@@ -13,7 +13,7 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-### SWhat skills can FLLers pick up that will help them in FTC/FRC? What are benefits of already having been in FLL before progressing to the other programs?
+### What skills can FLLers pick up that will help them in FTC/FRC? What are benefits of already having been in FLL before progressing to the other programs?
 
 <img src="/images/coachcorner/FIRSTPrograms.jpg" style="max-width: 100%" />
 
