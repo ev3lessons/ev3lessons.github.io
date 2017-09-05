@@ -13,16 +13,16 @@ authorim: "/images/people/group.jpg"
 
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##What does a day-in-the-life of your team look like?##
+### What does a day-in-the-life of your team look like?
 
-<img src="/images/coachcorner/NameSticks.jpg" style="max-width: 100%" />"
+<img src="/images/coachcorner/NameSticks.jpg" style="max-width: 100%" />
 Image Credit: Jessi Scott
 
-**Response by Charles Angel **
+**Response by Charles Angel**
 
 Taking the example of a community team of 5-7 students we coached: Meetings start with a meeting where everyone talks about what they accomplished during the week as well as any problems they had/need help with. Then we spend some time on the robot, some on the project and also do a Core Value activity (usually as a break between the project and robot). A snack was included as well. Before the end, everyone cleans up as best they can - things that should not be taken apart are in a special "don't take apart bin" and put on a shelf and the rest can go into a sorting bin. We discuss what everyone plans to do until the next meeting.
 
-**Response by James McGill **
+**Response by James McGill**
 
 Our meeting are four hours once per week and we use a set schedule with rotating topics
 
