@@ -21,7 +21,7 @@ We will update this guide as we find and review resources.
 ### FIRST LEGO League Challenge Materials
 <a href="http://www.firstlegoleague.org/challenge#block-block-19">Hydro Dynamics Challenge</a>: Build Instructions, Setup Instructions, Challenge Guide, and Updates<br>
 <a href="https://fllblog.wordpress.com">FIRST LEGO League Blog</a><br>
-<a href="http://www.firstlegoleague.org/sites/default/files/hydro-dynamics/first-lego-league-rubrics.pdf">FIRST LEGO League Blog</a><br>
+<a href="http://www.firstlegoleague.org/sites/default/files/hydro-dynamics/first-lego-league-rubrics.pdf">FIRST LEGO League Rubrics</a><br>
 
 ### Free Curriculum by LEGO Education
 <a href="https://education.lego.com/en-us/downloads/mindstorms-ev3">LEGO Education</a>: Various curriculum resources created by LEGO Education<br>
@@ -33,19 +33,19 @@ Also look at the built-in lessons in the EV3 Programming Software you installed 
 <a href="http://www.wafflesrobotics.com/fll/fll-resources/">WAFFLES Community Robotics</a>: Comprehensive block by block introduction to programming by a FIRST team in Canada. <br>
 <a href="http://stemrobotics.cs.pdx.edu/node/2643">STEMRobotics</a>: Organized repository for educational materials and curriculum guides for MINDSTORMS instructors by Portland State University.<br>
 <a href="http://www.legoengineering.com">LEGOEngineering</a>: A wide range of resources and support materials specifically for educators organized by Tufts CEEO. <br>
-<a href="http://www.ev3lessons.com">EV3Lessons</a>: A comprehensive and organized curriculum for beginner through advanced students.<br>
+
 
 ### Organization and Planning Resources for FLL Teams
 <a href="http://www.techbrick.com">Techbrick</a>: Has worksheets, images and blank templates for use by teams. Resources are updated every season. Information from previous seasons are archived so if you need access to materials from older challenges, you can find them here.<br>
-<a href="http://ev3lessons.com/lessons.html?lang=en-us&q=FLL">EV3Lessons Useful Worksheets & Guides</a>: Planning worksheets, Quick Guides, Engineering Notebook Sample, Core Values Posters
+<a href="http://ev3lessons.com/lessons.html?lang=en-us&q=FLL">EV3Lessons Useful Worksheets & Guides</a>: Planning worksheets, Quick Guides, Engineering Notebook Sample, Core Values Posters<br>
 <a href="http://ev3lessons.com/resources.html">EV3Lessons Tools & Resources</a>: Calculators and tools for teams. The site hosts several online/interactive tools such as a Sketcher for teams to map out missions. Resources are updated every season.<br>
 
 
 ### FIRST LEGO League Curriculum and Tips
 <a href="http://info.firstinspires.org/fllfirststepsrequest">FIRST Steps Lesson Plan for the season</a> <br>
 <a href="http://ev3lessons.com/corevalues.html">Team Building Activities</a><br>
-<a href="http://ev3lessons.com/coachcorner.html">Coach's Corner with Tips from teams around the world</a><br>
-<a href="http://ev3lessons.com/resources.html">Current Season Planning Tools including Interactive Sketch Planner and a Scorer</a><br>
+<a href="http://ev3lessons.com/coachcorner.html">Coach's Corner</a>: Tips from teams around the world<br>
+<a href="http://ev3lessons.com/resources.html">Current Season Planning Tools </a>: Includes Interactive Sketch Planner, Scorer and Wheel Converter<br>
 <a href="http://ev3lessons.com/lessons.html?lang=en-us&q=FLL">EV3Lessons Research Project Lessons</a>: New for 2017. Lessons on various aspects of the Research Project.
 
 ### Robotics Resources for Scouts
