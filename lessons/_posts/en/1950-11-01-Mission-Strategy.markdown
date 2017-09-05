@@ -1,0 +1,11 @@
+---
+title: "Developing a Mission Strategy"
+searchterms: "toggle fll "
+lang: "en"
+---
+<ul>
+<li class="ng-binding">Slides:
+<a href="translations/en-us/fll/MissionStrategy.pptx">PPTX</a>,
+<a href="translations/en-us/fll/MissionStrategy.pdf">PDF</a>
+</li>
+</ul>
