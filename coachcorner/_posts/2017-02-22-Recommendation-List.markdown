@@ -10,18 +10,18 @@ side: ""
 author: "Seshan Brothers<br>Droids Robotics<br>Pittsburgh, USA"
 authorim: "/images/people/Seshanbros.jpg"
 ---
-As most of you know, we are the founders of <a href="http://www.ev3lessons.com">EV3Lessons</a>. While we have a lot of resources on our site, we don't have everything. There are lots of good resources around. We thought we would share resources other than on our own site that we think will be helpful to others. While the list is not an endorsement of any one resource over the other, we did make sure that every resource reflects our own mission and philosophy to teach without providing solutions.
+As most of you know, we are the founders of <a href="http://www.ev3lessons.com">EV3Lessons</a>. While we have a lot of resources on our site, we don't have everything. There are lots of good resources around. We thought we would share resources other than on our own site that we think will be helpful to others. While the list is not an endorsement of any one resource over the other, we did make sure that every resource reflects our own mission and philosophy.
 
-The main criteria for selection was the following:<br>
-1) Focus: Resources must not focus on winning competitions and shortcuts to success, but on learning the concepts and inspiring.<br>
-2) Completeness: Resources must be somewhat organized and comprehensive <br>
-3) Educators: Resources that focus on educators must be included<br>
-
-There are also other alternative lists you are welcome to refer to: <a href="http://www.damienkee.com/lego-mindstorms-resources/">Damien Kee</a>, <a href="http://stemrobotics.cs.pdx.edu/node/2837"> STEMRobotics</a>, and <a href="http://www.legoengineering.com/online-training-courses/">Lego Engineering</a>.
+There are also other alternative lists that might be helpful: <a href="http://www.damienkee.com/lego-mindstorms-resources/">Damien Kee</a>, <a href="http://stemrobotics.cs.pdx.edu/node/2837"> STEMRobotics</a>, and <a href="http://www.legoengineering.com/online-training-courses/">Lego Engineering</a>.
 
 We will update this guide as we find and review resources.
 
 ![](/images/coachcorner/Resources.png)
+
+### FIRST LEGO League Challenge Materials
+<a href="http://www.firstlegoleague.org/challenge#block-block-19">Hydro Dynamics Challenge</a>: Build Instructions, Setup Instructions, Challenge Guide, and Updates<br>
+<a href="https://fllblog.wordpress.com">FIRST LEGO League Blog</a><br>
+<a href="http://www.firstlegoleague.org/sites/default/files/hydro-dynamics/first-lego-league-rubrics.pdf">FIRST LEGO League Blog</a><br>
 
 ### Free Curriculum by LEGO Education
 <a href="https://education.lego.com/en-us/downloads/mindstorms-ev3">LEGO Education</a>: Various curriculum resources created by LEGO Education<br>
@@ -33,16 +33,20 @@ Also look at the built-in lessons in the EV3 Programming Software you installed 
 <a href="http://www.wafflesrobotics.com/fll/fll-resources/">WAFFLES Community Robotics</a>: Comprehensive block by block introduction to programming by a FIRST team in Canada. <br>
 <a href="http://stemrobotics.cs.pdx.edu/node/2643">STEMRobotics</a>: Organized repository for educational materials and curriculum guides for MINDSTORMS instructors by Portland State University.<br>
 <a href="http://www.legoengineering.com">LEGOEngineering</a>: A wide range of resources and support materials specifically for educators organized by Tufts CEEO. <br>
+<a href="http://www.ev3lessons.com">EV3Lessons</a>: A comprehensive and organized curriculum for beginner through advanced students.<br>
 
 ### Organization and Planning Resources for FLL Teams
 <a href="http://www.techbrick.com">Techbrick</a>: Has worksheets, images and blank templates for use by teams. Resources are updated every season. Information from previous seasons are archived so if you need access to materials from older challenges, you can find them here.<br>
-<a href="http://www.ev3lessons.com">EV3Lessons</a>: Has mission planning worksheets, calculators and tools for teams. The site hosts several online/interactive tools such as a Sketcher for teams to map out missions. Resources are updated every season.<br>
+<a href="http://ev3lessons.com/lessons.html?lang=en-us&q=FLL">EV3Lessons Useful Worksheets & Guides</a>: Planning worksheets, Quick Guides, Engineering Notebook Sample, Core Values Posters
+<a href="http://ev3lessons.com/resources.html">EV3Lessons Tools & Resources</a>: Calculators and tools for teams. The site hosts several online/interactive tools such as a Sketcher for teams to map out missions. Resources are updated every season.<br>
+
 
 ### FIRST LEGO League Curriculum and Tips
-<a href="https://fllblog.wordpress.com/2016/07/25/taking-your-first-steps/">FIRST Steps</a> <br>
+<a href="http://info.firstinspires.org/fllfirststepsrequest">FIRST Steps Lesson Plan for the season</a> <br>
 <a href="http://ev3lessons.com/corevalues.html">Team Building Activities</a><br>
-<a href="http://ev3lessons.com/coachcorner.html">Coach's Corner</a><br>
-<a href="http://ev3lessons.com/resources.html">Current Season Planning Tools</a><br>
+<a href="http://ev3lessons.com/coachcorner.html">Coach's Corner with Tips from teams around the world</a><br>
+<a href="http://ev3lessons.com/resources.html">Current Season Planning Tools including Interactive Sketch Planner and a Scorer</a><br>
+<a href="http://ev3lessons.com/lessons.html?lang=en-us&q=FLL">EV3Lessons Research Project Lessons</a>: New for 2017. Lessons on various aspects of the Research Project.
 
 ### Robotics Resources for Scouts
 <a href="http://www.scouting.org/filestore/Merit_Badge_ReqandRes/Robotics.pdf">Robotics Merit Badge Requirements</a><br>
@@ -51,13 +55,13 @@ Also look at the built-in lessons in the EV3 Programming Software you installed 
 ### MINDSTORMS-Related Forums and Facebook Groups
 <a href="http://forums.usfirst.org/forumdisplay.php?24-FIRST-LEGO-League">FIRST LEGO League Forum</a><br>
 <a href="https://listserv.jmu.edu/cgi-bin/wa?A0=VADCFLL-L">VA-DC FIRST LEGO League Listserv</a><br>
-<a href="https://community.education.lego.com/">LEGO Education Community (retired starting June 1, 2017)</a><br>
 <a href="https://www.facebook.com/groups/legomindstorms/">LEGO MINDSTORMS Facebook Group</a><br>
 <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL Share and Learn Facebook Group</a><br>
 
 ### Stores to buy additional LEGO or MINDSTORMS parts
 <a href="http://www.lego.com">LEGO</a><br>
 <a href="http://www.legoeducation.com">LEGO Education</a><br>
+<a href="https://shop.lego.com/en-US/Pick-a-Brick">LEGO Pick A Brick</a><br>
 <a href="http://www.Bricklink.com">Bricklink</a>: For purchasing specific parts and complete sets<br> 
 <a href="http://www.Brickowl.com">Brickowl</a>: For purchasing specific parts and complete sets<br>
 <a href="http://www.mindsensors.com">Mindsensors</a>: For non-LEGO branded sensors that are compatible with the EV3<br>
@@ -76,7 +80,8 @@ Kee, Damien. <a href="http://www.damienkee.com/classroom-activities-ev3/">Classr
 <a href="http://www.drgraeme.org/EV3/EV3.html">Dr. Graeme</a><br>
 <a href="http://www.nxtprograms.com">NXT Projects</a><br>
 <a href="http://www.damienkee.com/">Dr. Damien Kee</a><br>
-<a href="http://www.ev3dev.org/">EV3Dev</a><br>
+<a href="http://www.ev3dev.org/">EV3Dev</a>: Projects that take the EV3 to the next level<br>
+<a href="https://www.facebook.com/legomindstorms/">LEGO MINDSTORMS Channel</a>: Official Facebook page for MINDSTORMS <br>
 
 ### MINDSTORMS Competitions
 <a href="http://www.firstlegolegue.org">FIRST LEGO League</a><br>
