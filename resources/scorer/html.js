@@ -20,6 +20,28 @@ function createbutton(mission,points,description){
   </tr>')
 }
 
+function create3button(mission,points,points2,description){
+  window[mission] = 0
+  window[mission+'save'] = 0
+    document.write('<tr>\
+  <td width="200" style="font-size: 100%; background-color: sky;">\
+  '+description+'\
+  </td>\
+  </tr>\
+  <tr>\
+  <td>\
+  <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" style="text-align: center;">\
+  <label for="completely'+mission+'">'+completely+'</label>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points2+',\''+mission+'\',1)" name="'+mission+'" value="completely" id="completely'+mission+'" checked=false>\
+  <label for="partly'+mission+'">'+partly+'</label>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points+',\''+mission+'\',1)" name="'+mission+'" value="partly" id="partly'+mission+'" checked=false>\
+  <label for="no'+mission+'">'+no+'</label>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc(0,\''+mission+'\', 0)" name="'+mission+'"  value="false" id="no'+mission+'" checked="true">\
+  </fieldset>\
+  </td>\
+  </tr>')
+}
+
 function createcomment(description){
   document.write('<tr>\
   <td width="200" style="font-size: 100%; color: #990000">\
