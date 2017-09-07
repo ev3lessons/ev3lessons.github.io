@@ -79,6 +79,7 @@ function starttable(mission, title, image, children, extrarows){
   element = 1 + 2*children.length + extrarows
   all_mission = all_mission.concat([[mission,children]])
   document.write('\
+  <div class="missionFmt">\
   <table style="width:100%; border: 1px solid black; border-collapse: collapse; " border="1">\
   <tr>\
     <td rowspan="'+element+'" width="60px"> <img src="missions/'+image+'" width="58px"></td>\
@@ -91,7 +92,7 @@ function starttable(mission, title, image, children, extrarows){
 }
 
 function endtable() {
-  document.write('</tr></td></table>')
+  document.write('</tr></td></table></div>')
 }
 
 function startrow(width) {
