@@ -20,9 +20,7 @@
   <script src="timers.js"></script>
   <script src="saver.js"></script>
   <script src="html.js"></script>
-
-
-
+  <script type="text/javascript" src="jqm-spinbox.min.js"></script>
 
   <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
   <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
@@ -35,8 +33,38 @@
     border-collapse: collapse;
   }
   //      tr td {display: inline-block; }
+
+
+  #missionlist{
+    width: auto;
+    -webkit-column-width: 325px;
+    -moz-column-width: 325px;
+    column-width: 325px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+
+  }
+  .missionGroup{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .missionFmt {
+    padding-right:3;
+    padding-left:0
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+  }
+
+
   </style>
-  <script type="text/javascript" src="jqm-spinbox.min.js"></script>
 
 
   <script>
@@ -169,34 +197,6 @@
     <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points</i><i>: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod3|0,pipereplacement|0,pipeconstruction3|0,sludge|0,flower1|0,flower2|0,well3|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
   </div>
 
-  <style>
-  #missionlist{
-    width: auto;
-    -webkit-column-width: 325px;
-    -moz-column-width: 325px;
-    column-width: 325px;
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    -webkit-column-gap: 0;
-    -moz-column-gap: 0;
-    column-gap: 0;
-
-  }
-  .missionGroup{
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  .missionFmt {
-    padding-right:3;
-    padding-left:0
-  }
-
-  </style>
-
-
   <div role="main" class="ui-content" style="padding-right:0; padding-left:0">
     <div data-role="tabs">
 
@@ -204,113 +204,90 @@
 
         <form id="missions">
           <div id="missionlist">
-            <div id="group1" class="missionGroup">
-              <script>
+            <script>
 
-              starttable('M01', M01title, 'M01.png' , ['piperemoval'], 0)
-              createbutton("piperemoval", 20, M01a)
-              endtable()
+            starttable('M01', M01title, 'M01.png' , ['piperemoval'], 0)
+            createbutton("piperemoval", 20, M01a)
+            endtable()
 
-              starttable('M02', M02title,'M02.png', ['flow'], 0)
-              createbutton("flow", 25 , M02a)
-              endtable()
+            starttable('M02', M02title,'M02.png', ['flow'], 0)
+            createbutton("flow", 25 , M02a)
+            endtable()
 
-              starttable('M03', M03title,'M03.png', ['pumpaddition'], 0)
-              createbutton("pumpaddition", 20 , M03a)
-              endtable()
+            starttable('M03', M03title,'M03.png', ['pumpaddition'], 0)
+            createbutton("pumpaddition", 20 , M03a)
+            endtable()
 
-              starttable('M04', M04title,'M04.png', ['rain'], 0)
-              createbutton("rain", 20 , M04a)
-              endtable()
+            starttable('M04', M04title,'M04.png', ['rain'], 0)
+            createbutton("rain", 20 , M04a)
+            endtable()
 
-              starttable('M05', M05title, 'M05.png' , ['filter'], 0)
-              createbutton("filter", 30 , M05a)
-              endtable()
+            starttable('M05', M05title, 'M05.png' , ['filter'], 0)
+            createbutton("filter", 30 , M05a)
+            endtable()
 
-              starttable('M06', M06title, 'M06.png', ['watertreatment'], 0)
-              createbutton("watertreatment", 20, M06a)
-              endtable()
+            starttable('M06', M06title, 'M06.png', ['watertreatment'], 0)
+            createbutton("watertreatment", 20, M06a)
+            endtable()
 
-              starttable('M07', M07title, 'M07.png' , ['fountain'], 0)
-              createbutton("fountain", 20 , M07a)
-              endtable()
+            starttable('M07', M07title, 'M07.png' , ['fountain'], 0)
+            createbutton("fountain", 20 , M07a)
+            endtable()
 
-              starttable('M08', M08title, 'M08.png', ['manholecovers', 'manholecovers2'], 0)
-              createrange("manholecovers", 15 , 0, 2, 0, M08a,'')
-              createbutton("manholecovers2", 30 , M08b)
-              endtable()
+            starttable('M08', M08title, 'M08.png', ['manholecovers', 'manholecovers2'], 0)
+            createrange("manholecovers", 15 , 0, 2, 0, M08a,'')
+            createbutton("manholecovers2", 30 , M08b)
+            endtable()
 
-              </script>
-            </div>
-            <div id="group2" class="missionGroup">
-              <script>
+            starttable('M09', M09title, 'M09.png' , ['tripod3'], 0)
+            create3button("tripod3", 15, 20 , M09c)
+            endtable()
 
-              //              breakrow(mobile1,100000)
+            starttable('M10', M10title, 'M10.png' , ['pipereplacement'], 0)
+            createbutton("pipereplacement", 20 , M10a)
+            endtable()
 
+            starttable('M11', M11title, 'M11.png' , ['pipeconstruction3'], 0)
+            create3button("pipeconstruction3", 15, 20, M11c)
+            endtable()
 
-              starttable('M09', M09title, 'M09.png' , ['tripod3'], 0)
-              create3button("tripod3", 15, 20 , M09c)
-              endtable()
+            starttable('M12', M12title, 'M12.png', ['sludge'], 0)
+            createbutton("sludge", 30 , M12a)
+            endtable()
 
-              starttable('M10', M10title, 'M10.png' , ['pipereplacement'], 0)
-              createbutton("pipereplacement", 20 , M10a)
-              endtable()
+            starttable('M13', M13title, 'M13.png', ['flower1', 'flower2'], 0)
+            createbutton("flower1", 30 , M13a)
+            createbutton("flower2", 30 , M13b)
+            endtable()
 
-              starttable('M11', M11title, 'M11.png' , ['pipeconstruction3'], 0)
-              create3button("pipeconstruction3", 15, 20, M11c)
-              endtable()
+            starttable('M14', M14title, 'M14.png', ['well3'], 0)
+            create3button("well3", 15, 25, M14c)
+            endtable()
 
-              </script>
-            </div>
-            <div id="group3" class="missionGroup">
-              <script>
+            starttable('M15', M15title, 'M15.png', ['fire'], 0)
+            createbutton("fire", 25, M15a)
+            endtable()
 
-              //              breakrow(mobile,mobile1)
-              //              breakrow(mobile1,100000)
+            starttable('M16', M16title, 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+            createbutton("collection1", 10, M16a)
+            createrange("collection2", 10, 0, 4, 0, M16b,'')
+            createbutton("collection3", 30, M16c)
+            createcomment(M16d)
+            endtable()
 
-              starttable('M12', M12title, 'M12.png', ['sludge'], 0)
-              createbutton("sludge", 30 , M12a)
-              endtable()
+            starttable('M17', M17title, 'M17.png', ['slingshot1', 'slingshot2'], 0)
+            createbutton("slingshot1", 20, M17a)
+            createbutton("slingshot2", 15, M17b)
+            endtable()
 
-              starttable('M13', M13title, 'M13.png', ['flower1', 'flower2'], 0)
-              createbutton("flower1", 30 , M13a)
-              createbutton("flower2", 30 , M13b)
-              endtable()
+            starttable('M18', M18title, 'M18.png', ['faucet'], 0)
+            createbutton("faucet", 25, M18a)
+            endtable()
 
-              starttable('M14', M14title, 'M14.png', ['well3'], 0)
-              create3button("well3", 15, 25, M14c)
-              endtable()
-
-              starttable('M15', M15title, 'M15.png', ['fire'], 0)
-              createbutton("fire", 25, M15a)
-              endtable()
-
-              </script>
-            </div>
-            <div id="group4" class="missionGroup">
-              <script>
-
-              starttable('M16', M16title, 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
-              createbutton("collection1", 10, M16a)
-              createrange("collection2", 10, 0, 4, 0, M16b,'')
-              createbutton("collection3", 30, M16c)
-              createcomment(M16d)
-              endtable()
-
-              starttable('M17', M17title, 'M17.png', ['slingshot1', 'slingshot2'], 0)
-              createbutton("slingshot1", 20, M17a)
-              createbutton("slingshot2", 15, M17b)
-              endtable()
-
-              starttable('M18', M18title, 'M18.png', ['faucet'], 0)
-              createbutton("faucet", 25, M18a)
-              endtable()
-
-              starttable('P', PenaltyTitle, 'penalty.png', ['penalty'], 0)
-              createrange("penalty", -5 , 0, 6, 0, PenaltyText,'')
-              endtable()
-              </script>
-            </div>
+            starttable('P', PenaltyTitle, 'penalty.png', ['penalty'], 0)
+            createrange("penalty", -5 , 0, 6, 0, PenaltyText,'')
+            endtable()
+            </script>
           </div>
           <script>
 
