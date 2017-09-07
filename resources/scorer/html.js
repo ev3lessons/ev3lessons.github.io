@@ -56,7 +56,7 @@ function createrange(mission, increment, min, max, start, description,js) {
   window[mission+'inc'] = increment
 
   document.write('<tr>\
-  <td width="200" style="font-size: 90%; padding-left: 10px; padding-right: 5px; background-color: sky;">\
+  <td style="font-size: 90%; padding-left: 10px; padding-right: 5px; background-color: sky;">\
   '+description+'	  </td>\
   </tr>\
   <tr>\
