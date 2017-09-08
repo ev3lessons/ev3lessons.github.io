@@ -32,7 +32,7 @@ function create3button(mission,points,points2,description){
   <td>\
   <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" style="text-align: center; font-size: 50%;">\
   <label for="completely'+mission+'" style="font-size: 12px;">'+completely+'</label>\
-  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points2+',\''+mission+'\',1)" name="'+mission+'" value="completely" id="completely'+mission+'" checked=false>\
+  <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points2+',\''+mission+'\',2)" name="'+mission+'" value="completely" id="completely'+mission+'" checked=false>\
   <label for="partly'+mission+'" style="font-size: 12px;">'+partly+'</label>\
   <input  type="radio" onclick="check_missions(\''+mission+'\');recalc('+points+',\''+mission+'\',1)" name="'+mission+'" value="partly" id="partly'+mission+'" checked=false>\
   <label for="no'+mission+'" style="font-size: 12px;">'+no+'</label>\
@@ -67,7 +67,7 @@ function createrange(mission, increment, min, max, start, description,js) {
   </tr>')
 
   if (start > 0) {
-    recalc(increment*start,mission)
+    recalc(increment*start,mission,start)
   }
 
 }

@@ -112,20 +112,20 @@ treatmentUsed = 1
 flowerUsed = 0
 stackUsed = 0
 
-function recalc(points,mission,alt){
+function recalc(points,mission,saveValue){
 
-  if (alt == 1 && points == 0) {
-    savepts = 1
-  } else if (alt == 1 && points != 0) {
-    savepts = points
-  } else if (alt > 1 && points != 0) {
-    savepts = alt
-  } else {
-    savepts = 0
-  }
+  // if (alt == 1 && points == 0) {
+  //   savepts = 1
+  // } else if (alt == 1 && points != 0) {
+  //   savepts = points
+  // } else if (alt > 1 && points != 0) {
+  //   savepts = alt
+  // } else {
+  //   savepts = 0
+  // }
   //var mission = 'hi'
   window[mission] = points
-  window[mission+'save'] = savepts
+  window[mission+'save'] = saveValue
 
   if ((mission=="fountain")) {
       if (points > 0) {

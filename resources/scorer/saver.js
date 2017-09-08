@@ -1,4 +1,5 @@
 store = []
+
 function getvar() {
   count = 0
   count1 = 0
@@ -14,6 +15,7 @@ function getvar() {
   }
   //alert(store)
 }
+
 function loadsave(save) {
   newsave = String(save).split(',')
   count = 0
@@ -28,6 +30,14 @@ function loadsave(save) {
         document.getElementById('no'+save1[0]).click()
 
       }
+    } else if (document.getElementById('completely'+save1[0]) != null) {
+      if (parseInt(save1[1]) == 2)  {
+        document.getElementById('completely'+save1[0]).click()
+      } else if (parseInt(save1[1]) == 2)  {
+        document.getElementById('partly'+save1[0]).click()
+      } else {
+        document.getElementById('no'+save1[0]).click()
+      }
     } else {
       //	    document.getElementById(save1[0]).value = parseInt(save1[1])
       $("#"+save1[0]).val(parseInt(save1[1])).slider("refresh");
@@ -39,6 +49,8 @@ function loadsave(save) {
 
   }
 }
+
+
 function saver() {
   getvar();
   window.localStorage.DRHDSscorer = window.localStorage.DRHDSscorer + '/' + store

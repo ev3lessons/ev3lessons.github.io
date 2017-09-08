@@ -164,14 +164,13 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
 
   }
 
-  all_screen = 0
   </script>
   <script src="languages.js"></script>
 
 
 </head>
 
-<body onload="check_missions('piperemoval');recalc(0,'piperemoval',1);">
+<body onload="check_missions('piperemoval');recalc(0,'piperemoval',0);">
 
   <br>
   <table style="width:98%; text-align:center; margin-left:auto; margin-right:auto;">
@@ -372,7 +371,8 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
 
 
       <div id="tabs-3">
-        <div style="width: 340">     <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
+        <div style="width: 340">
+          <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
         <br>
 
         <div class="ui-grid-b ui-responsive">
@@ -533,5 +533,3 @@ document.write('<style>td {text-align: right;}</style>')
 }
 
   </script>
- 
-  
