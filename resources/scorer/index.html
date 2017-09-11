@@ -520,10 +520,60 @@ ga('send', 'pageview');
 </script>
  <script>
 countrycode = language.split('-')[0]
+  if (countrycode != "he" && countrycode != "hu" && countrycode !=
+  "en" && countrycode != "el") {
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/'+countrycode+'/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/'+language+'.svg"></a><br>')
+} else if (countrycode == "he"){
+  
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/'+language+'.svg"></a><br>')
+
+}
+
+  if (countrycode != "hu") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+ if (countrycode != "en") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/us/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+ if (countrycode != "el") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gr/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+countrycode = language.split('-')[0]
+
+
+
+
+  if (language == 'he') {
+  countrycode = "iw"
+  }
   document.write('<a target="_blank"\
   href="https://play.google.com/store/apps/details?id=com.ev3lessons.fllhydrodynamicsscorer&hl='+countrycode+'">\
 <img height="100" \
-src="https://play.google.com/intl/'+countrycode+'/badges/images/generic/'+countrycode+'_badge_web_generic.png"></a>')
+src="google-play/'+countrycode+'_get.svg"></a>')
 
 </script><br>
 Hydro Dynamics Scoring System Version 1.2.0. Copyright (c) EV3Lessons.com
