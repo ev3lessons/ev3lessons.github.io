@@ -1,0 +1,300 @@
+n/a
+none
+Construindo uma Base do Robô e Anexos
+Introdução ao Brick e Software
+Movendo em Linha Reta
+Começando com Pseudocódigo
+Virada
+Blocos de vizualização
+Sensor de Toque
+Sensor de cor
+Repetindo Ações
+Switches
+Ultrassônico
+Seguidor de Linha Básico
+none
+Desafios Finais
+Levantar e Mover um Objeto
+Usando Dados Do Sensor E Port View
+Sons E Imagens Customizadas
+Introdução ao Sensor de Som do NXT
+Bloco de Som
+Importando Blocos LEGO adicionais
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+My Block com Entradas e Saídas
+My Block Move Distância
+My Block Girar Graus
+My Blocks Seguidor de Linha Colorida com Entradas - Mover Distância / Mover até encontrar o Preto
+Sensor Infravermelho
+Técnicas de Debugging (correção de erros na programação)
+none
+Segurança
+Botões do Bloco Como Sensores
+Calibração do Sensor de Cores
+Variáveis
+Como usar Feixes Paralelos (Parallel Beams)
+Operaçôes Lógicas e Tomada de Deicisões
+Fios de Dados
+Seguidor de Paredes Ultrasônico Simples & Otimizado
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+Sincronização de Vigas Paralelas
+Controle Proporcional
+Seguidor de Linha Proporcional
+Rampa de Aceleração da Velocidade
+Usandoo Sensor Gyro e Lidandocom a Instabilidade
+Curvas usando “Gyro”
+none
+Detecção de Obstáculos
+none
+Giroscópio de Mover Reto & Giroscópio Seguidor de Parede (Wall Follow)
+ Matrizes
+Seguidor proporcional de linha com dois sensores de cor.
+Registro de Dados
+Seguidor de Parades Ultrasônico Proporcional
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+PixyCam para MINDSTORMS
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none
+none

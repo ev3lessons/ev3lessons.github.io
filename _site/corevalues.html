@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+
+    <head>
+
+        <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest as well as classrooms. This site is operated by FLL Team Droids Robotics.">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>EV3Lessons.com | by Seshan Brothers</title>
+
+        <!-- [favicon] begin -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- [favicon] end -->
+
+        <!-- CSS Main -->
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+
+<!-- HEADER CUT HERE ------------------------------------------------->
+
+    </head>
+    <body class="no_js responsive boxed-layout chrome " onload="addclass()">
+
+        <!-- TOPBAR -->
+        <script src="topbar.js"></script>
+        <!-- END TOPBAR -->
+        <!-- START WRAPPER -->
+        <div class="wrapper group">
+            <!-- START HEADER -->
+            <div id="header" class="group">
+                <div class="group inner">
+
+
+                    <!-- START NAV -->
+		    <script src="menu.js"></script>
+                    <!-- END NAV -->
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+	    <!-- HEADER CUT HERE ------------------------------------------------->
+<div class=" home-section group">
+<div class="title">
+  <h1 class="page-heading">Team Building Activities</h1>
+</div>
+
+
+<script>
+ function similar(a,b) {
+    var lengthA = a.length;
+    var lengthB = b.length;
+    var equivalency = 0;
+    var minLength = (a.length > b.length) ? b.length : a.length;
+    var maxLength = (a.length < b.length) ? b.length : a.length;
+    for(var i = 0; i < minLength; i++) {
+        if(a[i] == b[i]) {
+            equivalency++;
+        }
+    }
+
+
+    var weight = equivalency / maxLength;
+    return (weight * 100) ;
+}
+
+function search(term) {
+document.getElementById('search').value = term
+var valuein = term.toLowerCase().split(' ').join('_');
+	x = 23
+	keys = []
+	while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+//		alert(document.getElementsByTagName('li')[x])
+document.getElementsByTagName('li')[30].className += " "+ document.getElementsByTagName('li')[30].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+		keys = keys.concat(document.getElementsByTagName('li')[x].className.split(' '))
+//		alert(x)
+//		alert(document.getElementsByTagName('li')[x])
+x = x+1
+}
+}
+//alert(term)
+keywords = keys
+  x = 0
+    while (x != document.getElementsByClassName("Coaching").length) {
+   document.getElementsByClassName("Coaching")[x].style.display = "none"
+  x ++
+}
+usemax = 0
+aa=0
+array = []
+  while (aa != keywords.length) {
+//      array[aa] = keywords[aa].indexOf(valuein)
+      array[aa] = similar(keywords[aa],valuein)
+
+  aa++
+}
+//alert(array)
+largest = 0
+bb = 0
+//alert(array)
+
+  max = array.indexOf(Math.max.apply(window,array))
+  value = keywords[max]
+ x = 0
+  while (x != document.getElementsByClassName(value).length) {
+   document.getElementsByClassName(value)[x].style.display = "block"
+  x ++
+	}
+
+
+}
+</script>
+
+
+<div class="home">
+<!--
+Search: <input id="search" type="text">  <input type="button" value="Go!" onclick="search(document.getElementById('search').value)">
+--><br>
+
+  
+
+<!--<img src=""><br>-->
+
+  <ul class="post-list">
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/08/12/Straw-Transfer.html">Straw Transfer</a>
+        </h3>
+       <span class="post-meta">12 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where transfer a ring using only a straw.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/08/12/Straw-Transfer.html#'+language+'">Straw Transfer</a>\
+        </h3>\
+        <span class="post-meta">12 Aug 2017</span>\
+<p>        <span class="post-meta">This is a team building activity where transfer a ring using only a straw.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/07/01/Act-it-Out-V2.html">Act it Out V.2.0</a>
+        </h3>
+       <span class="post-meta">1 Jul, 2017</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where team members have to incorporate a random prop into their activity.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/07/01/Act-it-Out-V2.html#'+language+'">Act it Out V.2.0</a>\
+        </h3>\
+        <span class="post-meta">1 Jul 2017</span>\
+<p>        <span class="post-meta">This is a team building activity where team members have to incorporate a random prop into their activity.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/06/05/Giant-Skis.html">Giant Skis</a>
+        </h3>
+       <span class="post-meta">5 Jun, 2017</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where the entire team goes skiing together using 2 homemade wooden skis.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/06/05/Giant-Skis.html#'+language+'">Giant Skis</a>\
+        </h3>\
+        <span class="post-meta">5 Jun 2017</span>\
+<p>        <span class="post-meta">This is a team building activity where the entire team goes skiing together using 2 homemade wooden skis.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/05/16/Favorite-Core-Value.html">Favorite Core Value</a>
+        </h3>
+       <span class="post-meta">16 May, 2017</span>
+
+
+<p>        <span class="post-meta">This is team building activity where team members have to think of one core value that means the most to them.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/05/16/Favorite-Core-Value.html#'+language+'">Favorite Core Value</a>\
+        </h3>\
+        <span class="post-meta">16 May 2017</span>\
+<p>        <span class="post-meta">This is team building activity where team members have to think of one core value that means the most to them.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/04/16/Group-Draw.html">Group Draw</a>
+        </h3>
+       <span class="post-meta">16 Apr, 2017</span>
+
+
+<p>        <span class="post-meta">This is team building activity where team members work together to draw an image</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/04/16/Group-Draw.html#'+language+'">Group Draw</a>\
+        </h3>\
+        <span class="post-meta">16 Apr 2017</span>\
+<p>        <span class="post-meta">This is team building activity where team members work together to draw an image</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2017/03/15/One-Word-copy.html">One Word</a>
+        </h3>
+       <span class="post-meta">15 Mar, 2017</span>
+
+
+<p>        <span class="post-meta">This is team building activity where team members have to think about what represents their team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2017/03/15/One-Word-copy.html#'+language+'">One Word</a>\
+        </h3>\
+        <span class="post-meta">15 Mar 2017</span>\
+<p>        <span class="post-meta">This is team building activity where team members have to think about what represents their team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/12/15/Build-in-Bag.html">Build in the Bag</a>
+        </h3>
+       <span class="post-meta">15 Dec, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where team members work together to build a LEGO set in the plastic bag.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/12/15/Build-in-Bag.html#'+language+'">Build in the Bag</a>\
+        </h3>\
+        <span class="post-meta">15 Dec 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where team members work together to build a LEGO set in the plastic bag.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/11/05/Marble-Maze.html">Marble Maze</a>
+        </h3>
+       <span class="post-meta">5 Nov, 2016</span>
+
+
+<p>        <span class="post-meta">This is team building activity where team members need to construct a maze out of LEGO.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/11/05/Marble-Maze.html#'+language+'">Marble Maze</a>\
+        </h3>\
+        <span class="post-meta">5 Nov 2016</span>\
+<p>        <span class="post-meta">This is team building activity where team members need to construct a maze out of LEGO.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/10/05/Animal-and-Habitat.html">Animal in its Habitat</a>
+        </h3>
+       <span class="post-meta">5 Oct, 2016</span>
+
+
+<p>        <span class="post-meta">This is team building where one half of the team creates an animal and the other half a habitat using LEGO.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/10/05/Animal-and-Habitat.html#'+language+'">Animal in its Habitat</a>\
+        </h3>\
+        <span class="post-meta">5 Oct 2016</span>\
+<p>        <span class="post-meta">This is team building where one half of the team creates an animal and the other half a habitat using LEGO.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/09/05/Marble-Run.html">Marble Run</a>
+        </h3>
+       <span class="post-meta">5 Sep, 2016</span>
+
+
+<p>        <span class="post-meta">This is team building activity where team members need to construct a marble run out of recycled items.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/09/05/Marble-Run.html#'+language+'">Marble Run</a>\
+        </h3>\
+        <span class="post-meta">5 Sep 2016</span>\
+<p>        <span class="post-meta">This is team building activity where team members need to construct a marble run out of recycled items.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/08/15/Act-it-Out-V1.html">Act it Out V.1.0</a>
+        </h3>
+       <span class="post-meta">15 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where team members act out different concepts.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/08/15/Act-it-Out-V1.html#'+language+'">Act it Out V.1.0</a>\
+        </h3>\
+        <span class="post-meta">15 Aug 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where team members act out different concepts.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/07/15/No-Hands.html">No Hands, Only Hips</a>
+        </h3>
+       <span class="post-meta">15 Jul, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where teams have to transport balls held only by their hips.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/07/15/No-Hands.html#'+language+'">No Hands, Only Hips</a>\
+        </h3>\
+        <span class="post-meta">15 Jul 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where teams have to transport balls held only by their hips.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/06/05/Wear-It.html">Wear It</a>
+        </h3>
+       <span class="post-meta">5 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where students need to turn one object into something else.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/06/05/Wear-It.html#'+language+'">Wear It</a>\
+        </h3>\
+        <span class="post-meta">5 Jun 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where students need to turn one object into something else.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/05/05/Tangled.html">Tangled</a>
+        </h3>
+       <span class="post-meta">5 May, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where teams have to untangle themselves. This activity is sometimes called The Human Knot.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/05/05/Tangled.html#'+language+'">Tangled</a>\
+        </h3>\
+        <span class="post-meta">5 May 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where teams have to untangle themselves. This activity is sometimes called The Human Knot.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/04/15/Stranded.html">Stranded</a>
+        </h3>
+       <span class="post-meta">15 Apr, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where your team is stranded on an island.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/04/15/Stranded.html#'+language+'">Stranded</a>\
+        </h3>\
+        <span class="post-meta">15 Apr 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where your team is stranded on an island.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/03/05/Piece-it-Together.html">Piece it Together</a>
+        </h3>
+       <span class="post-meta">5 Mar, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where once person creates a puzzle, but is blindfolded.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/03/05/Piece-it-Together.html#'+language+'">Piece it Together</a>\
+        </h3>\
+        <span class="post-meta">5 Mar 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where once person creates a puzzle, but is blindfolded.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/02/15/Stack-Them.html">Stack Them</a>
+        </h3>
+       <span class="post-meta">15 Feb, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where students have to stack cups without their hands.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/02/15/Stack-Them.html#'+language+'">Stack Them</a>\
+        </h3>\
+        <span class="post-meta">15 Feb 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where students have to stack cups without their hands.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2016/01/05/Mine-Field.html">Watch Your Step</a>
+        </h3>
+       <span class="post-meta">5 Jan, 2016</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where your team must help one person navigate through a mine field.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2016/01/05/Mine-Field.html#'+language+'">Watch Your Step</a>\
+        </h3>\
+        <span class="post-meta">5 Jan 2016</span>\
+<p>        <span class="post-meta">This is a team building activity where your team must help one person navigate through a mine field.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/12/05/Build-a-Bridge.html">Build a Bridge</a>
+        </h3>
+       <span class="post-meta">5 Dec, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where students have build a bridge.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/12/05/Build-a-Bridge.html#'+language+'">Build a Bridge</a>\
+        </h3>\
+        <span class="post-meta">5 Dec 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where students have build a bridge.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/11/15/Make-it-Fit.html">Make it Fit</a>
+        </h3>
+       <span class="post-meta">15 Nov, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where the team builds both an object as well as box it fits into.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/11/15/Make-it-Fit.html#'+language+'">Make it Fit</a>\
+        </h3>\
+        <span class="post-meta">15 Nov 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where the team builds both an object as well as box it fits into.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/10/15/Model-Duplicator.html">Model Duplicator</a>
+        </h3>
+       <span class="post-meta">15 Oct, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where half of the team has to give instructions to duplicate a model.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/10/15/Model-Duplicator.html#'+language+'">Model Duplicator</a>\
+        </h3>\
+        <span class="post-meta">15 Oct 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where half of the team has to give instructions to duplicate a model.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/09/15/Turn-Over.html">Turn Over</a>
+        </h3>
+       <span class="post-meta">15 Sep, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where your team has to flip over the towel they are standing on.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/09/15/Turn-Over.html#'+language+'">Turn Over</a>\
+        </h3>\
+        <span class="post-meta">15 Sep 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where your team has to flip over the towel they are standing on.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/08/15/Compliments.html">Compliments</a>
+        </h3>
+       <span class="post-meta">15 Aug, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where team members learn to value one another.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/08/15/Compliments.html#'+language+'">Compliments</a>\
+        </h3>\
+        <span class="post-meta">15 Aug 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where team members learn to value one another.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/07/15/Human-Characters.html">Human Characters</a>
+        </h3>
+       <span class="post-meta">15 Jul, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where transfer a ring using only a straw.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/07/15/Human-Characters.html#'+language+'">Human Characters</a>\
+        </h3>\
+        <span class="post-meta">15 Jul 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where transfer a ring using only a straw.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/06/05/Sets.html">Sets</a>
+        </h3>
+       <span class="post-meta">5 Jun, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where your team has to group objects together.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/06/05/Sets.html#'+language+'">Sets</a>\
+        </h3>\
+        <span class="post-meta">5 Jun 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where your team has to group objects together.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/05/15/Birthday-Order.html">Birthday Order</a>
+        </h3>
+       <span class="post-meta">15 May, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where you must line up according to your birthday.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/05/15/Birthday-Order.html#'+language+'">Birthday Order</a>\
+        </h3>\
+        <span class="post-meta">15 May 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where you must line up according to your birthday.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/04/05/Hand-Pencil-Hand.html">Hand-Pencil-Hand</a>
+        </h3>
+       <span class="post-meta">5 Apr, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where team members coordinate to balance pencils.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/04/05/Hand-Pencil-Hand.html#'+language+'">Hand-Pencil-Hand</a>\
+        </h3>\
+        <span class="post-meta">5 Apr 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where team members coordinate to balance pencils.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/03/05/Hats-Off.html">Hats Off</a>
+        </h3>
+       <span class="post-meta">5 Mar, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where your team has to try on a hat without hands.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/03/05/Hats-Off.html#'+language+'">Hats Off</a>\
+        </h3>\
+        <span class="post-meta">5 Mar 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where your team has to try on a hat without hands.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/02/05/TEAM.html">We are a TEAM</a>
+        </h3>
+       <span class="post-meta">5 Feb, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity where students express their appreciation for each other.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/02/05/TEAM.html#'+language+'">We are a TEAM</a>\
+        </h3>\
+        <span class="post-meta">5 Feb 2015</span>\
+<p>        <span class="post-meta">This is a team building activity where students express their appreciation for each other.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/corevalues/2015/01/15/Learn-Core-Values.html">Illustrate the Core Values</a>
+        </h3>
+       <span class="post-meta">15 Jan, 2015</span>
+
+
+<p>        <span class="post-meta">This is a team building activity will help the team understand the Core Values.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="corevalue team_building">\
+        <h3>\
+          <a class="post-link" href="/corevalues/2015/01/15/Learn-Core-Values.html#'+language+'">Illustrate the Core Values</a>\
+        </h3>\
+        <span class="post-meta">15 Jan 2015</span>\
+<p>        <span class="post-meta">This is a team building activity will help the team understand the Core Values.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+  </ul>
+<br>
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<!--<p>Not not all core value activities are here yet. To get the others, visit <a href="http://archive.ev3lessons.com/web/ev3lessons-v4.9.0/corevalues.html">EV3lessons v4.9.0 website</a></p>-->
+</div>
+
+</div>
+</div>
+</div>
+<div>
+
+
+
+</div>
+</div>
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+<script src="footer.js"></script>
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+</body>
+</html>
+
+
+
+<script>
+function addclass() {
+x = 22
+while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+                        document.getElementsByTagName('li')[x].className += " " +document.getElementsByTagName('li')[x].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+//alert(document.getElementsByTagName('li')[x].className)
+                        x = x+1
+}
+}
+}
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

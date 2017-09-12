@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+
+    <head>
+
+        <meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest as well as classrooms. This site is operated by FLL Team Droids Robotics.">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>EV3Lessons.com | by Seshan Brothers</title>
+
+        <!-- [favicon] begin -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- [favicon] end -->
+
+        <!-- CSS Main -->
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="stylenotable.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+<script>
+function url() {
+if (getParameterByName('q')) {
+search(decodeURI(getParameterByName('q')))
+document.getElementById('search').value = decodeURI(getParameterByName('q'))
+}
+
+
+if (window.location.search.substring(1) != "") {
+ if (window.location.search.substring(1).search('lang') == -1 &&window.location.search.substring(1).search('q=')) {
+search(decodeURI(window.location.search.substring(1)))
+document.getElementById('search').value = decodeURI(window.location.search.substring(1))
+
+}
+}
+
+document.getElementById("search")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("go").click();
+        //alert("HI")
+}
+});
+}
+</script>
+
+
+<!-- HEADER CUT HERE ------------------------------------------------->
+
+    </head>
+    <body class="no_js responsive boxed-layout chrome " onload="addclass();url()">
+
+        <!-- TOPBAR -->
+        <script src="topbar.js"></script>
+        <!-- END TOPBAR -->
+        <!-- START WRAPPER -->
+        <div class="wrapper group">
+            <!-- START HEADER -->
+            <div id="header" class="group">
+                <div class="group inner">
+
+
+                    <!-- START NAV -->
+		    <script src="menu.js"></script>
+                    <!-- END NAV -->
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+	    <!-- HEADER CUT HERE ------------------------------------------------->
+<div class=" home-section group">
+<div class="title">
+  <h1 class="page-heading">Coach's Corner</h1>
+</div>
+
+
+<script>
+ function similar(a,b) {
+    var lengthA = a.length;
+    var lengthB = b.length;
+    var equivalency = 0;
+    var minLength = (a.length > b.length) ? b.length : a.length;
+    var maxLength = (a.length < b.length) ? b.length : a.length;
+    for(var i = 0; i < minLength; i++) {
+        if(a[i] == b[i]) {
+            equivalency++;
+        }
+    }
+
+
+    var weight = equivalency / maxLength;
+    return (weight * 100) ;
+}
+
+function search(term) {
+document.getElementById('search').value = term
+var valuein = term.toLowerCase().split(' ').join('_');
+	x = 23
+	keys = []
+	while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+//		alert(document.getElementsByTagName('li')[x])
+document.getElementsByTagName('li')[30].className += " "+ document.getElementsByTagName('li')[30].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+		keys = keys.concat(document.getElementsByTagName('li')[x].className.split(' '))
+//		alert(x)
+//		alert(document.getElementsByTagName('li')[x])
+x = x+1
+}
+}
+//alert(term)
+keywords = keys
+  x = 0
+    while (x != document.getElementsByClassName("Coaching").length) {
+   document.getElementsByClassName("Coaching")[x].style.display = "none"
+  x ++
+}
+usemax = 0
+aa=0
+array = []
+  while (aa != keywords.length) {
+//      array[aa] = keywords[aa].indexOf(valuein)
+      array[aa] = similar(keywords[aa],valuein)
+
+  aa++
+}
+//alert(array)
+largest = 0
+bb = 0
+//alert(array)
+
+  max = array.indexOf(Math.max.apply(window,array))
+  value = keywords[max]
+ x = 0
+  while (x != document.getElementsByClassName(value).length) {
+   document.getElementsByClassName(value)[x].style.display = "block"
+  x ++
+	}
+
+
+}
+</script>
+
+
+<div class="home">
+
+Search: <input id="search" type="text">  <input type="button" value="Go!" onclick="search(document.getElementById('search').value)">
+<br>
+Categories: <input type="button" value="Coach's Role" onclick="search('Coach Role')">
+<input type="button" value="Core Values in Robotics" onclick="search('Core Values')">
+<input type="button" value="Funding" onclick="search('Funding')">
+<input type="button" value="Getting Started" onclick="search('Getting Started')">
+<input type="button" value="The Internet" onclick="search('Internet')">
+<input type="button" value="Creating a Team" onclick="search('Creating a Team')">
+<input type="button" value="Contest Day Preparation" onclick="search('Contest Day')">
+<input type="button" value="Show all articles" onclick="search('Coaching'); document.getElementById('search').value = 'Show All';" >
+
+  
+
+<!--<img src=""><br>-->
+
+  <ul class="post-list">
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/12/Engineering-Journal.html">Record Keeping in FIRST LEGO League</a>
+        </h3>
+       <span class="post-meta">12 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about keeping an Engineering Journal in FIRST LEGO League.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/12/Engineering-Journal.html#'+language+'">Record Keeping in FIRST LEGO League</a>\
+        </h3>\
+        <span class="post-meta">Aug 12, 2017</span>\
+<p>        <span class="post-meta">This article is about keeping an Engineering Journal in FIRST LEGO League.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/11/To-Rebuild-or-Not-to-Rebuild.html">To Rebuild or Not to Rebuild</a>
+        </h3>
+       <span class="post-meta">11 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about whether or not teams should create a new competition robot each year.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/11/To-Rebuild-or-Not-to-Rebuild.html#'+language+'">To Rebuild or Not to Rebuild</a>\
+        </h3>\
+        <span class="post-meta">Aug 11, 2017</span>\
+<p>        <span class="post-meta">This article is about whether or not teams should create a new competition robot each year.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/10/Useful-Parts-to-Own.html">Useful Parts and Where to Get Them</a>
+        </h3>
+       <span class="post-meta">10 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about extra parts to buy for your team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/10/Useful-Parts-to-Own.html#'+language+'">Useful Parts and Where to Get Them</a>\
+        </h3>\
+        <span class="post-meta">Aug 10, 2017</span>\
+<p>        <span class="post-meta">This article is about extra parts to buy for your team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/09/Team-Building-Activities.html">Team Building Activities</a>
+        </h3>
+       <span class="post-meta">9 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about practicing team building activities.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/09/Team-Building-Activities.html#'+language+'">Team Building Activities</a>\
+        </h3>\
+        <span class="post-meta">Aug 9, 2017</span>\
+<p>        <span class="post-meta">This article is about practicing team building activities.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/08/Selecting-Team-Members.html">Selecting Team Members</a>
+        </h3>
+       <span class="post-meta">8 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about how to select team members.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/08/Selecting-Team-Members.html#'+language+'">Selecting Team Members</a>\
+        </h3>\
+        <span class="post-meta">Aug 8, 2017</span>\
+<p>        <span class="post-meta">This article is about how to select team members.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/07/Shared-Spaces.html">Managing Your Team in a Shared Space</a>
+        </h3>
+       <span class="post-meta">7 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about what to do when your team meets in a place that is used by others.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/07/Shared-Spaces.html#'+language+'">Managing Your Team in a Shared Space</a>\
+        </h3>\
+        <span class="post-meta">Aug 7, 2017</span>\
+<p>        <span class="post-meta">This article is about what to do when your team meets in a place that is used by others.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/06/Debugging-Tips.html">Debugging Tips</a>
+        </h3>
+       <span class="post-meta">6 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article shares tips for teams to debug their code.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/06/Debugging-Tips.html#'+language+'">Debugging Tips</a>\
+        </h3>\
+        <span class="post-meta">Aug 6, 2017</span>\
+<p>        <span class="post-meta">This article shares tips for teams to debug their code.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/05/Family-LEGO-Night-Fundraising-Tips.html">Family LEGO Night: Fundraising Tips</a>
+        </h3>
+       <span class="post-meta">5 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article shares tips for how to run a Family LEGO Night as a team fundraising activity.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started funding FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/05/Family-LEGO-Night-Fundraising-Tips.html#'+language+'">Family LEGO Night: Fundraising Tips</a>\
+        </h3>\
+        <span class="post-meta">Aug 5, 2017</span>\
+<p>        <span class="post-meta">This article shares tips for how to run a Family LEGO Night as a team fundraising activity.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/08/04/Transitioning-From-FIRST-LEGO-League.html">Transitioning From FIRST LEGO League to other FIRST Programs</a>
+        </h3>
+       <span class="post-meta">4 Aug, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about transitioning from FIRST LEGO League to FIRST Tech Challenge or FIRST Robotics Challenge.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/08/04/Transitioning-From-FIRST-LEGO-League.html#'+language+'">Transitioning From FIRST LEGO League to other FIRST Programs</a>\
+        </h3>\
+        <span class="post-meta">Aug 4, 2017</span>\
+<p>        <span class="post-meta">This article is about transitioning from FIRST LEGO League to FIRST Tech Challenge or FIRST Robotics Challenge.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/06/14/Alternative-Programming-Languages.html">Alternative Programming Languages for the EV3</a>
+        </h3>
+       <span class="post-meta">14 Jun, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about using alternative programming languages on the EV3.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/06/14/Alternative-Programming-Languages.html#'+language+'">Alternative Programming Languages for the EV3</a>\
+        </h3>\
+        <span class="post-meta">Jun 14, 2017</span>\
+<p>        <span class="post-meta">This article is about using alternative programming languages on the EV3.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/05/13/The-3-Hs-in-FIRST-LEGO-League.html">The Three Hs in FIRST LEGO League</a>
+        </h3>
+       <span class="post-meta">13 May, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about the impact that FIRST LEGO League can have on a team if you look beyond the awards and STEM, and embrace its international dimension and its possibilities for active citizenship.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/05/13/The-3-Hs-in-FIRST-LEGO-League.html#'+language+'">The Three Hs in FIRST LEGO League</a>\
+        </h3>\
+        <span class="post-meta">May 13, 2017</span>\
+<p>        <span class="post-meta">This article is about the impact that FIRST LEGO League can have on a team if you look beyond the awards and STEM, and embrace its international dimension and its possibilities for active citizenship.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/05/13/De-3-Hs-in-FIRST-LEGO-League.html">De 3 Hs in FIRST LEGO League</a>
+        </h3>
+       <span class="post-meta">13 May, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about the impact that FIRST LEGO League can have on a team if you look beyond the awards and STEM, and embrace its international dimension and its possibilities for active citizenship.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(nl) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/05/13/De-3-Hs-in-FIRST-LEGO-League.html#'+language+'">De 3 Hs in FIRST LEGO League</a>\
+        </h3>\
+        <span class="post-meta">May 13, 2017</span>\
+<p>        <span class="post-meta">This article is about the impact that FIRST LEGO League can have on a team if you look beyond the awards and STEM, and embrace its international dimension and its possibilities for active citizenship.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/04/07/Starting-a-Team.html">A Day in the Life of a Coach - Starting a Team</a>
+        </h3>
+       <span class="post-meta">7 Apr, 2017</span>
+
+
+<p>        <span class="post-meta">This article is the first in the series of articles sharing different aspects of being a coach.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL FLL resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/04/07/Starting-a-Team.html#'+language+'">A Day in the Life of a Coach - Starting a Team</a>\
+        </h3>\
+        <span class="post-meta">Apr 7, 2017</span>\
+<p>        <span class="post-meta">This article is the first in the series of articles sharing different aspects of being a coach.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/02/22/Recommendation-List.html">EV3Lessons - Recommendation List</a>
+        </h3>
+       <span class="post-meta">22 Feb, 2017</span>
+
+
+<p>        <span class="post-meta">This article is a compilation of resources available to MINDSTORMS users whether you are participating in a competition, building for fun or teaching robotics at a school.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started FLL WRO resources">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/02/22/Recommendation-List.html#'+language+'">EV3Lessons - Recommendation List</a>\
+        </h3>\
+        <span class="post-meta">Feb 22, 2017</span>\
+<p>        <span class="post-meta">This article is a compilation of resources available to MINDSTORMS users whether you are participating in a competition, building for fun or teaching robotics at a school.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/02/15/NXT-and-EV3.html">NXT and EV3 - Working Together</a>
+        </h3>
+       <span class="post-meta">15 Feb, 2017</span>
+
+
+<p>        <span class="post-meta">This article is about the NXT and EV3 compatibility.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/02/15/NXT-and-EV3.html#'+language+'">NXT and EV3 - Working Together</a>\
+        </h3>\
+        <span class="post-meta">Feb 15, 2017</span>\
+<p>        <span class="post-meta">This article is about the NXT and EV3 compatibility.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html">A Dozen Off-Season Ideas</a>
+        </h3>
+       <span class="post-meta">27 Jan, 2017</span>
+
+
+<p>        <span class="post-meta">This article shares ideas for what a FIRST LEGO League can do in the off-season to improve their skills.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started off-season">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/01/27/A-Dozen-Off-Season-Ideas.html#'+language+'">A Dozen Off-Season Ideas</a>\
+        </h3>\
+        <span class="post-meta">Jan 27, 2017</span>\
+<p>        <span class="post-meta">This article shares ideas for what a FIRST LEGO League can do in the off-season to improve their skills.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/01/17/Home-vs-Edu.html">Home vs Education Edition</a>
+        </h3>
+       <span class="post-meta">17 Jan, 2017</span>
+
+
+<p>        <span class="post-meta">This article compares the three different MINDSTORMS sets available to FIRST LEGO League teams.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started organization">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/01/17/Home-vs-Edu.html#'+language+'">Home vs Education Edition</a>\
+        </h3>\
+        <span class="post-meta">Jan 17, 2017</span>\
+<p>        <span class="post-meta">This article compares the three different MINDSTORMS sets available to FIRST LEGO League teams.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2017/01/09/Coach-s-Role-During-the-Robot-Game.html">Coach&#39;s Role During the Robot Game</a>
+        </h3>
+       <span class="post-meta">9 Jan, 2017</span>
+
+
+<p>        <span class="post-meta">This article provides tips for how a coach should behave during the robot game.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach coach_role role">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2017/01/09/Coach-s-Role-During-the-Robot-Game.html#'+language+'">Coach&#39;s Role During the Robot Game</a>\
+        </h3>\
+        <span class="post-meta">Jan 9, 2017</span>\
+<p>        <span class="post-meta">This article provides tips for how a coach should behave during the robot game.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/12/27/FIRST-link-tussen-formeel,-non-formeel-en-informeel-leren.html">FIRST ®: link tussen formeel, non-formeel en informeel leren</a>
+        </h3>
+       <span class="post-meta">27 Dec, 2016</span>
+
+
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(nl) == language)
+{
+document.write('      <li class="Coaching education FIRST">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/12/27/FIRST-link-tussen-formeel,-non-formeel-en-informeel-leren.html#'+language+'">FIRST ®: link tussen formeel, non-formeel en informeel leren</a>\
+        </h3>\
+        <span class="post-meta">Dec 27, 2016</span>\
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/12/27/FIRST-The-Link-Between-Formal,-Non-Formal-and-Informal-Learning.html">FIRST®: The Link Between Formal, Non-Formal and Informal Learning</a>
+        </h3>
+       <span class="post-meta">27 Dec, 2016</span>
+
+
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching education FIRST">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/12/27/FIRST-The-Link-Between-Formal,-Non-Formal-and-Informal-Learning.html#'+language+'">FIRST®: The Link Between Formal, Non-Formal and Informal Learning</a>\
+        </h3>\
+        <span class="post-meta">Dec 27, 2016</span>\
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/12/20/Co%C3%B6peratief-leren-en-FLLmarkdown.html">Coöperatief leren en FIRST® LEGO® League</a>
+        </h3>
+       <span class="post-meta">20 Dec, 2016</span>
+
+
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(nl) == language)
+{
+document.write('      <li class="Coaching education FIRST">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/12/20/Co%C3%B6peratief-leren-en-FLLmarkdown.html#'+language+'">Coöperatief leren en FIRST® LEGO® League</a>\
+        </h3>\
+        <span class="post-meta">Dec 20, 2016</span>\
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/12/20/Cooperative-Learning-in-FIRST.html">Cooperative Learning in FIRST® LEGO® League</a>
+        </h3>
+       <span class="post-meta">20 Dec, 2016</span>
+
+
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching education FIRST">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/12/20/Cooperative-Learning-in-FIRST.html#'+language+'">Cooperative Learning in FIRST® LEGO® League</a>\
+        </h3>\
+        <span class="post-meta">Dec 20, 2016</span>\
+<p>        <span class="post-meta">This article discusses the role that FIRST LEGO League can play in education.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/11/27/Failure-is-Always-an-Option.html">Failure is Always an Option</a>
+        </h3>
+       <span class="post-meta">27 Nov, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to raise enough money for your team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach_role failure getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/11/27/Failure-is-Always-an-Option.html#'+language+'">Failure is Always an Option</a>\
+        </h3>\
+        <span class="post-meta">Nov 27, 2016</span>\
+<p>        <span class="post-meta">This article is about how to raise enough money for your team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/11/20/Funding-Your-Season.html">Funding Your Season</a>
+        </h3>
+       <span class="post-meta">20 Nov, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to raise enough money for your team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching roles management funding getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/11/20/Funding-Your-Season.html#'+language+'">Funding Your Season</a>\
+        </h3>\
+        <span class="post-meta">Nov 20, 2016</span>\
+<p>        <span class="post-meta">This article is about how to raise enough money for your team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/11/16/Learning-One-Step-Ahead-of-Your-Students.html">Learning One Step Ahead of Your Students</a>
+        </h3>
+       <span class="post-meta">16 Nov, 2016</span>
+
+
+<p>        <span class="post-meta">This article shares the story of one school teacher and his first time starting FIRST LEGO Leauge.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach_role passion learning">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/11/16/Learning-One-Step-Ahead-of-Your-Students.html#'+language+'">Learning One Step Ahead of Your Students</a>\
+        </h3>\
+        <span class="post-meta">Nov 16, 2016</span>\
+<p>        <span class="post-meta">This article shares the story of one school teacher and his first time starting FIRST LEGO Leauge.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/11/06/Coaching-What-Can-You-Offer.html">Coaching - What Can You Offer?</a>
+        </h3>
+       <span class="post-meta">6 Nov, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the role of the coach in FIRST LEGO League.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach passion role getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/11/06/Coaching-What-Can-You-Offer.html#'+language+'">Coaching - What Can You Offer?</a>\
+        </h3>\
+        <span class="post-meta">Nov 6, 2016</span>\
+<p>        <span class="post-meta">This article is about the role of the coach in FIRST LEGO League.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/10/28/SWAG-Giveaways-at-Events.html">SWAG - Team Giveaways</a>
+        </h3>
+       <span class="post-meta">28 Oct, 2016</span>
+
+
+<p>        <span class="post-meta">This article gives teams ideas for giveaways.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching SWAG giveaways competition contest_day">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/10/28/SWAG-Giveaways-at-Events.html#'+language+'">SWAG - Team Giveaways</a>\
+        </h3>\
+        <span class="post-meta">Oct 28, 2016</span>\
+<p>        <span class="post-meta">This article gives teams ideas for giveaways.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/10/17/Sorting-Parts.html">Sorting Parts</a>
+        </h3>
+       <span class="post-meta">17 Oct, 2016</span>
+
+
+<p>        <span class="post-meta">This article shares ideas for how to sort your parts for FIRST LEGO League.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching organizing sorting getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/10/17/Sorting-Parts.html#'+language+'">Sorting Parts</a>\
+        </h3>\
+        <span class="post-meta">Oct 17, 2016</span>\
+<p>        <span class="post-meta">This article shares ideas for how to sort your parts for FIRST LEGO League.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/10/09/Encouraging-Team-Unity-in-the-New-Season.html">Encouraging Team Unity in the New Season</a>
+        </h3>
+       <span class="post-meta">9 Oct, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to build a better team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach getting_started core_values build_team">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/10/09/Encouraging-Team-Unity-in-the-New-Season.html#'+language+'">Encouraging Team Unity in the New Season</a>\
+        </h3>\
+        <span class="post-meta">Oct 9, 2016</span>\
+<p>        <span class="post-meta">This article is about how to build a better team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/10/02/Maximize-Learning-Minimize-Cloning.html">Maximize Learning and Minimize Cloning</a>
+        </h3>
+       <span class="post-meta">2 Oct, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the role the Internet can play in your season.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching Internet solialization sharing copying inspiring">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/10/02/Maximize-Learning-Minimize-Cloning.html#'+language+'">Maximize Learning and Minimize Cloning</a>\
+        </h3>\
+        <span class="post-meta">Oct 2, 2016</span>\
+<p>        <span class="post-meta">This article is about the role the Internet can play in your season.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/09/25/Start-Where-the-Old-Season-Ended.html">Start Where the Old Season Ended</a>
+        </h3>
+       <span class="post-meta">25 Sep, 2016</span>
+
+
+<p>        <span class="post-meta">This article shares ideas about how to start your season by looking at evaluations and setting goals.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching getting_started rubrics evaluation">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/09/25/Start-Where-the-Old-Season-Ended.html#'+language+'">Start Where the Old Season Ended</a>\
+        </h3>\
+        <span class="post-meta">Sep 25, 2016</span>\
+<p>        <span class="post-meta">This article shares ideas about how to start your season by looking at evaluations and setting goals.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/09/16/Dare-to-Prepare.html">Dare to Prepare</a>
+        </h3>
+       <span class="post-meta">16 Sep, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to prepare for tournament day.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching competition tournament preparation contest_day">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/09/16/Dare-to-Prepare.html#'+language+'">Dare to Prepare</a>\
+        </h3>\
+        <span class="post-meta">Sep 16, 2016</span>\
+<p>        <span class="post-meta">This article is about how to prepare for tournament day.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/09/09/Preparing-for-Juding-Presentations.html">Preparing for Juding Presentations</a>
+        </h3>
+       <span class="post-meta">9 Sep, 2016</span>
+
+
+<p>        <span class="post-meta">This article shared tips about how to improve your judging presentations.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching presentations competition contest_day">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/09/09/Preparing-for-Juding-Presentations.html#'+language+'">Preparing for Juding Presentations</a>\
+        </h3>\
+        <span class="post-meta">Sep 9, 2016</span>\
+<p>        <span class="post-meta">This article shared tips about how to improve your judging presentations.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/09/02/Funding-a-Team.html">Funding a Team</a>
+        </h3>
+       <span class="post-meta">2 Sep, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to fund your FLL team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching funding expenses getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/09/02/Funding-a-Team.html#'+language+'">Funding a Team</a>\
+        </h3>\
+        <span class="post-meta">Sep 2, 2016</span>\
+<p>        <span class="post-meta">This article is about how to fund your FLL team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/08/25/Achievement-and-Celebration.html">Achievement and Celebration</a>
+        </h3>
+       <span class="post-meta">25 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about celebrating all levels of achievement in FIRST LEGO League, not just robot game points.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching achievement success celebration getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/08/25/Achievement-and-Celebration.html#'+language+'">Achievement and Celebration</a>\
+        </h3>\
+        <span class="post-meta">Aug 25, 2016</span>\
+<p>        <span class="post-meta">This article is about celebrating all levels of achievement in FIRST LEGO League, not just robot game points.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/08/20/Building-Robots-with-Gracious-Professionalism.html">Building Robots with Gracious Professionalism®</a>
+        </h3>
+       <span class="post-meta">20 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This article discusses the role that FIRST Core Values plays.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching gracious_professionalism core_values">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/08/20/Building-Robots-with-Gracious-Professionalism.html#'+language+'">Building Robots with Gracious Professionalism®</a>\
+        </h3>\
+        <span class="post-meta">Aug 20, 2016</span>\
+<p>        <span class="post-meta">This article discusses the role that FIRST Core Values plays.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/08/16/Getting-Started-With-LEGO-Robotics.html">Getting Started with LEGO Robotics</a>
+        </h3>
+       <span class="post-meta">16 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the benefits of participating in FIRST LEGO League and the role of the coach.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach passion team role coach_role">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/08/16/Getting-Started-With-LEGO-Robotics.html#'+language+'">Getting Started with LEGO Robotics</a>\
+        </h3>\
+        <span class="post-meta">Aug 16, 2016</span>\
+<p>        <span class="post-meta">This article is about the benefits of participating in FIRST LEGO League and the role of the coach.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/08/08/Choosing-Roles-Involving-all-Members.html">Choosing Roles - Involving all Members</a>
+        </h3>
+       <span class="post-meta">8 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to make sure that all team members are involved and learning.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching roles management organization team getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/08/08/Choosing-Roles-Involving-all-Members.html#'+language+'">Choosing Roles - Involving all Members</a>\
+        </h3>\
+        <span class="post-meta">Aug 8, 2016</span>\
+<p>        <span class="post-meta">This article is about how to make sure that all team members are involved and learning.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/08/02/The-Joy-and-Passion-of-Coaching.html">The Joy and Passion of Coaching</a>
+        </h3>
+       <span class="post-meta">2 Aug, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the impact you can have as a FIRST LEGO League coach.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach passion role coach_role">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/08/02/The-Joy-and-Passion-of-Coaching.html#'+language+'">The Joy and Passion of Coaching</a>\
+        </h3>\
+        <span class="post-meta">Aug 2, 2016</span>\
+<p>        <span class="post-meta">This article is about the impact you can have as a FIRST LEGO League coach.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/07/22/Tackling-the-Project.html">Tackling the Project: Getting it all Done</a>
+        </h3>
+       <span class="post-meta">22 Jul, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the impact you can have as a FIRST LEGO League coach.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching project organization planning">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/07/22/Tackling-the-Project.html#'+language+'">Tackling the Project: Getting it all Done</a>\
+        </h3>\
+        <span class="post-meta">Jul 22, 2016</span>\
+<p>        <span class="post-meta">This article is about the impact you can have as a FIRST LEGO League coach.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/07/14/Coopertition-Through-Gaming.html">Coopertition Through Gaming</a>
+        </h3>
+       <span class="post-meta">14 Jul, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how playing board games can improve your teamwork skills.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching coach passion role getting_started core_values">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/07/14/Coopertition-Through-Gaming.html#'+language+'">Coopertition Through Gaming</a>\
+        </h3>\
+        <span class="post-meta">Jul 14, 2016</span>\
+<p>        <span class="post-meta">This article is about how playing board games can improve your teamwork skills.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/07/07/Introduction-of-Core-Values.html">Introduction of Core Values</a>
+        </h3>
+       <span class="post-meta">7 Jul, 2016</span>
+
+
+<p>        <span class="post-meta">This article is how to introduce your team to the FIRST LEGO League Core Values.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching core_values FIRST">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/07/07/Introduction-of-Core-Values.html#'+language+'">Introduction of Core Values</a>\
+        </h3>\
+        <span class="post-meta">Jul 7, 2016</span>\
+<p>        <span class="post-meta">This article is how to introduce your team to the FIRST LEGO League Core Values.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/24/Motivating-Your-Team.html">Motivating Your Team</a>
+        </h3>
+       <span class="post-meta">24 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to motivate team members.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching motivating getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/24/Motivating-Your-Team.html#'+language+'">Motivating Your Team</a>\
+        </h3>\
+        <span class="post-meta">Jun 24, 2016</span>\
+<p>        <span class="post-meta">This article is about how to motivate team members.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/16/Socializing-and-Sharing-on-the-Internet.html">Socializing and Sharing on the Internet</a>
+        </h3>
+       <span class="post-meta">16 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about the role the Internet can play in your season.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching Internet solialization sharing">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/16/Socializing-and-Sharing-on-the-Internet.html#'+language+'">Socializing and Sharing on the Internet</a>\
+        </h3>\
+        <span class="post-meta">Jun 16, 2016</span>\
+<p>        <span class="post-meta">This article is about the role the Internet can play in your season.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/08/Team-Management-Budget.html">Team Budget</a>
+        </h3>
+       <span class="post-meta">8 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about basic team expenses each season.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching FLL budget expenses cost team_budget getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/08/Team-Management-Budget.html#'+language+'">Team Budget</a>\
+        </h3>\
+        <span class="post-meta">Jun 8, 2016</span>\
+<p>        <span class="post-meta">This article is about basic team expenses each season.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/04/Construindo-a-identidade-do-time.html">Construindo a Identidade do Time</a>
+        </h3>
+       <span class="post-meta">4 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to to construct a team identity.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(pt) == language)
+{
+document.write('      <li class="Coaching identity team getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/04/Construindo-a-identidade-do-time.html#'+language+'">Construindo a Identidade do Time</a>\
+        </h3>\
+        <span class="post-meta">Jun 4, 2016</span>\
+<p>        <span class="post-meta">This article is about how to to construct a team identity.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/04/Constructing-a-Team-Identity.html">Constructing a Team Identity</a>
+        </h3>
+       <span class="post-meta">4 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to construct a team identity.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching identity team getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/04/Constructing-a-Team-Identity.html#'+language+'">Constructing a Team Identity</a>\
+        </h3>\
+        <span class="post-meta">Jun 4, 2016</span>\
+<p>        <span class="post-meta">This article is about how to construct a team identity.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+<!--      <li>
+
+       <h3>
+         <a class="post-link" href="/coachcorner/2016/06/01/Team-Management-Scheduling.html">Team Scheduling</a>
+        </h3>
+       <span class="post-meta">1 Jun, 2016</span>
+
+
+<p>        <span class="post-meta">This article is about how to manage team scheduling for a FIRST LEGO League team.</span></p>
+      </li>-->
+<script>
+var en = "en-us";
+var pt = "pt-br";
+var nl = "nl"
+if (String(en) == language)
+{
+document.write('      <li class="Coaching management organizing scheduling getting_started">\
+        <h3>\
+          <a class="post-link" href="/coachcorner/2016/06/01/Team-Management-Scheduling.html#'+language+'">Team Scheduling</a>\
+        </h3>\
+        <span class="post-meta">Jun 1, 2016</span>\
+<p>        <span class="post-meta">This article is about how to manage team scheduling for a FIRST LEGO League team.</span></p>\
+      </li>\
+')
+}
+</script>
+    
+  </ul>
+<br>
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+</div>
+
+</div>
+</div>
+</div>
+<div>
+
+
+
+</div>
+</div>
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+<script src="footer.js"></script>
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+</body>
+</html>
+
+
+
+<script>
+function addclass() {
+x = 23
+while (x != 10000) {
+		if (document.getElementsByTagName('li')[x] == undefined) {
+			x = 10000
+                } else {
+                        document.getElementsByTagName('li')[x].className += " " +document.getElementsByTagName('li')[x].childNodes[1].innerText.toLowerCase().split(' ').join('_')
+//alert(document.getElementsByTagName('li')[x].className)
+                        x = x+1
+}
+}
+}
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65893558-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

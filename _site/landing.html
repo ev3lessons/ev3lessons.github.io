@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html dir="ltr" lang="en-US">
+    <!--<![endif]-->
+    <head>
+	<!--<base href="http://www.ev3lessons.com/" >
+-->
+
+
+	<meta name="description" content="This website provides LEGO Mindstorms EV3 programming lessons and tutorials. These tutorials are designed for teams competing in the FIRST Lego League contest. This site is operated by FLL Team Droids Robotics.">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <title>EV3Lessons.com | by Droids Robotics</title>
+
+        <!-- [favicon] begin -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <!-- [favicon] end -->
+
+        <!-- CSS Main -->
+        <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 960px)" href="css/lessthen960.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/lessthen600.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/lessthen480.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="css/memento.css"  />
+        <link rel="stylesheet" type="text/css" media="all" href="css/homes/home.css" />
+
+        <!-- CSS Social -->
+        <link rel='stylesheet' id='shortcodes-css'  href='css/social.css' type='text/css' media='all' />
+
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.custom2.js"></script>
+
+<!-- HEADER CUT HERE ------------------------------------------------->
+
+
+    </head>
+    <body class="no_js responsive boxed-layout chrome ">
+
+        <!-- TOPBAR -->
+        <script src="topbar.js"></script>
+        <!-- END TOPBAR -->
+        <!-- START WRAPPER -->
+        <div class="wrapper group">
+            <!-- START HEADER -->
+            <div id="header" class="group">
+                <div class="group inner">
+
+
+                    <!-- START NAV -->
+		    <script src="menu.js"></script>
+                    <!-- END NAV -->
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+	    <!-- HEADER CUT HERE ------------------------------------------------->
+
+
+<!--<style>
+h1 {
+    color:red;
+    font-family:verdana;
+    font-size:200%;
+}
+b  {
+    color:green;
+    font-family:arial;
+    font-size:100%
+}
+
+
+
+
+</style>-->
+<div class=" home-section group">
+<div class="title">
+
+<style>
+button {
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+    margin: 1px;
+    padding: 2px;
+    background: #3300CC;
+    color: #FFFFFF;
+    border: solid 1px #20538D;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+button:hover {
+      background: #3300FF;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+button:active {
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    color:red;
+    font-family:verdana;
+    font-size:200%;
+}
+b  {
+    color:green;
+    font-family:arial;
+    font-size:100%
+}
+p  {
+    color:brown;
+    font-family:arial;
+    font-size:110%
+}
+</style><!--
+<h1>Welcome to EV3Lessons.com</h1>-->
+<h1 id="demo"></h1>
+
+<script>
+var urldes = [
+//Beginner
+"How to use these lessons",
+"Build a Base Robot with Attachments",
+"Introduction to Brick and Software",
+"Moving Straight",
+"Pseudocode",
+"Turning",
+"Displaying Text and Graphics",
+"Touch Sensor",
+"Color Sensor",
+ "Loops",
+//10
+"Switches",
+"Ultrasonic Sensor",
+"Basic Line Follower",
+"Basic Sequencer",
+"Final Challenge",
+"Port View","Custom Images and Sounds","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Intermediate - 50
+"My Blocks with Inputs/Outputs",
+"Moving with My Blocks",
+"Turning with My Blocks",
+"Color Follower for Distance:",
+"Color Follower Stops Based on Color Detection:",
+"Infrared Sensor",
+"Debugging",
+"Move Blocks",
+"Reliability",
+"Intermediate Menu System",
+//60
+"Color Sensor Calibration",
+"Variables",
+"Parallel Beams",
+"Brick Buttons as Sensors","Data Wires","Logic Operations and Decision Making","Ultrasonic Wall Follower","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Advanced - 100
+"Parallel Beam Synchronization",
+"Proportional Control",
+"Proportional Line Follower",
+"Ramping Up",
+"Gyro Sensor",
+"Gyro Turns",
+"Squaring on Lines",
+"Stall Detection",
+"Menu System",
+"Gyro Sensor:Move Straight and Wall Follow",
+//110
+"Arrays",
+"Proportional Two Color Line Follower","Data Logging for Science Experiments","Data Logging with Programming Blocks","Proportional Ultrasonic Wall Follower","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"Droid-Bot 2.0", "Droid-Bot JR"
+];
+
+var pptx = [
+//Beginner
+"http://www.ev3lessons.com/translations/en-us/beginner/LessonUse.pptx",
+"http://www.ev3lessons.com/translations/en-us/robots/Droidbot.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Introduction.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/MovingStraight.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Pseudocode.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Turning.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Display.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Touch.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Color.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Loops.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Switches.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/Ultrasonic.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicLineFollower.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicSequencer.pptx",
+"http://www.ev3lessons.com/translations/en-us/beginner/FinalChallenge.pptx",
+"translations/en-us/beginner/PortView.pptx",
+"http://ev3lessons.com/translations/en-us/beginner/CustomImagesSounds.pptx","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//intermediate
+"http://www.ev3lessons.com/translations/en-us/intermediate/MyBlocks.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MoveDistance.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/TurnDegrees.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerDistance.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerSensor.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Infrared.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Debug.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MovingBlocks.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Reliability.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/IntermediateMenu.pptx",
+//60
+"http://www.ev3lessons.com/translations/en-us/intermediate/Calibrate.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Variables.pptx",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ParallelBeams.pptx",
+"http://ev3lessons.com/translations/en-us/intermediate/BrickButtons.pptx","http://ev3lessons.com/translations/en-us/intermediate/DataWires.pptx",
+"http://ev3lessons.com/translations/en-us/intermediate/Logic.pptx","http://ev3lessons.com/translations/en-us/intermediate/UltrasonicWallFollow.pptx","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Advanced
+"http://www.ev3lessons.com/translations/en-us/advanced/SyncBeams.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/ProportionalControl.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/LineFollower.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/RampUp.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/Gyro.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroTurn.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/Align.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/StallDetection.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/MenuSystem.pptx",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroWallFollow.pptx",
+//110
+"http://www.ev3lessons.com/translations/en-us/advanced/Arrays.pptx",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pptx","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pptx",
+"http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pptx",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalUSWallFollow.pptx","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none"];
+
+var pdf = [
+//Beginner
+"http://www.ev3lessons.com/translations/en-us/beginner/LessonUse.pdf",
+"http://www.ev3lessons.com/translations/en-us/robots/Droidbot.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Introduction.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/MovingStraight.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Pseudocode.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Turning.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Display.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Touch.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Color.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Loops.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Switches.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/Ultrasonic.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicLineFollower.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicSequencer.pdf",
+"http://www.ev3lessons.com/translations/en-us/beginner/FinalChallenge.pdf",
+"translations/en-us/beginner/PortView.pdf","http://ev3lessons.com/translations/en-us/beginner/CustomImagesSounds.pdf","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//intermediate
+"http://www.ev3lessons.com/translations/en-us/intermediate/MyBlocks.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MoveDistance.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/TurnDegrees.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerDistance.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerSensor.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Infrared.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Debug.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MovingBlocks.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Reliability.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/IntermediateMenu.pdf",
+//60
+"http://www.ev3lessons.com/translations/en-us/intermediate/Calibrate.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Variables.pdf",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ParallelBeams.pdf",
+"http://ev3lessons.com/translations/en-us/intermediate/BrickButtons.pdf","http://ev3lessons.com/translations/en-us/intermediate/DataWires.pdf",
+"http://ev3lessons.com/translations/en-us/intermediate/Logic.pdf","http://ev3lessons.com/translations/en-us/intermediate/UltrasonicWallFollow.pdf","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Advanced
+"http://www.ev3lessons.com/translations/en-us/advanced/SyncBeams.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/ProportionalControl.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/LineFollower.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/RampUp.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/Gyro.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroTurn.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/Align.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/StallDetection.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/MenuSystem.pdf",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroWallFollow.pdf",
+//110
+"http://www.ev3lessons.com/translations/en-us/advanced/Arrays.pdf",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.pdf","http://ev3lessons.com/translations/en-us/advanced/DataLoggingTemp.pdf",
+"http://ev3lessons.com/translations/en-us/advanced/DataLoggingTurns.pdf",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalUSWallFollow.pdf","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none"];
+
+var ev3 = [
+//Beginner
+"none",
+"none",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/MovingStraight.ev3",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/Turning.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Display.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Touch.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Color.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Loops.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Switches.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/Ultrasonic.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicLineFollower.ev3",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicSequencer.ev3",
+"none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//intermediate
+"none",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MoveDistance.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/TurnDegrees.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerDistance.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ColorFollowerSensor.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Infrared.ev3",
+"none",
+"http://www.ev3lessons.com/translations/en-us/intermediate/MovingBlocks.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Reliability.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/IntermediateMenu.ev3",
+//60
+"http://www.ev3lessons.com/translations/en-us/intermediate/Calibrate.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/Variables.ev3",
+"http://www.ev3lessons.com/translations/en-us/intermediate/ParallelBeams.ev3",
+"none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Advanced
+"http://www.ev3lessons.com/translations/en-us/advanced/SyncBeams.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/ProportionalControl.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/LineFollower.ev3",
+//"http://www.ev3lessons.com/translations/en-us/advanced/AltAlign.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/RampUp.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/Gyro.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroTurn.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/Align.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/StallDetection.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/MenuSystem.ev3",
+"http://www.ev3lessons.com/translations/en-us/advanced/GyroWallFollow.ev3",
+//110
+"http://www.ev3lessons.com/translations/en-us/advanced/Arrays.ev3",
+"http://ev3lessons.com/translations/en-us/advanced/ProportionalTwoColorLineFollower.ev3","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none"
+];
+
+var docx = [
+//Beginner
+"none",
+"none",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/MovingStraight.docx",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/Turning.docx",
+"none",
+"none",
+"none",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/Switches.docx",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/BasicLineFollower.docx",
+"none",
+"http://www.ev3lessons.com/translations/en-us/beginner/FinalAssessment.docx",
+"none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//intermediate
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+//Advanced
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none","none","none","none","none","none","none","none","none",
+"none","none"
+];
+var lxf = new Array(152)
+lxf[150] = "http://ev3lessons.com/robots/droidbot2.lxf";
+lxf[151] = "http://ev3lessons.com/robots/DroidJR.lxf";
+
+var qs = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i)
+    {
+        var p=a[i].split('=', 2);
+        if (p.length == 1)
+            b[p[0]] = "";
+			else
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+})(window.location.search.substr(1).split('&'));
+
+function myFunction() {
+	window.location = pdf[qs["id"]];
+}
+function myFunctiona() {
+        window.location =  pptx[qs["id"]];
+}
+function myFunctionb() {
+        window.location =  ev3[qs["id"]];
+}
+function myFunctionc() {
+        window.location =  docx[qs["id"]];
+}
+function myFunctiond() {
+        window.location =  lxf[qs["id"]];
+}
+document.getElementById("demo").innerHTML =  urldes[qs["id"]];
+//setTimeout(function(){window.location.href=qs["url"]},5000);
+
+if (pdf[qs["id"]] != "none") {
+			document.write('<button class="button_example" onclick="myFunction()">PDF</button><br>');
+			}
+if (pptx[qs["id"]] != "none") {
+			document.write('<button onclick="myFunctiona()">PPTX</button><br>');
+			}
+/*if (ev3[qs["id"]] != "none") {
+document.write('<button onclick="myFunctionb()">EV3 Code</button></br>');
+}*/
+if (docx[qs["id"]] != "none") {
+document.write('<button onclick="myFunctionc()">Worksheet</button>');
+			}
+      if (lxf[qs["id"]] != undefined) {
+      document.write('<button onclick="myFunctiond()">LDD File</button>');
+      			}
+//if (docx[qs["id"]] != "none") {
+//if (ev3[qs["id"]] != "none") {
+//if (pptx[qs["id"]] != "none") {
+//if (pdf[qs["id"]] != "none") {
+//			window.location = "http://www.google.com/";
+//}
+//}
+//}
+//}
+
+</script>
+
+
+</div>
+</div>
+<!-- FOOTER CUT HERE ------------------------------------------------->
+<script src="footer.js"></script>
+
+
+<!-- FOOTER CUT HERE ------------------------------------------------->
+
+</body>
+</html>
