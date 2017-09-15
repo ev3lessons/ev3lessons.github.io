@@ -11,7 +11,7 @@ author: Various
 authorim: "/images/people/group.jpg"
 ---
 
-The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
+The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn</a>.
 
 **What non-LEGO items are essential in your team meeting room?**
 
@@ -21,16 +21,14 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 
 White boards and suckers. My team couldn't function without a huge white board and plenty of colorful dry-erase markers.
 
-https://www.harborfreight.com/30-in-x-16-in-two-shelf-steel-service-cart-60390.html?fref=gc&dti=369520923432634&utm_referrer=https%3A%2F%2Fl.facebook.com%2F
-
-https://www.harborfreight.com/30-in-large-350-lb-capacity-glossy-red-service-cart-with-locking-drawer-61161.html?fref=gc&dti=369520923432634&utm_referrer=https%3A%2F%2Fl.facebook.com%2F
+<img src="https://shop.harborfreight.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_22850.jpg" style="max-width: 100%" />
 
 **Response by Seshan Brothers**
 
 We like this folding 4ft X8ft platform for under the FLL table - can be put away easily and carried to wherever you need. It's called Centipede XL and available at home improvement stores.
 
 **Response by Asha Seshan** 
-A list/poster of the FIRST LEGO League Core Values. Ana Paula made this lovely set of of images for FIRST teams to use if anyone wants them.
+A list/poster of the <a href="http://ev3lessons.com/translations/en-us/fll/CoreValuesPoster.pdf">FIRST LEGO League Core Values</a>. Ana Paula made this lovely set of of images for FIRST teams to use if anyone wants them.
 
 **Response by Stephanie Ozenne** 
 
@@ -48,7 +46,7 @@ Oh - for coaches: emergency contact info for every team member and coach at your
 
 **Response by Thomas Madeya** 
 
- Tons of PostIt notes and wall space to stick them to
+ Tons of Post-it notes and wall space to stick them to
 
 **Response by Ruth Ann Francis** 
 
@@ -63,6 +61,9 @@ During our longer practices, we sometimes take a break and send everyone outside
 **Response by Scott Mengle**
 
 Pool table cover to keep dust (and curious hands) away.
+
+<img src="/images/coachcorner/PoolTableCover.jpg" style="max-width: 100%" />
+Image Credit: Scott Mengle
 
 **Response by Connie Rooke**
 
