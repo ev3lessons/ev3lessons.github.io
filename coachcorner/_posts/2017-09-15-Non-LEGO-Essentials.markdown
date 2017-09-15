@@ -21,8 +21,6 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 
 White boards and suckers. My team couldn't function without a huge white board and plenty of colorful dry-erase markers.
 
-<img src="https://shop.harborfreight.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_22850.jpg" style="max-width: 100%" />
-
 **Response by Seshan Brothers**
 
 We like this folding 4ft X8ft platform for under the FLL table - can be put away easily and carried to wherever you need. It's called Centipede XL and available at home improvement stores.
