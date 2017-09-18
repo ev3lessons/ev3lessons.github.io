@@ -94,13 +94,18 @@ A set of educational spring scales to measure forces on the robot. www.si-manufa
 
 I just added a LED projector and screen. At the moment it only connects to the coach's computer, to support RoboCamps. However, I will add new cables so that it can connect to student computers to facilitate student communication. My projector is only a cheap Chinese model, about AU$230. (Corners won't focus.) It also makes for monster movies when appropriate.
 
+Regarding emergency contact information...
+I have all the parents in a WhatsApp group, which we use for organising stuff. That also means all parents have easy contact with the coach and each other.
+
 **Response by Maureen Reilly**
 
 Coaching in an after school setting we make a calendar of practices leading up to big events and set goals moving backwards - we fill in what we accomplished at each practice at the end as a reflection and a guide for what to think about for the next practice. It especially helps for kids who want & need a preview of what's coming next. The calendar is on chart paper that can be rolled up and stored.
 
-
 **Response by Vince Shier**
 
 Snacks, lots of snacks. That and our binder of EV3Lssons.
+
+**Response by Jucain Butler**
+A non-LEGO tool we use to learn and reinforce concepts is Kahoot -- an fun interactive learning app (<a href="https://kahoot.com/">Kahoot</a>) that allows you to create customized quizzes and games. I create multiple choice quizzes about FLL like, which is not one of the challenges of FLL, a. Robot Games, b Core Values, c Research d Project, Math , and the faster you answer the more points you get and I make quizzes based on the robot like which one is NOT a sensor, what happens based on a image of some code, etc.  its serves as sort of a break during the 3 hour class or research and programming. The kids love it, they pull it up on their computer or cell phone and race against each other to answer the question.... it also helps the teacher to see of the information is sinking in LOL!!!
 
 
