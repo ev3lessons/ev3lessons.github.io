@@ -10,7 +10,7 @@ side: ""
 author: FTC Team 8496 Heat it Up and Keep it Cool Robotics
 authorim: "/images/people/heatitup.png"
 ---
-<img src="/images/coachcorner/HeatItUp1" style="max-width: 100%" />
+<img src="/images/coachcorner/HeatItUp1.jpg" style="max-width: 100%" />
 
 After four years in FIRST Lego League, our team made the decision and to move to FIRST Tech Challenge (FTC). We were looking for a new challenge that would offer more opportunities for growth for our team. To make this decision, we attended both FRC and FTC events and interviewed various teams. Things we considered for making our decision were season length, cost, team size, and room needed to build a proper robot. The following information is a collection of the Team 8496’s observations between the programs throughout our last three years in FTC.
 
@@ -25,7 +25,7 @@ Because FTC is geared towards an older group of students, there are several beha
 In addition to differences in expected behavior, FTC tournaments have a very different atmosphere compared to FLL tournaments. This is one of the largest differences between the two programs. FTC tournaments have a far more competitive atmosphere, while FLL tournaments tend to be more lighthearted and the competition is truly against yourself in trying to obtain your highest score.
 Despite these different expectations in FTC, do not be afraid in retaining certain FLL values, like knowing the greatness of discovery, finding fun in working hard in a mental sport, and working alongside of your mentors and learning from them. Keep grounded in the Core Values of FIRST.
 
-<img src="/images/coachcorner/HeatItUp3" style="max-width: 100%" />
+<img src="/images/coachcorner/HeatItUp3.jpg" style="max-width: 100%" />
 
 In transitioning from FLL to FTC, the first year in FTC will be the hardest. You will have to learn the rules of a new competition, challenge, building system, and other aspects of the game. Since the environment of this new program is fast-paced and spontaneous, you will feel lost at times. You will feel as if everyone knows more. You may feel frustrated. And that is completely okay! Take it as a chance to soak up all the knowledge and experience. The first year is the toughest. Everything will get easier in your second year. Everything will make much more sense in the second year because you will be equipped with experience and knowledge from the first year!
 
