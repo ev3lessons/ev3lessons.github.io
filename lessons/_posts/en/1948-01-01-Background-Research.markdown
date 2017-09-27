@@ -1,11 +1,11 @@
 ---
-title: "Doing Background Research *Coming Soon*"
+title: "Doing Background Research"
 searchterms: "toggle fll research_project research"
 lang: "en"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="">PPTX</a>,
- <a href="">PDF</a>
+ <a href="translations/en-us/fll/BackgroundResearch.pptx">PPTX</a>,
+ <a href="translations/en-us/fll/BackgroundResearch.pdf">PDF</a>
  </li>
  </ul>
