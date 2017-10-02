@@ -32,7 +32,7 @@ lang: "en"
 <li >Mission Planning Guide:
 <a href="translations/en-us/fll/MissionPlanningGuide.docx">Word docx</a>
 </li>
-<li >Printable ScoringSheet:
+<li >Printable Scoring Sheet:
 <a href="translations/en-us/fll/EV3LessonsScorer.pdf">PDF</a>
 </li>
 
