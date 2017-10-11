@@ -30,6 +30,10 @@ Here are some alternative plastic boxes that could work well for your team.
 ![](/images/coachcorner/KellyLudlam.jpg)
 Image Credit: Kelly Ludlam
 
+![](/images/coachcorner/ChuckFloto1.jpeg)
+![](/images/coachcorner/ChuckFloto2.jpeg)
+Image Credit: Chuck Floto
+
 ### Toolboxes
 
 Tool boxes can be easily repurposed for LEGO. A big advantage to the above smaller plastic boxes is that each compartment is bigger (and often adjustable). We know many teams that buy these or similar Stanley tool boxes.
@@ -55,8 +59,6 @@ A rolling cart such as the TRINITY Double-Sided Bin Rack on the left can be very
 ![](/images/coachcorner/Bayoustorage.jpg)
 Image Credit: Bayou Builders
 
-![](/images/coachcorner/ChuckFloto1.jpeg)
-![](/images/coachcorner/ChuckFloto2.jpeg)
-Image Credit: Chuck Floto
+
 
 
