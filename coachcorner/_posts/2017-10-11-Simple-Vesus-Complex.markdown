@@ -16,7 +16,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 **Do the teams get higher marks from the judges for more complex programs and attachments or is it more about executing the missions for the most points? Can they do just as well with a simple yet accurate robot?**
 
 
-<img src="/images/coachcorner/SimpleRobot.jpg" style="max-width: 100%" />
+<img src="/images/coachcorner/SimpleRobot.jpeg" style="max-width: 100%" />
 
 **Response by Asha Seshan**
 
