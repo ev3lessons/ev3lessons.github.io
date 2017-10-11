@@ -23,7 +23,12 @@ Students on your team will find it much easier to build if their LEGO parts are 
 
 ### Plastic Boxes
 
-We started out in our first year with simple plastic storage boxes. These had small compartments in them. A big negative for this box was that you could not change the size of the compartments and they were rather small for anything other than pegs and smaller beams. Although we outgrew these small boxes for daily use in our robotics room, we still continue to use them to carry spare parts to tournaments. 
+We started out in our first year with simple plastic storage boxes. These had small compartments in them. A big negative for this box was that you could not change the size of the compartments and they were rather small for anything other than pegs and smaller beams. Although we outgrew these small boxes for daily use in our robotics room, we still continue to use them to carry spare parts to tournaments.
+
+Here are some alternative plastic boxes that could work well for your team.
+
+![](/images/coachcorner/KellyLudlam.jpg)
+Image Credit: Kelly Ludlam
 
 ### Toolboxes
 
@@ -47,10 +52,11 @@ Text If you have bookshelves in your room, consider removable bins (like this IR
 
 A rolling cart such as the TRINITY Double-Sided Bin Rack on the left can be very useful if you don’t have shelving and want the flexibility of moving the parts to different areas of the room. Each of the bins come off the shelves.
 
-![](/images/coachcorner/Cart.jpg)
+![](/images/coachcorner/Bayoustorage.jpg)
+Image Credit: Bayou Builders
 
-### Who Cleans Up?
+![](/images/coachcorner/ChuckFloto1.jpeg)
+![](/images/coachcorner/ChuckFloto2.jpeg)
+Image Credit: Chuck Floto
 
-No coach or mentor should be left with the clean up work. I realized a few weeks into my first season of coaching that the kids just go when their parents come, leaving me to clean up. So, we instituted a clean-up rule. Ten minutes before pickup time, we stop to discuss what we got done that day and also to clean up!
 
-![](/images/coachcorner/Organization.jpg)
