@@ -27,7 +27,7 @@ None
 Hand the deck of cards to the team and tell them to sort the deck of cards into red and black while you get ready for your Core Value activity.
 
 <b>Notes:</b>
-Leave the room after the instructions are given, but listen as they make their decisions and complete the task. Return in 5mins to tell them that sorting was the Core Value activity and ask them how they did. The goal of this activity is to to teach the team that they should practice core values all the time, not just at competition.
+Leave the room after the instructions are given, but listen as they make their decisions and complete the task. Return in 5 minutes to tell them that sorting the deck of cards was the Core Value activity and ask them how they did. The goal of this activity is to to teach the team that they should practice core values all the time, not just at competition.
 
 <b>Alternative Version:</b> (This version of this activity was shared by Ruth Ann Francis)
 
