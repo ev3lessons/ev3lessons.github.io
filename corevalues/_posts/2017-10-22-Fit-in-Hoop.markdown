@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Fitting in a Hoola Hoop"
+title: "Fitting in a Hula Hoop"
 minidescription: "This is a team building activity where the entire team must fit in a small area."
 sidetitle: ""
 side: ""
@@ -12,16 +12,16 @@ authorim: "/images/people/bayou.jpg"
 ---
 
 
-<img src="/images/CoreValues/HoolaHoopFit.jpg" style="max-width: 100%">
+<img src="/images/CoreValues/HulaHoopFit.jpg" style="max-width: 100%">
 
 <b>Objectives:</b>
 - Learn to collaborate and coordiate actions
 
 <b>Materials:</b>
-- One hoola hoop
+- One hula hoop
 
 <b>Setup:</b>
-- Leave the hoola hoop in the middle of the floor.
+- Leave the hula hoop in the middle of the floor.
 
 <b>Instructions to Team:</b>
 Your entire team must fit inside the hoop.  No feet may touch the ground outside the hoop. You will have 5mins.
