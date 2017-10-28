@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Hoopa Hoop Lift"
+title: "Hoola Hoop Lift"
 minidescription: "This is a team building students must work together to lift a hoola hoop as high as possible."
 sidetitle: ""
 side: ""
