@@ -12,7 +12,7 @@ authorim: "/images/people/group.jpg"
 ---
 The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 
-##What are some tips for competition day?
+## What are some tips for competition day?
 
 <img src="/images/coachcorner/Competition.jpg" style="max-width: 100%" />
 
