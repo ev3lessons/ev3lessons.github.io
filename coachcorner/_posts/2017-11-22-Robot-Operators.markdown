@@ -14,7 +14,7 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 
 ## Who handles the robot runs during competition?
 
-Teams sometimes pick best two - based on an combination of tryouts within the team and team attendace. Some teams will switch to a different pairing for each run. Other teams will have the entire team tag in and out even within a single run. There is no right or wrong answer. Do what is best for your team.
+Teams sometimes pick the best two - based on a combination of tryouts within the team and team attendace/effort. Some teams will switch to a different pairing for each run. Other teams will have the entire team tag in and out even within a single run. There is no right or wrong answer. Do what is best for your team.
 
 <img src="/images/coachcorner/RobotOperator.jpg" style="max-width: 100%" />
 
@@ -101,15 +101,7 @@ With all that said, we never are able to run ALL the missions we program in 2:30
 **Response by Jason Baber**
 
 This is going to sound passive/aggressive, but I would fall back to the Core Values to answer this question.
-Specifically:
-·We are a team.
-·We honor the spirit of friendly competition.
-·What we discover is more important than what we win.
-·We share our experiences with others.
-·We display Gracious Professionalism® and Coopertition® in everything we do.
-·We have FUN!
-
-To me, that means everyone gets a turn.
+Specifically: We are a team, We honor the spirit of friendly competition, What we discover is more important than what we win, We share our experiences with others, We display Gracious Professionalism® and Coopertition® in everything we do, and We have FUN! To me, that means everyone gets a turn.
 
 **Response by Greg Fedrick**
 
