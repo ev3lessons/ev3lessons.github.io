@@ -8,11 +8,11 @@ minidescription: "In this activity, the team will compete a crossword puzzle rel
 sidetitle: ""
 side: ""
 author: "KeepMovingForward<br>California, USA"
-authorim: "/images/people/male.jpg"
+authorim: "/images/people/FLLLogo.jpg"
 ---
 
 
-<img src="/images/CoreValues/Crossword.jpg" style="max-width: 100%">
+<img src="/images/CoreValues/Crossword.png" style="max-width: 100%">
 
 <b>Objectives:</b>
 - Learn to work together to complete a puzzle

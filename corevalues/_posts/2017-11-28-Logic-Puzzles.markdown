@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Core Values Crossword"
+title: "Logic Puzzles"
 minidescription: "In this activity, the team will solve a logic puzzle."
 sidetitle: ""
 side: ""

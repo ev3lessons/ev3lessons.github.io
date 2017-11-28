@@ -3,7 +3,7 @@ layout: postcv
 language: "en"
 keywords: "corevalue team_building"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Core Values Crossword"
+title: "Core Values Word Scramble"
 minidescription: "In this activity, the team will unscamble the Core Values."
 sidetitle: ""
 side: ""
