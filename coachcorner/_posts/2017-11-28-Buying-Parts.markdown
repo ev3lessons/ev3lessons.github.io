@@ -17,7 +17,7 @@ As your team progresses through the season, you might find that they are running
 
 ### How do I order sets, motors and sensors?
 
-To order complete sets, sensors and motors, you can visit <a href="http://www.lego.com">LEGO</a><br> or <a href="http://www.legoeducation.com">LEGO Education</a><br>.  Th LEGO Education Core and Expansion Sets combined are the FIRST LEGO League set sold at the time of team registration. The Home Edition of the EV3 can be purchased from many retailers including Amazon, Barnes and Noble, and Toys R Us. To read about the differences between the two sets, read <a href="http://ev3lessons.com/coachcorner/2017/01/17/Home-vs-Edu.html">this article</a>.
+To order complete sets, sensors and motors, you can visit <a href="http://www.lego.com">LEGO</a> or <a href="http://www.legoeducation.com">LEGO Education</a>.  The LEGO Education Core and Expansion Sets combined are the FIRST LEGO League set sold at the time of team registration. The Home Edition of the EV3 can be purchased from many retailers including Amazon, Barnes and Noble, and Toys R Us. To read about the differences between the two sets, read <a href="http://ev3lessons.com/coachcorner/2017/01/17/Home-vs-Edu.html">this article</a>.
 
 ### How do I order a specific part?
 
