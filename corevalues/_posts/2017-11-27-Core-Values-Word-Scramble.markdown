@@ -19,7 +19,7 @@ authorim: "/images/people/FLLLogo.jpg"
 - Learn the FIRST LEGO League Core Values
 
 <b>Materials:</b>
-- One copy of the <a href="http://www.ev3lessons.com/images/CoreValues/CoreValuesSWordScramble.pdf">Core Values Word Scramble</a>
+- One copy of the <a href="http://www.ev3lessons.com/images/CoreValues/CoreValuesWordScramble.pdf">Core Values Word Scramble</a>
 
 <b>Setup:</b>
 - Cut up all the words and leave them on the table or floor.
