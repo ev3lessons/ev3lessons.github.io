@@ -29,8 +29,8 @@ Once you know the name and part number, you can order that specifc part from sto
 
 LEGO.com and LEGOEducation.com have sets, motors and sensors available for purchase easily. LEGO Pick A Brick can be used for individual parts.  You can also easily purchase parts from vendors in online marketplaces such as Brickowl and Bricklink.  When you purchase from these sites, make sure you pick a store with good reviews and lots of purchases. If you want to receive your items faster, pick someone local. You can purchase both new and used parts. Make sure that the vendor ships to your country.
 
-<a href="http://www.lego.com">LEGO</a><br>: Sets, Sensors, Motors
-<a href="http://www.legoeducation.com">LEGO Education</a><br>: Sets, LME Replacement Pack, Sensors, Motors,
+<a href="http://www.lego.com">LEGO</a>: Sets, Sensors, Motors<br>
+<a href="http://www.legoeducation.com">LEGO Education</a>: Sets, LME Replacement Pack, Sensors, Motors<br>
 <a href="https://shop.lego.com/en-US/Pick-a-Brick">LEGO Pick A Brick</a><br>
 <a href="http://www.Bricklink.com">Bricklink</a>: For purchasing specific parts<br>
 <a href="http://www.Brickowl.com">Brickowl</a>: For purchasing specific parts<br>
