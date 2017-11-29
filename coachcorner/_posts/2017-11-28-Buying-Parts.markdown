@@ -43,10 +43,10 @@ Tips: (Special thank you to Catherine Sarisky for several of the tips below.)
 <a href="https://shop.lego.com/en-US/Pick-a-Brick">LEGO Pick A Brick</a><br>
 <a href="http://www.Bricklink.com">Bricklink</a><br>
 <a href="http://www.Brickowl.com">Brickowl</a><br>
-<a href="http://www.ebay.com">eBay</a>
-<a href="https://www.shopgoodwill.com/">Goodwill</a>
-<a href="http://www.amazon.com">Amazon</a>
+<a href="http://www.ebay.com">eBay</a><br>
+<a href="https://www.shopgoodwill.com/">Goodwill</a><br>
+<a href="http://www.amazon.com">Amazon</a><br>
 
 ### Where can I buy FIRST LEGO League Challenge Mats from?
 
-FIRST LEGO League challenge mats are not easily available. You can try marketplace sites such as eBay. You can usually find sets from a past season. Post your request on your local FIRST LEGO League Forum or Listserv. Sometimes teams are willing to sell them at the end of the season.  In addition, contact your Tournament Director. Some of them do loan or sell their sets at the end of the season.  A good substitute for FLL challenges is the <a hreft="https://education.lego.com/en-us/products/ev3-space-challenge-set/45570">Space Challenge</a> by LEGO Education.
+FIRST LEGO League challenge mats are not easily available. You can try marketplace sites such as eBay. You can usually find sets from a past season. Post your request on your local FIRST LEGO League Forum or Listserv. Sometimes teams are willing to sell them at the end of the season.  In addition, contact your Tournament Director. Some of them do loan or sell their sets at the end of the season.  A good substitute for FLL challenges is the <a href="https://education.lego.com/en-us/products/ev3-space-challenge-set/45570">Space Challenge</a> by LEGO Education.
