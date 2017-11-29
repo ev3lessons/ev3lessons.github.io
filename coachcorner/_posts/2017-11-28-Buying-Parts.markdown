@@ -34,11 +34,11 @@ This <a href="https://rebrickable.com/compare/31313-1/45544-1/">comparison tool<
 
 Once you know the name and part number, you can order that specifc part from stores on Bricklink and Brickowl by entering the element number in the search bar.  If you cannot find the element number, type the name and it will pull up all closely related elements.
 
-Tips:
+Tips: (Special thank you to Catherine Sarisky for several of the tips below.)
 - When you purchase from Bricklink or Brickowl sites, make sure you pick a store with good reviews and lots of purchases. If you want to receive your items faster, pick someone local. You can purchase both new and used parts. Make sure that the vendor ships to your country. Sellers care about their reviews and generally sell what they list, check components, etc, and are happy to fix any errors in the shipment.
 - When you purchase from LEGO Pick A Brick, please be aware that parts may take several weeks to arrive. This could be an issue for a team on a schedule.
-- When using eBay look for high rankings, and also read descriptions and look carefully at photos. Prices are not always lower and quality or item might not be exactly what the image shows. Sometimes listings that say "complete" are not complete.
--Goodwill sales are as is. You might get a good deal or you may not. Nothing is tested and electronics might be broken.
+- When using eBay look for high rankings, read product descriptions, and look carefully at photos. Prices are not always lower and quality or item might not be exactly what the image shows. Sometimes listings that say "complete" are not complete. Electronics may or may not be testest.
+- Goodwill sales are as is. You might get a good deal or you may not. Nothing is tested and electronics might be broken.
 
 <a href="https://shop.lego.com/en-US/Pick-a-Brick">LEGO Pick A Brick</a><br>
 <a href="http://www.Bricklink.com">Bricklink</a><br>
