@@ -3,7 +3,7 @@ layout: post2
 language: "en"
 keywords: "Coaching organizing sorting getting_started"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "Team Roles: Master Scribe, Piecekeeper and More"
+title: "Master Scribe, Piecekeeper and More"
 minidescription: "This article explains how team members can play different roles."
 sidetitle: ""
 side: ""
@@ -13,7 +13,7 @@ authorim: "/images/people/kaia.jpg"
 
 Every team is different, but every student on a team should have a role to play. Some kids are good writers, some kids are good speakers, and some kids are good actors. It is important to remember that not everyone enjoys building and programming MINDSTORMS. In FIRST LEGO League, there is a place for everyone. Getting to do what you enjoy the most is a big part of having fun in the FIRST LEGO League program.
 
-Below is a personal reflection from Kaia, a fifth year FIRST LEGO League veteran, about her place on an FLL team. This article has been reposted on EV3Lessons with permission from Kaia and Team Xanterra's. To learn more about Xanterra, visit their <a href="http://nirostem.org">website</a>.
+Below is a personal reflection from Kaia, a fifth year FIRST LEGO League veteran, about her place on an FLL team. This article has been reposted on EV3Lessons with permission from Kaia and Team Xanterra. To learn more about Xanterra, visit their <a href="http://nirostem.org">website</a>.
 
 ![](/images/coachcorner/Xanterra.jpg)
 
