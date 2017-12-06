@@ -11,44 +11,19 @@ author: Various
 authorim: "/images/people/group.jpg"
 ---
 
-The following discussion is quoted from the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn</a>.
+The following discussion is based on conversations in the  Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn</a>.
 
 **What are different tables you can build?**
+
+FIRST LEGO League tables take up space. For many teams, having an alternative design that lets you store the table easily is useful. Below are a list of useful alternative table designs.
 
 <img src="/images/coachcorner/FLLTable.png" style="max-width: 100%" />
 Photo Credit: Lance Salyers
 
-**Response by David Kroll**
-
-On the topic of tables: We're based in an elementary school and have to set up and tear down everything every meeting (which was better than the two years we were under construction and it had to also be stored off site...how I did that and chemotherapy is still a wonder to me); I'm sharing the link for the <a href= "https://www.livingstonrobotics.org/2015/07/19/landroids-fll-table/">Landroids</a> FLL table that can be broken down and fit inside a minivan. You need some woodworking skill, and since we set up frequently, a convenient excuse to buy a gyroscopically balanced cordless screwdriver (and my kids compete to setup and takedown the table....yes, we're teaching shop safety). The important bit is that the table breaks down into thirds and the outside rail is bolted to the table. If you think you want to do this, contact me directly and I'll include all my modifications that I had to make along the way.
-
-I use a <a href="http://www.northerntool.com/shop/tools/product_200673760_200673760?cm_mmc=Google-pla&utm_source=google_PLA&utm_medium=Material+Handling+%3E+Carts&utm_campaign&utm_content=52516&mkwid=sJQsiKOuV&pcrid=208169282606&devicetype=c&gclid=Cj0KCQjw557NBRC9ARIsAHJvVVOizVLuNZgFEd9mHPS6uuoTj0734TECvWOkwNIJL6SZwfxXqLxpez4aAtiNEALw_wcB">panel dolly</a> to move the panels around the building...after the first season of loading them on an AV cart and being extremely thankful that the doors in the building are 32 inches wide. 
-
-**Response by Rod Collins**
-
-Awesome ideas. I was designing for low weight. I have a sandwich of whiteboard, 1" foam board and 1/8" hardboard for top surface. After gluing and screwing through the sandwich layers into the 2x3s, I can use the tabletop for practice or the whiteboard for lessons. (Our club room is short of whiteboard).
-
-**Response by Asha Seshan** 
-Here is an option for building just the walls: <a href="https://youtu.be/5JG7tOT1DQU">Portable FLL Field by Kuriosity Robotics
-</a>. 
-
-Here is an option for building a light-weight foam table: <a href="http://nmfll.org/images/STOW-or-GO_Updated_Building_Instructions.pdf?fref=gc&dti=369520923432634">Foam Table by the Inventioneers</a>. 
-
-Here is an another option for building a table: <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.first-lego-league.org%2Fen%2Fgeneral%2Fparticipation.html%3Ffile%3Dfiles%252Finhalt%252Ffll_en%252Fgeneral%252Fparticipation%252FFLL_2016_2017_Competition_Table_Building_Instruction_Folding_Table.pdf%26fref%3Dgc%26dti%3D369520923432634&h=ATOUz7oHo9UqUhGSh-Z71_56HmMyDqarFNok3r2e5nv22n3Hpg85osUNWR5kv90N0f0-9MNhZ9nwHWzQ2BRcn3cy1_-w9Z6-R9ebXNC_6kF_lgvivAGSsRp_m-SWDb2cgdC8m0RiauN81lY">Table by Hands of Technology</a>. 
-
-Here is an option for building a portable table that folds: <a href="https://drive.google.com/file/d/0B-nO61RMEYhJUjlJX0QzMEc2NFU/view?fref=gc&dti=369520923432634">Tri-fold Table by Lance Salyers</a>.
-
-"Response by Arrell Thompson"
-
-Here is the table we built to allow us to setup/tear down the table and move locations within our school fairly easy. I kinda made the design up as I built it. I borrowed ideas from other tables I've seen that fold up, but I put it together with a lot of scrap wood/pieces I had from other projects so it's sorta odd looking in places and probably could use some improvements. If you look closer at the corner braces on the legs, you can see the side half of a tool box from cub scouts. We originally had it at our school and had to store it in a closet a ways away from our practice area so we needed a strong table that could be moved as needed. It's also nice to move around when needed to put off to the side when more playroom is needed.
-
+<a href= "https://www.livingstonrobotics.org/2015/07/19/landroids-fll-table/">Landroids Portable Table</a> <br>
+<a href="https://youtu.be/5JG7tOT1DQU">Just Walls Portable FLL Field by Kuriosity Robotics <br>
+<a href="http://nmfll.org/images/STOW-or-GO_Updated_Building_Instructions.pdf?fref=gc&dti=369520923432634">Foam Table by the Inventioneers</a>. <br>
+ <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.first-lego-league.org%2Fen%2Fgeneral%2Fparticipation.html%3Ffile%3Dfiles%252Finhalt%252Ffll_en%252Fgeneral%252Fparticipation%252FFLL_2016_2017_Competition_Table_Building_Instruction_Folding_Table.pdf%26fref%3Dgc%26dti%3D369520923432634&h=ATOUz7oHo9UqUhGSh-Z71_56HmMyDqarFNok3r2e5nv22n3Hpg85osUNWR5kv90N0f0-9MNhZ9nwHWzQ2BRcn3cy1_-w9Z6-R9ebXNC_6kF_lgvivAGSsRp_m-SWDb2cgdC8m0RiauN81lY">FLL Table by Hands of Technology</a>. <br>
+<a href="https://drive.google.com/file/d/0B-nO61RMEYhJUjlJX0QzMEc2NFU/view?fref=gc&dti=369520923432634">Tri-fold Table by Lance Salyers</a> <br>
+Ping Pong Table-Stye by Arrell Thompson:
 <img src="/images/coachcorner/PingPongStyle.jpg" style="max-width: 100%" />
-
-
-**Response by Shelby Davis** 
-
-We use this setup as well. After trying to move a pair of 4' x 4' split panels around, this is such an improvement. The hollow doors make a great surface, and the ridge isn't very noticeable if you use a <a href="https://www.harborfreight.com/self-centering-doweling-jig-41345.html?fref=gc&dti=369520923432634">doweling jig</a> for the pegs between boards. 
-
-**Response by Ben Stanley** 
-
-My table happens to balance vertically on a custom-made dolly. It is the cross bracing that helps it to balance. The cross bracing also fits neatly outside the inner blocks, locking the table on to the dolly.
