@@ -36,7 +36,14 @@ Here is an option for building a light-weight foam table: <a href="http://nmfll.
 
 Here is an another option for building a table: <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.first-lego-league.org%2Fen%2Fgeneral%2Fparticipation.html%3Ffile%3Dfiles%252Finhalt%252Ffll_en%252Fgeneral%252Fparticipation%252FFLL_2016_2017_Competition_Table_Building_Instruction_Folding_Table.pdf%26fref%3Dgc%26dti%3D369520923432634&h=ATOUz7oHo9UqUhGSh-Z71_56HmMyDqarFNok3r2e5nv22n3Hpg85osUNWR5kv90N0f0-9MNhZ9nwHWzQ2BRcn3cy1_-w9Z6-R9ebXNC_6kF_lgvivAGSsRp_m-SWDb2cgdC8m0RiauN81lY">Table by Hands of Technology</a>. 
 
-Here is an option for building a portable table that folds: <a href="https://drive.google.com/file/d/0B-nO61RMEYhJUjlJX0QzMEc2NFU/view?fref=gc&dti=369520923432634">Tri-fold Table by Lance Salyers</a>. 
+Here is an option for building a portable table that folds: <a href="https://drive.google.com/file/d/0B-nO61RMEYhJUjlJX0QzMEc2NFU/view?fref=gc&dti=369520923432634">Tri-fold Table by Lance Salyers</a>.
+
+"Response by Arrell Thompson"
+
+Here is the table we built to allow us to setup/tear down the table and move locations within our school fairly easy. I kinda made the design up as I built it. I borrowed ideas from other tables I've seen that fold up, but I put it together with a lot of scrap wood/pieces I had from other projects so it's sorta odd looking in places and probably could use some improvements. If you look closer at the corner braces on the legs, you can see the side half of a tool box from cub scouts. We originally had it at our school and had to store it in a closet a ways away from our practice area so we needed a strong table that could be moved as needed. It's also nice to move around when needed to put off to the side when more playroom is needed.
+
+<img src="/images/coachcorner/PingPongStyle.jpg" style="max-width: 100%" />
+
 
 **Response by Shelby Davis** 
 

@@ -14,6 +14,7 @@ authorim: "/images/people/female.jpg"
 I'd like to share a thought that might help calm new teams as we approach qualifiers. It's also a question at the heart of Core Values.
 
 ![](/images/coachcorner/Hyperbolics.jpg)
+Image Credit: Hyperbolics
 
 I ask teams, "Are you ever directly competing with anyone or any team in FIRST LEGO League?" The answer is no.
 
