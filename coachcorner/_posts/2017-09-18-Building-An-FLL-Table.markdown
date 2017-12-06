@@ -25,6 +25,6 @@ Photo Credit: Lance Salyers
 <a href="http://nmfll.org/images/STOW-or-GO_Updated_Building_Instructions.pdf?fref=gc&dti=369520923432634">Foam Table by the Inventioneers</a>. <br>
  <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.first-lego-league.org%2Fen%2Fgeneral%2Fparticipation.html%3Ffile%3Dfiles%252Finhalt%252Ffll_en%252Fgeneral%252Fparticipation%252FFLL_2016_2017_Competition_Table_Building_Instruction_Folding_Table.pdf%26fref%3Dgc%26dti%3D369520923432634&h=ATOUz7oHo9UqUhGSh-Z71_56HmMyDqarFNok3r2e5nv22n3Hpg85osUNWR5kv90N0f0-9MNhZ9nwHWzQ2BRcn3cy1_-w9Z6-R9ebXNC_6kF_lgvivAGSsRp_m-SWDb2cgdC8m0RiauN81lY">FLL Table by Hands of Technology</a>. <br>
 <a href="https://drive.google.com/file/d/0B-nO61RMEYhJUjlJX0QzMEc2NFU/view?fref=gc&dti=369520923432634">Tri-fold Table by Lance Salyers</a> <br>
-Ping Pong Table-Stye by Arrell Thompson:
+Ping Pong Table-Style by Arrell Thompson:
 
 <img src="/images/coachcorner/PingPongStyle.jpg" style="max-width: 100%" />
