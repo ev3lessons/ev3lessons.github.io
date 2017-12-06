@@ -27,7 +27,7 @@ Image Credit: Nick Youngson
 <tr>
 <td>National Registration</td>
 <td>$225</td>
-<td></td>
+<td>Varies by county</td>
 </tr>
 <tr>
 <td>Local Competition Registration</td>
@@ -42,17 +42,17 @@ Image Credit: Nick Youngson
 <tr>
 <td>MINDSTORMS FLL Set</td>
 <td>$500</td>
-<td>Buy retail set, buy used</td>
+<td>Cost saving: Buy retail set and supplement parts, buy used sets</td>
 </tr>
 <tr>
 <td>FLL Challenge Set</td>
 <td>$85</td>
-<td>Can vary by country</td>
+<td>Can vary by country. Can be shared across teams.</td>
 </tr>
 <tr>
 <td>Laptop/Computer</td>
 <td>$0-$1000</td>
-<td>Could reuse, use tablet, use desktop</td>
+<td>Cost saving: Reuse existing laptop, use tablet, use a desktop</td>
 </tr>
 <tr>
 <td>Supplies</td>
