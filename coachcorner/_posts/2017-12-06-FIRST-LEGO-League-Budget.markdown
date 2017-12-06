@@ -96,13 +96,13 @@ Image Credit: Nick Youngson
 <td>Tri-fold, Markers, Glue, Binders</td>
 </tr>
 </tr>
+
 <tr>
 <td>Printing</td>
 <td>$15</td>
 <td></td>
 </tr>
 </table>
-
 <br>
 <table>
 <tr>
