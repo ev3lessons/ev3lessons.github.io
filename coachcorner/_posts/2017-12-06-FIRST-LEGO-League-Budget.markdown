@@ -18,27 +18,6 @@ The following summary is based on a discussion from the Facebook Group <a href="
 ![](/images/coachcorner/Budget.jpg)
 Image Credit: Nick Youngson
 
-### Xanterra - Job Descriptions
-
-table {
-font-family: arial, sans-serif;
-border-collapse: collapse;
-width: 100%;
-}
-
-td, th {
-border: 1px solid #dddddd;
-text-align: left;
-padding: 8px;
-}
-
-tr:nth-child(even) {
-background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-
 <table>
 <tr>
 <th>Start-up Costs</th>
@@ -110,6 +89,7 @@ background-color: #dddddd;
 <td>$85</td>
 <td>Can vary by country</td>
 </tr>
+
 <tr>
 <td>Supplies</td>
 <td>$25</td>
@@ -170,4 +150,10 @@ background-color: #dddddd;
 <td>$10+/meeting</td>
 <td></td>
 </tr>
+<tr>
+<td>Support Materials</td>
+<td>$50-$200</td>
+<td>Storage boxes, utility carts, team banner/sign</td>
+</tr>
+
 </table>
