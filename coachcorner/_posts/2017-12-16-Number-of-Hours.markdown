@@ -11,42 +11,178 @@ author: "Asha Seshan<br>Droids Robotics<br>Pittsburgh, USA<br>"
 authorim: "/images/people/asha.jpg"
 ---
 How many hours do you think that your team met before the first competition? The following is the results of a survey of 120 FIRST LEGO League Teams.
+<br><br><br><br><br><br>
 
 <ul class="bar-graph">
 <li class="bar-graph-axis">
-<div class="bar-graph-label">100%</div>
-<div class="bar-graph-label">80%</div>
-<div class="bar-graph-label">60%</div>
-<div class="bar-graph-label">40%</div>
-<div class="bar-graph-label">20%</div>
-<div class="bar-graph-label"0%</div>
+<div class="bar-graph-label">35%</div>
+<div class="bar-graph-label">28%</div>
+<div class="bar-graph-label">21%</div>
+<div class="bar-graph-label">14%</div>
+<div class="bar-graph-label">7%</div>
+<div class="bar-graph-label">0%</div>
 </li>
-<li class="bar primary" style="height: 40%;" title="40">
-<div class="percent">40<span>%</span></div>
-<div class="description">5-6 Hours</div>
+<li class="bar warning" style="height: 21%;" title="75">
+<div class="percent">9<span>%</span></div>
+<div class="description">1-2hrs</div>
 </li>
-<li class="bar secondary" style="height: 24%;" title="24">
+<li class="bar secondary" style="height: 63%;" title="90">
 <div class="percent">24<span>%</span></div>
-<div class="description">3-4 Hours</div>
+<div class="description">3-4hrs</div>
 </li>
-<li class="bar success" style="height: 17%;" title="17">
-<div class="percent"><span>17%</span></div>
-<div class="description">7-9 Hours</div>
+<li class="bar primary" style="height: 100%;" title="95">
+<div class="percent">40<span>%</span></div>
+<div class="description">5-6hrs</div>
 </li>
-<li class="bar success" style="height: 9%;" title="9">
-<div class="percent"><span>9%</span></div>
-<div class="description">1-2 Hours</div>
+<li class="bar success" style="height: 44%;" title="80">
+<div class="percent">17<span>%</span></div>
+<div class="description">7-9hrs</div>
 </li>
-<li class="bar warning" style="height: 7%;" title="7">
+
+<li class="bar alert" style="height: 19%;" title="40">
 <div class="percent">7<span>%</span></div>
-<div class="description">10-14 Hours</div>
+<div class="description">10-14hrs</div>
 </li>
-<li class="bar alert" style="height: 3%;" title="3">
+<li class="bar warning" style="height: 15%;" title="40">
 <div class="percent">3<span>%</span></div>
-<div class="description">15+ Hours</div>
+<div class="description">15+hrs</div>
 </li>
 </ul>
 
+<style>
+.bar-graph {
+padding: 0;
+width: 100%;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: flex-end;
+-ms-flex-align: end;
+align-items: flex-end;
+height: 425px;
+margin: 0;
+}
+
+.bar-graph li {
+display: block;
+padding: 1.5625rem 0;
+position: relative;
+text-align: center;
+vertical-align: bottom;
+border-radius: 4px 4px 0 0;
+max-width: 20%;
+height: 100%;
+margin: 0 1.8% 0 0;
+-webkit-flex: 1 1 15%;
+-ms-flex: 1 1 15%;
+flex: 1 1 15%;
+}
+
+.bar-graph .bar-graph-axis {
+-webkit-flex: 1 1 8%;
+-ms-flex: 1 1 8%;
+flex: 1 1 8%;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+
+.bar-graph .bar-graph-label {
+margin: 0;
+background-color: none;
+color: #8a8a8a;
+position: relative;
+}
+
+@media print, screen and (min-width: 40em) {
+.bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+content: "";
+position: absolute;
+border-bottom: 1px dashed #8a8a8a;
+top: 0;
+left: 0;
+height: 50%;
+width: 20%;
+}
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 64em) {
+.bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+width: 30%;
+}
+}
+
+@media print, screen and (min-width: 40em) {
+.bar-graph .bar-graph-label:after {
+left: auto;
+right: 0;
+}
+}
+
+.bar-graph .percent {
+letter-spacing: -3px;
+opacity: 0.4;
+width: 100%;
+font-size: 1.875rem;
+position: absolute;
+}
+
+@media print, screen and (min-width: 40em) {
+.bar-graph .percent {
+//font-size: 3.875rem;
+font-size: 2rem;
+}
+}
+
+.bar-graph .percent span {
+font-size: 1.875rem;
+}
+
+.bar-graph .description {
+font-weight: 800;
+opacity: 0.5;
+text-transform: uppercase;
+width: 100%;
+font-size: 14px;
+bottom: 20px;
+position: absolute;
+font-size: 1rem;
+overflow: hidden;
+}
+
+.bar-graph .bar.primary {
+border: 1px solid #1779ba;
+background: linear-gradient(#2196e3, #1779ba 70%);
+}
+
+.bar-graph .bar.secondary {
+border: 1px solid #767676;
+background: linear-gradient(#909090, #767676 70%);
+}
+
+.bar-graph .bar.success {
+border: 1px solid #3adb76;
+background: linear-gradient(#65e394, #3adb76 70%);
+}
+
+.bar-graph .bar.warning {
+border: 1px solid #ffae00;
+background: linear-gradient(#ffbe33, #ffae00 70%);
+}
+
+.bar-graph .bar.alert {
+border: 1px solid #cc4b37;
+background: linear-gradient(#d67060, #cc4b37 70%);
+}
+
+
+</style>
 
 **Ruth Ann Francis**
 My team meets 4.5 hours/week (1.5 hours one evening during the week and 3 hours on either Friday or Saturday depending on my work schedule and kids' availability. We're a home school team, so that makes scheduling meetings a little more flexible).

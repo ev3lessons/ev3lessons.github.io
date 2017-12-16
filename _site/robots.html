@@ -462,7 +462,7 @@ if (tabs != undefined) {
 count++
 }
 
-/*
+
 if (language == "fr") {
     x = 0
     while (x != document.getElementsByClassName("en").length) {
@@ -942,23 +942,7 @@ x = 0
         }
 
 }
-*/
 
-var i;
-for (i = 0; i < langs.length; i++) {
-
-		if (langs[i].split(':')[0] != language) {
-		    x = 0
-    while (x != document.getElementsByClassName(langs[i].split(':')[0].split('-')[0]).length) {
-   document.getElementsByClassName(langs[i].split(':')[0].split('-')[0])[x].style.display = "none"
-  x ++
-        }
-		}
-		
-		}
-
-		
-//}
 		  </script>
 
               </div>
@@ -1428,6 +1412,29 @@ for (i = 0; i < langs.length; i++) {
                                                         </div>
                                                       </div>
                                                       <br>
+
+                                                      <div class="toggle">
+                                                        <p class="tab-index tab-closed"><a href="#"
+                                                          title="Close">COR3 - EV3 Build</a></p>
+                                                          <div class="content-tab closed">
+                                                            <img width="253" height="253"
+                                                            src="robots/images/COR3.jpg"
+                                                            class="attachment-thumb_portfolio_3cols wp-post-image"
+                                                            alt="COR3" title="COR3" />
+
+                                                            <p>This is a base robot built with one EV3 Education Core Set (45544). This robot can be used as a learning tool as well as a basic design for FIRST LEGO League.</p>
+                                                            <p>Design by: Michael Buss Anderson</p>
+
+                                                            <ul>
+                                                              <li><a href="robots/COR3.pdf">PDF Build Instructions</a></li>
+                                                              <!--<li><a href="robots/younglings.pdf">PDF File</a></li>
+                                                              <li><a href="robots/images/Builderdude35.png">Image</a></li>
+                                                              <li><a href="robots/images/Builderdude35a.png">Image2 (With Attachment)</a></li>
+                                                            --> </ul>
+                                                          </div>
+                                                        </div>
+                                                        <br>
+
                                                       <div class="toggle">
                                                         <p class="tab-index tab-closed"><a href="#"
                                                           title="Close">NXT Driving Base - NXT Build</a></p>
