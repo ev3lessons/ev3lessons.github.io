@@ -15,17 +15,17 @@ A few weeks ago, I asked teams about what tools they would recommend for other t
 <img src="/images/coachcorner/Tools.png" style="max-width: 100%" />
 
 
-Google Calendar - Team Scheduling
-Google Group - Team Mailing Lists
-Google Drive - Shared Team Files
-Trello - Team organization
-Redbooth - Taking Notes
-OneNote and OneDrive - Notes and Shared Documents
-Slack - Tracking Progress, Documenting
-EV3Lessons Robot Game Scorer - Tracking Scores
-Basecamp - Project Management
-Fleep - Messaging
-Whatapp - Team communication
-iMovie
-iBrainstorm
+Google Calendar - Team Scheduling <br>
+Google Group - Team Mailing Lists <br>
+Google Drive - Shared Team Files <br>
+Trello - Team organization <br>
+Redbooth - Taking Notes <br>
+OneNote and OneDrive - Notes and Shared Documents <br>
+Slack - Tracking Progress, Documenting <br>
+EV3Lessons Robot Game Scorer - Tracking Scores <br>
+Basecamp - Project Management <br>
+Fleep - Messaging <br>
+Whatapp - Team communication <br>
+iMovie<br>
+iBrainstorm<br>
 
