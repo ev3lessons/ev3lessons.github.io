@@ -17,6 +17,14 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 <img src="/images/coachcorner/Trophies.jpg" style="max-width: 100%" />
 Photo Credit: Annie Drennan
 
+**Want to create a replica of a FIRST LEGO League trophy?**
+
+<a href="http://www.ortop.org/Documents/2000422_Pokal_Medium_US%20(1).pdf">Medium Trophy Build Instructions by Ortop</a>"
+
+<a href="http://www.ortop.org/Documents/SS_Sm_Trophy.pdf">Small Trophy Build Instructions by Ortop</a>"
+
+<a href="https://www.bricklink.com/catalogItemInv.asp?S=2000422-1">Trophy Parts List</a>"
+
 **Response by Lauren Bierman**
 
 Great idea! How about Master Builder?
@@ -83,3 +91,11 @@ We make certificates of participation. Then we also recognize individual efforts
 
 After our qualifier, we reviewed how we did. Spontaneously, the kids started complimenting each other for what went on in the event and then broke out laughing as they all gave out nicknames for each other. They loved it so much, they are adding the nicknames across the back of the team shirts for state.
 
+**Response by Catherine Sarisky**
+I sourced parts for brick-built rhinos (since my team is the Robotic Rhinos) and we built them as a fun activity after the qualifier. I contemplated pedestals, but decided against it.
+
+There are also lots of cute opportunities here: http://www.brickengraver.com/ (Not affiliated and haven't ordered - just looked cute!)
+
+**Response by Korey Atterberry**
+
+I can't find the plans just yet, but last year I made a tiny one out of bricks. It cost about $5 each for parts from bricklink. We won a team trophy, but since they don't all get to have it I wanted them to have a little something for themselves.
