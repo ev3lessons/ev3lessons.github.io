@@ -10,7 +10,7 @@ side: ""
 author: "Asha Seshan<br>Droids Robotics<br>Pittsburgh, USA<br>"
 authorim: "/images/people/asha.jpg"
 ---
-How many hours do you think that your team met before the first competition? The following is the results of a survey of 120 FIRST LEGO League Teams.
+FIRST LEGO League teams come in all shapes and sizes. Some are school teams that can meet only for a couple of hours each week. Some are community teams or homeschool teams that invest a lot of more time. Regardless of how many hours a team spends they will learn. It is up to the team to decide the number of hours to spend and their goals for the season. However, to get an idea for how much time teams spend, below are the results of a survey of 120 FIRST LEGO League Teams conducted on the Facebook Group <a href="https://www.facebook.com/groups/FLLShareandLearn/">FLL: Share & Learn </a>.
 <br><br><br><br><br><br>
 
 <ul class="bar-graph">
