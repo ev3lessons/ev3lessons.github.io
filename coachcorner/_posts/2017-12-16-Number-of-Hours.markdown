@@ -14,12 +14,12 @@ How many hours do you think that your team met before the first competition? The
 
 <ul class="bar-graph">
 <li class="bar-graph-axis">
+<div class="bar-graph-label">100%</div>
+<div class="bar-graph-label">80%</div>
+<div class="bar-graph-label">60%</div>
 <div class="bar-graph-label">40%</div>
-<div class="bar-graph-label">24%</div>
-<div class="bar-graph-label">17%</div>
-<div class="bar-graph-label">9%</div>
-<div class="bar-graph-label">7%</div>
-<div class="bar-graph-label"3%</div>
+<div class="bar-graph-label">20%</div>
+<div class="bar-graph-label"0%</div>
 </li>
 <li class="bar primary" style="height: 40%;" title="40">
 <div class="percent">40<span>%</span></div>
