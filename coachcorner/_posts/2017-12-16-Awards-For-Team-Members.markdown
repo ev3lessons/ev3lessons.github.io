@@ -14,16 +14,18 @@ The following discussion is quoted from the Facebook Group <a href="https://www.
 
 ## Do you give out individual awards to team members after the season is over? What awards do you give out? Team spirit? Ingenuity? Rising Star?
 
+Some teams give out individual awards at the the end of the season. This might be to recognized the students' contributions or because the team only receives one trophy. Below are such suggestions for creating your own trophies/recognizing team members.
+
 <img src="/images/coachcorner/Trophies.jpg" style="max-width: 100%" />
 Photo Credit: Annie Drennan
 
 **Want to create a replica of a FIRST LEGO League trophy?**
 
-<a href="http://www.ortop.org/Documents/2000422_Pokal_Medium_US%20(1).pdf">Medium Trophy Build Instructions by Ortop</a>"
+<a href="http://www.ortop.org/Documents/2000422_Pokal_Medium_US%20(1).pdf">Medium Trophy Build Instructions by Ortop</a>
 
-<a href="http://www.ortop.org/Documents/SS_Sm_Trophy.pdf">Small Trophy Build Instructions by Ortop</a>"
+<a href="http://www.ortop.org/Documents/SS_Sm_Trophy.pdf">Small Trophy Build Instructions by Ortop</a>
 
-<a href="https://www.bricklink.com/catalogItemInv.asp?S=2000422-1">Trophy Parts List</a>"
+<a href="https://www.bricklink.com/catalogItemInv.asp?S=2000422-1">Trophy Parts List</a>
 
 **Response by Lauren Bierman**
 
