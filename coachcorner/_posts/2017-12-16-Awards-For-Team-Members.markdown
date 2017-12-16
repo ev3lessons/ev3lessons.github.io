@@ -21,6 +21,8 @@ Photo Credit: Annie Drennan
 
 **Want to create a replica of a FIRST LEGO League trophy?**
 
+<a href="http://www.ortop.org/Documents/SS_LRG_Trophy.pdf">Large Trophy Build Instructions by Ortop</a>
+
 <a href="http://www.ortop.org/Documents/2000422_Pokal_Medium_US%20(1).pdf">Medium Trophy Build Instructions by Ortop</a>
 
 <a href="http://www.ortop.org/Documents/SS_Sm_Trophy.pdf">Small Trophy Build Instructions by Ortop</a>
