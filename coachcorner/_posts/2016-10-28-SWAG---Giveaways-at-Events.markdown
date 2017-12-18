@@ -76,5 +76,11 @@ Christy Stone: Our team last year was the Total Geeks. For the state tournament 
 
 Celina McGinnis: We've done buttons, candy, bookmarks with directions for a game. The bookmarks were the best, I still see them popping up in books around our school district. The best swag I've ever gotten was from Virginia team 168, a glow in the dark gear bookmark. They were printing them at the booth at the World Festival, on a 3D printer they had made out of PCV piping. Great design, super useful.
 
+Scott Wootten I think we have had the most success with buttons or candy. The kids like collecting the buttons, and the candy is always popular.
+
+Catherine Sarisky: We did wristbands from 24hourwristbands.com
+
+Tina Žličar: We organized a prize game and those who answered correctly won a pair of earings, made by our sponsor #barbarela. They were a real hit.
+
 
 
