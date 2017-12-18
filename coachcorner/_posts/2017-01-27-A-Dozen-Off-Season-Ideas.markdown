@@ -3,7 +3,7 @@ layout: post2
 language: "en"
 keywords: "Coaching getting_started off-season"
 image: "/images/Butler/Passion/1/img/3.png"
-title: "A Dozen of More Off-Season Ideas"
+title: "A Dozen or More Off-Season Ideas"
 minidescription: "This article shares ideas for what a FIRST LEGO League can do in the off-season to improve their skills."
 sidetitle: ""
 side: ""
