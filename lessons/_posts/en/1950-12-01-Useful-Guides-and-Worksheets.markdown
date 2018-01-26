@@ -23,6 +23,12 @@ lang: "en"
 <li >Core Values Poster (by Ana Paula from Roboticando):
 <a href="translations/en-us/fll/CoreValuesPoster.pdf">PDF</a>
 </li>
+<li >Core Values Tshirt:
+Original Design by ASU FLL. Files below created by Ben Stanley (Robot Obedience School)
+Shared with permission on EV3Lessons.com
+<a href="translations/en-us/fll/CoreValuesTshirt.pdf">PDF</a>
+<a href="translations/en-us/fll/CoreValuesTshirt.svg">SVG</a>
+</li>
 <li >Mission Strategy Quick Guide:
 <a href="translations/en-us/fll/FLLStrategy.pdf">PDF</a>
 </li>
