@@ -23,7 +23,7 @@ EV3Lessons was founded by FIRST team, Not the Droids You Are Looking For. We cam
 
 ### FIRST Logo
 
-Does the FIRST logo mean anything? Yes, it does. This image linked was shared with us by Alex Stout, mentor to the MARS FRC team in West Virginia.  The FIRST Logo is inspired by the Olympics logo as well as Archimedes' study of the cone, sphere and cylinder. Thus, it combines both elements of sports and mathematics.  Click to read all about the <a href="http://www.ev3lesssons.com/images/coachcorner/FIRSTLogo.jpg">FIRST Logo</a>.
+Does the FIRST logo mean anything? Yes, it does. This image linked was shared with us by Alex Stout, mentor to the MARS FRC team in West Virginia.  The FIRST Logo is inspired by the Olympics logo as well as Archimedes' study of the cone, sphere and cylinder. Thus, it combines both elements of sports and mathematics.  Click to read all about the <a href="/images/coachcorner/FIRSTLogo.jpg">FIRST Logo</a>.
 
 ### Xanterra FLL: Making you think
 
