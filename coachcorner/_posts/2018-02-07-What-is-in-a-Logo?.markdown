@@ -17,13 +17,13 @@ Team names and logos represent who you are.  They are fun to come up with and a 
 
 ### EV3Lessons Logo: More than what it seems
 
-EV3Lessons was founded by FIRST team, Not the Droids You Are Looking For. We came up with the EV3Lessons logo early in the 2014 World Class Season.  The EV3 was made to look like to faces look at each other and learning from each other. One is green and one is purple to represent us (Sanjay and Arvind) as it is our favorite colors. We made the "L" in Lessons into a road because learning is journey/path.
+EV3Lessons was founded by FIRST team, Not the Droids You Are Looking For. We came up with the EV3Lessons logo early in the 2014 World Class Season.  The EV3 was made to look like to faces looking at each other and learning from each other to match our tag line. One face is green and the other is purple to represent us (Sanjay and Arvind) as it is our favorite colors. We made the "L" in Lessons into a road because learning is journey/path you take.
 
 ![](/images/coachcorner/ev3lessonslogo.jpg)
 
 ### FIRST Logo
 
-Does the FIRST logo mean anything? Yes, it does. This image was shared with us by Alex Stout, mentor to the MARS FRC team in West Virginia.  The FIRST Logo is inspired by the Olympics logo as well as Archimedes' study of the cone, sphere and cylinder. Thus, it combines both elements of sports and mathematics.  Click to read all about the <a href="http://www.ev3lesssons.com/images/coachcorner/FIRSTLogo.jpg">FIRST Logo</a>.
+Does the FIRST logo mean anything? Yes, it does. This image linked was shared with us by Alex Stout, mentor to the MARS FRC team in West Virginia.  The FIRST Logo is inspired by the Olympics logo as well as Archimedes' study of the cone, sphere and cylinder. Thus, it combines both elements of sports and mathematics.  Click to read all about the <a href="http://www.ev3lesssons.com/images/coachcorner/FIRSTLogo.jpg">FIRST Logo</a>.
 
 ### Xanterra FLL: Making you think
 
@@ -57,15 +57,15 @@ First meeting of the team, kids decided upon the name Robo Warriors, the main re
 
 Our team is an all girl team of Girl Scouts. The girls all brainstormed ideas for team names and voted to select the winner "Chicks with Bricks"! Once we had a name, we had the kids all sketch up their ideas for logos and then the girls voted on the winner. Their team identity is all about GIRL POWER!
 
-### H.O.T. Squad: Inspired by super heros
+### H.O.T. Squad: Inspired by superheros
 
-We are the H.O.T. Squad (heroes of tomorrow). This has been our team name for two years. Kids picked it and designed the logo. They are good role models and do a lot of outreach as individuals and as a team
+We are the H.O.T. Squad (heroes of tomorrow). This has been our team name for two years. Kids picked it and designed the logo. They are good role models and do a lot of outreach as individuals and as a team.
 
 ### NERDS: Inspired by a school name
 
 We are a school based team (well, collection of teams). Our school is named North, so the kids our first year came up with North Nerds. Then we decided to make NERDS an acronym, so we became the "North Engineering Robotics Design Squad" . We field 3 teams each year, and the kids shift around (again, school team) so each year the teams come up with their own spin on NERDS. Some of my favorites have been "NERDS who say Ni!", "NERDS in Shining Armor", "Despicable NERDS" and "NERDS Sharknado". Some teams choose to go with something project related- so this year we had the "Salty NERDS". Our logo was designed our first year and is our robotics room mascot: a little robot with a wrench in hand and a star-cut out on its belly (our school "mascot" is Stars).
 
-### 21st Century Space Guys: Inspired by space
+### 21st Century Space Guys: Inspired by an interest in space
 
 We are a neighbourhood team in Kentville, Nova Scotia, Canada. Our team name started with a discussion of being the 1980s something space guys, but then it was pointed out that no one in the room had been born in the 80s. So... they shifted to the 21st Century Space Guys. At the time the team was all male, but even last year when a young lady joined our team she didn't mind. Our robot's name is Hadfield who is named after Col. Chris Hadfield - a real 21st Century Space Guy for Canada. Our logo was done by one of our team members. It is a take off of the Lego classic space guys logo. He redrew it a bit so it wasn't copying it. We have had pins made and we have a banner too. Our t-shirts add to our team identity in that each member is a colour of a classic space minifigure. I, as the coach, get to wear green.
 
