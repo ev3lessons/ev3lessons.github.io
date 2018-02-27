@@ -20,14 +20,14 @@ The FIRST LEGO League Core Values set FLL apart from many other competitions. Th
 
 ### FIRST LEGO League Core Values:
 
-We are a team.
-We do the work to find solutions with guidance from our coaches and mentors.
-We know our coaches and mentors don't have all the answers; we learn together.
-We honor the spirit of friendly competition.
-What we discover is more important than what we win.
-We share our experiences with others
-We display Gracious Professionalism® and Coopertition® in everything we do.
-We have FUN!
+We are a team.<br>
+We do the work to find solutions with guidance from our coaches and mentors.<br>
+We know our coaches and mentors don't have all the answers; we learn together. <br>
+We honor the spirit of friendly competition.<br>
+What we discover is more important than what we win.<br>
+We share our experiences with others<br>
+We display Gracious Professionalism® and Coopertition® in everything we do.<br>
+We have FUN!<br>
 
 ### Core Values Judging
 
@@ -69,7 +69,7 @@ Take to event:
 - Banner / flag for the parade
 
 ### Websites
-<a href="http://ev3lessons.com/corevalues.html">EV3Lessons.com Core Values Activities by many FLL teams<a>
+<a href="http://ev3lessons.com/corevalues.html">EV3Lessons.com Core Values Activities by many FLL teams<a><br>
 <a href= "https://www.startingpoints.com/fll">FLL Starting Point Core Values Activities by the Judge Advisor from VA-DC</a><br>
 <a href="http://www.ventureteambuilding.co.uk/team-building-activities/">Venture Team Building</a><br>
 <a href="https://www.odysseyofthemind.com/practice/">Odyssey of the Mind</a><br>
