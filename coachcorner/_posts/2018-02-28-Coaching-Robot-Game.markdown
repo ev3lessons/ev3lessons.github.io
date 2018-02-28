@@ -40,7 +40,7 @@ If something at the table happens to be set up incorrectly, tournament officials
 It's easiest for the kids to work in small groups (2-3) and divide up tasks. (We mix the groups for other team tasks so everyone works with everyone else.) On our team that usually means that each set will be working on a different mission run from base, both the programming and attachments for that mission. Sometimes kids will trade missions, though – it's fluid. It is wonderful if you can have an adult mentor for each small group on the team, but not completely necessary. For our team, the adults do quite a bit of keeping-the-kids-on-task. This is also a good opportunity to support the kids by reminding them of the core values while they are making hard decisions and negotiating.
 
 #### Learning the Basics of moving and sensors
-Build a basic rover. There are several examples on <a href="http://ev3lessons.com/robots.html".EV3Lessons Robot Design.</a>. It's perfectly acceptable to start with a basic build and modify with attachments / bumpers as needed for competition.
+Build a basic rover. There are several examples on <a href="http://ev3lessons.com/robots.html">EV3Lessons Robot Design.</a>. It's perfectly acceptable to start with a basic build and modify with attachments / bumpers as needed for competition.
 
 Next, go through the <a href="http://ev3lessons.com/lessons.html"> programming lessons </a>on EV3Lessons.com – they are fantastic.
 
