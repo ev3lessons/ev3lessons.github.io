@@ -38,7 +38,7 @@ Your team does not need to memorize their presentation, but eye contact is nice 
 
 #### Project Deliverables:
 
-**Over the season:**
+**Over the season:**<br>
 Learn about theme<br>
 Meet with experts<br>
 Choose a problem<br>
@@ -46,7 +46,7 @@ Develop an innovative solution<br>
 Meet with experts for feedback and sharing<br>
 Develop a 5 minute presentation of our solution for the judges<br>
 
-**Take to event:**
+**Take to event:**<br>
 Project poster (if you make one)<br>
 Team project summary to leave with the judges (a booklet is a good example)<br>
 Props for thepresentation<br>
