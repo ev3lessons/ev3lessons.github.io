@@ -14,6 +14,7 @@ authorim: "/images/people/female.jpg"
 In addition to the Robot Game, teams also compete with their research projects. For the Project, teams will choose a problem related to the theme for that year and come up with an “innovative solution” to that problem. Some teams just dream up the idea, others meet with experts and try to get some kind of simple prototype built or designed. It is all welcome in the Project judging room!
 
 <img src="/images/coachcorner/CoachingProject.jpg" style="max-width: 100%" />
+Image Credit: Razorback Open Invitational
 
 #### What to expect in Project Judging
 The team will have 10 minutes with the Project judges. The first 5 minutes is for the team to present their project to the judges. The five minutes includes any set-up time. During the next 5 minutes, the judges will ask questions. FLL tournaments are designed to celebrate what teams have accomplished – the judges will not be trying to poke holes in your team's project, they will be trying to assess all that they have accomplished. Teams generally leave the judging sessions feeling like it went great!
