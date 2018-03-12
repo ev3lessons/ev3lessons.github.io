@@ -16,7 +16,7 @@ Many years ago, Norm Kerman, former FIRST LEGO League Tournament Director and FI
 
 ## Week 0: The Preseason
 
-Welcome to the pre-season of FIRST LEGO League. Typically, the theme for the season is announced in late November of the previous calendar year; team registration begins in May of the completion challenge year; and the challenge details are released in August. While starting before the challenge release is not required, taking advantage of the time between seasons can make your team more productive and reduce the stress associated with the season. Overall, the time can be used to learn to program, get a jumpstart on research ideas, and become a better team.
+Welcome to the pre-season of FIRST LEGO League. Typically, the theme for the season is announced in late November of the previous calendar year; team registration begins in May of the competition challenge year; and the challenge details are released in August. While starting before the challenge release is not required, taking advantage of the time between seasons can make your team more productive and reduce the stress associated with the season. Overall, the time can be used to learn to program, get a jumpstart on research ideas, and become a better team.
 
 A good place to start is to start to think about team goals for the coming year. These goals can drive what you want to work on in the pre-season. For instance, perhaps your team would like to learn to use sensors (or a new sensor) this season. Perhaps your team did not do any outreach last season and would like to do something this season. Below, we provide some typical goals and activities in each of the three parts of FIRST LEGO League that teams can work on in the pre-season.
 
