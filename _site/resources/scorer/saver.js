@@ -1,5 +1,8 @@
 store = []
 
+//var monthNames = ["","January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+
 function getvar() {
   count = 0
   count1 = 0
@@ -91,8 +94,8 @@ function drawBasic() {
 $(function () {
   $('#container').highcharts({
     title: {
-      text: 'Improvement',
-      x: -20 //centre
+      text: improvement,
+      x: -20
     },
     subtitle: {
       // text: 'Sou rce: WorldClimate.com',
@@ -107,7 +110,7 @@ $(function () {
     },
     yAxis: {
       title: {
-        text: 'Points'
+        text: pointsText
       },
       plotLines: [{
         value: 0,
@@ -125,7 +128,7 @@ $(function () {
       borderWidth: 0
     },
     series: [{
-      name: 'Save',
+      name: saveText,
       data: array,
     }]
   });
@@ -142,7 +145,7 @@ function loadsaves() {
   document.getElementById('saves').innerHTML = "";
   while(n < a) {
     //alert(n)
-    document.getElementById('saves').innerHTML = document.getElementById('saves').innerHTML +' Save '+ String(n+1) + ': ' +  window.localStorage.DRHDS1scorer.split(',')[n] + '<br>'  ;
+    document.getElementById('saves').innerHTML = document.getElementById('saves').innerHTML +' '+saveText+' '+ String(n+1) + ': ' +  window.localStorage.DRHDS1scorer.split(',')[n] + '<br>'  ;
     n = n+1;
     //	      alert(x);
   }
@@ -159,7 +162,8 @@ function saveLocalStorage() {
   var month = currentTime.getMonth() + 1
   var day = currentTime.getDate()
   var year = currentTime.getFullYear()
-  var currentdate = month + "/" + day + "/" + year;
+//  var currentdate = month + "/" + day + "/" + year;
+  var currentdate = ": " + day + " " + monthNames[month] + " " + year;
 
 
   var hours = currentTime.getHours()

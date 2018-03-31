@@ -170,7 +170,7 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
 
 </head>
 
-<body onload="check_missions('piperemoval');recalc(0,'piperemoval',0);">
+<body onload="check_missions('piperemoval');recalc(0,'piperemoval',0);initpage();">
 
   <br>
   <table style="width:98%; text-align:center; margin-left:auto; margin-right:auto;">
@@ -305,10 +305,30 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
           createbuttonenables('flower1','flower2')
           createbuttonenables('slingshot1','slingshot2')
 
+function initpage() {
           document.getElementById('title').innerHTML = title
           document.getElementById('resetTxt').value = resetText
           document.getElementById('pointsTxt').innerHTML = pointsText
 
+
+          document.getElementById('saveText').innerHTML = savescoreText
+          document.getElementById('loadText').innerHTML = loadsaveText
+          document.getElementById('deleteText').innerHTML = deletesaveText
+          document.getElementById('importText').innerHTML = importsaveText
+          document.getElementById('exportText').innerHTML = exportsaveText
+
+          document.getElementById('startText').innerHTML = startText
+          document.getElementById('stopText').innerHTML = stopText
+          document.getElementById('resetText').innerHTML = resetText
+
+          document.getElementById('startSW').innerHTML = startText
+          document.getElementById('stopSW').innerHTML = stopText
+          document.getElementById('resetSW').innerHTML = resetText
+
+          document.getElementById('scorerTitle').innerHTML = scorerText
+          document.getElementById('timersTitle').innerHTML = timersText
+          document.getElementById('savesTitle').innerHTML = savesText
+}
           </script>
           <br>
         </form>
@@ -325,17 +345,17 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
                   </p>
                 </td>
                 <td style="border: 10px solid black; border-collapse: collapse;">
-                  <button style="margin:0" onclick="CDtimer()">Start</button>
+                  <button id="startText" style="margin:0" onclick="CDtimer()">Start</button>
                 </td>
               </tr>
               <tr style="border: 10px solid black; border-collapse: collapse;">
                 <td style="border: 10px solid black; border-collapse: collapse;">
-                  <button style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+                  <button id="resetText" style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
                 </td>
               </tr>
               <tr>
                 <td style="border: 10px solid black; border-collapse: collapse;">
-                  <button style="margin:0" id="stopSW" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                  <button style="margin:0" id="stopText" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
                 </td>
               </tr>
             </table>
@@ -372,12 +392,12 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
 
       <div id="tabs-3">
         <div style="width: 340">
-          <button type="button" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
+          <button type="button" id="saveText" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
         <br>
 
         <div class="ui-grid-b ui-responsive">
           <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
-            <button style="text-align: left;" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
+            <button style="text-align: left;" id="loadText" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
             <div class="ui-block-b" style="width: 170">
 
               <div data-role="stepper" data-direction="vertical">
@@ -393,6 +413,7 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
                 }		</style>
                 <script>
                 start = 1; maximum = window.localStorage.DRHDSscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
+</script><script>
                 document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
 
                 </script>
@@ -401,13 +422,13 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
             </div>
 
           </div>
-          <div style="width: 340">	  <button class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
+          <div style="width: 340">	  <button id="deleteText" class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
 
           <div style="width: 340">
             <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
             <div id="saves" ></div>
 
-            <button class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
+            <button id="importText" class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
             //alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">Import Save</button>
 
             <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
@@ -415,7 +436,7 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
 
             <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
             <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
-            <button class="ui-mini" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
+            <button class="ui-mini" id="exportText" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
             <script type="text/javascript">
             var anchor = document.getElementById('export');
             var anchor2 = document.getElementById('export2');
@@ -443,9 +464,9 @@ filter: alpha(opacity=60); /* For IE8 and earlier */
           <div data-tap-toggle="false" data-role="header" data-position="fixed">
 
             <ul>
-              <li><a class="ui-btn-active" href="#tabs-1">Scorer</a></li>
-              <li><a href="#tabs-2">Timers</a></li>
-              <li><a href="#tabs-3">Saves</a></li>
+              <li><a id="scorerTitle" class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+              <li><a id="timersTitle" href="#tabs-2">Timers</a></li>
+              <li><a id="savesTitle" href="#tabs-3">Saves</a></li>
             </ul>
           </div>
         </div>
@@ -581,5 +602,5 @@ Hydro Dynamics Scoring System Version 1.2.0. Copyright (c) EV3Lessons.com
 if (language =='he') {
 document.write('<style>td {text-align: right;}</style>')
 }
-
+initpage();
   </script>
