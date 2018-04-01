@@ -1,0 +1,606 @@
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<head>
+  <title>Scorer</title>
+  <meta charset="UTF-8" />
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  $(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+  });
+
+
+  </script>
+  <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="exporting.js"></script>
+  <script src="scorer.js"></script>
+  <script src="timers.js"></script>
+  <script src="saver.js"></script>
+  <script src="html.js"></script>
+  <script type="text/javascript" src="jqm-spinbox.min.js"></script>
+
+  <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="scorer.min.css" />
+
+
+
+<style>
+ a:link img {
+   opacity: 1.0;
+filter: alpha(opacity=100); /* For IE8 and earlier */
+filter: alpha(opacity=60); /* For IE8 and earlier */
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+ }
+ a:hover img {
+   opacity: 0.6;
+filter: alpha(opacity=60); /* For IE8 and earlier */
+   transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+ }
+  table tr td {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-collapse: collapse;
+  }
+  //      tr td {display: inline-block; }
+
+
+  #missionlist{
+    width: auto;
+    -webkit-column-width: 325px;
+    -moz-column-width: 325px;
+    column-width: 325px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
+
+  }
+
+  .missionFmt {
+    padding-right:3;
+    padding-left:0
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+
+  </style>
+
+
+  <script>
+  //langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche']
+
+  langs=['en-us:United States:English','pt-br:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský','nl:Netherlands:Nederlands','el:Greece:ελληνικά','hu:Hungary:Magyar','he:Israel:עִבְרִית‎','fr:France:français']
+
+
+  function get_browser_version(){
+    var N=navigator.appName, ua=navigator.userAgent, tem;
+    var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+    if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+    M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
+    return M[1];
+  }
+
+  function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+
+  function deleteAllCookies() {
+    if (navigator.cookieEnabled = true) {
+      var c = document.cookie.split("; ");
+      for (i in c)
+      document.cookie =/^[^=]+/.exec(c[i])[0]+"=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
+  }
+
+
+  function createCookie(lang){
+    localStorage.lang = "ev3cookie"+lang
+  }
+
+  var browser = navigator.appName;
+  var version = get_browser_version();
+
+  if (browser=="Microsoft Internet Explorer") {
+    if (version<="9.0")
+    document.location.href="http://classic.ev3lessons.com/"
+  }
+
+  if (getParameterByName('lang') != null) {
+    var language = getParameterByName('lang');
+    //if (getParameterByName('langsave') != 'no') {
+    localStorage.lang = "ev3cookie"+language;
+    //}
+  } else {
+    var language = 'en-us'
+
+    navlang=navigator.language.split('-')[0]
+    //str =localStorage.lang
+    var i;
+    for (i = 0; i < langs.length; i++) {
+      str=langs[i].split(':')[0]
+      tmp =str.search(navlang)
+      if (tmp != -1) {
+        //window.location.hash = "#"+langs[i].split(':')[0]
+        //  setTimeout(function(){location.reload(true);},100);
+        var language = langs[i].split(':')[0];
+
+      }
+    }
+  }
+
+  document.cookie=""
+
+  str =localStorage.lang
+  if (localStorage.lang && window.location.hash == "") {
+    var i;
+    for (i = 0; i < langs.length; i++) {
+      tmp =str.search('ev3cookie'+langs[i].split(':')[0])
+      if (tmp != -1) {
+        //window.location.hash = "#"+langs[i].split(':')[0]
+        //  setTimeout(function(){location.reload(true);},100);
+        var language = langs[i].split(':')[0];
+
+      }
+    }
+
+  }
+
+  </script>
+  <script src="languages.js"></script>
+
+
+</head>
+
+<body onload="check_missions('piperemoval');recalc(0,'piperemoval',0);initpage();">
+
+  <br>
+  <table style="width:98%; text-align:center; margin-left:auto; margin-right:auto;">
+    <tr>
+      <td style="width:25%; text-align:left">
+        <script>
+        var page = window.location.href.split("?")[0].split("#")[0] + '?lang=';
+        var i;
+        for (i = 0; i < langs.length; i++) {
+          window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
+        }
+        var i;
+        for (i = 0; i < langs.length; i++) {
+          //    window[langs[i].split(':')[0].split('-')[0]] = ''+ page +langs[i].split(':')[0];
+          document.write('\
+          <a data-ajax="false" href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="createCookie(\''+langs[i].split(":")[0]+'\');window.location.href="'+window[langs[i].split(":")[0].split("-")[0]]+'";setTimeout(function(){location.reload(true);},100)" style=" text-decoration: none">\
+          <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
+          </a>\
+          ')
+        }
+        </script>
+
+      </td>
+      <td style="width:50%; font-size:24px; text-align:center">
+        <b id='title'>Hydro Dynamics Scorer</b>
+      </td>
+      <td style="width:25%; font-size:12px; text-align:right">
+        by <a href="http://ev3lessons.com" data-ajax="false"><img src="images/ev3lessons.jpg" width="139"></a>
+      </td>
+    </tr>
+  </table>
+
+  <div data-tap-toggle="false" data-role="footer" style="background-color: blue; font-size: 120%; color: white;" data-theme="a" data-position="fixed">
+    <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points</i><i>: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini" onclick='document.getElementById("missions").reset();loadsave("piperemoval|0,flow|0,pumpaddition|0,rain|0,filter|0,watertreatment|0,fountain|0,manholecovers|0,manholecovers2|0,tripod3|0,pipereplacement|0,pipeconstruction3|0,sludge|0,flower1|0,flower2|0,well3|0,fire|0,collection1|0,collection2|0,collection3|0,slingshot1|0,slingshot2|0,faucet|0,penalty|0");'></h1>
+  </div>
+
+  <div role="main" class="ui-content" style="padding-right:0; padding-left:0">
+    <div data-role="tabs">
+
+      <div id="tabs-1">
+
+        <form id="missions">
+          <div id="missionlist">
+            <script>
+
+            starttable('M01', M01title, 'M01.png' , ['piperemoval'], 0)
+            createbutton("piperemoval", 20, M01a)
+            endtable()
+
+            starttable('M02', M02title,'M02.png', ['flow'], 0)
+            createbutton("flow", 25 , M02a)
+            endtable()
+
+            starttable('M03', M03title,'M03.png', ['pumpaddition'], 0)
+            createbutton("pumpaddition", 20 , M03a)
+            endtable()
+
+            starttable('M04', M04title,'M04.png', ['rain'], 0)
+            createbutton("rain", 20 , M04a)
+            endtable()
+
+            starttable('M05', M05title, 'M05.png' , ['filter'], 0)
+            createbutton("filter", 30 , M05a)
+            endtable()
+
+            starttable('M06', M06title, 'M06.png', ['watertreatment'], 0)
+            createbutton("watertreatment", 20, M06a)
+            endtable()
+
+            starttable('M07', M07title, 'M07.png' , ['fountain'], 0)
+            createbutton("fountain", 20 , M07a)
+            endtable()
+
+            starttable('M08', M08title, 'M08.png', ['manholecovers', 'manholecovers2'], 0)
+            createrange("manholecovers", 15 , 0, 2, 0, M08a,'')
+            createbutton("manholecovers2", 30 , M08b)
+            endtable()
+
+            starttable('M09', M09title, 'M09.png' , ['tripod3'], 0)
+            create3button("tripod3", 15, 20 , M09c)
+            endtable()
+
+            starttable('M10', M10title, 'M10.png' , ['pipereplacement'], 0)
+            createbutton("pipereplacement", 20 , M10a)
+            endtable()
+
+            starttable('M11', M11title, 'M11.png' , ['pipeconstruction3'], 0)
+            create3button("pipeconstruction3", 15, 20, M11c)
+            endtable()
+
+            starttable('M12', M12title, 'M12.png', ['sludge'], 0)
+            createbutton("sludge", 30 , M12a)
+            endtable()
+
+            starttable('M13', M13title, 'M13.png', ['flower1', 'flower2'], 0)
+            createbutton("flower1", 30 , M13a)
+            createbutton("flower2", 30 , M13b)
+            endtable()
+
+            starttable('M14', M14title, 'M14.png', ['well3'], 0)
+            create3button("well3", 15, 25, M14c)
+            endtable()
+
+            starttable('M15', M15title, 'M15.png', ['fire'], 0)
+            createbutton("fire", 25, M15a)
+            endtable()
+
+            starttable('M16', M16title, 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+            createbutton("collection1", 10, M16a)
+            createrange("collection2", 10, 0, 4, 0, M16b,'')
+            createbutton("collection3", 30, M16c)
+            createcomment(M16d)
+            endtable()
+
+            starttable('M17', M17title, 'M17.png', ['slingshot1', 'slingshot2'], 0)
+            createbutton("slingshot1", 20, M17a)
+            createbutton("slingshot2", 15, M17b)
+            endtable()
+
+            starttable('M18', M18title, 'M18.png', ['faucet'], 0)
+            createbutton("faucet", 25, M18a)
+            endtable()
+
+            starttable('P', PenaltyTitle, 'penalty.png', ['penalty'], 0)
+            createrange("penalty", -5 , 0, 6, 0, PenaltyText,'')
+            endtable()
+            </script>
+          </div>
+          <script>
+
+          createsliderenables('manholecovers','manholecovers2')
+          createbuttonenables('flower1','flower2')
+          createbuttonenables('slingshot1','slingshot2')
+
+function initpage() {
+          document.getElementById('title').innerHTML = title
+          document.getElementById('resetTxt').value = resetText
+          document.getElementById('pointsTxt').innerHTML = pointsText
+
+
+          document.getElementById('saveText').innerHTML = savescoreText
+          document.getElementById('loadText').innerHTML = loadsaveText
+          document.getElementById('deleteText').innerHTML = deletesaveText
+          document.getElementById('importText').innerHTML = importsaveText
+          document.getElementById('exportText').innerHTML = exportsaveText
+
+          document.getElementById('startText').innerHTML = startText
+          document.getElementById('stopText').innerHTML = stopText
+          document.getElementById('resetText').innerHTML = resetText
+
+          document.getElementById('startSW').innerHTML = startText
+          document.getElementById('stopSW').innerHTML = stopText
+          document.getElementById('resetSW').innerHTML = resetText
+
+          document.getElementById('scorerTitle').innerHTML = scorerText
+          document.getElementById('timersTitle').innerHTML = timersText
+          document.getElementById('savesTitle').innerHTML = savesText
+}
+          </script>
+          <br>
+        </form>
+      </div>
+
+      <div id="tabs-2">
+        <p>
+          <div class="ui-mini" id="Timer">
+            Timer:
+            <table style="border: 10px solid black; border-collapse: collapse;">
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                  <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                  </p>
+                </td>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button id="startText" style="margin:0" onclick="CDtimer()">Start</button>
+                </td>
+              </tr>
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button id="resetText" style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="stopText" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+
+          <div class="ui-mini" id="Stopwatch">
+            Stopwatch:
+            <table style="border: 10px solid black; border-collapse: collapse;">
+              <tr style="border: 10px solid black; border-collapse: collapse;">
+                <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                  <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                  </p>
+                </td>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
+                </td>
+              </tr>
+              <tr>
+                <td style="border: 10px solid black; border-collapse: collapse;">
+                  <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p>
+      </div>
+
+
+      <div id="tabs-3">
+        <div style="width: 340">
+          <button type="button" id="saveText" onclick="sharksave=0;saveLocalStorage() ; saver();loadsaves(); drawBasic(); maximum = window.localStorage.DRHDSscorer.split('/').length-1" >Save Score</button></div>
+        <br>
+
+        <div class="ui-grid-b ui-responsive">
+          <div style="width: 170" class="ui-block-a" align="left" style="float: left;">  <div class="button-wrap">
+            <button style="text-align: left;" id="loadText" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button></div></div>
+            <div class="ui-block-b" style="width: 170">
+
+              <div data-role="stepper" data-direction="vertical">
+              <style>
+              input[type=number]::-webkit-outer-spin-button,
+              input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+              }
+
+              input[type=number] {
+                -moz-appearance:textfield;
+                }		</style>
+                <script>
+                start = 1; maximum = window.localStorage.DRHDSscorer.split('/').length-1 ; min=1 ; increment = 1;mission = "saveid" ;
+</script><script>
+                document.write(' <input data-role="spinbox"   type="number"  data-highlight="true" data-theme="b" onchange="if (this.value > maximum) {this.value = this.value - 1}" search="2" class="quantity" data-show-value="true" name="'+mission+'" id="'+mission+'" value="'+start+'" min="'+min+'" step="1" >')
+
+                </script>
+              </div>
+
+            </div>
+
+          </div>
+          <div style="width: 340">	  <button id="deleteText" class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRHDSscorer = ''; window.localStorage.DRHDS1scorer = ''; loadsaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button></div>
+
+          <div style="width: 340">
+            <div id="container" style="min-width: 310px; height: 200px; margin: 0 auto"></div>
+            <div id="saves" ></div>
+
+            <button id="importText" class="ui-mini" onclick=" document.getElementById('fileInput').click() ;
+            //alert('choose .AA1EV3 file') ; document.getElementById('fileInput2').click();">Import Save</button>
+
+            <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput">
+            <input onchange="setTimeout(function(){ loadsaves(); drawBasic();document.getElementById('saveid').max = window.localStorage.DRHDSscorer.split('/').length-1;},300)" style=" position: fixed;    bottom: -10000;   left: -100000; }, 30);" type="file" id="fileInput2">
+
+            <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export" href="#">Export Saves</a>
+            <a style=" position: fixed;    bottom: -10000;   left: -100000;"id="export2" href="#">Export2 Saves</a>
+            <button class="ui-mini" id="exportText" onclick="document.getElementById('export').click(); document.getElementById('export2').click()">Export Save</button>
+            <script type="text/javascript">
+            var anchor = document.getElementById('export');
+            var anchor2 = document.getElementById('export2');
+
+            anchor.onclick = function() {
+              var currentTime = new Date()
+              var day = currentTime.getDate()
+              anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDSscorer + ';' + window.localStorage.DRHDS1scorer);
+              anchor.download = day + 'myscores.DRHD';
+              //     setTimeout(function(){   ;  anchor.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);    anchor.download = day + 'myscores.AA1EV3';}, 50)
+            };
+            anchor2.onclick = function() {
+              var currentTime = new Date()
+              //    var day = currentTime.getDate()
+              //    anchor2.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(window.localStorage.DRHDS1scorer);
+              //    anchor2.download = day + 'myscores.AA1EV3';
+            }
+            </script>
+
+          </div>
+
+        </div>
+        <div data-role="navbar">
+
+          <div data-tap-toggle="false" data-role="header" data-position="fixed">
+
+            <ul>
+              <li><a id="scorerTitle" class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+              <li><a id="timersTitle" href="#tabs-2">Timers</a></li>
+              <li><a id="savesTitle" href="#tabs-3">Saves</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script>
+window.onload = function() {
+  loadsaves(); drawBasic();
+
+  //document.getElementById('noshark').click()
+  check_missions('slingshot2');recalc(0,'slingshot2', 0)
+  //   check_missions('shark');recalc(0,'shark',1);$('#noallsamples').checkboxradio('disable');$('#yesallsamples').checkboxradio('disable');
+  var fileInput = document.getElementById('fileInput');
+
+  fileInput.addEventListener('change', function(e) {
+    var file = fileInput.files[0];
+    var textType = /text.*/;
+
+    if (1==1) {
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        data = reader.result;
+        //alert(data)
+
+        window.localStorage.DRHDSscorer = data.split(';')[0];
+        window.localStorage.DRHDS1scorer = data.split(';')[1];
+      }
+
+      reader.readAsText(file);
+    } else {
+
+    }
+  });
+
+
+
+  var fileInput2 = document.getElementById('fileInput2');
+
+  fileInput2.addEventListener('change', function(e) {
+    var file2 = fileInput2.files[0];
+    var textType2 = /text.*/;
+
+    if (1==1) {
+      var reader2 = new FileReader();
+
+      reader2.onload = function(e) {
+
+        data2 = reader2.result;
+        //alert(data2)
+        window.localStorage.DRHDS1scorer =  data2;
+      }
+
+      reader2.readAsText(file2);
+    } else {
+
+    }
+  });
+
+}
+</script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+</script>
+ <script>
+countrycode = language.split('-')[0]
+  if (countrycode != "he" && countrycode != "hu" && countrycode !=
+  "en" && countrycode != "el") {
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/'+countrycode+'/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/'+language+'.svg"></a><br>')
+} else if (countrycode == "he"){
+  
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/'+language+'.svg"></a><br>')
+
+}
+
+  if (countrycode != "hu") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+ if (countrycode != "en") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/us/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+ if (countrycode != "el") {
+
+} else {
+
+   document.write('<a target="_blank"\
+  href="https://itunes.apple.com/gr/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+<img height="68" style="padding: 15px" \
+src="app-store/en-us.svg"></a><br>')
+}
+countrycode = language.split('-')[0]
+
+
+
+
+  if (language == 'he') {
+  countrycode = "iw"
+  }
+  document.write('<a target="_blank"\
+  href="https://play.google.com/store/apps/details?id=com.ev3lessons.fllhydrodynamicsscorer&hl='+countrycode+'">\
+<img height="100" \
+src="google-play/'+countrycode+'_get.svg"></a>')
+
+</script><br>
+Hydro Dynamics Scoring System Version 1.2.0. Copyright (c) EV3Lessons.com
+<script>
+if (language =='he') {
+document.write('<style>td {text-align: right;}</style>')
+}
+initpage();
+  </script>

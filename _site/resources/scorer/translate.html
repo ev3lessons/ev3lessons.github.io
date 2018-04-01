@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>Translator</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<style>
+input {
+  width: 300px;
+  font-size: 15px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: serif;
+
+
+}
+
+</style>
+<style>h1 {color:red;font-family:verdana;font-size:200%;} b  {    color:green;    font-family:arial;    font-size:100%} p  {    color:brown;    font-family:arial;    font-size:110%}</style>
+<div ng-app="">
+<h1>EV3Lessons Hydro Dynamics Translator v0.1.0</h1>
+<p>Welcome to the translator system for the EV3Lessons.com FLL Scorer. We appreciate you help translating.
+<pre border="0" style="font-size:13px;"><span class="inner-pre" style="font-size: 20px">
+2 Letter Language Code and/or country code: <input type="text" ng-model="trans" placeholder="Translation Here"> (Should be like en-us,es,pt-br,nl,de,he,el...)
+
+Please translate the following in the box (Ignore Mission Number - Just for reference):
+
+Yes <input type="text" ng-model="yes" placeholder="Translation Here">
+No <input type="text" ng-model="no" placeholder="Translation Here">
+Hydro Dynamics Scorer <input type="text" ng-model="title" placeholder="Translation Here">
+
+M01 - Pipe Removal <input type="text" ng-model="M01A" placeholder="Translation Here">
+Is the broken pipe completely in Base? <input type="text" ng-model="M01B" placeholder="Translation Here">
+
+M02 - Flow <input type="text" ng-model="M02A" placeholder="Translation Here">
+Is one Big Water in the other team's field as a result of turning the Pump System's valve(s)?  <input type="text" ng-model="M02B" placeholder="Translation Here">
+
+M03 - Pump Addition <input type="text" ng-model="M03A" placeholder="Translation Here">
+Is the Pump Addition in contact with the mat and completely inside the Pump Addition target? <input type="text" ng-model="M03B" placeholder="Translation Here">
+
+M04 - Rain <input type="text" ng-model="M04A" placeholder="Translation Here">
+Did at least one Rain come out of the Rain Cloud? <input type="text" ng-model="M04B" placeholder="Translation Here">
+
+M05 - Filter <input type="text" ng-model="M05A" placeholder="Translation Here">
+Has the Filter been moved north until the lock latch drops? <input type="text" ng-model="M05B" placeholder="Translation Here">
+
+M06 - Water Treatment <input type="text" ng-model="M06A" placeholder="Translation Here">
+Has the Big Water been ejected, due only to moving the Toilet lever? <input type="text" ng-model="M06B" placeholder="Translation Here">
+
+M07 - Fountain <input type="text" ng-model="M07A" placeholder="Translation Here">
+Has the Fountain's middle layer risen some obvious height, due only to a Big Water in the grey tub? <input type="text" ng-model="M07B" placeholder="Translation Here">
+
+M08 - Manhole Covers <input type="text" ng-model="M08A" placeholder="Translation Here">
+How many Manhole covers are flipped over past vertical without ever reaching Base? <input type="text" ng-model="M08B" placeholder="Translation Here">
+
+Are both Manhole covers completely in separate Tripod targets? <input type="text" ng-model="M08C" placeholder="Translation Here">
+
+M09 - Tripod <input type="text" ng-model="M09A" placeholder="Translation Here">
+Is the inspection camera Tripod partly in either Tripod target, with all of its feet touching the mat? <input type="text" ng-model="M09B" placeholder="Translation Here">
+
+Is the inspection camera Tripod completely in either Tripod target, with all of its feet touching the mat?  <input type="text" ng-model="M09C" placeholder="Translation Here">
+
+Is the inspection camera Tripod partially or completely in either Tripod target, with all of its feet touching the mat? <input type="text" ng-model="M09D" placeholder="Translation Here">
+
+
+M10 - Pipe Replacement <input type="text" ng-model="M10A" placeholder="Translation Here">
+Is the New Pipe in the location the Broken Pipe was, in full/flat contact with the mat? <input type="text" ng-model="M10B" placeholder="Translation Here">
+
+
+M11 - Pipe Construction <input type="text" ng-model="M11A" placeholder="Translation Here">
+Is the New Pipe partly in its target, in full/flat contact with the mat? <input type="text" ng-model="M11B" placeholder="Translation Here">
+
+Is the New Pipe completely in its target, in full/flat contact with the mat?  <input type="text" ng-model="M11C" placeholder="Translation Here">
+
+
+
+M12 - Sludge <input type="text" ng-model="M12A" placeholder="Translation Here">
+Is the Sludge touching the visible wood of any of the six drawn garden boxes? <input type="text" ng-model="M12B" placeholder="Translation Here">
+
+M13 - Flower <input type="text" ng-model="M13A" placeholder="Translation Here">
+Has the Flower risen some obvious height and stays there, due only to a Big Water in the brown pot? <input type="text" ng-model="M13B" placeholder="Translation Here">
+
+Does the Flower also have at least one Rain in the purple part, touching nothing but the Flower model. <input type="text" ng-model="M13C" placeholder="Translation Here">
+
+
+M14 - Water Well <input type="text" ng-model="M14A" placeholder="Translation Here">
+Is the Water Well in contact with the mat and that contact is partly inside the Water Well target? <input type="text" ng-model="M14B" placeholder="Translation Here">
+
+Is the Water Well in contact with the mat and that contact is completely in the Water Well target? <input type="text" ng-model="M14C" placeholder="Translation Here">
+
+
+M15 - Fire <input type="text" ng-model="M15A" placeholder="Translation Here">
+Did the fire drop only by making the Firetruck apply direct force to the House's lever? <input type="text" ng-model="M15B" placeholder="Translation Here">
+
+
+M16 - Water Collection <input type="text" ng-model="M16A" placeholder="Translation Here">
+
+Is there at least one Rain touching the mat in the Water Target and touching nothing else other than the target and/or other water? <input type="text" ng-model="M16B" placeholder="Translation Here">
+
+How many Big Water are there that are touching the mat in the Water Target and touching nothing else other than the target and/or other water? <input type="text" ng-model="M16C" placeholder="Translation Here">
+
+Is there at least one Big Water on top of the above Big Water with nothing touching it but other water? <input type="text" ng-model="M16D" placeholder="Translation Here">
+
+Note: Target must never touch the Off-Limits Line. Water may be touching the target, and/or other water, but not be touching nor guided by anything else.
+ <input type="text" ng-model="M16E" placeholder="Translation Here">
+
+
+M17 - Slingshot <input type="text" ng-model="M17A" placeholder="Translation Here">
+Is the Slingshot completely in its target? <input type="text" ng-model="M17B" placeholder="Translation Here">
+
+Is the Dirty Water and a Rain completely in the Slingshot target? <input type="text" ng-model="M17C" placeholder="Translation Here">
+
+M18 - Faucet <input type="text" ng-model="M18A" placeholder="Translation Here">
+Is the water level obviously more blue than white as seen from above the cup, *only by turning the Faucet handle? <input type="text" ng-model="M18B" placeholder="Translation Here">
+
+Penalties: <input type="text" ng-model="PENA" placeholder="Translation Here">
+How many penalties are in the white triangle area? <input type="text" ng-model="PENB" placeholder="Translation Here">
+
+
+</span></pre>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<b style="color:green;    font-family:arial;    font-size:100%">
+  Next: Please download the following file and attach it into an email to <a href="mailto:team@ev3lessons.com">team@ev3lessons.com</a>.  Thank you for translating!
+<br><br>
+<a href="#" id="downloadLink">Download the code to send</a>
+
+<script>
+
+
+function downloadInnerHtml(filename, elId, mimeType) {
+  //    var elHtml = document.getElementById(elId).innerHTML;
+
+    var elHtml = document.getElementById('code').firstChild.data
+    var link = document.createElement('a');
+    mimeType = mimeType || 'text/plain';
+
+    link.setAttribute('download', filename);
+    link.setAttribute('href', 'data:' + mimeType  +  ';charset=utf-8,' + encodeURIComponent(elHtml));
+    link.click();
+}
+
+$('#downloadLink').click(function(){
+ fileName =  'EV3Lessons-hydro-dynamics-scorer-'+document.getElementById('mylang').value+'.js';
+
+    downloadInnerHtml(fileName, 'main','text/html');
+});
+</script>
+<input style="display:none" type="text" id="mylang" value="{{trans}}">
+</b>
+<pre id="code" style="  display:none;  border-style: solid;
+" border="15">
+else if (language == '{{trans}}') {
+yes = '{{yes}}'
+no = '{{no}}'
+title = '{{title}}'
+                startrow(all_screen)
+
+                starttable('M01', '{{M01A}}','M01.png' , ['piperemoval'], 0)
+                createbutton("piperemoval", 20, '{{M01B}}')
+                endtable()
+
+                starttable('M02', '{{M02A}}','M02.png', ['flow'], 0)
+                createbutton("flow", 25 , '{{M02B}}')
+                endtable()
+
+                starttable('M03', '{{M03A}}','M03.png', ['pumpaddition'], 0)
+                createbutton("pumpaddition", 20 , '{{M03B}}')
+                endtable()
+
+                starttable('M04', '{{M04A}}','M04.png', ['rain'], 0)
+                createbutton("rain", 20 , '{{M04B}}')
+                endtable()
+
+                starttable('M05', '{{M05A}}','M05.png' , ['filter'], 0)
+                createbutton("filter", 30 , '{{M05B}}')
+                endtable()
+
+                starttable('M06', '{{M06A}}','M06.png', ['watertreatment'], 0)
+                createbutton("watertreatment", 20, '{{M06B}}')
+                endtable()
+
+
+                starttable('M07', '{{M07A}}','M07.png' , ['fountain'], 0)
+                createbutton("fountain", 20 , '{{M07B}}')
+                endtable()
+
+                starttable('M08', '{{M08A}}','M08.png', ['manholecovers', 'manholecovers2'], 0)
+                createrange("manholecovers", 15 , 0, 2, 0, '{{M08B}}','')
+                createbutton("manholecovers2", 30 , '{{M08C}}')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+
+                starttable('M09', '{{M09A}}','M09.png' , ['tripod','tripod2'], 0)
+                createbutton("tripod", 15 , '{{M09B}}')
+                createbutton("tripod2", 20 , '{{M09C}}')
+                createbuttonconflict('tripod','tripod2','')
+                endtable()
+
+                breakrow(mobile,mobile1)
+
+
+                starttable('M10', '{{M10A}}','M10.png' , ['pipereplacement'], 0)
+                createbutton("pipereplacement", 20 , '{{M10B}}')
+                endtable()
+
+
+                starttable('M11', '{{M11A}}','M11.png' , ['pipeconstruction', 'pipeconstruction2'], 0)
+                createbutton("pipeconstruction", 15, '{{M11B}}')
+                createbutton("pipeconstruction2", 20, '{{M11C}}')
+                createbuttonconflict('pipeconstruction','pipeconstruction2','')
+                endtable()
+
+                starttable('M12', '{{M12A}}','M12.png', ['sludge'], 0)
+                createbutton("sludge", 30 ,'{{M12B}}')
+                endtable()
+
+                starttable('M13', '{{M13A}}','M13.png', ['flower1', 'flower2'], 0)
+                createbutton("flower1", 30 , '{{M13B}}')
+                createbutton("flower2", 30 , '{{M13C}}')
+                createbuttonenables('flower1','flower2')
+                endtable()
+
+                starttable('M14', '{{M14A}}','M14.png', ['well','well2'], 0)
+                createbutton("well", 15, '{{M14B}}')
+                createbutton("well2", 25, '{{M14C}}')
+                createbuttonconflict('well','well2','')
+                endtable()
+
+                breakrow(mobile1,100000)
+
+                starttable('M15', '{{M15A}}','M15.png', ['fire'], 0)
+                createbutton("fire", 25, '{{M15B}}')
+                endtable()
+
+                starttable('M16', '{{M16A}}', 'M16.png', ['collection1', 'collection2', 'collection3'], 1)
+                createbutton("collection1", 10, '{{M16B}}')
+                createrange("collection2", 10, 0, 4, 0, '{{M16C}}','')
+                createbutton("collection3", 30, '{{M16D}}')
+                createcomment('{{M16E}}')
+                endtable()
+
+                starttable('M17', '{{M17A}}','M17.png', ['slingshot1', 'slingshot2'], 0)
+                createbutton("slingshot1", 20, '{{M17B}}')
+                createbutton("slingshot2", 15, '{{M17C}}')
+                createbuttonenables('slingshot1','slingshot2')
+                endtable()
+
+                starttable('M18', '{{M18A}}','M18.png', ['faucet'], 0)
+                createbutton("faucet", 25, '{{M18B}}')
+                endtable()
+
+                starttable('P','{{PENA}}','penalty.png', ['penalty'], 0)
+                createrange("penalty", -5 , 0, 6, 0, '{{PENB}}','')
+                endtable()
+
+
+
+                endrow(all_screen)
+}
+</pre>
+</body><br><br><br>
+</html>
