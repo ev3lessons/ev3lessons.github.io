@@ -1,0 +1,11 @@
+---
+title: "Port View"
+searchterms: "toggle beginner portview port_view brick ev3"
+lang: "it"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/it/beginner/PortView.pptx">PPTX</a>,
+ <a href="translations/it/beginner/PortView.pdf">PDF</a>
+ </li>
+ </ul>

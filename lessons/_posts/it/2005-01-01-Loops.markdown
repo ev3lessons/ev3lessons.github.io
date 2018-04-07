@@ -1,0 +1,11 @@
+---
+title: "Loops"
+searchterms: "toggle beginner loops programming_app app ipad tablet android"
+lang: "it"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="translations/it/beginner/Loop.pptx">PPTX</a>,
+ <a href="translations/it/beginner/Loop.pdf">PDF</a>
+ </li>
+ </ul>
