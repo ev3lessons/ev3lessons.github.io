@@ -8,7 +8,7 @@ minidescription: "This article discusses the importance of learning from experts
 sidetitle: ""
 side: ""
 author: "Kalai Sankar<br>Master Builders<br>Florida, USA"
-authorim: "/images/people/female.jpg"
+authorim: "/images/people/KalaiSanjar.jpg"
 ---
 
 Our team's favorite FLL Core value is " We know our coaches and mentors don't have all the answers; we learn together." Since the coaches and mentors do not have all the answers to the curious questions of our team, we make arrangements for lots of field trips and visiting guests.
