@@ -13,7 +13,7 @@ authorim: "/images/people/Seshanbros.jpg"
 
 FIRST LEGO League is about the iterative design process when it comes to both your research project as well as your robot.  It is okay to fail the first time and even the tenth time. The key is to persist until you achieve your goal.
 
-![](/images/coachcorner/Iterative1.png)
+![](/images/coachcorner/Iterative1.jpg)
 
 ### Don’t Give Up
 
