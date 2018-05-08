@@ -21,7 +21,7 @@ Shipping your presentation materials and your booth decoration materials ahead o
 
 ### Robot and posters as luggage
 
-Keeping your robot as carry-on luggage is optimal.
+Keeping your robot as carry-on luggage is optimal.<br>
 1) Some teams purchase Pelican cases for their robot. These cases come with foam padding which can be customized for your robot's shape. They are intended for high-end camera equipment.  These are not cheap.<br>
 2) See-through, clear boxes can help airport security with identifying the contents. Place your robot and attachments in these boxes. Use bubble wrap for padding and Saran/cling-wrap to secure any pieces. The box will need to fit in the overhead compartment or under your seat. So, check in advance.<br>
 3) If you check in your robot/attachments, be sure to take out the lithum battery and keep it as a carry-on.<br>
