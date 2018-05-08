@@ -22,12 +22,12 @@ Shipping your presentation materials and your booth decoration materials ahead o
 ### Robot and posters as luggage
 
 Keeping your robot as carry-on luggage is optimal.
-1) Some teams purchase Pelican cases for their robot. These cases come with foam padding which can be customized for your robot's shape. They are intended for high-end camera equipment.  These are not cheap.
-2) See-through, clear boxes can help airport security with identifying the contents. Place your robot and attachments in these boxes. Use bubble wrap for padding and Saran/cling-wrap to secure any pieces. The box will need to fit in the overhead compartment or under your seat. So, check in advance.
-3) If you check in your robot/attachments, be sure to take out the lithum battery and keep it as a carry-on.
-4) Take apart the attachment/robot in "good places" and as needed to fit in the box. Take photos of everything in case you have to reassemble and repair at the other end.
-5) If you want to check in your poster boards, consider sandwiching them between two pieces on wood and then checking that in as luggage as well.
-6) You could also consider creating your poster on a flexible material so that it is rollable and can be taken with you on your flight as a poster tube.
+1) Some teams purchase Pelican cases for their robot. These cases come with foam padding which can be customized for your robot's shape. They are intended for high-end camera equipment.  These are not cheap.<br>
+2) See-through, clear boxes can help airport security with identifying the contents. Place your robot and attachments in these boxes. Use bubble wrap for padding and Saran/cling-wrap to secure any pieces. The box will need to fit in the overhead compartment or under your seat. So, check in advance.<br>
+3) If you check in your robot/attachments, be sure to take out the lithum battery and keep it as a carry-on.<br>
+4) Take apart the attachment/robot in "good places" and as needed to fit in the box. Take photos of everything in case you have to reassemble and repair at the other end.<br>
+5) If you want to check in your poster boards, consider sandwiching them between two pieces on wood and then checking that in as luggage as well.<br>
+6) You could also consider creating your poster on a flexible material so that it is rollable and can be taken with you on your flight as a poster tube.<br>
 
 ![](/images/coachcorner/Pelican.jpg)
 ![](/images/coachcorner/box.jpeg)
@@ -39,8 +39,6 @@ Go to a local store and buy a poster board at your end destination.  Stick the p
 ### Don't bother with poster boards
 
 If the Core Values poster board is not required at your event, consider making smaller (11"X17") printouts or use other props instead. The goal would be to only bring things that will fit in your luggage.
-
-### 
 
 
 
