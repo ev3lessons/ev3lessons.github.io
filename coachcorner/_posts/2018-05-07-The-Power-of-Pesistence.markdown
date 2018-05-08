@@ -15,6 +15,16 @@ FIRST LEGO League is about the iterative design process when it comes to both yo
 
 ![](/images/coachcorner/Iterative1.jpg)
 
+### Design-Build-Test-Learn
+
+"An iterative design strategy is based on the cyclic process of developing an initial design or prototype, testing that prototype, analyzing its performance against specific metrics, learning what worked and what did not work, designing a new protoype based on what was learned, and completing the cycle again. The goal is to improve design or prototype quality and functionality."
+
+Source: Office of Biological and Environmental Research of the U.S. Department of Energy Office of Science.
+
+This can be directly applied to FIRST LEGO League teams who need to design, build, test, and learn every time they try to solve a problem.
+
+![](/images/coachcorner/Iterative.jpg)
+
 ### Don’t Give Up
 
 Don't give up when version one doesn't work. It's just version one. You might have two versions or even twenty versions before it is working the way you want. That is the whole point. Try your idea and then keep improving. Sometimes, the idea may not be a good one. It is okay to abandon the design and try again. Sometimes, the idea mostly works and just needs tweaking. Either way, don't give up!
@@ -29,11 +39,11 @@ Build and then test. If your version does not work, before you take it apart, ta
 
 ### Tell Your Judges
 
-Judges like to hear how you came up with the design, but also about problems you faced. They would love to see all your versions. Most teams don’t have some many LEGO bricks that they can keep old versions around. Therefore, take photos and keep them in an Engineering Journal or a Robot Design Poster Board.
+Judges like to hear how you came up with the design, but also about problems you faced. They would love to see all your versions. Most teams don’t have so many LEGO bricks that they can keep old versions around. Therefore, take photos and keep them in an Engineering Journal or share them on a Robot Design Poster Board.
 
 ### Even Master Builders Iterate
 
-Even Master Builders have to go through many versions. Look at all the versions of the Water Treatment Model from Hydro Dynamics!
+Even Master Builders have to go through many versions. Look at all the versions of the Water Treatment Model from Hydro Dynamics! Thank you to Master Lee Magpili who designs the FIRST LEGO League Challenge set models for sharing these models at World Festival 2018.
 
 ![](/images/coachcorner/Iterative3.jpg)
 
