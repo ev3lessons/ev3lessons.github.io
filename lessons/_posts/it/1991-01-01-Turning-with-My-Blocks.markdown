@@ -5,7 +5,7 @@ lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/Ruotare per gradi.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Ruotare per gradi.pdf">PDF</a>
+ <a href="translations/it/intermediate/Ruotare per gradi.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Ruotare per gradi.pdf">PDF</a>
  </li>
  </ul>

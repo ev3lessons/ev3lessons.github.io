@@ -7,12 +7,12 @@ lang: "it"
  <h4>Muoversi per distanze:</h4>
  <li class="ng-binding">
  Slides:
- <a href="translations/en-us/intermediate/Muoversi per distanze secondo i color.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Muoversi per distanze secondo i color.pdf">PDF</a>
+ <a href="translations/it/intermediate/Muoversi per distanze secondo i color.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Muoversi per distanze secondo i color.pdf">PDF</a>
  </li>
  <h4>Muoversi fino ad un colore:</h4>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/Muoversi fino ad un colore.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Muoversi fino ad un colore.pdf">PDF</a>
+ <a href="translations/it/intermediate/Muoversi fino ad un colore.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Muoversi fino ad un colore.pdf">PDF</a>
  </li>
  </ul>

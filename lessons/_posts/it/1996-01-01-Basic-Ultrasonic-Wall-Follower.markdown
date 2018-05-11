@@ -5,7 +5,7 @@ lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/Seguire un muro col sensore ad ultrasuoni.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Seguire un muro col sensore ad ultrasuoni.pdf">PDF</a>
+ <a href="translations/it/intermediate/Seguire un muro col sensore ad ultrasuoni.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Seguire un muro col sensore ad ultrasuoni.pdf">PDF</a>
  </li>
  </ul>

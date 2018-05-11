@@ -6,8 +6,8 @@ lang: "it"
  <ul>
 
  <li class="ng-binding">Slides (Updated Sept. 25, 2017):
- <a href="translations/en-us/intermediate/Blocchi personalizzati.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Blocchi personalizzati.pdf">PDF</a>
+ <a href="translations/it/intermediate/Blocchi personalizzati.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Blocchi personalizzati.pdf">PDF</a>
  </li>
  
  </ul>

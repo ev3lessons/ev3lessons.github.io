@@ -5,7 +5,7 @@ lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/I tasti del mattoncino.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/I tasti del mattoncino.pdf">PDF</a>
+ <a href="translations/it/intermediate/I tasti del mattoncino.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/I tasti del mattoncino.pdf">PDF</a>
  </li>
  </ul>

@@ -5,7 +5,7 @@ lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/Calibrazione.pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Calibrazione.pdf">PDF</a>
+ <a href="translations/it/intermediate/Calibrazione.pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Calibrazione.pdf">PDF</a>
  </li>
  </ul>

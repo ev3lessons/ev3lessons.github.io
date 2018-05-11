@@ -5,7 +5,7 @@ lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/intermediate/Differenti modi per muoversi..pptx">PPTX</a>,
- <a href="translations/en-us/intermediate/Differenti modi per muoversi..pdf">PDF</a>
+ <a href="translations/it/intermediate/Differenti modi per muoversi..pptx">PPTX</a>,
+ <a href="translations/it/intermediate/Differenti modi per muoversi..pdf">PDF</a>
  </li>
  </ul>
