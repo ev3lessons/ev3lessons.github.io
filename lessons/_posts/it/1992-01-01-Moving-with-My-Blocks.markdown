@@ -1,7 +1,7 @@
 ---
 title: "Muoversi per una certa distanza"
 searchterms: "toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with moving_with_my_blocks"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

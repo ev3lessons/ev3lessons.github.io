@@ -1,7 +1,7 @@
 ---
 title: "I tasti del mattoncino"
 searchterms: "toggle intermediate brick sensors brick_buttons brick_buttons_as_sensors"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

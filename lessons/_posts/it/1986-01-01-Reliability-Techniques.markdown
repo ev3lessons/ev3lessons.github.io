@@ -1,7 +1,7 @@
 ---
 title: "Migliorare l'affidabilitÖ della programmazione"
 searchterms: "toggle intermediate debugging alignment battery coast reliability reliability_techniques"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

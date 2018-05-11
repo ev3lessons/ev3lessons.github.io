@@ -1,7 +1,7 @@
 ---
 title: "Tecniche di Debug"
 searchterms: "toggle intermediate debugging sound display brick_buttons debugging_techniques"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

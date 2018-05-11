@@ -1,7 +1,7 @@
 ---
 title: "Ruotare per gradi"
 searchterms: "toggle intermediate myblocks moving turning my_blocks turn_degrees turning_with rotation_sensor turning_with_my_blocks"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

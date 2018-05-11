@@ -1,7 +1,7 @@
 ---
 title: "Fili dati"
 searchterms: "toggle intermediate software data_wires data logic numeric text"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

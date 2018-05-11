@@ -1,7 +1,7 @@
 ---
 title: "Sensore ad Infrarossi"
 searchterms: "toggle intermediate infrared sensors infrared_sensor beacon remote remote_control"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

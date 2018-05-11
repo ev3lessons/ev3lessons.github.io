@@ -1,7 +1,7 @@
 ---
 title: "Seguire un muro col sensore ad ultrasuoni"
 searchterms: "toggle intermediate ultrasonic wall follower sensors wall_follower ultrasonic_wall_follower basic_ultrasonic_wall_follower"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

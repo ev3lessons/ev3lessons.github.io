@@ -1,7 +1,7 @@
 ---
 title: "Variabili"
 searchterms: "toggle intermediate variables software wires wired_display_blocks inputs"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

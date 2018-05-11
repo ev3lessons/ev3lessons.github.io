@@ -1,7 +1,7 @@
 ---
 title: "Differenti modi per muoversi"
 searchterms: "toggle intermediate moving move_blocks synchronization motor_synchronization regulated_power unregulated_motor ramp_up ramp_down"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:

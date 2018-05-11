@@ -1,7 +1,7 @@
 ---
 title: "Calibrazione"
 searchterms: "toggle intermediate color colour colour_sensor sensors calibration calibrate colour_calibration color_sensor_calibration"
-lang: "en"
+lang: "it"
 ---
  <ul>
  <li class="ng-binding">Slides:
