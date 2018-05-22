@@ -8,7 +8,7 @@ minidescription: "This article is how to get your team to pick a research topic.
 sidetitle: ""
 side: ""
 author: "Faith Bongiorno<br><br>South Carolina, USA"
-authorim: "/images/people/Female.png"
+authorim: "/images/people/female.jpg"
 ---
 
 How do you get a FIRST LEGO League team to pick a meaningful project and find a good solution? It has to be organic and have full stakeholder buy in.
