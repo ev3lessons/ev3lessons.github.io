@@ -311,3 +311,72 @@ I teach them how to program, and answer questions, but I do not do any of the pr
   ga('send', 'pageview');
 
 </script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#snackbar {
+    visibility: hidden;
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 8px;
+    position: fixed;
+    z-index: 1000;
+    left: 0%;
+    bottom: 0px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+
+
+<!--<button onclick="myFunction()">Show Snackbar</button>
+-->
+<div id="snackbar">Notice: This page will be removed in the upcoming months. Do not worry as the resource continues to be avaliable at <a href="http://flltutorials.com/">FLL Tutorials</a>!</div>
+
+<script>
+myFunction()
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+//    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+</body>
+</html>

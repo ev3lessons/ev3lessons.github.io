@@ -320,6 +320,15 @@ alert(max)
   x ++
 	}
 
+
+		           
+    x = 0
+    while (x != document.getElementsByClassName("fll").length) {
+   document.getElementsByClassName("fll")[x].style.display = "none"
+  x ++
+		       }
+
+		       
   x = 0
   while (x != document.getElementsByClassName(value).length) {
    document.getElementsByClassName(value)[x].style.display = "block"
@@ -331,7 +340,9 @@ alert(max)
     while (x != document.getElementsByClassName("workshop").length) {
    document.getElementsByClassName("workshop")[x].style.display = "none"
   x ++
-}
+		       }
+
+		
 
 
 var i;
@@ -462,6 +473,19 @@ for (i = 0; i < langs.length; i++) {
                 <p style="" class="wro" id="wro-intro">These are
                 lessons to help WRO teams.
                 </p>
+
+
+                <p style="" class="fll" id="fll-intro">These are
+                lessons to help FLL teams.
+                </p>
+
+
+<div style="    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 8px;" id="fll-notice" class="fll">Notice: These FLL lessons will be removed in the upcoming months. Do not worry as the resource continues to be avaliable at <a href="http://flltutorials.com/">FLL Tutorials</a>!</div>
+
 
 <br>
 
@@ -1998,34 +2022,6 @@ jekyll = jekyll+1
 <script>
 if (getParameterByName('share') == "yes") {
 document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?lang='+language+'&q='+'Απεικόνιση Κειμένου και Γραφικών'.toLowerCase().split(' ').join('_'))\">Get shareable link for 'Απεικόνιση Κειμένου και Γραφικών' lesson</button>")
-}
-</script>
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle beginner ar">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">موضوع الدرس: التحدي النهائي للمرحلة الأساسية</a>')
-jekyll = jekyll+1
-</script>
-                  </p>
-                  <div class="content-tab closed indent">
-			<ul>
- <li class="ng-binding">Slides:
- <a href="translations/ar/beginner/FinalChallenge.pptx">PPTX</a>,
- <a href="translations/ar/beginner/FinalChallenge.pdf">PDF</a>
- </li>
- <li> <a href="translations/ar/beginner/FinalAssessment.docx">Assessment</a>
- </li>
- <li> <a href="challenges.html">More Challenges</a>
- </li>
- </ul>
-
-<script>
-if (getParameterByName('share') == "yes") {
-document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?lang='+language+'&q='+'موضوع الدرس: التحدي النهائي للمرحلة الأساسية'.toLowerCase().split(' ').join('_'))\">Get shareable link for 'موضوع الدرس: التحدي النهائي للمرحلة الأساسية' lesson</button>")
 }
 </script>
                   </div>
@@ -5147,30 +5143,6 @@ jekyll = jekyll+1
 <script>
 if (getParameterByName('share') == "yes") {
 document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?lang='+language+'&q='+'Debugging Techniques'.toLowerCase().split(' ').join('_'))\">Get shareable link for 'Debugging Techniques' lesson</button>")
-}
-</script>
-                  </div>
-<br>
-                </div>
-	 
-                <div class="toggle toggle advanced proportional simple_line_follower smooth_line_follower three_stage_line_follower 3_stage_line_follower proportional_line_follower light_sensor moving color colour colour_sensor linefollower line_follower line lijnvolgers:_van_basis_tot_proportioneel nl">
-                  <p class="tab-index tab-closed">
-<script>
-document.write(' <a id="'+jekyll+'" href="#" title="Close">Lijnvolgers: van basis tot proportioneel</a>')
-jekyll = jekyll+1
-</script>
-                  </p>
-                  <div class="content-tab closed indent">
-			<ul>
- <li class="ng-binding">Slides:
- <a href="translations/nl/advanced/LineFollower.pptx">PPTX</a>,
- <a href="translations/nl/advanced/LineFollower.pdf">PDF</a>
- </li>
- </ul>
-
-<script>
-if (getParameterByName('share') == "yes") {
-document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?lang='+language+'&q='+'Lijnvolgers: van basis tot proportioneel'.toLowerCase().split(' ').join('_'))\">Get shareable link for 'Lijnvolgers: van basis tot proportioneel' lesson</button>")
 }
 </script>
                   </div>

@@ -327,33 +327,6 @@ document.write('      <li class="Coaching FLL budget expenses cost team_budget g
 <!--      <li>
 
        <h3>
-         <a class="post-link" href="/coachcorner/2018/02/07/What-is-in-a-Logo.html">What is in a Logo?</a>
-        </h3>
-       <span class="post-meta">7 Feb, 2018</span>
-
-
-<p>        <span class="post-meta">This article shares ideas about how to create a team logo</span></p>
-      </li>-->
-<script>
-var en = "en-us";
-var pt = "pt-br";
-var nl = "nl"
-if (String(en) == language)
-{
-document.write('      <li class="Coaching getting_started rubrics evaluation">\
-        <h3>\
-          <a class="post-link" href="/coachcorner/2018/02/07/What-is-in-a-Logo.html#'+language+'">What is in a Logo?</a>\
-        </h3>\
-        <span class="post-meta">Feb 7, 2018</span>\
-<p>        <span class="post-meta">This article shares ideas about how to create a team logo</span></p>\
-      </li>\
-')
-}
-</script>
-    
-<!--      <li>
-
-       <h3>
          <a class="post-link" href="/coachcorner/2018/02/05/FIRST-LEGO-League-Deliverables.html">FIRST LEGO League Deliverables</a>
         </h3>
        <span class="post-meta">5 Feb, 2018</span>
@@ -1704,33 +1677,6 @@ document.write('      <li class="Coaching coach_role passion learning">\
 <!--      <li>
 
        <h3>
-         <a class="post-link" href="/coachcorner/2016/11/06/Coaching-What-Can-You-Offer.html">Coaching - What Can You Offer?</a>
-        </h3>
-       <span class="post-meta">6 Nov, 2016</span>
-
-
-<p>        <span class="post-meta">This article is about the role of the coach in FIRST LEGO League.</span></p>
-      </li>-->
-<script>
-var en = "en-us";
-var pt = "pt-br";
-var nl = "nl"
-if (String(en) == language)
-{
-document.write('      <li class="Coaching coach passion role getting_started">\
-        <h3>\
-          <a class="post-link" href="/coachcorner/2016/11/06/Coaching-What-Can-You-Offer.html#'+language+'">Coaching - What Can You Offer?</a>\
-        </h3>\
-        <span class="post-meta">Nov 6, 2016</span>\
-<p>        <span class="post-meta">This article is about the role of the coach in FIRST LEGO League.</span></p>\
-      </li>\
-')
-}
-</script>
-    
-<!--      <li>
-
-       <h3>
          <a class="post-link" href="/coachcorner/2016/10/28/SWAG-Giveaways-at-Events.html">Swag - Team Giveaways</a>
         </h3>
        <span class="post-meta">28 Oct, 2016</span>
@@ -2364,6 +2310,17 @@ while (x != 10000) {
 </script>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -2374,3 +2331,72 @@ while (x != 10000) {
   ga('send', 'pageview');
 
 </script>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#snackbar {
+    visibility: hidden;
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 8px;
+    position: fixed;
+    z-index: 1;
+    left: 0%;
+    bottom: 0px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+</style>
+</head>
+<body>
+
+
+<!--<button onclick="myFunction()">Show Snackbar</button>
+-->
+<div id="snackbar">Notice: This page will be removed in the upcoming months. Do not worry as the resource continues to be avaliable at <a href="http://flltutorials.com/">FLL Tutorials</a>!</div>
+
+<script>
+myFunction()
+function myFunction() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+//    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+</body>
+</html>

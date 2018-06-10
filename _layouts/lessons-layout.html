@@ -272,6 +272,15 @@ alert(max)
   x ++
 	}
 
+
+		           
+    x = 0
+    while (x != document.getElementsByClassName("fll").length) {
+   document.getElementsByClassName("fll")[x].style.display = "none"
+  x ++
+		       }
+
+		       
   x = 0
   while (x != document.getElementsByClassName(value).length) {
    document.getElementsByClassName(value)[x].style.display = "block"
@@ -283,7 +292,9 @@ alert(max)
     while (x != document.getElementsByClassName("workshop").length) {
    document.getElementsByClassName("workshop")[x].style.display = "none"
   x ++
-}
+		       }
+
+		
 
 
 var i;
@@ -414,6 +425,19 @@ for (i = 0; i < langs.length; i++) {
                 <p style="" class="wro" id="wro-intro">These are
                 lessons to help WRO teams.
                 </p>
+
+
+                <p style="" class="fll" id="fll-intro">These are
+                lessons to help FLL teams.
+                </p>
+
+
+<div style="    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 8px;" id="fll-notice" class="fll">Notice: These FLL lessons will be removed in the upcoming months. Do not worry as the resource continues to be avaliable at <a href="http://flltutorials.com/">FLL Tutorials</a>!</div>
+
 
 <br>
 
