@@ -1,6 +1,6 @@
 ---
 title: "Introduction to the HiTechnic Color Sensor"
-searchterms: "toggle wro HiTechnic Color"
+searchterms: "toggle beyond HiTechnic Color"
 lang: "en"
 ---
  <ul>

@@ -173,11 +173,11 @@ document.getElementById("search")
     </script>
 
 
-{% include ads.html %}
+
 
 
 <!--	<p style="font-size: 250%; color: red;background-color: white">IMPORTANT NOTICE: After playing around with the RCX, we have found it to be superior to the newer platforms.
-Therefore, from now on, we will only be making lessons for the RCX System. Go <a href="rcx/" style="text-decoration: underline;">here</a> get to the new website and lessons!</p>  
+Therefore, from now on, we will only be making lessons for the RCX System. Go <a href="rcx/" style="text-decoration: underline;">here</a> get to the new website and lessons!</p>
 -->
       <script>
   var array = []
@@ -273,14 +273,14 @@ alert(max)
 	}
 
 
-		           
+
     x = 0
     while (x != document.getElementsByClassName("fll").length) {
    document.getElementsByClassName("fll")[x].style.display = "none"
   x ++
 		       }
 
-		       
+
   x = 0
   while (x != document.getElementsByClassName(value).length) {
    document.getElementsByClassName(value)[x].style.display = "block"
@@ -294,7 +294,7 @@ alert(max)
   x ++
 		       }
 
-		
+
 
 
 var i;
@@ -307,10 +307,10 @@ for (i = 0; i < langs.length; i++) {
   x ++
         }
 		}
-		
+
 		}
 
-		
+
 }
 
 
@@ -333,11 +333,7 @@ for (i = 0; i < langs.length; i++) {
       <div class="inner group">
         <div class="group">
 
-          EV3Lessons has tested and approved all lessons in Beginner,
-          Intermediate, Advanced, Beyond, and Workshops.  If you use any of the
-          lessons in your own classrooms/workshops, or use any techniques/code
-          presented on this site in a contest, you must
-          credit the original author for the work/idea.<br>
+           <strong> [Update June 2018] Visit <a href="www.flltutorials.com">FLL Tutorials</a> for all materials related to FIRST LEGO League. Lessons on sensors used in WRO are in Beyond.</strong><br>
         </p>
 <style>
 @media screen and (max-width: 500px) {
@@ -354,9 +350,7 @@ for (i = 0; i < langs.length; i++) {
               <li class="smn"><h4><a class="smn" onclick="show('intermediate')" id="int" href="#tab1" title="Intermediate">Intermediate</a></h4></li>
               <li  class="smn"><h4><a class="smn" onclick="show('advanced')" id="adv" href="#tab1" title="Advanced">Advanced</a></h4></li>
               <li class="smn"><h4><a  class="smn" onclick="show('beyond')" id="other" href="#tab1" title="Beyond">Beyond</a></h4></li>
-              <li class="smn"><h4><a class="smn" onclick="show('wro')" id="wro" href="#tab1" title="WRO">WRO</a></h4></li>
-              <li class="smn"><h4><a class="smn" onclick="show('fll')" id="fll" href="#tab1" title="FLL">FLL</a></h4></li>
-	      <li class="smn"><h4><a class="smn" style="display: none;" onclick="show('workshops')" id="camp" href="#tab1" title="Camp Curriculum">Workshops</a></h4></li>
+
 
                   <li><h4><a  href="#tab1" title="Camp Curriculum">Search: <input id="search" type="text" >
                     <!--<datalist id='listid'>
@@ -384,9 +378,9 @@ for (i = 0; i < langs.length; i++) {
 <div class="el"><b>Δεν είναι όλα τα μαθήματα είναι εδώ, επειδή δεν έχουν μεταφραστεί ακόμα. Για να δείτε όλα τα μαθήματα (στα αγγλικά) κάντε κλικ στην σημαία των ΗΠΑ στην κορυφή.</b></div>
 <div class="ct"><b>No totes les classes són aquí, perquè no s'han traduït encara. Per veure totes les lliçons (en anglès) feu clic a la bandera dels Estats Units en la barra superior.</b></div>
 <div class="he"><b>לא כל השיעורים הם כאן, כי הם לא תורגמו עדיין. כדי להציג את כל השיעורים (באנגלית) לחץ על דגל ארה"ב על העליונה.</b></div>
-<div class="de"><b>Nicht alle Lektionen sind hier, weil sie noch nicht
+<!--<div class="de"><b>Nicht alle Lektionen sind hier, weil sie noch nicht
   übersetzt wurden. Um alle Lektionen (auf Englisch) anzuzeigen,
-  klicken Sie auf die US-Flagge in der oberen Leiste.</b></div>
+  klicken Sie auf die US-Flagge in der oberen Leiste.</b></div>-->
 
 <div class="it"><b>Questa pagina mostra solo le lezioni tradotte. Per vedere tutte le lezioni disponibili, visita la pagina inglese, cliccando sulla bandiera americana o sul seguente link.</b></div>
 
@@ -414,29 +408,13 @@ for (i = 0; i < langs.length; i++) {
                   </p>
 
 
-                <p class="beyond" id='other-intro'>These lessons are intended for EV3 users who have completed all our lessons and interested in trying and learning new techniques and sensors.
+                <p class="beyond" id='other-intro'>These lessons are intended for EV3 users who have completed all our lessons and interested in trying and learning new techniques and third-party sensors.
                 </p>
 
 
-                <p style="display: none" class="workshop" id="camp-intro">These are combined lesson curriculum that are
-                  ideal for camps
-                </p>
-
-                <p style="" class="wro" id="wro-intro">These are
-                lessons to help WRO teams.
-                </p>
 
 
-                <p style="" class="fll" id="fll-intro">These are
-                lessons to help FLL teams.
-                </p>
 
-
-<div style="    background-color: blue;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 8px;" id="fll-notice" class="fll">Notice: These FLL lessons will be removed in the upcoming months. Do not worry as the resource continues to be avaliable at <a href="http://flltutorials.com/">FLL Tutorials</a>!</div>
 
 
 <br>
@@ -658,14 +636,12 @@ document.write("<button onclick=\"alert('http://www.ev3lessons.com/lessons.html?
   if (lev[1] != 'none') document.getElementById('int').innerHTML = lev[1];
   if (lev[2] != 'none') document.getElementById('adv').innerHTML = lev[2];
   if (lev[3] != 'none') document.getElementById('other').innerHTML = lev[3];
-  if (lev[4] != 'none') document.getElementById('camp').innerHTML = lev[4];
     if (alltext != 'none') document.getElementById('all').innerHTML = alltext;
   if (pgintro != 'none') document.getElementById('pg-intro').innerHTML = pgintro;
   if (introText[0] != 'none') document.getElementById('beg-intro').innerHTML = introText[0];
   if (introText[1] != 'none') document.getElementById('int-intro').innerHTML = introText[1];
   if (introText[2] != 'none') document.getElementById('adv-intro').innerHTML = introText[2];
   if (introText[3] != 'none') document.getElementById('other-intro').innerHTML = introText[3];
-  if (introText[4] != 'none') document.getElementById('camp-intro').innerHTML = introText[4];
 
 
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

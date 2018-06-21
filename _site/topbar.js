@@ -1,4 +1,4 @@
-langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','de:Germany:Deutsche','it:Italy:Italiano']
+langs=['en-us:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt-br:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:../ct:català','he:Israel:עברית','it:Italy:Italiano']
 
 
 function get_browser_version(){	
@@ -23,7 +23,7 @@ var browser = navigator.appName;
 var version = get_browser_version();
 
 if (browser=="Microsoft Internet Explorer") {
-    if (version<="9.0") 
+    if (version<="7.0") 
         document.location.href="http://classic.ev3lessons.com/" 
 } 
 
@@ -197,7 +197,7 @@ document.write('\
                   </a>\
 		</div>\
 		<div class="socials-default-small default">\
-		  <a href="contact.html#' + language + '">\
+		  <a href="https://docs.google.com/forms/d/1oBqGeZC6p-DeVbKtQ9iya2IPb-GW1YN_KiH8XeHcEYs' + language + '">\
 		  <img src="images/icons/socials-new/email.png" alt="Email" title="Email" width="23" height="23" border="0">\
                   </a>\
 		</div>\

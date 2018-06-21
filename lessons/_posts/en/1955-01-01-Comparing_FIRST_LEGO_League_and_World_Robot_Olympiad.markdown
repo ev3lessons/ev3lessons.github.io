@@ -1,6 +1,6 @@
 ---
 title: "Comparing FIRST LEGO League and World Robot Olympiad"
-searchterms: "toggle wro blank"
+searchterms: "toggle beyond blank"
 lang: "en"
 ---
  <ul>

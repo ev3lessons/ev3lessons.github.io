@@ -25,45 +25,35 @@
     <ul id="nav-big">
       <li>
      <a class="drop" href="index.html?lang=en-us">Home</a>
-      </li>  
+      </li>
         <li>
-            <a  href="lessons.html?lang=en-us">Lessons <span class="arrow">&#9660;</span></a>
+            <a  href="lessons.html?lang=en-us">Programming Lessons <span class="arrow">&#9660;</span></a>
             <ul>
                 <li><a class="drop" href="lessons.html?lang=en-us">All Lessons</a></li>
-                <li><a class="drop"  href="robots.html?lang=en-us">Robot Designs</a></li>
                 <li><a class="drop" href="tablet.html?lang=en-us">Tablet Lessons</a></li>
-                <li><a class="drop" href="challenges.html?lang=en-us">Challenges</a></li>
+
 		<li><a class="drop" href="HourOfEV3.html?lang=en-us">Hour of EV3</a></li>
            </ul>
         </li>
-	 <li>
-            <a href="resources.html?lang=en-us">Resources<span class="arrow">&#9660;</span></a>
-            <ul>
-                <li><a class="drop" href="resources/scorer/index.html?lang=en-us">FLL Scorer</a></li>
-                <li><a class="drop" href="resources/wheelconverter#en-us">Wheel Converter</a></li>
-                <li><a class="drop" href="resources/drawplan#en-us">FLL Sketcher</a></li>
-		 <!--<li><a href="challenges.html?lang=en-us">{{Mtwofour}}</a></li>-->
-                <li><a class="drop" href="resources.html?lang=en-us">All Resources</a></li>
-                <li><a class="drop" href="archive/#en-us">Resources Archives</a></li>
-                <li><a class="drop" href="corevalues.html?lang=en-us">Core Values</a></li>
-           </ul>
-        </li>
-	<li>
-            <a class="drop" href="coachcorner.html?lang=en-us">Coach's Corner</a>
-</li>
         <li>
-            <a href="mission.html?lang=en-us">Our Mission<span class="arrow">&#9660;</span></a>
+            <a href="robots.html?lang=en-us">Robot Designs</a>
+
+        </li>
+	 <li>
+            <a href="resources.html?lang=en-us">FLL Resources<span class="arrow">&#9660;</span></a>
             <ul>
-                <li><a class="drop" href="mission.html?lang=en-us">Mission</a></li>
-                <li><a class="drop" href="contributors.html?lang=en-us">Contributors</a></li>
-                <li><a class="drop" href="contributorfaq.html?lang=en-us">Contributors FAQ</a></li>
-		<li><a class="drop" href="press.html?lang=en-us">In the News</a></li>
-		<li><a class="drop" href="support.html?lang=en-us">Support Us</a></li>
+
+                <li><a class="drop" href="resources.html?lang=en-us">All Resources</a></li>
+
+                <li><a class="drop" href="corevalues.html?lang=en-us">Core Values</a></li>
+                <li><a class="drop" href="coachcorner.html?lang=en-us">Coach's Corner</a></li>
            </ul>
         </li>
-	<li>
-            <a class="drop" href="contact.html?lang=en-us">Contact Us</a>
-</li>
+
+        <li>
+            <a href="aboutus.html?lang=en-us">About Us</a>
+
+
     </ul>
 </nav>
 <style>
@@ -147,12 +137,11 @@ $(".drop").each(function() {
      "text"    : el.text()
  }).appendTo("nav div");
   });
-  
+
 $("nav select").change(function() {
   window.location = $(this).find("option:selected").val();
   });
   </script>
-		 
+
 
 </div>
-

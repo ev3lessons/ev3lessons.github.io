@@ -1,6 +1,6 @@
 ---
 title: "Importing HiTechnic Blocks"
-searchterms: "toggle wro HiTechnic"
+searchterms: "toggle beyond HiTechnic"
 lang: "en"
 ---
  <ul>

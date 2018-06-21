@@ -3,14 +3,16 @@ title: "Lessons for ev3dev"
 searchterms: "toggle debian ev3dev linux_ev3 ev3_commmunication beyond raspberrypi rpi lessons_for_ev3dev"
 lang: "en"
 ---
- <h4>Introduction to ev3dev:</h4>
+ 
  <ul>
+ <h4>Introduction to ev3dev:</h4>
  <li class="ng-binding">Slides:
  <a href="translations/en-us/beyond/EV3devIntro.pptx">PPTX</a>,
  <a href="translations/en-us/beyond/EV3devIntro.pdf">PDF</a>
- </li>
-		 <h4>Raspberry Pi and ev3dev Communicator:</h4>
+ </li> </ul>
+		 
  <ul>
+ <h4>Raspberry Pi and ev3dev Communicator:</h4>
  <li class="ng-binding">Slides:
  <a href="translations/en-us/beyond/EV3devPiCommunicator.pptx">PPTX</a>,
  <a href="translations/en-us/beyond/EV3devPiCommunicator.pdf">PDF</a>
