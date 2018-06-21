@@ -197,7 +197,7 @@ document.write('\
                   </a>\
 		</div>\
 		<div class="socials-default-small default">\
-		  <a href="https://docs.google.com/forms/d/1oBqGeZC6p-DeVbKtQ9iya2IPb-GW1YN_KiH8XeHcEYs' + language + '">\
+		  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfoYhhGOWXYaCvPE9IU2ajBpfU2MtK1SRg7Ym4xQeDgew6agg/viewform?hl=' + language + '">\
 		  <img src="images/icons/socials-new/email.png" alt="Email" title="Email" width="23" height="23" border="0">\
                   </a>\
 		</div>\
