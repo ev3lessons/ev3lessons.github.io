@@ -5,7 +5,7 @@ lang: "pt"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="translations/en-us/advanced/ControleProporcionalComSensoreDeSom.pptx">PPTX</a>,
- <a href="translations/en-us/advanced/ControleProporcionalComSensoreDeSom.pdf">PDF</a>
+ <a href="translations/pt-br/advanced/ControleProporcionalComSensoreDeSom.pptx">PPTX</a>,
+ <a href="translations/pt-br/advanced/ControleProporcionalComSensoreDeSom.pdf">PDF</a>
  </li>
  </ul>
