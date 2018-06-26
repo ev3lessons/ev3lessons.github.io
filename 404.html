@@ -81,6 +81,10 @@ if ((String(langs).indexOf(language+":")) == -1) {
     window.location.href = "/"+language+"/TabletLessons.html"
   } else if (page == "HourOfEV3.html") {
     window.location.href = "/"+language+"/TabletLessons.html"
+  } else if (page == "translations") {
+    tmplang = window.location.href.split('/')[4].split('-')[0]	 
+    file = window.location.href.split('/')[5] + "/" + window.location.href.split('/')[6]	 
+   window.location.href = "/"+tmplang+"/ProgrammingLessons/"+file
   }
 </script>
 
