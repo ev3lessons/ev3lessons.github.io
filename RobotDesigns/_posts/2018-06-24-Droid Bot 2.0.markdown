@@ -1,0 +1,22 @@
+---
+title: "DroidBot 2.0"
+searchterms: "EV3"
+lang: "en"
+---
+
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DroidBot.png" alt="">
+<br>
+
+This build replaces DroidBot 1.0.
+<br>
+<br>
+DroidBot 2.0 is a robot build using only parts from 45544 LEGO® MINDSTORMS® Education EV3 Core Set + 1 color sensor. There is also an optional handle that can be added when the robots are used in camps or classrooms.
+<br>
+<br>
+Designed by: Sanjay and Arvind Seshan
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/droidbot2.lxf">LDD</a>,
+ <a href="/RobotDesigns/instructions/droidbot2instructions.pdf">PDF</a>
+ </li>
+ </ul>

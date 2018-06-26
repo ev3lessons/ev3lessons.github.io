@@ -1,0 +1,13 @@
+---
+title: "Port View"
+searchterms: "beginner port_view ev3_app programmer_app toggle"
+lang: "en"
+---
+
+    
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="TabletLessons/beginner/PortView.pptx">PPTX</a>,
+ <a href="TabletLessons/beginner/PortView.pdf">PDF</a>
+ </li>
+ </ul>

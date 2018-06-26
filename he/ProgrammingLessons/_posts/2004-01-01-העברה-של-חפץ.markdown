@@ -1,0 +1,11 @@
+---
+title: "העברה של חפץ"
+searchterms: "toggle beginner large_motor_block attachments passive medium_motor_block moving object moving_object העברה_של_חפץ"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/MoveObject.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/MoveObject.pdf">PDF</a>
+ </li>
+ </ul>

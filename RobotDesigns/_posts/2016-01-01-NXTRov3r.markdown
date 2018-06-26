@@ -1,0 +1,17 @@
+---
+title: "NXT Rov3r"
+searchterms: "NXT"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/NXTRov3r.jpg" alt="">
+<br>
+This is a base robot similar to the one available in the Educational EV3 set (45544), but constructed with parts available in the NXT set.
+
+<br>
+<br>
+Designed by: Ahmad Sahar, <a href="http://www.facebook.com/Tomafuwi">Tomafuwi Productions</a> 
+
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/NXTRov3r.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,17 @@
+---
+title: "HOMI3"
+searchterms: "EV3"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/homi3.png" alt="">
+<br>
+
+This is a base robot built with one EV3 Retail Set (31313). This robot can be used as a learning tool.
+<br>
+<br>
+Designed by: Markus Böge, Team SAPfinity
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/HOMI.pdf">PDF</a>
+ </li>
+ </ul>

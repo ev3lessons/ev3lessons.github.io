@@ -1,0 +1,220 @@
+
+<div class="content">
+
+<script>language = "{{ page.lang }}"</script>
+
+  <div class="title">
+    <br /><br />
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+
+        <div id="wheelDiv" ng-controller="wheelCtrl">
+          <h1><data id="one"></data></h1>
+          <b><data id="two"></data> </b>
+
+          <form name="calculator" >
+
+            <br>
+            <b><data id="three"></data> </b>
+            <br>
+            <br>
+            <data id="four"></data>
+            <br>
+            <input type="textfield" name="wheelSize" value="">
+            <br>
+            <center>
+              <style>
+              @media screen and (max-width: 716px) {
+                td{
+                  display:block;
+                }
+              }
+              </style>
+              <table width="100%" style="align: middle">
+                <tr>
+                  <td>
+                    <button style="height: 130px; width:130px;-webkit-appearance: none;"  onClick="document.calculator.wheelSize.value='94.2'" type="button">    <img width="120" height="120" src="/assets/images/WheelConverter/photo1.png" alt="Basic EV3 wheel"> </button><br> <data id="five"></data>
+                  </td>
+                  <td>
+                    <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='56'" type="button">    <img width="120" height="120" src="/assets/images/WheelConverter/photo2.JPG" alt="Basic EV3 wheel"> </button> <br> <data id="six"></data>
+                  </td>
+                  <td>
+                    <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='81.6'" type="button">     <img width="120" height="120" src="/assets/images/WheelConverter/photo3.JPG" alt="Largest NXT wheel"> </button> <br> <data id="seven"></data>
+                  </td>
+                  <td>
+                    <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='56'" type="button">     <img src="/assets/images/WheelConverter/photo4.JPG" width="120" height="120" alt="NXT REM-BOT wheel"> </button> <br> <data id="eight"></data>
+                  </td>
+                  <td>
+                    <button style="height: 130px; width:130px;-webkit-appearance: none;" onClick="document.calculator.wheelSize.value='43.2'" type="button">      <img src="/assets/images/WheelConverter/photo5.JPG" width="120" height="120" alt="Basic NXT wheel #2"> </button> <br> <data id="nine"></data>
+                  </td>
+                </tr>
+
+              </table>
+
+            </center>
+            <br><b><data id="onezero"></data></b>
+            <br>
+            <br>
+            <data id="oneone"></data>
+            <br>
+            <data id="onethree"></data> <input type="textfield" name="cm" value=""  onblur="document.calculator.inches.value=document.calculator.cm.value/2.54"><br>
+            <data id="onetwo"></data> <input type="textfield" name="inches" value=""  onblur="document.calculator.cm.value=2.54*document.calculator.inches.value">
+
+
+
+
+
+            <br>
+            <br>
+            <b><data id="onefour"></data></b>
+            <br>
+            <br>
+            <input type="button" id="onefive" value="" onClick="document.calculator.circum.value=Math.PI*document.calculator.wheelSize.value/10;
+            document.calculator.dist.value=document.calculator.cm.value;
+            document.calculator.rotations.value=document.calculator.dist.value/document.calculator.circum.value;
+            document.calculator.degrees.value=document.calculator.rotations.value*360;
+            myFunction();">
+
+            <br>
+            <br> <data id="onesix"></data>
+            <input type="textfield" name="dist" readonly="" value="0">
+            <br> <data id="oneseven"></data>
+            <input type="textfield" name="circum" readonly="" value="0">
+            <br><data id="oneeight"></data>
+            <input type="textfield" name="rotations" readonly="" value="0">
+            <br> <data id="onenine"></data>
+            <input type="textfield" id="degrees" name="degrees" readonly="" value="0">
+            <br>
+            <br>
+            <b><data id="twozero"></data> </b>
+            <br>
+            <br>
+            <data id="twoone"></data>
+            <br>
+
+            <br>
+            <br>
+            <script>
+            function myFunction() {
+              if (document.getElementById('degrees').value  == Infinity) {
+                alert('Please select a wheel and re-calculate');
+              } else if (document.getElementById('degrees').value  == NaN) {
+                alert('Please select a wheel and enter in a value');
+              }
+            }
+            </script>
+
+
+            <data id="twotwo"></data>
+            <br><data id="twothree"></data>
+            <br>
+            <br>
+            <data id="twofour"></data>
+          </div>
+          <br>
+          <br>
+          Version 3.0. Updated June 21, 2018.
+        </form>
+      </body>
+      </html>
+
+
+
+      <script>
+
+
+
+
+
+      document.getElementById("one").innerHTML = "Wheel Converter: Automatic Distance to Degrees Calculator";
+      document.getElementById("two").innerHTML = "This tool can be used to easily convert your wheel/tire size information into useful data to be used by your First Lego League team.";
+      document.getElementById("three").innerHTML = "STEP 1: Enter Wheel Dimensions ";
+      document.getElementById("four").innerHTML = "Input your wheel diameter in millimeters *-OR-* You can click one of the tires commonly used below. ";
+      document.getElementById("five").innerHTML = "Large Motorcycle Wheel - 94.2×20";
+      document.getElementById("six").innerHTML = "EV3 basic tire - 56×28";
+      document.getElementById("seven").innerHTML = "Motorcycle tire - 81.6×15";
+      document.getElementById("eight").innerHTML = "Balloon tire - 56×26";
+      document.getElementById("nine").innerHTML = "Small tire - 43.2×22 ";
+      document.getElementById("onezero").innerHTML = "STEP 2: Enter Distance Robot Needs to Move ";
+      document.getElementById("oneone").innerHTML = "Input the distance you would like the robot to move in either inches or centimeters: ";
+      document.getElementById("onetwo").innerHTML = "inches";
+      document.getElementById("onethree").innerHTML = "centimeters";
+      document.getElementById("onefour").innerHTML = "STEP 3: Hit the Button to Calculate! ";
+      document.getElementById("onefive").value = "CALCULATE";
+      document.getElementById("onesix").innerHTML = "Total distance to travel (in cm)";
+      document.getElementById("oneseven").innerHTML = "Circumference of your wheel (in cm) is (π * diameter):";
+      document.getElementById("oneeight").innerHTML = "The number of rotations your robot needs to move is (distance to travel ÷ circumference): ";
+      document.getElementById("onenine").innerHTML = "The number of degrees your robot needs to move is: (rotations × 360): ";
+      document.getElementById("twozero").innerHTML = "STEP 4: Use the Values ";
+      document.getElementById("twoone").innerHTML = "Use the rotations or degrees values from STEP 3 in your code. Now you can measure in centimeters/inches and still program in degrees or rotations!";
+      document.getElementById("twotwo").innerHTML = "Thank you for using this calculator! ";
+      document.getElementById("twothree").innerHTML = "This calculator was made by EV3Lessons.com. If you have a favorite wheel, we can add it. Email: team@ev3lessons.com ";
+      document.getElementById("twofour").innerHTML = "© Copyright EV3Lessons.com and Droids Robotics 2014";
+
+
+
+      if (language == "fr") {
+        document.getElementById("one").innerHTML = "Calcul de déplacement: convertisseur de distance en degrés";
+        document.getElementById("two").innerHTML = "Cet outil sert à convertir facilement les caractéristiques de vos roues, en données utiles pour gérer pour vos moteurs de déplacement.";
+        document.getElementById("three").innerHTML = "Etape 1: Caractéristiques des roues ";
+        document.getElementById("four").innerHTML = "Entrez la dimension de vos roues en millimétres, ou, cliquez sur l'une des roues généralement utilisées par les équipes FLL";
+        document.getElementById("five").innerHTML = "Grosse roue de moto - 94.2×20 ";
+        document.getElementById("six").innerHTML = "Roue EV3 du kit - 56×28 ";
+        document.getElementById("seven").innerHTML = "Fine roue de vélo - 81.6×15 ";
+        document.getElementById("eight").innerHTML = "Roue de quad - 56×26 ";
+        document.getElementById("nine").innerHTML = "Petite roue - 43.2×22";
+        document.getElementById("onezero").innerHTML = "Etape 2: Entrez la distance que vous voulez parcourir avec votre robot. ";
+        document.getElementById("oneone").innerHTML = "Entrez la distance désirée, en inches (mesure anglaise) ou centimètres:";
+        document.getElementById("onetwo").innerHTML = "Inches:";
+        document.getElementById("onethree").innerHTML = "Centimétres:";
+        document.getElementById("onefour").innerHTML = "Etape 3: Cliquez le bouton pour ";
+        document.getElementById("onefive").value = "[Calculer!]";
+        document.getElementById("onesix").innerHTML = "Distance totale à parcourir (en cm):";
+        document.getElementById("oneseven").innerHTML = "Circumference de la roue en (cm) est (pi*diametre):";
+        document.getElementById("oneeight").innerHTML = "Nombre de rotations que votre robot doit effectuer (distance/circonférence):";
+        document.getElementById("onenine").innerHTML = "Nombre de degrés que votre robot doit effectuer (rotations*360):";
+        document.getElementById("twozero").innerHTML = "Etape 4: Utilisez les valeurs calculées ";
+        document.getElementById("twoone").innerHTML = "Utilisez le nombres de rotations ou de degrés dans votre code, de l'étape 3. Maintenant, vous pouvez mesurer l'écart entre votre consigne et le déplacement réel, et corriger.";
+        document.getElementById("twotwo").innerHTML = "Thank you for using this calculator! ";
+        //   document.getElementById("twothree").innerHTML = "This calulator was made by EV3Lessons.com. If you have a favorite wheel, we can add it. Email: team@ev3lessons.com ";
+        //   document.getElementById("twofour").innerHTML = "© Copyright EV3Lessons.com and Droids Robotics 2014";
+      }
+      if (language == "pt") {
+
+        document.getElementById("one").innerHTML = "Conversor de roda: Cálculo Automático de Distância para Graus";
+        document.getElementById("two").innerHTML = "Esta ferramenta pode ser utilizada para converter facilmente as informações do tamanho da sua roda/pneu em dados que podem ser utilizados pelo time de FLL.";
+        document.getElementById("three").innerHTML = "PASSO 1: Entre o tamanho da Roda ";
+        document.getElementById("four").innerHTML = "Insira o tamanho do diâmetro da roda em milímetros. *-OU-* Selecione um dos pneus mais utilizados pelos times FLL logo abaixo. ";
+        document.getElementById("five").innerHTML = "Roda de Motocicleta Grande (Lisa) - 94.2×20";
+        document.getElementById("six").innerHTML = "Roda básica do EV3  - 56×28";
+        document.getElementById("seven").innerHTML = "Roda de Motocileta Grande (Áspera)  - 81.6×15";
+        document.getElementById("eight").innerHTML = "Roda tipo Balão - 56×26";
+        document.getElementById("nine").innerHTML = "Roda pequena - 43.2×22 ";
+        document.getElementById("onezero").innerHTML = "PASSO 2: Insira a Distância que o robô irá se mover";
+        document.getElementById("oneone").innerHTML = "Insira a distância que o seu robô irá se mover em polegadas ou centímetros: ";
+        document.getElementById("onetwo").innerHTML = "Polegadas";
+        document.getElementById("onethree").innerHTML = "Centímetros";
+        document.getElementById("onefour").innerHTML = "PASSO 3: clique no botão para calcular! ";
+        document.getElementById("onefive").value = "CALCULAR";
+        document.getElementById("onesix").innerHTML = "Distância total à ser realizada (em cm)";
+        document.getElementById("oneseven").innerHTML = "Circunferência da sua roda (em cm) é (π * diâmetro):";
+        document.getElementById("oneeight").innerHTML = "O número de rotações que o seu robô precisa se mover é (distância de movimentação + circunferência): ";
+        document.getElementById("onenine").innerHTML = "O número de graus que o seu robô precisa se mover é: (rotações × 360): ";
+        document.getElementById("twozero").innerHTML = "PASSO 4: Utilize os valores ";
+        document.getElementById("twoone").innerHTML = "Use as rotações ou valores de graus no PASSO 3. Agora você pode medir em centímetros/polegadas e continuar programando em graus e rotações!";
+        document.getElementById("twotwo").innerHTML = "Obrigado por usar essa calculadora!";
+        document.getElementById("twothree").innerHTML = "Esta calculadora foi criada pelo EV3Lessons.com. Se vocês tiverem uma roda favorita que não foi mencionada aqui, por favor, envie um email para team@ev3lessons.com que iremos adicioná-la";
+        document.getElementById("twofour").innerHTML = "© Direitos da EV3Lessons.com e Droids Robotics 2014. Esta tradução foi realizada pelo time Aprenda Robótica (http://aprendarobotica.com.br)";
+      }
+
+
+      </script>
+
+
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+---
+title: "My Block Move Distância"
+searchterms: "toggle intermediate moving myblocks move_inches move_centimeters move_centimetres move_cm wheelconverter my_blocks moving_with my_block_move_distância"
+lang: "pt"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/intermediate/MoveDistance.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/intermediate/MoveDistance.pdf">PDF</a>
+ </li>
+ <li>Moving in Inches/Centimeters Resources:
+ <a href="ProgrammingLessons/intermediate/DPIorDPCWorksheet.pdf">Worksheet</a>
+ </li>
+ <li>Wheel Converter Tool <a href="Resources/WheelConverter">Web Version</a>,
+ <a href="https://itunes.apple.com/us/app/wheel-converter-for-ev3/id1042474404?ls=1&amp;mt=8">iOS Version</a>,
+ <a href="https://play.google.com/store/apps/details?id=com.ev3lessons.wheelconverter">Android Version</a>
+ </li>
+ </ul>

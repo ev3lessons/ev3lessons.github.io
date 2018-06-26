@@ -1,0 +1,41 @@
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab10">
+    <!-- accordions -->
+    <!-- default accordions -->
+    {% for post in site.categories.ProgrammingLessons %}
+    {% if post.lang == page.lang and post.searchterms contains "beginner" %}
+    {% assign refvalue = i | downcase %}
+    {% include postlist.html ref=refvalue %}
+    {% assign i = i | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tab11">
+    {% for post in site.categories.ProgrammingLessons %}
+    {% if post.lang == page.lang and post.searchterms contains "intermediate" %}
+    {% assign refvalue = i | downcase %}
+    {% include postlist.html ref=refvalue %}
+    {% assign i = i | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tab12">
+    {% for post in site.categories.ProgrammingLessons %}
+    {% if post.lang == page.lang and post.searchterms contains "advanced" %}
+    {% assign refvalue = i | downcase %}
+    {% include postlist.html ref=refvalue %}
+    {% assign i = i | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div role="tabpanel" class="tab-pane" id="tab13">
+    {% for post in site.categories.ProgrammingLessons %}
+    {% if post.lang == page.lang and post.searchterms contains "beyond" %}
+    {% assign refvalue = i | downcase %}
+    {% include postlist.html ref=refvalue %}
+    {% assign i = i | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

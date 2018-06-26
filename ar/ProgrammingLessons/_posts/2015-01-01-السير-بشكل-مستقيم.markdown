@@ -1,0 +1,13 @@
+---
+title: "السير بشكل مستقيم"
+searchterms: "beginner"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/MovingStraight.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/MovingStraight.pdf">PDF</a>
+ </li>
+ <li><a href="ProgrammingLessons/beginner/MovingStraight.docx">Worksheet</a>
+ </li>
+ </ul>

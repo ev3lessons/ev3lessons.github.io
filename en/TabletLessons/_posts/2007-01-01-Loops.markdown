@@ -1,0 +1,14 @@
+---
+title: "Loops"
+searchterms: "loop loops beginner ev3_app programmer_app toggle"
+lang: "en"
+---
+
+
+       
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="TabletLessons/beginner/Loops.pptx">PPTX</a>,
+ <a href="TabletLessons/beginner/Loops.pdf">PDF</a>
+ </li>
+ </ul>

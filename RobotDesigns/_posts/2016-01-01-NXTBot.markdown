@@ -1,0 +1,17 @@
+---
+title: "NXTBot"
+searchterms: "NXT"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/NXTBot.png" alt="">
+<br>
+This is great starting robot design that uses the NXT. It features an outer wall as well as two touch sensors. This robot can also line follow.
+
+<br>
+<br>
+Designed by: Tim, Team Cassapeia
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/NXTBot.lxf">LXF</a>
+ </li>
+ </ul>

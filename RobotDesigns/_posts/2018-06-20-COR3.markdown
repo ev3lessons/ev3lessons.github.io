@@ -1,0 +1,18 @@
+---
+title: "COR3"
+searchterms: "EV3"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/COR3.png" alt="">
+<br>
+
+This is a base robot built with one EV3 Education Core Set (45544). This robot can be used as a learning tool as well as a basic design for FIRST LEGO League.
+<br>
+<br>
+Designed by: Michael Buss Anderson
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/COR3.pdf">PDF</a>
+
+ </li>
+ </ul>

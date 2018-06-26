@@ -1,0 +1,18 @@
+---
+title: "Roost3r"
+searchterms: "Other"
+lang: "en"
+---
+
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/ROOST3R.png" alt="">
+<br>
+<br>
+This is a rooster made with one EV3 31313 set.
+<br>
+<br>
+Designed by: Ahmad Sahar, <a href="http://www.facebook.com/Tomafuwi">Tomafuwi Productions</a> 
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/ROOST3R.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,11 @@
+---
+title: "ניפוי שגיאות"
+searchterms: "toggle intermediate debugging sound display brick_buttons ניפוי_שגיאות"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/intermediate/Debug.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/intermediate/Debug.pdf">PDF</a>
+ </li>
+ </ul>

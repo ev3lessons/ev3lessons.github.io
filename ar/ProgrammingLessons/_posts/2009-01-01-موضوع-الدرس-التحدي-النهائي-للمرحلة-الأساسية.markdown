@@ -1,0 +1,13 @@
+---
+title: "موضوع الدرس: التحدي النهائي للمرحلة الأساسية"
+searchterms: "beginner"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/FinalChallenge.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/FinalChallenge.pdf">PDF</a>
+ </li>
+ <li> <a href="ProgrammingLessons/beginner/FinalAssessment.docx">Assessment</a>
+
+ </ul>

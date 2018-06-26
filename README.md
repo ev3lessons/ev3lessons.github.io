@@ -1,4 +1,2 @@
-# ev3lessons.com
-This is the most complete and stable version of ev3lessons
-
-Learn to program your EV3 here!
+# ev3lessons-future
+Future Version of EV3Lessons.com (Currently v5.0.0)

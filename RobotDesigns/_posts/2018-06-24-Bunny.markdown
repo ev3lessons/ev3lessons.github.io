@@ -1,0 +1,19 @@
+---
+title: "East3r Bunny"
+searchterms: "Other"
+lang: "en"
+---
+
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/EAST3RBUNNY.jpg" alt="">
+<br>
+<br>
+This is a bunny that is made with one 31313 set.  It has very realistic movements.
+<br>
+<br>
+Designed by: Ahmad Sahar, <a href="http://www.facebook.com/Tomafuwi">Tomafuwi Productions</a> 
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/bunnyprogram.png">Program</a>,
+ <a href="/RobotDesigns/instructions/EAST3RBUNNY.pdf">PDF</a>
+ </li>
+ </ul>

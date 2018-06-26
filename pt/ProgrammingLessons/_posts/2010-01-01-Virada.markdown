@@ -1,0 +1,14 @@
+---
+title: "Virada"
+searchterms: "toggle beginner moving programming_app ipad app turning tablet pivot spin point android virada"
+lang: "pt"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/Turning.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/Turning.pdf">PDF</a>
+ </li>
+ <li><a href="ProgrammingLessons/beginner/Turning.docx">Worksheet</a>
+ </li>
+ 
+ </ul>

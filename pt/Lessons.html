@@ -1,0 +1,70 @@
+---
+layout: index
+title: Programming Lessons
+---
+{% include JB/setup %}
+<!-- Content Area Start -->
+
+
+<!-- We reopen main-content and container -->
+<body onload="loadTab();">
+
+
+  <div class="content">
+
+    <div class="main-content" >
+      <div class="tabs-accordions">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header-title">
+                <h2 class="heading-title text-center">Lições de Programação</h2>
+              </div>
+              {% assign i = 0 %}
+
+              <div class="row">
+                <!-- tabs right -->
+                <div class="col-md-1"></div>
+                <div class="col-md-10 col-sm-12">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="beginner" data-toggle="tab" href="#tab10" role="tab">Básicas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="intermediate" data-toggle="tab" href="#tab11" role="tab">Intermediário</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="advanced" data-toggle="tab" href="#tab12" role="tab">Avançada</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="beyond" data-toggle="tab" href="#tab13" role="tab">Além</a>
+                    </li>
+                  </ul>
+
+                  {% include LessonTabs.html %}
+                </div>
+                <div class="col-md-1"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    function loadTab() {
+      document.getElementById(getParameterByName('tab')).click()
+    }
+  </script>
+</body>

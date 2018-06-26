@@ -1,0 +1,17 @@
+---
+title: "Sambot"
+searchterms: "SUMO"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/SamBot.png" alt="">
+<br>
+
+SamBot is an EV3 Sumobot design by Anderson Harayashiki Moreira. It features two ultrasonic sensors and a ramp made of LEGO Brick Separators.
+<br>
+<br>
+Designed by: Anderson Harayashiki Moreira
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="/RobotDesigns/instructions/SamBot.pdf">PDF</a>
+ </li>
+ </ul>

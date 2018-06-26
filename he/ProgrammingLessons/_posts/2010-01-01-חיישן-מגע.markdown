@@ -1,0 +1,12 @@
+---
+title: "חיישן מגע"
+searchterms: "toggle beginner touch touch_sensor sesnsors ipad tablet android programming_app app wait_block motor_on חיישן_מגע"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/Touch.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/Touch.pdf">PDF</a>
+ </li>
+ 
+ </ul>

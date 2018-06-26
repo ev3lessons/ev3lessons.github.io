@@ -1,0 +1,17 @@
+---
+title: "DomaBot"
+searchterms: "NXT"
+lang: "en"
+---
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DomaBot.png" alt="">
+<br>
+
+This is a basic robot using the NXT that is good for classrooms. Since the brick is low to the ground, this design is a very stable build. The design incorporates all the basic sensors needed for classroom activities.
+<br>
+<br>
+Designed by: Dr. Damien Kee.
+<ul>
+ <li class="ng-binding">Instructions:
+ <a href="http://www.damienkee.com/home/2011/8/20/domabot-classroom-robot-design.html">Build Instructions</a>
+ </li>
+ </ul>

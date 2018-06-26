@@ -1,0 +1,16 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+
+<div class="panel-group">
+  <div class="panel">
+    <div class="panel-heading">
+      <a class="panel-title collapsed" data-toggle="collapse" href="#panel{{ include.ref }}">{{post.title}}</a>
+    </div>
+    <div id="panel{{ include.ref }}" class="panel-collapse collapse">
+      <div class="panel-body text-gray">
+        {{ post.excerpt }}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end post -->

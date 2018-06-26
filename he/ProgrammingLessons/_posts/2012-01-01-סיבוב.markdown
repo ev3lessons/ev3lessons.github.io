@@ -1,0 +1,14 @@
+---
+title: "סיבוב"
+searchterms: "toggle beginner moving programming_app ipad app turning tablet pivot spin point android סיבוב"
+lang: "he"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/Turning.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/Turning.pdf">PDF</a>
+ </li>
+ <li><a href="ProgrammingLessons/beginner/Turning.docx">Worksheet</a>
+ </li>
+
+ </ul>

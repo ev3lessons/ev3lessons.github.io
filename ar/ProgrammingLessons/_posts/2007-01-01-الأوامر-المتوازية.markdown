@@ -1,0 +1,11 @@
+---
+title: "الأوامر المتوازية"
+searchterms: "intermediate"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/intermediate/ParallelBeams.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/intermediate/ParallelBeams.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,12 @@
+---
+title: "مقدمة الى اللبنة الذكية ومحيط البرمجة"
+searchterms: "beginner"
+lang: "ar"
+---
+<ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/Introduction.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/Introduction.pdf">PDF</a>
+ </li>
+
+ </ul>

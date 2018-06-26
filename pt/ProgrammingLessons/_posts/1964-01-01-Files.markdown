@@ -1,0 +1,12 @@
+---
+title: "Baixar e Upar Arquivos"
+searchterms: "toggle advanced files data writing"
+lang: "pt"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/advanced/BaixarEUparArquivos.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/BaixarEUparArquivos.pdf">PDF</a>
+ </li>
+ 
+ </ul>

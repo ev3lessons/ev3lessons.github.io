@@ -1,0 +1,11 @@
+---
+title: "Switch (Interruttori)"
+searchterms: "toggle beginner switches ipad app tablet android"
+lang: "it"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/Switch.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/Switch.pdf">PDF</a>
+ </li>
+ </ul>

@@ -1,0 +1,13 @@
+---
+title: "Switches"
+searchterms: "switch switches beginner ev3_app programmer_app toggle"
+lang: "en"
+---
+
+	     
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="TabletLessons/beginner/Switches.pptx">PPTX</a>,
+ <a href="TabletLessons/beginner/Switches.pdf">PDF</a>
+ </li>
+ </ul>

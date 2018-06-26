@@ -1,0 +1,96 @@
+
+<!-- Content Area Start -->
+<div id="content">
+  <div class="main-content" >
+    <!-- tabs-accordions -->
+    <div class="tabs-accordions">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header-title">
+              <h2 class="heading-title text-center">Robot Designs</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-md-8">
+            <img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DroidBotModelC.png" alt="">
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <!-- tabs right -->
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10">
+            <div class="text">
+              <span>To open .lxf flies, download LEGO Digital Designer (LDD). EV3Lessons does not take responsibility for the quality of build instructions provided. If you use any of these designs as a base for a competition or in a class, you need to cite the source. </span>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab10" role="tab">EV3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab11" role="tab">NXT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab12" role="tab">Sumo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab13" role="tab">Other</a>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab10">
+                <!-- accordions -->
+                <!-- default accordions -->
+                {% for post in site.categories.RobotDesigns %}
+                {% if post.searchterms contains "EV3" %}
+                {% assign refvalue = i | downcase %}
+                {% include postlist.html ref=refvalue %}
+                {% assign i = i | plus:1 %}
+                {% endif %}
+                {% endfor %}
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab11">
+                {% for post in site.categories.RobotDesigns %}
+                {% if post.searchterms contains "NXT" %}
+                {% assign refvalue = i | downcase %}
+                {% include postlist.html ref=refvalue %}
+                {% assign i = i | plus:1 %}
+                {% endif %}
+                {% endfor %}
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab12">
+                {% for post in site.categories.RobotDesigns %}
+                {% if post.searchterms contains "SUMO" %}
+                {% assign refvalue = i | downcase %}
+                {% include postlist.html ref=refvalue %}
+                {% assign i = i | plus:1 %}
+                {% endif %}
+                {% endfor %}
+              </div>
+              <div role="tabpanel" class="tab-pane" id="tab13">
+                {% for post in site.categories.RobotDesigns %}
+                {% if post.searchterms contains "Other" %}
+                {% assign refvalue = i | downcase %}
+                {% include postlist.html ref=refvalue %}
+                {% assign i = i | plus:1 %}
+                {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-60">&nbsp;</div>
+
+  </div>
+</div>
+<!-- Content Area End -->
