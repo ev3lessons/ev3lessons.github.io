@@ -9,17 +9,78 @@ keywords: gradient, html, css, landing page, jekyll, ruby, web marketing, advert
 <!--Redirect old language style links (to English only) -->
 
 <script>
+
+  langs=['{{ site.all_langs | join: "', '" }}']
+
+
+function get_browser_version(){
+  var N=navigator.appName, ua=navigator.userAgent, tem;
+  var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+  if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+  M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
+  return M[1];
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var browser = navigator.appName;
+var version = get_browser_version();
+
+if (browser=="Microsoft Internet Explorer") {
+    if (version<="8.0")
+        document.location.href="http://classic.ev3lessons.com/"
+}
+
+
+
+if (getParameterByName('lang') != null) {
+    var language = getParameterByName('lang');
+} else if (localStorage.lang) {
+    var language = localStorage.lang.split('ev3cookie');
+} else if (window.location.hash) {
+    var language = window.location.hash.substring(1);
+} else {
+    var language = navigator.language.split('-')[0];
+}
+
+localStorage.lang = language;
+
+
+if (language == "en-us") {
+    language = "en";
+} else if (language == "pt-br") {
+    language = "pt";
+} else if (language == "br") {
+    language = "pt";
+}
+
+
+
+if ((String(langs).indexOf(language+":")) == -1) {
+    language = "en";
+}
+
+
+
   page = window.location.href.split('/')[3].split('?')[0].split('#')[0];
   if (page == "lessons.html") {
-    window.location.href = "/en/Lessons.html"
+    window.location.href = "/"+language+"/Lessons.html"
   } else if (page == "robots.html") {
-    window.location.href = "/en/RobotDesigns.html"
+    window.location.href = "/"+language+"/RobotDesigns.html"
   } else if (page == "aboutus.html") {
-    window.location.href = "/en/AboutUs.html"
+    window.location.href = "/"+language+"/AboutUs.html"
   } else if (page == "tablet.html") {
-    window.location.href = "/en/TabletLessons.html"
+    window.location.href = "/"+language+"/TabletLessons.html"
   } else if (page == "HourOfEV3.html") {
-    window.location.href = "/en/TabletLessons.html"
+    window.location.href = "/"+language+"/TabletLessons.html"
   }
 </script>
 
