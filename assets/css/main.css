@@ -3938,7 +3938,8 @@ ul.nav-tabs li a {
 }
 
 .nav-tabs {
-  border-bottom: none
+  border-bottom: none;
+  flex-wrap: wrap;
 }
 
 .nav-tabs .nav-link {
