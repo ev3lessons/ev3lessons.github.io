@@ -27,19 +27,20 @@
             <div class="text">
               <span>To open .lxf flies, download LEGO Digital Designer (LDD). EV3Lessons does not take responsibility for the quality of build instructions provided. If you use any of these designs as a base for a competition or in a class, you need to cite the source. </span>
             </div>
+            <br><br />
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#tab10" role="tab">EV3</a>
+                <a class="nav-link active" data-toggle="tab" href="#tab10" role="tab">EV3 Training Robots</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab11" role="tab">NXT</a>
+                <a class="nav-link" data-toggle="tab" href="#tab11" role="tab">NXT Training Robots</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab12" role="tab">Sumo</a>
+                <a class="nav-link" data-toggle="tab" href="#tab12" role="tab">Sumo Robots</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab13" role="tab">Other</a>
+                <a class="nav-link" data-toggle="tab" href="#tab13" role="tab">Other Robots</a>
               </li>
             </ul>
 
@@ -74,6 +75,7 @@
                 {% endfor %}
               </div>
               <div role="tabpanel" class="tab-pane" id="tab13">
+                These designs are contributed by the community. While they are not designed to go with our lessons, we believe that you will be able to learn some new building and programming skills through these projects. If you wish to contribute a design to this page, please contact us.
                 {% for post in site.categories.RobotDesigns %}
                 {% if post.searchterms contains "Other" %}
                 {% assign refvalue = i | downcase %}
