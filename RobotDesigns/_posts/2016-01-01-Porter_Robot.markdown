@@ -8,7 +8,7 @@ lang: "en"
 
 This robot is a porter pushing a wheelbarrow. It is made with parts in the 31313 set.
 
-Designed by: Young-jun Yi, <a href="www.funers.com">Funers</a>
+Designed by: Young-jun Yi, <a href="http://www.funers.com">Funers</a>
 <ul>
  <li class="ng-binding">Instructions:
  <a href="/RobotDesigns/instructions/Porter.pdf">PDF</a>
