@@ -1,0 +1,13 @@
+App Privacy Policy
+
+This Privacy Policy was last modified on Sept 9, 2016.  
+
+This page informs you of our policies regarding the collection, use and disclosure of Personal Information when using the FLL Animal Allies, Interactive Sketcher, and Wheel Converter Apps.
+
+Information Collection and Use
+
+The FLL Animal Allies Scorer, Interactive Sketcher and Wheel Converter Apps do not collect any personal information of any kind that might identify an individual.  NO information about a person/user is every collected. NO in-app purchases will ever be enabled.  The App is also Free.  Nothing is saved and sent to other tools such as Game Center.
+
+Log Data
+
+The only information collected is log data, for example, when the App crashes and you are prompted to send the data to Apple/Google.  Log Data may include browser types, date, time, etc, and other statistics, but nothing that will identify you as an individual.
