@@ -1,0 +1,11 @@
+---
+title: "Arrays (Vettori)"
+searchterms: "toggle advanced arrays software array_operations array_block read write"
+lang: "it"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/advanced/Arrays (Vettori).pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/Arrays (Vettori).pdf">PDF</a>
+ </li>
+ </ul>
