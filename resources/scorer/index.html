@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+<div class="page">
+  <head>
+    <title>FLL INTO ORBIT Scorer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+    $(document).bind('mobileinit',function(){
+      $.mobile.changePage.defaults.changeHash = false;
+      $.mobile.hashListeningEnabled = false;
+      $.mobile.pushStateEnabled = false;
+    });
+
+
+    </script>
+    <script src="highcharts.js"></script>
+    <script src="exporting.js"></script>
+    <script src="scorer.js"></script>
+    <script src="timers.js"></script>
+    <script src="saver.js"></script>
+    <script src="html.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jqm-spinbox.min.js"></script>
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <!--    <link rel="stylesheet" href="tournament.css"> -->
+    <link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="scorer.min.css" />
+
+
+    <style>
+
+    .no-mobile {
+      display: inline ;
+    }
+    .only-mobile {
+      display: none ;
+    }
+
+
+
+    .highcharts-button {
+      display: none;
+    }
+
+    .only-print, .only-print *
+    {
+      display: none !important;
+    }
+
+    @media print
+    {
+      .no-print, .no-print *
+      {
+        display: none !important;
+      }
+
+      .only-print, .only-print *
+      {
+        display: block !important;
+      }
+
+      body{width:100%;
+        height:100%;
+        -webkit-transform: rotate(-90deg) scale(0.65,0.65);
+        -moz-transform: rotate(-90deg) scale(.58,.58) }
+
+      }
+
+
+      @page {
+        size: A4 portrait;
+        margin: 0.5cm;
+
+      }
+
+      a:link img {
+        opacity: 1.0;
+        filter: alpha(opacity=100); /* For IE8 and earlier */
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+      }
+      a:hover img {
+        opacity: 0.6;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+        transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -webkit-transition: opacity .5s ease-in-out;
+      }
+      table tr td {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-collapse: collapse;
+      }
+      //      tr td {display: inline-block; }
+
+
+      #missionlist{
+        width: auto;
+        -webkit-column-width: 325px;
+        -moz-column-width: 325px;
+        column-width: 325px;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+
+      }
+
+      .missionFmt {
+        padding-right:3;
+        padding-left:0
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+
+      </style>
+      <script> langs=['en:United States:English','pt:Brazil:Portugues','de:Germany:Deutsche','es:Spain:Español','sk:Slovakia:Slovenský','nl:Netherlands:Nederlands','el:Greece:ελληνικά','hu:Hungary:Magyar','he:Israel:עִבְרִית‎','fr:France:français'] </script>
+      <script src="language-detector.js">  </script>
+      <script src="languages.js"></script>
+
+
+    </head>
+
+    <script>
+    function specialCases(mission) {
+      if ((mission=="meteoroid1")) {
+
+        if (parseInt(document.getElementById('meteoroid2').value) + parseInt(document.getElementById('meteoroid1').value) > 2) {
+          document.getElementById('meteoroid2').value = 2-parseInt(document.getElementById('meteoroid1').value)
+          //  meteoroid2save = document.getElementById('meteoroid2')*8
+          //   meteoroid2 = document.getElementById('meteoroid2')*8
+          recalc(window['meteoroid2'+'inc']*document.getElementById('meteoroid2').value,'meteoroid2',document.getElementById('meteoroid2').value)
+
+        }
+
+      }
+
+      if ((mission=="meteoroid2")) {
+
+        if (parseInt(document.getElementById('meteoroid1').value) + parseInt(document.getElementById('meteoroid2').value) > 2) {
+          document.getElementById('meteoroid1').value = 2-parseInt(document.getElementById('meteoroid2').value)
+          //  meteoroid1save = document.getElementById('meteoroid1')*8
+          // meteoroid1 = document.getElementById('meteoroid1')*8
+          recalc(window['meteoroid1'+'inc']*document.getElementById('meteoroid1').value,'meteoroid1',document.getElementById('meteoroid1').value)
+
+        }
+
+      }
+    }
+    </script>
+
+
+    <body >
+
+      <br>
+      <table style="padding-left: 10px; " class="no-mobile">
+        <tr>
+          <td>
+            <div style="max-width: 100px">
+              Team #:  <input value="0" id="team_num" type="number">
+            </div>
+          </td>
+          <td>
+            <div style="max-width: 100px">
+              Round #: <input value="0" id="round_num" type="number">
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table style="width:98%; text-align:center; margin-left:auto; margin-right:auto;">
+        <tr>
+          <td style="width:25%; text-align:left">
+            <script>
+            var page = window.location.href.split("?")[0].split("#")[0] + '?lang=';
+            var i;
+            for (i = 0; i < langs.length; i++) {
+              window[langs[i].split(':')[0].split('-')[0]] = page + langs[i].split(':')[0];
+            }
+            var i;
+            for (i = 0; i < langs.length; i++) {
+              document.write('\
+              <a class="no-print no-mobile" data-ajax="false" href="'+ window[langs[i].split(":")[0].split("-")[0]] +'" onclick="createCookie(\''+langs[i].split(":")[0]+'\');window.location.href="'+window[langs[i].split(":")[0].split("-")[0]]+'";setTimeout(function(){location.reload(true);},100)" style=" text-decoration: none">\
+              <img src="images/icons/countries/small/'+langs[i].split(":")[1]+'.png" alt="'+langs[i].split(":")[2]+'" title="'+langs[i].split(":")[2]+'" width="26" height="26" border="0">\
+              </a>\
+              ')
+            }
+            </script>
+
+          </td>
+
+          <script>
+          function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+          }
+
+          if (getParameterByName('team') != null) {
+            document.getElementById('team_num').value = getParameterByName('team')
+            document.getElementById('round_num').value = getParameterByName('round')
+          }
+          </script>
+
+          <td style="width:50%; font-size:24px; text-align:center">
+            <b id='title'>INTO ORBIT SCORER (TITLE IN LANGUAGES.JS)</b>
+          </td>
+          <td style="width:25%; font-size:12px; text-align:right">
+            <img alt="FLL..." style="border:1px solid #021a40;"
+            src="images/FLL.png" height="57"> <img alt="INTO ORBIT..." style="border:1px solid #021a40;" src="images/intoorbit.png" height="57"> <a href="http://www.flltutorials.com" data-ajax="false" class="no-mobile" ><img alt="FLL Tutorials" style="border:1px solid #021a40;"   src="images/flltutorials.png" width="139"></a><img class="only-mobile" alt="FLL Tutorials" style="border:1px solid #021a40;" src="images/flltutorials.png" width="139">
+          </td>
+        </tr>
+      </table>
+
+
+
+      <div role="main" class="ui-content" style="padding-right:0; padding-left:0">
+        <div data-role="tabs">
+
+          <div id="tabs-1">
+
+            <form id="missions">
+              <div id="missionlist">
+                <script>
+                missionDict = {
+                  spacetravel1: "M01a",
+                  spacetravel2: "M01b",
+                  spacetravel3: "M01c",
+                  solar1: "M02a",
+                  solar2: "M02b",
+                  '3D1': "M03a",
+                  '3D2': "M03b",
+                  crater: "M04",
+                  extraction1: "M05a",
+                  extraction2: "M05b",
+                  extraction3: "M05c",
+                  extraction4: "M05d",
+                  space1: "M06a",
+                  space2: "M06b",
+                  space3: "M06c",
+                  walk: "M07",
+                  aerobic1: "M08a",
+                  aerobic2: "M08b",
+                  aerobic3: "M08c",
+                  strength: "M09",
+                  food: "M10",
+                  escape: "M11",
+                  satellite: "M12",
+                  observatory1: "M13a",
+                  observatory2: "M13b",
+                  observatory3: "M13c",
+                  meteoroid1: "M14a",
+                  meteoroid2: "M14b",
+                  lander1: "M15a",
+                  lander2: "M15b",
+                  lander3: "M15c",
+                  penalty: "P01"
+                }
+
+                starttable('M01', M01 , 'M01.png' , ['spacetravel1','spacetravel2','spacetravel3'], 0)
+                createbutton("spacetravel1", 22, M01a)
+                createbutton("spacetravel2", 14, M01b)
+                createbutton("spacetravel3", 10, M01c)
+                endtable()
+
+                starttable('M02',M02,'M02.png', ['solar1','solar2'], 0)
+                createbutton("solar1", 22 , M02a)
+                createbutton("solar2", 18 , M02b)
+                endtable()
+
+                starttable('M03', M03,'M03.png', ['3D1','3D2'], 0) //1 = Note Present
+                createbutton("3D1", 22 ,M03a)
+                createbutton("3D2", 18 , M03b)
+                createbuttonconflict('3D1','3D2','')
+                //	    createcomment('Note: 2x4 brick must be ejected by the placement of a Regolith Core Sample into the 3D Printer.')
+                endtable()
+
+                starttable('M04', M04,'M04.png', ['crater'], 0)
+                createbutton("crater", 20 ,M04a)
+                endtable()
+
+                starttable('M05', M05, 'M05.png' , ['extraction1','extraction2','extraction3','extraction4'], 0)
+                createbutton("extraction1", 16 ,M05a)
+                createbutton("extraction2", 12 ,M05b)
+                createbutton("extraction3", 10 ,M05c)
+                createbutton("extraction4", 8 ,M05d)
+                createbuttonconflict('extraction2','extraction3','')
+                createbuttonenables("extraction1","extraction2")
+                createbuttonenables("extraction1","extraction3")
+                createbuttonenables("extraction1","extraction4")
+                endtable()
+
+                starttable('M06',M06, 'M06.png', ['space1','space2','space3'], 0)
+                createbutton("space1", 16,M06a)
+                createbutton("space2", 16,M06b)
+                createbutton("space3", 14,M06c)
+                endtable()
+
+                starttable('M07',M07, 'M07.png' , ['walk'], 0)
+                create3button("walk", 18, 22,M07a)
+                endtable()
+
+                starttable('M08',M08, 'M08.png', ['aerobic1', 'aerobic2','aerobic3'], 0)
+                createbutton("aerobic1", 22 ,M08a)
+                createbutton("aerobic2", 20 ,M08b)
+                createbutton("aerobic3", 18 ,M08c)
+                createbuttonconflict('aerobic2','aerobic3','')
+                createbuttonconflict('aerobic1','aerobic2','')
+                createbuttonconflict('aerobic1','aerobic3','')
+                endtable()
+
+                starttable('M09',M09, 'M09.png' , ['strength'], 0)
+                createbutton("strength", 16 ,M09a)
+                endtable()
+
+                starttable('M10',M10, 'M10.png' , ['food'], 0)
+                createbutton("food", 16 ,M10a)
+                endtable()
+
+                starttable('M11',M11, 'M11.png' , ['escape'], 0)
+                createbutton("escape", 24,M11a)
+                endtable()
+
+                starttable('M12',M12, 'M12.png', ['satellite'], 0)
+                createrange("satellite", 8 , 0, 3, 0,M12a,'')
+                endtable()
+
+                starttable('M13',M13, 'M13.png', ['observatory1', 'observatory2','observatory3'], 0)
+                createbutton("observatory1", 20 ,M13a)
+                createbutton("observatory2", 18 ,M13b)
+                createbutton("observatory3", 16 ,M13c)
+                createbuttonconflict('observatory1','observatory2','')
+                createbuttonconflict('observatory2','observatory3','')
+                createbuttonconflict('observatory1','observatory3','')
+                endtable()
+
+                starttable('M14',M14, 'M14.png', ['meteoroid1','meteoroid2'], 0)
+                createrange("meteoroid1", 12 , 0, 2, 0,M14a,'')
+                createrange("meteoroid2", 8 , 0, 2, 0,M14b,'')
+                endtable()
+
+                starttable('M15',M15, 'M15.png', ['lander1','lander2','lander3'], 0)
+                createbutton("lander1", 22 ,M15a)
+                createbutton("lander2", 20 , M15b)
+                createbutton("lander3", 16 ,M15c)
+                createbuttonconflict('lander1','lander2','')
+                createbuttonconflict('lander2','lander3','')
+                createbuttonconflict('lander1','lander3','')
+                endtable()
+
+                starttable('P01',P01, 'penalty.png', ['penalty'], 0)
+                createrange("penalty", -3 , 0, 6, 0,P01a,'')
+                endtable()
+                </script>
+              </div>
+
+              <br>
+            </form>
+          </div>
+
+          <div style="padding-left: 10px; " id="tabs-2">
+            <p>
+              <!--	  Timer System 1.5.0 -->
+              <div class="ui-mini" id="Timer">
+                Timer:
+                <table style="border: 10px solid black; border-collapse: collapse;">
+                  <tr style="border: 10px solid black; border-collapse: collapse;">
+                    <td rowspan='3' style="border: 10px solid black;  border-collapse: collapse; vertical-align:middle; font-size: 200%;">
+                      <p id="countdownTime" style="margin-left: 5px;margin-right: 5px;">2:30
+                      </p>
+                    </td>
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button id="startText" style="margin:0" onclick="CDtimer()">Start</button>
+                    </td>
+                  </tr>
+                  <tr style="border: 10px solid black; border-collapse: collapse;">
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button id="resetText" style="margin:0" onclick="document.getElementById('countdownTime').textContent = '2:30'; CDseconds = 30; CDminutes = 2; clearTimeout(CDinterval); CDinterval = null;">Reset</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button style="margin:0" id="stopText" onclick="clearTimeout(CDinterval); CDinterval = null;">Stop</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+              <div class="ui-mini" id="Stopwatch">
+                Stopwatch:
+                <table style="border: 10px solid black; border-collapse: collapse;">
+                  <tr style="border: 10px solid black; border-collapse: collapse;">
+                    <td rowspan='3' style="border: 10px solid black; border-collapse: collapse; vertical-align:middle; font-size: 200%">
+                      <p id="stopwatchTime" style="margin-left: 5px;margin-right: 5px;">00:00.0
+                      </p>
+                    </td>
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button style="margin:0" id="startSW" onclick="SWtimer();">Start</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button style="margin:0" id="resetSW" onclick="document.getElementById('stopwatchTime').textContent = '00:00.0'; SWseconds = 0; SWminutes = 0; SWtenths=0; clearTimeout(SWinterval); SWinterval = null;">Reset</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="border: 10px solid black; border-collapse: collapse;">
+                      <button style="margin:0" id="stopSW" onclick="clearTimeout(SWinterval); SWinterval = null;">Stop</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </p>
+          </div>
+
+
+          <div style="padding-left: 10px; " id="tabs-3">
+
+            <div style="max-width: 600px">
+              <div class="no-mobile">
+                Saving System: <select style="" data-role="none" data-hide-during-focus="false" data-tap-toggle="false" onchange="document.getElementById('google').style.display = 'none'; document.getElementById('legacy').style.display = 'none'; document.getElementById(this.value).style.display = 'inline';">
+                  <option id="googleText" value="google">Google Sheets (Default)</option>
+                  <option id="localText" value="legacy">Local Browser Storage (Legacy)</option>
+                </select>
+              </div>
+
+              <br><br>
+
+              <!--	      Google Saving System v1.0 -->
+              <div id="google" class="no-mobile">
+		<div id="notIE">
+                <p>
+                  <text id="googleIntro">You can save your scores to a Google Spreadsheet. This helps you keep track of progress over the season. See instructions at the bottom of the page.</text>
+                </p>
+
+                <button id="authorize_button" style="display: none;"><text id="signin-Google">Sign in to </text> <img style="height:20px; vertical-align:bottom" src="images/Googlelogo.png"></button>
+                <button id="signout_button" style="display: none;"><text id="signout-Google">Sign out of </text> <img style="height:20px; vertical-align:bottom" src="images/Googlelogo.png"></button>
+
+                <script src="google-saver.js"></script>
+
+                <script async defer src="https://apis.google.com/js/api.js"
+                onload="this.onload=function(){};handleClientLoad()"
+                onreadystatechange="if (this.readyState === 'complete') this.onload();">
+                </script>
+
+                <br>
+                <button id="GoogleCreate" onclick="makeSheet();">see languages.js</button>
+
+                <br>
+                Google Sheet ID: <input type="text" onchange="window.localStorage.DRIOGoogleSheet = this.value" id="sheetId"  />
+                <script>
+                document.getElementById('sheetId').value = window.localStorage.DRIOGoogleSheet;
+                </script>
+
+                <br>
+
+                <button onclick="googleSaver()" id="saveGoogleBtn">Save Score</button><br>
+
+		<button id="GoogleOpen" onclick="window.open('https://docs.google.com/spreadsheets/d/'+document.getElementById('sheetId').value+'/edit')">Open in Google Sheets</button>
+
+                <br />
+                <br />
+                <hr />
+                <h2 id="pastSaves">Past saves</h2>
+                <hr />
+                <div id="GoogleDisplay"></div>
+
+                <div class="ui-grid-b ui-responsive">
+                  <div style="width: 170" class="ui-block-a" align="left" style="float: left;">
+                    <div class="button-wrap">
+                      <button style="text-align: left;" id="loadText" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loadGoogleSave(document.getElementById('saveidGoogle').value)">Load Save:</button>
+                    </div>
+                  </div>
+                  <div style="max-width: 60px; " class="ui-block-b">
+
+                    <div data-role="stepper" data-direction="vertical">
+
+                      <div style="max-width: 60px; " class="button-wrap">
+                        <input  type="button" value="-" onclick="document.getElementById('saveidGoogle').value--;  if (document.getElementById('saveidGoogle').value < 1) {document.getElementById('saveidGoogle').value = 1}">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-block-c" style="max-width: 60px; ">
+                    <div style="max-width: 60px;" class="button-wrap">
+                      <input style="height: 41px" type="number"  data-highlight="true" data-theme="b" onchange=" if (this.value < 1) {this.value = 1}; if (this.value > maximumGoogle) {this.value = maximum};" search="2" class="quantity" data-show-value="true" name="saveid" id="saveidGoogle" value="1" min="1" step="1" >
+                    </div>
+                  </div>
+                  <div class="ui-block-d" style="max-width: 60px; ">
+                    <div style="max-width: 60px; " class="button-wrap">
+                      <input type="button" value="+" onclick="document.getElementById('saveidGoogle').value++; if (document.getElementById('saveidGoogle').value > maximumGoogle) {document.getElementById('saveidGoogle').value = maximumGoogle}">
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <br /><br />
+                <hr />
+                <h2 id="instructions">Instructions</h2>
+                <hr />
+                <p>
+                  <text id="instructionsA">The key steps to using the save system are:</text>
+                      <br />
+                      <br />
+                    <text id="instructionsB">  1. Sign in to your Google account. You may get a "This app isn't verified" warning. If so, click on "Advanced" and then "Go to FLL Scorer (unsafe)"</text>
+                      <br />
+                      <br />
+                      <text id="instructionsC">2. If you have not created a spreadsheet in the past - click "Create New Spreadsheet"</text>
+                      <br />
+                      <br />
+                      <text id="instructionsD">3. If you have created a spreadsheet in the past, make sure that the Google Sheet ID field is filled and not "undefined". If you wish to share a spreadsheet between devices, you need to enter this ID manually.</text>
+                      <br />
+                      <br />
+                      <text id="instructionsE">4. Any time you want to save a score, click "Save Score" - this will update the spreadsheet with the current score and date</text>
+                      <br />
+                      <br />
+                      <text id="instructionsF">5. If you wish to inspect your spreadsheet and edit it, click on "Open Google Spreadsheet". If you ever need the Google Sheet ID - it is in the URL of your spreadsheet when you open it.</text>
+                      <br />
+                      <br />
+                      <text id="instructionsG">6. You can also retreive a specific past score into the scorer by entering the save number with the "+" and "-" buttons and then clicking the "Load Save:" button</text>
+                </p>
+
+		
+		</div>
+		<div id="isIE">Google saving system is incompatible with Microsoft Internet Explorer. You can either switch to another browser or continue by using the legacy saving system (click above)</div>
+	      </div>
+
+
+              <!-- Legacy Local Saver -->
+              <div id="legacy" class="only-mobile" style="max-width:500px">
+
+                <button  type="button" id="saveText" onclick="sharksave=0; saver();displaysaves(); drawBasic(); maximum = window.localStorage.DRIOSscorer.split('/').length-1" >Save Score</button>
+
+                <br>
+                <style>
+                input[type=number]::-webkit-outer-spin-button,
+                input[type=number]::-webkit-inner-spin-button {
+                  -webkit-appearance: none;
+                  margin: 0;
+                }
+
+                input[type=number] {
+                  -moz-appearance:textfield;
+                }
+                </style>
+
+                <script>
+
+                if(window.localStorage.DRIOSscorer != undefined){
+                  maximum = window.localStorage.DRIOSscorer.split('/').length-1 ;
+                  min=1 ;
+                  start = 1;
+                } else {
+                  maximum=0
+                  min=0
+                  start = 0
+                }
+
+                </script>
+                <div class="ui-grid-b ui-responsive">
+                  <div style="width: 170" class="ui-block-a" align="left" style="float: left;">
+                    <div class="button-wrap">
+                      <button style="text-align: left;" id="loadText" class="ui-shadow ui-btn ui-corner-all" type="button" onclick="loader(document.getElementById('saveid').value)">Load Save:</button>
+                    </div>
+                  </div>
+                  <div style="max-width: 60px; " class="ui-block-b">
+
+                    <div data-role="stepper" data-direction="vertical">
+
+                      <div style="max-width: 60px; " class="button-wrap">
+                        <input  type="button" value="-" onclick="document.getElementById('saveid').value--;  if (document.getElementById('saveid').value < 1) {document.getElementById('saveid').value = 1}">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui-block-c" style="max-width: 60px; ">
+                    <div style="max-width: 60px;" class="button-wrap">
+                      <input style="height: 41px" type="number"  data-highlight="true" data-theme="b" onchange=" if (this.value > maximum) {this.value = maximum}" search="2" class="quantity" data-show-value="true" name="saveid" id="saveid" value="1" min="1" step="1" >
+                    </div>
+                  </div>
+                  <div class="ui-block-d" style="max-width: 60px; ">
+                    <div style="max-width: 60px; " class="button-wrap">
+                      <input type="button" value="+" onclick="document.getElementById('saveid').value++; if (document.getElementById('saveid').value > maximum) {document.getElementById('saveid').value = maximum}">
+                    </div>
+                  </div>
+
+                  <!--       </div>
+                </div>-->
+
+              </div>
+              <button id="deleteText" class="ui-button ui-widget ui-corner-all" type="button" onclick="window.localStorage.DRIOSscorer = ''; window.localStorage.DRIOS1scorer = ''; displaysaves(); drawBasic(); alert('Deleted Saves')">Delete Save</button>
+
+              <div >
+                <div id="container" style="width:100%; max-width: 500px; height: 200px; margin: 0 auto"></div>
+                <div id="saves" ></div>
+
+                <button id="importText" class="ui-mini no-mobile" onclick=" document.getElementById('fileInput').click() ;
+                maximum = window.localStorage.DRIOSscorer.split('/').length-1;">Import Save</button>
+
+                <input onchange="setTimeout(function(){
+                  displaysaves();
+                  drawBasic();
+                  document.getElementById('saveid').max = window.localStorage.DRIOSscorer.split('/').length-1;},300)"
+                  style=" position: fixed;
+                  bottom: -10000px;
+                  left: -100000px;" type="file" id="fileInput">
+
+
+                  <button class="ui-mini no-mobile" id="exportText" onclick="download(window.localStorage.DRIOSscorer + ';' + window.localStorage.DRIOS1scorer, day+'myscores.DRIO','application/octet-stream')">Export Save</button>
+
+                  <script type="text/javascript">
+    		    function download(data, filename, type) {
+			var file = new Blob([data], {type: type});
+			if (window.navigator.msSaveOrOpenBlob) // IE10+
+			    window.navigator.msSaveOrOpenBlob(file, filename);
+			else { // Others
+			    var a = document.createElement("a"),
+				url = URL.createObjectURL(file);
+			    a.href = url;
+			    a.download = filename;
+			    document.body.appendChild(a);
+			    a.click();
+			    setTimeout(function() {
+				document.body.removeChild(a);
+				window.URL.revokeObjectURL(url);  
+			    }, 0); 
+			}
+		    }
+			
+			
+			    var currentTime = new Date()
+			    var day = currentTime.getDate()
+                  </script>
+
+
+                  <!--		  (Legacy) Saving System v3.3.0 -->
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="no-print no-tournament" data-role="navbar">
+            <div data-hide-during-focus="" data-tap-toggle="false" data-role="header" data-position="fixed">
+
+              <ul>
+                <li><a id="scorerTitle" class="ui-btn-active" href="#tabs-1">Scorer</a></li>
+                <li><a id="timersTitle" href="#tabs-2">Timers</a></li>
+                <li><a id="savesTitle" href="#tabs-3">Saves</a></li>
+              </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div data-hide-during-focus="" data-tap-toggle="false" data-role="footer" style=" font-size: 120%; background-color:indigo; color: white;" data-theme="a" data-position="fixed">
+      <h1 style="padding-top:0; padding-bottom:0" ><i id="pointsTxt">Points</i><i>: </i><i id="allpoints"> 0</i> &emsp; &emsp; &emsp; <input id="resetTxt" type="button" value="Reset" class="ui-mini no-print" onclick='document.getElementById("missions").reset();loadsave("spacetravel1|0,spacetravel2|0,spacetravel3|0,solar1|0,solar2|0,3D1|0,3D2|0,crater|0,extraction1|0,extraction2|0,extraction3|0,extraction4|0,space1|0,space2|0,space3|0,walk|0,aerobic1|0,aerobic2|0,aerobic3|0,strength|0,food|0,escape|0,satellite|0,observatory1|0,observatory2|0,observatory3|0,meteoroid1|0,meteoroid2|0,lander1|0,lander2|0,lander3|0,penalty|0");'></h1>
+    </div>
+
+  </body>
+
+  <script>
+  window.onload = function() {
+    initpage();
+    displaysaves();
+    drawBasic();
+    loadsave("spacetravel1|0,spacetravel2|0,spacetravel3|0,solar1|0,solar2|0,3D1|0,3D2|0,crater|0,extraction1|0,extraction2|0,extraction3|0,extraction4|0,space1|0,space2|0,space3|0,walk1|0,walk2|0,aerobic1|0,aerobic2|0,aerobic3|0,strength|0,food|0,escape|0,satellite|0,observatory1|0,observatory2|0,observatory3|0,meteoroid1|0,meteoroid2|0,lander1|0,lander2|0,lander3|0,penalty|0");
+    // check_missions('piperemoval');
+    // recalc(0,'piperemoval',0);
+
+    var fileInput = document.getElementById('fileInput');
+
+    fileInput.addEventListener('change', function(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
+
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        data = reader.result;
+        //alert(data)
+
+        window.localStorage.DRIOSscorer = data.split(';')[0];
+        window.localStorage.DRIOS1scorer = data.split(';')[1];
+        maximum = window.localStorage.DRIOSscorer.split('/').length-1
+      }
+
+      reader.readAsText(file);
+
+    });
+
+  }
+
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-65893558-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<div class="no-mobile">
+  <script>
+  countrycode = language.split('-')[0]
+  if (countrycode != "he" && countrycode != "hu" && countrycode !=
+  "en" && countrycode != "el") {
+    document.write('<a target="_blank"\
+    href="https://itunes.apple.com/'+countrycode+'/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+    <img height="68" style="padding: 15px" \
+    src="app-store/'+language+'.svg"></a><br>')
+  } else if (countrycode == "he"){
+
+    document.write('<a target="_blank"\
+    href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+    <img height="68" style="padding: 15px" \
+    src="app-store/'+language+'.svg"></a><br>')
+
+  }
+
+  if (countrycode != "hu") {
+
+  } else {
+
+    document.write('<a target="_blank"\
+    href="https://itunes.apple.com/gb/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+    <img height="68" style="padding: 15px" \
+    src="app-store/en-us.svg"></a><br>')
+  }
+  if (countrycode != "en") {
+
+  } else {
+
+    document.write('<a target="_blank"\
+    href="https://itunes.apple.com/us/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+    <img height="68" style="padding: 15px" \
+    src="app-store/en-us.svg"></a><br>')
+  }
+  if (countrycode != "el") {
+
+  } else {
+
+    document.write('<a target="_blank"\
+    href="https://itunes.apple.com/gr/app/fll-hydro-dynamics-scorer/id1281134368?ls=1&mt=8">\
+    <img height="68" style="padding: 15px" \
+    src="app-store/en-us.svg"></a><br>')
+  }
+  countrycode = language.split('-')[0]
+
+
+
+
+  if (language == 'he') {
+    countrycode = "iw"
+  }
+  document.write('<a target="_blank"\
+  href="https://play.google.com/store/apps/details?id=com.ev3lessons.fllhydrodynamicsscorer&hl='+countrycode+'">\
+  <img height="100" \
+  src="google-play/'+countrycode+'_get.svg"></a>')
+
+</script>
+</div>
+<div style="padding-left: 10px; ">
+  <br>
+  INTO ORBIT Scorer Revision 1.0
+  <!-- Scorer v3.3.0 -->
+<br>
+<br>Copyright (c) 2018 Seshan Brothers<br>
+<text id="translatorCredit"></text>
+</div>
+<script>
+if (language =='he') {
+  document.write('<style>td {text-align: right;}</style>')
+}
+
+
+function initpage() {
+  document.getElementById('title').innerHTML = title
+  document.getElementById('resetTxt').value = resetText
+  document.getElementById('pointsTxt').innerHTML = pointsText
+
+
+  document.getElementById('saveText').innerHTML = savescoreText
+  document.getElementById('loadText').innerHTML = loadsaveText
+  document.getElementById('deleteText').innerHTML = deletesaveText
+  document.getElementById('importText').innerHTML = importsaveText
+  document.getElementById('exportText').innerHTML = exportsaveText
+
+  document.getElementById('saveGoogleBtn').innerHTML = savescoreText
+
+
+  document.getElementById('startText').innerHTML = startText
+  document.getElementById('stopText').innerHTML = stopText
+  document.getElementById('resetText').innerHTML = resetText
+
+  document.getElementById('startSW').innerHTML = startText
+  document.getElementById('stopSW').innerHTML = stopText
+  document.getElementById('resetSW').innerHTML = resetText
+
+  document.getElementById('scorerTitle').innerHTML = scorerText
+  document.getElementById('timersTitle').innerHTML = timersText
+  document.getElementById('savesTitle').innerHTML = savesText
+
+  document.getElementById('signin-Google').innerHTML = signin
+  document.getElementById('signout-Google').innerHTML = signout
+  document.getElementById('GoogleCreate').innerHTML = GoogleCreate
+  document.getElementById('GoogleOpen').innerHTML = GoogleOpen
+  document.getElementById('googleText').innerHTML = googleSaveText
+  document.getElementById('localText').innerHTML = localSaveText
+
+  document.getElementById('isIE').innerHTML = isIE
+  document.getElementById('googleIntro').innerHTML = googleIntro
+  document.getElementById('pastSaves').innerHTML = pastSaves
+  document.getElementById('instructions').innerHTML = instructions
+  document.getElementById('instructionsA').innerHTML = instructionsA
+  document.getElementById('instructionsB').innerHTML = instructionsB
+  document.getElementById('instructionsC').innerHTML = instructionsC
+  document.getElementById('instructionsD').innerHTML = instructionsD
+  document.getElementById('instructionsE').innerHTML = instructionsE
+  document.getElementById('instructionsF').innerHTML = instructionsF
+  document.getElementById('instructionsG').innerHTML = instructionsG
+    
+  document.getElementById('translatorCredit').innerHTML = translatorCredit
+
+    if ((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
+	document.getElementById('notIE').style.display = 'none'
+    } else {
+	document.getElementById('isIE').style.display = 'none'
+    }
+
+    
+}
+initpage();
+
+</script>
+</div>
+
+</html>
