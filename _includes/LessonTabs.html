@@ -38,4 +38,13 @@
     {% endif %}
     {% endfor %}
   </div>
+    <div role="tabpanel" class="tab-pane" id="tab14">
+    {% for post in site.categories.ProgrammingLessons %}
+    {% if post.lang == page.lang and post.searchterms contains "beyond-ev3g" %}
+    {% assign refvalue = i | downcase %}
+    {% include postlist.html ref=refvalue %}
+    {% assign i = i | plus:1 %}
+    {% endif %}
+    {% endfor %}
+  </div>
 </div>
