@@ -4,7 +4,7 @@ searchterms: "EV3"
 lang: "en"
 ---
 
-<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DroidBot.png" alt="">
+<img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DroidBot2.png" alt="">
 <br>
 
 This build replaces DroidBot 1.0.
