@@ -7,7 +7,7 @@ lang: "en"
 <img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/DroidBot2.png" alt="">
 <br>
 
-This build replaces DroidBot 1.0.
+This is replacement for DroidBot 1.0. It has all the features of 1.0 and then a few more.
 <br>
 <br>
 DroidBot 2.0 is a robot build using only parts from 45544 LEGO® MINDSTORMS® Education EV3 Core Set + 1 color sensor. There is also an optional handle that can be added when the robots are used in camps or classrooms.
