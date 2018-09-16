@@ -6,7 +6,7 @@ lang: "en"
 <img style="width:100%" src="{{ BASE_PATH }}/RobotDesigns/images/Seesaw.png" alt="">
 <br>
 
-This robot is a porter pushing a wheelbarrow. It is made with parts in the 45544 set.
+This robot is a fun design with two people playing on a seesaw. It is made with parts in the 45544 set.
 
 Designed by: Young-jun Yi, <a href="http://www.funers.com">Funers</a>
 <ul>
