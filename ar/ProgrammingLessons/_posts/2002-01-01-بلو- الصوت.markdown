@@ -1,0 +1,11 @@
+---
+title: "بلوك الصوت"
+searchterms: "toggle beginner sound sound_block notes tones beeps noises rsf"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/SoundBlockArabica.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/SoundBlockArabica.pdf">PDF</a>
+ </li>
+ </ul>

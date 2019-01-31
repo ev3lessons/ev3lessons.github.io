@@ -1,0 +1,11 @@
+---
+title: "مستشعر )حساس( الصوت"
+searchterms: "toggle beginner sound sound_block introduction_to_sound_sensor"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/SoundSensorArabica.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/SoundSensorArabica.pdf">PDF</a>
+ </li>
+ </ul>

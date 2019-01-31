@@ -1,0 +1,11 @@
+---
+title: "مفاتیح الاختیار"
+searchterms: "toggle beginner switches ipad app tablet android"
+lang: "ar"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/SwitchesArabica.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/SwitchesArabica.pdf">PDF</a>
+ </li>
+ </ul>
