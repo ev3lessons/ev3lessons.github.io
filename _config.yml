@@ -199,8 +199,12 @@ defaults:
       path: "pt"
     values:
       lang: "pt"
-
+  -
+    scope:
+      path: "eu"
+    values:
+      lang: "eu"
 
 # {% assign all_langs = "en:United States:English,es:Spain:Español,nl:Netherlands:Nederlands,ar:Saudi Arabia:العَرَبِيةُ‎‎,pt:Brazil:Portugues,el:Greece:Ελληνικά,fr:France:français,ct:Catalonia:català,he:Israel:עברית,it:Italy:Italiano" | split: "," %}
 
-all_langs: ['en:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:Catalonia:català','he:Israel:עברית','it:Italy:Italiano']
+all_langs: ['en:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:Catalonia:català','he:Israel:עברית','it:Italy:Italiano','eu:Basque:Euskara']
