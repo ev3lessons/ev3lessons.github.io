@@ -12,6 +12,10 @@ lang: "en"
 <a href="ProgrammingLessons/beginner/IntroductionNXT.pptx">PPTX</a>,
 <a href="ProgrammingLessons/beginner/IntroductionNXT.pdf">PDF</a>
 </li>
+<li class="ng-binding">MicroPython Slides:
+<a href="ProgrammingLessons/beginner/py-Introduction.pptx">PPTX</a>,
+<a href="ProgrammingLessons/beginner/py-Introduction.pdf">PDF</a>
+</li>
 
 
  </ul>
