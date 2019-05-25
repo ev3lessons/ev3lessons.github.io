@@ -1,6 +1,6 @@
 ---
 title: "Moving Straight"
-searchterms: "toggle beginner moving ipad programming_app tablet android app moving_straight forward backward"
+searchterms: "toggle beginner moving ipad programming_app tablet android app moving_straight forward backward micropython"
 lang: "en"
 ---
  <ul>
@@ -13,6 +13,10 @@ lang: "en"
 <a href="ProgrammingLessons/beginner/MovingStraightNXT.pdf">PDF</a>
 </li>
  <li><a href="ProgrammingLessons/beginner/MovingStraight.docx">Worksheet</a>
+ </li>
+ <li class="ng-binding">MicroPython Slides:
+ <a href="ProgrammingLessons/beginner/py-MovingStraight.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/py-MovingStraight.pdf">PDF</a>
  </li>
 
  </ul>

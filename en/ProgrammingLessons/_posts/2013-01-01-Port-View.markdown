@@ -1,6 +1,6 @@
 ---
 title: "Port View"
-searchterms: "toggle beginner portview port_view brick ev3"
+searchterms: "toggle beginner portview port_view brick ev3 micropython"
 lang: "en"
 ---
  <ul>
