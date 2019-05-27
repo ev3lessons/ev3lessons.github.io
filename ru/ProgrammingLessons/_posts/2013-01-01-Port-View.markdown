@@ -1,0 +1,19 @@
+---
+title: "Port View"
+searchterms: "toggle beginner portview port_view brick ev3 micropython"
+lang: "ru"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/beginner/PortView.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/PortView.pdf">PDF</a>
+ </li>
+<li class="ng-binding">NXT Slides:
+<a href="ProgrammingLessons/beginner/ViewNXT.pptx">PPTX</a>,
+<a href="ProgrammingLessons/beginner/ViewNXT.pdf">PDF</a>
+</li>
+<li class="ng-binding">MicroPython Slides:
+<a href="ProgrammingLessons/beginner/py-PortView.pptx">PPTX</a>,
+<a href="ProgrammingLessons/beginner/py-PortView.pdf">PDF</a>
+</li>
+ </ul>
