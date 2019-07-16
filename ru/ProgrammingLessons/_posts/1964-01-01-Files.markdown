@@ -1,0 +1,16 @@
+---
+title: "Загрузка и выгрузка файлов"
+searchterms: "toggle advanced files data writing"
+lang: "ru"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/advanced/DownloadUploadFiles.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/DownloadUploadFiles.pdf">PDF</a>
+ </li>
+ <h4>Using Files: **Coming Soon***</h4>
+ <li class="ng-binding">Slides:
+ <a href="">PPTX</a>,
+ <a href="">PDF</a>
+ </li>
+ </ul>
