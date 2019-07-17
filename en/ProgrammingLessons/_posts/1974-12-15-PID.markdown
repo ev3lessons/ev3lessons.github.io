@@ -1,0 +1,11 @@
+---
+title: "PID Line Follower"
+searchterms: "toggle moving advanced PID PID_Line_Follower"
+lang: "en"
+---
+ <ul>
+ <li class="ng-binding">Slides:
+ <a href="ProgrammingLessons/advanced/PID.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/PID.pdf">PDF</a>
+ </li>
+ </ul>
