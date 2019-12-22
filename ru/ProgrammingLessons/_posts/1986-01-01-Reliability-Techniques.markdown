@@ -1,5 +1,5 @@
 ---
-title: "МЕТОДЫ ОТКАЗОУСТОЙЧИВОСТИ
+title: "МЕТОДЫ ОТКАЗОУСТОЙЧИВОСТИ"
 searchterms: "toggle intermediate debugging alignment battery coast reliability reliability_techniques"
 lang: "ru"
 ---

@@ -18,5 +18,9 @@ lang: "en"
 <a href="ProgrammingLessons/beginner/py-Turning.pptx">PPTX</a>,
 <a href="ProgrammingLessons/beginner/py-Turning.pdf">PDF</a>
 </li>
+<li class="ng-binding">EV3 Classroom (Scratch) Slides:
+<a href="ProgrammingLessons/beginner/scratch-Turning.pptx">PPTX</a>,
+<a href="ProgrammingLessons/beginner/scratch-Turning.pdf">PDF</a>
+</li>
 
  </ul>

@@ -8,6 +8,11 @@ lang: "en"
  <a href="ProgrammingLessons/beginner/BasicLineFollower.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/BasicLineFollower.pdf">PDF</a>
  </li>
+ <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/beginner/scratch-BasicLineFollower.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/scratch-BasicLineFollower.pdf">PDF</a>
+ </li>
+
 <li class="ng-binding">NXT Slides:
 <a href="ProgrammingLessons/beginner/BasicLineFollowerNXT.pptx">PPTX</a>,
 <a href="ProgrammingLessons/beginner/BasicLineFollowerNXT.pdf">PDF</a>

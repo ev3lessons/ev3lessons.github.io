@@ -18,5 +18,9 @@ lang: "en"
  <a href="ProgrammingLessons/beginner/py-MovingStraight.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/py-MovingStraight.pdf">PDF</a>
  </li>
+  <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/beginner/scratch-MovingStraight.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/scratch-MovingStraight.pdf">PDF</a>
+ </li>
 
  </ul>

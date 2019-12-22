@@ -8,4 +8,8 @@ lang: "en"
  <a href="ProgrammingLessons/beginner/Touch.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Touch.pdf">PDF</a>
  </li>
+ <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/beginner/scratch-Touch.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/scratch-Touch.pdf">PDF</a>
+ </li>
  </ul>

@@ -8,8 +8,14 @@ lang: "en"
                            <a href='ProgrammingLessons/beginner/InstallingUpdates.pptx'>PPTX</a>,
                            <a href='ProgrammingLessons/beginner/InstallingUpdates.pdf'>PDF</a>
                          </li>
+
                          <li>MicroPython Slides:
                          <a href='ProgrammingLessons/beginner/py-Installing.pptx'>PPTX</a>,
                          <a href='ProgrammingLessons/beginner/py-Installing.pdf'>PDF</a>
+                         </li>
+
+			 <li>EV3 Classroom (Scratch) Slides:
+                         <a href='ProgrammingLessons/beginner/scratch-Installing.pptx'>PPTX</a>,
+                         <a href='ProgrammingLessons/beginner/scratch-Installing.pdf'>PDF</a>
                          </li>
   </ul>

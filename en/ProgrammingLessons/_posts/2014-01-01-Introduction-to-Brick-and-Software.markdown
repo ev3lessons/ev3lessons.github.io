@@ -16,6 +16,10 @@ lang: "en"
 <a href="ProgrammingLessons/beginner/py-Introduction.pptx">PPTX</a>,
 <a href="ProgrammingLessons/beginner/py-Introduction.pdf">PDF</a>
 </li>
+<li class="ng-binding">EV3 Classroom (Scratch) Slides:
+<a href="ProgrammingLessons/beginner/scratch-Introduction.pptx">PPTX</a>,
+<a href="ProgrammingLessons/beginner/scratch-Introduction.pdf">PDF</a>
+</li>
 
 
  </ul>

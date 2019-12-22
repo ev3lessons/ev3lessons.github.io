@@ -1,5 +1,5 @@
 ---
-title: "Выравнивание по линии
+title: "Выравнивание по линии"
 searchterms: "toggle sync_beams parallel_beams synchronization color colour colour_sensor advanced align squaring_on_lines my_blocks square_up straighten_out"
 lang: "ru"
 ---
