@@ -15,7 +15,7 @@ lang: "en"
                          </li>
 
 			 <li>EV3 Classroom (Scratch) Slides:
-                         <a href='ProgrammingLessons/beginner/scratch-Installing.pptx'>PPTX</a>,
-                         <a href='ProgrammingLessons/beginner/scratch-Installing.pdf'>PDF</a>
+                         <a href='ProgrammingLessons/beginner/scratch-InstallingUpdates.pptx'>PPTX</a>,
+                         <a href='ProgrammingLessons/beginner/scratch-InstallingUpdates.pdf'>PDF</a>
                          </li>
   </ul>
