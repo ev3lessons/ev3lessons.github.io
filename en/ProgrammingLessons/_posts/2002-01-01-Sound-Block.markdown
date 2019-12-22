@@ -8,4 +8,8 @@ lang: "en"
  <a href="ProgrammingLessons/beginner/SoundBlock.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/SoundBlock.pdf">PDF</a>
  </li>
+ <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/beginner/SoundBlock.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beginner/SoundBlock.pdf">PDF</a>
+ </li>
  </ul>
