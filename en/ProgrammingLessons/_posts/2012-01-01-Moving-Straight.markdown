@@ -4,7 +4,7 @@ searchterms: "toggle beginner moving ipad programming_app tablet android app mov
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/MovingStraight.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/MovingStraight.pdf">PDF</a>
  </li>

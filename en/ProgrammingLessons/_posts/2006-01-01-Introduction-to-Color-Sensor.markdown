@@ -4,7 +4,7 @@ searchterms: "toggle beginner color colour colour_sensor sensors programming_app
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Color.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Color.pdf">PDF</a>
  </li>

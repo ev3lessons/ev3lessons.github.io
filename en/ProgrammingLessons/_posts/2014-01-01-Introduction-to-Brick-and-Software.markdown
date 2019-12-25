@@ -4,7 +4,7 @@ searchterms: "toggle beginner programs programmes programming programming_app pr
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Introduction.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Introduction.pdf">PDF</a>
  </li>

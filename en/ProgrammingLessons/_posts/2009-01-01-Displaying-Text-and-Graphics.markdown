@@ -4,7 +4,7 @@ searchterms: "toggle beginner display programming_app displaying_text_and_graphi
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Display.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Display.pdf">PDF</a>
  </li>

@@ -4,7 +4,7 @@ searchterms: "toggle beginner moving programming_app ipad app turning tablet piv
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Turning.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Turning.pdf">PDF</a>
  </li>

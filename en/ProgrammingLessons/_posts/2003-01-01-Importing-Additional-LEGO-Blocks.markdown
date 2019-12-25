@@ -4,7 +4,7 @@ searchterms: "toggle beginner sound sound_block notes tones beeps noises rsf imp
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/ImportingBlocks.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/ImportingBlocks.pdf">PDF</a>
  </li>

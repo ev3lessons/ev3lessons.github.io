@@ -4,7 +4,7 @@ searchterms: "toggle beginner display custom sounds sound_block display_block im
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/CustomImagesSounds.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/CustomImagesSounds.pdf">PDF</a>
  </li>

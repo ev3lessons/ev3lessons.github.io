@@ -4,7 +4,7 @@ searchterms: "toggle beginner portview port_view brick ev3 micropython"
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/PortView.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/PortView.pdf">PDF</a>
  </li>

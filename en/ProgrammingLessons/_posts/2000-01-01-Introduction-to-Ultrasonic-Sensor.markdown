@@ -4,7 +4,7 @@ searchterms: "toggle beginner ultrasonic sensors ipad ultrasonic_sensor programm
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Ultrasonic.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Ultrasonic.pdf">PDF</a>
  </li>

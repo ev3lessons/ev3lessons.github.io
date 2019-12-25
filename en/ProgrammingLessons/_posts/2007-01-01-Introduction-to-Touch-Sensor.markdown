@@ -4,7 +4,7 @@ searchterms: "toggle beginner touch touch_sensor sesnsors ipad tablet android pr
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/Touch.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/Touch.pdf">PDF</a>
  </li>

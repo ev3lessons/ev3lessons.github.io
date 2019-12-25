@@ -4,7 +4,7 @@ searchterms: "toggle beginner beginner color colour colour_sensor follower basic
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/BasicLineFollower.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/BasicLineFollower.pdf">PDF</a>
  </li>

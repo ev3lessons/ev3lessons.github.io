@@ -4,7 +4,7 @@ searchterms: "toggle beginner large_motor_block attachments passive medium_motor
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/beginner/MoveObject.pptx">PPTX</a>,
  <a href="ProgrammingLessons/beginner/MoveObject.pdf">PDF</a>
  </li>
