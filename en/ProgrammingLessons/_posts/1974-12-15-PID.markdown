@@ -4,7 +4,12 @@ searchterms: "toggle moving advanced PID PID_Line_Follower"
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/advanced/PID.pptx">PPTX</a>,
+  <a href="ProgrammingLessons/advanced/PID.pdf">PDF</a>,
+ </li>
+ <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/advanced/scratch-PID.pptx">PPTX</a>,
+  <a href="ProgrammingLessons/advanced/scratch-PID.pptx">PDF</a>,
  </li>
  </ul>

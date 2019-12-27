@@ -4,8 +4,12 @@ searchterms: "toggle sync_beams parallel_beams synchronization color colour colo
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">Slides:
+ <li class="ng-binding">EV3-G Slides:
  <a href="ProgrammingLessons/advanced/Align.pptx">PPTX</a>,
  <a href="ProgrammingLessons/advanced/Align.pdf">PDF</a>
+ </li>
+ <li class="ng-binding">EV3 Classroom (Scratch) Slides:
+ <a href="ProgrammingLessons/advanced/scratch-Align.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/scratch-Align.pdf">PDF</a>
  </li>
  </ul>
