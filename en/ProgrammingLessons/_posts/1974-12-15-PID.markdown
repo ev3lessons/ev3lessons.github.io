@@ -10,6 +10,6 @@ lang: "en"
  </li>
  <li class="ng-binding">EV3 Classroom (Scratch) Slides:
  <a href="ProgrammingLessons/advanced/scratch-PID.pptx">PPTX</a>,
-  <a href="ProgrammingLessons/advanced/scratch-PID.pptx">PDF</a>,
+  <a href="ProgrammingLessons/advanced/scratch-PID.pdf">PDF</a>,
  </li>
  </ul>
