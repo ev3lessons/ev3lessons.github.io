@@ -4,7 +4,7 @@ searchterms: "toggle intermediate debugging alignment battery coast reliability 
 lang: "en"
 ---
  <ul>
- <li class="ng-binding">EV3-G Slides:
+ <li class="ng-binding">Slides:
  <a href="ProgrammingLessons/intermediate/Reliability.pptx">PPTX</a>,
  <a href="ProgrammingLessons/intermediate/Reliability.pdf">PDF</a>
  </li>
