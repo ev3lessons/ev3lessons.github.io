@@ -5,17 +5,17 @@ lang: "en"
 ---
  <ul>
  <li class="ng-binding">EV3-G Slides:
- <a href="ProgrammingLessons/advanced/GyroRevisited.pptx">PPTX</a>,
- <a href="ProgrammingLessons/advanced/GyroRevisited.pdf">PDF</a>
- </li>
- <li class="ng-binding">
- <a href="ProgrammingLessons/advanced/GyroRevisited.ev3">Code to test which type of sensor you have (EV3-G)</a>
+ <a href="ProgrammingLessons/advanced/GyroDrift.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/GyroDrift.pdf">PDF</a>
  </li>
  <li class="ng-binding">
  <a href="ProgrammingLessons/advanced/GyroDriftTest.ev3">Gryo Drift Test code (EV3-G)</a>
  </li>
  <li class="ng-binding">EV3 Classroom (Scratch) Slides:
- <a href="ProgrammingLessons/advanced/GyroDrift.pptx">PPTX</a>,
- <a href="ProgrammingLessons/advanced/GyroDrift.pdf">PDF</a>
+ <a href="ProgrammingLessons/advanced/scratch-GyroDrift.pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/scratch-GyroDrift.pdf">PDF</a>
+ </li>
+ <li class="ng-binding">
+ <a href="ProgrammingLessons/advanced/GyroRevisited.ev3">Code to test which type of sensor you have (EV3-G)</a>
  </li>
   </ul>
