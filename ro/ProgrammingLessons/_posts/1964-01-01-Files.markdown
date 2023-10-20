@@ -1,16 +1,11 @@
 ---
 title: "Files"
 searchterms: "toggle advanced files data writing"
-lang: "en"
+lang: "ro"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="ProgrammingLessons/advanced/DownloadUploadFiles.pptx">PPTX</a>,
- <a href="ProgrammingLessons/advanced/DownloadUploadFiles.pdf">PDF</a>
- </li>
- <h4>Using Files: **Coming Soon***</h4>
- <li class="ng-binding">Slides:
- <a href="">PPTX</a>,
- <a href="">PDF</a>
+ <a href="ProgrammingLessons/advanced/DownloadUploadFiles (rom).pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/DownloadUploadFiles (rom).pdf">PDF</a>
  </li>
  </ul>

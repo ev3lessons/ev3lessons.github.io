@@ -1,11 +1,11 @@
 ---
 title: "Arrays"
 searchterms: "toggle advanced arrays software array_operations array_block read write"
-lang: "en"
+lang: "ro"
 ---
  <ul>
  <li class="ng-binding">Slides:
- <a href="ProgrammingLessons/advanced/Arrays.pptx">PPTX</a>,
- <a href="ProgrammingLessons/advanced/Arrays.pdf">PDF</a>
+ <a href="ProgrammingLessons/advanced/Arrays (rom).pptx">PPTX</a>,
+ <a href="ProgrammingLessons/advanced/Arrays (rom).pdf">PDF</a>
  </li>
  </ul>
