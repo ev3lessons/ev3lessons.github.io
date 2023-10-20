@@ -24,7 +24,7 @@ post_limit: 5
 title : EV3Lessons
 tagline:
 author :
-  name : Sanjay and Arvind Brothers
+  name : Sanjay and Arvind Seshan
   site: https://www.ev3lessons.com
   description : EV3Lessons provides a complete set of LEGO MINDSTORMS EV3 programming tutorials for teams, teachers, and robotics enthusiasts. The tutorials are clear, to-the-point, and comprehensive, with something for every level of user. The authors are FIRST LEGO League World Champions and MINDSTORMS Community Partners.
   image : social-image.png
@@ -210,6 +210,12 @@ defaults:
     values:
       lang: "ru"
 
+  -
+    scope:
+      path: "ro"
+      values:
+      lang: "ro"
+
 # {% assign all_langs = "en:United States:English,es:Spain:Español,nl:Netherlands:Nederlands,ar:Saudi Arabia:العَرَبِيةُ‎‎,pt:Brazil:Portugues,el:Greece:Ελληνικά,fr:France:français,ct:Catalonia:català,he:Israel:עברית,it:Italy:Italiano" | split: "," %}
 
-all_langs: ['en:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:Catalonia:català','he:Israel:עברית','it:Italy:Italiano','eu:Basque:Euskara','ru:Russia:русский']
+all_langs: ['en:United States:English','es:Spain:Español','nl:Netherlands:Nederlands','ar:Saudi Arabia:العَرَبِيةُ‎‎','pt:Brazil:Portugues','el:Greece:Ελληνικά','fr:France:français','ct:Catalonia:català','he:Israel:עברית','it:Italy:Italiano','eu:Basque:Euskara','ru:Russia:русский', 'ro:Romania:românește:Romanian']
