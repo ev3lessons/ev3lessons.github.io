@@ -7,14 +7,14 @@ lang: "en"
 <h4>Introduction:</h4>
 
  <li class="ng-binding">Slides:
- <a href="ProgrammingLessons/beyond/PSP-NxController.pptx">PPTX</a>,
- <a href="ProgrammingLessons/beyond/PSP-NxController.pdf">PDF</a>
+ <a href="ProgrammingLessons/beyond/PSP-NxController (rom).pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beyond/PSP-NxController (rom).pdf">PDF</a>
  </li> </ul>
  <ul>
  <h4>Simon Game:</h4>
  <li class="ng-binding">Slides:
- <a href="ProgrammingLessons/beyond/PSP-NxSimon.pptx">PPTX</a>,
- <a href="ProgrammingLessons/beyond/PSP-NxSimon.pdf">PDF</a>
+ <a href="ProgrammingLessons/beyond/PSP-NxSimon (rom).pptx">PPTX</a>,
+ <a href="ProgrammingLessons/beyond/PSP-NxSimon (rom).pdf">PDF</a>
  </li><li> <a download="PSP-NxSimon.ev3" href="ProgrammingLessons/beyond/PSP-NxSimon.ev3" type="application/ev3">EV3 Code</a>
  </li>
  </ul>
